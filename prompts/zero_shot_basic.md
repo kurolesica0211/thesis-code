@@ -18,3 +18,5 @@ Return a JSON object with a single key "entries" containing a list — one eleme
 Each element must be an object with:
 - "triples": a list of objects, each with "subject", "relation", and "object" string fields.
 - "schemas": a list of objects (one per triple, same order), each with "subject" and "object" string fields containing the entity type from the schema.
+
+[Directionality Rule: For relations describing origin, composition, or hierarchy, always place the Parent/Source entity as the Subject and the Derived/Specific entity as the Object.]: #
