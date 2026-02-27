@@ -12,12 +12,23 @@ def main():
     # Configuration
     data_dir      = "OSKGC/data"
     ontology_dir  = "OSKGC/ontologies"
-    split         = "test"
-    template_path = "prompts/zero_shot_basic.md"
+    split         = "dev"
     model_name    = "gemini/gemini-3-flash-preview"
 
+    # Ontology mode: "json" (structured schema) or "rdf" (copy-paste .ttl)
+    ontology_mode = "rdf"
+
+    if ontology_mode == "rdf":
+        template_path    = "prompts/zero_shot_rdf.md"
+        rdf_ontology_dir = "OSKGC/ontologies/rdf"
+        tag              = "rdf_1"
+    else:
+        template_path    = "prompts/zero_shot_basic.md"
+        rdf_ontology_dir = None
+        tag              = "json_1"
+
     safe_model  = model_name.replace("/", "_").replace(":", "_")
-    output_file = f"results/results_{safe_model}.jsonl"
+    output_file = f"results/results_{safe_model}_{tag}.jsonl"
 
     # Optional: pass specific categories on the command line
     #   python main.py 1_Airport 2_Politician 3_Company
@@ -32,6 +43,8 @@ def main():
         extractor=extractor,
         output_file=output_file,
         categories=categories,
+        ontology_mode=ontology_mode,
+        rdf_ontology_dir=rdf_ontology_dir,
     )
     runner.run()
 

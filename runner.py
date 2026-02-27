@@ -16,12 +16,16 @@ class ExtractionRunner:
 
     def __init__(self, loader: OSKGCLoader, extractor: Extractor,
                  output_file: str, delay: float = RATELIMIT_DELAY,
-                 categories: Optional[List[str]] = None):
+                 categories: Optional[List[str]] = None,
+                 ontology_mode: str = "json",
+                 rdf_ontology_dir: Optional[str] = None):
         self.loader      = loader
         self.extractor   = extractor
         self.output_file  = output_file
         self.delay       = delay
         self.categories  = categories   # None → process all
+        self.ontology_mode = ontology_mode  # "json" or "rdf"
+        self.rdf_ontology_dir = rdf_ontology_dir  # e.g. "OSKGC/ontologies/rdf"
 
     def run(self):
         print("Loading data by category...")
@@ -46,8 +50,16 @@ class ExtractionRunner:
         # Append mode so we can add to an existing file.
         with open(self.output_file, "a", encoding="utf-8") as f:
             for batch_idx, batch in enumerate(tqdm(batches, desc="Categories")):
-                batch_result = self.extractor.extract_batch(
-                    batch.entries, batch.schema_def)
+                if self.ontology_mode == "rdf":
+                    rdf_path = os.path.join(
+                        self.rdf_ontology_dir, f"{batch.category}.ttl")
+                    with open(rdf_path, "r", encoding="utf-8") as rf:
+                        rdf_text = rf.read()
+                    batch_result = self.extractor.extract_batch_rdf(
+                        batch.entries, rdf_text)
+                else:
+                    batch_result = self.extractor.extract_batch(
+                        batch.entries, batch.schema_def)
 
                 all_empty = all(
                     len(v.triples) == 0 for v in batch_result.results.values())
@@ -62,7 +74,6 @@ class ExtractionRunner:
                         "input_text":   entry.input_text,
                         "gold_triples": [t.model_dump() for t in entry.gold_triples],
                         "pred_triples": [t.model_dump() for t in ext.triples] if ext else [],
-                        "pred_schemas": [s.model_dump() for s in ext.schemas] if ext else [],
                     }
                     f.write(json.dumps(record, ensure_ascii=False) + "\n")
                     f.flush()

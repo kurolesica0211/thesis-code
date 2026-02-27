@@ -29,3 +29,15 @@ class PromptEngine:
             relations=relations_str,
             input_texts=input_texts_str
         )
+
+    def build_rdf_batch_prompt(self, entries: List[TaskEntry], rdf_ontology_text: str) -> str:
+        """Build a prompt for a batch of entries using an RDF ontology pasted into the template."""
+        texts_list = []
+        for i, entry in enumerate(entries, 1):
+            texts_list.append(f"entry_{i}: {entry.input_text}")
+        input_texts_str = "\n".join(texts_list)
+
+        return self.template.format(
+            ontology_rdf=rdf_ontology_text,
+            input_texts=input_texts_str
+        )
