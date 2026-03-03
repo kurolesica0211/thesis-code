@@ -38,3 +38,4 @@ Analyze **each** Input Sentence and extract all valid triples that comply with t
 Return a JSON object with a single key "entries" containing a list — one element per input sentence, **in the same order**.
 Each element must be an object with:
 - "triples": a list of objects, each with "subject", "relation", and "object" string fields.
+- "schemas": a list of objects (one per triple, same order), each with "subject" and "object" string fields containing the entity type from the ontology (e.g. "Airport", "City", "Person").

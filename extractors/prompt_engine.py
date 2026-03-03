@@ -41,3 +41,17 @@ class PromptEngine:
             ontology_rdf=rdf_ontology_text,
             input_texts=input_texts_str
         )
+
+    @staticmethod
+    def build_correction_prompt(
+        template_path: str,
+        rdf_ontology_text: str,
+        violations_text: str,
+    ) -> str:
+        """Build a correction prompt from the correction template."""
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+        return template.format(
+            ontology_rdf=rdf_ontology_text,
+            violations=violations_text,
+        )

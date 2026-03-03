@@ -13,15 +13,19 @@ def main():
     data_dir      = "OSKGC/data"
     ontology_dir  = "OSKGC/ontologies"
     split         = "dev"
-    model_name    = "gemini/gemini-3-flash-preview"
+    model_name    = "gemini/gemini-3.1-flash-lite-preview"
 
     # Ontology mode: "json" (structured schema) or "rdf" (copy-paste .ttl)
     ontology_mode = "rdf"
 
+    # SHACL validation loop (RDF mode only)
+    shacl_validation = True
+    shacl_max_rounds = 1
+
     if ontology_mode == "rdf":
         template_path    = "prompts/zero_shot_rdf.md"
         rdf_ontology_dir = "OSKGC/ontologies/rdf"
-        tag              = "rdf_1"
+        tag              = "rdf_shacl_1" if shacl_validation else "rdf_1"
     else:
         template_path    = "prompts/zero_shot_basic.md"
         rdf_ontology_dir = None
@@ -45,6 +49,8 @@ def main():
         categories=categories,
         ontology_mode=ontology_mode,
         rdf_ontology_dir=rdf_ontology_dir,
+        shacl_validation=shacl_validation,
+        shacl_max_rounds=shacl_max_rounds,
     )
     runner.run()
 

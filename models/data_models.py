@@ -6,6 +6,11 @@ class Triple(BaseModel):
     relation: str
     object: str
 
+class TripleSchema(BaseModel):
+    """Entity types the model assigned to the subject and object of a triple."""
+    subject: str
+    object: str
+
 class RelationDef(BaseModel):
     relation: str
     valid_subjects: List[str]
@@ -30,6 +35,7 @@ class CategoryBatch(BaseModel):
 class EntryExtractionResult(BaseModel):
     """Extraction result for a single entry inside a batch response."""
     triples: List[Triple] = []
+    schemas: List[TripleSchema] = []
 
 class BatchExtractionResult(BaseModel):
     """Full batch response keyed by entry label (entry_1, entry_2, …)."""
