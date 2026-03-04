@@ -1,0 +1,395 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/3_MeanOfTransportation/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-completionDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:completionDate .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-wheelbase>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:wheelbase .
+
+<http://dbpedia.org/ontology/Organisation-foundedBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:foundedBy .
+
+<http://dbpedia.org/ontology/Organisation-foundationPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:foundationPlace .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-bodyStyle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:bodyStyle .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-successor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:successor .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-modelYears>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:modelYears .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-relatedMeanOfTransportation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:relatedMeanOfTransportation .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-designCompany>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:designCompany .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-engine>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Device> ;
+        sh:path   rel:engine .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-christeningDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:christeningDate .
+
+<http://dbpedia.org/ontology/Organisation-fate>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:fate .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-comparable>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:comparable .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipClass>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:shipClass .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-launchSite>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:launchSite .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-poweredBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:poweredBy .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-activeYearsStartDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:activeYearsStartDate .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipLaunch>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:shipLaunch .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-rocketStages>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:rocketStages .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-diameter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:diameter .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-maidenFlight>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:maidenFlight .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipDraft>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:shipDraft .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipOrdered>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:shipOrdered .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-builder>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:builder .
+
+<http://dbpedia.org/ontology/Organisation-division>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:division .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-maidenVoyage>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:maidenVoyage .
+
+<http://dbpedia.org/ontology/Place-saint>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:saint .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-topSpeed>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:topSpeed .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-totalProduction>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:totalProduction .
+
+<http://dbpedia.org/ontology/Place-demonym>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:demonym .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/MeanOfTransportation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/MeanOfTransportation-productionEndYear> , <http://dbpedia.org/ontology/MeanOfTransportation-rocketStages> , <http://dbpedia.org/ontology/MeanOfTransportation-relatedMeanOfTransportation> , <http://dbpedia.org/ontology/MeanOfTransportation-diameter> , <http://dbpedia.org/ontology/MeanOfTransportation-designCompany> , <http://dbpedia.org/ontology/MeanOfTransportation-wheelbase> , <http://dbpedia.org/ontology/MeanOfTransportation-christeningDate> , <http://dbpedia.org/ontology/MeanOfTransportation-class> , <http://dbpedia.org/ontology/MeanOfTransportation-maidenFlight> , <http://dbpedia.org/ontology/MeanOfTransportation-shipOrdered> , <http://dbpedia.org/ontology/MeanOfTransportation-poweredBy> , <http://dbpedia.org/ontology/MeanOfTransportation-shipDisplacement> , <http://dbpedia.org/ontology/MeanOfTransportation-totalProduction> , <http://dbpedia.org/ontology/MeanOfTransportation-activeYearsStartDate> , <http://dbpedia.org/ontology/MeanOfTransportation-finalFlight> , <http://dbpedia.org/ontology/MeanOfTransportation-assembly> , <http://dbpedia.org/ontology/MeanOfTransportation-length> , <http://dbpedia.org/ontology/MeanOfTransportation-shipDraft> , <http://dbpedia.org/ontology/MeanOfTransportation-alternativeName> , <http://dbpedia.org/ontology/MeanOfTransportation-operator> , <http://dbpedia.org/ontology/MeanOfTransportation-shipBeam> , <http://dbpedia.org/ontology/MeanOfTransportation-owner> , <http://dbpedia.org/ontology/MeanOfTransportation-bodyStyle> , <http://dbpedia.org/ontology/MeanOfTransportation-manufacturer> , <http://dbpedia.org/ontology/MeanOfTransportation-engine> , <http://dbpedia.org/ontology/MeanOfTransportation-shipClass> , <http://dbpedia.org/ontology/MeanOfTransportation-cylinderCount> , <http://dbpedia.org/ontology/MeanOfTransportation-totalLaunches> , <http://dbpedia.org/ontology/MeanOfTransportation-topSpeed> , <http://dbpedia.org/ontology/MeanOfTransportation-country> , <http://dbpedia.org/ontology/MeanOfTransportation-engineSize> , <http://dbpedia.org/ontology/MeanOfTransportation-shipLaunch> , <http://dbpedia.org/ontology/MeanOfTransportation-launchSite> , <http://dbpedia.org/ontology/MeanOfTransportation-maidenVoyage> , <http://dbpedia.org/ontology/MeanOfTransportation-modelYears> , <http://dbpedia.org/ontology/MeanOfTransportation-failedLaunches> , <http://dbpedia.org/ontology/MeanOfTransportation-successor> , <http://dbpedia.org/ontology/MeanOfTransportation-transmission> , <http://dbpedia.org/ontology/MeanOfTransportation-countryOrigin> , <http://dbpedia.org/ontology/MeanOfTransportation-completionDate> , <http://dbpedia.org/ontology/MeanOfTransportation-builder> , <http://dbpedia.org/ontology/MeanOfTransportation-productionStartYear> , <http://dbpedia.org/ontology/MeanOfTransportation-status> , <http://dbpedia.org/ontology/MeanOfTransportation-comparable> .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-engineSize>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:engineSize .
+
+<http://dbpedia.org/ontology/Organisation-successor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:successor .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-manufacturer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:manufacturer .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-finalFlight>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:finalFlight .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-alternativeName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:alternativeName .
+
+<http://dbpedia.org/ontology/Place-anthem>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:anthem .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Organisation-subsidiary>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:subsidiary .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-status>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:status .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-productionStartYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:productionStartYear .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-length>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:length .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-cylinderCount>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:cylinderCount .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-transmission>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Device> ;
+        sh:path   rel:transmission .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-failedLaunches>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:failedLaunches .
+
+<http://dbpedia.org/ontology/Organisation-city>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:city .
+
+<http://dbpedia.org/ontology/Device-manufacturer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:manufacturer .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipBeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:shipBeam .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-productionEndYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:productionEndYear .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-site>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:site .
+
+<http://dbpedia.org/ontology/Organisation-keyPerson>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:keyPerson .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-operator>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:operator .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-totalLaunches>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:totalLaunches .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-saint> , <http://dbpedia.org/ontology/Place-anthem> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-country> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-demonym> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-shipDisplacement>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:shipDisplacement .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Device>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Device-manufacturer> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/ArchitecturalStructure-site> , <http://dbpedia.org/ontology/ArchitecturalStructure-operator> , <http://dbpedia.org/ontology/ArchitecturalStructure-location> , <http://dbpedia.org/ontology/ArchitecturalStructure-headquarter> .
+
+<http://dbpedia.org/ontology/Organisation-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-class>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:class .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-operator>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:operator .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-countryOrigin>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:countryOrigin .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/MeanOfTransportation-assembly>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:assembly .
+
+<http://dbpedia.org/ontology/Organisation-parentCompany>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:parentCompany .
+
+<http://dbpedia.org/ontology/Place-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-foundationPlace> , <http://dbpedia.org/ontology/Organisation-keyPerson> , <http://dbpedia.org/ontology/Organisation-owner> , <http://dbpedia.org/ontology/Organisation-city> , <http://dbpedia.org/ontology/Organisation-successor> , <http://dbpedia.org/ontology/Organisation-division> , <http://dbpedia.org/ontology/Organisation-foundedBy> , <http://dbpedia.org/ontology/Organisation-parentCompany> , <http://dbpedia.org/ontology/Organisation-fate> , <http://dbpedia.org/ontology/Organisation-subsidiary> , <http://dbpedia.org/ontology/Organisation-location> , <http://dbpedia.org/ontology/Organisation-country> .
+
+<http://dbpedia.org/ontology/Organisation-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-headquarter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:headquarter .

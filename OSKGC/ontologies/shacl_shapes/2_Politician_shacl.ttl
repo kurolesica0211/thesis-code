@@ -1,0 +1,244 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/2_Politician/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/2_Politician#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/2_Politician/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Event>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Event-commander> , <http://dbpedia.org/ontology/Event-isPartOf> .
+
+<http://dbpedia.org/ontology/Person-almaMater>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:almaMater .
+
+<http://dbpedia.org/ontology/Person-successor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:successor .
+
+<http://dbpedia.org/ontology/Person-deathPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:deathPlace .
+
+<http://dbpedia.org/ontology/Place-officialLanguage>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:officialLanguage .
+
+<http://dbpedia.org/ontology/Organisation-colour>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Colour> ;
+        sh:path   rel:colour .
+
+<http://dbpedia.org/ontology/Person-hasDeputy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:hasDeputy .
+
+<http://dbpedia.org/ontology/Person-spouse>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:spouse .
+
+<http://dbpedia.org/ontology/Event-commander>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:commander .
+
+<http://dbpedia.org/ontology/Person-birthDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:birthDate .
+
+<http://dbpedia.org/ontology/Organisation-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Person-award>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Award> ;
+        sh:path   rel:award .
+
+<http://dbpedia.org/ontology/Place-largestCity>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:largestCity .
+
+<http://dbpedia.org/ontology/Person-deathDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:deathDate .
+
+<http://dbpedia.org/ontology/Organisation-battle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Event> ;
+        sh:path   rel:battle .
+
+<http://dbpedia.org/ontology/Person-birthYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:birthYear .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Event-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Event> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Organisation-affiliation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:affiliation .
+
+<http://dbpedia.org/ontology/Person-party>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:party .
+
+<http://dbpedia.org/ontology/Person-birthPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:birthPlace .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-numberOfVotesAttained> , <http://dbpedia.org/ontology/Person-inOfficeWhilePrimeMinister> , <http://dbpedia.org/ontology/Person-activeYearsEndDate> , <http://dbpedia.org/ontology/Person-serviceStartYear> , <http://dbpedia.org/ontology/Person-almaMater> , <http://dbpedia.org/ontology/Person-successor> , <http://dbpedia.org/ontology/Person-birthDate> , <http://dbpedia.org/ontology/Person-state> , <http://dbpedia.org/ontology/Person-office> , <http://dbpedia.org/ontology/Person-region> , <http://dbpedia.org/ontology/Person-birthYear> , <http://dbpedia.org/ontology/Person-inOfficeWhileMonarch> , <http://dbpedia.org/ontology/Person-birthPlace> , <http://dbpedia.org/ontology/Person-deathPlace> , <http://dbpedia.org/ontology/Person-nationality> , <http://dbpedia.org/ontology/Person-residence> , <http://dbpedia.org/ontology/Person-award> , <http://dbpedia.org/ontology/Person-deathDate> , <http://dbpedia.org/ontology/Person-inOfficeWhilePresident> , <http://dbpedia.org/ontology/Person-inOfficeWhileVicePresident> , <http://dbpedia.org/ontology/Person-party> , <http://dbpedia.org/ontology/Person-hasDeputy> , <http://dbpedia.org/ontology/Person-spouse> , <http://dbpedia.org/ontology/Person-predecessor> , <http://dbpedia.org/ontology/Person-battle> , <http://dbpedia.org/ontology/Person-activeYearsStartDate> , <http://dbpedia.org/ontology/Person-militaryBranch> .
+
+<http://dbpedia.org/ontology/Organisation-commander>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:commander .
+
+<http://dbpedia.org/ontology/Person-numberOfVotesAttained>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:numberOfVotesAttained .
+
+<http://dbpedia.org/ontology/Person-office>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:office .
+
+<http://dbpedia.org/ontology/Person-predecessor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:predecessor .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/Place-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Person-activeYearsStartDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:activeYearsStartDate .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-largestCity> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-location> , <http://dbpedia.org/ontology/Place-officialLanguage> , <http://dbpedia.org/ontology/Place-currency> .
+
+<http://dbpedia.org/ontology/Person-region>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:region .
+
+<http://dbpedia.org/ontology/Person-state>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:state .
+
+<http://dbpedia.org/ontology/Person-battle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Event> ;
+        sh:path   rel:battle .
+
+<http://dbpedia.org/ontology/Person-serviceStartYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:serviceStartYear .
+
+<http://dbpedia.org/ontology/Person-inOfficeWhilePrimeMinister>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:inOfficeWhilePrimeMinister .
+
+<http://dbpedia.org/ontology/Person-inOfficeWhileVicePresident>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:inOfficeWhileVicePresident .
+
+<http://dbpedia.org/ontology/Person-nationality>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:nationality .
+
+<http://dbpedia.org/ontology/Person-activeYearsEndDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:activeYearsEndDate .
+
+<http://dbpedia.org/ontology/Person-militaryBranch>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:militaryBranch .
+
+<http://dbpedia.org/ontology/Person-residence>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:residence .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Person-inOfficeWhileMonarch>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:inOfficeWhileMonarch .
+
+<http://dbpedia.org/ontology/Person-inOfficeWhilePresident>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:inOfficeWhilePresident .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-affiliation> , <http://dbpedia.org/ontology/Organisation-colour> , <http://dbpedia.org/ontology/Organisation-leader> , <http://dbpedia.org/ontology/Organisation-battle> , <http://dbpedia.org/ontology/Organisation-commander> .

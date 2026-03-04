@@ -23,13 +23,15 @@ def main():
     shacl_max_rounds = 1
 
     if ontology_mode == "rdf":
-        template_path    = "prompts/zero_shot_rdf.md"
-        rdf_ontology_dir = "OSKGC/ontologies/rdf"
-        tag              = "rdf_shacl_1" if shacl_validation else "rdf_1"
+        template_path      = "prompts/zero_shot_rdf.md"
+        rdf_ontology_dir   = "OSKGC/ontologies/rdf"
+        shacl_shapes_dir   = "OSKGC/ontologies/shacl_shapes"
+        tag                = "rdf_shacl_1" if shacl_validation else "rdf_1"
     else:
-        template_path    = "prompts/zero_shot_basic.md"
-        rdf_ontology_dir = None
-        tag              = "json_1"
+        template_path      = "prompts/zero_shot_basic.md"
+        rdf_ontology_dir   = None
+        shacl_shapes_dir   = None
+        tag                = "json_1"
 
     safe_model  = model_name.replace("/", "_").replace(":", "_")
     output_file = f"results/results_{safe_model}_{tag}.jsonl"
@@ -51,6 +53,7 @@ def main():
         rdf_ontology_dir=rdf_ontology_dir,
         shacl_validation=shacl_validation,
         shacl_max_rounds=shacl_max_rounds,
+        shacl_shapes_dir=shacl_shapes_dir,
     )
     runner.run()
 

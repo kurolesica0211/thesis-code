@@ -20,7 +20,8 @@ class ExtractionRunner:
                  ontology_mode: str = "json",
                  rdf_ontology_dir: Optional[str] = None,
                  shacl_validation: bool = False,
-                 shacl_max_rounds: int = 1):
+                 shacl_max_rounds: int = 1,
+                 shacl_shapes_dir: Optional[str] = None):
         self.loader      = loader
         self.extractor   = extractor
         self.output_file  = output_file
@@ -30,6 +31,7 @@ class ExtractionRunner:
         self.rdf_ontology_dir = rdf_ontology_dir  # e.g. "OSKGC/ontologies/rdf"
         self.shacl_validation = shacl_validation
         self.shacl_max_rounds = shacl_max_rounds
+        self.shacl_shapes_dir = shacl_shapes_dir  # e.g. "OSKGC/ontologies/shacl_shapes"
 
     def run(self):
         print("Loading data by category...")
@@ -60,13 +62,19 @@ class ExtractionRunner:
                     with open(rdf_path, "r", encoding="utf-8") as rf:
                         rdf_text = rf.read()
                     if self.shacl_validation:
+                        shacl_path = os.path.join(
+                            self.shacl_shapes_dir, f"{batch.category}_shacl.ttl")
+                        with open(shacl_path, "r", encoding="utf-8") as sf:
+                            shacl_text = sf.read()
                         batch_result = self.extractor.extract_batch_rdf_with_shacl(
-                            batch.entries, rdf_text,
+                            batch.entries, rdf_text, shacl_text,
                             max_rounds=self.shacl_max_rounds,
+                            schema_def=batch.schema_def,
                         )
                     else:
                         batch_result = self.extractor.extract_batch_rdf(
-                            batch.entries, rdf_text)
+                            batch.entries, rdf_text,
+                            schema_def=batch.schema_def)
                 else:
                     batch_result = self.extractor.extract_batch(
                         batch.entries, batch.schema_def)

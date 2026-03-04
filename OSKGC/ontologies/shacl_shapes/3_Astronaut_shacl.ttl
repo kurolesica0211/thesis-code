@@ -1,0 +1,225 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/3_Astronaut#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/3_Astronaut/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Event>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Event-backupPilot> , <http://dbpedia.org/ontology/Event-commander> , <http://dbpedia.org/ontology/Event-crewMembers> , <http://dbpedia.org/ontology/Event-operator> .
+
+<http://dbpedia.org/ontology/Person-almaMater>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:almaMater .
+
+<http://dbpedia.org/ontology/Award-higher>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Award> ;
+        sh:path   rel:higher .
+
+<http://dbpedia.org/ontology/Person-ribbonAward>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Award> ;
+        sh:path   rel:ribbonAward .
+
+<http://dbpedia.org/ontology/Person-dateOfRetirement>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:dateOfRetirement .
+
+<http://dbpedia.org/ontology/Place-utcOffset>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:utcOffset .
+
+<http://dbpedia.org/ontology/Person-deathPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:deathPlace .
+
+<http://dbpedia.org/ontology/Person-servedAsChiefOfTheAstronautOfficeIn>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:servedAsChiefOfTheAstronautOfficeIn .
+
+<http://dbpedia.org/ontology/Event-commander>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:commander .
+
+<http://dbpedia.org/ontology/Person-selectedByNasa>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:selectedByNasa .
+
+<http://dbpedia.org/ontology/Person-birthDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:birthDate .
+
+<http://dbpedia.org/ontology/Person-status>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:status .
+
+<http://dbpedia.org/ontology/Person-award>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Award> ;
+        sh:path   rel:award .
+
+<http://dbpedia.org/ontology/Person-deathDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:deathDate .
+
+<http://dbpedia.org/ontology/Event-operator>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:operator .
+
+<http://dbpedia.org/ontology/Person-timeInSpace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:timeInSpace .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Event-backupPilot>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:backupPilot .
+
+<http://dbpedia.org/ontology/Organisation-affiliation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:affiliation .
+
+<http://dbpedia.org/ontology/Place-bird>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:bird .
+
+<http://dbpedia.org/ontology/Person-alternativeName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:alternativeName .
+
+<http://dbpedia.org/ontology/Person-birthPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:birthPlace .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-title> , <http://dbpedia.org/ontology/Person-almaMater> , <http://dbpedia.org/ontology/Person-occupation> , <http://dbpedia.org/ontology/Person-birthDate> , <http://dbpedia.org/ontology/Person-dateOfRetirement> , <http://dbpedia.org/ontology/Person-status> , <http://dbpedia.org/ontology/Person-selectedByNasa> , <http://dbpedia.org/ontology/Person-birthPlace> , <http://dbpedia.org/ontology/Person-deathPlace> , <http://dbpedia.org/ontology/Person-awards> , <http://dbpedia.org/ontology/Person-servedAsChiefOfTheAstronautOfficeIn> , <http://dbpedia.org/ontology/Person-ribbonAward> , <http://dbpedia.org/ontology/Person-nationality> , <http://dbpedia.org/ontology/Person-award> , <http://dbpedia.org/ontology/Person-deathDate> , <http://dbpedia.org/ontology/Person-mission> , <http://dbpedia.org/ontology/Person-timeInSpace> , <http://dbpedia.org/ontology/Person-alternativeName> .
+
+<http://dbpedia.org/ontology/Person-mission>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Event> ;
+        sh:path   rel:mission .
+
+<http://dbpedia.org/ontology/Place-gemstone>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ChemicalSubstance> ;
+        sh:path   rel:gemstone .
+
+<http://dbpedia.org/ontology/Place-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Place-senator>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:senator .
+
+<http://dbpedia.org/ontology/Organisation-competeIn>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:competeIn .
+
+<http://dbpedia.org/ontology/Place-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-representative> , <http://dbpedia.org/ontology/Place-isPartOf> , <http://dbpedia.org/ontology/Place-fossil> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-senator> , <http://dbpedia.org/ontology/Place-gemstone> , <http://dbpedia.org/ontology/Place-utcOffset> , <http://dbpedia.org/ontology/Place-location> , <http://dbpedia.org/ontology/Place-bird> .
+
+<http://dbpedia.org/ontology/Organisation-president>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:president .
+
+<http://dbpedia.org/ontology/Person-title>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:title .
+
+<http://dbpedia.org/ontology/Place-representative>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:representative .
+
+<http://dbpedia.org/ontology/Person-nationality>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:nationality .
+
+<http://dbpedia.org/ontology/Event-crewMembers>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:crewMembers .
+
+<http://dbpedia.org/ontology/Person-occupation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:occupation .
+
+<http://dbpedia.org/ontology/Organisation-mascot>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/FictionalCharacter> ;
+        sh:path   rel:mascot .
+
+<http://dbpedia.org/ontology/Person-awards>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:awards .
+
+<http://dbpedia.org/ontology/Place-fossil>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:fossil .
+
+<http://dbpedia.org/ontology/Award>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Award-higher> .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-affiliation> , <http://dbpedia.org/ontology/Organisation-mascot> , <http://dbpedia.org/ontology/Organisation-president> , <http://dbpedia.org/ontology/Organisation-competeIn> .

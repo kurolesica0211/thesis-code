@@ -1,0 +1,263 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/1_Athlete#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/1_Athlete/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Person-weight>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:weight .
+
+<http://dbpedia.org/ontology/Place-utcOffset>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:utcOffset .
+
+<http://dbpedia.org/ontology/Person-youthclub>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:youthclub .
+
+<http://dbpedia.org/ontology/Person-draftTeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:draftTeam .
+
+<http://dbpedia.org/ontology/Person-deathPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:deathPlace .
+
+<http://dbpedia.org/ontology/Organisation-generalManager>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:generalManager .
+
+<http://dbpedia.org/ontology/Person-currentTeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:currentTeam .
+
+<http://dbpedia.org/ontology/Place-officialLanguage>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:officialLanguage .
+
+<http://dbpedia.org/ontology/Person-formerTeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:formerTeam .
+
+<http://dbpedia.org/ontology/Organisation-universityTeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:universityTeam .
+
+<http://dbpedia.org/ontology/Person-playerNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:playerNumber .
+
+<http://dbpedia.org/ontology/Place-areaTotal>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:areaTotal .
+
+<http://dbpedia.org/ontology/Person-position>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:position .
+
+<http://dbpedia.org/ontology/Organisation-league>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:league .
+
+<http://dbpedia.org/ontology/Organisation-chairman>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:chairman .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/Person-birthDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:birthDate .
+
+<http://dbpedia.org/ontology/Person-currentClub>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:currentClub .
+
+<http://dbpedia.org/ontology/Person-birthYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:birthYear .
+
+<http://dbpedia.org/ontology/Place-demonym>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:demonym .
+
+<http://dbpedia.org/ontology/Person-debutTeam>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:debutTeam .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Person-club>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:club .
+
+<http://dbpedia.org/ontology/Organisation-stadium>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:stadium .
+
+<http://dbpedia.org/ontology/Person-birthPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:birthPlace .
+
+<http://dbpedia.org/ontology/Place-anthem>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:anthem .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Organisation-manager>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:manager .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-playerNumber> , <http://dbpedia.org/ontology/Person-club> , <http://dbpedia.org/ontology/Person-birthDate> , <http://dbpedia.org/ontology/Person-height> , <http://dbpedia.org/ontology/Person-birthYear> , <http://dbpedia.org/ontology/Person-draftYear> , <http://dbpedia.org/ontology/Person-birthPlace> , <http://dbpedia.org/ontology/Person-draftPick> , <http://dbpedia.org/ontology/Person-draftRound> , <http://dbpedia.org/ontology/Person-youthclub> , <http://dbpedia.org/ontology/Person-deathPlace> , <http://dbpedia.org/ontology/Person-debutTeam> , <http://dbpedia.org/ontology/Person-position> , <http://dbpedia.org/ontology/Person-currentTeam> , <http://dbpedia.org/ontology/Person-formerTeam> , <http://dbpedia.org/ontology/Person-activeYearsStartYear> , <http://dbpedia.org/ontology/Person-draftTeam> , <http://dbpedia.org/ontology/Person-currentClub> , <http://dbpedia.org/ontology/Person-weight> , <http://dbpedia.org/ontology/Person-league> .
+
+<http://dbpedia.org/ontology/Organisation-ground>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:ground .
+
+<http://dbpedia.org/ontology/Person-draftRound>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:draftRound .
+
+<http://dbpedia.org/ontology/Organisation-city>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:city .
+
+<http://dbpedia.org/ontology/Person-league>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:league .
+
+<http://dbpedia.org/ontology/Organisation-coach>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:coach .
+
+<http://dbpedia.org/ontology/Organisation-season>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/FootballLeagueSeason> ;
+        sh:path   rel:season .
+
+<http://dbpedia.org/ontology/Place-timeZone>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:timeZone .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/Person-draftYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:draftYear .
+
+<http://dbpedia.org/ontology/Place-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-isPartOf> , <http://dbpedia.org/ontology/Place-timeZone> , <http://dbpedia.org/ontology/Place-anthem> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-country> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-demonym> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-utcOffset> , <http://dbpedia.org/ontology/Place-areaTotal> , <http://dbpedia.org/ontology/Place-officialLanguage> , <http://dbpedia.org/ontology/Place-currency> .
+
+<http://dbpedia.org/ontology/Organisation-mostChampions>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:mostChampions .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Person-activeYearsStartYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:activeYearsStartYear .
+
+<http://dbpedia.org/ontology/Organisation-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/Person-draftPick>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:draftPick .
+
+<http://dbpedia.org/ontology/Person-height>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:height .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Place-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-generalManager> , <http://dbpedia.org/ontology/Organisation-ground> , <http://dbpedia.org/ontology/Organisation-owner> , <http://dbpedia.org/ontology/Organisation-stadium> , <http://dbpedia.org/ontology/Organisation-city> , <http://dbpedia.org/ontology/Organisation-coach> , <http://dbpedia.org/ontology/Organisation-chairman> , <http://dbpedia.org/ontology/Organisation-universityTeam> , <http://dbpedia.org/ontology/Organisation-mostChampions> , <http://dbpedia.org/ontology/Organisation-manager> , <http://dbpedia.org/ontology/Organisation-league> , <http://dbpedia.org/ontology/Organisation-location> , <http://dbpedia.org/ontology/Organisation-season> .

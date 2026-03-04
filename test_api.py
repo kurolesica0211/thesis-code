@@ -55,7 +55,7 @@ if MODE == "rdf":
         rdf_text = f.read()
     engine = PromptEngine(template_path="prompts/zero_shot_rdf.md")
     prompt = engine.build_rdf_batch_prompt(batch.entries, rdf_text)
-    ResponseModel = BatchResponse
+    ResponseModel = build_batch_response(batch.schema_def)
     schema_log = {"rdf_file": rdf_path}
 else:
     engine = PromptEngine(template_path="prompts/zero_shot_basic.md")
@@ -82,10 +82,14 @@ start = time.time()
 try:
     if SHACL and MODE == "rdf":
         # Use the full Extractor SHACL loop
+        shacl_path = os.path.join("OSKGC/ontologies/shacl_shapes", f"{batch.category}_shacl.ttl")
+        with open(shacl_path, "r", encoding="utf-8") as sf:
+            shacl_text = sf.read()
         engine_obj = PromptEngine(template_path="prompts/zero_shot_rdf.md")
         ext = Extractor(model_name=MODEL, prompt_engine=engine_obj)
         batch_result = ext.extract_batch_rdf_with_shacl(
-            batch.entries, rdf_text, max_rounds=1,
+            batch.entries, rdf_text, shacl_text, max_rounds=1,
+            schema_def=batch.schema_def,
         )
         elapsed = time.time() - start
         log["elapsed_seconds"] = round(elapsed, 3)

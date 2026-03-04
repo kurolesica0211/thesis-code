@@ -1,0 +1,113 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/2_MusicalWork#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/2_MusicalWork/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Work-producer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:producer .
+
+<http://dbpedia.org/ontology/Work>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Work-releaseDate> , <http://dbpedia.org/ontology/Work-genre> , <http://dbpedia.org/ontology/Work-writer> , <http://dbpedia.org/ontology/Work-runtime> , <http://dbpedia.org/ontology/Work-producer> , <http://dbpedia.org/ontology/Work-artist> , <http://dbpedia.org/ontology/Work-recordLabel> , <http://dbpedia.org/ontology/Work-precededBy> , <http://dbpedia.org/ontology/Work-recordedIn> , <http://dbpedia.org/ontology/Work-followedBy> .
+
+<http://dbpedia.org/ontology/Work-genre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:genre .
+
+<http://dbpedia.org/ontology/TopicalConcept-stylisticOrigin>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:stylisticOrigin .
+
+<http://dbpedia.org/ontology/Work-precededBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:precededBy .
+
+<http://dbpedia.org/ontology/Work-releaseDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:releaseDate .
+
+<http://dbpedia.org/ontology/TopicalConcept-musicSubgenre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:musicSubgenre .
+
+<http://dbpedia.org/ontology/Organisation-genre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:genre .
+
+<http://dbpedia.org/ontology/TopicalConcept-instrument>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Device> ;
+        sh:path   rel:instrument .
+
+<http://dbpedia.org/ontology/TopicalConcept>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/TopicalConcept-musicFusionGenre> , <http://dbpedia.org/ontology/TopicalConcept-stylisticOrigin> , <http://dbpedia.org/ontology/TopicalConcept-musicSubgenre> , <http://dbpedia.org/ontology/TopicalConcept-instrument> .
+
+<http://dbpedia.org/ontology/Work-writer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:writer .
+
+<http://dbpedia.org/ontology/Work-artist>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:artist .
+
+<http://dbpedia.org/ontology/TopicalConcept-musicFusionGenre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:musicFusionGenre .
+
+<http://dbpedia.org/ontology/Work-recordedIn>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:recordedIn .
+
+<http://dbpedia.org/ontology/Work-recordLabel>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:recordLabel .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-genre> , <http://dbpedia.org/ontology/Organisation-associatedBand> .
+
+<http://dbpedia.org/ontology/Organisation-associatedBand>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:associatedBand .
+
+<http://dbpedia.org/ontology/Work-runtime>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:runtime .
+
+<http://dbpedia.org/ontology/Work-followedBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:followedBy .

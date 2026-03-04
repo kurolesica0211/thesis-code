@@ -1,0 +1,324 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/1_Airport/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/1_Airport#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/1_Airport/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Organisation-jurisdiction>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:jurisdiction .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-runwayName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:runwayName .
+
+<http://dbpedia.org/ontology/Organisation-aircraftHelicopter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:aircraftHelicopter .
+
+<http://dbpedia.org/ontology/Place-leaderParty>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leaderParty .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-operatingOrganisation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:operatingOrganisation .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-4thRunwayLengthFeet>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:4thRunwayLengthFeet .
+
+<http://dbpedia.org/ontology/Place-countySeat>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:countySeat .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-3rdRunwayLengthFeet>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:3rdRunwayLengthFeet .
+
+<http://dbpedia.org/ontology/TopicalConcept>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/TopicalConcept-order> , <http://dbpedia.org/ontology/TopicalConcept-class> , <http://dbpedia.org/ontology/TopicalConcept-division> .
+
+<http://dbpedia.org/ontology/Organisation-headquarter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:headquarter .
+
+<http://dbpedia.org/ontology/Place-officialLanguage>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:officialLanguage .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-runwayLength>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:runwayLength .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthFeet>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:runwayLengthFeet .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/TopicalConcept-order>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:order .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-4thRunwaySurfaceType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:4thRunwaySurfaceType .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-iataLocationIdentifier>
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Code ;
+        sh:path   rel:iataLocationIdentifier .
+
+<http://dbpedia.org/ontology/Organisation-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Organisation-chief>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:chief .
+
+<http://dbpedia.org/ontology/Place-largestCity>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:largestCity .
+
+<http://dbpedia.org/ontology/TopicalConcept-class>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:class .
+
+<http://dbpedia.org/ontology/Place-ceremonialCounty>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:ceremonialCounty .
+
+<http://dbpedia.org/ontology/Organisation-battle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Event> ;
+        sh:path   rel:battle .
+
+<http://dbpedia.org/ontology/Place-demonym>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:demonym .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-runwaySurfaceType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ChemicalSubstance> ;
+        sh:path   rel:runwaySurfaceType .
+
+<http://dbpedia.org/ontology/Place-administrativeArrondissement>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:administrativeArrondissement .
+
+<http://dbpedia.org/ontology/Organisation-attackAircraft>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:attackAircraft .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInFeet>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:elevationAboveTheSeaLevelInFeet .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-locationIdentifier>
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Code ;
+        sh:path   rel:locationIdentifier .
+
+<http://dbpedia.org/ontology/Organisation-hubAirport>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:hubAirport .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthMetre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:runwayLengthMetre .
+
+<http://dbpedia.org/ontology/Organisation-transportAircraft>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:transportAircraft .
+
+<http://dbpedia.org/ontology/Organisation-aircraftFighter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/MeanOfTransportation> ;
+        sh:path   rel:aircraftFighter .
+
+<http://dbpedia.org/ontology/Organisation-serves>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:serves .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwaySurfaceType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:1stRunwaySurfaceType .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-icaoLocationIdentifier>
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Code ;
+        sh:path   rel:icaoLocationIdentifier .
+
+<http://dbpedia.org/ontology/Organisation-city>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:city .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-2ndRunwaySurfaceType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:2ndRunwaySurfaceType .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-nativeName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:nativeName .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/Place-mayor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:mayor .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-5thRunwayNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:5thRunwayNumber .
+
+<http://dbpedia.org/ontology/Place-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-administrativeArrondissement> , <http://dbpedia.org/ontology/Place-isPartOf> , <http://dbpedia.org/ontology/Place-largestCity> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-country> , <http://dbpedia.org/ontology/Place-ceremonialCounty> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-mayor> , <http://dbpedia.org/ontology/Place-demonym> , <http://dbpedia.org/ontology/Place-countySeat> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-leaderParty> , <http://dbpedia.org/ontology/Place-officialLanguage> , <http://dbpedia.org/ontology/Place-currency> .
+
+<http://dbpedia.org/ontology/Organisation-foundingYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:foundingYear .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-serves>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:serves .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthMetre> , <http://dbpedia.org/ontology/ArchitecturalStructure-4thRunwayLengthFeet> , <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwaySurfaceType> , <http://dbpedia.org/ontology/ArchitecturalStructure-iataLocationIdentifier> , <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLength> , <http://dbpedia.org/ontology/ArchitecturalStructure-locationIdentifier> , <http://dbpedia.org/ontology/ArchitecturalStructure-nativeName> , <http://dbpedia.org/ontology/ArchitecturalStructure-3rdRunwayLengthFeet> , <http://dbpedia.org/ontology/ArchitecturalStructure-3rdRunwaySurfaceType> , <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInMetres> , <http://dbpedia.org/ontology/ArchitecturalStructure-serves> , <http://dbpedia.org/ontology/ArchitecturalStructure-runwaySurfaceType> , <http://dbpedia.org/ontology/ArchitecturalStructure-owner> , <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthFeet> , <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayNumber> , <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInFeet> , <http://dbpedia.org/ontology/ArchitecturalStructure-5thRunwayNumber> , <http://dbpedia.org/ontology/ArchitecturalStructure-2ndRunwaySurfaceType> , <http://dbpedia.org/ontology/ArchitecturalStructure-location> , <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthFeet> , <http://dbpedia.org/ontology/ArchitecturalStructure-4thRunwaySurfaceType> , <http://dbpedia.org/ontology/ArchitecturalStructure-icaoLocationIdentifier> , <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthMetre> , <http://dbpedia.org/ontology/ArchitecturalStructure-runwayName> , <http://dbpedia.org/ontology/ArchitecturalStructure-operatingOrganisation> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthFeet>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:1stRunwayLengthFeet .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInMetres>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:elevationAboveTheSeaLevelInMetres .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthMetre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:1stRunwayLengthMetre .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:1stRunwayNumber .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-3rdRunwaySurfaceType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:3rdRunwaySurfaceType .
+
+<http://dbpedia.org/ontology/Place-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-aircraftFighter> , <http://dbpedia.org/ontology/Organisation-hubAirport> , <http://dbpedia.org/ontology/Organisation-headquarter> , <http://dbpedia.org/ontology/Organisation-foundingYear> , <http://dbpedia.org/ontology/Organisation-jurisdiction> , <http://dbpedia.org/ontology/Organisation-serves> , <http://dbpedia.org/ontology/Organisation-city> , <http://dbpedia.org/ontology/Organisation-leader> , <http://dbpedia.org/ontology/Organisation-transportAircraft> , <http://dbpedia.org/ontology/Organisation-chief> , <http://dbpedia.org/ontology/Organisation-attackAircraft> , <http://dbpedia.org/ontology/Organisation-aircraftHelicopter> , <http://dbpedia.org/ontology/Organisation-location> , <http://dbpedia.org/ontology/Organisation-battle> .
+
+<http://dbpedia.org/ontology/TopicalConcept-division>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:division .

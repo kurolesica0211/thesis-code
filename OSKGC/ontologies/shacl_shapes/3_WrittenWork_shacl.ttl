@@ -1,0 +1,249 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/3_WrittenWork#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Work>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Work-releaseDate> , <http://dbpedia.org/ontology/Work-numberOfPages> , <http://dbpedia.org/ontology/Work-issnNumber> , <http://dbpedia.org/ontology/Work-LCCN_number> , <http://dbpedia.org/ontology/Work-genre> , <http://dbpedia.org/ontology/Work-mediaType> , <http://dbpedia.org/ontology/Work-academicDiscipline> , <http://dbpedia.org/ontology/Work-abbreviation> , <http://dbpedia.org/ontology/Work-isbnNumber> , <http://dbpedia.org/ontology/Work-impactFactor> , <http://dbpedia.org/ontology/Work-codenCode> , <http://dbpedia.org/ontology/Work-oclcNumber> , <http://dbpedia.org/ontology/Work-language> , <http://dbpedia.org/ontology/Work-precededBy> , <http://dbpedia.org/ontology/Work-editor> , <http://dbpedia.org/ontology/Work-literaryGenre> , <http://dbpedia.org/ontology/Work-author> , <http://dbpedia.org/ontology/Work-firstPublicationYear> , <http://dbpedia.org/ontology/Work-country> , <http://dbpedia.org/ontology/Work-followedBy> , <http://dbpedia.org/ontology/Work-publisher> .
+
+<http://dbpedia.org/ontology/Person-almaMater>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:almaMater .
+
+<http://dbpedia.org/ontology/Work-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Organisation-headquarter>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:headquarter .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/Work-literaryGenre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:literaryGenre .
+
+<http://dbpedia.org/ontology/Work-mediaType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:mediaType .
+
+<http://dbpedia.org/ontology/Work-numberOfPages>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:numberOfPages .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Work-author>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:author .
+
+<http://dbpedia.org/ontology/Work-editor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:editor .
+
+<http://dbpedia.org/ontology/Organisation-affiliation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:affiliation .
+
+<http://dbpedia.org/ontology/Work-codenCode>
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Code ;
+        sh:path   rel:codenCode .
+
+<http://dbpedia.org/ontology/Person-doctoralAdvisor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:doctoralAdvisor .
+
+<http://dbpedia.org/ontology/Person-birthPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:birthPlace .
+
+<http://dbpedia.org/ontology/Work-firstPublicationYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:firstPublicationYear .
+
+<http://dbpedia.org/ontology/Work-genre>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:genre .
+
+<http://dbpedia.org/ontology/Work-LCCN_number>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:LCCN_number .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-almaMater> , <http://dbpedia.org/ontology/Person-notableWork> , <http://dbpedia.org/ontology/Person-doctoralAdvisor> , <http://dbpedia.org/ontology/Person-birthPlace> , <http://dbpedia.org/ontology/Person-nationality> , <http://dbpedia.org/ontology/Person-residence> , <http://dbpedia.org/ontology/Person-influencedBy> .
+
+<http://dbpedia.org/ontology/Organisation-serves>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:serves .
+
+<http://dbpedia.org/ontology/Work-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Work-precededBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:precededBy .
+
+<http://dbpedia.org/ontology/Person-notableWork>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:notableWork .
+
+<http://dbpedia.org/ontology/Work-followedBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:followedBy .
+
+<http://dbpedia.org/ontology/Work-issnNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:issnNumber .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-language> .
+
+<http://dbpedia.org/ontology/Organisation-president>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:president .
+
+<http://dbpedia.org/ontology/Work-abbreviation>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> ;
+        sh:path   rel:abbreviation .
+
+<http://dbpedia.org/ontology/Work-isbnNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:isbnNumber .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Person-nationality>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:nationality .
+
+<http://dbpedia.org/ontology/Person-influencedBy>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:influencedBy .
+
+<http://dbpedia.org/ontology/Work-releaseDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:releaseDate .
+
+<http://dbpedia.org/ontology/Work-impactFactor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:impactFactor .
+
+<http://dbpedia.org/ontology/Work-publisher>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:publisher .
+
+<http://dbpedia.org/ontology/Organisation-state>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:state .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Person-residence>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:residence .
+
+<http://dbpedia.org/ontology/Organisation-founder>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:founder .
+
+<http://dbpedia.org/ontology/Organisation-parentCompany>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:parentCompany .
+
+<http://dbpedia.org/ontology/Work-academicDiscipline>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> , <http://dbpedia.org/ontology/Species> , <http://dbpedia.org/ontology/Disease> ;
+        sh:path   rel:academicDiscipline .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-country> , <http://dbpedia.org/ontology/Organisation-headquarter> , <http://dbpedia.org/ontology/Organisation-serves> , <http://dbpedia.org/ontology/Organisation-state> , <http://dbpedia.org/ontology/Organisation-president> , <http://dbpedia.org/ontology/Organisation-affiliation> , <http://dbpedia.org/ontology/Organisation-parentCompany> , <http://dbpedia.org/ontology/Organisation-founder> , <http://dbpedia.org/ontology/Organisation-location> .
+
+<http://dbpedia.org/ontology/Work-oclcNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:oclcNumber .
+
+<http://dbpedia.org/ontology/Organisation-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .

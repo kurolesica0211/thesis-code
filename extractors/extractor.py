@@ -105,11 +105,13 @@ class Extractor:
         )
 
     def extract_batch_rdf(self, entries: List[TaskEntry],
-                          rdf_ontology_text: str) -> BatchExtractionResult:
+                          rdf_ontology_text: str,
+                          schema_def=None) -> BatchExtractionResult:
         """Batched extraction using an RDF ontology pasted into the prompt.
-        Uses the static BatchResponse schema (no enum constraints)."""
+        When schema_def is provided, relation and entity-type fields are
+        constrained to the allowed labels via Literal enums."""
         prompt = self.prompt_engine.build_rdf_batch_prompt(entries, rdf_ontology_text)
-        ResponseModel = BatchResponse
+        ResponseModel = build_batch_response(schema_def) if schema_def else BatchResponse
 
         last_err = None
         for attempt in range(1, MAX_RETRIES + 1):
@@ -154,8 +156,10 @@ class Extractor:
         self,
         entries: List[TaskEntry],
         rdf_ontology_text: str,
+        shacl_shapes_ttl: str,
         correction_template_path: str = "prompts/correction_rdf.md",
         max_rounds: int = 1,
+        schema_def=None,
     ) -> BatchExtractionResult:
         """
         RDF extraction with iterative SHACL validation & correction.
@@ -171,11 +175,11 @@ class Extractor:
         )
 
         # Step 1 — initial extraction
-        batch_result = self.extract_batch_rdf(entries, rdf_ontology_text)
+        batch_result = self.extract_batch_rdf(entries, rdf_ontology_text, schema_def=schema_def)
 
         for round_num in range(1, max_rounds + 1):
             # Step 2 — SHACL validation
-            report = validate_batch(batch_result.results, rdf_ontology_text)
+            report = validate_batch(batch_result.results, rdf_ontology_text, shacl_shapes_ttl)
             if report.conforms:
                 print(f"  [SHACL] round {round_num}: all triples conform ✓")
                 break
@@ -198,7 +202,7 @@ class Extractor:
             )
 
             # Step 4 — call LLM with correction prompt
-            ResponseModel = BatchResponse
+            ResponseModel = build_batch_response(schema_def) if schema_def else BatchResponse
             corrected_data = None
             last_err = None
             for attempt in range(1, MAX_RETRIES + 1):

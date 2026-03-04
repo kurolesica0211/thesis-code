@@ -1,0 +1,224 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/1_Company/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/1_Company#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/1_Company/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Organisation-foundationPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:foundationPlace .
+
+<http://dbpedia.org/ontology/Place-leaderParty>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leaderParty .
+
+<http://dbpedia.org/ontology/Organisation-service>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:service .
+
+<http://dbpedia.org/ontology/Organisation-revenue>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:revenue .
+
+<http://dbpedia.org/ontology/Place-governmentType>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:governmentType .
+
+<http://dbpedia.org/ontology/Place-longName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:longName .
+
+<http://dbpedia.org/ontology/Place-officialLanguage>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:officialLanguage .
+
+<http://dbpedia.org/ontology/Organisation-industry>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:industry .
+
+<http://dbpedia.org/ontology/Place-areaTotal>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:areaTotal .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/Place-percentageOfAreaWater>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:percentageOfAreaWater .
+
+<http://dbpedia.org/ontology/Place-areaUrban>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:areaUrban .
+
+<http://dbpedia.org/ontology/Organisation-operatingIncome>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:operatingIncome .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/Person-birthDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:birthDate .
+
+<http://dbpedia.org/ontology/Organisation-numberOfEmployees>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:numberOfEmployees .
+
+<http://dbpedia.org/ontology/Organisation-netIncome>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:netIncome .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Organisation-subsidiary>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:subsidiary .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-birthDate> .
+
+<http://dbpedia.org/ontology/Organisation-serves>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:serves .
+
+<http://dbpedia.org/ontology/Place-foundingDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:foundingDate .
+
+<http://dbpedia.org/ontology/Organisation-product>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Work> , <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:product .
+
+<http://dbpedia.org/ontology/Organisation-city>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:city .
+
+<http://dbpedia.org/ontology/Organisation-foundingDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:foundingDate .
+
+<http://dbpedia.org/ontology/Place-timeZone>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:timeZone .
+
+<http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevelInMetres>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:elevationAboveTheSeaLevelInMetres .
+
+<http://dbpedia.org/ontology/Place-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> , <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/Organisation-keyPerson>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> , <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:keyPerson .
+
+<http://dbpedia.org/ontology/Place-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-isPartOf> , <http://dbpedia.org/ontology/Place-foundingDate> , <http://dbpedia.org/ontology/Place-timeZone> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-governmentType> , <http://dbpedia.org/ontology/Place-longName> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-leaderParty> , <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevelInMetres> , <http://dbpedia.org/ontology/Place-location> , <http://dbpedia.org/ontology/Place-areaTotal> , <http://dbpedia.org/ontology/Place-percentageOfAreaWater> , <http://dbpedia.org/ontology/Place-areaUrban> , <http://dbpedia.org/ontology/Place-officialLanguage> , <http://dbpedia.org/ontology/Place-populationDensity> .
+
+<http://dbpedia.org/ontology/Organisation-type>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:type .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/ArchitecturalStructure-cost> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-cost>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:cost .
+
+<http://dbpedia.org/ontology/Organisation-numberOfLocations>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:numberOfLocations .
+
+<http://dbpedia.org/ontology/Place-populationDensity>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:populationDensity .
+
+<http://dbpedia.org/ontology/Organisation-parentCompany>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:parentCompany .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-foundationPlace> , <http://dbpedia.org/ontology/Organisation-keyPerson> , <http://dbpedia.org/ontology/Organisation-serves> , <http://dbpedia.org/ontology/Organisation-city> , <http://dbpedia.org/ontology/Organisation-product> , <http://dbpedia.org/ontology/Organisation-type> , <http://dbpedia.org/ontology/Organisation-foundingDate> , <http://dbpedia.org/ontology/Organisation-service> , <http://dbpedia.org/ontology/Organisation-netIncome> , <http://dbpedia.org/ontology/Organisation-numberOfLocations> , <http://dbpedia.org/ontology/Organisation-revenue> , <http://dbpedia.org/ontology/Organisation-parentCompany> , <http://dbpedia.org/ontology/Organisation-industry> , <http://dbpedia.org/ontology/Organisation-numberOfEmployees> , <http://dbpedia.org/ontology/Organisation-subsidiary> , <http://dbpedia.org/ontology/Organisation-location> , <http://dbpedia.org/ontology/Organisation-operatingIncome> , <http://dbpedia.org/ontology/Organisation-country> .
+
+<http://dbpedia.org/ontology/Organisation-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .

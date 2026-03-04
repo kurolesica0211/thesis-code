@@ -1,0 +1,153 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/3_Monument/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/3_Monument#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/3_Monument/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/Place-nearestCity>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:nearestCity .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-largestCity> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-hasToItsNorth> , <http://dbpedia.org/ontology/Place-hasToItsSouthwest> , <http://dbpedia.org/ontology/Place-hasToItsSoutheast> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-nearestCity> , <http://dbpedia.org/ontology/Place-location> , <http://dbpedia.org/ontology/Place-hasToItsWest> , <http://dbpedia.org/ontology/Place-religion> , <http://dbpedia.org/ontology/Place-currency> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-state>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:state .
+
+<http://dbpedia.org/ontology/Place-religion>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:religion .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-established>
+        rdf:type     sh:PropertyShape ;
+        sh:class     xsd:gYear ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:established .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-district>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:district .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/ArchitecturalStructure-designer> , <http://dbpedia.org/ontology/ArchitecturalStructure-inaugurationDate> , <http://dbpedia.org/ontology/ArchitecturalStructure-district> , <http://dbpedia.org/ontology/ArchitecturalStructure-nativeName> , <http://dbpedia.org/ontology/ArchitecturalStructure-category> , <http://dbpedia.org/ontology/ArchitecturalStructure-material> , <http://dbpedia.org/ontology/ArchitecturalStructure-dedicatedTo> , <http://dbpedia.org/ontology/ArchitecturalStructure-owner> , <http://dbpedia.org/ontology/ArchitecturalStructure-established> , <http://dbpedia.org/ontology/ArchitecturalStructure-location> , <http://dbpedia.org/ontology/ArchitecturalStructure-state> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-inaugurationDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:inaugurationDate .
+
+<http://dbpedia.org/ontology/Place-hasToItsNorth>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:hasToItsNorth .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Place-hasToItsSoutheast>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:hasToItsSoutheast .
+
+<http://dbpedia.org/ontology/Place-hasToItsWest>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:hasToItsWest .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-material>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ChemicalSubstance> ;
+        sh:path   rel:material .
+
+<http://dbpedia.org/ontology/Place-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-designer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:designer .
+
+<http://dbpedia.org/ontology/Place-largestCity>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:largestCity .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-category>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:category .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-nativeName>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+        sh:path   rel:nativeName .
+
+<http://dbpedia.org/ontology/Place-hasToItsSouthwest>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:hasToItsSouthwest .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-dedicatedTo>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:dedicatedTo .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .

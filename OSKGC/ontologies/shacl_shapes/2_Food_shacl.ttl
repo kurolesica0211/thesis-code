@@ -1,0 +1,158 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/2_Food/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/2_Food#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/2_Food/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-country> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-demonym> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-currency> .
+
+cls:Food-country  rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+cls:Food-protein  rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:protein .
+
+cls:Food-carbohydrate
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:carbohydrate .
+
+cls:Food-creator  rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:creator .
+
+<http://dbpedia.org/ontology/Species>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Species-genus> , <http://dbpedia.org/ontology/Species-class> , <http://dbpedia.org/ontology/Species-order> , <http://dbpedia.org/ontology/Species-division> , <http://dbpedia.org/ontology/Species-family> .
+
+cls:Food-mainIngredient
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Food , <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:mainIngredient .
+
+cls:Food-dishVariation
+        rdf:type  sh:PropertyShape ;
+        sh:class  cls:Food , <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:dishVariation .
+
+cls:Food-related  rdf:type  sh:PropertyShape ;
+        sh:class  cls:Food ;
+        sh:path   rel:related .
+
+cls:Food-region  rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:region .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Place-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+cls:Food-cuisine  rdf:type  sh:PropertyShape ;
+        sh:class  cls:Food ;
+        sh:path   rel:cuisine .
+
+cls:Food-fat  rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:fat .
+
+<http://dbpedia.org/ontology/Species-division>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:division .
+
+cls:Food-course  rdf:type  sh:PropertyShape ;
+        sh:class  cls:Food ;
+        sh:path   rel:course .
+
+<http://dbpedia.org/ontology/Species-genus>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:genus .
+
+cls:Food-ingredient  rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> , <http://dbpedia.org/ontology/ChemicalSubstance> , cls:Food ;
+        sh:path   rel:ingredient .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> , <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/Species-order>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:order .
+
+<http://dbpedia.org/ontology/Organisation-foundationPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:foundationPlace .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-foundationPlace> .
+
+cls:Food  rdf:type            rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           cls:Food-region , cls:Food-ingredient , cls:Food-country , cls:Food-related , cls:Food-protein , cls:Food-dishVariation , cls:Food-creator , cls:Food-year , cls:Food-fat , cls:Food-course , cls:Food-mainIngredient , cls:Food-carbohydrate , cls:Food-cuisine .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+cls:Food-year  rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:year .
+
+<http://dbpedia.org/ontology/Species-class>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Species> ;
+        sh:path   rel:class .
+
+<http://dbpedia.org/ontology/Place-demonym>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:demonym .
+
+<http://dbpedia.org/ontology/Species-family>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:family .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .

@@ -1,0 +1,249 @@
+@prefix cls:           <https://HeraclesWang.github.io/OSKGC/2_Building/class#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/> .
+@prefix dct:           <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix onto:          <https://HeraclesWang.github.io/OSKGC/2_Building#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel:           <https://HeraclesWang.github.io/OSKGC/2_Building/relation#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-height>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:height .
+
+<http://dbpedia.org/ontology/Place-governingBody>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:governingBody .
+
+<http://dbpedia.org/ontology/Organisation-foundationPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:foundationPlace .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-completionDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:completionDate .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-buildingStartDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:buildingStartDate .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-inaugurationDate>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:inaugurationDate .
+
+<http://dbpedia.org/ontology/Person-deathPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:deathPlace .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-completionYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:completionYear .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-floorArea>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:floorArea .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-buildingStartYear>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:buildingStartYear .
+
+<http://dbpedia.org/ontology/Organisation-bedCount>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:bedCount .
+
+<http://dbpedia.org/ontology/Place-capital>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:capital .
+
+<http://dbpedia.org/ontology/Place-leaderTitle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/PersonFunction> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:leaderTitle .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-address>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:address .
+
+<http://dbpedia.org/ontology/Place-demonym>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:demonym .
+
+<http://dbpedia.org/ontology/Place-leader>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:leader .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-numberOfRooms>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:numberOfRooms .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-NationalRegisterOfHistoricPlacesReferenceNumber>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:NationalRegisterOfHistoricPlacesReferenceNumber .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-developer>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:developer .
+
+<http://dbpedia.org/ontology/Person-birthPlace>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:birthPlace .
+
+<http://dbpedia.org/ontology/Person-significantBuilding>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:significantBuilding .
+
+<http://dbpedia.org/ontology/Place-ethnicGroup>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/EthnicGroup> ;
+        sh:path   rel:ethnicGroup .
+
+<http://dbpedia.org/ontology/Person>
+        rdf:type              rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Person-origin> , <http://dbpedia.org/ontology/Person-deathPlace> , <http://dbpedia.org/ontology/Person-birthPlace> , <http://dbpedia.org/ontology/Person-significantBuilding> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-addedToTheNationalRegisterOfHistoricPlaces>
+        rdf:type     sh:PropertyShape ;
+        sh:datatype  xsd:date ;
+        sh:path      rel:addedToTheNationalRegisterOfHistoricPlaces .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-yearOfConstruction>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:gYear ;
+        sh:path   rel:yearOfConstruction .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-architecturalStyle>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/TopicalConcept> ;
+        sh:path   rel:architecturalStyle .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-floorCount>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:floorCount .
+
+<http://dbpedia.org/ontology/Place-currency>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Currency> ;
+        sh:path   rel:currency .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-architect>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> , <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:architect .
+
+<http://dbpedia.org/ontology/Organisation-keyPerson>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:keyPerson .
+
+<http://dbpedia.org/ontology/Place-isPartOf>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:isPartOf .
+
+<http://dbpedia.org/ontology/Place>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Place-ethnicGroup> , <http://dbpedia.org/ontology/Place-isPartOf> , <http://dbpedia.org/ontology/Place-language> , <http://dbpedia.org/ontology/Place-country> , <http://dbpedia.org/ontology/Place-leader> , <http://dbpedia.org/ontology/Place-demonym> , <http://dbpedia.org/ontology/Place-governingBody> , <http://dbpedia.org/ontology/Place-capital> , <http://dbpedia.org/ontology/Place-leaderTitle> , <http://dbpedia.org/ontology/Place-currency> .
+
+<http://dbpedia.org/ontology/Organisation-location>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/ArchitecturalStructure> , <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:location .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/ArchitecturalStructure-addedToTheNationalRegisterOfHistoricPlaces> , <http://dbpedia.org/ontology/ArchitecturalStructure-NationalRegisterOfHistoricPlacesReferenceNumber> , <http://dbpedia.org/ontology/ArchitecturalStructure-country> , <http://dbpedia.org/ontology/ArchitecturalStructure-currentTenants> , <http://dbpedia.org/ontology/ArchitecturalStructure-buildingStartYear> , <http://dbpedia.org/ontology/ArchitecturalStructure-cost> , <http://dbpedia.org/ontology/ArchitecturalStructure-address> , <http://dbpedia.org/ontology/ArchitecturalStructure-floorArea> , <http://dbpedia.org/ontology/ArchitecturalStructure-numberOfRooms> , <http://dbpedia.org/ontology/ArchitecturalStructure-tenant> , <http://dbpedia.org/ontology/ArchitecturalStructure-floorCount> , <http://dbpedia.org/ontology/ArchitecturalStructure-owner> , <http://dbpedia.org/ontology/ArchitecturalStructure-completionDate> , <http://dbpedia.org/ontology/ArchitecturalStructure-developer> , <http://dbpedia.org/ontology/ArchitecturalStructure-height> , <http://dbpedia.org/ontology/ArchitecturalStructure-location> , <http://dbpedia.org/ontology/ArchitecturalStructure-buildingStartDate> , <http://dbpedia.org/ontology/ArchitecturalStructure-completionYear> , <http://dbpedia.org/ontology/ArchitecturalStructure-yearOfConstruction> , <http://dbpedia.org/ontology/ArchitecturalStructure-architecturalStyle> , <http://dbpedia.org/ontology/ArchitecturalStructure-architect> , <http://dbpedia.org/ontology/ArchitecturalStructure-inaugurationDate> .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-currentTenants>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:currentTenants .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-cost>
+        rdf:type  sh:PropertyShape ;
+        sh:class  xsd:decimal ;
+        sh:path   rel:cost .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-owner>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:owner .
+
+<http://dbpedia.org/ontology/Organisation-chancellor>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Person> ;
+        sh:path   rel:chancellor .
+
+<http://dbpedia.org/ontology/ArchitecturalStructure-tenant>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Organisation> ;
+        sh:path   rel:tenant .
+
+<http://dbpedia.org/ontology/Place-language>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Language> ;
+        sh:path   rel:language .
+
+<http://dbpedia.org/ontology/Place-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Organisation>
+        rdf:type              sh:NodeShape , rdfs:Class ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           <http://dbpedia.org/ontology/Organisation-foundationPlace> , <http://dbpedia.org/ontology/Organisation-keyPerson> , <http://dbpedia.org/ontology/Organisation-bedCount> , <http://dbpedia.org/ontology/Organisation-chancellor> , <http://dbpedia.org/ontology/Organisation-location> , <http://dbpedia.org/ontology/Organisation-country> .
+
+<http://dbpedia.org/ontology/Organisation-country>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:country .
+
+<http://dbpedia.org/ontology/Person-origin>
+        rdf:type  sh:PropertyShape ;
+        sh:class  <http://dbpedia.org/ontology/Place> ;
+        sh:path   rel:origin .
