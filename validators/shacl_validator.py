@@ -37,6 +37,20 @@ def _label_of(uri: URIRef) -> str:
     return s.rsplit("#", 1)[-1].rsplit("/", 1)[-1]
 
 
+def _normalise_type(t: str) -> str:
+    """Strip full URIs / XSD prefixes down to a bare label.
+
+    LLMs sometimes return schema types as full URIs
+    (e.g. 'http://dbpedia.org/ontology/Actor') instead of just 'Actor'.
+    """
+    if not t:
+        return t
+    if t.startswith("http"):
+        t = t.rsplit("#", 1)[-1].rsplit("/", 1)[-1]
+    t = t.replace("xsd:", "")
+    return t
+
+
 # ── Data classes ──────────────────────────────────────────────────────────────
 
 @dataclass
@@ -77,6 +91,14 @@ class ShaclShapeGenerator:
         for cls_uri in self.ont.subjects(RDF.type, OWL.Class):
             for label in self.ont.objects(cls_uri, RDFS.label):
                 self._class_uris[str(label)] = URIRef(cls_uri)
+            # Also index by URI local name (fragment / last path segment)
+            # so that types like "فلم" (from http://dbpedia.org/ontology/فلم)
+            # resolve even when the label is "Film".
+            local = _label_of(URIRef(cls_uri))
+            if local not in self._class_uris:
+                self._class_uris[local] = URIRef(cls_uri)
+            # And index by the full URI string itself
+            self._class_uris[str(cls_uri)] = URIRef(cls_uri)
         # Also include subclass hierarchy
         self._subclass_map: Dict[URIRef, set] = {}
         for sub, _, sup in self.ont.triples((None, RDFS.subClassOf, None)):
@@ -196,8 +218,8 @@ def build_data_graph(
             obj_uri = _safe_uri(triple.object)
 
             # Add rdf:type for subject and object from schemas
-            subj_cls = shape_gen.class_uri(schema.subject)
-            obj_cls = shape_gen.class_uri(schema.object)
+            subj_cls = shape_gen.class_uri(_normalise_type(schema.subject))
+            obj_cls = shape_gen.class_uri(_normalise_type(schema.object))
 
             if subj_cls:
                 g.add((subj_uri, RDF.type, subj_cls))
