@@ -1,0 +1,296 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:country ex:entry_10__Brazil ;
+    ns1:league ex:entry_10__Campeonato_Brasileiro_S_rie_C ;
+    ns1:season "2015"^^xsd:gYear .
+
+ex:entry_11__A_F_C_Blackpool a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_11__Stuart_Parker .
+
+ex:entry_12__A_S_Livorno_Calcio a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_12__Livorno_Calcio_S_p_A ;
+    ns1:numberOfMembers 19238.0 .
+
+ex:entry_13__AEK_Athens_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_13__Olympic_Stadium ;
+    ns1:league ex:entry_13__Superleague_Greece ;
+    ns1:numberOfMembers 69618.0 .
+
+ex:entry_14__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:location ex:entry_14__Italy .
+
+ex:entry_15__AEK_Athens_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_15__Superleague_Greece ;
+    ns1:location ex:entry_15__Athens .
+
+ex:entry_16__Associazione_Sportiva_Calcio a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_16__A_S_Livorno_Calcio ;
+    ns1:numberOfMembers 19238.0 .
+
+ex:entry_17__1_FC_K_ln a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_17__Peter_St_ger .
+
+ex:entry_19__1_FC_Magdeburg a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_19__Jens_H_rtel .
+
+ex:entry_1__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_1__Campeonato_Brasileiro_S_rie_C ;
+    ns1:nickname ex:entry_1__Alvinegro ;
+    ns1:numberOfMembers 17000.0 .
+
+ex:entry_2__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_2__Associazione_Sportiva_Gubbio_1910_Srl ;
+    ns1:numberOfMembers 5300.0 ;
+    ns1:season "2014_15_Lega_Pro"^^xsd:gYear .
+
+ex:entry_3__A_D_Isidro_Metap_n a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_3__Isidro_Metap_n ;
+    ns1:location ex:entry_3__Metap_n ;
+    ns1:numberOfMembers 10000.0 .
+
+ex:entry_4__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:location ex:entry_4__Italy .
+
+ex:entry_5__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:nickname ex:entry_5__Alvinegro ;
+    ns1:season "2015_Campeonato_Brasileiro_S_rie_C"^^xsd:gYear .
+
+ex:entry_6__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:nickname ex:entry_6__Alvinegro ;
+    ns1:numberOfMembers 17000.0 ;
+    ns1:season "2015"^^xsd:gYear .
+
+ex:entry_7__AZAL_PFK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_7__AZAL_Arena ;
+    ns1:league ex:entry_7__Azerbaijan_Premier_League .
+
+ex:entry_8__A_E_Dimitra_Efxeinoupolis a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:location ex:entry_8__Greece .
+
+ex:entry_9__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:location ex:entry_9__Italy .
+
+ex:entry_10__Brazil a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_10__Campeonato_Brasileiro_S_rie_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_11__Irlam_Town_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_11__KV_Mechelen a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_11__Stuart_Parker a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_11__Irlam_Town_F_C,
+        ex:entry_11__KV_Mechelen .
+
+ex:entry_12__Livorno_Calcio_S_p_A a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_13__Olympic_Stadium a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> .
+
+ex:entry_13__Superleague_Greece a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_14__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_14__Rome ;
+    ns1:leader ex:entry_14__Pietro_Grasso .
+
+ex:entry_14__Pietro_Grasso a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_14__Rome a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/class#CapitalCity> .
+
+ex:entry_15__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_15__Olympiacos_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_15__Superleague_Greece a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> ;
+    ns1:champions ex:entry_15__Olympiacos_F_C .
+
+ex:entry_16__A_S_Livorno_Calcio a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_17__FC_Admira_Wacker_M_dling a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_17__Peter_St_ger a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_17__FC_Admira_Wacker_M_dling,
+        ex:entry_17__SC_Wiener_Neustadt .
+
+ex:entry_17__SC_Wiener_Neustadt a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_18__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_18__Agremia_o_Sportiva_Arapiraquense ;
+    ns1:league ex:entry_18__Campeonato_Brasileiro_S_rie_C .
+
+ex:entry_18__Campeonato_Brasileiro_S_rie_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> ;
+    ns1:champions ex:entry_18__Vila_Nova_Futebol_Clube .
+
+ex:entry_18__Vila_Nova_Futebol_Clube a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_19__1_FC_Lokomotive_Leipzig a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_19__Berliner_AK_07 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_19__Jens_H_rtel a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_19__1_FC_Lokomotive_Leipzig,
+        ex:entry_19__Berliner_AK_07 .
+
+ex:entry_1__Alvinegro a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_1__Campeonato_Brasileiro_S_rie_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_2__Associazione_Sportiva_Gubbio_1910_Srl a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_3__Isidro_Metap_n a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_3__Metap_n a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_4__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_4__Rome ;
+    ns1:leader ex:entry_4__Sergio_Mattarella .
+
+ex:entry_4__Rome a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_SportsTeam/class#CapitalCity> .
+
+ex:entry_4__Sergio_Mattarella a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_5__Alvinegro a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_6__Alvinegro a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_7__AZAL_Arena a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> .
+
+ex:entry_7__Azerbaijan_Premier_League a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> ;
+    ns1:champions ex:entry_7__Qaraba_FK .
+
+ex:entry_7__Qaraba_FK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_8__Alexis_Tsipras a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_8__Greece a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_8__Alexis_Tsipras,
+        ex:entry_8__Prokopis_Pavlopoulos .
+
+ex:entry_8__Prokopis_Pavlopoulos a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_9__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_9__Pietro_Grasso .
+
+ex:entry_9__Pietro_Grasso a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+

@@ -43,7 +43,7 @@
 
 <http://dbpedia.org/ontology/Person-draftYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:draftYear .
 
 <http://dbpedia.org/ontology/Person-debutTeam>
@@ -88,12 +88,12 @@
 
 <http://dbpedia.org/ontology/Person-height>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:height .
 
 <http://dbpedia.org/ontology/Person-draftPick>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:draftPick .
 
 <http://dbpedia.org/ontology/Place-anthem>
@@ -113,7 +113,7 @@
 
 <http://dbpedia.org/ontology/Person-draftRound>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:draftRound .
 
 <http://dbpedia.org/ontology/Person-birthDate>
@@ -143,7 +143,7 @@
 
 <http://dbpedia.org/ontology/Person-weight>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:weight .
 
 <http://dbpedia.org/ontology/Organisation-city>
@@ -174,7 +174,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Person-birthPlace>

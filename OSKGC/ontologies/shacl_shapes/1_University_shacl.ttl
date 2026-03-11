@@ -21,12 +21,12 @@
 
 <http://dbpedia.org/ontology/Organisation-staff>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:staff .
 
 <http://dbpedia.org/ontology/Organisation-numberOfPostgraduateStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfPostgraduateStudents .
 
 <http://dbpedia.org/ontology/Place-governmentType>
@@ -41,7 +41,7 @@
 
 <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevel>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevel .
 
 <http://dbpedia.org/ontology/Organisation-headquarter>
@@ -81,7 +81,7 @@
 
 <http://dbpedia.org/ontology/Organisation-outlookRanking>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:outlookRanking .
 
 <http://dbpedia.org/ontology/Organisation-director>
@@ -91,7 +91,7 @@
 
 <http://dbpedia.org/ontology/Organisation-established>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:established .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -121,7 +121,7 @@
 
 <http://dbpedia.org/ontology/Organisation-academicStaffSize>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:academicStaffSize .
 
 <http://dbpedia.org/ontology/Organisation-sportsOffered>
@@ -198,7 +198,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfDoctoralStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfDoctoralStudents .
 
 <http://dbpedia.org/ontology/Sport-sportGoverningBody>
@@ -208,7 +208,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfStudents .
 
 <http://dbpedia.org/ontology/Organisation-state>
@@ -234,5 +234,5 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfUndergraduateStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfUndergraduateStudents .

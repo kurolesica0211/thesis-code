@@ -21,7 +21,7 @@
 
 <http://dbpedia.org/ontology/Place-utcOffset>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:utcOffset .
 
 <http://dbpedia.org/ontology/Place-governmentType>
@@ -46,7 +46,7 @@
 
 <http://dbpedia.org/ontology/Place-populationMetroDensity>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationMetroDensity .
 
 <http://dbpedia.org/ontology/Place-officialLanguage>
@@ -56,7 +56,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-region>
@@ -66,7 +66,7 @@
 
 <http://dbpedia.org/ontology/Place-percentageOfAreaWater>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:percentageOfAreaWater .
 
 <http://dbpedia.org/ontology/Person-spouse>
@@ -152,7 +152,7 @@
 
 <http://dbpedia.org/ontology/Place-foundingYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:foundingYear .
 
 <http://dbpedia.org/ontology/Place-isPartOf>
@@ -173,7 +173,7 @@
 
 <http://dbpedia.org/ontology/Place-populationTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationTotal .
 
 <http://dbpedia.org/ontology/Person-nationality>
@@ -193,7 +193,7 @@
 
 <http://dbpedia.org/ontology/Place-areaOfWater>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaOfWater .
 
 <http://dbpedia.org/ontology/Place-language>

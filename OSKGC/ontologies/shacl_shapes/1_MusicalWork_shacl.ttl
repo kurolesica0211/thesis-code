@@ -37,7 +37,7 @@
 
 <http://dbpedia.org/ontology/Place-utcOffset>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:utcOffset .
 
 <http://dbpedia.org/ontology/TopicalConcept-musicFusionGenre>
@@ -73,7 +73,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Work-artist>
@@ -113,7 +113,7 @@
 
 <http://dbpedia.org/ontology/Work-runtime>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runtime .
 
 <http://dbpedia.org/ontology/TopicalConcept-stylisticOrigin>

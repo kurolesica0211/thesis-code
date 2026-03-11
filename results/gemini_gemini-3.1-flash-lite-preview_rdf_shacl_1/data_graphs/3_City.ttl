@@ -1,0 +1,422 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_City/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Austin a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_10__United_States .
+
+ex:entry_11__Arlington a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_11__Tarrant_County .
+
+ex:entry_12__Ann_Arbor a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_12__Washtenaw_County .
+
+ex:entry_13__Ciudad_Ayala a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_13__Morelos ;
+    ns1:leaderTitle ex:entry_13__City_Manager .
+
+ex:entry_13__Cuernavaca a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_13__Morelos .
+
+ex:entry_14__Angola a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_14__Pleasant_Township .
+
+ex:entry_16__Anaheim a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_16__Orange_County .
+
+ex:entry_16__United_States_House_of_Representatives a <http://dbpedia.org/ontology/Legislature>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_16__United_States_Capitol .
+
+ex:entry_17__Antioch a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_17__Contra_Costa_County .
+
+ex:entry_18__Ciudad_Ayala a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:governmentType ex:entry_18__council_manager ;
+    ns1:populationDensity 1604.0 ;
+    ns1:utcOffset -6.0 .
+
+ex:entry_19__Albuquerque a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_19__United_States .
+
+ex:entry_19__New_Mexico_Senate a <http://dbpedia.org/ontology/Legislature>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:leader ex:entry_19__John_S_nchez,
+        ex:entry_19__John_Sanchez .
+
+ex:entry_1__Auburn a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_1__Washington .
+
+ex:entry_1__Washington_DC a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity> ;
+    ns1:capital ex:entry_1__United_States .
+
+ex:entry_20__Ciudad_Ayala a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:timeZone ex:entry_20__Pacific_Daylight_Time,
+        ex:entry_20__Pacific_Standard_Time_Zone,
+        ex:entry_20__UTC_6 .
+
+ex:entry_21__Abilene a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:areaTotal 286.5 ;
+    ns1:elevationAboveTheSeaLevelInMetres 524.0 ;
+    ns1:populationDensity 429.9 .
+
+ex:entry_22__Angola a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_22__Indiana .
+
+ex:entry_22__Indianapolis a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity> ;
+    ns1:capital ex:entry_22__Indiana .
+
+ex:entry_23__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_23__African_Americans .
+
+ex:entry_24__Auburn a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_24__Pierce_County .
+
+ex:entry_24__Washington_DC a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity> ;
+    ns1:capital ex:entry_24__United_States .
+
+ex:entry_2__Anaheim a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_2__California .
+
+ex:entry_2__California_State_Senate a <http://dbpedia.org/ontology/Legislature>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_2__California_State_Capitol .
+
+ex:entry_3__United_States_House_of_Representatives a <http://dbpedia.org/ontology/Legislature>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:isPartOf ex:entry_3__United_States_Congress .
+
+ex:entry_4__Arlington a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_4__Texas .
+
+ex:entry_5__Anderson a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_5__Madison_County .
+
+ex:entry_6__Akron a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_6__United_States .
+
+ex:entry_7__Abilene a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_7__Taylor_County .
+
+ex:entry_7__Washington_DC a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity> ;
+    ns1:capital ex:entry_7__United_States .
+
+ex:entry_8__Austin a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_8__Travis_County,
+        ex:entry_8__Williamson_County .
+
+ex:entry_9__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_9__Native_Americans ;
+    ns1:leader ex:entry_9__Barack_Obama .
+
+ex:entry_10__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_10__President a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician>,
+        <http://dbpedia.org/ontology/President> .
+
+ex:entry_10__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_10__Native_Americans ;
+    ns1:leader ex:entry_10__President .
+
+ex:entry_11__Houston a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_11__Tarrant_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_11__Texas .
+
+ex:entry_11__Texas a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:largestCity ex:entry_11__Houston .
+
+ex:entry_12__Michigan a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:isPartOf ex:entry_12__United_States .
+
+ex:entry_12__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_12__Washtenaw_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_12__Michigan .
+
+ex:entry_13__City_Manager a <http://dbpedia.org/ontology/PersonFunction> .
+
+ex:entry_14__Indiana a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:isPartOf ex:entry_14__United_States .
+
+ex:entry_14__Pleasant_Township a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:isPartOf ex:entry_14__Steuben_County .
+
+ex:entry_14__Steuben_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_14__Indiana .
+
+ex:entry_14__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_15__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_15__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_15__Washington_DC ;
+    ns1:ethnicGroup ex:entry_15__Asian_Americans .
+
+ex:entry_15__Washington_DC a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#CapitalCity> ;
+    ns1:capital ex:entry_15__United_States .
+
+ex:entry_16__Orange_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> .
+
+ex:entry_16__United_States_Capitol a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building> .
+
+ex:entry_17__California a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:language ex:entry_17__Spanish .
+
+ex:entry_17__Contra_Costa_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_17__California .
+
+ex:entry_17__Spanish a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_18__council_manager a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#GovernmentType> .
+
+ex:entry_19__John_S_nchez a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_19__John_Sanchez a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_19__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_1__Washington a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:isPartOf ex:entry_1__United_States .
+
+ex:entry_20__Pacific_Daylight_Time a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#TimeZone> .
+
+ex:entry_20__Pacific_Standard_Time_Zone a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#TimeZone> .
+
+ex:entry_20__UTC_6 a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#TimeZone> .
+
+ex:entry_22__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_23__African_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_24__Pierce_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_24__United_States .
+
+ex:entry_2__California a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> .
+
+ex:entry_2__California_State_Capitol a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building> .
+
+ex:entry_3__United_States_Congress a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_4__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_4__Houston a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_4__Texas a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:language ex:entry_4__English ;
+    ns1:largestCity ex:entry_4__Houston .
+
+ex:entry_5__Indiana a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> .
+
+ex:entry_5__Madison_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_5__Indiana .
+
+ex:entry_6__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_6__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_6__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_6__Asian_Americans ;
+    ns1:language ex:entry_6__English .
+
+ex:entry_7__Taylor_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:isPartOf ex:entry_7__United_States .
+
+ex:entry_8__Round_Rock a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_8__Travis_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> .
+
+ex:entry_8__Williamson_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_City/class#County> ;
+    ns1:largestCity ex:entry_8__Round_Rock .
+
+ex:entry_9__Barack_Obama a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_9__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_13__Morelos a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_1__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_22__Indiana a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:isPartOf ex:entry_22__United_States .
+
+ex:entry_24__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_7__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+

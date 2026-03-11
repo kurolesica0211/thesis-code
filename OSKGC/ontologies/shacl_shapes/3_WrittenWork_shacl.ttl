@@ -57,7 +57,7 @@
 
 <http://dbpedia.org/ontology/Work-numberOfPages>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfPages .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -97,7 +97,7 @@
 
 <http://dbpedia.org/ontology/Work-firstPublicationYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:firstPublicationYear .
 
 <http://dbpedia.org/ontology/Work-genre>
@@ -107,7 +107,7 @@
 
 <http://dbpedia.org/ontology/Work-LCCN_number>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:LCCN_number .
 
 <http://dbpedia.org/ontology/Place-ethnicGroup>
@@ -148,7 +148,7 @@
 
 <http://dbpedia.org/ontology/Work-issnNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:issnNumber .
 
 <http://dbpedia.org/ontology/Place>
@@ -169,7 +169,7 @@
 
 <http://dbpedia.org/ontology/Work-isbnNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:isbnNumber .
 
 <http://dbpedia.org/ontology/Organisation-location>
@@ -194,7 +194,7 @@
 
 <http://dbpedia.org/ontology/Work-impactFactor>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:impactFactor .
 
 <http://dbpedia.org/ontology/Work-publisher>
@@ -240,7 +240,7 @@
 
 <http://dbpedia.org/ontology/Work-oclcNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:oclcNumber .
 
 <http://dbpedia.org/ontology/Organisation-country>

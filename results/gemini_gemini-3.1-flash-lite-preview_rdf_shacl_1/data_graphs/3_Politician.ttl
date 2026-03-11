@@ -1,0 +1,459 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_Politician/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Alfred_N_Phillips a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_10__Connecticut ;
+    ns1:predecessor ex:entry_10__Albert_E_Austin .
+
+ex:entry_11__Abdulsalami_Abubakar a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:militaryBranch ex:entry_11__Nigerian_Air_Force ;
+    ns1:successor ex:entry_11__Olusegun_Obasanjo .
+
+ex:entry_12__Abdul_Rahman_Ya_kub a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_12__Miri ;
+    ns1:inOfficeWhileVicePresident ex:entry_12__Tuanku_Bujang_Tuanku_Othman ;
+    ns1:predecessor ex:entry_12__Abdul_Taib_Mahmud .
+
+ex:entry_13__Abner_W_Sibal a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_13__Ridgewood ;
+    ns1:successor ex:entry_13__Marjorie_Farmer .
+
+ex:entry_14__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_14__Kingdom_of_Sarawak ;
+    ns1:party ex:entry_14__Barisan_Ra_ayat_Jati_Sarawak ;
+    ns1:residence ex:entry_14__Sarawak .
+
+ex:entry_15__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_15__Miri ;
+    ns1:party ex:entry_15__Parti_Pesaka_Bumiputera_Bersatu ;
+    ns1:residence ex:entry_15__Kuching .
+
+ex:entry_16__Adam_Holloway a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:almaMater ex:entry_16__Magdalene_College_Cambridge ;
+    ns1:birthPlace ex:entry_16__Kent ;
+    ns1:party ex:entry_16__Conservative_Party .
+
+ex:entry_17__Alfons_Gorbach a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_17__Imst ;
+    ns1:deathPlace ex:entry_17__Graz .
+
+ex:entry_18__Alvah_Sabin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthDate "1793-10-23"^^xsd:date ;
+    ns1:party ex:entry_18__Whig_Party_of_the_United_States .
+
+ex:entry_19__Alvah_Sabin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:deathPlace ex:entry_19__Sycamore ;
+    ns1:region ex:entry_19__Vermont .
+
+ex:entry_1__Alfons_Gorbach a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_1__Imst ;
+    ns1:deathPlace ex:entry_1__Austria .
+
+ex:entry_20__Agnes_Kant a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:nationality ex:entry_20__Netherlands ;
+    ns1:party ex:entry_20__Socialist_Party .
+
+ex:entry_21__Adam_Koc a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:award ex:entry_21__Cross_of_Valour_for_Poland,
+        ex:entry_21__Virtuti_Militari_Award ;
+    ns1:battle ex:entry_21__Polish_Soviet_War .
+
+ex:entry_22__Albert_B_White a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_22__Cleveland ;
+    ns1:successor ex:entry_22__William_M_O_Dawson .
+
+ex:entry_23__Albert_Jennings_Fountain a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_23__New_York ;
+    ns1:deathPlace ex:entry_23__United_States .
+
+ex:entry_24__Adonis_Georgiadis a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_24__Athens ;
+    ns1:inOfficeWhilePrimeMinister ex:entry_24__Antonis_Samaras .
+
+ex:entry_25__Alberto_Teisaire a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_25__Mendoza ;
+    ns1:inOfficeWhilePresident ex:entry_25__Juan_Per_n ;
+    ns1:party ex:entry_25__Justicialist_Party .
+
+ex:entry_26__Adam_Holloway a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:almaMater ex:entry_26__Magdalene_College_Cambridge ;
+    ns1:birthPlace ex:entry_26__Kent ;
+    ns1:militaryBranch ex:entry_26__Grenadier_Guards .
+
+ex:entry_27__Ab_Klink a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:nationality ex:entry_27__Netherlands .
+
+ex:entry_28__Abel_Caballero a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_28__Spain .
+
+ex:entry_28__Juan_Carlos_I_of_Spain a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Royalty> ;
+    ns1:successor ex:entry_28__Alfonso_XIII_of_Spain .
+
+ex:entry_29__Albert_Jennings_Fountain a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_29__Staten_Island ;
+    ns1:deathPlace ex:entry_29__New_Mexico_Territory .
+
+ex:entry_2__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_2__Miri ;
+    ns1:predecessor ex:entry_2__Abdul_Rahman_Ya_kub ;
+    ns1:residence ex:entry_2__Kuching .
+
+ex:entry_3__Albert_Jennings_Fountain a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_3__American_Civil_War ;
+    ns1:militaryBranch ex:entry_3__1st_Regiment_New_Mexico_Volunteer_Cavalry .
+
+ex:entry_4__Alfred_Moore_Scales a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_4__Battle_of_Chancellorsville .
+
+ex:entry_5__Al_Amin_Daggash a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:successor ex:entry_5__Abdulsalami_Abubakar .
+
+ex:entry_5__Oladipo_Diya a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:predecessor ex:entry_5__Mike_Akhigbe .
+
+ex:entry_6__Abel_Caballero a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_6__Ponteareas ;
+    ns1:profession ex:entry_6__Minister_of_Transport .
+
+ex:entry_7__Adonis_Georgiadis a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_7__Athens ;
+    ns1:party ex:entry_7__Green_New_Democracy_Party .
+
+ex:entry_8__Alberto_Teisaire a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhilePresident ex:entry_8__Juan_Per_n ;
+    ns1:office ex:entry_8__Argentine_Senate .
+
+ex:entry_9__Alberto_Teisaire a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_9__Mendoza ;
+    ns1:successor ex:entry_9__Isaac_Rojas .
+
+ex:entry_10__Albert_E_Austin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_10__Connecticut a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> .
+
+ex:entry_11__Atiku_Abubakar a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_11__Nigerian_Air_Force a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_11__Olusegun_Obasanjo a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhileVicePresident ex:entry_11__Atiku_Abubakar .
+
+ex:entry_12__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_12__Miri a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_12__Tuanku_Bujang_Tuanku_Othman a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_13__Marjorie_Farmer a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_13__Ridgewood a <http://dbpedia.org/ontology/CityDistrict>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_14__Barisan_Ra_ayat_Jati_Sarawak a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_14__Kingdom_of_Sarawak a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <https://HeraclesWang.github.io/OSKGC/3_Politician/class#HistoricalRegion> .
+
+ex:entry_14__Sarawak a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_15__Kuching a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_15__Miri a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_15__Parti_Pesaka_Bumiputera_Bersatu a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_16__Conservative_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_16__Kent a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_16__Magdalene_College_Cambridge a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_17__Graz a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_17__Imst a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Town> .
+
+ex:entry_18__Daniel_Webster a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_18__Whig_Party_of_the_United_States a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> ;
+    ns1:leader ex:entry_18__Daniel_Webster .
+
+ex:entry_19__Burlington a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_19__Sycamore a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_19__Vermont a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:largestCity ex:entry_19__Burlington .
+
+ex:entry_1__Austria a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_1__Doris_Bures .
+
+ex:entry_1__Doris_Bures a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_1__Imst a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Town> .
+
+ex:entry_20__Emile_Roemer a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_20__Netherlands a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_20__Socialist_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> ;
+    ns1:leader ex:entry_20__Emile_Roemer .
+
+ex:entry_21__Cross_of_Valour_for_Poland a <http://dbpedia.org/ontology/Award> .
+
+ex:entry_21__Polish_Soviet_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_21__Virtuti_Militari_Award a <http://dbpedia.org/ontology/Award> .
+
+ex:entry_22__Bloomington a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_22__Cleveland a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_22__William_M_O_Dawson a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_22__Bloomington .
+
+ex:entry_23__African_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_23__New_York a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> .
+
+ex:entry_23__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_23__African_Americans .
+
+ex:entry_24__Antonis_Samaras a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhilePrimeMinister ex:entry_24__Konstantinos_Mitsotakis .
+
+ex:entry_24__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_24__Konstantinos_Mitsotakis a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_25__Juan_Per_n a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_25__Justicialist_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_25__Mendoza a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_26__Grenadier_Guards a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_26__Kent a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_26__Magdalene_College_Cambridge a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_27__Euro a <http://dbpedia.org/ontology/Currency> .
+
+ex:entry_27__Mark_Rutte a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_27__Netherlands a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:currency ex:entry_27__Euro ;
+    ns1:leader ex:entry_27__Mark_Rutte .
+
+ex:entry_28__Alfonso_XIII_of_Spain a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Royalty> .
+
+ex:entry_28__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_29__New_Mexico_Territory a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_29__Staten_Island a <http://dbpedia.org/ontology/CityDistrict>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_2__Abdul_Rahman_Ya_kub a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_2__Kuching a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_2__Miri a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_3__1st_Regiment_New_Mexico_Volunteer_Cavalry a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_3__Abraham_Lincoln a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_3__American_Civil_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:commander ex:entry_3__Abraham_Lincoln .
+
+ex:entry_4__Abraham_Lincoln a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_4__American_Civil_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:commander ex:entry_4__Abraham_Lincoln .
+
+ex:entry_4__Battle_of_Chancellorsville a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:isPartOf ex:entry_4__American_Civil_War .
+
+ex:entry_5__Abdulsalami_Abubakar a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhileVicePresident ex:entry_5__Mike_Akhigbe .
+
+ex:entry_6__Minister_of_Transport a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_6__Ponteareas a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_7__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_7__Green_New_Democracy_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_8__Argentine_Senate a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_8__Juan_Per_n a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:party ex:entry_8__Labour_Party .
+
+ex:entry_8__Labour_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_9__Isaac_Rojas a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_9__Mendoza a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_5__Mike_Akhigbe a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+

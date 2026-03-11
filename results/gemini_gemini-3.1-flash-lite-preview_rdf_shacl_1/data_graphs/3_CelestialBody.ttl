@@ -1,0 +1,94 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_CelestialBody/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__109_Felicitas a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 523329000.0 ;
+    ns1:escapeVelocity 0.0473 ;
+    ns1:temperature 170.0 .
+
+ex:entry_11__10_Hygiea a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:epoch "2015_06_27"^^xsd:date ;
+    ns1:formerName ex:entry_11__A900_GA ;
+    ns1:orbitalPeriod 5.57 .
+
+ex:entry_12__410777_2009_FD a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:discoverer ex:entry_12__Spacewatch ;
+    ns1:epoch "2015_06_27"^^xsd:date ;
+    ns1:periapsis 88234300000.0 .
+
+ex:entry_13__66391_1999_KW4 a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:epoch "2004_07_14"^^xsd:date ;
+    ns1:orbitalPeriod 16244700.0 ;
+    ns1:periapsis 29919600000.0 .
+
+ex:entry_14__1089_Tama a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 373513000.0 ;
+    ns1:escapeVelocity 0.0068 ;
+    ns1:temperature 179.0 .
+
+ex:entry_15__11264_Claudiomaccone a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 475426000.0 ;
+    ns1:averageSpeed 18.29 ;
+    ns1:orbitalPeriod 1513.722 .
+
+ex:entry_1__1097_Vicia a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 511592000.0 ;
+    ns1:epoch "2006_12_31"^^xsd:date ;
+    ns1:periapsis 279142000000.0 .
+
+ex:entry_2__101_Helena a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:discoverer ex:entry_2__James_Craig_Watson .
+
+ex:entry_3__1147_Stavropolis a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 418476000000.0 ;
+    ns1:discovered "1929_06_11"^^xsd:date ;
+    ns1:rotationPeriod 20378.5 .
+
+ex:entry_4__410777_2009_FD a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:discoverer ex:entry_4__Spacewatch ;
+    ns1:orbitalPeriod 39447000.0 ;
+    ns1:periapsis 88234300000.0 .
+
+ex:entry_5__1147_Stavropolis a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 418476000000.0 ;
+    ns1:discovered "1929_06_11"^^xsd:date ;
+    ns1:orbitalPeriod 1249.6 .
+
+ex:entry_6__11264_Claudiomaccone a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 475426000.0 ;
+    ns1:averageSpeed 18.29 ;
+    ns1:discoverer ex:entry_6__Nikolai_Chernykh .
+
+ex:entry_7__1097_Vicia a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 511592000.0 ;
+    ns1:escapeVelocity 0.0112 ;
+    ns1:temperature 171.0 .
+
+ex:entry_8__410777_2009_FD a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:discoverer ex:entry_8__Spacewatch ;
+    ns1:mass 8.3 ;
+    ns1:periapsis 88234300000.0 .
+
+ex:entry_9__103_Hera a <http://dbpedia.org/ontology/Asteroid> ;
+    ns1:apoapsis 437170000.0 ;
+    ns1:escapeVelocity 0.0482 ;
+    ns1:temperature 170.0 .
+
+ex:entry_11__A900_GA a <http://dbpedia.org/ontology/Asteroid> .
+
+ex:entry_12__Spacewatch a <http://dbpedia.org/ontology/Work> .
+
+ex:entry_2__James_Craig_Watson a <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_2__University_of_Michigan .
+
+ex:entry_2__University_of_Michigan a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_4__Spacewatch a <http://dbpedia.org/ontology/Work> .
+
+ex:entry_6__Nikolai_Chernykh a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_8__Spacewatch a <http://dbpedia.org/ontology/Work> .
+

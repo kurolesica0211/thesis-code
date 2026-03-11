@@ -1,0 +1,92 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Company/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Trane a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:country ex:entry_10__Ireland ;
+    ns1:product ex:entry_10__HVAC .
+
+ex:entry_1__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:netIncome 211200000.0 ;
+    ns1:numberOfEmployees 8500.0 .
+
+ex:entry_2__Hypermarcas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:industry ex:entry_2__Pharmaceutical_industry .
+
+ex:entry_3__Hypermarcas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:country ex:entry_3__Brazil ;
+    ns1:product ex:entry_3__Drugs .
+
+ex:entry_4__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:city ex:entry_4__King_of_Prussia ;
+    ns1:serves ex:entry_4__United_States .
+
+ex:entry_5__Hypermarcas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:foundingDate "2001_01_01"^^xsd:date ;
+    ns1:product ex:entry_5__Drugs .
+
+ex:entry_6__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:city ex:entry_6__King_of_Prussia ;
+    ns1:operatingIncome 380700000.0 .
+
+ex:entry_7__Hypermarcas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:numberOfEmployees 10252.0 ;
+    ns1:revenue 1800000000.0 .
+
+ex:entry_8__Trane a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:country ex:entry_8__Ireland ;
+    ns1:foundationPlace ex:entry_8__La_Crosse .
+
+ex:entry_9__Hypermarcas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:numberOfEmployees 10252.0 .
+
+ex:entry_10__HVAC a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_10__Ireland a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_2__Pharmaceutical_industry a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/2_Company/class#Industry> .
+
+ex:entry_3__Brazil a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__Drugs a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_4__King_of_Prussia a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_4__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_5__Drugs a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_6__King_of_Prussia a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_8__Ireland a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_8__La_Crosse a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+

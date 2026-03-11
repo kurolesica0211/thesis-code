@@ -1,0 +1,126 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_Astronaut/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__Elliot_See a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_1__University_of_Texas_at_Austin ;
+    ns1:deathPlace ex:entry_1__St_Louis .
+
+ex:entry_2__Nie_Haisheng a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_2__Zaoyang ;
+    ns1:mission ex:entry_2__Shenzhou_10,
+        ex:entry_2__Shenzhou_6 .
+
+ex:entry_3__Nie_Haisheng a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_3__Zaoyang ;
+    ns1:mission ex:entry_3__Shenzhou_10 .
+
+ex:entry_4__Elliot_See a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_4__Dallas .
+
+ex:entry_5__Elliot_See a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_5__St_Louis .
+
+ex:entry_6__Elliot_See a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthDate "1927-07-23"^^xsd:date ;
+    ns1:birthPlace ex:entry_6__Dallas .
+
+ex:entry_7__William_Anders a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_7__British_Hong_Kong ;
+    ns1:occupation ex:entry_7__Fighter_pilot ;
+    ns1:selectedByNasa "1963"^^xsd:gYear .
+
+ex:entry_8__Alan_Shepard a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_8__California .
+
+ex:entry_1__St_Louis a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_1__University_of_Texas_at_Austin a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_2__Shenzhou_10 a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/SocietalEvent>,
+        <http://dbpedia.org/ontology/SpaceMission> .
+
+ex:entry_2__Shenzhou_6 a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/SocietalEvent>,
+        <http://dbpedia.org/ontology/SpaceMission> .
+
+ex:entry_2__Zaoyang a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_3__Hubei a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__Shenzhou_10 a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/SocietalEvent>,
+        <http://dbpedia.org/ontology/SpaceMission> .
+
+ex:entry_3__Zaoyang a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_3__Hubei .
+
+ex:entry_4__Collin_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_Astronaut/class#County> ;
+    ns1:isPartOf ex:entry_4__Texas .
+
+ex:entry_4__Dallas a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_4__Collin_County .
+
+ex:entry_4__Texas a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_5__Francis_G_Slay a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_5__St_Louis a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leader ex:entry_5__Francis_G_Slay .
+
+ex:entry_6__Dallas a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_7__British_Hong_Kong a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_7__Fighter_pilot a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_8__California a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:senator ex:entry_8__Dianne_Feinstein .
+
+ex:entry_8__Dianne_Feinstein a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician>,
+        <http://dbpedia.org/ontology/Senator> ;
+    ns1:occupation ex:entry_8__Senator .
+
+ex:entry_8__Senator a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/PoliticalFunction> .
+

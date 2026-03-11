@@ -1,0 +1,388 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__A_Fortress_of_Grey_Ice a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_10__United_States ;
+    ns1:language ex:entry_10__English .
+
+ex:entry_11__A_Loyal_Character_Dancer a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_11__Qiu_Xiaolong ;
+    ns1:isbnNumber 1569473013.0 .
+
+ex:entry_12__A_Long_Long_Way a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:followedBy ex:entry_12__The_Secret_Scripture ;
+    ns1:language ex:entry_12__English .
+
+ex:entry_12__Great_Britain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_12__English .
+
+ex:entry_13__Administrative_Science_Quarterly a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:publisher ex:entry_13__Cornell_University .
+
+ex:entry_14__1634_The_Ram_Rebellion a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_14__United_States .
+
+ex:entry_15__A_Loyal_Character_Dancer a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:language ex:entry_15__English ;
+    ns1:publisher ex:entry_15__Soho_Press .
+
+ex:entry_16__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_16__Garth_Nix ;
+    ns1:oclcNumber 45644811.0 .
+
+ex:entry_17__AIP_Advances a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:editor ex:entry_17__A_T_Charlie_Johnson ;
+    ns1:publisher ex:entry_17__American_Institute_of_Physics .
+
+ex:entry_18__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_18__United_States .
+
+ex:entry_19__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_19__United_States .
+
+ex:entry_19__Great_Britain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_19__English .
+
+ex:entry_1__A_Fortress_of_Grey_Ice a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_1__United_States ;
+    ns1:language ex:entry_1__English .
+
+ex:entry_1__Great_Britain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_1__English .
+
+ex:entry_20__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_20__Diane_Duane ;
+    ns1:isbnNumber 9780152047702.0 .
+
+ex:entry_21__A_Severed_Wasp a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_21__United_States .
+
+ex:entry_22__Above_the_Veil a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_22__Garth_Nix ;
+    ns1:isbnNumber 439176859.0 .
+
+ex:entry_23__A_T_Charlie_Johnson a <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_23__Stanford_University ;
+    ns1:nationality ex:entry_23__United_States .
+
+ex:entry_24__AIDS_journal a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:LCCN_number 90640840.0 ;
+    ns1:academicDiscipline ex:entry_24__HIV_AIDS .
+
+ex:entry_25__Above_the_Veil a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_25__Australia ;
+    ns1:language ex:entry_25__English ;
+    ns1:precededBy ex:entry_25__Aenir .
+
+ex:entry_26__A_Severed_Wasp a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:numberOfPages 388.0 ;
+    ns1:oclcNumber 8805735.0 .
+
+ex:entry_27__AIP_Advances a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:abbreviation ex:entry_27__AIP_Adv ;
+    ns1:editor ex:entry_27__A_T_Charlie_Johnson .
+
+ex:entry_2__A_Severed_Wasp a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_2__United_States .
+
+ex:entry_2__Great_Britain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_2__English .
+
+ex:entry_3__A_Fortress_of_Grey_Ice a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_3__United_States .
+
+ex:entry_4__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:country ex:entry_4__Australia ;
+    ns1:followedBy ex:entry_4__Above_the_Veil .
+
+ex:entry_5__Acta_Palaeontologica_Polonica a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:abbreviation ex:entry_5__Acta_Palaeontol_Pol ;
+    ns1:codenCode ex:entry_5__APGPAC .
+
+ex:entry_6__A_Loyal_Character_Dancer a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:publisher ex:entry_6__Soho_Press .
+
+ex:entry_7__American_Journal_of_Mathematics a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:abbreviation ex:entry_7__Am_J_Math ;
+    ns1:publisher ex:entry_7__Johns_Hopkins_University_Press .
+
+ex:entry_8__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:followedBy ex:entry_8__Above_the_Veil ;
+    ns1:language ex:entry_8__English .
+
+ex:entry_9__1634_The_Ram_Rebellion a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_9__Eric_Flint,
+        ex:entry_9__Virginia_DeMarce ;
+    ns1:isbnNumber 1416520600.0 .
+
+ex:entry_10__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_10__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_10__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_10__Native_Americans .
+
+ex:entry_11__Qiu_Xiaolong a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_12__The_Secret_Scripture a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_13__Association_of_Public_and_Land_grant_Universities a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_13__Cornell_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:affiliation ex:entry_13__Association_of_Public_and_Land_grant_Universities ;
+    ns1:location ex:entry_13__Ithaca .
+
+ex:entry_13__Ithaca a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_14__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_14__President a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/PoliticalFunction> .
+
+ex:entry_14__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_14__Native_Americans ;
+    ns1:leaderTitle ex:entry_14__President .
+
+ex:entry_15__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_15__Soho_Press a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> ;
+    ns1:country ex:entry_15__United_States .
+
+ex:entry_15__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_16__Garth_Nix a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_17__A_T_Charlie_Johnson a <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_17__Harvard_University .
+
+ex:entry_17__American_Institute_of_Physics a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> .
+
+ex:entry_17__Harvard_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_18__African_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_18__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_18__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_18__African_Americans ;
+    ns1:language ex:entry_18__English .
+
+ex:entry_19__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_19__English .
+
+ex:entry_1__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_20__Diane_Duane a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_21__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_21__President a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/PoliticalFunction> .
+
+ex:entry_21__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_21__Asian_Americans ;
+    ns1:leaderTitle ex:entry_21__President .
+
+ex:entry_22__Garth_Nix a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_23__Stanford_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_23__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_24__HIV_AIDS a <http://dbpedia.org/ontology/Disease> .
+
+ex:entry_25__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_25__Australia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_25__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_27__AIP_Adv a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_27__A_T_Charlie_Johnson a <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_27__Stanford_University .
+
+ex:entry_27__Stanford_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_2__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_2__English .
+
+ex:entry_3__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_3__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_3__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_3__Asian_Americans ;
+    ns1:language ex:entry_3__English .
+
+ex:entry_4__Above_the_Veil a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:language ex:entry_4__English .
+
+ex:entry_4__Australia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_4__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_5__APGPAC a <https://HeraclesWang.github.io/OSKGC/3_WrittenWork/class#Code> .
+
+ex:entry_5__Acta_Palaeontol_Pol a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_6__Barack_Obama a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_6__Soho_Press a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> ;
+    ns1:country ex:entry_6__United_States .
+
+ex:entry_6__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_6__Barack_Obama .
+
+ex:entry_7__Am_J_Math a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_7__Johns_Hopkins_University_Press a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> ;
+    ns1:country ex:entry_7__United_States .
+
+ex:entry_7__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_8__Above_the_Veil a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_8__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_9__Eric_Flint a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_9__Virginia_DeMarce a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_12__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_19__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_1__English a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_2__English a <http://dbpedia.org/ontology/Language> .
+

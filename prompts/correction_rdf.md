@@ -1,5 +1,5 @@
 # Role: Expert Knowledge Graph Engineer — Correction Round
-You are a specialized KGC engine performing a **correction pass**. Your previous extraction contained SHACL validation errors (domain/range type mismatches) against the ontology.
+You are a specialized KGC engine performing a **correction pass**. Your previous extraction contained SHACL validation errors against the ontology.
 
 # 1. Ontology (RDF/TTL)
 ---

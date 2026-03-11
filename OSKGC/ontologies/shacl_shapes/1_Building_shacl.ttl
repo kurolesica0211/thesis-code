@@ -16,7 +16,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-height>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:height .
 
 <http://dbpedia.org/ontology/Place-governingBody>
@@ -51,7 +51,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-completionYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:completionYear .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-country>
@@ -61,17 +61,17 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-floorArea>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:floorArea .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-buildingStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:buildingStartYear .
 
 <http://dbpedia.org/ontology/Organisation-bedCount>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:bedCount .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -106,7 +106,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-NationalRegisterOfHistoricPlacesReferenceNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:NationalRegisterOfHistoricPlacesReferenceNumber .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-developer>
@@ -147,7 +147,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-yearOfConstruction>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:yearOfConstruction .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-architecturalStyle>
@@ -162,7 +162,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-floorCount>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:floorCount .
 
 <http://dbpedia.org/ontology/Place-currency>
@@ -214,7 +214,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-cost>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:cost .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-owner>

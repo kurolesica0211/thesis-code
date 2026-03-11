@@ -66,11 +66,11 @@ cls:Food  rdf:type            sh:NodeShape , rdfs:Class ;
 
 cls:Food-carbohydrate
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:carbohydrate .
 
 cls:Food-protein  rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:protein .
 
 cls:Food-cuisine  rdf:type  sh:PropertyShape ;
@@ -107,7 +107,7 @@ cls:Food-ingredient  rdf:type  sh:PropertyShape ;
         sh:path   rel:order .
 
 cls:Food-fat  rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:fat .
 
 <http://dbpedia.org/ontology/Place-capital>

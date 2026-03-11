@@ -42,7 +42,7 @@
 
 <http://dbpedia.org/ontology/Place-utcOffset>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:utcOffset .
 
 <http://dbpedia.org/ontology/Person-residence>
@@ -113,7 +113,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-longName>

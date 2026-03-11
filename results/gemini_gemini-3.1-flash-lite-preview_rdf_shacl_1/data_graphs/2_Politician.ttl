@@ -1,0 +1,312 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Politician/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Albert_B_White a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthDate "1856-09-22"^^xsd:date .
+
+ex:entry_11__Allan_Shivers a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_11__Lufkin .
+
+ex:entry_12__Ab_Klink a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_12__Stellendam ;
+    ns1:party ex:entry_12__Christian_Democratic_Appeal .
+
+ex:entry_13__Airey_Neave a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_13__Battle_of_France .
+
+ex:entry_14__Airey_Neave a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_14__Battle_of_France ;
+    ns1:birthPlace ex:entry_14__Knightsbridge .
+
+ex:entry_15__Donald_J_Irwin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:successor ex:entry_15__Abner_W_Sibal .
+
+ex:entry_16__Albert_Jennings_Fountain a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_16__Staten_Island .
+
+ex:entry_17__Alfred_Moore_Scales a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_17__Battle_of_Fredericksburg .
+
+ex:entry_18__Abel_Caballero a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhileMonarch ex:entry_18__Juan_Carlos_I .
+
+ex:entry_19__Ab_Klink a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:almaMater ex:entry_19__Erasmus_University_Rotterdam ;
+    ns1:birthPlace ex:entry_19__Stellendam .
+
+ex:entry_1__Alvah_Sabin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:party ex:entry_1__Whig_Party .
+
+ex:entry_20__Airey_Neave a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_20__World_War_II .
+
+ex:entry_21__Ab_Klink a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_21__Netherlands .
+
+ex:entry_22__Alfred_Moore_Scales a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:residence ex:entry_22__United_States .
+
+ex:entry_23__Agnes_Kant a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:almaMater ex:entry_23__Radboud_University_Nijmegen ;
+    ns1:birthPlace ex:entry_23__Hessisch_Oldendorf .
+
+ex:entry_24__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_24__Kingdom_of_Sarawak ;
+    ns1:predecessor ex:entry_24__Abdul_Rahman_Ya_kub .
+
+ex:entry_25__Abdul_Taib_Mahmud a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_25__Kingdom_of_Sarawak ;
+    ns1:successor ex:entry_25__Adenan_Satem .
+
+ex:entry_26__Agnes_Kant a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:birthPlace ex:entry_26__West_Germany .
+
+ex:entry_27__Allan_Shivers a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:militaryBranch ex:entry_27__United_States_Army .
+
+ex:entry_28__Albert_Jennings_Fountain a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_28__American_Civil_War .
+
+ex:entry_2__Ab_Klink a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:nationality ex:entry_2__Netherlands .
+
+ex:entry_3__Adam_Holloway a <http://dbpedia.org/ontology/MemberOfParliament>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:numberOfVotesAttained 9312.0 .
+
+ex:entry_4__Alvah_Sabin a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:deathPlace ex:entry_4__Sycamore .
+
+ex:entry_5__Airey_Neave a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_5__World_War_II ;
+    ns1:birthPlace ex:entry_5__Knightsbridge .
+
+ex:entry_6__Abdulsalami_Abubakar a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:inOfficeWhileVicePresident ex:entry_6__Mike_Akhigbe ;
+    ns1:militaryBranch ex:entry_6__Nigerian_Army .
+
+ex:entry_7__Airey_Neave a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:battle ex:entry_7__World_War_II .
+
+ex:entry_8__Adam_Holloway a <http://dbpedia.org/ontology/MemberOfParliament>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:battle ex:entry_8__Gulf_War ;
+    ns1:militaryBranch ex:entry_8__Grenadier_Guards .
+
+ex:entry_9__Alberto_Teisaire a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:nationality ex:entry_9__Argentina .
+
+ex:entry_11__Lufkin a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_12__Christian_Democratic_Appeal a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_12__Stellendam a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Village> .
+
+ex:entry_13__Battle_of_France a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:commander ex:entry_13__Gerd_Von_Rundstedt .
+
+ex:entry_13__Gerd_Von_Rundstedt a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_14__Battle_of_France a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_14__Knightsbridge a <http://dbpedia.org/ontology/CityDistrict>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_15__Abner_W_Sibal a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_16__New_York_City a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_16__Staten_Island a <http://dbpedia.org/ontology/CityDistrict>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:location ex:entry_16__New_York_City .
+
+ex:entry_17__American_Civil_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_17__Battle_of_Fredericksburg a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:isPartOf ex:entry_17__American_Civil_War .
+
+ex:entry_18__Juan_Carlos_I a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Royalty> .
+
+ex:entry_19__Erasmus_University_Rotterdam a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_19__Stellendam a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Village> .
+
+ex:entry_1__Daniel_Webster a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_1__Whig_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> ;
+    ns1:leader ex:entry_1__Daniel_Webster .
+
+ex:entry_20__Joseph_Stalin a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_20__World_War_II a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:commander ex:entry_20__Joseph_Stalin .
+
+ex:entry_21__Euro a <http://dbpedia.org/ontology/Currency> .
+
+ex:entry_21__Netherlands a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:currency ex:entry_21__Euro .
+
+ex:entry_22__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_22__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_22__Native_Americans .
+
+ex:entry_23__Hessisch_Oldendorf a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Town> .
+
+ex:entry_23__Radboud_University_Nijmegen a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_24__Abdul_Rahman_Ya_kub a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_24__Kingdom_of_Sarawak a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <https://HeraclesWang.github.io/OSKGC/2_Politician/class#HistoricalRegion> .
+
+ex:entry_25__Adenan_Satem a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_25__Kingdom_of_Sarawak a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <https://HeraclesWang.github.io/OSKGC/2_Politician/class#HistoricalRegion> .
+
+ex:entry_26__West_Germany a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <https://HeraclesWang.github.io/OSKGC/2_Politician/class#HistoricalRegion> .
+
+ex:entry_27__Korean_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_27__United_States_Army a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:battle ex:entry_27__Korean_War .
+
+ex:entry_28__Abraham_Lincoln a <http://dbpedia.org/ontology/MilitaryPerson>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_28__American_Civil_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> ;
+    ns1:commander ex:entry_28__Abraham_Lincoln .
+
+ex:entry_2__Mark_Rutte a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_2__Netherlands a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_2__Mark_Rutte .
+
+ex:entry_4__Sycamore a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_5__Knightsbridge a <http://dbpedia.org/ontology/CityDistrict>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_5__World_War_II a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_6__Mike_Akhigbe a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician>,
+        <http://dbpedia.org/ontology/VicePresident> .
+
+ex:entry_6__Nigerian_Army a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_7__World_War_II a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_8__Grenadier_Guards a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_8__Gulf_War a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_9__Argentina a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:officialLanguage ex:entry_9__Spanish .
+
+ex:entry_9__Spanish a <http://dbpedia.org/ontology/Language> .
+

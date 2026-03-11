@@ -1,0 +1,69 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Astronaut/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__Nie_Haisheng a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthDate "1964-10-13"^^xsd:date ;
+    ns1:birthPlace ex:entry_1__Zaoyang .
+
+ex:entry_2__Alan_Shepard a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_2__New_Hampshire ;
+    ns1:timeInSpace 13017.0 .
+
+ex:entry_3__Nie_Haisheng a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthDate "1964-10-13"^^xsd:date ;
+    ns1:nationality ex:entry_3__People_s_Republic_of_China .
+
+ex:entry_4__Apollo_11 a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/SocietalEvent>,
+        <http://dbpedia.org/ontology/SpaceMission> ;
+    ns1:crewMembers ex:entry_4__Buzz_Aldrin .
+
+ex:entry_5__Buzz_Aldrin a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:nationality ex:entry_5__United_States .
+
+ex:entry_5__Joe_Biden a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> ;
+    ns1:nationality ex:entry_5__United_States .
+
+ex:entry_6__Alan_Shepard a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_6__California .
+
+ex:entry_1__Zaoyang a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_2__New_Hampshire a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__People_s_Republic_of_China a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_4__Buzz_Aldrin a <http://dbpedia.org/ontology/Astronaut>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:almaMater ex:entry_4__Massachusetts_Institute_of_Technology .
+
+ex:entry_4__Massachusetts_Institute_of_Technology a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> .
+
+ex:entry_6__Benitoite a <http://dbpedia.org/ontology/ChemicalSubstance>,
+        <http://dbpedia.org/ontology/Mineral> .
+
+ex:entry_6__California a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:gemstone ex:entry_6__Benitoite .
+
+ex:entry_5__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+

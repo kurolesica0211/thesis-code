@@ -47,12 +47,12 @@
 
 <http://dbpedia.org/ontology/Person-servedAsChiefOfTheAstronautOfficeIn>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:servedAsChiefOfTheAstronautOfficeIn .
 
 <http://dbpedia.org/ontology/Person-selectedByNasa>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:selectedByNasa .
 
 <http://dbpedia.org/ontology/Person-birthDate>
@@ -87,7 +87,7 @@
 
 <http://dbpedia.org/ontology/Person-timeInSpace>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:timeInSpace .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -179,7 +179,7 @@
 
 <http://dbpedia.org/ontology/Person-awards>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:awards .
 
 <http://dbpedia.org/ontology/Award>

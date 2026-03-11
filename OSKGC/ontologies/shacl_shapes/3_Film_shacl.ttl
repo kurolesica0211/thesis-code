@@ -63,7 +63,7 @@
 
 <http://dbpedia.org/ontology/Work-gross>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:gross .
 
 <http://dbpedia.org/ontology/Work-broadcastedBy>
@@ -93,7 +93,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsStartYear .
 
 <http://dbpedia.org/ontology/Person-birthDate>
@@ -108,7 +108,7 @@
 
 <http://dbpedia.org/ontology/Work-budget>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:budget .
 
 <http://dbpedia.org/ontology/Organisation>
@@ -129,7 +129,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Person-birthPlace>
@@ -139,5 +139,5 @@
 
 <http://dbpedia.org/ontology/Work-runtime>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runtime .

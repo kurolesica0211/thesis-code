@@ -32,7 +32,7 @@
 
 <http://dbpedia.org/ontology/Work-gross>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:gross .
 
 <http://dbpedia.org/ontology/Person-deathPlace>
@@ -82,12 +82,12 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Work-runtime>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runtime .
 
 <http://dbpedia.org/ontology/Work-editor>
@@ -97,7 +97,7 @@
 
 <http://dbpedia.org/ontology/Person-deathYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:deathYear .
 
 <http://dbpedia.org/ontology/Person-birthPlace>
@@ -153,7 +153,7 @@
 
 <http://dbpedia.org/ontology/Organisation-foundingYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:foundingYear .
 
 <http://dbpedia.org/ontology/Organisation-location>
@@ -163,7 +163,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsStartYear .
 
 <http://dbpedia.org/ontology/Organisation-owner>

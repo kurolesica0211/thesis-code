@@ -16,12 +16,12 @@
 
 <http://dbpedia.org/ontology/Person-weight>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:weight .
 
 <http://dbpedia.org/ontology/Place-utcOffset>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:utcOffset .
 
 <http://dbpedia.org/ontology/Person-youthclub>
@@ -66,12 +66,12 @@
 
 <http://dbpedia.org/ontology/Person-playerNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:playerNumber .
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Person-position>
@@ -106,7 +106,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Place-demonym>
@@ -167,7 +167,7 @@
 
 <http://dbpedia.org/ontology/Person-draftRound>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:draftRound .
 
 <http://dbpedia.org/ontology/Organisation-city>
@@ -202,7 +202,7 @@
 
 <http://dbpedia.org/ontology/Person-draftYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:draftYear .
 
 <http://dbpedia.org/ontology/Place-isPartOf>
@@ -228,7 +228,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsStartYear .
 
 <http://dbpedia.org/ontology/Organisation-owner>
@@ -238,12 +238,12 @@
 
 <http://dbpedia.org/ontology/Person-draftPick>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:draftPick .
 
 <http://dbpedia.org/ontology/Person-height>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:height .
 
 <http://dbpedia.org/ontology/Place-language>

@@ -1,0 +1,226 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__AIDA_Cruises a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_10__Germany .
+
+ex:entry_11__General_Dynamics_Electric_Boat a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:city ex:entry_11__Groton .
+
+ex:entry_12__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:alternativeName ex:entry_12__Alfa_Romeo_168 .
+
+ex:entry_13__Aston_Martin_V8 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_13__Newport_Pagnell .
+
+ex:entry_14__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:relatedMeanOfTransportation ex:entry_14__Saab_9000 .
+
+ex:entry_15__Plymouth_Plaza a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:manufacturer ex:entry_15__Plymouth .
+
+ex:entry_16__NR_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:topSpeed 8.334 .
+
+ex:entry_17__Audi a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:subsidiary ex:entry_17__Quattro_Gmbh .
+
+ex:entry_18__AMC_Matador a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:relatedMeanOfTransportation ex:entry_18__AMC_Ambassador .
+
+ex:entry_19__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_19__Asian_Americans .
+
+ex:entry_1__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:maidenFlight "2013-04-21"^^xsd:date .
+
+ex:entry_20__Acura_TLX a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:engine ex:entry_20__Honda_K_engine .
+
+ex:entry_21__Alvis_Car_and_Engineering_Company a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:foundationPlace ex:entry_21__Coventry .
+
+ex:entry_22__ALCO_RS_3 a <http://dbpedia.org/ontology/Locomotive>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:engine ex:entry_22__four_stroke_engine .
+
+ex:entry_23__Audi_A1 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_23__Brussels .
+
+ex:entry_24__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:transmission ex:entry_24__ZF_4HP18Q .
+
+ex:entry_25__ALCO_RS_3 a <http://dbpedia.org/ontology/Locomotive>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:totalProduction 1418.0 .
+
+ex:entry_26__Alhambra a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:shipBeam 8.3 .
+
+ex:entry_27__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_27__Italy .
+
+ex:entry_28__NR_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:length 45000.0 .
+
+ex:entry_29__Neptun_Werft a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_29__Rostock .
+
+ex:entry_2__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_2__Washington_D_C .
+
+ex:entry_30__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:finalFlight "2014-07-13"^^xsd:date .
+
+ex:entry_31__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:demonym ex:entry_31__Americans .
+
+ex:entry_32__AgM_88_HARM a <http://dbpedia.org/ontology/Device>,
+        <http://dbpedia.org/ontology/Weapon> ;
+    ns1:manufacturer ex:entry_32__Alliant_Techsystems .
+
+ex:entry_33__SEAT_Ibiza a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:relatedMeanOfTransportation ex:entry_33__Volkswagen_Polo_Mk3 .
+
+ex:entry_3__Pontiac a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:extinctionDate "2010-10-31"^^xsd:date .
+
+ex:entry_4__Rover_Company a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:successor ex:entry_4__Alvis_Car_and_Engineering_Company .
+
+ex:entry_5__Aleksey_Chirikov a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:builder ex:entry_5__Finland .
+
+ex:entry_6__American_Motors a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:keyPerson ex:entry_6__Roy_D_Chapin_Jr .
+
+ex:entry_7__ALCO_RS_3 a <http://dbpedia.org/ontology/Locomotive>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:builder ex:entry_7__Montreal_Locomotive_Works .
+
+ex:entry_8__Audi_A1 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:relatedMeanOfTransportation ex:entry_8__Volkswagen_Polo .
+
+ex:entry_9__AIDAstella a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:shipLaidDown "2008-12-17"^^xsd:date .
+
+ex:entry_10__Germany a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_11__Groton a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_12__Alfa_Romeo_168 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_13__Newport_Pagnell a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_14__Saab_9000 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_15__Plymouth a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_17__Quattro_Gmbh a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_18__AMC_Ambassador a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_19__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_20__Honda_K_engine a <http://dbpedia.org/ontology/Device>,
+        <http://dbpedia.org/ontology/Engine> .
+
+ex:entry_21__Coventry a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_22__four_stroke_engine a <http://dbpedia.org/ontology/Device>,
+        <http://dbpedia.org/ontology/Engine> .
+
+ex:entry_23__Brussels a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_24__ZF_4HP18Q a <http://dbpedia.org/ontology/Device>,
+        <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#Transmission> .
+
+ex:entry_27__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_29__Rostock a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_2__Washington_D_C a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#CapitalCity> .
+
+ex:entry_31__Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_32__Alliant_Techsystems a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_33__Volkswagen_Polo_Mk3 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_4__Alvis_Car_and_Engineering_Company a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_5__Finland a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_6__Roy_D_Chapin_Jr a <http://dbpedia.org/ontology/Person>,
+        <https://HeraclesWang.github.io/OSKGC/1_MeanOfTransportation/class#BusinessPerson> .
+
+ex:entry_7__Montreal_Locomotive_Works a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_8__Volkswagen_Polo a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+

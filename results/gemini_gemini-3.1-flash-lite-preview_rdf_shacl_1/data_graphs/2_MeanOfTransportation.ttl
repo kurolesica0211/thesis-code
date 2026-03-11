@@ -1,0 +1,225 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__ARA_Veinticinco_de_Mayo_V_2 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:countryOrigin ex:entry_10__Argentina .
+
+ex:entry_11__Alhambra a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:shipBeam 8.3 ;
+    ns1:status ex:entry_11__Wrecked .
+
+ex:entry_12__Acura_TLX a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_12__Marysville ;
+    ns1:engine ex:entry_12__Inline_four_engine .
+
+ex:entry_13__Aston_Martin_V8 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_13__United_Kingdom ;
+    ns1:relatedMeanOfTransportation ex:entry_13__Aston_Martin_DBS .
+
+ex:entry_14__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:class ex:entry_14__Automobile .
+
+ex:entry_14__Lancia_Thema a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:class ex:entry_14__Automobile .
+
+ex:entry_14__Saab_9000 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:class ex:entry_14__Automobile .
+
+ex:entry_15__ALCO_RS_3 a <http://dbpedia.org/ontology/Locomotive>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:builder ex:entry_15__American_Locomotive_Company ;
+    ns1:transmission ex:entry_15__Diesel_electric_transmission .
+
+ex:entry_16__Aston_Martin_V8 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_16__Newport_Pagnell ;
+    ns1:relatedMeanOfTransportation ex:entry_16__Aston_Martin_RHAM_1 .
+
+ex:entry_17__AMC_Matador a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_17__Port_Melbourne ;
+    ns1:productionStartYear "1974"^^xsd:gYear .
+
+ex:entry_18__Alfa_Romeo_164 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_18__Arese ;
+    ns1:relatedMeanOfTransportation ex:entry_18__Fiat_Croma .
+
+ex:entry_19__AMC_Matador a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_19__Mexico_City ;
+    ns1:modelYears "1971"^^xsd:gYear .
+
+ex:entry_1__Alhambra a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:length 63800.0 ;
+    ns1:maidenVoyage "1855-07-07"^^xsd:date .
+
+ex:entry_20__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:launchSite ex:entry_20__Mid_Atlantic_Regional_Spaceport ;
+    ns1:maidenFlight "2014-01-09"^^xsd:date .
+
+ex:entry_21__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:comparable ex:entry_21__Delta_II ;
+    ns1:launchSite ex:entry_21__Mid_Atlantic_Regional_Spaceport_Launch_Pad_0 .
+
+ex:entry_22__Acura_TLX a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> ;
+    ns1:assembly ex:entry_22__Marysville ;
+    ns1:engine ex:entry_22__V6_engine .
+
+ex:entry_23__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:comparable ex:entry_23__Delta_II ;
+    ns1:launchSite ex:entry_23__Mid_Atlantic_Regional_Spaceport .
+
+ex:entry_24__ALV_X_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:countryOrigin ex:entry_24__United_States .
+
+ex:entry_2__AIDAstella a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:length 253260.0 ;
+    ns1:shipInService "2013-03-17"^^xsd:date .
+
+ex:entry_3__Antares a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:launchSite ex:entry_3__Mid_Atlantic_Regional_Spaceport_Launch_Pad_0 ;
+    ns1:maidenFlight "2014-01-09"^^xsd:date .
+
+ex:entry_5__ALV_X_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:diameter 1.524 ;
+    ns1:launchSite ex:entry_5__Mid_Atlantic_Regional_Spaceport .
+
+ex:entry_6__ALV_X_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:countryOrigin ex:entry_6__United_States .
+
+ex:entry_7__Atlas_II a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:launchSite ex:entry_7__Vandenberg_Air_Force_Base ;
+    ns1:manufacturer ex:entry_7__Lockheed_Martin .
+
+ex:entry_8__ALV_X_1 a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> ;
+    ns1:diameter 1.524 ;
+    ns1:failedLaunches 1.0 .
+
+ex:entry_9__AIDAstella a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Ship> ;
+    ns1:length 253260.0 ;
+    ns1:shipClass ex:entry_9__Sphinx_class .
+
+ex:entry_10__Argentina a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_10__Mauricio_Macri .
+
+ex:entry_10__Mauricio_Macri a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_11__Wrecked a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Status> .
+
+ex:entry_12__Inline_four_engine a <http://dbpedia.org/ontology/Device>,
+        <http://dbpedia.org/ontology/Engine> .
+
+ex:entry_12__Marysville a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_13__Aston_Martin_DBS a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_13__United_Kingdom a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_15__American_Locomotive_Company a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_15__Diesel_electric_transmission a <http://dbpedia.org/ontology/Device>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Transmission> .
+
+ex:entry_16__Aston_Martin_RHAM_1 a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_16__Newport_Pagnell a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_17__Port_Melbourne a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_18__Arese a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_18__Fiat_Croma a <http://dbpedia.org/ontology/Automobile>,
+        <http://dbpedia.org/ontology/MeanOfTransportation> .
+
+ex:entry_19__Mexico_City a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_20__Mid_Atlantic_Regional_Spaceport a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#LaunchBase> .
+
+ex:entry_21__Delta_II a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> .
+
+ex:entry_21__Mid_Atlantic_Regional_Spaceport_Launch_Pad_0 a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/LaunchPad> .
+
+ex:entry_22__Marysville a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_22__V6_engine a <http://dbpedia.org/ontology/Device>,
+        <http://dbpedia.org/ontology/Engine> .
+
+ex:entry_23__Delta_II a <http://dbpedia.org/ontology/MeanOfTransportation>,
+        <http://dbpedia.org/ontology/Rocket> .
+
+ex:entry_23__Mid_Atlantic_Regional_Spaceport a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#LaunchBase> .
+
+ex:entry_24__Native_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_24__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_24__Native_Americans .
+
+ex:entry_3__Mid_Atlantic_Regional_Spaceport_Launch_Pad_0 a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/LaunchPad> .
+
+ex:entry_4__Audi a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:subsidiary ex:entry_4__Lamborghini .
+
+ex:entry_4__Lamborghini a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:subsidiary ex:entry_4__Audi .
+
+ex:entry_5__Mid_Atlantic_Regional_Spaceport a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#LaunchBase> .
+
+ex:entry_6__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_6__White_Americans .
+
+ex:entry_6__White_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_7__Lockheed_Martin a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#Manufacturer> .
+
+ex:entry_7__Vandenberg_Air_Force_Base a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#LaunchBase> .
+
+ex:entry_9__Sphinx_class a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/2_MeanOfTransportation/class#ShipClass> .
+
+ex:entry_14__Automobile a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type> .
+

@@ -1,0 +1,233 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Airport/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Allama_Iqbal_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_10__Pakistan .
+
+ex:entry_11__Alderney_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:1stRunwaySurfaceType ex:entry_11__Asphalt ;
+    ns1:serves ex:entry_11__Alderney .
+
+ex:entry_12__Amsterdam_Airport_Schiphol a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:elevationAboveTheSeaLevelInMetres -3.3528 ;
+    ns1:location ex:entry_12__Haarlemmermeer .
+
+ex:entry_13__Adolfo_Su_rez_Madrid_Barajas_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_13__Madrid .
+
+ex:entry_14__United_States_Air_Force a <http://dbpedia.org/ontology/Organisation> ;
+    ns1:battle ex:entry_14__United_States_bombing_of_Libya,
+        ex:entry_14__United_States_bombing_of_Libya_in_1986 .
+
+ex:entry_15__Angola_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 4000.0 ;
+    ns1:serves ex:entry_15__Luanda .
+
+ex:entry_16__Bedford_Aerodrome a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:icaoLocationIdentifier ex:entry_16__EGBF ;
+    ns1:runwayName ex:entry_16__08_26 .
+
+ex:entry_17__Ashgabat_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_17__Ashgabat ;
+    ns1:runwayLengthMetre 2989.0 .
+
+ex:entry_18__Atlantic_City_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:operatingOrganisation ex:entry_18__Port_Authority_of_New_York_and_New_Jersey ;
+    ns1:runwayLength 1873.0 .
+
+ex:entry_19__Al_Taqaddum_Air_Base a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:serves ex:entry_19__Fallujah .
+
+ex:entry_1__Ardmore_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwaySurfaceType ex:entry_1__Poaceae .
+
+ex:entry_20__Adolfo_Su_rez_Madrid_Barajas_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_20__Paracuellos_de_Jarama ;
+    ns1:runwayLength 4349.0 .
+
+ex:entry_21__Adolfo_Su_rez_Madrid_Barajas_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_21__San_Sebasti_n_de_los_Reyes .
+
+ex:entry_23__Appleton_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:1stRunwayLengthFeet 8002.0 ;
+    ns1:elevationAboveTheSeaLevelInMetres 280.0 .
+
+ex:entry_24__Alderney_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 497.0 ;
+    ns1:runwaySurfaceType ex:entry_24__Poaceae .
+
+ex:entry_2__Appleton_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:elevationAboveTheSeaLevelInMetres 280.0 ;
+    ns1:locationIdentifier ex:entry_2__ATW .
+
+ex:entry_3__Andrews_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#County> ;
+    ns1:countySeat ex:entry_3__Andrews .
+
+ex:entry_4__United_States_Air_Force a <http://dbpedia.org/ontology/Organisation> ;
+    ns1:battle ex:entry_4__United_States_invasion_of_Panama .
+
+ex:entry_5__Andrews_County_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:elevationAboveTheSeaLevelInMetres 973.0 ;
+    ns1:location ex:entry_5__Texas .
+
+ex:entry_6__Agra_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:icaoLocationIdentifier ex:entry_6__VIAG ;
+    ns1:location ex:entry_6__Agra .
+
+ex:entry_7__Poaceae a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#RunwaySurfaceType> ;
+    ns1:order ex:entry_7__Commelinids,
+        ex:entry_7__Poales .
+
+ex:entry_8__Athens_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:serves ex:entry_8__Athens .
+
+ex:entry_9__Bedford_Aerodrome a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_9__Thurleigh ;
+    ns1:runwayLength 1095.0 .
+
+ex:entry_10__Nawaz_Sharif a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_10__Pakistan a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_10__Nawaz_Sharif .
+
+ex:entry_11__Alderney a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_11__Asphalt a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#RunwaySurfaceType> .
+
+ex:entry_12__Haarlemmermeer a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_13__Madrid a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_13__Spain .
+
+ex:entry_13__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_14__United_States_bombing_of_Libya a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_14__United_States_bombing_of_Libya_in_1986 a <http://dbpedia.org/ontology/Event> .
+
+ex:entry_15__Luanda a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_16__08_26 a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Runway> .
+
+ex:entry_16__EGBF a <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Code> .
+
+ex:entry_17__Ashgabat a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_18__Port_Authority_of_New_York_and_New_Jersey a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_19__Fallujah a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_19__Iraq .
+
+ex:entry_19__Iraq a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_1__Poaceae a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#RunwaySurfaceType> ;
+    ns1:order ex:entry_1__Poales .
+
+ex:entry_1__Poales a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Order>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#PlantType> .
+
+ex:entry_20__Paracuellos_de_Jarama a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_21__San_Sebasti_n_de_los_Reyes a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_21__Spain .
+
+ex:entry_21__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_22__13_31 a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Runway> ;
+    ns1:runwayName ex:entry_22__Atlantic_City_International_Airport .
+
+ex:entry_22__Atlantic_City_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayName ex:entry_22__13_31 .
+
+ex:entry_24__Poaceae a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_2__ATW a <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Code> .
+
+ex:entry_3__Andrews a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_4__United_States_invasion_of_Panama a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_5__Texas a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_6__Agra a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_6__VIAG a <https://HeraclesWang.github.io/OSKGC/2_Airport/class#Code> .
+
+ex:entry_7__Commelinids a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_7__Poales a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_8__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:mayor ex:entry_8__Giorgos_Kaminis .
+
+ex:entry_8__Giorgos_Kaminis a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_9__Thurleigh a <http://dbpedia.org/ontology/Place> .
+

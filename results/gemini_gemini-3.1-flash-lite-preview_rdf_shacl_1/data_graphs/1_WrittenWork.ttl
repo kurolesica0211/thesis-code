@@ -1,0 +1,188 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universit_t_Hamburg a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:issnNumber 18658784.0 .
+
+ex:entry_11__ACM_Transactions_on_Information_Systems a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:abbreviation ex:entry_11__ACM_Trans_Inf_Syst .
+
+ex:entry_12__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:precededBy ex:entry_12__Castle .
+
+ex:entry_13__Acta_Palaeontologica_Polonica a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:publisher ex:entry_13__Polish_Academy_of_Sciences .
+
+ex:entry_14__SAGE_publications a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> ;
+    ns1:founder ex:entry_14__Sara_Miller_McCune .
+
+ex:entry_15__1634_The_Bavarian_Crisis a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:precededBy ex:entry_15__Grantville_Gazette_III .
+
+ex:entry_16__A_Long_Long_Way a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:mediaType ex:entry_16__Hardcover .
+
+ex:entry_17__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:oclcNumber 45644811.0 .
+
+ex:entry_18__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:oclcNumber 318875313.0 .
+
+ex:entry_19__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:mediaType ex:entry_19__Hardcover .
+
+ex:entry_1__A_Glastonbury_Romance a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:followedBy ex:entry_1__Weymouth_Sands .
+
+ex:entry_20__A_T_Charlie_Johnson a <http://dbpedia.org/ontology/Person> ;
+    ns1:doctoralAdvisor ex:entry_20__Michael_Tinkham .
+
+ex:entry_21__Abhandlungen_aus_dem_Mathematischen_Seminar_der_Universit_t_Hamburg a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:abbreviation ex:entry_21__Abh_Math_Semin_Univ_Hambg .
+
+ex:entry_22__Castle a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:followedBy ex:entry_22__Aenir .
+
+ex:entry_23__Wizards_at_War a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:publisher ex:entry_23__Harcourt .
+
+ex:entry_24__The_Two_Towers a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:author ex:entry_24__J_R_R_Tolkien .
+
+ex:entry_25__Eric_Flint a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> ;
+    ns1:influencedBy ex:entry_25__Robert_A_Heinlein .
+
+ex:entry_2__British_people a <http://dbpedia.org/ontology/EthnicGroup> ;
+    ns1:residence ex:entry_2__United_Kingdom .
+
+ex:entry_3__1634_The_Ram_Rebellion a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:mediaType ex:entry_3__E_book .
+
+ex:entry_4__A_Fortress_of_Grey_Ice a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:oclcNumber 51969173.0 .
+
+ex:entry_5__A_Wizard_of_Mars a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:numberOfPages 560.0 .
+
+ex:entry_6__Cornell_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:affiliation ex:entry_6__Association_of_Public_and_Land_grant_Universities .
+
+ex:entry_7__Cornell_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:president ex:entry_7__Elizabeth_Garrett .
+
+ex:entry_8__A_Loyal_Character_Dancer a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:mediaType ex:entry_8__Print .
+
+ex:entry_9__1634_The_Ram_Rebellion a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> ;
+    ns1:numberOfPages 512.0 .
+
+ex:entry_11__ACM_Trans_Inf_Syst a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_12__Castle a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_13__Polish_Academy_of_Sciences a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_14__Sara_Miller_McCune a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_15__Grantville_Gazette_III a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_16__Hardcover a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+ex:entry_19__Hardcover a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+ex:entry_1__Weymouth_Sands a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_20__Michael_Tinkham a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_21__Abh_Math_Semin_Univ_Hambg a <http://dbpedia.org/ontology/AcademicJournal>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_22__Aenir a <http://dbpedia.org/ontology/Book>,
+        <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/WrittenWork> .
+
+ex:entry_23__Harcourt a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/Publisher> .
+
+ex:entry_24__J_R_R_Tolkien a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_25__Robert_A_Heinlein a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Writer> .
+
+ex:entry_2__United_Kingdom a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__E_book a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+
+ex:entry_6__Association_of_Public_and_Land_grant_Universities a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_7__Elizabeth_Garrett a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_8__Print a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/1_WrittenWork/class#MediaType> .
+

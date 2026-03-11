@@ -42,12 +42,12 @@
 
 <http://dbpedia.org/ontology/Place-utcOffset>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:utcOffset .
 
 <http://dbpedia.org/ontology/Place-populationDensity>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationDensity .
 
 <http://dbpedia.org/ontology/Organisation-chairman>
@@ -77,22 +77,22 @@
 
 <http://dbpedia.org/ontology/Place-areaOfWater>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaOfWater .
 
 <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevelInMetres>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevelInMetres .
 
 <http://dbpedia.org/ontology/Place-populationMetro>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationMetro .
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-largestCity>
@@ -107,7 +107,7 @@
 
 <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevel>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevel .
 
 <http://dbpedia.org/ontology/Place-isPartOf>
@@ -143,12 +143,12 @@
 
 <http://dbpedia.org/ontology/Place-areaOfLand>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaOfLand .
 
 <http://dbpedia.org/ontology/Place-populationTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationTotal .
 
 <http://dbpedia.org/ontology/Place-timeZone>

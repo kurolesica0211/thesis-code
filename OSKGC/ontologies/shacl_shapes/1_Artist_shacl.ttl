@@ -46,7 +46,7 @@
 
 <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevel>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevel .
 
 <http://dbpedia.org/ontology/TopicalConcept>
@@ -82,7 +82,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -112,7 +112,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Place-demonym>
@@ -132,7 +132,7 @@
 
 <http://dbpedia.org/ontology/Person-deathYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:deathYear .
 
 <http://dbpedia.org/ontology/Person-alternativeName>
@@ -209,7 +209,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsStartYear .
 
 <http://dbpedia.org/ontology/Organisation-genre>
@@ -224,7 +224,7 @@
 
 <http://dbpedia.org/ontology/Place-populationDensity>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationDensity .
 
 <http://dbpedia.org/ontology/Person-profession>
@@ -260,7 +260,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsEndYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsEndYear .
 
 <http://dbpedia.org/ontology/Person-origin>

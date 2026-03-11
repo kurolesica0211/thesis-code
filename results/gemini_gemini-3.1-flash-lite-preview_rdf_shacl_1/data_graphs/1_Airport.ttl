@@ -1,0 +1,239 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_Airport/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Afonso_Pena_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:operatingOrganisation ex:entry_10__Infraero .
+
+ex:entry_11__Alcobendas a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_11__Community_of_Madrid .
+
+ex:entry_12__Infraero a <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_12__Brazil .
+
+ex:entry_13__Belgium a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:officialLanguage ex:entry_13__French .
+
+ex:entry_14__Poaceae a <http://dbpedia.org/ontology/Plant>,
+        <http://dbpedia.org/ontology/Species> ;
+    ns1:order ex:entry_14__Commelinids .
+
+ex:entry_15__Saranac_Lake a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_15__Essex_County .
+
+ex:entry_16__Amsterdam_Airport_Schiphol a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:elevationAboveTheSeaLevelInMetres -3.3528 .
+
+ex:entry_17__Adolfo_Su_rez_Madrid_Barajas_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_17__Madrid .
+
+ex:entry_18__Angola_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 3800.0 .
+
+ex:entry_19__Curitiba a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_19__Brazil .
+
+ex:entry_1__Maple_Ridge_Township a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_1__United_States .
+
+ex:entry_20__Ardmore_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:2ndRunwaySurfaceType ex:entry_20__Poaceae .
+
+ex:entry_21__MotorSport_Vision a <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_21__Fawkham .
+
+ex:entry_22__Amsterdam_Airport_Schiphol a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayName ex:entry_22__04_22_Oostbaan .
+
+ex:entry_23__Ardmore_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 1411.0 .
+
+ex:entry_24__Angola_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLengthFeet 4000.0 .
+
+ex:entry_25__United_States_Air_Force a <http://dbpedia.org/ontology/MilitaryUnit>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:battle ex:entry_25__Invasion_of_Grenada .
+
+ex:entry_26__Iraq a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_26__Kurdish_languages .
+
+ex:entry_27__Turkmenistan_Airlines a <http://dbpedia.org/ontology/Airline>,
+        <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:hubAirport ex:entry_27__Turkmenbashi_International_Airport .
+
+ex:entry_28__Bedford_Aerodrome a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:icaoLocationIdentifier ex:entry_28__EGBF .
+
+ex:entry_29__Texas a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> ;
+    ns1:demonym ex:entry_29__Tejano .
+
+ex:entry_2__Belgium a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_2__Philippe_of_Belgium .
+
+ex:entry_30__Allama_Iqbal_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_30__Pakistan .
+
+ex:entry_31__Adolfo_Su_rez_Madrid_Barajas_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:operatingOrganisation ex:entry_31__ENAIRE .
+
+ex:entry_32__Athens_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 3800.0 .
+
+ex:entry_33__Ashgabat_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:3rdRunwayLengthFeet 2953.0 .
+
+ex:entry_34__Bedford_Aerodrome a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayName ex:entry_34__08_26 .
+
+ex:entry_35__Alpena_County_Regional_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 2744.0 .
+
+ex:entry_3__Amsterdam_Airport_Schiphol a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:location ex:entry_3__Haarlemmermeer .
+
+ex:entry_4__Appleton a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_4__Grand_Chute .
+
+ex:entry_5__Atlantic_City_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:serves ex:entry_5__Atlantic_City .
+
+ex:entry_6__Al_Asad_Airbase a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:runwayLength 3990.0 .
+
+ex:entry_7__San_Sebasti_n_de_los_Reyes a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leaderParty ex:entry_7__People_Party .
+
+ex:entry_8__Antwerp a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:mayor ex:entry_8__Bart_De_Wever .
+
+ex:entry_9__Atlantic_City_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> ;
+    ns1:icaoLocationIdentifier ex:entry_9__KACY .
+
+ex:entry_10__Infraero a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_11__Community_of_Madrid a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_12__Brazil a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_13__French a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_14__Commelinids a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Order>,
+        <https://HeraclesWang.github.io/OSKGC/1_Airport/class#PlantType> .
+
+ex:entry_15__Essex_County a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/1_Airport/class#County> .
+
+ex:entry_17__Madrid a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_19__Brazil a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_1__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_20__Poaceae a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_21__Fawkham a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_22__04_22_Oostbaan a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Runway> .
+
+ex:entry_25__Invasion_of_Grenada a <http://dbpedia.org/ontology/Event>,
+        <http://dbpedia.org/ontology/MilitaryConflict>,
+        <http://dbpedia.org/ontology/SocietalEvent> .
+
+ex:entry_26__Kurdish_languages a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_27__Turkmenbashi_International_Airport a <http://dbpedia.org/ontology/Airport>,
+        <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+ex:entry_28__EGBF a <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Code> .
+
+ex:entry_29__Tejano a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_2__Philippe_of_Belgium a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_30__Pakistan a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_31__ENAIRE a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_34__08_26 a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Runway> .
+
+ex:entry_3__Haarlemmermeer a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_4__Grand_Chute a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_5__Atlantic_City a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_7__People_Party a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_8__Bart_De_Wever a <http://dbpedia.org/ontology/Mayor>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_9__KACY a <https://HeraclesWang.github.io/OSKGC/1_Airport/class#Code> .
+

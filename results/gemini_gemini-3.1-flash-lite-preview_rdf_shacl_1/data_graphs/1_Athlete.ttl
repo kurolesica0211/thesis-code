@@ -1,0 +1,260 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_Athlete/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Abner a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_10__Real_Madrid_Castilla .
+
+ex:entry_11__Aaron_Boogaard a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_11__Saskatchewan .
+
+ex:entry_12__St_Louis a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_12__Kingdom_of_France .
+
+ex:entry_13__AC_Milan a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:chairman ex:entry_13__Silvio_Berlusconi .
+
+ex:entry_14__Alex_Tyus a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/BasketballPlayer>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:draftYear "2011"^^xsd:gYear .
+
+ex:entry_15__Canada a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_15__Black_Canadians .
+
+ex:entry_16__Aleksander_Barkov_Jr a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthYear "1995"^^xsd:gYear .
+
+ex:entry_17__Florida_Panthers a <http://dbpedia.org/ontology/HockeyTeam>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam> ;
+    ns1:generalManager ex:entry_17__Dale_Tallon .
+
+ex:entry_18__Budapest a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_18__Hungary .
+
+ex:entry_19__United_Petrotrin_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_19__Palo_Seco_Velodrome .
+
+ex:entry_1__Brandon a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leader ex:entry_1__Conservative_Party_of_Canada .
+
+ex:entry_20__Alessio_Romagnoli a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_20__AC_Milan .
+
+ex:entry_21__Alan_Martin a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_21__Accrington_Stanley_FC .
+
+ex:entry_22__CD_FAS a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_22__Salvadoran_Primera_Divisi_n .
+
+ex:entry_23__Pallacanestro_Cant a <http://dbpedia.org/ontology/BasketballTeam>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam> ;
+    ns1:league ex:entry_23__Lega_Basket_Serie_A .
+
+ex:entry_24__Aleksandr_Chumakov a <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_24__Moscow .
+
+ex:entry_25__Ferencv_rosi_TC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_25__Thomas_Doll .
+
+ex:entry_26__Gdynia a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:timeZone ex:entry_26__UTC_2 .
+
+ex:entry_27__Alex_Plante a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_27__Manitoba .
+
+ex:entry_28__Scotland_national_under_21_football_team a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam> ;
+    ns1:coach ex:entry_28__Ricky_Sbragia .
+
+ex:entry_29__Aleksandr_Prudnikov a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:youthclub ex:entry_29__FC_Spartak_Moscow .
+
+ex:entry_2__Akeem_Adams a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_2__Ferencv_rosi_TC .
+
+ex:entry_30__Aleksandr_Prudnikov a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:club ex:entry_30__Russia_national_football_B_team .
+
+ex:entry_31__Steel_Azin_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_31__Iran_Football_3rd_Division .
+
+ex:entry_32__Atlanta_Falcons a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#AmericanFootballTeam> ;
+    ns1:owner ex:entry_32__Arthur_Blank .
+
+ex:entry_3__FC_Tom_Tomsk a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_3__Russian_Football_National_League .
+
+ex:entry_4__Aaron_Boogaard a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthYear "1986"^^xsd:gYear .
+
+ex:entry_5__Alaa_Abdul_Zahra a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_5__Al_Zawra_a_SC .
+
+ex:entry_6__Brandon a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leader ex:entry_6__Larry_Maguire .
+
+ex:entry_7__Los_Angeles_Rams a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#AmericanFootballTeam> ;
+    ns1:location ex:entry_7__Los_Angeles .
+
+ex:entry_8__Aleksandr_Prudnikov a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:height 185.0 .
+
+ex:entry_9__Tennessee_Titans a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#AmericanFootballTeam> ;
+    ns1:coach ex:entry_9__Mike_Mularkey .
+
+ex:entry_10__Real_Madrid_Castilla a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_11__Saskatchewan a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Province> .
+
+ex:entry_12__Kingdom_of_France a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_13__Silvio_Berlusconi a <http://dbpedia.org/ontology/Person>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#BusinessPerson> .
+
+ex:entry_15__Black_Canadians a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_17__Dale_Tallon a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_18__Hungary a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_19__Palo_Seco_Velodrome a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> .
+
+ex:entry_1__Conservative_Party_of_Canada a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/PoliticalParty> .
+
+ex:entry_20__AC_Milan a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_21__Accrington_Stanley_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_22__Salvadoran_Primera_Divisi_n a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_23__Lega_Basket_Serie_A a <http://dbpedia.org/ontology/BasketballLeague>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_24__Moscow a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_25__Thomas_Doll a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> .
+
+ex:entry_26__UTC_2 a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#TimeZone> .
+
+ex:entry_27__Manitoba a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Province> .
+
+ex:entry_28__Ricky_Sbragia a <http://dbpedia.org/ontology/Coach>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_29__FC_Spartak_Moscow a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_2__Ferencv_rosi_TC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_30__Russia_national_football_B_team a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SportsTeam> .
+
+ex:entry_31__Iran_Football_3rd_Division a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_32__Arthur_Blank a <http://dbpedia.org/ontology/Person>,
+        <https://HeraclesWang.github.io/OSKGC/1_Athlete/class#BusinessPerson> .
+
+ex:entry_3__Russian_Football_National_League a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_5__Al_Zawra_a_SC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_6__Larry_Maguire a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_7__Los_Angeles a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_9__Mike_Mularkey a <http://dbpedia.org/ontology/AmericanFootballCoach>,
+        <http://dbpedia.org/ontology/Coach>,
+        <http://dbpedia.org/ontology/Person> .
+

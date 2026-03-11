@@ -102,63 +102,74 @@ class OntologyIndex:
 
 # ── Build instance data graph ─────────────────────────────────────────────────
 
-def _safe_uri(name: str) -> URIRef:
-    """Convert an entity name string into a safe URI."""
+def _inject_superclasses(
+    g: Graph, ont: Graph, subject: URIRef, cls: URIRef
+) -> None:
+    """Add all ancestor classes of cls (from the ontology) as rdf:type of subject."""
+    for parent in ont.transitive_objects(cls, RDFS.subClassOf):
+        if parent != cls:
+            g.add((subject, RDF.type, parent))
+
+
+def _safe_uri(name: str, entry_key: str = "") -> URIRef:
+    """Convert an entity name string into a safe URI, scoped by entry_key."""
     safe = re.sub(r'[^A-Za-z0-9_\-.]', '_', name)
+    if entry_key:
+        safe = f"{entry_key}__{safe}"
     return EX[safe]
 
 
 def build_data_graph(
     entries: Dict[str, EntryExtractionResult],
     ont_idx: OntologyIndex,
-) -> Tuple[Graph, Dict[URIRef, Tuple[int, int]]]:
+) -> Tuple[Graph, Dict[Tuple[URIRef, URIRef], List[Tuple[int, int]]]]:
     """
     Build an rdflib Graph of instance data from predicted triples + schemas.
 
     Returns:
-        (data_graph, uri_map) where uri_map maps each triple's property‑usage
-        URI to (entry_idx, triple_idx) so violations can be traced back.
+        (data_graph, triple_map) where triple_map maps (subj_uri, rel_uri)
+        to a list of (entry_idx, triple_idx) pairs.  The list handles the
+        case where two triples in different entries share the same sanitised
+        subject name and relation.
     """
     g = Graph()
     g.bind("ex", EX)
 
+    # (subj_uri, rel_uri) → [(entry_idx, triple_idx), ...]
+    triple_map: Dict[Tuple[URIRef, URIRef], List[Tuple[int, int]]] = {}
+
     for entry_key, result in entries.items():
+        entry_idx = int(entry_key.split("_")[1]) - 1  # entry_1 → 0
         for t_idx, (triple, schema) in enumerate(
             zip(result.triples, result.schemas)
         ):
-            subj_uri = _safe_uri(triple.subject)
-            obj_uri = _safe_uri(triple.object)
+            subj_uri = _safe_uri(triple.subject, entry_key)
 
-            # Add rdf:type for subject and object from schemas
-            subj_cls = ont_idx.class_uri(schema.subject)
-            obj_cls = ont_idx.class_uri(schema.object)
+            # Always type the subject — it's an entity instance.
+            subj_cls = ont_idx.class_uri(schema.subject) or EX[re.sub(r'[^A-Za-z0-9_]', '_', schema.subject)]
+            g.add((subj_uri, RDF.type, subj_cls))
+            _inject_superclasses(g, ont_idx.ont, subj_uri, subj_cls)
 
-            if subj_cls:
-                g.add((subj_uri, RDF.type, subj_cls))
+            # Resolve the property first to decide how to handle the object.
+            rel_uri = ont_idx.prop_uri(triple.relation) or EX[re.sub(r'[^A-Za-z0-9_]', '_', triple.relation)]
+            is_datatype = (rel_uri, RDF.type, OWL.DatatypeProperty) in ont_idx.ont
+
+            if is_datatype:
+                # Object is a literal value — no rdf:type needed.
+                ranges = list(ont_idx.ont.objects(rel_uri, RDFS.range))
+                dt = ranges[0] if ranges else XSD.string
+                g.add((subj_uri, rel_uri, Literal(triple.object, datatype=dt)))
             else:
-                raise ValueError(f"Subject class '{schema.subject}' not found in ontology for entry {entry_key} triple {t_idx}")
-            
-            if obj_cls:
+                # Object is an entity instance — type it.
+                obj_uri = _safe_uri(triple.object, entry_key)
+                obj_cls = ont_idx.class_uri(schema.object) or EX[re.sub(r'[^A-Za-z0-9_]', '_', schema.object)]
                 g.add((obj_uri, RDF.type, obj_cls))
-            else:
-                raise ValueError(f"Object class '{schema.object}' not found in ontology for entry {entry_key} triple {t_idx}")
+                _inject_superclasses(g, ont_idx.ont, obj_uri, obj_cls)
+                g.add((subj_uri, rel_uri, obj_uri))
 
-            # Add the property triple
-            rel_uri = ont_idx.prop_uri(triple.relation)
-            if rel_uri:
-                # Check if this is a datatype property
-                is_datatype = (rel_uri, RDF.type, OWL.DatatypeProperty) in ont_idx.ont
-                if is_datatype:
-                    # Determine the expected datatype from the ontology
-                    ranges = list(ont_idx.ont.objects(rel_uri, RDFS.range))
-                    dt = ranges[0] if ranges else XSD.string
-                    g.add((subj_uri, rel_uri, Literal(triple.object, datatype=dt)))
-                else:
-                    g.add((subj_uri, rel_uri, obj_uri))
-            else:
-                raise ValueError(f"Relation '{triple.relation}' not found in ontology for entry {entry_key} triple {t_idx}")
+            triple_map.setdefault((subj_uri, rel_uri), []).append((entry_idx, t_idx))
 
-    return g
+    return g, triple_map
 
 
 # ── Run validation ────────────────────────────────────────────────────────────
@@ -167,7 +178,7 @@ def validate_batch(
     entries: Dict[str, EntryExtractionResult],
     ontology_ttl: str,
     shacl_shapes_ttl: str,
-) -> ValidationReport:
+) -> Tuple[ValidationReport, str, List[dict]]:
     """
     Validate a batch of predicted triples against the category's OWL ontology
     using pre‑generated SHACL shapes.
@@ -185,16 +196,15 @@ def validate_batch(
     shapes_graph = Graph()
     shapes_graph.parse(data=shacl_shapes_ttl, format="turtle")
 
-    data_graph = build_data_graph(entries, ont_idx)
+    data_graph, triple_map = build_data_graph(entries, ont_idx)
 
     if len(data_graph) == 0:
-        return ValidationReport(conforms=True)
+        return ValidationReport(conforms=True), "", []
 
     conforms, results_graph, results_text = py_validate(
         data_graph,
         shacl_graph=shapes_graph,
-        ont_graph=ont_idx.ont,
-        inference="rdfs",
+        inference="none",
         abort_on_first=False,
     )
 
@@ -210,40 +220,30 @@ def validate_batch(
             focus = results_graph.value(result_node, SH.focusNode)
             path = results_graph.value(result_node, SH.resultPath)
             source = results_graph.value(result_node, SH.sourceConstraintComponent)
-            value = results_graph.value(result_node, SH.value)
             messages = list(results_graph.objects(result_node, SH.resultMessage))
 
-            # Map focus node back to entry/triple
-            # The focus node is the subject URI — find which entries used it
             focus_str = _label_of(focus) if focus else "?"
             path_str = _label_of(path) if path else None
             constraint_str = _label_of(source) if source else "unknown"
             msg = str(messages[0]) if messages else f"{constraint_str} on {path_str}"
 
-            # Find the entry + triple that produced this focus+path combo
-            matched = False
-            for entry_key, result in entries.items():
-                entry_idx = int(entry_key.split("_")[1]) - 1
-                for t_idx, triple in enumerate(result.triples):
-                    subj_safe = re.sub(r'[^A-Za-z0-9_\-.]', '_', triple.subject)
-                    if focus and subj_safe == _label_of(focus):
-                        # Check if the path matches this triple's relation
-                        if path_str and triple.relation == path_str:
-                            violations.append(Violation(
-                                entry_idx=entry_idx,
-                                triple_idx=t_idx,
-                                focus_node=focus_str,
-                                property_path=path_str,
-                                constraint=constraint_str,
-                                message=msg,
-                            ))
-                            matched = True
-                            break
-                if matched:
-                    break
-
-            if not matched and focus:
-                # Couldn't map precisely — attribute to first entry with this subject
+            # Direct lookup — (subj_uri, rel_uri) were recorded at graph-build time.
+            # A key may map to multiple triples if the same entity name / relation
+            # appears across different entries in the batch.
+            matches = triple_map.get((focus, path), []) if (focus and path) else []
+            if matches:
+                for entry_idx, t_idx in matches:
+                    violations.append(Violation(
+                        entry_idx=entry_idx,
+                        triple_idx=t_idx,
+                        focus_node=focus_str,
+                        property_path=path_str,
+                        constraint=constraint_str,
+                        message=msg,
+                    ))
+            else:
+                # Violation on a node with no matching property triple
+                # (e.g. sh:closed firing on an unexpected property).
                 violations.append(Violation(
                     entry_idx=-1,
                     triple_idx=-1,
@@ -253,7 +253,12 @@ def validate_batch(
                     message=msg,
                 ))
 
-    return ValidationReport(conforms=conforms, violations=violations)
+    ttl = data_graph.serialize(format="turtle")
+    tm_entries = [
+        {"subj": str(k[0]), "prop": str(k[1]), "indices": v}
+        for k, v in triple_map.items()
+    ]
+    return ValidationReport(conforms=conforms, violations=violations), ttl, tm_entries
 
 
 # ── Format violations for the correction prompt ──────────────────────────────
@@ -277,13 +282,19 @@ def format_violations_for_prompt(
 
         part = f"### entry_{entry_idx + 1}\n"
         part += f"Text: {entry.input_text}\n"
-        part += "Your previous extraction:\n"
+        part += "Violated triples:\n"
         if prev:
-            for i, (t, s) in enumerate(zip(prev.triples, prev.schemas)):
-                part += f"  triple {i+1}: ({t.subject}, {t.relation}, {t.object})  types: ({s.subject}, {s.object})\n"
-        part += "SHACL violations found:\n"
-        for v in vs:
-            part += f"  - {v.message}\n"
+            # Group violation messages by triple index
+            by_triple: Dict[int, List[str]] = {}
+            for v in vs:
+                by_triple.setdefault(v.triple_idx, []).append(v.message)
+            for t_idx, msgs in sorted(by_triple.items()):
+                if 0 <= t_idx < len(prev.triples):
+                    t = prev.triples[t_idx]
+                    s = prev.schemas[t_idx]
+                    part += f"  triple {t_idx + 1}: ({t.subject}, {t.relation}, {t.object})  types: ({s.subject}, {s.object})\n"
+                    for m in msgs:
+                        part += f"    violation: {m}\n"
         parts.append(part)
 
     return "\n".join(parts)

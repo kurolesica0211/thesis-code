@@ -11,45 +11,35 @@ def main():
 
     # Configuration
     data_dir      = "OSKGC/data"
-    ontology_dir  = "OSKGC/ontologies"
+    json_ontology_dir  = "OSKGC/ontologies/json"
     split         = "dev"
     model_name    = "gemini/gemini-3.1-flash-lite-preview"
-
-    # Ontology mode: "json" (structured schema) or "rdf" (copy-paste .ttl)
-    ontology_mode = "rdf"
 
     # SHACL validation loop (RDF mode only)
     shacl_validation = True
     shacl_max_rounds = 1
 
-    if ontology_mode == "rdf":
-        template_path      = "prompts/zero_shot_rdf.md"
-        rdf_ontology_dir   = "OSKGC/ontologies/rdf"
-        shacl_shapes_dir   = "OSKGC/ontologies/shacl_shapes"
-        tag                = "rdf_shacl_1" if shacl_validation else "rdf_1"
-    else:
-        template_path      = "prompts/zero_shot_basic.md"
-        rdf_ontology_dir   = None
-        shacl_shapes_dir   = None
-        tag                = "json_1"
+    template_path      = "prompts/zero_shot_rdf.md"
+    rdf_ontology_dir   = "OSKGC/ontologies/rdf"
+    shacl_shapes_dir   = "OSKGC/ontologies/shacl_shapes"
+    tag                = "rdf_shacl_1" if shacl_validation else "rdf_1"
 
-    safe_model  = model_name.replace("/", "_").replace(":", "_")
-    output_file = f"results/results_{safe_model}_{tag}.jsonl"
+    safe_model = model_name.replace("/", "_").replace(":", "_")
+    run_dir    = f"results/{safe_model}_{tag}"
 
     # Optional: pass specific categories on the command line
     #   python main.py 1_Airport 2_Politician 3_Company
     categories = sys.argv[1:] if len(sys.argv) > 1 else None
 
-    loader        = OSKGCLoader(data_dir=data_dir, ontology_dir=ontology_dir, split=split)
+    loader        = OSKGCLoader(data_dir=data_dir, ontology_dir=json_ontology_dir, split=split)
     prompt_engine = PromptEngine(template_path=template_path)
     extractor     = Extractor(model_name=model_name, prompt_engine=prompt_engine)
 
     runner = ExtractionRunner(
         loader=loader,
         extractor=extractor,
-        output_file=output_file,
+        run_dir=run_dir,
         categories=categories,
-        ontology_mode=ontology_mode,
         rdf_ontology_dir=rdf_ontology_dir,
         shacl_validation=shacl_validation,
         shacl_max_rounds=shacl_max_rounds,

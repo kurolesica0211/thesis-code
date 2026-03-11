@@ -1,0 +1,238 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_SportsTeam/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Rolando_Maran a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_10__Unione_Triestina_2012_SSD .
+
+ex:entry_11__Est_dio_Municipal_Coaracy_da_Mata_Fonseca a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> ;
+    ns1:location ex:entry_11__Brazil .
+
+ex:entry_12__Dave_Challinor a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_12__Tranmere_Rovers_FC .
+
+ex:entry_13__AE_Dimitra_Efxeinoupolis a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:city ex:entry_13__Efxeinoupoli .
+
+ex:entry_14__Peter_St_ger a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_14__SK_Rapid_Wien .
+
+ex:entry_15__Peter_St_ger a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_15__FC_Admira_Wacker_M_dling .
+
+ex:entry_16__AZAL_PFK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:season "2014"^^xsd:gYear .
+
+ex:entry_17__Rolando_Maran a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_17__Calcio_Catania .
+
+ex:entry_18__AFC_Blackpool a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_18__North_West_Counties_Football_League .
+
+ex:entry_19__Akron_Summit_Assault a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_19__St_Vincent_St_Mary_High_School .
+
+ex:entry_1__Olympic_Stadium a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> ;
+    ns1:location ex:entry_1__Athens .
+
+ex:entry_20__AZAL_PFK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_20__AZAL_Arena .
+
+ex:entry_21__Jorge_Humberto_Rodr_guez a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_21__CD_FAS .
+
+ex:entry_22__AEK_Athens_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_22__Gus_Poyet .
+
+ex:entry_23__AFC_Ajax_Amateurs a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:season "2014"^^xsd:gYear .
+
+ex:entry_24__AFC_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 53502.0 .
+
+ex:entry_25__ACF_Fiorentina a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_25__Paulo_Sousa .
+
+ex:entry_26__Max_Huiberts a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_26__AZ_Alkmaar .
+
+ex:entry_27__AFC_Blackpool a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_27__North_West_Counties_Football_League .
+
+ex:entry_28__AFC_Ajax_Amateurs a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:nickname ex:entry_28__Lucky_Ajax .
+
+ex:entry_2__AFC_Ajax_Amateurs a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_2__Amsterdamsche_Football_Club_Ajax_Amateurs .
+
+ex:entry_3__Luciano_Spalletti a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerPlayer> ;
+    ns1:club ex:entry_3__Empoli_FC .
+
+ex:entry_4__Est_dio_Municipal_Coaracy_da_Mata_Fonseca a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> ;
+    ns1:location ex:entry_4__Alagoas .
+
+ex:entry_5__AEK_Athens_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:country ex:entry_5__Greece .
+
+ex:entry_6__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:mayor ex:entry_6__Giorgos_Kaminis .
+
+ex:entry_7__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:nickname ex:entry_7__Asa_Gigante .
+
+ex:entry_8__AFC_Fylde a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 3180.0 .
+
+ex:entry_9__AE_Dimitra_Efxeinoupolis a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_9__A_EPSTH_2nd_GROUP .
+
+ex:entry_10__Unione_Triestina_2012_SSD a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_11__Brazil a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_12__Tranmere_Rovers_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_13__Efxeinoupoli a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <http://dbpedia.org/ontology/Town> .
+
+ex:entry_14__SK_Rapid_Wien a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_15__FC_Admira_Wacker_M_dling a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_17__Calcio_Catania a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_18__North_West_Counties_Football_League a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_19__St_Vincent_St_Mary_High_School a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_1__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_20__AZAL_Arena a <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+ex:entry_21__CD_FAS a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_22__Gus_Poyet a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> .
+
+ex:entry_25__Paulo_Sousa a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SportsManager> .
+
+ex:entry_26__AZ_Alkmaar a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_27__North_West_Counties_Football_League a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_28__Lucky_Ajax a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_2__Amsterdamsche_Football_Club_Ajax_Amateurs a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_3__Empoli_FC a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_4__Alagoas a <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/State> .
+
+ex:entry_5__Greece a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_6__Giorgos_Kaminis a <http://dbpedia.org/ontology/Mayor>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_7__Asa_Gigante a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_9__A_EPSTH_2nd_GROUP a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+

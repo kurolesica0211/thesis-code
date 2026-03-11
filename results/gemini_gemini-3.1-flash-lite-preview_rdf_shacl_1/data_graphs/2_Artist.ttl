@@ -1,0 +1,356 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Artist/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Afrobeat a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:musicFusionGenre ex:entry_10__Funk_music .
+
+ex:entry_10__Aleksandra_Kova a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_10__Funk_music .
+
+ex:entry_11__Aaron_Bertram a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_11__Kids_Imagine_Nation ;
+    ns1:genre ex:entry_11__Ska_punk .
+
+ex:entry_12__Anders_Osborne a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_12__Galactic ;
+    ns1:associatedMusicalArtist ex:entry_12__Tab_Benoit .
+
+ex:entry_13__Agust_n_Barboza a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_13__Philips_Records .
+
+ex:entry_14__Alex_Day a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_14__Synthpop_music .
+
+ex:entry_15__Agust_n_Barboza a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_15__Asunci_n .
+
+ex:entry_16__Allen_Forrest a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_16__Rhythm_and_blues .
+
+ex:entry_16__Disco a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:derivative ex:entry_16__Rhythm_and_blues .
+
+ex:entry_17__Alfred_Garth_Jones a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_17__Manchester .
+
+ex:entry_18__Ace_Wilder a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_18__EMI_Records .
+
+ex:entry_19__Alfred_Garth_Jones a <http://dbpedia.org/ontology/Person> ;
+    ns1:deathPlace ex:entry_19__London .
+
+ex:entry_1__Anders_Osborne a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_1__Shanachie_Records .
+
+ex:entry_20__Agust_n_Barboza a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_20__Asunci_n .
+
+ex:entry_21__Ace_Wilder a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_21__Hip_hop_music .
+
+ex:entry_22__Ahmet_Ertegun a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_22__Rock_and_roll_music .
+
+ex:entry_23__Anders_Osborne a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_23__Rock_music .
+
+ex:entry_24__Aaron_Bertram a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_24__Kids_Imagine_Nation,
+        ex:entry_24__Suburban_Legends .
+
+ex:entry_25__Anders_Osborne a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_25__Rhythm_and_blues ;
+    ns1:recordLabel ex:entry_25__Alligator_Records .
+
+ex:entry_26__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_26__Flibbertigibbet,
+        ex:entry_26__United_Bible_Studies .
+
+ex:entry_27__Allen_Forrest a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:background ex:entry_27__Solo_singer ;
+    ns1:profession ex:entry_27__Pop_artist .
+
+ex:entry_2__Aleksandra_Kova a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_2__Pop_music .
+
+ex:entry_2__Disco a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:musicFusionGenre ex:entry_2__Pop_music .
+
+ex:entry_3__Allen_Forrest a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_3__Pop_music .
+
+ex:entry_3__Disco_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:musicFusionGenre ex:entry_3__Pop_music .
+
+ex:entry_4__Andra a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:activeYearsStartYear "2000"^^xsd:gYear ;
+    ns1:genre ex:entry_4__Pop_music .
+
+ex:entry_5__Al_Anderson a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_5__Rock_music ;
+    ns1:instrument ex:entry_5__Guitar .
+
+ex:entry_6__Andrew_Rayel a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedMusicalArtist ex:entry_6__Jonathan_Mendelsohn,
+        ex:entry_6__Mark_Sixma .
+
+ex:entry_7__Andrew_Rayel a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedMusicalArtist ex:entry_7__Armin_van_Buuren ;
+    ns1:genre ex:entry_7__Trance_music .
+
+ex:entry_8__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_8__Plastik_Mak,
+        ex:entry_8__The_Owl_Service .
+
+ex:entry_9__Alfred_Garth_Jones a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_9__England ;
+    ns1:deathPlace ex:entry_9__Sidcup .
+
+ex:entry_11__Kids_Imagine_Nation a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_11__Ska_punk a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_12__Galactic a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_12__Tab_Benoit a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_13__Philips_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> ;
+    ns1:parentCompany ex:entry_13__Universal_Music_Group .
+
+ex:entry_13__Universal_Music_Group a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_14__Pop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_14__Synthpop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:musicSubgenre ex:entry_14__Pop_music .
+
+ex:entry_15__Asunci_n a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_15__Paraguay .
+
+ex:entry_15__Paraguay a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_17__England a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_17__Manchester a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_17__England .
+
+ex:entry_18__EMI_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_19__London a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_1__Shanachie_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_20__Asunci_n a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_20__Paraguay .
+
+ex:entry_20__Paraguay a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_21__Disco a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_21__Hip_hop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:stylisticOrigin ex:entry_21__Disco .
+
+ex:entry_22__Country_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_22__Rock_and_roll_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:stylisticOrigin ex:entry_22__Country_music .
+
+ex:entry_23__Bhangra a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_23__Rock_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:musicFusionGenre ex:entry_23__Bhangra .
+
+ex:entry_24__Kids_Imagine_Nation a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_24__Suburban_Legends a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_25__Alligator_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_25__Rhythm_and_blues a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_26__Flibbertigibbet a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_26__United_Bible_Studies a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_27__Pop_artist a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_27__Solo_singer a <http://dbpedia.org/ontology/PersonFunction> .
+
+ex:entry_4__Pop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_5__Guitar a <http://dbpedia.org/ontology/Device>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Instrument> .
+
+ex:entry_5__Rock_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_6__Jonathan_Mendelsohn a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_6__Mark_Sixma a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_7__Armin_van_Buuren a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_7__Trance_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_8__Plastik_Mak a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_8__The_Owl_Service a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/2_Artist/class#Band> .
+
+ex:entry_9__England a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_9__Sidcup a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_10__Funk_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_16__Rhythm_and_blues a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_2__Pop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_3__Pop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+

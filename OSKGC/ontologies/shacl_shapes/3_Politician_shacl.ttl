@@ -97,7 +97,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -117,7 +117,7 @@
 
 <http://dbpedia.org/ontology/Person-deathYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:deathYear .
 
 <http://dbpedia.org/ontology/Person-party>

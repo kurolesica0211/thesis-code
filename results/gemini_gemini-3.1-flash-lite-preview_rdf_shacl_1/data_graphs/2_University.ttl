@@ -1,0 +1,52 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_University/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__University_of_Burgundy a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:numberOfDoctoralStudents 1299.0 ;
+    ns1:staff 2900.0 .
+
+ex:entry_2__University_of_Burgundy a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:campus ex:entry_2__Dijon .
+
+ex:entry_3__Acharya_Institute_of_Technology a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:established "2000"^^xsd:gYear ;
+    ns1:location ex:entry_3__Bangalore .
+
+ex:entry_4__University_of_Burgundy a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:city ex:entry_4__Dijon ;
+    ns1:numberOfStudents 27400.0 .
+
+ex:entry_5__University_of_Burgundy a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/University> ;
+    ns1:numberOfUndergraduateStudents 16800.0 ;
+    ns1:staff 2900.0 .
+
+ex:entry_2__Dijon a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:country ex:entry_2__France .
+
+ex:entry_2__France a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__Bangalore a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_4__Dijon a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+

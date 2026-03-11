@@ -21,7 +21,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-wheelbase>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:wheelbase .
 
 <http://dbpedia.org/ontology/Organisation-foundedBy>
@@ -46,7 +46,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-modelYears>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:modelYears .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-relatedMeanOfTransportation>
@@ -106,12 +106,12 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-rocketStages>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:rocketStages .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-diameter>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:diameter .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -126,7 +126,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-shipDraft>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:shipDraft .
 
 <http://dbpedia.org/ontology/Place-leaderTitle>
@@ -161,12 +161,12 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-topSpeed>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:topSpeed .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-totalProduction>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:totalProduction .
 
 <http://dbpedia.org/ontology/Place-demonym>
@@ -192,7 +192,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-engineSize>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:engineSize .
 
 <http://dbpedia.org/ontology/Organisation-successor>
@@ -242,17 +242,17 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-productionStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:productionStartYear .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-length>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:length .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-cylinderCount>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:cylinderCount .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-transmission>
@@ -262,7 +262,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-failedLaunches>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:failedLaunches .
 
 <http://dbpedia.org/ontology/Organisation-city>
@@ -277,12 +277,12 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-shipBeam>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:shipBeam .
 
 <http://dbpedia.org/ontology/MeanOfTransportation-productionEndYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:productionEndYear .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-site>
@@ -302,7 +302,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-totalLaunches>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:totalLaunches .
 
 <http://dbpedia.org/ontology/Place>
@@ -313,7 +313,7 @@
 
 <http://dbpedia.org/ontology/MeanOfTransportation-shipDisplacement>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:shipDisplacement .
 
 <http://dbpedia.org/ontology/Organisation-location>

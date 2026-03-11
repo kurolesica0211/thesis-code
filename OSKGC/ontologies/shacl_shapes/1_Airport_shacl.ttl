@@ -41,7 +41,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-4thRunwayLengthFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:4thRunwayLengthFeet .
 
 <http://dbpedia.org/ontology/Place-countySeat>
@@ -51,7 +51,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-3rdRunwayLengthFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:3rdRunwayLengthFeet .
 
 <http://dbpedia.org/ontology/TopicalConcept>
@@ -72,12 +72,12 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLength>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLength .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLengthFeet .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -162,7 +162,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevelInFeet .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-locationIdentifier>
@@ -177,7 +177,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthMetre>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLengthMetre .
 
 <http://dbpedia.org/ontology/Organisation-transportAircraft>
@@ -237,7 +237,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-5thRunwayNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:5thRunwayNumber .
 
 <http://dbpedia.org/ontology/Place-isPartOf>
@@ -253,7 +253,7 @@
 
 <http://dbpedia.org/ontology/Organisation-foundingYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:foundingYear .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-serves>
@@ -279,22 +279,22 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:1stRunwayLengthFeet .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInMetres>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevelInMetres .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayLengthMetre>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:1stRunwayLengthMetre .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-1stRunwayNumber>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:1stRunwayNumber .
 
 <http://dbpedia.org/ontology/Place-language>

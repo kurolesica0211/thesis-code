@@ -151,7 +151,7 @@
 
 <http://dbpedia.org/ontology/Work-runtime>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runtime .
 
 <http://dbpedia.org/ontology/Work-album>

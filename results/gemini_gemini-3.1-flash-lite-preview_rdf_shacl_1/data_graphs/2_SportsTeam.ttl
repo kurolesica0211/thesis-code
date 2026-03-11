@@ -1,0 +1,228 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__A_S_Livorno_Calcio a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_10__Serie_B ;
+    ns1:location ex:entry_10__Livorno .
+
+ex:entry_11__1_FC_Magdeburg a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 27250.0 ;
+    ns1:season "2014"^^xsd:gYear .
+
+ex:entry_12__Agremia_o_Sportiva_Arapiraquense a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:nickname ex:entry_12__Alvinegro ;
+    ns1:numberOfMembers 17000.0 .
+
+ex:entry_13__A_F_C_Fylde a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_13__Dave_Challinor .
+
+ex:entry_14__AZAL_PFK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_14__Azerbaijan_Premier_League .
+
+ex:entry_15__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:league ex:entry_15__Serie_D .
+
+ex:entry_16__AFC_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:fullName ex:entry_16__Amsterdamsche_Football_Club_Ajax ;
+    ns1:numberOfMembers 53502.0 .
+
+ex:entry_17__A_D_Isidro_Metap_n a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_17__Jorge_Humberto_Rodr_guez .
+
+ex:entry_18__A_F_C_Fylde a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_18__Dave_Challinor .
+
+ex:entry_19__AZ_Alkmaar a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 17023.0 ;
+    ns1:season "2014_15"^^xsd:gYear .
+
+ex:entry_1__A_F_C_Fylde a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_1__Dave_Challinor .
+
+ex:entry_2__AEK_Athens_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_2__Olympic_Stadium .
+
+ex:entry_3__A_F_C_Blackpool a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 1500.0 .
+
+ex:entry_4__AFC_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 53502.0 ;
+    ns1:season "2014"^^xsd:gYear .
+
+ex:entry_5__A_S_Gubbio_1910 a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:numberOfMembers 5300.0 .
+
+ex:entry_6__AFC_Ajax_amateurs a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:ground ex:entry_6__Sportpark_De_Toekomst .
+
+ex:entry_7__AFC_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:location ex:entry_7__Amsterdam .
+
+ex:entry_8__ACF_Fiorentina a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> ;
+    ns1:manager ex:entry_8__Paulo_Sousa .
+
+ex:entry_9__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_9__Rome .
+
+ex:entry_10__Livorno a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_10__Serie_B a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> .
+
+ex:entry_12__Alvinegro a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_13__Dave_Challinor a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_13__Stockport_County_F_C .
+
+ex:entry_13__Stockport_County_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_14__Azerbaijan_Premier_League a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> ;
+    ns1:champions ex:entry_14__Qaraba_FK .
+
+ex:entry_14__Qaraba_FK a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_15__S_S_Robur_Siena a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_15__Serie_D a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerLeague>,
+        <http://dbpedia.org/ontology/SportsLeague> ;
+    ns1:champions ex:entry_15__S_S_Robur_Siena .
+
+ex:entry_16__Amsterdamsche_Football_Club_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_17__El_Salvador_national_football_team a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_17__Jorge_Humberto_Rodr_guez a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_17__El_Salvador_national_football_team .
+
+ex:entry_18__Colwyn_Bay_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_18__Dave_Challinor a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_18__Colwyn_Bay_F_C .
+
+ex:entry_1__Dave_Challinor a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_1__Tranmere_Rovers_F_C .
+
+ex:entry_1__Tranmere_Rovers_F_C a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_2__Athens a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_2__Olympic_Stadium a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> ;
+    ns1:location ex:entry_2__Athens .
+
+ex:entry_6__AFC_Ajax a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_6__Sportpark_De_Toekomst a <http://dbpedia.org/ontology/ArchitecturalStructure>,
+        <http://dbpedia.org/ontology/Building>,
+        <http://dbpedia.org/ontology/Stadium>,
+        <http://dbpedia.org/ontology/Venue> ;
+    ns1:operator ex:entry_6__AFC_Ajax .
+
+ex:entry_7__Amsterdam a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leader ex:entry_7__Eberhard_van_der_Laan .
+
+ex:entry_7__Eberhard_van_der_Laan a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_8__Inter_Milan a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/SoccerClub>,
+        <http://dbpedia.org/ontology/SportsClub> .
+
+ex:entry_8__Paulo_Sousa a <http://dbpedia.org/ontology/Athlete>,
+        <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/SoccerManager>,
+        <http://dbpedia.org/ontology/SoccerPlayer>,
+        <http://dbpedia.org/ontology/SportsManager> ;
+    ns1:club ex:entry_8__Inter_Milan .
+
+ex:entry_9__Rome a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/2_SportsTeam/class#CapitalCity> .
+

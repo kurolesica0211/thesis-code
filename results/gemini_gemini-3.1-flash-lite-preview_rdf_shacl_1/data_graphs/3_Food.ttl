@@ -1,0 +1,463 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_Food/relation#> .
+
+ex:entry_10__Bakso a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_10__China,
+        ex:entry_10__Indonesia ;
+    ns1:ingredient ex:entry_10__Celery .
+
+ex:entry_11__Bakso a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_11__Indonesia ;
+    ns1:ingredient ex:entry_11__Ground_beef .
+
+ex:entry_12__Bacon_Explosion a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_12__United_States .
+
+ex:entry_13__Bionico a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_13__Raisins .
+
+ex:entry_14__BLT a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    ns1:alternativeName ex:entry_14__Bacon_sandwich,
+        ex:entry_14__Club_sandwich ;
+    ns1:ingredient ex:entry_14__Tomato .
+
+ex:entry_15__Ajoblanco a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_15__Almonds .
+
+ex:entry_16__Ajoblanco a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_16__Almond ;
+    ns1:region ex:entry_16__Andalusia .
+
+ex:entry_17__Arr_s_negre a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_17__White_rice ;
+    ns1:region ex:entry_17__Valencian_Community .
+
+ex:entry_18__Arr_s_negre a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_18__Spain ;
+    ns1:region ex:entry_18__Catalonia .
+
+ex:entry_19__Amatriciana_sauce a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sauce> ;
+    ns1:ingredient ex:entry_19__Tomato .
+
+ex:entry_1__Batagor a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:dishVariation ex:entry_1__Siomay .
+
+ex:entry_20__Arr_s_negre a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_20__Cubanelle ;
+    ns1:region ex:entry_20__Catalonia .
+
+ex:entry_21__Bandeja_paisa a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:cuisine ex:entry_21__Colombian_cuisine ;
+    ns1:ingredient ex:entry_21__Kidney_beans ;
+    ns1:region ex:entry_21__Antioquia_Department .
+
+ex:entry_22__Bakewell_tart a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:dishVariation ex:entry_22__Bakewell_pudding ;
+    ns1:ingredient ex:entry_22__Frangipane ;
+    ns1:region ex:entry_22__Derbyshire_Dales .
+
+ex:entry_23__Bacon_Explosion a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_23__United_States ;
+    ns1:course ex:entry_23__Main_course ;
+    ns1:ingredient ex:entry_23__Bacon .
+
+ex:entry_24__Ayam_penyet a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_24__Malaysia ;
+    ns1:ingredient ex:entry_24__Fried_chicken .
+
+ex:entry_25__Asam_pedas a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_25__Malaysia .
+
+ex:entry_26__Bacon_Explosion a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_26__United_States .
+
+ex:entry_27__Bandeja_paisa a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:cuisine ex:entry_27__Colombian_cuisine ;
+    ns1:ingredient ex:entry_27__Chicharr_n ;
+    ns1:region ex:entry_27__Paisa_region .
+
+ex:entry_28__Bakewell_tart a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:dishVariation ex:entry_28__Bakewell_pudding ;
+    ns1:ingredient ex:entry_28__Frangipane ;
+    ns1:region ex:entry_28__Derbyshire_Dales .
+
+ex:entry_29__Bacon_Explosion a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_29__United_States .
+
+ex:entry_2__Arr_s_negre a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:region ex:entry_2__Valencian_Community .
+
+ex:entry_30__Bionico a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_30__Mexico ;
+    ns1:ingredient ex:entry_30__Sour_cream .
+
+ex:entry_31__Bhaji a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_31__India ;
+    ns1:mainIngredient ex:entry_31__Gram_flour,
+        ex:entry_31__Vegetables .
+
+ex:entry_3__Amatriciana_sauce a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sauce> ;
+    ns1:region ex:entry_3__Rome .
+
+ex:entry_4__Arr_s_negre a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_4__Cuttlefish ;
+    ns1:region ex:entry_4__Catalonia .
+
+ex:entry_5__Bionico a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dessert>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:region ex:entry_5__Jalisco .
+
+ex:entry_6__Barny_cakes a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_6__France .
+
+ex:entry_7__Ayam_penyet a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_7__Indonesia ;
+    ns1:ingredient ex:entry_7__Fried_chicken ;
+    ns1:region ex:entry_7__Singapore .
+
+ex:entry_8__Bacon_sandwiches a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> ;
+    ns1:country ex:entry_8__United_Kingdom ;
+    ns1:dishVariation ex:entry_8__BLT ;
+    ns1:ingredient ex:entry_8__Condiments .
+
+ex:entry_9__Bakso a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:country ex:entry_9__Indonesia .
+
+ex:entry_10__Celery a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_10__China a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_10__Indonesia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_11__Ground_beef a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_11__Indonesia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_12__Asian_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_12__Barack_Obama a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_12__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_12__Asian_Americans ;
+    ns1:leader ex:entry_12__Barack_Obama .
+
+ex:entry_13__Raisins a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_14__Bacon_sandwich a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+ex:entry_14__Club_sandwich a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+ex:entry_14__Tomato a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_15__Almonds a <http://dbpedia.org/ontology/Plant>,
+        <http://dbpedia.org/ontology/Species>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:family ex:entry_15__Rosaceae .
+
+ex:entry_15__Rosaceae a <http://dbpedia.org/ontology/Family>,
+        <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#PlantType> .
+
+ex:entry_16__Almond a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_16__Andalusia a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_16__Spain .
+
+ex:entry_16__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_17__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_17__Valencian_Community a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_17__Spain .
+
+ex:entry_17__White_rice a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_18__Carles_Puigdemont a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_18__Catalonia a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_18__Carles_Puigdemont .
+
+ex:entry_18__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_19__Solanaceae a <http://dbpedia.org/ontology/Family>,
+        <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#PlantType> .
+
+ex:entry_19__Solanum a <http://dbpedia.org/ontology/TopicalConcept>,
+        <http://dbpedia.org/ontology/Type>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Genus>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#PlantType> .
+
+ex:entry_19__Tomato a <http://dbpedia.org/ontology/Plant>,
+        <http://dbpedia.org/ontology/Species>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:family ex:entry_19__Solanaceae ;
+    ns1:genus ex:entry_19__Solanum .
+
+ex:entry_1__Shiitake a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_1__Siomay a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> ;
+    ns1:ingredient ex:entry_1__Shiitake .
+
+ex:entry_20__Catalonia a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_20__Spain .
+
+ex:entry_20__Cubanelle a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_20__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_21__Antioquia_Department a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_21__Colombian_cuisine a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Cuisine>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_21__Kidney_beans a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_22__Bakewell_pudding a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_22__Derbyshire_Dales a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_22__Frangipane a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_23__Bacon a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_23__Main_course a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#MainCourse> .
+
+ex:entry_23__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_24__Fried_chicken a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_24__Malaysia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_25__Abdul_Halim_of_Kedah a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_25__Kuala_Lumpur a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#CapitalCity> .
+
+ex:entry_25__Malaysia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_25__Kuala_Lumpur ;
+    ns1:leader ex:entry_25__Abdul_Halim_of_Kedah .
+
+ex:entry_26__African_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_26__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:capital ex:entry_26__Washington_D_C ;
+    ns1:ethnicGroup ex:entry_26__African_Americans .
+
+ex:entry_26__Washington_D_C a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#CapitalCity> .
+
+ex:entry_27__Chicharr_n a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_27__Colombian_cuisine a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Cuisine>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_27__Paisa_region a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_28__Bakewell_pudding a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_28__Derbyshire_Dales a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_28__Frangipane a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_29__African_Americans a <http://dbpedia.org/ontology/EthnicGroup> .
+
+ex:entry_29__Barack_Obama a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_29__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:ethnicGroup ex:entry_29__African_Americans ;
+    ns1:leader ex:entry_29__Barack_Obama .
+
+ex:entry_2__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_2__Valencian_Community a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_2__Spain ;
+    ns1:leader ex:entry_2__Ximo_Puig .
+
+ex:entry_2__Ximo_Puig a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_30__Mexico a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_30__Sour_cream a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_31__Gram_flour a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_31__India a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_31__Vegetables a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_3__Italy a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_3__Matteo_Renzi .
+
+ex:entry_3__Matteo_Renzi a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_3__Rome a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#CapitalCity> ;
+    ns1:capital ex:entry_3__Italy .
+
+ex:entry_4__Catalonia a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_4__Spain .
+
+ex:entry_4__Cuttlefish a <http://dbpedia.org/ontology/Species> .
+
+ex:entry_4__Spain a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_5__Jalisco a <http://dbpedia.org/ontology/AdministrativeRegion>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:country ex:entry_5__Mexico .
+
+ex:entry_5__Mexico a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_6__France a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_6__French_language ;
+    ns1:leader ex:entry_6__Manuel_Valls .
+
+ex:entry_6__French_language a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_6__Manuel_Valls a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_7__Fried_chicken a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_7__Indonesia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_7__Singapore a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_8__BLT a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Dish>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food>,
+        <https://HeraclesWang.github.io/OSKGC/3_Food/class#Sandwich> .
+
+ex:entry_8__Condiments a <https://HeraclesWang.github.io/OSKGC/3_Food/class#Food> .
+
+ex:entry_8__United_Kingdom a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_9__Indonesia a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:language ex:entry_9__Indonesian ;
+    ns1:leader ex:entry_9__Jusuf_Kalla .
+
+ex:entry_9__Indonesian a <http://dbpedia.org/ontology/Language> .
+
+ex:entry_9__Jusuf_Kalla a <http://dbpedia.org/ontology/Person> .
+

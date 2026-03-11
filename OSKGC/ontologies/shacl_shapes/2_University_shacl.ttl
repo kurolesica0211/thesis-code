@@ -37,12 +37,12 @@
 
 <http://dbpedia.org/ontology/Organisation-staff>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:staff .
 
 <http://dbpedia.org/ontology/Organisation-numberOfUndergraduateStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfUndergraduateStudents .
 
 <http://dbpedia.org/ontology/Place-river>
@@ -52,7 +52,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfPostgraduateStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfPostgraduateStudents .
 
 <http://dbpedia.org/ontology/Place-country>
@@ -77,7 +77,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfDoctoralStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfDoctoralStudents .
 
 <http://dbpedia.org/ontology/Place-hasToItsWest>
@@ -87,7 +87,7 @@
 
 <http://dbpedia.org/ontology/Organisation-academicStaffSize>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:academicStaffSize .
 
 <http://dbpedia.org/ontology/Sport-sportGoverningBody>
@@ -107,7 +107,7 @@
 
 <http://dbpedia.org/ontology/Organisation-established>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:established .
 
 <http://dbpedia.org/ontology/Organisation-sportsOffered>
@@ -189,5 +189,5 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfStudents>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfStudents .

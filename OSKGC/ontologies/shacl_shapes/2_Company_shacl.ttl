@@ -47,7 +47,7 @@
 
 <http://dbpedia.org/ontology/Organisation-netIncome>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:netIncome .
 
 <http://dbpedia.org/ontology/Organisation-industry>
@@ -57,7 +57,7 @@
 
 <http://dbpedia.org/ontology/Organisation-operatingIncome>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:operatingIncome .
 
 <http://dbpedia.org/ontology/Organisation-type>
@@ -67,7 +67,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfLocations>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfLocations .
 
 <http://dbpedia.org/ontology/Organisation-serves>
@@ -82,7 +82,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Organisation-city>
@@ -92,7 +92,7 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfEmployees>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfEmployees .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -128,7 +128,7 @@
 
 <http://dbpedia.org/ontology/Organisation-revenue>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:revenue .
 
 <http://dbpedia.org/ontology/Place-ethnicGroup>

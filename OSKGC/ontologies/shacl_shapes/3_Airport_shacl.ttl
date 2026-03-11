@@ -52,12 +52,12 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLength>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLength .
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthFeet>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLengthFeet .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -112,7 +112,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevel>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevel .
 
 <http://dbpedia.org/ontology/Place-postalCode>
@@ -122,7 +122,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-runwayLengthMetre>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:runwayLengthMetre .
 
 <http://dbpedia.org/ontology/Organisation-transportAircraft>
@@ -194,7 +194,7 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-elevationAboveTheSeaLevelInMetres>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevelInMetres .
 
 <http://dbpedia.org/ontology/Place-language>

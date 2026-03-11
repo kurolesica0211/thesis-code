@@ -122,7 +122,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -142,7 +142,7 @@
 
 <http://dbpedia.org/ontology/Person-deathYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:deathYear .
 
 <http://dbpedia.org/ontology/Person-party>
@@ -173,7 +173,7 @@
 
 <http://dbpedia.org/ontology/Person-numberOfVotesAttained>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfVotesAttained .
 
 <http://dbpedia.org/ontology/Person-office>
@@ -219,7 +219,7 @@
 
 <http://dbpedia.org/ontology/Person-serviceStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:serviceStartYear .
 
 <http://dbpedia.org/ontology/Person-inOfficeWhilePrimeMinister>

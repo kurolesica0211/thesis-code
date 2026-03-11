@@ -1,0 +1,69 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_MusicalWork/relation#> .
+
+ex:entry_1__Take_it_Off a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:genre ex:entry_1__Noise_rock .
+
+ex:entry_2__Imagine a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Song>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:genre ex:entry_2__Pop_music .
+
+ex:entry_3__Take_it_Off a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:producer ex:entry_3__Wharton_Tiers .
+
+ex:entry_4__Squeeze a <http://dbpedia.org/ontology/Album>,
+        <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:genre ex:entry_4__Rock_music .
+
+ex:entry_5__San_Francisco a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:leader ex:entry_5__Ed_Lee .
+
+ex:entry_6__Expect_a_Miracle a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:genre ex:entry_6__Easy_listening .
+
+ex:entry_7__Imagine a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Song>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:writer ex:entry_7__John_Lennon .
+
+ex:entry_7__Power_to_the_People a <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Song>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:writer ex:entry_7__John_Lennon .
+
+ex:entry_8__Live_at_Roadburn_2008 a <http://dbpedia.org/ontology/Album>,
+        <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> ;
+    ns1:followedBy ex:entry_8__Karysun_Year_of_No_Light .
+
+ex:entry_1__Noise_rock a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_2__Pop_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_3__Wharton_Tiers a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_4__Rock_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_5__Ed_Lee a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_6__Easy_listening a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_8__Karysun_Year_of_No_Light a <http://dbpedia.org/ontology/Album>,
+        <http://dbpedia.org/ontology/MusicalWork>,
+        <http://dbpedia.org/ontology/Work> .
+
+ex:entry_7__John_Lennon a <http://dbpedia.org/ontology/Person> .
+

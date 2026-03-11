@@ -1,0 +1,102 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_University/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__Acharya_Institute_of_Technology a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:affiliation ex:entry_1__Visvesvaraya_Technological_University ;
+    ns1:numberOfPostgraduateStudents 700.0 .
+
+ex:entry_2__Accademia_di_Architettura_di_Mendrisio a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:dean ex:entry_2__Mario_Botta ;
+    ns1:location ex:entry_2__Switzerland ;
+    ns1:numberOfStudents 600.0 .
+
+ex:entry_3__Acharya_Institute_of_Technology a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_3__Bangalore ;
+    ns1:president ex:entry_3__B_M_Reddy .
+
+ex:entry_4__Acharya_Institute_of_Technology a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:established "2000"^^xsd:gYear ;
+    ns1:sportsOffered ex:entry_4__Tennis .
+
+ex:entry_5__AWH_Engineering_College a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_5__India .
+
+ex:entry_6__1_Decembrie_1918_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_6__Romania .
+
+ex:entry_7__1_Decembrie_1918_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:latinName ex:entry_7__Universitas_Apulensis ;
+    ns1:location ex:entry_7__Romania .
+
+ex:entry_1__Belgaum a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_1__Visvesvaraya_Technological_University a <http://dbpedia.org/ontology/EducationalInstitution>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_1__Belgaum .
+
+ex:entry_2__Mario_Botta a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_2__Switzerland a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_3__B_M_Reddy a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_3__Bangalore a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:isPartOf ex:entry_3__India .
+
+ex:entry_3__India a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_4__International_Tennis_Federation a <http://dbpedia.org/ontology/Organisation> .
+
+ex:entry_4__Tennis a <http://dbpedia.org/ontology/Sport> ;
+    ns1:sportGoverningBody ex:entry_4__International_Tennis_Federation .
+
+ex:entry_5__Ganges a <http://dbpedia.org/ontology/NaturalPlace>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/River> .
+
+ex:entry_5__India a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:largestCity ex:entry_5__Mumbai ;
+    ns1:river ex:entry_5__Ganges .
+
+ex:entry_5__Mumbai a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> .
+
+ex:entry_6__Klaus_Iohannis a <http://dbpedia.org/ontology/Person>,
+        <http://dbpedia.org/ontology/Politician> .
+
+ex:entry_6__Romania a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_6__Klaus_Iohannis .
+
+ex:entry_7__Andrew_the_Apostle a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_7__Romania a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:patronSaint ex:entry_7__Andrew_the_Apostle .
+
+ex:entry_7__Universitas_Apulensis a <http://dbpedia.org/ontology/Organisation> .
+

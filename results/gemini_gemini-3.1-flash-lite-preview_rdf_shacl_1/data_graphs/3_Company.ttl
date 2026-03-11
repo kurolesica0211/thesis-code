@@ -1,0 +1,87 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/3_Company/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__GMA_New_Media a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:foundingDate "2000_01_01"^^xsd:date ;
+    ns1:keyPerson ex:entry_1__Felipe_Gozon .
+
+ex:entry_2__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:serves ex:entry_2__United_States .
+
+ex:entry_3__Trane a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:foundationPlace ex:entry_3__La_Crosse .
+
+ex:entry_4__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:industry ex:entry_4__Energy ;
+    ns1:serves ex:entry_4__United_States .
+
+ex:entry_5__GMA_New_Media a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_5__Quezon_City .
+
+ex:entry_6__AmeriGas a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_6__King_of_Prussia ;
+    ns1:serves ex:entry_6__United_States .
+
+ex:entry_7__GMA_New_Media a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:industry ex:entry_7__Entertainment ;
+    ns1:service ex:entry_7__Web_service .
+
+ex:entry_8__Trane a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:foundingDate "1913_01_01"^^xsd:date ;
+    ns1:location ex:entry_8__Ireland ;
+    ns1:numberOfEmployees 29000.0 .
+
+ex:entry_9__GMA_New_Media a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation> ;
+    ns1:location ex:entry_9__GMA_Network_Center ;
+    ns1:product ex:entry_9__Mobile_applications .
+
+ex:entry_1__Felipe_Gozon a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_2__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:areaTotal 9833516.0 .
+
+ex:entry_3__La_Crosse a <http://dbpedia.org/ontology/City>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace>,
+        <http://dbpedia.org/ontology/Settlement> ;
+    ns1:areaTotal 58.0 .
+
+ex:entry_4__Energy a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_Company/class#Industry> .
+
+ex:entry_4__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_5__Quezon_City a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_6__King_of_Prussia a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_6__United_States a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_7__Entertainment a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_Company/class#Industry> .
+
+ex:entry_7__Web_service a <http://dbpedia.org/ontology/TopicalConcept>,
+        <https://HeraclesWang.github.io/OSKGC/3_Company/class#Service> .
+
+ex:entry_8__Ireland a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_9__GMA_Network_Center a <http://dbpedia.org/ontology/ArchitecturalStructure> .
+
+ex:entry_9__Mobile_applications a <http://dbpedia.org/ontology/Work> .
+

@@ -1,6 +1,5 @@
 import json
 import re
-import time
 from typing import List, Dict
 from litellm import completion
 from models.data_models import (
@@ -10,8 +9,7 @@ from models.data_models import (
 from extractors.prompt_engine import PromptEngine
 from extractors.response_schema import build_batch_response, BatchResponse
 
-MAX_RETRIES   = 2
-RETRY_DELAY_S = 10
+NUM_RETRIES = 3  # passed as num_retries to litellm; it handles backoff internally
 
 # Matches an RDF/Turtle namespace prefix like "rel:", "ns:", "dbo:" but NOT "http://"
 _NS_PREFIX_RE = re.compile(r'^[A-Za-z][A-Za-z0-9]*:(?!//)') 
@@ -61,49 +59,6 @@ class Extractor:
         self.model_name = model_name
         self.prompt_engine = prompt_engine
 
-    def extract_batch(self, entries: List[TaskEntry], schema) -> BatchExtractionResult:
-        """Send a single batched request for all entries (same category/schema).
-        Retries once on transient 503 / ServiceUnavailable errors."""
-        prompt = self.prompt_engine.build_batch_prompt(entries, schema)
-        ResponseModel = build_batch_response(schema)
-
-        last_err = None
-        for attempt in range(1, MAX_RETRIES + 1):
-            try:
-                response = completion(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format=ResponseModel,
-                    temperature=0.0,
-                )
-                content = response.choices[0].message.content
-                data = json.loads(content)
-
-                results: Dict[str, EntryExtractionResult] = {}
-                for i, entry_data in enumerate(data.get("entries", []), 1):
-                    key = f"entry_{i}"
-                    if not isinstance(entry_data, dict):
-                        entry_data = {}
-                    results[key] = _parse_entry_data(entry_data)
-
-                return BatchExtractionResult(results=results)
-
-            except Exception as e:
-                last_err = e
-                is_transient = "503" in str(e) or "ServiceUnavailable" in type(e).__name__
-                if is_transient and attempt < MAX_RETRIES:
-                    print(f"  [retry {attempt}/{MAX_RETRIES}] 503 — waiting {RETRY_DELAY_S}s ...")
-                    time.sleep(RETRY_DELAY_S)
-                    continue
-                break
-
-        print(f"[Extractor] batch failed ({len(entries)} entries): "
-              f"{type(last_err).__name__}: {last_err}")
-        return BatchExtractionResult(
-            results={f"entry_{i}": EntryExtractionResult()
-                     for i in range(1, len(entries) + 1)}
-        )
-
     def extract_batch_rdf(self, entries: List[TaskEntry],
                           rdf_ontology_text: str,
                           schema_def=None) -> BatchExtractionResult:
@@ -113,42 +68,33 @@ class Extractor:
         prompt = self.prompt_engine.build_rdf_batch_prompt(entries, rdf_ontology_text)
         ResponseModel = build_batch_response(schema_def) if schema_def else BatchResponse
 
-        last_err = None
-        for attempt in range(1, MAX_RETRIES + 1):
-            try:
-                response = completion(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format=ResponseModel,
-                    temperature=0.0,
-                )
-                content = response.choices[0].message.content
-                data = json.loads(content)
+        try:
+            response = completion(
+                model=self.model_name,
+                messages=[{"role": "user", "content": prompt}],
+                response_format=ResponseModel,
+                temperature=0.0,
+                num_retries=NUM_RETRIES,
+            )
+            content = response.choices[0].message.content
+            data = json.loads(content)
 
-                results: Dict[str, EntryExtractionResult] = {}
-                for i, entry_data in enumerate(data.get("entries", []), 1):
-                    key = f"entry_{i}"
-                    if not isinstance(entry_data, dict):
-                        entry_data = {}
-                    results[key] = _parse_entry_data(entry_data)
+            results: Dict[str, EntryExtractionResult] = {}
+            for i, entry_data in enumerate(data.get("entries", []), 1):
+                key = f"entry_{i}"
+                if not isinstance(entry_data, dict):
+                    entry_data = {}
+                results[key] = _parse_entry_data(entry_data)
 
-                return BatchExtractionResult(results=results)
+            return BatchExtractionResult(results=results)
 
-            except Exception as e:
-                last_err = e
-                is_transient = "503" in str(e) or "ServiceUnavailable" in type(e).__name__
-                if is_transient and attempt < MAX_RETRIES:
-                    print(f"  [retry {attempt}/{MAX_RETRIES}] 503 — waiting {RETRY_DELAY_S}s ...")
-                    time.sleep(RETRY_DELAY_S)
-                    continue
-                break
-
-        print(f"[Extractor] RDF batch failed ({len(entries)} entries): "
-              f"{type(last_err).__name__}: {last_err}")
-        return BatchExtractionResult(
-            results={f"entry_{i}": EntryExtractionResult()
-                     for i in range(1, len(entries) + 1)}
-        )
+        except Exception as e:
+            print(f"[Extractor] RDF batch failed ({len(entries)} entries): "
+                  f"{type(e).__name__}: {e}")
+            return BatchExtractionResult(
+                results={f"entry_{i}": EntryExtractionResult()
+                         for i in range(1, len(entries) + 1)}
+            )
 
     # ── SHACL validation loop ────────────────────────────────────────────
 
@@ -171,7 +117,7 @@ class Extractor:
         4. Repeat up to *max_rounds* correction passes.
         """
         from validators.shacl_validator import (
-            validate_batch, format_violations_for_prompt,
+            validate_batch, format_violations_for_prompt
         )
 
         # Step 1 — initial extraction
@@ -179,7 +125,9 @@ class Extractor:
 
         for round_num in range(1, max_rounds + 1):
             # Step 2 — SHACL validation
-            report = validate_batch(batch_result.results, rdf_ontology_text, shacl_shapes_ttl)
+            report, _, _ = validate_batch(
+                batch_result.results, rdf_ontology_text, shacl_shapes_ttl
+            )
             if report.conforms:
                 print(f"  [SHACL] round {round_num}: all triples conform ✓")
                 break
@@ -204,39 +152,44 @@ class Extractor:
             # Step 4 — call LLM with correction prompt
             ResponseModel = build_batch_response(schema_def) if schema_def else BatchResponse
             corrected_data = None
-            last_err = None
-            for attempt in range(1, MAX_RETRIES + 1):
-                try:
-                    response = completion(
-                        model=self.model_name,
-                        messages=[{"role": "user", "content": prompt}],
-                        response_format=ResponseModel,
-                        temperature=0.0,
-                    )
-                    corrected_data = json.loads(
-                        response.choices[0].message.content
-                    )
-                    break
-                except Exception as e:
-                    last_err = e
-                    is_transient = "503" in str(e) or "ServiceUnavailable" in type(e).__name__
-                    if is_transient and attempt < MAX_RETRIES:
-                        print(f"  [retry {attempt}/{MAX_RETRIES}] 503 — waiting {RETRY_DELAY_S}s ...")
-                        time.sleep(RETRY_DELAY_S)
-                        continue
-                    break
-
-            if corrected_data is None:
-                print(f"  [SHACL] correction call failed: {last_err}")
+            try:
+                response = completion(
+                    model=self.model_name,
+                    messages=[{"role": "user", "content": prompt}],
+                    response_format=ResponseModel,
+                    temperature=0.0,
+                    num_retries=NUM_RETRIES,
+                )
+                corrected_data = json.loads(response.choices[0].message.content)
+            except Exception as e:
+                print(f"  [SHACL] correction call failed: {type(e).__name__}: {e}")
                 break
 
-            # Step 5 — merge corrections back
+            # Step 5 — merge corrections back (only the violated triples)
             corrected_entries = corrected_data.get("entries", [])
             for local_i, entry_idx in enumerate(sorted(violated_indices)):
                 key = f"entry_{entry_idx + 1}"
-                if local_i < len(corrected_entries):
-                    raw = corrected_entries[local_i]
-                    if isinstance(raw, dict):
-                        batch_result.results[key] = _parse_entry_data(raw)
+                if local_i >= len(corrected_entries):
+                    continue
+                raw = corrected_entries[local_i]
+                if not isinstance(raw, dict):
+                    continue
+                corrected = _parse_entry_data(raw)
+                # Determine which triple indices were violated in this entry
+                violated_t_indices = sorted({
+                    v.triple_idx for v in violations_by_entry.get(entry_idx, [])
+                    if v.triple_idx >= 0
+                })
+                orig = batch_result.results[key]
+                new_triples = list(orig.triples)
+                new_schemas = list(orig.schemas)
+                for j, t_idx in enumerate(violated_t_indices):
+                    if j < len(corrected.triples) and t_idx < len(new_triples):
+                        new_triples[t_idx] = corrected.triples[j]
+                    if j < len(corrected.schemas) and t_idx < len(new_schemas):
+                        new_schemas[t_idx] = corrected.schemas[j]
+                batch_result.results[key] = EntryExtractionResult(
+                    triples=new_triples, schemas=new_schemas
+                )
 
         return batch_result

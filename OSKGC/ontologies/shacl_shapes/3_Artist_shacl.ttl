@@ -82,7 +82,7 @@
 
 <http://dbpedia.org/ontology/Person-birthYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:birthYear .
 
 <http://dbpedia.org/ontology/Place-demonym>
@@ -159,7 +159,7 @@
 
 <http://dbpedia.org/ontology/Person-activeYearsStartYear>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:activeYearsStartYear .
 
 <http://dbpedia.org/ontology/Organisation-genre>

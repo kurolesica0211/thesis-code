@@ -31,7 +31,7 @@
 
 <http://dbpedia.org/ontology/Organisation-revenue>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:revenue .
 
 <http://dbpedia.org/ontology/Place-governmentType>
@@ -56,7 +56,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-capital>
@@ -66,17 +66,17 @@
 
 <http://dbpedia.org/ontology/Place-percentageOfAreaWater>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:percentageOfAreaWater .
 
 <http://dbpedia.org/ontology/Place-areaUrban>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaUrban .
 
 <http://dbpedia.org/ontology/Organisation-operatingIncome>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:operatingIncome .
 
 <http://dbpedia.org/ontology/Place-leaderTitle>
@@ -91,12 +91,12 @@
 
 <http://dbpedia.org/ontology/Organisation-numberOfEmployees>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfEmployees .
 
 <http://dbpedia.org/ontology/Organisation-netIncome>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:netIncome .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -152,7 +152,7 @@
 
 <http://dbpedia.org/ontology/Place-elevationAboveTheSeaLevelInMetres>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:elevationAboveTheSeaLevelInMetres .
 
 <http://dbpedia.org/ontology/Place-location>
@@ -194,17 +194,17 @@
 
 <http://dbpedia.org/ontology/ArchitecturalStructure-cost>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:cost .
 
 <http://dbpedia.org/ontology/Organisation-numberOfLocations>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:numberOfLocations .
 
 <http://dbpedia.org/ontology/Place-populationDensity>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationDensity .
 
 <http://dbpedia.org/ontology/Organisation-parentCompany>

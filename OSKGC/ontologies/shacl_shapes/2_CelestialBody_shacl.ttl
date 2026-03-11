@@ -16,7 +16,7 @@
 
 <http://dbpedia.org/ontology/Asteroid-surfaceArea>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:surfaceArea .
 
 <http://dbpedia.org/ontology/Asteroid-formerName>
@@ -26,7 +26,7 @@
 
 <http://dbpedia.org/ontology/Asteroid-mass>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:mass .
 
 <http://dbpedia.org/ontology/Person>
@@ -52,7 +52,7 @@
 
 <http://dbpedia.org/ontology/Asteroid-escapeVelocity>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:escapeVelocity .
 
 <http://dbpedia.org/ontology/Person-almaMater>
@@ -67,12 +67,12 @@
 
 <http://dbpedia.org/ontology/Asteroid-periapsis>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:periapsis .
 
 <http://dbpedia.org/ontology/Asteroid-minimumTemperature>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:minimumTemperature .
 
 <http://dbpedia.org/ontology/Person-nationality>
@@ -87,7 +87,7 @@
 
 <http://dbpedia.org/ontology/Asteroid-maximumTemperature>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:maximumTemperature .
 
 <http://dbpedia.org/ontology/Person-birthDate>
@@ -97,22 +97,22 @@
 
 <http://dbpedia.org/ontology/Asteroid-orbitalPeriod>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:orbitalPeriod .
 
 <http://dbpedia.org/ontology/Asteroid-apoapsis>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:apoapsis .
 
 <http://dbpedia.org/ontology/Asteroid-density>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:density .
 
 <http://dbpedia.org/ontology/Asteroid-temperature>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:temperature .
 
 <http://dbpedia.org/ontology/Asteroid>
@@ -123,17 +123,17 @@
 
 <http://dbpedia.org/ontology/Asteroid-meanTemperature>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:meanTemperature .
 
 <http://dbpedia.org/ontology/Asteroid-absoluteMagnitude>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:absoluteMagnitude .
 
 <http://dbpedia.org/ontology/Asteroid-averageSpeed>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:averageSpeed .
 
 <http://dbpedia.org/ontology/Person-birthPlace>
@@ -143,7 +143,7 @@
 
 <http://dbpedia.org/ontology/Asteroid-rotationPeriod>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:rotationPeriod .
 
 <http://dbpedia.org/ontology/Person-doctoralStudent>

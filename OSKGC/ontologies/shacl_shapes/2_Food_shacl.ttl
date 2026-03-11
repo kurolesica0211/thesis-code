@@ -25,12 +25,12 @@ cls:Food-country  rdf:type  sh:PropertyShape ;
         sh:path   rel:country .
 
 cls:Food-protein  rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:protein .
 
 cls:Food-carbohydrate
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:carbohydrate .
 
 cls:Food-creator  rdf:type  sh:PropertyShape ;
@@ -76,7 +76,7 @@ cls:Food-cuisine  rdf:type  sh:PropertyShape ;
         sh:path   rel:cuisine .
 
 cls:Food-fat  rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:fat .
 
 <http://dbpedia.org/ontology/Species-division>
@@ -134,7 +134,7 @@ cls:Food  rdf:type            rdfs:Class , sh:NodeShape ;
         sh:path   rel:capital .
 
 cls:Food-year  rdf:type  sh:PropertyShape ;
-        sh:class  xsd:gYear ;
+        sh:datatype  xsd:gYear ;
         sh:path   rel:year .
 
 <http://dbpedia.org/ontology/Species-class>

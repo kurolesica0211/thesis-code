@@ -104,7 +104,7 @@
 
 <http://dbpedia.org/ontology/Place-areaTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:areaTotal .
 
 <http://dbpedia.org/ontology/Place-leader>
@@ -135,7 +135,7 @@
 
 <http://dbpedia.org/ontology/Place-populationTotal>
         rdf:type  sh:PropertyShape ;
-        sh:class  xsd:decimal ;
+        sh:datatype  xsd:decimal ;
         sh:path   rel:populationTotal .
 
 <http://dbpedia.org/ontology/Person-birthPlace>

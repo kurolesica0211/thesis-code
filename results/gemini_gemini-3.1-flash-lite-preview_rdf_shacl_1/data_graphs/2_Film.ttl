@@ -1,0 +1,41 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/2_Film/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_1__It_s_Great_to_Be_Young a <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/فلم> ;
+    ns1:director ex:entry_1__Cyril_Frankel .
+
+ex:entry_2__McVeagh_of_the_South_Seas a <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/فلم> ;
+    ns1:director ex:entry_2__Cyril_Bruce ;
+    ns1:starring ex:entry_2__Harry_Carey .
+
+ex:entry_3__It_s_Great_to_be_Young a <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/فلم> ;
+    ns1:starring ex:entry_3__Cecil_Parker .
+
+ex:entry_4__Super_Capers a <http://dbpedia.org/ontology/Work>,
+        <http://dbpedia.org/ontology/فلم> ;
+    ns1:starring ex:entry_4__Tom_Sizemore .
+
+ex:entry_1__Cyril_Frankel a <http://dbpedia.org/ontology/Person>,
+        <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+ex:entry_2__Cyril_Bruce a <http://dbpedia.org/ontology/Person>,
+        <https://HeraclesWang.github.io/OSKGC/2_Film/class#MovieDirector> .
+
+ex:entry_2__Harry_Carey a <http://dbpedia.org/ontology/Actor>,
+        <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthYear "1878"^^xsd:gYear .
+
+ex:entry_3__Cecil_Parker a <http://dbpedia.org/ontology/Actor>,
+        <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthYear "1897"^^xsd:gYear .
+
+ex:entry_4__Tom_Sizemore a <http://dbpedia.org/ontology/Actor>,
+        <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/Person> .
+

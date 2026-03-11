@@ -1,0 +1,25 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_Monument/relation#> .
+
+ex:entry_1__England a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:religion ex:entry_1__Church_of_England .
+
+ex:entry_2__Turkey a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_2__Ahmet_Davuto_lu .
+
+ex:entry_3__Azerbaijan a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leader ex:entry_3__Artur_Rasizade .
+
+ex:entry_1__Church_of_England a <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/ReligiousOrganisation> .
+
+ex:entry_2__Ahmet_Davuto_lu a <http://dbpedia.org/ontology/Person> .
+
+ex:entry_3__Artur_Rasizade a <http://dbpedia.org/ontology/Person> .
+

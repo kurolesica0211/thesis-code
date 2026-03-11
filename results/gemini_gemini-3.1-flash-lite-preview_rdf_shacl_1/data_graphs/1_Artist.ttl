@@ -1,0 +1,248 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <https://HeraclesWang.github.io/OSKGC/1_Artist/relation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:entry_10__Allen_Forrest a <http://dbpedia.org/ontology/Person> ;
+    ns1:profession ex:entry_10__Solo_singer .
+
+ex:entry_11__Alex_Day a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:activeYearsStartYear "2006"^^xsd:gYear .
+
+ex:entry_12__Andrew_Rayel a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedMusicalArtist ex:entry_12__Jonathan_Mendelsohn .
+
+ex:entry_13__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_13__Folk_rock .
+
+ex:entry_14__Ahmet_Ertegun a <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_14__Rhythm_and_blues .
+
+ex:entry_15__Al_Anderson a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:profession ex:entry_15__Singer .
+
+ex:entry_16__Israel a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:leaderTitle ex:entry_16__Prime_Minister .
+
+ex:entry_17__Liselotte_Grschebina a <http://dbpedia.org/ontology/Person> ;
+    ns1:nationality ex:entry_17__Israel .
+
+ex:entry_18__Israel a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> ;
+    ns1:longName ex:entry_18__State_of_Israel .
+
+ex:entry_19__Alfredo_Zitarrosa a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_19__Movieplay .
+
+ex:entry_1__Liselotte_Grschebina a <http://dbpedia.org/ontology/Person> ;
+    ns1:origin ex:entry_1__German_Empire .
+
+ex:entry_20__Abradab a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_20__Katowice .
+
+ex:entry_21__Aaron_Deer a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:profession ex:entry_21__Singer .
+
+ex:entry_22__Anders_Osborne a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_22__Blues .
+
+ex:entry_23__Andrew_Rayel a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_23__Chi_in_u .
+
+ex:entry_24__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_24__Floating_World_Records .
+
+ex:entry_25__Alfredo_Zitarrosa a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:background ex:entry_25__Solo_singer .
+
+ex:entry_26__Aleksandra_Kova a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_26__Socialist_Republic_of_Serbia .
+
+ex:entry_27__Ahmet_Ertegun a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_27__Istanbul .
+
+ex:entry_28__Rock_and_roll a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> ;
+    ns1:stylisticOrigin ex:entry_28__Country_music .
+
+ex:entry_29__Allen_Forrest a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_29__The_Black_Eyed_Peas .
+
+ex:entry_2__Alex_Day a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:genre ex:entry_2__Folk_music .
+
+ex:entry_30__Albennie_Jones a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:birthPlace ex:entry_30__United_States .
+
+ex:entry_31__Andra a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedMusicalArtist ex:entry_31__Marius_Moga .
+
+ex:entry_32__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_32__Stanyan_Records .
+
+ex:entry_3__Aleksandra_Kova a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedMusicalArtist ex:entry_3__Bebi_Dol .
+
+ex:entry_4__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:associatedBand ex:entry_4__Bajik .
+
+ex:entry_5__Andrew_Rayel a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:instrument ex:entry_5__Piano .
+
+ex:entry_6__Ahmet_Ertegun a <http://dbpedia.org/ontology/Person> ;
+    ns1:background ex:entry_6__Non_performing_personnel .
+
+ex:entry_7__Allen_Forrest a <http://dbpedia.org/ontology/Person> ;
+    ns1:birthYear "1981"^^xsd:gYear .
+
+ex:entry_8__Andrew_White a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_8__Fiction .
+
+ex:entry_9__Alison_O_Donnell a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> ;
+    ns1:recordLabel ex:entry_9__Static_Caravan_Recordings .
+
+ex:entry_10__Solo_singer a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_12__Jonathan_Mendelsohn a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_13__Folk_rock a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_14__Rhythm_and_blues a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_15__Singer a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_16__Prime_Minister a <http://dbpedia.org/ontology/PersonFunction> .
+
+ex:entry_17__Israel a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_18__State_of_Israel a <http://dbpedia.org/ontology/Country>,
+        <http://dbpedia.org/ontology/Place>,
+        <http://dbpedia.org/ontology/PopulatedPlace> .
+
+ex:entry_19__Movieplay a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_1__German_Empire a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_20__Katowice a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_21__Singer a <http://dbpedia.org/ontology/PersonFunction>,
+        <http://dbpedia.org/ontology/Profession> .
+
+ex:entry_22__Blues a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_23__Chi_in_u a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_24__Floating_World_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_25__Solo_singer a <http://dbpedia.org/ontology/PersonFunction> .
+
+ex:entry_26__Socialist_Republic_of_Serbia a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_27__Istanbul a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_28__Country_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_29__The_Black_Eyed_Peas a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Band> .
+
+ex:entry_2__Folk_music a <http://dbpedia.org/ontology/Genre>,
+        <http://dbpedia.org/ontology/MusicGenre>,
+        <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_30__United_States a <http://dbpedia.org/ontology/Place> .
+
+ex:entry_31__Marius_Moga a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_32__Stanyan_Records a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_3__Bebi_Dol a <http://dbpedia.org/ontology/Artist>,
+        <http://dbpedia.org/ontology/MusicalArtist>,
+        <http://dbpedia.org/ontology/Person> .
+
+ex:entry_4__Bajik a <http://dbpedia.org/ontology/Group>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Band> .
+
+ex:entry_5__Piano a <http://dbpedia.org/ontology/Device>,
+        <https://HeraclesWang.github.io/OSKGC/1_Artist/class#Instrument> .
+
+ex:entry_6__Non_performing_personnel a <http://dbpedia.org/ontology/TopicalConcept> .
+
+ex:entry_8__Fiction a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
+ex:entry_9__Static_Caravan_Recordings a <http://dbpedia.org/ontology/Company>,
+        <http://dbpedia.org/ontology/Organisation>,
+        <http://dbpedia.org/ontology/RecordLabel> .
+
