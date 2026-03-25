@@ -1,0 +1,110 @@
+{
+  "entries": {
+    "entry_1": {
+      "triples": [
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasFather",
+          "object": "entry_1__Unknown_Father_Radbot"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Guntram_the_Rich",
+          "relation": "fhkb:hasFather",
+          "object": "entry_1__Unknown_Father_Guntram"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasSex",
+          "object": "entry_1__Male"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Guntram_the_Rich",
+          "relation": "fhkb:hasSex",
+          "object": "entry_1__Male"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasMother",
+          "object": "entry_1__Unknown_Mother_Radbot"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Guntram_the_Rich",
+          "relation": "fhkb:hasMother",
+          "object": "entry_1__Unknown_Mother_Guntram"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Ida_of_Lorraine",
+          "relation": "fhkb:hasSex",
+          "object": "entry_1__Female"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__House_of_Habsburg",
+          "relation": "fhkb:isAncestorOf",
+          "object": "entry_1__Radbot"
+        },
+        {
+          "triple_idx": 3,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasRelation",
+          "object": "entry_1__Carolingian_bloodline"
+        },
+        {
+          "triple_idx": 4,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasRelation",
+          "object": "entry_1__Habichtsburg"
+        }
+      ],
+      "schemas": [
+        {
+          "subject": "Person",
+          "object": "Man"
+        },
+        {
+          "subject": "Person",
+          "object": "Man"
+        },
+        {
+          "subject": "Person",
+          "object": "Sex"
+        },
+        {
+          "subject": "Person",
+          "object": "Sex"
+        },
+        {
+          "subject": "Person",
+          "object": "Woman"
+        },
+        {
+          "subject": "Person",
+          "object": "Woman"
+        },
+        {
+          "subject": "Woman",
+          "object": "Sex"
+        },
+        {
+          "subject": "Ancestor",
+          "object": "Person"
+        },
+        {
+          "subject": "Person",
+          "object": "DomainEntity"
+        },
+        {
+          "subject": "Person",
+          "object": "DomainEntity"
+        }
+      ]
+    }
+  }
+}
