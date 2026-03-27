@@ -11,6 +11,583 @@ For each violation in the `{violations}` report:
 3. **Explain the Logic:** Why did this fail based on the constraint? (e.g., "This property is not allowed for this class," or "This value must be a URI, but a string was provided").
 4. **Define the Fix:** Provide a precise instruction on how to change the triple to satisfy the ontology.
 
+# Ontology
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.co-ode.org/roberts/family-tree.owl#"
+     xml:base="http://www.co-ode.org/roberts/family-tree.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fhkb="http://www.example.com/genealogy.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.co-ode.org/roberts/family-tree.owl">
+        <rdfs:comment>A simple family relationships ontology and associated instances. the description is of the family of Robert Stevens and the intention is to use the minimal of asserted relationships and the maximum of inference. To do this  I&apos;ve used role chains, nominals and properties hierarchies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#alsoKnownAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#alsoKnownAs"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#formerlyKnownAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#formerlyKnownAs"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasBirthYear -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#hasBirthYear"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasDeathYear -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#hasDeathYear"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasMarriageYear -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#hasMarriageYear"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#knownAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com/genealogy.owl#knownAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/family-tree.owl#hasBirthYear -->
+
+    <rdfs:Datatype rdf:about="http://www.co-ode.org/roberts/family-tree.owl#hasBirthYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasAncestor -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasAncestor">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isAncestorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasBrother">
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isBrotherOf"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.example.com/genealogy.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasChild">
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasChild"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isDaughterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isFatherOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasFemalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasFemalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasPartner"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isFemalePartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Marriage"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasHusband -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasSpouse"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isHusbandOf"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#isFemalePartnerIn"/>
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#hasMalePartner"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasMalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasMalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasPartner"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isMalePartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Marriage"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isMotherOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasParent">
+        <owl:equivalentProperty rdf:resource="http://www.example.com/genealogy.owl#isChildOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasAncestor"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isParentOf"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasPartner">
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isPartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Marriage"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasRelation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasSex -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasSex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasSister">
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isSisterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasChild"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isSonOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasSpouse">
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isSpouseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#hasWife -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasSpouse"/>
+        <owl:inverseOf rdf:resource="http://www.example.com/genealogy.owl#isWifeOf"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#isMalePartnerIn"/>
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#hasFemalePartner"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isAncestorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isAncestorOf"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isBloodrelationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isBloodrelationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#hasRelation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isBrotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isSiblingOf"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isChildOf"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isDaughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isFemalePartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isFemalePartnerIn"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isHusbandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isHusbandOf"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isMalePartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isMalePartnerIn"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isParentOf"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isPartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isPartnerIn"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isSiblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isBloodrelationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#hasParent"/>
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isSisterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isSiblingOf"/>
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isSonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.com/genealogy.owl#isChildOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isSpouseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isSpouseOf"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isUncleOf">
+        <rdfs:domain rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+        <rdfs:range rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#isBrotherOf"/>
+            <rdf:Description rdf:about="http://www.example.com/genealogy.owl#isParentOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#isWifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.com/genealogy.owl#isWifeOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Ancestor -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Ancestor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#isAncestorOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Marriage"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#DomainEntity"/>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Female -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Female">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Male -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Male">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Man -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Man">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasSex"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Marriage"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Marriage -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Marriage">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/genealogy.owl#DomainEntity"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Person -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Person">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Man"/>
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Woman"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.com/genealogy.owl#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Man"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Woman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasParent"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.com/genealogy.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.example.com/genealogy.owl#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Sex -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Sex">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Female"/>
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Male"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.example.com/genealogy.owl#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.com/genealogy.owl#Woman -->
+
+    <owl:Class rdf:about="http://www.example.com/genealogy.owl#Woman">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.com/genealogy.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.com/genealogy.owl#hasSex"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.com/genealogy.owl#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
+
+
 # Raw SHACL Violations
 ### entry_1
 Text: Origins and Early Ascent
@@ -40,53 +617,6 @@ Target triple index -1 (no matching existing triple):
 - You likely need to ADD new triple(s).
 
   [1] Correction item
-  - focus node: entry_1__Ida_of_Lorraine
-  - property path: hasSex
-  - ontology definition of the property:
-
-    fhkb:hasSex a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Sex .
-
-  - value: N/A (missing value violation)
-  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
-  - violation: Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasSex
-  - source shape:
-
-    fhkb:Woman-hasSex a sh:PropertyShape ;
-    dash:hasValueWithClass fhkb:Female ;
-    sh:class fhkb:Sex ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasSex .
-
-
-  [2] Correction item
-  - focus node: entry_1__Radbot
-  - property path: hasFather
-  - ontology definition of the property:
-
-    fhkb:hasFather a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Man ;
-    rdfs:subPropertyOf fhkb:hasParent ;
-    owl:inverseOf fhkb:isFatherOf .
-
-  - value: N/A (missing value violation)
-  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
-  - violation: Less than 1 values on ex:entry_1__Radbot->fhkb:hasFather
-  - source shape:
-
-    fhkb:Person-hasFather a sh:PropertyShape ;
-    sh:class fhkb:Man ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasFather .
-
-
-  [3] Correction item
   - focus node: entry_1__Guntram_the_Rich
   - property path: hasFather
   - ontology definition of the property:
@@ -110,29 +640,55 @@ Target triple index -1 (no matching existing triple):
     sh:path fhkb:hasFather .
 
 
-  [4] Correction item
-  - focus node: entry_1__Radbot
-  - property path: hasSex
+  [2] Correction item
+  - focus node: entry_1__Ida_of_Lorraine
+  - property path: hasFather
   - ontology definition of the property:
 
-    fhkb:hasSex a owl:FunctionalProperty,
+    fhkb:hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Sex .
+    rdfs:range fhkb:Man ;
+    rdfs:subPropertyOf fhkb:hasParent ;
+    owl:inverseOf fhkb:isFatherOf .
 
   - value: N/A (missing value violation)
   - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
-  - violation: Less than 1 values on ex:entry_1__Radbot->fhkb:hasSex
+  - violation: Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasFather
   - source shape:
 
-    fhkb:Person-hasSex a sh:PropertyShape ;
-    sh:class fhkb:Sex ;
+    fhkb:Person-hasFather a sh:PropertyShape ;
+    sh:class fhkb:Man ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
-    sh:path fhkb:hasSex .
+    sh:path fhkb:hasFather .
 
 
-  [5] Correction item
+  [3] Correction item
+  - focus node: entry_1__Radbot
+  - property path: hasFather
+  - ontology definition of the property:
+
+    fhkb:hasFather a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain fhkb:Person ;
+    rdfs:range fhkb:Man ;
+    rdfs:subPropertyOf fhkb:hasParent ;
+    owl:inverseOf fhkb:isFatherOf .
+
+  - value: N/A (missing value violation)
+  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
+  - violation: Less than 1 values on ex:entry_1__Radbot->fhkb:hasFather
+  - source shape:
+
+    fhkb:Person-hasFather a sh:PropertyShape ;
+    sh:class fhkb:Man ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasFather .
+
+
+  [4] Correction item
   - focus node: entry_1__Guntram_the_Rich
   - property path: hasSex
   - ontology definition of the property:
@@ -154,31 +710,7 @@ Target triple index -1 (no matching existing triple):
     sh:path fhkb:hasSex .
 
 
-  [6] Correction item
-  - focus node: entry_1__Radbot
-  - property path: hasMother
-  - ontology definition of the property:
-
-    fhkb:hasMother a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Woman ;
-    rdfs:subPropertyOf fhkb:hasParent ;
-    owl:inverseOf fhkb:isMotherOf .
-
-  - value: N/A (missing value violation)
-  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
-  - violation: Less than 1 values on ex:entry_1__Radbot->fhkb:hasMother
-  - source shape:
-
-    fhkb:Person-hasMother a sh:PropertyShape ;
-    sh:class fhkb:Woman ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasMother .
-
-
-  [7] Correction item
+  [5] Correction item
   - focus node: entry_1__Guntram_the_Rich
   - property path: hasMother
   - ontology definition of the property:
@@ -202,26 +734,74 @@ Target triple index -1 (no matching existing triple):
     sh:path fhkb:hasMother .
 
 
+  [6] Correction item
+  - focus node: entry_1__Ida_of_Lorraine
+  - property path: hasMother
+  - ontology definition of the property:
+
+    fhkb:hasMother a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain fhkb:Person ;
+    rdfs:range fhkb:Woman ;
+    rdfs:subPropertyOf fhkb:hasParent ;
+    owl:inverseOf fhkb:isMotherOf .
+
+  - value: N/A (missing value violation)
+  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
+  - violation: Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasMother
+  - source shape:
+
+    fhkb:Person-hasMother a sh:PropertyShape ;
+    sh:class fhkb:Woman ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasMother .
+
+
+  [7] Correction item
+  - focus node: entry_1__Radbot
+  - property path: hasMother
+  - ontology definition of the property:
+
+    fhkb:hasMother a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain fhkb:Person ;
+    rdfs:range fhkb:Woman ;
+    rdfs:subPropertyOf fhkb:hasParent ;
+    owl:inverseOf fhkb:isMotherOf .
+
+  - value: N/A (missing value violation)
+  - constraint: http://www.w3.org/ns/shacl#MinCountConstraintComponent
+  - violation: Less than 1 values on ex:entry_1__Radbot->fhkb:hasMother
+  - source shape:
+
+    fhkb:Person-hasMother a sh:PropertyShape ;
+    sh:class fhkb:Woman ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasMother .
+
+
 Target triple index 0 (existing triple to edit):
-- Current triple: (Guntram_the_Rich, hasRelation, House_of_Habsburg)
+- Current triple: (Guntram_the_Rich, hasAncestor, House_of_Habsburg)
 - Current schema types: (Person, DomainEntity)
 - Ontology definitions of the types:
   - Subject type Person:
 
     fhkb:Person a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass fhkb:Person ;
             owl:onProperty fhkb:hasParent ],
         [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
         [ a owl:Restriction ;
             owl:onProperty fhkb:hasFather ;
             owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
         fhkb:DomainEntity ;
     owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
@@ -234,69 +814,59 @@ Target triple index 0 (existing triple to edit):
 
   [8] Correction item
   - focus node: entry_1__Guntram_the_Rich
-  - property path: hasRelation
+  - property path: hasAncestor
   - ontology definition of the property:
 
-    fhkb:hasRelation a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Person .
+    fhkb:hasAncestor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf fhkb:hasRelation,
+        owl:topObjectProperty ;
+    owl:inverseOf fhkb:isAncestorOf .
 
   - value: entry_1__House_of_Habsburg
-  - constraint: http://www.w3.org/ns/shacl#ClassConstraintComponent
-  - violation: Value does not have class fhkb:Person
+  - constraint: http://www.w3.org/ns/shacl#ClosedConstraintComponent
+  - violation: Node ex:entry_1__Guntram_the_Rich is closed. It cannot have value: ex:entry_1__House_of_Habsburg
   - source shape:
 
-    fhkb:Person-hasRelation a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:hasRelation .
+    fhkb:Person a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Person-hasFather,
+        fhkb:Person-hasMother,
+        fhkb:Person-hasParent,
+        fhkb:Person-hasRelation,
+        fhkb:Person-hasSex .
 
 
 Target triple index 1 (existing triple to edit):
-- Current triple: (Radbot, hasAncestor, Guntram_the_Rich)
-- Current schema types: (Person, Person)
+- Current triple: (Radbot, hasAncestor, House_of_Habsburg)
+- Current schema types: (Person, DomainEntity)
 - Ontology definitions of the types:
   - Subject type Person:
 
     fhkb:Person a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass fhkb:Person ;
             owl:onProperty fhkb:hasParent ],
         [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
         [ a owl:Restriction ;
             owl:onProperty fhkb:hasFather ;
             owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
         fhkb:DomainEntity ;
     owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
 
-  - Object type Person:
+  - Object type DomainEntity:
 
-    fhkb:Person a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-            owl:onClass fhkb:Person ;
-            owl:onProperty fhkb:hasParent ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasFather ;
-            owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
-        fhkb:DomainEntity ;
-    owl:disjointWith fhkb:Sex ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
+    fhkb:DomainEntity a owl:Class .
 
 
   [9] Correction item
@@ -310,9 +880,9 @@ Target triple index 1 (existing triple to edit):
         owl:topObjectProperty ;
     owl:inverseOf fhkb:isAncestorOf .
 
-  - value: entry_1__Guntram_the_Rich
+  - value: entry_1__House_of_Habsburg
   - constraint: http://www.w3.org/ns/shacl#ClosedConstraintComponent
-  - violation: Node ex:entry_1__Radbot is closed. It cannot have value: ex:entry_1__Guntram_the_Rich
+  - violation: Node ex:entry_1__Radbot is closed. It cannot have value: ex:entry_1__House_of_Habsburg
   - source shape:
 
     fhkb:Person a rdfs:Class,
@@ -327,99 +897,48 @@ Target triple index 1 (existing triple to edit):
 
 
 Target triple index 2 (existing triple to edit):
-- Current triple: (Radbot, hasRelation, Habichtsburg)
-- Current schema types: (Person, DomainEntity)
+- Current triple: (Radbot, hasPartner, Ida_of_Lorraine)
+- Current schema types: (Person, Marriage)
 - Ontology definitions of the types:
   - Subject type Person:
 
     fhkb:Person a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass fhkb:Person ;
             owl:onProperty fhkb:hasParent ],
         [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
         [ a owl:Restriction ;
             owl:onProperty fhkb:hasFather ;
             owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
         fhkb:DomainEntity ;
     owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
 
-  - Object type DomainEntity:
+  - Object type Marriage:
 
-    fhkb:DomainEntity a owl:Class .
+    fhkb:Marriage a owl:Class ;
+    rdfs:subClassOf fhkb:DomainEntity ;
+    owl:disjointWith fhkb:Person,
+        fhkb:Sex,
+        fhkb:Woman .
 
 
   [10] Correction item
   - focus node: entry_1__Radbot
-  - property path: hasRelation
+  - property path: hasPartner
   - ontology definition of the property:
 
-    fhkb:hasRelation a owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Person .
-
-  - value: entry_1__Habichtsburg
-  - constraint: http://www.w3.org/ns/shacl#ClassConstraintComponent
-  - violation: Value does not have class fhkb:Person
-  - source shape:
-
-    fhkb:Person-hasRelation a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:hasRelation .
-
-
-Target triple index 3 (existing triple to edit):
-- Current triple: (Radbot, hasWife, Ida_of_Lorraine)
-- Current schema types: (Person, Woman)
-- Ontology definitions of the types:
-  - Subject type Person:
-
-    fhkb:Person a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-            owl:onClass fhkb:Person ;
-            owl:onProperty fhkb:hasParent ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasFather ;
-            owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
-        fhkb:DomainEntity ;
-    owl:disjointWith fhkb:Sex ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
-
-  - Object type Woman:
-
-    fhkb:Woman a owl:Class ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( fhkb:Person [ a owl:Restriction ;
-                        owl:onProperty fhkb:hasSex ;
-                        owl:someValuesFrom fhkb:Female ] ) ] .
-
-
-  [11] Correction item
-  - focus node: entry_1__Radbot
-  - property path: hasWife
-  - ontology definition of the property:
-
-    fhkb:hasWife a owl:ObjectProperty ;
-    rdfs:range fhkb:Woman ;
-    rdfs:subPropertyOf fhkb:hasSpouse ;
-    owl:inverseOf fhkb:isWifeOf ;
-    owl:propertyChainAxiom ( fhkb:isMalePartnerIn fhkb:hasFemalePartner ) .
+    fhkb:hasPartner a owl:ObjectProperty ;
+    rdfs:domain fhkb:Marriage ;
+    rdfs:range fhkb:Person ;
+    owl:inverseOf fhkb:isPartnerIn .
 
   - value: entry_1__Ida_of_Lorraine
   - constraint: http://www.w3.org/ns/shacl#ClosedConstraintComponent
@@ -438,45 +957,60 @@ Target triple index 3 (existing triple to edit):
 
 
 Target triple index 4 (existing triple to edit):
-- Current triple: (Ida_of_Lorraine, hasRelation, Carolingian_bloodline)
-- Current schema types: (Woman, DomainEntity)
+- Current triple: (Ida_of_Lorraine, hasSex, Female)
+- Current schema types: (Person, Sex)
 - Ontology definitions of the types:
-  - Subject type Woman:
+  - Subject type Person:
 
-    fhkb:Woman a owl:Class ;
+    fhkb:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass fhkb:Person ;
+            owl:onProperty fhkb:hasParent ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasFather ;
+            owl:someValuesFrom fhkb:Man ],
+        fhkb:DomainEntity ;
+    owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( fhkb:Person [ a owl:Restriction ;
-                        owl:onProperty fhkb:hasSex ;
-                        owl:someValuesFrom fhkb:Female ] ) ] .
+            owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
 
-  - Object type DomainEntity:
+  - Object type Sex:
 
-    fhkb:DomainEntity a owl:Class .
+    fhkb:Sex a owl:Class ;
+    rdfs:subClassOf fhkb:DomainEntity ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( fhkb:Female fhkb:Male ) ] .
 
 
-  [12] Correction item
+  [11] Correction item
   - focus node: entry_1__Ida_of_Lorraine
-  - property path: hasRelation
+  - property path: hasSex
   - ontology definition of the property:
 
-    fhkb:hasRelation a owl:ObjectProperty,
-        owl:SymmetricProperty ;
+    fhkb:hasSex a owl:FunctionalProperty,
+        owl:ObjectProperty ;
     rdfs:domain fhkb:Person ;
-    rdfs:range fhkb:Person .
+    rdfs:range fhkb:Sex .
 
-  - value: entry_1__Carolingian_bloodline
+  - value: entry_1__Female
   - constraint: http://www.w3.org/ns/shacl#ClosedConstraintComponent
-  - violation: Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Carolingian_bloodline
+  - violation: Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Female
   - source shape:
 
-    fhkb:Woman a rdfs:Class,
+    fhkb:Marriage a rdfs:Class,
         sh:NodeShape ;
-    rdfs:subClassOf [ ] ;
-    owl:intersectionOf [ ] ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Woman-hasSex,
-        fhkb:Woman-isSisterOf .
+    sh:property fhkb:Marriage-hasFemalePartner,
+        fhkb:Marriage-hasMalePartner,
+        fhkb:Marriage-hasPartner .
 
 
 Target triple index 5 (existing triple to edit):
@@ -487,18 +1021,18 @@ Target triple index 5 (existing triple to edit):
 
     fhkb:Person a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass fhkb:Person ;
             owl:onProperty fhkb:hasParent ],
         [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
         [ a owl:Restriction ;
             owl:onProperty fhkb:hasFather ;
             owl:someValuesFrom fhkb:Man ],
-        [ a owl:Restriction ;
-            owl:onProperty fhkb:hasMother ;
-            owl:someValuesFrom fhkb:Woman ],
         fhkb:DomainEntity ;
     owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
@@ -509,7 +1043,7 @@ Target triple index 5 (existing triple to edit):
     fhkb:DomainEntity a owl:Class .
 
 
-  [13] Correction item
+  [12] Correction item
   - focus node: entry_1__Radbot
   - property path: hasRelation
   - ontology definition of the property:
@@ -527,6 +1061,77 @@ Target triple index 5 (existing triple to edit):
     fhkb:Person-hasRelation a sh:PropertyShape ;
     sh:class fhkb:Person ;
     sh:path fhkb:hasRelation .
+
+
+Target triple index 7 (existing triple to edit):
+- Current triple: (Ida_of_Lorraine, hasRelation, Radbot)
+- Current schema types: (Person, Person)
+- Ontology definitions of the types:
+  - Subject type Person:
+
+    fhkb:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass fhkb:Person ;
+            owl:onProperty fhkb:hasParent ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasFather ;
+            owl:someValuesFrom fhkb:Man ],
+        fhkb:DomainEntity ;
+    owl:disjointWith fhkb:Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
+
+  - Object type Person:
+
+    fhkb:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass fhkb:Person ;
+            owl:onProperty fhkb:hasParent ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasMother ;
+            owl:someValuesFrom fhkb:Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasFather ;
+            owl:someValuesFrom fhkb:Man ],
+        fhkb:DomainEntity ;
+    owl:disjointWith fhkb:Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( fhkb:Man fhkb:Woman ) ] .
+
+
+  [13] Correction item
+  - focus node: entry_1__Ida_of_Lorraine
+  - property path: hasRelation
+  - ontology definition of the property:
+
+    fhkb:hasRelation a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain fhkb:Person ;
+    rdfs:range fhkb:Person .
+
+  - value: entry_1__Radbot
+  - constraint: http://www.w3.org/ns/shacl#ClosedConstraintComponent
+  - violation: Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Radbot
+  - source shape:
+
+    fhkb:Marriage a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Marriage-hasFemalePartner,
+        fhkb:Marriage-hasMalePartner,
+        fhkb:Marriage-hasPartner .
 
 
 

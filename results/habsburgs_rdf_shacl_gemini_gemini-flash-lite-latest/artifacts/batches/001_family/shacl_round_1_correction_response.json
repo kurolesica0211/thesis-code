@@ -4,90 +4,86 @@
       "triples": [
         {
           "triple_idx": -1,
+          "subject": "entry_1__Guntram_the_Rich",
+          "relation": "fhkb:hasFather",
+          "object": "entry_1__Unknown_Father_Guntram"
+        },
+        {
+          "triple_idx": -1,
           "subject": "entry_1__Ida_of_Lorraine",
-          "relation": "fhkb:hasSex",
-          "object": "fhkb:Female"
+          "relation": "fhkb:hasFather",
+          "object": "entry_1__Unknown_Father_Ida"
         },
         {
           "triple_idx": -1,
           "subject": "entry_1__Radbot",
           "relation": "fhkb:hasFather",
-          "object": "ex:Father_of_Radbot"
-        },
-        {
-          "triple_idx": -1,
-          "subject": "entry_1__Guntram_the_Rich",
-          "relation": "fhkb:hasFather",
-          "object": "ex:Father_of_Guntram_the_Rich"
-        },
-        {
-          "triple_idx": -1,
-          "subject": "entry_1__Radbot",
-          "relation": "fhkb:hasSex",
-          "object": "fhkb:Male"
+          "object": "entry_1__Unknown_Father_Radbot"
         },
         {
           "triple_idx": -1,
           "subject": "entry_1__Guntram_the_Rich",
           "relation": "fhkb:hasSex",
-          "object": "fhkb:Male"
-        },
-        {
-          "triple_idx": -1,
-          "subject": "entry_1__Radbot",
-          "relation": "fhkb:hasMother",
-          "object": "ex:Mother_of_Radbot"
+          "object": "entry_1__Male_Guntram"
         },
         {
           "triple_idx": -1,
           "subject": "entry_1__Guntram_the_Rich",
           "relation": "fhkb:hasMother",
-          "object": "ex:Mother_of_Guntram_the_Rich"
+          "object": "entry_1__Unknown_Mother_Guntram"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Ida_of_Lorraine",
+          "relation": "fhkb:hasMother",
+          "object": "entry_1__Unknown_Mother_Ida"
+        },
+        {
+          "triple_idx": -1,
+          "subject": "entry_1__Radbot",
+          "relation": "fhkb:hasMother",
+          "object": "entry_1__Unknown_Mother_Radbot"
         },
         {
           "triple_idx": 0,
           "subject": "entry_1__Guntram_the_Rich",
-          "relation": "fhkb:hasRelation",
-          "object": "ex:House_of_Habsburg_Person_Representative"
+          "relation": "fhkb:hasAncestor",
+          "object": "entry_1__House_of_Habsburg"
         },
         {
           "triple_idx": 1,
           "subject": "entry_1__Radbot",
           "relation": "fhkb:hasAncestor",
-          "object": "entry_1__Guntram_the_Rich"
+          "object": "entry_1__House_of_Habsburg"
         },
         {
           "triple_idx": 2,
           "subject": "entry_1__Radbot",
-          "relation": "fhkb:built",
-          "object": "entry_1__Habichtsburg"
-        },
-        {
-          "triple_idx": 3,
-          "subject": "entry_1__Radbot",
-          "relation": "fhkb:hasSpouse",
+          "relation": "fhkb:hasPartner",
           "object": "entry_1__Ida_of_Lorraine"
         },
         {
           "triple_idx": 4,
           "subject": "entry_1__Ida_of_Lorraine",
-          "relation": "fhkb:isBloodrelationOf",
-          "object": "entry_1__Carolingian_bloodline_Entity"
+          "relation": "fhkb:hasSex",
+          "object": "entry_1__Female"
         },
         {
           "triple_idx": 5,
           "subject": "entry_1__Radbot",
-          "relation": "fhkb:hasAncestor",
-          "object": "entry_1__Carolingian_bloodline_Entity"
+          "relation": "fhkb:hasRelation",
+          "object": "entry_1__Carolingian_bloodline"
+        },
+        {
+          "triple_idx": 7,
+          "subject": "entry_1__Ida_of_Lorraine",
+          "relation": "fhkb:hasRelation",
+          "object": "entry_1__Radbot"
         }
       ],
       "schemas": [
         {
           "subject": "fhkb:Person",
-          "object": "fhkb:Sex"
-        },
-        {
-          "subject": "fhkb:Person",
           "object": "fhkb:Man"
         },
         {
@@ -96,7 +92,7 @@
         },
         {
           "subject": "fhkb:Person",
-          "object": "fhkb:Sex"
+          "object": "fhkb:Man"
         },
         {
           "subject": "fhkb:Person",
@@ -112,11 +108,7 @@
         },
         {
           "subject": "fhkb:Person",
-          "object": "fhkb:Person"
-        },
-        {
-          "subject": "fhkb:Person",
-          "object": "fhkb:Person"
+          "object": "fhkb:Woman"
         },
         {
           "subject": "fhkb:Person",
@@ -124,11 +116,19 @@
         },
         {
           "subject": "fhkb:Person",
-          "object": "fhkb:Person"
+          "object": "fhkb:DomainEntity"
         },
         {
-          "subject": "fhkb:Woman",
-          "object": "fhkb:DomainEntity"
+          "subject": "fhkb:Person",
+          "object": "fhkb:Marriage"
+        },
+        {
+          "subject": "fhkb:Person",
+          "object": "fhkb:Sex"
+        },
+        {
+          "subject": "fhkb:Person",
+          "object": "fhkb:Person"
         },
         {
           "subject": "fhkb:Person",

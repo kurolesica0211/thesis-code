@@ -14,63 +14,53 @@ Entry: family_0
 --------------------------------------------------------------------------------
 
 UNMAPPED VIOLATIONS (triple_idx < 0):
-  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasSex
-  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Radbot->fhkb:hasFather
   [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Guntram_the_Rich->fhkb:hasFather
-  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Radbot->fhkb:hasSex
+  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasFather
+  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Radbot->fhkb:hasFather
   [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Guntram_the_Rich->fhkb:hasSex
-  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Radbot->fhkb:hasMother
   [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Guntram_the_Rich->fhkb:hasMother
+  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Ida_of_Lorraine->fhkb:hasMother
+  [http://www.w3.org/ns/shacl#MinCountConstraintComponent] Less than 1 values on ex:entry_1__Radbot->fhkb:hasMother
 
 Triple 1:
-  ORIGINAL: (Guntram_the_Rich, hasRelation, House_of_Habsburg)
+  ORIGINAL: (Guntram_the_Rich, hasAncestor, House_of_Habsburg)
   ORIGINAL TYPES: (Person, DomainEntity)
 
   VIOLATIONS:
-    [http://www.w3.org/ns/shacl#ClassConstraintComponent] Value does not have class fhkb:Person
+    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Guntram_the_Rich is closed. It cannot have value: ex:entry_1__House_of_Habsburg
 
-  CORRECTED: (Guntram_the_Rich, hasRelation, House_of_Habsburg_Person_Representative)
-  CORRECTED TYPES: (Person, Person)
-
-Triple 2:
-  ORIGINAL: (Radbot, hasAncestor, Guntram_the_Rich)
-  ORIGINAL TYPES: (Person, Person)
-
-  VIOLATIONS:
-    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Radbot is closed. It cannot have value: ex:entry_1__Guntram_the_Rich
-
-  CORRECTED: (Radbot, hasAncestor, Guntram_the_Rich)
-  CORRECTED TYPES: (Person, Person)
-
-Triple 3:
-  ORIGINAL: (Radbot, hasRelation, Habichtsburg)
-  ORIGINAL TYPES: (Person, DomainEntity)
-
-  VIOLATIONS:
-    [http://www.w3.org/ns/shacl#ClassConstraintComponent] Value does not have class fhkb:Person
-
-  CORRECTED: (Radbot, built, Habichtsburg)
+  CORRECTED: (Guntram_the_Rich, hasAncestor, House_of_Habsburg)
   CORRECTED TYPES: (Person, DomainEntity)
 
-Triple 4:
-  ORIGINAL: (Radbot, hasWife, Ida_of_Lorraine)
-  ORIGINAL TYPES: (Person, Woman)
+Triple 2:
+  ORIGINAL: (Radbot, hasAncestor, House_of_Habsburg)
+  ORIGINAL TYPES: (Person, DomainEntity)
+
+  VIOLATIONS:
+    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Radbot is closed. It cannot have value: ex:entry_1__House_of_Habsburg
+
+  CORRECTED: (Radbot, hasAncestor, House_of_Habsburg)
+  CORRECTED TYPES: (Person, DomainEntity)
+
+Triple 3:
+  ORIGINAL: (Radbot, hasPartner, Ida_of_Lorraine)
+  ORIGINAL TYPES: (Person, Marriage)
 
   VIOLATIONS:
     [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Radbot is closed. It cannot have value: ex:entry_1__Ida_of_Lorraine
 
-  CORRECTED: (Radbot, hasSpouse, Ida_of_Lorraine)
-  CORRECTED TYPES: (Person, Person)
+  CORRECTED: (Radbot, hasPartner, Ida_of_Lorraine)
+  CORRECTED TYPES: (Person, Marriage)
 
 Triple 5:
-  ORIGINAL: (Ida_of_Lorraine, hasRelation, Carolingian_bloodline)
-  ORIGINAL TYPES: (Woman, DomainEntity)
+  ORIGINAL: (Ida_of_Lorraine, hasSex, Female)
+  ORIGINAL TYPES: (Person, Sex)
 
   VIOLATIONS:
-    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Carolingian_bloodline
+    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Female
 
-  CORRECTED: (Ida_of_Lorraine, isBloodrelationOf, Carolingian_bloodline_Entity)
-  CORRECTED TYPES: (Woman, DomainEntity)
+  CORRECTED: (Ida_of_Lorraine, hasSex, Female)
+  CORRECTED TYPES: (Person, Sex)
 
 Triple 6:
   ORIGINAL: (Radbot, hasRelation, Carolingian_bloodline)
@@ -79,40 +69,50 @@ Triple 6:
   VIOLATIONS:
     [http://www.w3.org/ns/shacl#ClassConstraintComponent] Value does not have class fhkb:Person
 
-  CORRECTED: (Radbot, hasAncestor, Carolingian_bloodline_Entity)
+  CORRECTED: (Radbot, hasRelation, Carolingian_bloodline)
+  CORRECTED TYPES: (Person, Person)
+
+Triple 8:
+  ORIGINAL: (Ida_of_Lorraine, hasRelation, Radbot)
+  ORIGINAL TYPES: (Person, Person)
+
+  VIOLATIONS:
+    [http://www.w3.org/ns/shacl#ClosedConstraintComponent] Node ex:entry_1__Ida_of_Lorraine is closed. It cannot have value: ex:entry_1__Radbot
+
+  CORRECTED: (Ida_of_Lorraine, hasRelation, Radbot)
   CORRECTED TYPES: (Person, Person)
 
 Triple NEW (triple_idx=-1):
 
-  CORRECTED: (Ida_of_Lorraine, hasSex, Female)
-  CORRECTED TYPES: (Person, Sex)
-
-Triple NEW (triple_idx=-1):
-
-  CORRECTED: (Radbot, hasFather, Father_of_Radbot)
+  CORRECTED: (Guntram_the_Rich, hasFather, Unknown_Father_Guntram)
   CORRECTED TYPES: (Person, Man)
 
 Triple NEW (triple_idx=-1):
 
-  CORRECTED: (Guntram_the_Rich, hasFather, Father_of_Guntram_the_Rich)
+  CORRECTED: (Ida_of_Lorraine, hasFather, Unknown_Father_Ida)
   CORRECTED TYPES: (Person, Man)
 
 Triple NEW (triple_idx=-1):
 
-  CORRECTED: (Radbot, hasSex, Male)
+  CORRECTED: (Radbot, hasFather, Unknown_Father_Radbot)
+  CORRECTED TYPES: (Person, Man)
+
+Triple NEW (triple_idx=-1):
+
+  CORRECTED: (Guntram_the_Rich, hasSex, Male_Guntram)
   CORRECTED TYPES: (Person, Sex)
 
 Triple NEW (triple_idx=-1):
 
-  CORRECTED: (Guntram_the_Rich, hasSex, Male)
-  CORRECTED TYPES: (Person, Sex)
-
-Triple NEW (triple_idx=-1):
-
-  CORRECTED: (Radbot, hasMother, Mother_of_Radbot)
+  CORRECTED: (Guntram_the_Rich, hasMother, Unknown_Mother_Guntram)
   CORRECTED TYPES: (Person, Woman)
 
 Triple NEW (triple_idx=-1):
 
-  CORRECTED: (Guntram_the_Rich, hasMother, Mother_of_Guntram_the_Rich)
+  CORRECTED: (Ida_of_Lorraine, hasMother, Unknown_Mother_Ida)
+  CORRECTED TYPES: (Person, Woman)
+
+Triple NEW (triple_idx=-1):
+
+  CORRECTED: (Radbot, hasMother, Unknown_Mother_Radbot)
   CORRECTED TYPES: (Person, Woman)

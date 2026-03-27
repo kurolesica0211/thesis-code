@@ -11,6 +11,9 @@ For each violation in the `{{violations}}` report:
 3. **Explain the Logic:** Why did this fail based on the constraint? (e.g., "This property is not allowed for this class," or "This value must be a URI, but a string was provided").
 4. **Define the Fix:** Provide a precise instruction on how to change the triple to satisfy the ontology.
 
+# Ontology
+{ontology}
+
 # Raw SHACL Violations
 {violations}
 

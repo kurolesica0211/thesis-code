@@ -1,20 +1,20 @@
-{"ts": "2026-03-27T17:58:52.701246+00:00", "event": "run.start", "payload": {"run_dir": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest", "shacl_validation": true, "total_batches": 1, "total_entries": 1}}
-{"ts": "2026-03-27T17:58:52.706076+00:00", "event": "batch.start", "payload": {"batch_idx": 0, "category": "family", "entries": 1}}
-{"ts": "2026-03-27T17:58:52.710189+00:00", "event": "graph.node.llm_extract_initial.start", "payload": {"category": "family", "entries": 1}}
-{"ts": "2026-03-27T17:58:53.979645+00:00", "event": "graph.node.llm_extract_initial.end", "payload": {"category": "family"}}
-{"ts": "2026-03-27T17:58:53.982805+00:00", "event": "graph.node.validate_shacl.start", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:58:54.067385+00:00", "event": "graph.node.validate_shacl.end", "payload": {"round": 1, "conforms": false, "violations": 13, "should_correct": true}}
-{"ts": "2026-03-27T17:58:54.068037+00:00", "event": "graph.route.after_validate", "payload": {"route": "prepare_correction_round", "done_reason": "needs_correction"}}
-{"ts": "2026-03-27T17:58:54.068762+00:00", "event": "graph.node.prepare_correction_round.start", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:58:54.107591+00:00", "event": "graph.node.prepare_correction_round.end", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:58:54.109622+00:00", "event": "graph.node.llm_violation_translation.start", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:58:56.835464+00:00", "event": "graph.node.llm_violation_translation.end", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:58:56.837451+00:00", "event": "graph.node.llm_correction.start", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:59:12.477850+00:00", "event": "graph.node.llm_correction.end", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:59:12.478750+00:00", "event": "graph.node.merge_correction.start", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:59:12.485403+00:00", "event": "graph.node.merge_correction.end", "payload": {"round": 1, "category": "family"}}
-{"ts": "2026-03-27T17:59:12.486075+00:00", "event": "graph.node.validate_shacl.start", "payload": {"round": 2, "category": "family"}}
-{"ts": "2026-03-27T17:59:12.513663+00:00", "event": "graph.node.validate_shacl.end", "payload": {"round": 2, "conforms": false, "violations": 18, "should_correct": false}}
-{"ts": "2026-03-27T17:59:12.514103+00:00", "event": "graph.route.after_validate", "payload": {"route": "finish", "done_reason": "max_rounds_reached"}}
-{"ts": "2026-03-27T17:59:12.515304+00:00", "event": "batch.end", "payload": {"batch_idx": 0, "category": "family", "done_reason": "max_rounds_reached", "all_empty": false}}
-{"ts": "2026-03-27T17:59:12.518389+00:00", "event": "run.end", "payload": {"results": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\results.json", "failed_batches": 0, "metrics": {"avg_precision": 0.0, "avg_recall": 0.0, "avg_f1": 0.0}}}
+{"ts": "2026-03-27T18:14:05.314942+00:00", "event": "run.start", "payload": {"run_dir": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest", "shacl_validation": true, "total_batches": 1, "total_entries": 1}}
+{"ts": "2026-03-27T18:14:05.319296+00:00", "event": "batch.start", "payload": {"batch_idx": 0, "category": "family", "entries": 1}}
+{"ts": "2026-03-27T18:14:05.323775+00:00", "event": "graph.node.llm_extract_initial.start", "payload": {"category": "family", "entries": 1}}
+{"ts": "2026-03-27T18:14:17.524660+00:00", "event": "graph.node.llm_extract_initial.end", "payload": {"category": "family"}}
+{"ts": "2026-03-27T18:14:17.526893+00:00", "event": "graph.node.validate_shacl.start", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:17.594995+00:00", "event": "graph.node.validate_shacl.end", "payload": {"round": 1, "conforms": false, "violations": 13, "should_correct": true}}
+{"ts": "2026-03-27T18:14:17.595468+00:00", "event": "graph.route.after_validate", "payload": {"route": "prepare_correction_round", "done_reason": "needs_correction"}}
+{"ts": "2026-03-27T18:14:17.596144+00:00", "event": "graph.node.prepare_correction_round.start", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:17.635134+00:00", "event": "graph.node.prepare_correction_round.end", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:17.637372+00:00", "event": "graph.node.llm_violation_translation.start", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:21.393826+00:00", "event": "graph.node.llm_violation_translation.end", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:21.395917+00:00", "event": "graph.node.llm_correction.start", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:36.616699+00:00", "event": "graph.node.llm_correction.end", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:36.617464+00:00", "event": "graph.node.merge_correction.start", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:36.623450+00:00", "event": "graph.node.merge_correction.end", "payload": {"round": 1, "category": "family"}}
+{"ts": "2026-03-27T18:14:36.624054+00:00", "event": "graph.node.validate_shacl.start", "payload": {"round": 2, "category": "family"}}
+{"ts": "2026-03-27T18:14:36.650983+00:00", "event": "graph.node.validate_shacl.end", "payload": {"round": 2, "conforms": false, "violations": 16, "should_correct": false}}
+{"ts": "2026-03-27T18:14:36.651416+00:00", "event": "graph.route.after_validate", "payload": {"route": "finish", "done_reason": "max_rounds_reached"}}
+{"ts": "2026-03-27T18:14:36.652612+00:00", "event": "batch.end", "payload": {"batch_idx": 0, "category": "family", "done_reason": "max_rounds_reached", "all_empty": false}}
+{"ts": "2026-03-27T18:14:36.655654+00:00", "event": "run.end", "payload": {"results": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\results.json", "failed_batches": 0, "metrics": {"avg_precision": 0.0, "avg_recall": 0.0, "avg_f1": 0.0}}}

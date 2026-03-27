@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-03-27T17:58:52.701209+00:00",
+  "started_at": "2026-03-27T18:14:05.314922+00:00",
   "run_dir": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest",
   "config": {
     "model": {
@@ -47,5 +47,5 @@
   "metrics_summary": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\metrics_summary.json",
   "results": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\results.json",
   "trace": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\run_events.jsonl",
-  "completed_at": "2026-03-27T17:59:12.517663+00:00"
+  "completed_at": "2026-03-27T18:14:36.655137+00:00"
 }

@@ -343,10 +343,10 @@ class Extractor:
             ont_idx=ont_idx
         )
         translation_prompt = PromptEngine.build_violation_translation_prompt(
-            violation_translation_template_path, violations_text
+            violation_translation_template_path, violations_text, rdf_ontology_text
         )
         correction_prompt = PromptEngine.build_correction_prompt(
-            correction_template_path, rdf_ontology_text, violations_text
+            correction_template_path
         )
 
         os.makedirs(artifact_dir, exist_ok=True)
