@@ -40,3 +40,18 @@ class EntryExtractionResult(BaseModel):
 class BatchExtractionResult(BaseModel):
     """Full batch response keyed by entry label (entry_1, entry_2, …)."""
     results: Dict[str, EntryExtractionResult] = {}
+
+
+ExtractionResult = EntryExtractionResult
+
+
+class EvaluationResult(BaseModel):
+    entry_id: str
+    input_text: str
+    gold_triples: List[Dict[str, str]]
+    pred_triples: List[Dict[str, str]]
+    pred_schemas: List[Dict[str, str]]
+    is_correct: bool
+    precision: float
+    recall: float
+    f1: float

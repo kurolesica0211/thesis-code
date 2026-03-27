@@ -1,0 +1,51 @@
+{
+  "started_at": "2026-03-27T17:58:52.701209+00:00",
+  "run_dir": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest",
+  "config": {
+    "model": {
+      "name": "gemini/gemini-flash-lite-latest"
+    },
+    "prompts": {
+      "extraction_template": "prompts/zero_shot_rdf.md",
+      "violation_translation_template": "prompts/two_step_correction/violation_translation.md",
+      "correction_template": "prompts/two_step_correction/correction.md"
+    },
+    "shacl": {
+      "enabled": true,
+      "max_rounds": 1,
+      "log_enabled": true,
+      "prompt_caching_enabled": false
+    },
+    "runtime": {
+      "delay_seconds": 4.0
+    },
+    "output": {
+      "base_dir": "results",
+      "custom_tag": "habsburgs",
+      "run_dir": null
+    },
+    "dataset": {
+      "source": "custom_family_bench",
+      "oskgc": {
+        "data_dir": "OSKGC/data",
+        "split": "dev",
+        "ontology_dir": "OSKGC/ontologies/rdf",
+        "shacl_shapes_dir": "OSKGC/ontologies/shacl_shapes"
+      },
+      "custom_family_bench": {
+        "input_text_file": "custom_family_bench/habsburgs.txt",
+        "ontology_file": "custom_family_bench/family_TBOX.owl",
+        "shacl_file": "custom_family_bench/family_TBOX_shacl_closed.ttl"
+      }
+    },
+    "categories": []
+  },
+  "batches": [
+    "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\manifests\\batch_001_family.json"
+  ],
+  "failed_batches": [],
+  "metrics_summary": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\metrics_summary.json",
+  "results": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\results.json",
+  "trace": "results\\habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest\\run_events.jsonl",
+  "completed_at": "2026-03-27T17:59:12.517663+00:00"
+}

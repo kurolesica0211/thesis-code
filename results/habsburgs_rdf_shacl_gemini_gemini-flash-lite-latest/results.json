@@ -6,58 +6,33 @@
     "pred_triples": [
       {
         "subject": "Guntram_the_Rich",
-        "relation": "hasAncestor",
-        "object": "House_of_Habsburg"
-      },
-      {
-        "subject": "Radbot",
-        "relation": "hasAncestor",
-        "object": "House_of_Habsburg"
-      },
-      {
-        "subject": "Radbot",
-        "relation": "hasWife",
-        "object": "Ida_of_Lorraine"
-      },
-      {
-        "subject": "Radbot",
         "relation": "hasRelation",
-        "object": "Carolingian_bloodline"
+        "object": "House_of_Habsburg_Person_Representative"
       },
       {
         "subject": "Radbot",
-        "relation": "hasRelation",
+        "relation": "hasAncestor",
+        "object": "Guntram_the_Rich"
+      },
+      {
+        "subject": "Radbot",
+        "relation": "built",
         "object": "Habichtsburg"
       },
       {
         "subject": "Radbot",
-        "relation": "hasFather",
-        "object": "Unknown_Father_Radbot"
+        "relation": "hasSpouse",
+        "object": "Ida_of_Lorraine"
       },
       {
-        "subject": "Guntram_the_Rich",
-        "relation": "hasFather",
-        "object": "Unknown_Father_Guntram"
-      },
-      {
-        "subject": "Radbot",
-        "relation": "hasSex",
-        "object": "Male"
-      },
-      {
-        "subject": "Guntram_the_Rich",
-        "relation": "hasSex",
-        "object": "Male"
+        "subject": "Ida_of_Lorraine",
+        "relation": "isBloodrelationOf",
+        "object": "Carolingian_bloodline_Entity"
       },
       {
         "subject": "Radbot",
-        "relation": "hasMother",
-        "object": "Unknown_Mother_Radbot"
-      },
-      {
-        "subject": "Guntram_the_Rich",
-        "relation": "hasMother",
-        "object": "Unknown_Mother_Guntram"
+        "relation": "hasAncestor",
+        "object": "Carolingian_bloodline_Entity"
       },
       {
         "subject": "Ida_of_Lorraine",
@@ -65,23 +40,44 @@
         "object": "Female"
       },
       {
-        "subject": "House_of_Habsburg",
-        "relation": "isAncestorOf",
-        "object": "Radbot"
+        "subject": "Radbot",
+        "relation": "hasFather",
+        "object": "Father_of_Radbot"
+      },
+      {
+        "subject": "Guntram_the_Rich",
+        "relation": "hasFather",
+        "object": "Father_of_Guntram_the_Rich"
+      },
+      {
+        "subject": "Radbot",
+        "relation": "hasSex",
+        "object": "Male"
+      },
+      {
+        "subject": "Guntram_the_Rich",
+        "relation": "hasSex",
+        "object": "Male"
+      },
+      {
+        "subject": "Radbot",
+        "relation": "hasMother",
+        "object": "Mother_of_Radbot"
+      },
+      {
+        "subject": "Guntram_the_Rich",
+        "relation": "hasMother",
+        "object": "Mother_of_Guntram_the_Rich"
       }
     ],
     "pred_schemas": [
       {
         "subject": "Person",
-        "object": "Ancestor"
+        "object": "Person"
       },
       {
         "subject": "Person",
-        "object": "Ancestor"
-      },
-      {
-        "subject": "Person",
-        "object": "Woman"
+        "object": "Person"
       },
       {
         "subject": "Person",
@@ -89,40 +85,47 @@
       },
       {
         "subject": "Person",
-        "object": "DomainEntity"
-      },
-      {
-        "subject": "Person",
-        "object": "Man"
-      },
-      {
-        "subject": "Person",
-        "object": "Man"
-      },
-      {
-        "subject": "Person",
-        "object": "Sex"
-      },
-      {
-        "subject": "Person",
-        "object": "Sex"
-      },
-      {
-        "subject": "Person",
-        "object": "Woman"
-      },
-      {
-        "subject": "Person",
-        "object": "Woman"
+        "object": "Person"
       },
       {
         "subject": "Woman",
+        "object": "DomainEntity"
+      },
+      {
+        "subject": "Person",
+        "object": "Person"
+      },
+      {
+        "subject": "Person",
         "object": "Sex"
       },
       {
-        "subject": "Ancestor",
-        "object": "Person"
+        "subject": "Person",
+        "object": "Man"
+      },
+      {
+        "subject": "Person",
+        "object": "Man"
+      },
+      {
+        "subject": "Person",
+        "object": "Sex"
+      },
+      {
+        "subject": "Person",
+        "object": "Sex"
+      },
+      {
+        "subject": "Person",
+        "object": "Woman"
+      },
+      {
+        "subject": "Person",
+        "object": "Woman"
       }
-    ]
+    ],
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
   }
 ]

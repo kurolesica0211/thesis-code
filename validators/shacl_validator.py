@@ -43,9 +43,9 @@ class Violation:
     """A single SHACL violation mapped back to an entry + triple index."""
     entry_idx: int
     triple_idx: int
-    focus_node: str
-    property_path: Optional[str]
-    value_node: Optional[str]
+    focus_node: URIRef
+    property_path: Optional[URIRef]
+    value_node: Optional[URIRef]
     constraint: str
     source_shape: Optional[URIRef]
     message: str
@@ -84,13 +84,9 @@ class OntologyIndex:
         # Build label→URI map for classes
         self._class_uris: Dict[str, URIRef] = {}
         for cls_uri in self.ont.subjects(RDF.type, OWL.Class):
-            for label in self.ont.objects(cls_uri, RDFS.label):
-                self._class_uris[str(label)] = URIRef(cls_uri)
-            # Also index by URI local name (fragment / last path segment)
             local = _label_of(URIRef(cls_uri))
             if local not in self._class_uris:
                 self._class_uris[local] = URIRef(cls_uri)
-            # And index by the full URI string itself
             self._class_uris[str(cls_uri)] = URIRef(cls_uri)
 
         # Build label→URI map for object/datatype properties
@@ -98,8 +94,6 @@ class OntologyIndex:
         for kind in (OWL.ObjectProperty, OWL.DatatypeProperty):
             for p in self.ont.subjects(RDF.type, kind):
                 prop_uri = URIRef(p)
-                for lbl in self.ont.objects(p, RDFS.label):
-                    self._prop_uris[str(lbl)] = prop_uri
                 local = _label_of(prop_uri)
                 if local not in self._prop_uris:
                     self._prop_uris[local] = prop_uri
@@ -232,7 +226,7 @@ def validate_batch(
     ontology: str,
     shacl_shapes_ttl: str,
     ontology_format: Literal["turtle", "xml"] = "turtle",
-) -> Tuple[ValidationReport, Graph, str, List[dict]]:
+) -> Tuple[ValidationReport, Graph, OntologyIndex, str]:
     """
     Validate a batch of predicted triples against the category's OWL ontology
     using pre‑generated SHACL shapes.
@@ -255,7 +249,7 @@ def validate_batch(
     if len(data_graph) == 0:
         return ValidationReport(conforms=True), "", []
 
-    conforms, results_graph, results_text = py_validate(
+    conforms, results_graph, _ = py_validate(
         data_graph,
         shacl_graph=shapes_graph,
         inference="none",
@@ -278,14 +272,9 @@ def validate_batch(
             source_shape = results_graph.value(result_node, SH.sourceShape)
             if "http" not in str(source_shape):
                 source_shape = None
-            messages = list(results_graph.objects(result_node, SH.resultMessage))
-
-            focus_str = _label_of(focus) if focus else "?"
-            value_str = _label_of(value) if value is not None else None
-            entry_idx = _key_of(focus_str) if focus else -1
-            path_str = _label_of(path) if path else None
-            constraint_str = _label_of(source) if source else "unknown"
-            msg = str(messages[0]) if messages else f"{constraint_str} on {path_str}"
+            constraint = str(source) if source else "unknown constraint"
+            messages = list(str(m) for m in results_graph.objects(result_node, SH.resultMessage))
+            entry_idx = _key_of(_label_of(focus)) if focus else -1
 
             matches = (
                 triple_map.get((focus, path, value), [])
@@ -297,12 +286,12 @@ def validate_batch(
                     violations.append(Violation(
                         entry_idx=entry_idx,
                         triple_idx=t_idx,
-                        focus_node=focus_str,
-                        property_path=path_str,
-                        value_node=value_str,
-                        constraint=constraint_str,
+                        focus_node=focus,
+                        property_path=path,
+                        value_node=value,
+                        constraint=constraint,
                         source_shape=source_shape if source_shape else None,
-                        message=msg,
+                        message=messages[0],
                     ))
             else:
                 # Violation on a node with no matching property triple
@@ -310,34 +299,33 @@ def validate_batch(
                 violations.append(Violation(
                     entry_idx=entry_idx,
                     triple_idx=-1,
-                    focus_node=focus_str,
-                    property_path=path_str,
-                    value_node=value_str,
-                    constraint=constraint_str,
+                    focus_node=focus,
+                    property_path=path,
+                    value_node=value,
+                    constraint=constraint,
                     source_shape=source_shape if source_shape else None,
-                    message=msg,
+                    message=messages[0],
                 ))
 
     ttl = data_graph.serialize(format="turtle")
-    tm_entries = [
-        {"subj": str(k[0]), "prop": str(k[1]), "obj": str(k[2]), "indices": v}
-        for k, v in triple_map.items()
-    ]
-    return ValidationReport(conforms=conforms, violations=violations), shapes_graph, ttl, tm_entries
+    return ValidationReport(conforms=conforms, violations=violations), shapes_graph, ont_idx, ttl
 
 
 # ── Format violations for the correction prompt ──────────────────────────────
 
 def serialize_shape(graph: Graph, shape_uri: URIRef) -> str:
     mini_graph = graph.cbd(shape_uri)
+    for prefix, namespace in graph.namespaces():
+        mini_graph.bind(prefix, namespace)
     serialized_cleaned = re.sub(r'@prefix.*\n|@base.*\n', '', mini_graph.serialize(format="turtle")).strip()
     return serialized_cleaned
 
-def format_violations_for_prompt(
+def format_violations_for_prompt(*,
     violations_by_entry: Dict[int, List[Violation]],
     original_entries: list,
     original_results: Dict[str, EntryExtractionResult],
     shapes_graph: Graph,
+    ont_idx: OntologyIndex,
 ) -> str:
     """
     Build a human‑readable summary of SHACL violations keyed by entry,
@@ -374,20 +362,26 @@ def format_violations_for_prompt(
                         part += f"\nTarget triple index {t_idx} (existing triple to edit):\n"
                         part += f"- Current triple: ({t.subject}, {t.relation}, {t.object})\n"
                         part += f"- Current schema types: ({s.subject}, {s.object})\n"
+                        part += f"- Ontology definitions of the types:\n"
+                        part += f"  - Subject type {s.subject}:\n\n    {serialize_shape(ont_idx.ont, ont_idx.class_uri(s.subject))}\n\n"
+                        part += f"  - Object type {s.object}:\n\n    {serialize_shape(ont_idx.ont, ont_idx.class_uri(s.object))}\n\n"
                     else:
                         part += "\nTarget triple index -1 (no matching existing triple):\n"
                         part += "- You likely need to ADD new triple(s).\n"
 
                     for v in grouped_violations:
                         part += f"\n  [{item_counter}] Correction item\n"
-                        part += f"  - focus node: {v.focus_node}\n"
-                        part += f"  - property path: {v.property_path or 'unknown'}\n"
-                        part += f"  - value: {v.value_node if v.value_node is not None else 'N/A (missing value violation)'}\n"
+                        part += f"  - focus node: {_label_of(v.focus_node)}\n"
+                        part += f"  - property path: {_label_of(v.property_path) or 'unknown'}\n"
+                        prop_def = serialize_shape(ont_idx.ont, v.property_path) if v.property_path else None
+                        part += f"  - ontology definition of the property:\n\n    {prop_def}\n\n" if v.property_path else ""
+                        part += f"  - value: {_label_of(v.value_node) if v.value_node is not None else 'N/A (missing value violation)'}\n"
                         part += f"  - constraint: {v.constraint}\n"
                         part += f"  - violation: {v.message}\n"
                         if v.source_shape:
                             shape_ttl = serialize_shape(shapes_graph, v.source_shape)
                             part += f"  - source shape:\n\n    {shape_ttl}\n\n"
+                        
                         item_counter += 1
                 else:
                     raise ValueError(f"Unexpected triple index {t_idx} in violation for entry_{entry_idx + 1}")

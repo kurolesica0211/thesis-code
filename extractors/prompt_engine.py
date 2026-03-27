@@ -55,3 +55,15 @@ class PromptEngine:
             ontology_rdf=rdf_ontology_text,
             violations=violations_text,
         )
+        
+    @staticmethod
+    def build_violation_translation_prompt(
+        template_path: str,
+        violation_text: str,
+    ) -> str:
+        """Build a violation translation prompt from the violation translation template."""
+        with open(template_path, "r", encoding="utf-8") as f:
+            template = f.read()
+        return template.format(
+            violations=violation_text,
+        )

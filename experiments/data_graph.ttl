@@ -1,0 +1,48 @@
+@prefix ex: <http://example.org/data/> .
+@prefix ns1: <http://www.example.com/genealogy.owl#> .
+
+ex:entry_1__Radbot a ns1:DomainEntity,
+        ns1:Person ;
+    ns1:hasAncestor ex:entry_1__Guntram_the_Rich ;
+    ns1:hasFather ex:entry_1__Count_of_Klettgau ;
+    ns1:hasMother ex:entry_1__Mother_of_Radbot ;
+    ns1:hasPartner ex:entry_1__Ida_of_Lorraine ;
+    ns1:hasRelation ex:entry_1__Carolingian_bloodline,
+        ex:entry_1__Habichtsburg,
+        ex:entry_1__Holy_Roman_Empire ;
+    ns1:hasSex ex:entry_1__Male .
+
+ex:entry_1__Carolingian_bloodline a ns1:DomainEntity .
+
+ex:entry_1__Count_in_Breisgau a ns1:Man .
+
+ex:entry_1__Count_of_Klettgau a ns1:Man .
+
+ex:entry_1__Female a ns1:DomainEntity,
+        ns1:Female,
+        ns1:Sex .
+
+ex:entry_1__Guntram_the_Rich a ns1:DomainEntity,
+        ns1:Person ;
+    ns1:hasFather ex:entry_1__Count_in_Breisgau ;
+    ns1:hasMother ex:entry_1__Mother_of_Guntram ;
+    ns1:hasRelation ex:entry_1__House_of_Habsburg ;
+    ns1:hasSex ex:entry_1__Male .
+
+ex:entry_1__Habichtsburg a ns1:DomainEntity .
+
+ex:entry_1__Holy_Roman_Empire a ns1:DomainEntity .
+
+ex:entry_1__House_of_Habsburg a ns1:DomainEntity .
+
+ex:entry_1__Ida_of_Lorraine a ns1:Woman ;
+    ns1:hasSex ex:entry_1__Female .
+
+ex:entry_1__Mother_of_Guntram a ns1:Woman .
+
+ex:entry_1__Mother_of_Radbot a ns1:Woman .
+
+ex:entry_1__Male a ns1:DomainEntity,
+        ns1:Male,
+        ns1:Sex .
+

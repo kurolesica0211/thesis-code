@@ -1,7 +1,9 @@
 import json
+import os
 import re
-from typing import List, Dict, Optional, Literal, Tuple
+from typing import Any, Dict, List, Literal, Optional, Tuple
 from litellm import completion
+
 from models.data_models import (
     TaskEntry, BatchExtractionResult,
     EntryExtractionResult, Triple, TripleSchema
@@ -12,6 +14,7 @@ from extractors.response_schema import (
     build_correction_response,
     BatchResponse,
 )
+from validators.shacl_validator import OntologyIndex
 
 NUM_RETRIES = 3  # passed as num_retries to litellm; it handles backoff internally
 
@@ -35,6 +38,52 @@ def _normalize_entity_name(s: str) -> str:
     if normalized.startswith("ex_"):
         normalized = normalized[3:]
     return _strip_entry_prefix(normalized)
+
+
+def _message_content_to_text(content: Any) -> str:
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: List[str] = []
+        for block in content:
+            if isinstance(block, dict):
+                text = block.get("text")
+                if isinstance(text, str):
+                    parts.append(text)
+            elif isinstance(block, str):
+                parts.append(block)
+        return "\n".join(parts)
+    return str(content)
+
+
+def _build_user_message(
+    content: str,
+    cache_reusable: bool = False,
+    use_content_blocks: bool = True,
+) -> dict:
+    if not use_content_blocks:
+        return {"role": "user", "content": content}
+
+    block: Dict[str, Any] = {
+        "type": "text",
+        "text": content,
+    }
+    if cache_reusable:
+        block["cache_control"] = {"type": "ephemeral"}
+    return {
+        "role": "user",
+        "content": [block],
+    }
+
+
+def _build_assistant_message(content: str, use_content_blocks: bool = True) -> dict:
+    if not use_content_blocks:
+        return {"role": "assistant", "content": content}
+
+    return {
+        "role": "assistant",
+        "content": [{"type": "text", "text": content}],
+    }
 
 
 def _log_round_conforms(log_file: str, round_num: int) -> None:
@@ -264,179 +313,213 @@ class Extractor:
 
     # ── SHACL validation loop ────────────────────────────────────────────
 
-    def extract_batch_rdf_with_shacl(
-        self,
+    def prepare_shacl_correction_round(
+        self, *,
         entries: List[TaskEntry],
+        current_result: BatchExtractionResult,
         rdf_ontology_text: str,
-        shacl_shapes_ttl: str,
-        correction_template_path: str = "prompts/correction_rdf.md",
-        max_rounds: int = 1,
+        ont_idx: OntologyIndex,
+        violations_by_entry: Dict[int, list],
+        shapes_graph,
+        round_num: int,
+        correction_template_path: str = "prompts/two_step_correction/correction.md",
+        violation_translation_template_path: str = "prompts/two_step_correction/violation_translation.md",
         schema_def=None,
-        shacl_log_file: str = None,
-        ontology_format: Literal["turtle", "xml"] = "turtle",
-    ) -> BatchExtractionResult:
-        """
-        RDF extraction with iterative SHACL validation & correction.
+        artifact_dir: str = "results",
+    ) -> Dict[str, Any]:
+        from validators.shacl_validator import format_violations_for_prompt
 
-        1. Initial extraction via extract_batch_rdf().
-        2. Validate predicted triples against the ontology's domain/range.
-        3. If violations exist, build a correction prompt for the violated
-           entries and re-extract. Merge corrected entries back.
-        4. Repeat up to *max_rounds* correction passes.
-        """
-        from validators.shacl_validator import (
-            validate_batch, format_violations_for_prompt
+        violated_indices = sorted(violations_by_entry.keys())
+        report_violation_count = sum(len(v) for v in violations_by_entry.values())
+
+        print(f"  [SHACL] round {round_num}: {report_violation_count} violations "
+              f"in {len(violated_indices)} entries — sending correction prompt")
+
+        violations_text = format_violations_for_prompt(
+            violations_by_entry=violations_by_entry,
+            original_entries=entries,
+            original_results=current_result.results,
+            shapes_graph=shapes_graph,
+            ont_idx=ont_idx
+        )
+        translation_prompt = PromptEngine.build_violation_translation_prompt(
+            violation_translation_template_path, violations_text
+        )
+        correction_prompt = PromptEngine.build_correction_prompt(
+            correction_template_path, rdf_ontology_text, violations_text
         )
 
-        # Step 1 — initial extraction
-        batch_result = self.extract_batch_rdf(entries, rdf_ontology_text, schema_def=schema_def)
-        
-        for round_num in range(1, max_rounds + 1):
-            # Step 2 — SHACL validation
-            report, shapes_graph, _, _ = validate_batch(
-                batch_result.results, rdf_ontology_text, shacl_shapes_ttl, ontology_format=ontology_format
-            )
-            if report.conforms:
-                print(f"  [SHACL] round {round_num}: all triples conform ✓")
-                _log_round_conforms(shacl_log_file, round_num)
-                break
-            
-            violations_by_entry = report.group_violations_by_entry()
-            violated_indices = report.entries_with_violations()
-            
-            print(f"  [SHACL] round {round_num}: {len(report.violations)} violations "
-                  f"in {len(violated_indices)} entries — sending correction prompt")
+        os.makedirs(artifact_dir, exist_ok=True)
 
-            # Step 3 — build correction prompt
-            violations_text = format_violations_for_prompt(
-                violations_by_entry, entries, batch_result.results, shapes_graph
-            )
-            prompt = PromptEngine.build_correction_prompt(
-                correction_template_path, rdf_ontology_text, violations_text
-            )
+        allowed_indices_by_entry = []
+        max_new_triples_by_entry = []
+        for entry_idx in violated_indices:
+            entry_violations = violations_by_entry.get(entry_idx, [])
+            allowed_indices = sorted({
+                v.triple_idx for v in entry_violations
+            })
+            max_new = sum(1 for v in entry_violations if v.triple_idx == -1)
+            allowed_indices_by_entry.append(allowed_indices)
+            max_new_triples_by_entry.append(max_new)
 
-            with open(f"results/shacl_round_{round_num}_prompt.md", "w", encoding="utf-8") as f:
-                f.write(prompt)
+        response_model = build_correction_response(
+            schema_def,
+            allowed_indices_by_entry=allowed_indices_by_entry,
+            max_new_triples_by_entry=max_new_triples_by_entry,
+            constrain_triple_count=True,
+        )
 
-            violated_indices_sorted = sorted(violated_indices)
-            allowed_indices_by_entry = []
-            max_new_triples_by_entry = []
-            for entry_idx in violated_indices_sorted:
-                entry_violations = violations_by_entry.get(entry_idx, [])
-                allowed_indices = sorted({
-                    v.triple_idx for v in entry_violations
-                })
-                max_new = sum(1 for v in entry_violations if v.triple_idx == -1)
-                allowed_indices_by_entry.append(allowed_indices)
-                max_new_triples_by_entry.append(max_new)
+        return {
+            "violated_indices": violated_indices,
+            "report_violation_count": report_violation_count,
+            "translation_prompt": translation_prompt,
+            "correction_prompt": correction_prompt,
+            "response_model": response_model,
+        }
 
-            # Step 4 — call LLM with correction prompt
-            ResponseModel = build_correction_response(
-                schema_def,
-                allowed_indices_by_entry=allowed_indices_by_entry,
-                max_new_triples_by_entry=max_new_triples_by_entry,
-                constrain_triple_count=True
-            )
-            corrected_data = None
-            try:
-                response = completion(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format=ResponseModel,
-                    temperature=0.0,
-                    num_retries=NUM_RETRIES,
+    def llm_translate_violations(self, translation_prompt: str, use_prompt_caching: bool = True) -> str:
+        request_kwargs: Dict[str, Any] = {
+            "model": self.model_name,
+            "messages": [
+                _build_user_message(
+                    translation_prompt,
+                    cache_reusable=use_prompt_caching,
+                    use_content_blocks=use_prompt_caching,
                 )
-                corrected_data = json.loads(response.choices[0].message.content)
-                corrected_data = _validate_response_payload(ResponseModel, corrected_data)
-            except Exception as e:
-                print(f"  [SHACL] correction call failed: {type(e).__name__}: {e}")
-                _log_correction_error(shacl_log_file, round_num, type(e).__name__, str(e))
-                break
-            
-            with open(f"results/shacl_round_{round_num}_correction_response.json", "w", encoding="utf-8") as f:
-                json.dump(corrected_data, f, ensure_ascii=False, indent=2)
-            
-            # Step 5 — merge corrections back
-            corrected_entries = corrected_data.get("entries", {})
-            _log_round_header(shacl_log_file, round_num, len(report.violations), len(violated_indices))
+            ],
+            "temperature": 0.0,
+            "num_retries": NUM_RETRIES,
+        }
 
-            for local_i, entry_idx in enumerate(violated_indices_sorted):
-                key = f"entry_{entry_idx + 1}"
-                correction_key = f"entry_{local_i + 1}"
-                entry_violations = violations_by_entry.get(entry_idx, [])
-                unmapped_violations = [v for v in entry_violations if v.triple_idx < 0]
+        response = completion(**request_kwargs)
+        return _message_content_to_text(response.choices[0].message.content)
 
-                _log_entry_header(shacl_log_file, entries[entry_idx].entry_id)
-                _log_unmapped_violations(shacl_log_file, unmapped_violations)
+    def llm_correct_from_translation(
+        self,
+        translation_prompt: str,
+        translation_text: str,
+        correction_prompt: str,
+        response_model,
+        use_prompt_caching: bool = True,
+    ) -> Dict[str, Any]:
+        request_kwargs: Dict[str, Any] = {
+            "model": self.model_name,
+            "messages": [
+                _build_user_message(
+                    translation_prompt,
+                    cache_reusable=use_prompt_caching,
+                    use_content_blocks=use_prompt_caching,
+                ),
+                _build_assistant_message(
+                    translation_text,
+                    use_content_blocks=use_prompt_caching,
+                ),
+                _build_user_message(
+                    correction_prompt,
+                    use_content_blocks=use_prompt_caching,
+                ),
+            ],
+            "response_format": response_model,
+            "temperature": 0.0,
+            "num_retries": NUM_RETRIES,
+        }
 
-                if isinstance(corrected_entries, dict):
-                    raw = corrected_entries.get(correction_key)
+        response = completion(**request_kwargs)
+        correction_text = _message_content_to_text(response.choices[0].message.content)
+        corrected_data = json.loads(correction_text)
+        return _validate_response_payload(response_model, corrected_data)
+
+    def merge_shacl_corrections(
+        self,
+        entries: List[TaskEntry],
+        current_result: BatchExtractionResult,
+        violations_by_entry: Dict[int, list],
+        corrected_data: Dict[str, Any],
+        round_num: int,
+        shacl_log_file: Optional[str] = None,
+    ) -> BatchExtractionResult:
+        violated_indices = sorted(violations_by_entry.keys())
+        report_violation_count = sum(len(v) for v in violations_by_entry.values())
+
+        corrected_entries = corrected_data.get("entries", {})
+        _log_round_header(shacl_log_file, round_num, report_violation_count, len(violated_indices))
+
+        for local_i, entry_idx in enumerate(violated_indices):
+            key = f"entry_{entry_idx + 1}"
+            correction_key = f"entry_{local_i + 1}"
+            entry_violations = violations_by_entry.get(entry_idx, [])
+            unmapped_violations = [v for v in entry_violations if v.triple_idx < 0]
+
+            _log_entry_header(shacl_log_file, entries[entry_idx].entry_id)
+            _log_unmapped_violations(shacl_log_file, unmapped_violations)
+
+            if isinstance(corrected_entries, dict):
+                raw = corrected_entries.get(correction_key)
+            else:
+                raw = None
+
+            if not isinstance(raw, dict):
+                continue
+
+            indexed_updates, additions = _parse_correction_entry_data(raw)
+            violated_t_indices = sorted({
+                v.triple_idx for v in entry_violations
+                if v.triple_idx >= 0
+            })
+
+            orig = current_result.results[key]
+            new_triples = list(orig.triples)
+            new_schemas = list(orig.schemas)
+
+            for t_idx in violated_t_indices:
+                orig_triple = orig.triples[t_idx] if t_idx > -1 and t_idx < len(orig.triples) else None
+                orig_schema = orig.schemas[t_idx] if t_idx > -1 and t_idx < len(orig.schemas) else None
+                corrected_pair = indexed_updates.get(t_idx)
+                corrected_triple = corrected_pair[0] if corrected_pair else None
+                corrected_schema = corrected_pair[1] if corrected_pair else None
+
+                violations_for_triple = [
+                    v for v in entry_violations
+                    if v.triple_idx == t_idx
+                ]
+                _log_triple_correction(
+                    shacl_log_file,
+                    t_idx,
+                    orig_triple,
+                    orig_schema,
+                    corrected_triple,
+                    corrected_schema,
+                    violations_for_triple,
+                )
+
+                if corrected_triple is not None and corrected_schema is not None:
+                    if t_idx > -1 and t_idx < len(new_triples) and t_idx < len(new_schemas):
+                        new_triples[t_idx] = corrected_triple
+                        new_schemas[t_idx] = corrected_schema
+                    else:
+                        print(f"  [SHACL] warning: invalid triple index {t_idx} in corrections for entry_{entry_idx + 1}")
                 else:
-                    raw = None
+                    print(f"  [SHACL] warning: missing corrected triple/schema for triple index {t_idx} in entry_{entry_idx + 1}")
 
-                if not isinstance(raw, dict):
-                    continue
-                indexed_updates, additions = _parse_correction_entry_data(raw)
-                # Determine which non-negative triple indices were violated in this entry
-                violated_t_indices = sorted({
-                    v.triple_idx for v in entry_violations
-                    if v.triple_idx >= 0
-                })
-                orig = batch_result.results[key]
-                new_triples = list(orig.triples)
-                new_schemas = list(orig.schemas)
-
-                for t_idx in violated_t_indices:
-                    orig_triple = orig.triples[t_idx] if t_idx > -1 and t_idx < len(orig.triples) else None
-                    orig_schema = orig.schemas[t_idx] if t_idx > -1 and t_idx < len(orig.schemas) else None
-                    corrected_pair = indexed_updates.get(t_idx)
-                    corrected_triple = corrected_pair[0] if corrected_pair else None
-                    corrected_schema = corrected_pair[1] if corrected_pair else None
-                    
-                    # Log this specific triple correction
-                    violations_for_triple = [
-                        v for v in entry_violations
-                        if v.triple_idx == t_idx
-                    ]
-                    _log_triple_correction(
-                        shacl_log_file,
-                        t_idx,
-                        orig_triple,
-                        orig_schema,
-                        corrected_triple,
-                        corrected_schema,
-                        violations_for_triple,
-                    )
-                    
-                    # Apply the correction
-                    if corrected_triple is not None and corrected_schema is not None:
-                        if t_idx > -1 and t_idx < len(new_triples) and t_idx < len(new_schemas):
-                            new_triples[t_idx] = corrected_triple
-                            new_schemas[t_idx] = corrected_schema
-                        else:
-                            print(f"  [SHACL] warning: invalid triple index {t_idx} in corrections for entry_{entry_idx + 1}")
-                    else:
-                        print(f"  [SHACL] warning: missing corrected triple/schema for triple index {t_idx} in entry_{entry_idx + 1}")
-
-                # Apply additions (triple_idx == -1) — can be multiple per entry.
-                for added_triple, added_schema in additions:
-                    _log_triple_correction(
-                        shacl_log_file,
-                        -1,
-                        None,
-                        None,
-                        added_triple,
-                        added_schema,
-                        [],
-                    )
-                    if added_schema is not None:
-                        new_triples.append(added_triple)
-                        new_schemas.append(added_schema)
-                    else:
-                        print(f"  [SHACL] warning: skipping added triple without schema in entry_{entry_idx + 1}")
-                    
-                batch_result.results[key] = EntryExtractionResult(
-                    triples=new_triples, schemas=new_schemas
+            for added_triple, added_schema in additions:
+                _log_triple_correction(
+                    shacl_log_file,
+                    -1,
+                    None,
+                    None,
+                    added_triple,
+                    added_schema,
+                    [],
                 )
+                if added_schema is not None:
+                    new_triples.append(added_triple)
+                    new_schemas.append(added_schema)
+                else:
+                    print(f"  [SHACL] warning: skipping added triple without schema in entry_{entry_idx + 1}")
 
-        return batch_result
+            current_result.results[key] = EntryExtractionResult(
+                triples=new_triples,
+                schemas=new_schemas,
+            )
+
+        return current_result
