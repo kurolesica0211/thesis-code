@@ -2,18 +2,13 @@ model:
   name: gemini/gemini-flash-lite-latest
 
 prompts:
-  extraction_template: prompts/zero_shot_rdf.md
-  violation_translation_template: prompts/two_step_correction/violation_translation.md
-  correction_template: prompts/two_step_correction/correction.md
-
-shacl:
-  enabled: true
-  max_rounds: 1
-  log_enabled: true
-  prompt_caching_enabled: false
+  the_one_prompt: prompts/the_one_prompt.md
 
 runtime:
   delay_seconds: 4.0
+  log_enabled: true
+  prompt_caching_enabled: false
+  max_iterations: 10
 
 output:
   base_dir: results
@@ -22,14 +17,3 @@ output:
 
 dataset:
   source: custom_family_bench
-  custom_family_bench:
-    input_text_file: custom_family_bench/habsburgs.txt
-    ontology_file: custom_family_bench/family_TBOX.owl
-    shacl_file: custom_family_bench/family_TBOX_shacl_closed.ttl
-  oskgc:
-    data_dir: OSKGC/data
-    split: dev
-    ontology_dir: OSKGC/ontologies/rdf
-    shacl_shapes_dir: OSKGC/ontologies/shacl_shapes
-
-categories: []

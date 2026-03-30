@@ -4,7 +4,8 @@ import json
 from datetime import datetime, timezone
 from typing import List, Optional
 from tqdm import tqdm
-from loaders.base_loader import BaseLoader
+
+from loaders.loader import Loader
 from extractors.extractor import Extractor
 from orchestration import build_shacl_batch_graph
 from orchestration.tracing import append_trace
@@ -25,138 +26,87 @@ class ExtractionRunner:
             shacl_corrections.log (if shacl_log_enabled=True)
     """
 
-    def __init__(self, loader: BaseLoader, extractor: Extractor,
+    def __init__(self, loader: Loader, extractor: Extractor,
                  run_dir: str, delay: float = RATELIMIT_DELAY,
-                 categories: Optional[List[str]] = None,
-                 rdf_ontology: Optional[str] = None,
-                 shacl_validation: bool = False,
-                 shacl_max_rounds: int = 1,
-                 shacl_shapes: Optional[str] = None,
+                 max_iterations: int = 10,
                  shacl_log_enabled: bool = False,
                  prompt_caching_enabled: bool = True,
-                 correction_template_path: str = "prompts/two_step_correction/correction.md",
-                 violation_translation_template_path: str = "prompts/two_step_correction/violation_translation.md",
                  run_config: Optional[dict] = None):
-        self.loader           = loader
-        self.extractor        = extractor
-        self.run_dir          = run_dir
-        self.delay            = delay
-        self.categories       = categories
-        self.rdf_ontology = rdf_ontology
-        self.shacl_validation = shacl_validation
-        self.shacl_max_rounds = shacl_max_rounds
-        self.shacl_shapes = shacl_shapes
-        self.shacl_log_enabled = shacl_log_enabled
+        self.loader                 = loader
+        self.extractor              = extractor
+        self.run_dir                = run_dir
+        self.delay                  = delay
+        self.max_iterations         = max_iterations
+        self.shacl_log_enabled      = shacl_log_enabled
         self.prompt_caching_enabled = prompt_caching_enabled
-        self.shacl_log_path   = os.path.join(run_dir, "shacl_corrections.log") if shacl_log_enabled else None
-        self.shacl_graph = build_shacl_batch_graph(extractor) if shacl_validation else None
-        self.correction_template_path = correction_template_path
-        self.violation_translation_template_path = violation_translation_template_path
-        self.run_config = run_config or {}
+        self.shacl_log_path         = os.path.join(run_dir, "shacl_corrections.log") if shacl_log_enabled else None
+        self.shacl_graph            = build_shacl_batch_graph(extractor)
+        self.run_config             = run_config or {}
 
         self.artifacts_dir = os.path.join(run_dir, "artifacts")
-        self.batch_artifacts_dir = os.path.join(self.artifacts_dir, "batches")
+        self.task_artifacts_dir = os.path.join(self.artifacts_dir, "task_entries")
         self.manifests_dir = os.path.join(run_dir, "manifests")
         self.trace_path = os.path.join(run_dir, "run_events.jsonl")
         self.metrics_path = os.path.join(run_dir, "metrics_summary.json")
         self.run_manifest_path = os.path.join(self.manifests_dir, "run_manifest.json")
 
     def run(self):
-        print("Loading data by category...")
-        all_batches = self.loader.load_by_category()
-
-        if self.categories:
-            batches = [b for b in all_batches if b.category in self.categories]
-            if not batches:
-                available = [b.category for b in all_batches]
-                raise ValueError(f"None of {self.categories} found. "
-                                 f"Available: {available}")
-            print(f"Filtered to {len(batches)} categories: {self.categories}")
-        else:
-            batches = all_batches
-
-        total_entries = sum(len(b.entries) for b in batches)
-        print(f"Will process {total_entries} entries across {len(batches)} batches.")
+        print("Starting up...")
 
         os.makedirs(self.run_dir, exist_ok=True)
         os.makedirs(self.artifacts_dir, exist_ok=True)
-        os.makedirs(self.batch_artifacts_dir, exist_ok=True)
+        os.makedirs(self.task_artifacts_dir, exist_ok=True)
         os.makedirs(self.manifests_dir, exist_ok=True)
 
         failed_batches: List[str] = []
         all_records: List[dict] = []
-        all_metrics: List[dict] = []
-        evaluator = Evaluator()
+
+        total_entries = self.loader.get_total()
+        print(f"Will process {total_entries} of task entries.")
 
         run_manifest = {
             "started_at": datetime.now(timezone.utc).isoformat(),
             "run_dir": self.run_dir,
             "config": self.run_config,
-            "batches": [],
-            "failed_batches": [],
+            "entries": [],
+            "failed_entries": [],
         }
         append_trace(self.trace_path, "run.start", {
             "run_dir": self.run_dir,
-            "shacl_validation": self.shacl_validation,
-            "total_batches": len(batches),
-            "total_entries": total_entries,
+            "total_entries": total_entries
         })
-        
-        # Initialize SHACL log file if enabled
-        if self.shacl_log_enabled:
-            with open(self.shacl_log_path, "w", encoding="utf-8") as f:
-                f.write("="*80 + "\n")
-                f.write("SHACL Validation & Correction Log\n")
-                f.write("="*80 + "\n\n")
 
-        for batch_idx, batch in enumerate(tqdm(batches, desc="Categories")):
-            append_trace(self.trace_path, "batch.start", {
-                "batch_idx": batch_idx,
-                "category": batch.category,
-                "entries": len(batch.entries),
+        for entry_idx, entry in enumerate(tqdm(self.loader.load(), total=total_entries, desc="Task Entries")):
+            append_trace(self.trace_path, "task_entry.start", {
+                "entry_idx": entry_idx,
+                "data_entry_id": entry.entry_id,
+                "text_files": len(entry.text_filepaths),
             })
 
-            rdf_path = self.resolve_ontology(batch.category)
-            with open(rdf_path, "r", encoding="utf-8") as rf:
-                rdf_text = rf.read()
-
-            batch_artifact_dir = os.path.join(
-                self.batch_artifacts_dir,
-                f"{batch_idx + 1:03d}_{batch.category.replace('/', '_')}"
+            task_artifact_dir = os.path.join(
+                self.task_artifacts_dir,
+                f"{entry_idx + 1:03d}_{entry.entry_id.replace('/', '_')}"
             )
-            os.makedirs(batch_artifact_dir, exist_ok=True)
+            os.makedirs(task_artifact_dir, exist_ok=True)
 
-            if self.shacl_validation:
-                shacl_path = self.resolve_shacl(batch.category)
-                with open(shacl_path, "r", encoding="utf-8") as sf:
-                    shacl_text = sf.read()
-                
-                ontology_format = self.get_ontology_format(rdf_path)
-
-                graph_state = self.shacl_graph.invoke(
-                    {
-                        "batch": batch,
-                        "rdf_ontology_text": rdf_text,
-                        "shacl_shapes_ttl": shacl_text,
-                        "ontology_format": ontology_format,
-                        "max_rounds": self.shacl_max_rounds,
-                        "current_round": 1,
-                        "correction_template_path": self.correction_template_path,
-                        "violation_translation_template_path": self.violation_translation_template_path,
-                        "prompt_caching_enabled": self.prompt_caching_enabled,
-                        "shacl_log_file": self.shacl_log_path if self.shacl_log_enabled else None,
-                        "trace_path": self.trace_path,
-                        "artifact_dir": batch_artifact_dir,
-                    }
-                )
-                batch_result = graph_state["batch_result"]
-                done_reason = graph_state.get("done_reason", "unknown")
-                
-            else:
-                batch_result = self.extractor.extract_batch_rdf(
-                    batch.entries, rdf_text,
-                    schema_def=batch.schema_def)
-                done_reason = "no_shacl"
+            graph_state = self.shacl_graph.invoke(
+                {
+                    "batch": batch,
+                    "rdf_ontology_text": rdf_text,
+                    "shacl_shapes_ttl": shacl_text,
+                    "ontology_format": ontology_format,
+                    "max_rounds": self.shacl_max_rounds,
+                    "current_round": 1,
+                    "correction_template_path": self.correction_template_path,
+                    "violation_translation_template_path": self.violation_translation_template_path,
+                    "prompt_caching_enabled": self.prompt_caching_enabled,
+                    "shacl_log_file": self.shacl_log_path if self.shacl_log_enabled else None,
+                    "trace_path": self.trace_path,
+                    "artifact_dir": batch_artifact_dir,
+                }
+            )
+            batch_result = graph_state["batch_result"]
+            done_reason = graph_state.get("done_reason", "unknown")
 
             all_empty = all(
                 len(v.triples) == 0 for v in batch_result.results.values())
@@ -258,32 +208,3 @@ class ExtractionRunner:
         if failed_batches:
             print(f"WARNING: {len(failed_batches)} batches returned no triples: "
                   f"{failed_batches}")
-
-    def resolve_ontology(self, category: str = None):
-        if os.path.isfile(self.rdf_ontology):
-            rdf_path = self.rdf_ontology
-        elif os.path.isdir(self.rdf_ontology):
-            rdf_path = os.path.join(self.rdf_ontology, f"{category}.ttl")
-            if os.path.isfile(rdf_path) != True:
-                rdf_path = os.path.join(self.rdf_ontology, f"{category}.owl")
-                if os.path.isfile(rdf_path) != True:
-                    raise FileNotFoundError(f"No RDF ontology file found for category '{category}' in {self.rdf_ontology}")
-        return rdf_path
-                
-    def resolve_shacl(self, category: str = None):
-        if os.path.isfile(self.shacl_shapes):
-            shacl_path = self.shacl_shapes
-        elif os.path.isdir(self.shacl_shapes):
-            shacl_path = os.path.join(self.shacl_shapes, f"{category}_shacl.ttl")
-            if os.path.isfile(shacl_path) != True:
-                raise FileNotFoundError(f"No SHACL shapes file found for category '{category}' in {self.shacl_shapes}")
-        return shacl_path
-    
-    def get_ontology_format(self, filepath: str) -> str:
-        ext = os.path.splitext(filepath)[1].lower()
-        if ext == ".ttl":
-            return "turtle"
-        elif ext == ".owl":
-            return "xml"
-        else:
-            raise ValueError(f"Unsupported ontology file extension: {ext}")
