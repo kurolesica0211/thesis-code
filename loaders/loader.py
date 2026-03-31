@@ -1,11 +1,12 @@
 import os
-from typing import List, Dict, Set, TypedDict, Tuple
+from typing import List, Dict, Set, Tuple
 from collections import defaultdict
 from collections.abc import Generator
 
 from rdflib import Graph
 from rdflib.namespace import OWL, RDF, RDFS
 from models.data_models import TaskEntry, Schema, RelationDef, DataEntry
+from helpers import uri_to_local
     
 
 class Loader:
@@ -82,7 +83,7 @@ class Loader:
 
         # Extract all classes with their labels
         for cls_uri in graph.subjects(RDF.type, OWL.Class):
-            cls_label = Loader._local_name(str(cls_uri))
+            cls_label = uri_to_local(str(cls_uri))
             class_labels[str(cls_uri)] = cls_label
             entities.add(cls_label)
 
@@ -91,7 +92,7 @@ class Loader:
             node_str = str(node)
             if node_str in class_labels:
                 return class_labels[node_str]
-            return Loader._local_name(node_str)
+            return uri_to_local(node_str)
 
         # Build class hierarchy for transitive closure
         hierarchy = defaultdict(list)
@@ -120,7 +121,7 @@ class Loader:
         prop_nodes.update(graph.subjects(RDF.type, OWL.DatatypeProperty))
 
         for prop_uri in sorted(prop_nodes, key=str):
-            rel_label = Loader._local_name(str(prop_uri))
+            rel_label = uri_to_local(str(prop_uri))
 
             # Get domain and range
             domains = {node_to_label(domain) for domain in graph.objects(prop_uri, RDFS.domain)}
@@ -148,8 +149,3 @@ class Loader:
             entities=sorted(list(entities)),
             relations=relations
         ), graph
-
-    @staticmethod
-    def _local_name(uri: str) -> str:
-        """Extract local name from URI."""
-        return uri.rsplit("#", 1)[-1].rsplit("/", 1)[-1]

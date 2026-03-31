@@ -1,15 +1,27 @@
-import os
-from typing import Any, Dict, Optional, TypedDict
+from typing import TypedDict
+from langchain.messages import HumanMessage, AIMessage, SystemMessage, ToolMessage
+from rdflib import Graph
 
-from models.data_models import BatchExtractionResult
-from validators.shacl_validator import OntologyIndex
+from models.data_models import Schema
 
 
 class TaskState(TypedDict, total=False):
-    pass
+    messages: list
+    data_graph: Graph
+    run_manifest: dict
+    
+class TaskContext(TypedDict):
+    entry_id: str
+    input_text: str
+    ontology_graph: Graph
+    shacl_graph: Graph
+    schema_def: Schema
+    artifact_dir: str
+    tracing_path: str
+    config: dict
 
 
-def build_shacl_batch_graph():
+def build_agent():
     try:
         from langgraph.graph import END, START, StateGraph
     except ImportError as exc:
@@ -19,8 +31,8 @@ def build_shacl_batch_graph():
 
     
 
-    graph = StateGraph(TaskState)
+    agent = StateGraph(TaskState)
 
 
 
-    return graph.compile()
+    return agent.compile()

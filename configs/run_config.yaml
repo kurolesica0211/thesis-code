@@ -1,14 +1,17 @@
 model:
-  name: gemini/gemini-flash-lite-latest
+  name: gemini:gemini-flash-lite-latest
 
 prompts:
-  the_one_prompt: prompts/the_one_prompt.md
+  main_system: prompts/main_system.md
+  main_user: prompts/main_user.md
+  translation_system: prompts/translation_system.md
+  translation_user: prompts/translation_user.md
 
 runtime:
   delay_seconds: 4.0
-  log_enabled: true
   prompt_caching_enabled: false
   max_iterations: 10
+  streaming: false
 
 output:
   base_dir: results

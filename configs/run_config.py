@@ -12,14 +12,17 @@ class ModelConfig(BaseModel):
 
 
 class PromptConfig(BaseModel):
-    the_one_prompt: str = "prompts/the_one_prompt.md"
+    main_system: str = "prompts/main_system.md"
+    main_user: str = "prompts/main_user.md"
+    translation_system: str = "prompts/translation_system.md"
+    translation_user: str = "prompts/translation_user.md"
 
 
 class RuntimeConfig(BaseModel):
     delay_seconds: float = 4.0
     max_iterations: int = 10
-    log_enabled: bool = True
     prompt_caching_enabled: bool = False
+    streaming: bool = False
 
 
 class OutputConfig(BaseModel):
