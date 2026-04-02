@@ -23,6 +23,7 @@ class RuntimeConfig(BaseModel):
     max_iterations: int = 10
     prompt_caching_enabled: bool = False
     streaming: bool = False
+    violation_translation: bool = True
 
 
 class OutputConfig(BaseModel):

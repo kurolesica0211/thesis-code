@@ -12,11 +12,12 @@ runtime:
   prompt_caching_enabled: false
   max_iterations: 10
   streaming: false
+  violation_translation: true
 
 output:
   base_dir: results
   custom_tag: habsburgs
-  run_dir:
+  run_dir: results/habsburgs_gemini_flash_lite
 
 dataset:
   source: custom_family_bench
