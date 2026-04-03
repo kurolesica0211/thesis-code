@@ -83,13 +83,18 @@ def run(config: RunConfig):
         )
         main_user_msg = HumanMessage(main_user_prompt)
         
-        llm = init_chat_model(model=config.model.name)
+        llm = init_chat_model(
+            model=config.model.name,
+            temperature=config.model.temperature,
+            max_retries=config.model.max_retries
+        )
         
-        agent.invoke(
+        final_state = agent.invoke(
             input=TaskState(
                 messages=[main_system_msg, main_user_msg],
                 data_graph=task_entry.data_graph,
-                run_manifest=run_manifest
+                iterations=0,
+                task_manifest=task_manifest
             ),
             context=TaskContext(
                 llm=llm,
@@ -99,11 +104,16 @@ def run(config: RunConfig):
                 shacl_graph=task_entry.shacl_graph,
                 artifact_dir=task_artifacts_dir,
                 tracing_path=trace_path,
-                config=config.model_dump(),
-                task_manifest=task_manifest
+                config=config.model_dump()
             )
         )
         
+        task_manifest["done_reason"] = (
+            final_state["task_manifest"]["done_reason"] 
+            if final_state["task_manifest"]["done_reason"] != ""
+            else "llm_finished"
+        )
         append_trace(trace_path, "run.entry.finish", payload={
-            "entry_idx": task_entry.entry_id
+            "entry_idx": task_entry.entry_id,
+            "done_reason": task_manifest["done_reason"]
         })

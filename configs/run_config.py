@@ -9,6 +9,8 @@ from pydantic import BaseModel, Field
 
 class ModelConfig(BaseModel):
     name: str = "gemini/gemini-flash-lite-latest"
+    temperature: float = 0.0
+    max_retries: int = 4
 
 
 class PromptConfig(BaseModel):
@@ -22,7 +24,6 @@ class RuntimeConfig(BaseModel):
     delay_seconds: float = 4.0
     max_iterations: int = 10
     prompt_caching_enabled: bool = False
-    streaming: bool = False
     violation_translation: bool = True
 
 

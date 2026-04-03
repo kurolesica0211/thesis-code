@@ -2,9 +2,9 @@ import os
 from typing import List, Dict, Set, Tuple
 from collections import defaultdict
 from collections.abc import Generator
-
-from rdflib import Graph
+from rdflib import Graph, URIRef
 from rdflib.namespace import OWL, RDF, RDFS
+
 from models.data_models import TaskEntry, Schema, RelationDef, DataEntry
 from helpers import uri_to_local
     
@@ -33,7 +33,7 @@ class Loader:
         for entry in self.input_entries:
             schema, ont_graph = Loader._load_ontology(entry.ontology_filepath)
             shacl_graph       = Loader._load_graph(entry.shacl_filepath)
-            data_graph        = Loader._load_graph(entry.data_graph_path) if entry.data_graph_path is not None else None
+            data_graph        = Loader._load_data_graph(entry.data_graph_path, ont_graph.namespaces())
             
             for text_path, gt_path in zip(entry.text_filepaths, entry.gold_triples_filepaths):
                 text = Loader._load_input_text(text_path)
@@ -71,6 +71,19 @@ class Loader:
         graph = Graph()
         graph.parse(path)
         return graph
+    
+    @staticmethod
+    def _load_data_graph(path: str | None, namespaces: Generator[Tuple[str, URIRef], None, None]) -> Graph:
+        """Load a data graph, if not None, else create an empty graph with the ontology's namespaces."""
+        if path is not None:
+            return Loader._load_graph(path)
+        else:
+            graph = Graph()
+            for prefix, namespace in namespaces:
+                graph.bind(prefix, namespace)
+            graph.bind("data", URIRef("http://example.org/data/"))
+            return graph
+            
 
     @staticmethod
     def _load_ontology(path: str) -> Tuple[Schema, Graph]:
@@ -82,23 +95,16 @@ class Loader:
         entities = set()
 
         # Extract all classes with their labels
-        for cls_uri in graph.subjects(RDF.type, OWL.Class):
-            cls_label = uri_to_local(str(cls_uri))
+        for cls_uri in graph.subjects(RDF.type, OWL.Class): 
+            cls_label = cls_uri.n3(graph.namespace_manager)
             class_labels[str(cls_uri)] = cls_label
             entities.add(cls_label)
-
-        def node_to_label(node) -> str:
-            """Convert a node URI to its label."""
-            node_str = str(node)
-            if node_str in class_labels:
-                return class_labels[node_str]
-            return uri_to_local(node_str)
 
         # Build class hierarchy for transitive closure
         hierarchy = defaultdict(list)
         for subclass_uri, superclass_uri in graph.subject_objects(RDFS.subClassOf):
-            subclass = node_to_label(subclass_uri)
-            superclass = node_to_label(superclass_uri)
+            subclass = subclass_uri.n3(graph.namespace_manager)
+            superclass = superclass_uri.n3(graph.namespace_manager)
             hierarchy[superclass].append(subclass)
             entities.add(subclass)
             entities.add(superclass)
@@ -121,11 +127,11 @@ class Loader:
         prop_nodes.update(graph.subjects(RDF.type, OWL.DatatypeProperty))
 
         for prop_uri in sorted(prop_nodes, key=str):
-            rel_label = uri_to_local(str(prop_uri))
+            rel_label = prop_uri.n3(graph.namespace_manager)
 
             # Get domain and range
-            domains = {node_to_label(domain) for domain in graph.objects(prop_uri, RDFS.domain)}
-            ranges = {node_to_label(range_) for range_ in graph.objects(prop_uri, RDFS.range)}
+            domains = {domain.n3(graph.namespace_manager) for domain in graph.objects(prop_uri, RDFS.domain)}
+            ranges = {range_.n3(graph.namespace_manager) for range_ in graph.objects(prop_uri, RDFS.range)}
 
             entities.update(domains)
             entities.update(ranges)

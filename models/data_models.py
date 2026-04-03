@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 from pydantic import BaseModel, model_validator
-from typing import List, Dict
-from rdflib import Graph
+from typing import List
+from rdflib import Graph, URIRef
 
 class Triple(BaseModel):
     subject: str
@@ -54,26 +54,18 @@ class DataEntry(BaseModel):
                                 f"and files with text don't match at {self.entry_id}")
 
 
-class EntryExtractionResult(BaseModel):
-    """Extraction result for a single entry inside a batch response."""
-    triples: List[Triple] = []
-    schemas: List[TripleSchema] = []
+class Violation(BaseModel):
+    severity: str | None = None
+    focus: URIRef | None = None
+    path: URIRef | None = None
+    value: URIRef | None = None
+    constraint: str | None = None
+    source_shape: URIRef | None = None
+    message: str | None = None
+    llm_explanation: str | None = None
+    llm_instruction: str | None = None
+    
 
-class BatchExtractionResult(BaseModel):
-    """Full batch response keyed by entry label (entry_1, entry_2, …)."""
-    results: Dict[str, EntryExtractionResult] = {}
-
-
-ExtractionResult = EntryExtractionResult
-
-
-class EvaluationResult(BaseModel):
-    entry_id: str
-    input_text: str
-    gold_triples: List[Dict[str, str]]
-    pred_triples: List[Dict[str, str]]
-    pred_schemas: List[Dict[str, str]]
-    is_correct: bool
-    precision: float
-    recall: float
-    f1: float
+class ValidationReport(BaseModel):
+    conforms: bool
+    violations: list[Violation] | None = None

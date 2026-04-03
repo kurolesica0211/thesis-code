@@ -1,7 +1,7 @@
 import re
 
 
-def uri_to_local(uri: str) -> str:
+def strip_uri(uri: str) -> str:
     """Extract local name from URI."""
     return uri.rsplit("#", 1)[-1].rsplit("/", 1)[-1]
 

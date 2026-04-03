@@ -1,5 +1,7 @@
 model:
   name: gemini:gemini-flash-lite-latest
+  temperature: 0.0
+  max_retries: 4
 
 prompts:
   main_system: prompts/main_system.md
@@ -11,7 +13,6 @@ runtime:
   delay_seconds: 4.0
   prompt_caching_enabled: false
   max_iterations: 10
-  streaming: false
   violation_translation: true
 
 output:
