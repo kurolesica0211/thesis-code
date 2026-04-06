@@ -3,6 +3,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from helpers import strip_uri, strip_ns
+from pydantic import BaseModel, Field, create_model
+from typing import Annotated, List
 
-print(f"AAA: {[1,2,3]}")
+Model = create_model("Model", __doc__="AAA")
+print(Model().__doc__)

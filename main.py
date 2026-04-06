@@ -2,7 +2,7 @@ import argparse
 from dotenv import load_dotenv
 
 from configs.run_config import RunConfig
-from runner_new import run
+from runner import run
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="LLM KG extraction with SHACL verification")

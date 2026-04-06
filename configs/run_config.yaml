@@ -8,6 +8,7 @@ prompts:
   main_user: prompts/main_user.md
   translation_system: prompts/translation_system.md
   translation_user: prompts/translation_user.md
+  not_typed: prompts/not_typed.md
 
 runtime:
   delay_seconds: 4.0

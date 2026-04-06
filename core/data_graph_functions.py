@@ -74,6 +74,15 @@ def remove_triple(data_graph: Graph, subject: str, relation: str, object: str) -
     return updated_graph
 
 
+def check_ents_typed(data_graph: Graph) -> list[URIRef]:
+    not_typed = set()
+    for node in data_graph.all_nodes():
+        classes = extract_classes(data_graph, node)
+        if not classes:
+            not_typed.update(node)
+    return not_typed
+
+
 def extract_classes(data_graph: Graph, uri: URIRef) -> list[URIRef]:
     cls_uris = data_graph.objects(uri, RDF.type)
     return list(cls_uris)

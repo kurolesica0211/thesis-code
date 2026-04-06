@@ -18,6 +18,7 @@ class PromptConfig(BaseModel):
     main_user: str = "prompts/main_user.md"
     translation_system: str = "prompts/translation_system.md"
     translation_user: str = "prompts/translation_user.md"
+    not_typed: str = "prompts/not_typed.md"
 
 
 class RuntimeConfig(BaseModel):

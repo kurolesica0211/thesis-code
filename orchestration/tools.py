@@ -1,10 +1,12 @@
 from pydantic import create_model, Field, BaseModel, ValidationError
-from langchain.tools import tool, ToolRuntime
+from langchain.tools import tool
 from langgraph.types import Command
-from langchain.messages import ToolMessage
-from langgraph.prebuilt import ToolNode
-from typing import type, Literal, Callable
+from langchain.messages import ToolMessage, AIMessage
+from typing import type, Literal, Callable, TypedDict
 from rdflib import Graph
+from langgraph.runtime import Runtime
+from langchain_core.messages.content import ToolCall
+from langgraph.graph import END
 
 from models.data_models import Schema
 from orchestration.tracing import append_trace
@@ -13,6 +15,13 @@ from core.data_graph_functions import remove_class as remove_class_core
 from core.data_graph_functions import add_triple as add_triple_core
 from core.data_graph_functions import remove_triple as remove_triple_core
 from core.shacl_functions import pyshacl_validate, format_violations
+from orchestration.agent import TaskState, TaskContext, violation_translation, check_entities_typed
+
+
+class _ToolRuntime(BaseModel):
+    state: TaskState
+    context: TaskContext
+    tool_call_id: str
 
 
 class ToolClass:
@@ -67,35 +76,112 @@ class ToolClass:
         RemoveTriple = create_model("RemoveTriple", **remove_triple_defs)
         AddTriple.__doc__ = """
         Use this tool to add a triple to the data graph. Make sure the relation comes from the list of allowed relations
-        for this ontology
+        for this ontology.
         """
         RemoveTriple.__doc__ = """
         Use this tool to remove a triple from the data graph. Make sure the triple that you are about to remove actually exists.
         """
         
+        ValidateShacl = create_model(
+            "ValidateShacl",
+            __doc__="""Use this tool to validate that the current data graph adheres to the ontology.
+                        The validation is performed through SHACL, the shapes are pre-generated.
+                        The tool does not have any input arguments, the data graph is passed internally."""
+        )
+        Finish = create_model(
+            "Finish",
+            __doc__="""Use this tool to finish the work. No input arguments required."""
+        )
+        
+        self.tools_schemas = [AddClass, RemoveClass, AddTriple, RemoveTriple, ValidateShacl, Finish]
         self.tools = {
-            "add_class": tool("AddClass", self.add_class, arg_schema=AddClass),
-            "remove_class": tool("RemoveClass", self.remove_class, arg_schema=RemoveClass),
-            "add_triple": tool("AddTriple", self.add_triple, args_schema=AddTriple),
-            "remove_triple": tool("RemoveTriple", self.remove_triple, args_schema=RemoveTriple),
-            "validate_shacl": tool("ValidateShacl", self.validate_shacl),
-            "finish": tool("Finish", self.finish)
+            "AddClass": self.add_class,
+            "RemoveClass": self.remove_class,
+            "AddTriple": self.add_triple,
+            "RemoveTriple": self.remove_triple,
+            "ValidateShacl": self.validate_shacl,
+            "Finish": self.finish
         }
-        self.arg_schemas = {
-            "AddClass": AddClass,
-            "RemoveClass": RemoveClass,
-            "AddTriple": AddTriple,
-            "RemoveTriple": RemoveTriple
-        }
+        self.data_graph_edit_tools = ["AddClass", "RemoveClass", "AddTriple", "RemoveTriple"]
         
         
     def build_tool_node(self):
-        return ToolNode(
-            tools=[func for (_, func) in self.tools.items()]
-        )
+        
+        def execute_tool_calls(state: TaskState, runtime: Runtime[TaskContext]):
+            append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.start", payload={
+                "entry_id": runtime.context["entry_id"]
+            })
+            
+            last_msg = state["messages"][-1]
+            if type(last_msg) is AIMessage:
+                last_msg: AIMessage
+                tool_calls: list[ToolCall] = last_msg.tool_calls
+                outputs = []
+                for call in tool_calls:
+                    tool_runtime = _ToolRuntime(
+                        state=state,
+                        context=runtime.context,
+                        tool_call_id=call["id"]
+                    )
+                    output = self.tools[call["name"]](tool_runtime, **call["args"])
+                    if call["name"] in self.data_graph_edit_tools:
+                        state["data_graph"] = output[0]
+                    elif call["name"] == "ValidateShacl":
+                        state["violation_report"] = output[1]
+                    outputs.append((output, call["name"]))
+                
+                append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.executed_tools", payload={
+                    "entry_id": runtime.context["entry_id"]
+                })
+                
+                messages = []
+                for i, (output, name) in enumerate(outputs):
+                    if name in self.data_graph_edit_tools:
+                        if (i+1 < len(outputs)) and (outputs[i+1][-1] in self.data_graph_edit_tools):
+                            messages.append(ToolMessage(
+                                content="Look at the messages below to see the final data graph after the sequence of edits.",
+                                tool_call_id=output[-1]
+                            ))
+                        else:
+                            messages.append(ToolMessage(
+                                content=f"The final data graph after the sequence of edits:\n\n  {output[0].serialize(format="turtle")}",
+                                tool_call_id=output[-1]
+                            ))
+                    elif name == "ValidateShacl":
+                        messages.append(ToolMessage(
+                            content=output[0],
+                            tool_call_id=output[-1]
+                        ))
+                    elif name == "Finish":
+                        if type(output) is not tuple and output == END:
+                            append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.finish!", payload={
+                                "entry_id": runtime.context["entry_id"]
+                            })
+                            return Command(goto=END)
+                        else:
+                            messages.append(ToolMessage(
+                                content=output[0],
+                                tool_call_id=output[-1]
+                            ))
+                            
+                append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.formatted_messages", payload={
+                    "entry_id": runtime.context["entry_id"]
+                })
+                
+                return Command(
+                    update={
+                        "messages": messages,
+                    },
+                    goto="llm"
+                )
+            else:
+                raise Exception("TERRIBLE ERROR: the last message is not AIMessage")
+        
+        return execute_tool_calls
+
         
 
-    def add_class(self, runtime: ToolRuntime, subject: str, type: str):
+    def add_class(self, runtime: _ToolRuntime, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_class.start",
@@ -124,20 +210,9 @@ class ToolClass:
             }
         )
         
-        return Command(
-            update={
-                "data_graph": data_graph,
-                "messages": [
-                    ToolMessage(
-                        content=f"The updated data graph is:\n{data_graph.serialize(format="turtle")}",
-                        tool_call_id=runtime.state["tool_call_id"]
-                    )
-                ]
-            },
-            goto="llm"
-        )
+        return (data_graph, runtime.tool_call_id)
     
-    def remove_class(self, runtime: ToolRuntime, subject: str, type: str):
+    def remove_class(self, runtime: _ToolRuntime, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_class.start",
@@ -166,20 +241,9 @@ class ToolClass:
             }
         )
         
-        return Command(
-            update={
-                "data_graph": data_graph,
-                "messages": [
-                    ToolMessage(
-                        content=f"The updated data graph is:\n{data_graph.serialize(format="turtle")}",
-                        tool_call_id=runtime.state["tool_call_id"]
-                    )
-                ]
-            },
-            goto="llm"
-        )
+        return (data_graph, runtime.tool_call_id)
     
-    def add_triple(self, runtime: ToolRuntime, subject: str, relation: str, object: str):
+    def add_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_triple.start",
@@ -210,20 +274,9 @@ class ToolClass:
             }
         )
         
-        return Command(
-            update={
-                "data_graph": data_graph,
-                "messages": [
-                    ToolMessage(
-                        content=f"The updated data graph is:\n{data_graph.serialize(format="turtle")}",
-                        tool_call_id=runtime.state["tool_call_id"]
-                    )
-                ]
-            },
-            goto="llm"
-        )
+        return (data_graph, runtime.tool_call_id)
     
-    def remove_triple(self, runtime: ToolRuntime, subject: str, relation: str, object: str):
+    def remove_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_triple.start",
@@ -254,26 +307,9 @@ class ToolClass:
             }
         )
         
-        return Command(
-            update={
-                "data_graph": data_graph,
-                "messages": [
-                    ToolMessage(
-                        content=f"The updated data graph is:\n{data_graph.serialize(format="turtle")}",
-                        tool_call_id=runtime.state["tool_call_id"]
-                    )
-                ]
-            },
-            goto="llm"
-        )
+        return (data_graph, runtime.tool_call_id)
         
-    def validate_shacl(self, runtime: ToolRuntime):
-        """
-        Use this tool to validate that the current data graph adheres to the ontology.
-        The validation is performed through SHACL, the shapes are pre-generated.
-        The tool does not have any input arguments, the data graph is passed internally.
-        """
-        
+    def validate_shacl(self, runtime: _ToolRuntime):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.validate_shacl.start",
@@ -298,34 +334,23 @@ class ToolClass:
             }
         )
         
+        runtime.state["violation_report"] = report
+        runtime.state["shacl_tool_call_id"] = runtime.tool_call_id
+        
         if runtime.context["config"]["runtime"]["violation_translation"]:
-            return Command(
-                update={
-                    "violation_report": report,
-                    "shacl_tool_call_id": runtime.state["tool_call_id"]
-                },
-                goto="violation_translation"
-            )
+            return violation_translation(runtime.state, runtime.context)
         else:
-            return Command(
-                update={
-                    "violation_report": report,
-                    "messages": [
-                        ToolMessage(
-                            content=format_violations(report),
-                            tool_call_id=runtime.tool_call_id
-                        )
-                    ]
-                },
-                goto="llm"
+            return (
+                format_violations(report,
+                                  runtime.state["data_graph"],
+                                  runtime.context["ontology_graph"],
+                                  runtime.context["shacl_graph"]),
+                report,
+                runtime.tool_call_id
             )
             
         
-    def finish(self, runtime: ToolRuntime):
-        """
-        Use this tool to finish the work. No input arguments required.
-        """
-        
+    def finish(self, runtime: _ToolRuntime):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.finish.triggered",
@@ -336,11 +361,7 @@ class ToolClass:
             }
         )
         
-        return Command(
-            update={
-                "to_end": True,
-                "finish_tool_call_id": runtime.state["tool_call_id"]
-            },
-            goto="check_entities_typed"
-        )
+        runtime.state["finish_tool_call_id"] = runtime.tool_call_id
+        
+        return check_entities_typed(runtime.state, runtime.context)
         
