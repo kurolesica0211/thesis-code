@@ -1,5 +1,5 @@
 import os
-import tqdm
+from tqdm import tqdm
 import json
 from langchain.messages import HumanMessage, AIMessage, SystemMessage, ToolMessage
 from langchain.chat_models import init_chat_model
@@ -27,12 +27,14 @@ def _compute_run_dir(config: RunConfig) -> str:
     return os.path.join(config.output.base_dir, f"{custom_tag}_{safe_model}")
 
 def run(config: RunConfig):
-    loader = _build_loader(config)
     run_dir = _compute_run_dir(config)
     os.makedirs(run_dir, exist_ok=True)
-    
     trace_path = os.path.join(run_dir, "trace.jsonl")
     append_trace(trace_path, "run.start")
+    
+    loader = _build_loader(config)
+    
+    append_trace(trace_path, "run.loader_instantiated")
     
     run_manifest = {
         "run_dir": run_dir,
@@ -70,14 +72,12 @@ def run(config: RunConfig):
         
         tool_obj = ToolClass(task_entry.schema_def)
         agent = build_agent(tool_obj)
-        append_trace(trace_path, "run.entry.agent.invoke", payload={
-            "entry_id": task_entry.entry_id,
-        })
         
         main_user_prompt = format_prompt(
             main_user_prompt_path,
             data_graph=task_entry.data_graph.serialize(format="turtle"),
-            ontology=task_entry.ontology_graph.serialize(format="turtle")
+            ontology=task_entry.ontology_graph.serialize(format="turtle"),
+            input_text=task_entry.input_text
         )
         main_user_msg = HumanMessage(main_user_prompt)
         
@@ -86,9 +86,11 @@ def run(config: RunConfig):
             temperature=config.model.temperature,
             max_retries=config.model.max_retries
         )
+        llm = llm.bind_tools(tool_obj.tools_schemas)
         
-        llm.bind_tools(tool_obj.tools_schemas)
-        
+        append_trace(trace_path, "run.entry.agent.invoke", payload={
+            "entry_id": task_entry.entry_id,
+        })
         final_state = agent.invoke(
             input=TaskState(
                 messages=[main_system_msg, main_user_msg],
@@ -103,7 +105,8 @@ def run(config: RunConfig):
                 ontology_graph=task_entry.ontology_graph,
                 shacl_graph=task_entry.shacl_graph,
                 tracing_path=trace_path,
-                config=config.model_dump()
+                config=config.model_dump(),
+                artifacts_dir=artifacts_dir
             )
         )
         
@@ -127,10 +130,10 @@ def run(config: RunConfig):
         
         usage_metadata = [msg.usage_metadata for msg in final_state["messages"] if type(msg) is AIMessage]
         with open(f"{artifacts_dir}/convo_usage_metadata.json", "w") as f:
-            json.dump(usage_metadata, f)
+            json.dump(usage_metadata, f, indent=4)
         
         with open(task_manifest_path, "w") as f:
-            json.dump(task_manifest, f)
+            json.dump(task_manifest, f, indent=4)
         
     with open(f"{run_dir}/run_manifest.json", "w") as f:
-        json.dump(run_manifest, f)
+        json.dump(run_manifest, f, indent=4)

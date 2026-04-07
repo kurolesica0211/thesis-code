@@ -6,7 +6,6 @@ from rdflib import Graph, URIRef
 from rdflib.namespace import OWL, RDF, RDFS
 
 from models.data_models import TaskEntry, Schema, RelationDef, DataEntry
-from helpers import uri_to_local
     
 
 class Loader:
@@ -58,7 +57,7 @@ class Loader:
     @staticmethod
     def _load_input_text(path: str) -> str:
         with open(path, "r") as f:
-            text = f
+            text = f.read()
         return text
     
     @staticmethod

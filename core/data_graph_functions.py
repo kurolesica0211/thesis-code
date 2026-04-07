@@ -1,4 +1,4 @@
-from rdflib import Graph, RDF, URIRef
+from rdflib import Graph, RDF, URIRef, BNode
 
 from helpers import strip_ns, strip_uri
 
@@ -75,12 +75,12 @@ def remove_triple(data_graph: Graph, subject: str, relation: str, object: str) -
 
 
 def check_ents_typed(data_graph: Graph) -> list[URIRef]:
-    not_typed = set()
-    for node in data_graph.all_nodes():
-        classes = extract_classes(data_graph, node)
-        if not classes:
-            not_typed.update(node)
-    return not_typed
+    all_nodes = set(s for s in data_graph.subjects() if isinstance(s, (URIRef, BNode)))
+    all_nodes.update(o for o in data_graph.objects() if isinstance(o, (URIRef, BNode)))
+    typed_nodes = set(data_graph.subjects(predicate=RDF.type))
+    classes = set(data_graph.objects(predicate=RDF.type))
+    classless_nodes = all_nodes - typed_nodes - classes
+    return classless_nodes
 
 
 def extract_classes(data_graph: Graph, uri: URIRef) -> list[URIRef]:

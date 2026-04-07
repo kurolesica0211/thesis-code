@@ -3,8 +3,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from pydantic import BaseModel, Field, create_model
-from typing import Annotated, List
+from rdflib import Graph, URIRef
 
-Model = create_model("Model", __doc__="AAA")
-print(Model().__doc__)
+graph = Graph()
+graph.add((URIRef("http://example.com/AAA"), URIRef("http://example.com/bbb"), URIRef("http://example.com/CCC")))
+
+graph.add((URIRef("http://example.com/AAA"), URIRef("http://example.com/bbb"), URIRef("http://example.com/CCC")))
+
+print(graph.serialize(format="turtle"))

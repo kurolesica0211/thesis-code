@@ -1,0 +1,18 @@
+[
+    {
+        "input_tokens": 5829,
+        "output_tokens": 66606,
+        "total_tokens": 72435,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    },
+    {
+        "input_tokens": 163092,
+        "output_tokens": 0,
+        "total_tokens": 163092,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    }
+]

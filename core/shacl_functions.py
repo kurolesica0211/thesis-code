@@ -1,13 +1,14 @@
 from rdflib import Graph, SH, RDF, URIRef
 from pyshacl import validate as py_validate
 import re
+import textwrap
 
 from models.data_models import Violation, ValidationReport
 from helpers import strip_uri, strip_ns
 from core.data_graph_functions import extract_classes
 
 
-def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) -> ValidationReport:
+def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) -> tuple[bool, ValidationReport]:
     conforms, results_graph, _ = py_validate(
         data_graph,
         shacl_graph,
@@ -20,7 +21,7 @@ def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) ->
     if not conforms:
         report.violations = parse_results_graph(results_graph)
     
-    return report
+    return conforms, report
     
     
 def parse_results_graph(results_graph: Graph) -> list[Violation]:
@@ -68,7 +69,7 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
         text += f"    Path: {strip_uri(strip_ns(str(v.path)))}\n"
         text += f"    Value: {strip_uri(strip_ns(str(v.value)))}\n"
         text += f"    Constraint: {v.constraint}\n"
-        text += f"    Source shape:\n      {serialize_shape(shacl_graph, v.source_shape)}\n"
+        text += f"    Source shape:\n{textwrap.indent(serialize_shape(shacl_graph, v.source_shape), '      ')}\n"
         text += f"    SHACL message: {v.message}\n"
         text += "\n"
         
@@ -76,10 +77,10 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
         text += f"    Classes assigned to the focus node: {[cls.n3(ont_graph.namespace_manager) for cls in focus_cls_uris]}\n"
         text += f"    Definitions of the classes assigned to the focus node:\n"
         for cls in focus_cls_uris:
-            text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n        {serialize_shape(ont_graph, cls)}\n"
+            text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
         text += "\n"
             
-        text += f"    Definition of the path:\n      {serialize_shape(ont_graph, v.path)}"
+        text += f"    Definition of the path:\n{textwrap.indent(serialize_shape(ont_graph, v.path), '      ')}"
         text += "\n"
         
         if v.value is not None:
@@ -87,12 +88,12 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
             text += f"    Classes assigned to the value node: {[cls.n3(ont_graph.namespace_manager) for cls in value_cls_uris]}\n"
             text += f"    Definitions of the classes assigned to the value node:\n"
             for cls in focus_cls_uris:
-                text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n        {serialize_shape(ont_graph, cls)}\n"
+                text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
         text += "\n"
                 
         if v.llm_explanation is not None and v.llm_instruction is not None:
-            text += f"    LLM-provided explanation of the violation:\n      {v.llm_explanation}\n"
-            text += f"    LLM-provided instruction on how to handle the violation:\n      {v.llm_instruction}"
+            text += f"    LLM-provided explanation of the violation:\n{textwrap.indent(v.llm_explanation, '      ')}\n"
+            text += f"    LLM-provided instruction on how to handle the violation:\n{textwrap.indent(v.llm_instruction, '      ')}"
         text += "\n"
         
     return text

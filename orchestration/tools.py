@@ -1,27 +1,114 @@
-from pydantic import create_model, Field, BaseModel, ValidationError
-from langchain.tools import tool
+import textwrap
+from pydantic import create_model, Field, BaseModel
 from langgraph.types import Command
-from langchain.messages import ToolMessage, AIMessage
-from typing import type, Literal, Callable, TypedDict
+from typing import Literal, Callable
+from langchain.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
 from rdflib import Graph
 from langgraph.runtime import Runtime
 from langchain_core.messages.content import ToolCall
 from langgraph.graph import END
 
-from models.data_models import Schema
+from models.data_models import Schema, TaskState, TaskContext, ViolationTranslation, _ToolRuntime
 from orchestration.tracing import append_trace
 from core.data_graph_functions import add_class as add_class_core
 from core.data_graph_functions import remove_class as remove_class_core
 from core.data_graph_functions import add_triple as add_triple_core
 from core.data_graph_functions import remove_triple as remove_triple_core
 from core.shacl_functions import pyshacl_validate, format_violations
-from orchestration.agent import TaskState, TaskContext, violation_translation, check_entities_typed
+from prompts.prompt_engine import get_prompt, format_prompt
+from core.shacl_functions import format_violations
+from core.data_graph_functions import check_ents_typed
+from helpers import strip_ns, strip_uri
 
 
-class _ToolRuntime(BaseModel):
-    state: TaskState
-    context: TaskContext
-    tool_call_id: str
+def create_translation_response_model(num_violations: int) -> BaseModel:
+    TranslationOutput = create_model(
+        "TranslationOutput",
+        translations=(list[ViolationTranslation], Field(min_length=num_violations, max_length=num_violations))
+    )
+    return TranslationOutput
+
+
+def violation_translation(state: TaskState, context: TaskContext):
+        append_trace(context["tracing_path"], "run.entry.agent.violation_translation.start", payload={
+            "entry_id": context["entry_id"],
+            "shacl_tool_call_id": state["shacl_tool_call_id"]
+        })
+        
+        trans_system_path = context["config"]["prompts"]["translation_system"]
+        trans_system_prompt = get_prompt(trans_system_path)
+        trans_system_msg = SystemMessage(content=trans_system_prompt)
+        
+        trans_user_path = context["config"]["prompts"]["translation_user"]
+        trans_user_prompt = format_prompt(
+            trans_user_path,
+            violations=format_violations(
+                state["violation_report"],
+                state["data_graph"],
+                context["ontology_graph"],
+                context["shacl_graph"]
+            )
+        )
+        trans_user_msg = HumanMessage(content=trans_user_prompt)
+        
+        response_model = create_translation_response_model(len(state["violation_report"].violations))
+        llm = context["llm"].with_structured_output(response_model, include_raw=True)
+        response = llm.invoke([trans_system_msg, trans_user_msg])
+        ai_msg = response["raw"]
+        parsed = response["parsed"]
+        translation_convo = [trans_system_msg, trans_user_msg, ai_msg]
+        
+        with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_convo.md", "w") as f:
+            f.write(translation_convo)
+        
+        with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_metadata.md", "w") as f:
+            f.write(ai_msg.usage_metadata)
+        
+        report = state["violation_report"].model_copy()
+        for i, v in enumerate(report.violations):
+            v.llm_explanation = parsed.translations[i].explanation
+            v.llm_instruction = parsed.translations[i].instruction
+            
+        append_trace(context["tracing_path"], "run.entry.agent.violation_translation.finish", payload={
+            "entry_id": context["entry_id"],
+            "shacl_tool_call_id": state["shacl_tool_call_id"]
+        })
+        
+        state["violation_report"] = report
+        
+        return (
+            format_violations(report, state["data_graph"], context["ontology_graph"], context["shacl_graph"]),
+            report,
+            state["shacl_tool_call_id"]
+        )
+        
+
+def check_entities_typed(state: TaskState, context: TaskContext):
+        append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.start", payload={
+            "entry_id": context["entry_id"]
+        })
+        
+        not_typed = check_ents_typed(state["data_graph"])
+        if not not_typed:
+            append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
+                "entry_id": context["entry_id"],
+                "result": "all_typed"
+            })
+            
+            return END
+        else:
+            not_typed_str = [strip_uri(strip_ns(str(n))) for n in not_typed]
+            
+            append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
+                "entry_id": context["entry_id"],
+                "result": "not_all_typed",
+                "not_typed_nodes": not_typed_str
+            })
+            
+            return (
+                format_prompt(context["config"]["prompts"]["not_typed"], nodes=not_typed_str),
+                state["finish_tool_call_id"]
+            )
 
 
 class ToolClass:
@@ -144,7 +231,8 @@ class ToolClass:
                             ))
                         else:
                             messages.append(ToolMessage(
-                                content=f"The final data graph after the sequence of edits:\n\n  {output[0].serialize(format="turtle")}",
+                                content=("The final data graph after the sequence of edits:",
+                                         f"\n\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}"),
                                 tool_call_id=output[-1]
                             ))
                     elif name == "ValidateShacl":
@@ -179,14 +267,13 @@ class ToolClass:
         
         return execute_tool_calls
 
-        
 
     def add_class(self, runtime: _ToolRuntime, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_class.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -202,7 +289,7 @@ class ToolClass:
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_class.finish",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -212,12 +299,13 @@ class ToolClass:
         
         return (data_graph, runtime.tool_call_id)
     
+    
     def remove_class(self, runtime: _ToolRuntime, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_class.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -233,7 +321,7 @@ class ToolClass:
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_class.finish",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -243,12 +331,13 @@ class ToolClass:
         
         return (data_graph, runtime.tool_call_id)
     
+    
     def add_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_triple.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -265,7 +354,7 @@ class ToolClass:
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_triple.finish",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -276,12 +365,13 @@ class ToolClass:
         
         return (data_graph, runtime.tool_call_id)
     
+    
     def remove_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_triple.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -298,7 +388,7 @@ class ToolClass:
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_triple.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
                 "subject": subject,
@@ -309,12 +399,13 @@ class ToolClass:
         
         return (data_graph, runtime.tool_call_id)
         
+        
     def validate_shacl(self, runtime: _ToolRuntime):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.validate_shacl.start",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
             }
@@ -322,20 +413,24 @@ class ToolClass:
         
         data_graph: Graph = runtime.state["data_graph"]
         
-        report = pyshacl_validate(data_graph, runtime.context["ontology_graph"], runtime.context["shacl_graph"])
+        conforms, report = pyshacl_validate(data_graph, runtime.context["ontology_graph"], runtime.context["shacl_graph"])
         
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.validate_shacl.finish",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
+                "conforms": conforms,
                 "tool_call_id": runtime.tool_call_id,
             }
         )
         
         runtime.state["violation_report"] = report
         runtime.state["shacl_tool_call_id"] = runtime.tool_call_id
+        
+        if conforms:
+            return ("SHACL validation has not produced any violations.", runtime.tool_call_id)
         
         if runtime.context["config"]["runtime"]["violation_translation"]:
             return violation_translation(runtime.state, runtime.context)
@@ -355,7 +450,7 @@ class ToolClass:
             runtime.context["tracing_path"],
             "run.entry.agent.tools.finish.triggered",
             payload={
-                "entry_id": runtime.context["tracing_path"],
+                "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
                 "tool_call_id": runtime.tool_call_id,
             }

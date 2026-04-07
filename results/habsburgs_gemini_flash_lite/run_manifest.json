@@ -1,0 +1,35 @@
+{
+    "run_dir": "results/habsburgs_gemini_flash_lite",
+    "config": {
+        "model": {
+            "name": "google_genai:gemini-2.5-flash-lite",
+            "temperature": 0.0,
+            "max_retries": 4
+        },
+        "prompts": {
+            "main_system": "prompts/main_system.md",
+            "main_user": "prompts/main_user.md",
+            "translation_system": "prompts/translation_system.md",
+            "translation_user": "prompts/translation_user.md",
+            "not_typed": "prompts/not_typed.md"
+        },
+        "runtime": {
+            "delay_seconds": 4.0,
+            "max_iterations": 10,
+            "prompt_caching_enabled": false,
+            "violation_translation": true
+        },
+        "output": {
+            "base_dir": "results",
+            "custom_tag": "habsburgs",
+            "run_dir": "results/habsburgs_gemini_flash_lite"
+        },
+        "dataset": {
+            "source": "custom_family_bench"
+        }
+    },
+    "task_manifests": [
+        "results/habsburgs_gemini_flash_lite\\habsburgs\\task_manifest.json"
+    ],
+    "trace": "results/habsburgs_gemini_flash_lite\\trace.jsonl"
+}
