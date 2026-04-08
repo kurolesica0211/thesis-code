@@ -266,18 +266,18 @@ fhkb:Woman a owl:Class ;
 
 fhkb:Person a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty fhkb:hasFather ;
-            owl:someValuesFrom fhkb:Man ],
+            owl:onProperty fhkb:hasSex ;
+            owl:someValuesFrom fhkb:Sex ],
         [ a owl:Restriction ;
             owl:onProperty fhkb:hasMother ;
             owl:someValuesFrom fhkb:Woman ],
         [ a owl:Restriction ;
-            owl:onProperty fhkb:hasSex ;
-            owl:someValuesFrom fhkb:Sex ],
-        [ a owl:Restriction ;
             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
             owl:onClass fhkb:Person ;
             owl:onProperty fhkb:hasParent ],
+        [ a owl:Restriction ;
+            owl:onProperty fhkb:hasFather ;
+            owl:someValuesFrom fhkb:Man ],
         fhkb:DomainEntity ;
     owl:disjointWith fhkb:Sex ;
     owl:equivalentClass [ a owl:Class ;
@@ -298,133 +298,310 @@ fhkb:Person a owl:Class ;
 
 []
 Tool Calls:
-  AddClass (7c9b40d8-d98c-4b1f-b4b1-1a67d042bdf2)
- Call ID: 7c9b40d8-d98c-4b1f-b4b1-1a67d042bdf2
+  AddClass (5d2e8c51-ffcf-43fc-8c98-177fe48658c6)
+ Call ID: 5d2e8c51-ffcf-43fc-8c98-177fe48658c6
   Args:
     type: fhkb:Man
     subject: Guntram_the_Rich
-  AddClass (958be43d-6ba9-4e5b-af70-329c421d5447)
- Call ID: 958be43d-6ba9-4e5b-af70-329c421d5447
+  AddClass (eb9914f5-3d7f-4af6-b128-f04d4c82efa2)
+ Call ID: eb9914f5-3d7f-4af6-b128-f04d4c82efa2
   Args:
     subject: Radbot
     type: fhkb:Man
-  AddClass (e84595b1-50bd-46e0-b8da-b49e06a3d05f)
- Call ID: e84595b1-50bd-46e0-b8da-b49e06a3d05f
+  AddClass (4ab7da32-c255-4df0-9861-725e0868d5ef)
+ Call ID: 4ab7da32-c255-4df0-9861-725e0868d5ef
   Args:
+    type: fhkb:Woman
     subject: Ida_of_Lorraine
+  AddClass (d87654ac-ab73-4a03-830e-bed34398e693)
+ Call ID: d87654ac-ab73-4a03-830e-bed34398e693
+  Args:
+    type: fhkb:Man
+    subject: Rudolf_I
+  AddClass (19c5a043-499b-4e2b-8a13-ba936b46c90f)
+ Call ID: 19c5a043-499b-4e2b-8a13-ba936b46c90f
+  Args:
+    subject: Albert_IV
+    type: fhkb:Man
+  AddClass (be938d5c-b4c3-47c8-9312-3b63c0df6711)
+ Call ID: be938d5c-b4c3-47c8-9312-3b63c0df6711
+  Args:
     type: fhkb:Woman
-  AddClass (6aa92a03-89b9-4f78-844a-6cdf31722872)
- Call ID: 6aa92a03-89b9-4f78-844a-6cdf31722872
-  Args:
-    type: fhkb:Man
-    subject: Rudolf_I_of_Germany
-  AddClass (50c84933-fe58-4099-a52c-cc6cbf361bf0)
- Call ID: 50c84933-fe58-4099-a52c-cc6cbf361bf0
-  Args:
-    type: fhkb:Man
-    subject: Albert_IV_of_Habsburg
-  AddClass (1a0a1138-5880-4a7f-a74a-9d7f776c012d)
- Call ID: 1a0a1138-5880-4a7f-a74a-9d7f776c012d
-  Args:
     subject: Hedwig_of_Kyburg
-    type: fhkb:Woman
-  AddClass (558608ee-821f-4a8c-aecf-7bafef90523f)
- Call ID: 558608ee-821f-4a8c-aecf-7bafef90523f
+  AddClass (57e762ca-9878-4173-8f1c-61b9fc169921)
+ Call ID: 57e762ca-9878-4173-8f1c-61b9fc169921
   Args:
     subject: Albert_I
     type: fhkb:Man
-  AddClass (bb06fa2f-005c-46b4-bc4f-e9144e664870)
- Call ID: bb06fa2f-005c-46b4-bc4f-e9144e664870
+  AddClass (6cd213aa-7cfa-4f40-8611-d390feb91faa)
+ Call ID: 6cd213aa-7cfa-4f40-8611-d390feb91faa
   Args:
-    subject: Rudolf_II
     type: fhkb:Man
-  AddClass (51959cb0-03ed-4ab7-95e8-1d5cbbc6179a)
- Call ID: 51959cb0-03ed-4ab7-95e8-1d5cbbc6179a
+    subject: Rudolf_II
+  AddClass (f5925692-7631-4410-a5f8-b7871bbf18ed)
+ Call ID: f5925692-7631-4410-a5f8-b7871bbf18ed
+  Args:
+    subject: Elisabeth_of_Carinthia
+    type: fhkb:Woman
+  AddClass (7ff76349-e7b4-417f-b873-ef44b9bab246)
+ Call ID: 7ff76349-e7b4-417f-b873-ef44b9bab246
+  Args:
+    type: fhkb:Man
+    subject: Maximilian_I
+  AddClass (ea4a105d-972e-43a6-a07a-122e47f3ae8b)
+ Call ID: ea4a105d-972e-43a6-a07a-122e47f3ae8b
+  Args:
+    subject: Mary_of_Burgundy
+    type: fhkb:Woman
+  AddClass (08468675-5789-47f1-ad36-f61d433cdd08)
+ Call ID: 08468675-5789-47f1-ad36-f61d433cdd08
+  Args:
+    type: fhkb:Man
+    subject: Philip_the_Handsome
+  AddClass (29c729eb-10e6-4dde-b374-53d8a1712908)
+ Call ID: 29c729eb-10e6-4dde-b374-53d8a1712908
   Args:
     type: fhkb:Woman
-    subject: Elisabeth_of_Carinthia
-  AddTriple (2749d63a-48ac-4c58-8db5-19d99825089b)
- Call ID: 2749d63a-48ac-4c58-8db5-19d99825089b
+    subject: Joanna_of_Castile
+  AddClass (6fb9009a-8c89-41d9-8c33-822cb3eb25eb)
+ Call ID: 6fb9009a-8c89-41d9-8c33-822cb3eb25eb
   Args:
-    subject: Radbot
-    object: Guntram_the_Rich
-    relation: fhkb:isFatherOf
-  AddTriple (818bb7d7-6f0f-4bdb-a677-5dea7174e404)
- Call ID: 818bb7d7-6f0f-4bdb-a677-5dea7174e404
+    subject: Ferdinand_II_of_Aragon
+    type: fhkb:Man
+  AddClass (8f9c522c-b8c7-4104-a8ea-25b535f08fd6)
+ Call ID: 8f9c522c-b8c7-4104-a8ea-25b535f08fd6
   Args:
-    subject: Ida_of_Lorraine
+    type: fhkb:Woman
+    subject: Isabella_I_of_Castile
+  AddClass (39ed3adb-e58b-4bdb-9d6c-6fbc2de23268)
+ Call ID: 39ed3adb-e58b-4bdb-9d6c-6fbc2de23268
+  Args:
+    type: fhkb:Man
+    subject: Charles_V
+  AddClass (f9935b55-c91d-4286-a9a6-c24ae7e153e0)
+ Call ID: f9935b55-c91d-4286-a9a6-c24ae7e153e0
+  Args:
+    subject: Philip_II
+    type: fhkb:Man
+  AddClass (078d83bc-5c74-4ed2-b26d-0348b1a2fadc)
+ Call ID: 078d83bc-5c74-4ed2-b26d-0348b1a2fadc
+  Args:
+    type: fhkb:Man
+    subject: Ferdinand_I
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after the sequence of edits.
+
+================================= Tool Message =================================
+
+The final data graph after the sequence of edits:
+
+  @prefix data: <http://example.org/data/> .
+  @prefix fhkb: <http://www.example.com/genealogy.owl#> .
+
+  data:Albert_I a fhkb:Man .
+
+  data:Albert_IV a fhkb:Man .
+
+  data:Charles_V a fhkb:Man .
+
+  data:Elisabeth_of_Carinthia a fhkb:Woman .
+
+  data:Ferdinand_I a fhkb:Man .
+
+  data:Ferdinand_II_of_Aragon a fhkb:Man .
+
+  data:Guntram_the_Rich a fhkb:Man .
+
+  data:Hedwig_of_Kyburg a fhkb:Woman .
+
+  data:Ida_of_Lorraine a fhkb:Woman .
+
+  data:Isabella_I_of_Castile a fhkb:Woman .
+
+  data:Joanna_of_Castile a fhkb:Woman .
+
+  data:Mary_of_Burgundy a fhkb:Woman .
+
+  data:Maximilian_I a fhkb:Man .
+
+  data:Philip_II a fhkb:Man .
+
+  data:Philip_the_Handsome a fhkb:Man .
+
+  data:Radbot a fhkb:Man .
+
+  data:Rudolf_I a fhkb:Man .
+
+  data:Rudolf_II a fhkb:Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (b808d7b5-e50a-407a-be3e-38da6be04c6f)
+ Call ID: b808d7b5-e50a-407a-be3e-38da6be04c6f
+  Args:
+    object: Radbot
+    subject: Guntram_the_Rich
+    relation: fhkb:isSonOf
+  AddTriple (59cbb78e-e46e-4f9d-a6df-f64c6b760c49)
+ Call ID: 59cbb78e-e46e-4f9d-a6df-f64c6b760c49
+  Args:
     object: Radbot
     relation: fhkb:hasWife
-  AddTriple (8f4ae306-95cb-4813-acfc-f9aa451ffca0)
- Call ID: 8f4ae306-95cb-4813-acfc-f9aa451ffca0
+    subject: Ida_of_Lorraine
+  AddTriple (45d95d35-f135-4dc9-8109-df4a47a32de9)
+ Call ID: 45d95d35-f135-4dc9-8109-df4a47a32de9
   Args:
-    subject: Rudolf_I_of_Germany
-    object: Albert_IV_of_Habsburg
-    relation: fhkb:isFatherOf
-  AddTriple (15e07010-83d8-46f1-8bc8-71c47aabd3d2)
- Call ID: 15e07010-83d8-46f1-8bc8-71c47aabd3d2
+    object: Rudolf_I
+    relation: fhkb:hasFather
+    subject: Albert_IV
+  AddTriple (9d81daa3-ce8b-43e6-a7ee-34f63d67baf9)
+ Call ID: 9d81daa3-ce8b-43e6-a7ee-34f63d67baf9
   Args:
-    relation: fhkb:isMotherOf
-    subject: Rudolf_I_of_Germany
-    object: Hedwig_of_Kyburg
-  AddTriple (abdc714b-b00f-454e-be16-614d6fb4188d)
- Call ID: abdc714b-b00f-454e-be16-614d6fb4188d
+    object: Rudolf_I
+    subject: Hedwig_of_Kyburg
+    relation: fhkb:hasMother
+  AddTriple (ebe29cd3-3a3b-48f9-866f-7dccbf9a7721)
+ Call ID: ebe29cd3-3a3b-48f9-866f-7dccbf9a7721
   Args:
-    subject: Albert_I
-    object: Rudolf_I_of_Germany
-    relation: fhkb:isFatherOf
-  AddTriple (6ea3a101-0254-4506-be45-94cdfca50318)
- Call ID: 6ea3a101-0254-4506-be45-94cdfca50318
+    object: Albert_I
+    subject: Rudolf_I
+    relation: fhkb:hasFather
+  AddTriple (cf950bbc-243a-4649-93d2-d042203d5d46)
+ Call ID: cf950bbc-243a-4649-93d2-d042203d5d46
   Args:
-    relation: fhkb:isFatherOf
-    subject: Rudolf_II
-    object: Rudolf_I_of_Germany
-  AddTriple (28e645e1-a306-40ed-921d-2565a139a807)
- Call ID: 28e645e1-a306-40ed-921d-2565a139a807
+    object: Rudolf_II
+    subject: Rudolf_I
+    relation: fhkb:hasFather
+  AddTriple (110e2d93-d467-4054-82c9-8b5b33ebe29f)
+ Call ID: 110e2d93-d467-4054-82c9-8b5b33ebe29f
   Args:
+    relation: fhkb:hasWife
     subject: Elisabeth_of_Carinthia
     object: Albert_I
+  AddTriple (92ba62a6-6c8e-41ca-b733-4137f91b5190)
+ Call ID: 92ba62a6-6c8e-41ca-b733-4137f91b5190
+  Args:
+    object: Philip_the_Handsome
+    subject: Maximilian_I
+    relation: fhkb:hasFather
+  AddTriple (dc87a37d-bafa-4ec2-9834-f7951d8ebfe0)
+ Call ID: dc87a37d-bafa-4ec2-9834-f7951d8ebfe0
+  Args:
+    subject: Mary_of_Burgundy
+    relation: fhkb:hasMother
+    object: Philip_the_Handsome
+  AddTriple (a4afa043-d12d-4fce-86b9-615a36b315e3)
+ Call ID: a4afa043-d12d-4fce-86b9-615a36b315e3
+  Args:
+    object: Philip_the_Handsome
+    subject: Joanna_of_Castile
     relation: fhkb:hasWife
-  AddTriple (480928e2-2634-4081-8001-7a9682577527)
- Call ID: 480928e2-2634-4081-8001-7a9682577527
+  AddTriple (cd9ee398-7d25-4688-aa0d-a6785ed731ea)
+ Call ID: cd9ee398-7d25-4688-aa0d-a6785ed731ea
   Args:
-    object: Guntram_the_Rich
-    subject: fhkb:Male
-    relation: fhkb:hasSex
-  AddTriple (94676361-76d0-42f0-9a6b-fc4815096fd7)
- Call ID: 94676361-76d0-42f0-9a6b-fc4815096fd7
+    relation: fhkb:hasFather
+    subject: Ferdinand_II_of_Aragon
+    object: Joanna_of_Castile
+  AddTriple (5e0cc2e9-4780-4312-96c1-f5a2300c1359)
+ Call ID: 5e0cc2e9-4780-4312-96c1-f5a2300c1359
   Args:
-    relation: fhkb:hasSex
-    subject: fhkb:Male
-    object: Radbot
-  AddTriple (6a791fae-9724-4199-8fd1-389c744e387d)
- Call ID: 6a791fae-9724-4199-8fd1-389c744e387d
+    object: Joanna_of_Castile
+    subject: Isabella_I_of_Castile
+    relation: fhkb:hasMother
+  AddTriple (94f55123-bb6b-4fc0-b8ca-04cae2fe0a88)
+ Call ID: 94f55123-bb6b-4fc0-b8ca-04cae2fe0a88
   Args:
-    relation: fhkb:hasSex
-    object: Ida_of_Lorraine
-    subject: fhkb:Female
-  AddTriple (f15c0b4e-fe07-414d-9aa2-45b8e7a3feff)
- Call ID: f15c0b4e-fe07-414d-9aa2-45b8e7a3feff
+    object: Charles_V
+    subject: Philip_the_Handsome
+    relation: fhkb:hasFather
+  AddTriple (e5d29ef2-4ba9-4bb3-a2da-312bb0ae0707)
+ Call ID: e5d29ef2-4ba9-4bb3-a2da-312bb0ae0707
   Args:
-    relation: fhkb:hasSex
-    object: Rudolf_I_of_Germany
-    subject: fhkb:Male
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after the sequence of edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after the sequence of edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after the sequence of edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after the sequence of edits.
+    object: Charles_V
+    relation: fhkb:hasMother
+    subject: Joanna_of_Castile
+  AddTriple (13b17f59-4f00-40c8-b9b1-7d741f21157a)
+ Call ID: 13b17f59-4f00-40c8-b9b1-7d741f21157a
+  Args:
+    subject: Charles_V
+    relation: fhkb:hasFather
+    object: Philip_II
+  AddTriple (89db42e7-d09e-407a-aef7-18623d4161dc)
+ Call ID: 89db42e7-d09e-407a-aef7-18623d4161dc
+  Args:
+    relation: fhkb:isBrotherOf
+    subject: Charles_V
+    object: Ferdinand_I
 
 ================================= Tool Message =================================
 
@@ -493,36 +670,57 @@ The final data graph after the sequence of edits:
   @prefix data: <http://example.org/data/> .
   @prefix fhkb: <http://www.example.com/genealogy.owl#> .
 
+  data:Albert_IV a fhkb:Man ;
+      fhkb:hasFather data:Rudolf_I .
+
   data:Elisabeth_of_Carinthia a fhkb:Woman ;
       fhkb:hasWife data:Albert_I .
 
-  data:Female fhkb:hasSex data:Ida_of_Lorraine .
+  data:Ferdinand_II_of_Aragon a fhkb:Man ;
+      fhkb:hasFather data:Joanna_of_Castile .
 
-  data:Male fhkb:hasSex data:Guntram_the_Rich,
-          data:Radbot,
-          data:Rudolf_I_of_Germany .
+  data:Guntram_the_Rich a fhkb:Man ;
+      fhkb:isSonOf data:Radbot .
 
-  data:Rudolf_II a fhkb:Man ;
-      fhkb:isFatherOf data:Rudolf_I_of_Germany .
-
-  data:Albert_I a fhkb:Man ;
-      fhkb:isFatherOf data:Rudolf_I_of_Germany .
-
-  data:Albert_IV_of_Habsburg a fhkb:Man .
-
-  data:Hedwig_of_Kyburg a fhkb:Woman .
+  data:Hedwig_of_Kyburg a fhkb:Woman ;
+      fhkb:hasMother data:Rudolf_I .
 
   data:Ida_of_Lorraine a fhkb:Woman ;
       fhkb:hasWife data:Radbot .
 
-  data:Guntram_the_Rich a fhkb:Man .
+  data:Isabella_I_of_Castile a fhkb:Woman ;
+      fhkb:hasMother data:Joanna_of_Castile .
 
-  data:Radbot a fhkb:Man ;
-      fhkb:isFatherOf data:Guntram_the_Rich .
+  data:Mary_of_Burgundy a fhkb:Woman ;
+      fhkb:hasMother data:Philip_the_Handsome .
 
-  data:Rudolf_I_of_Germany a fhkb:Man ;
-      fhkb:isFatherOf data:Albert_IV_of_Habsburg ;
-      fhkb:isMotherOf data:Hedwig_of_Kyburg .
+  data:Maximilian_I a fhkb:Man ;
+      fhkb:hasFather data:Philip_the_Handsome .
+
+  data:Ferdinand_I a fhkb:Man .
+
+  data:Philip_II a fhkb:Man .
+
+  data:Rudolf_II a fhkb:Man .
+
+  data:Albert_I a fhkb:Man .
+
+  data:Charles_V a fhkb:Man ;
+      fhkb:hasFather data:Philip_II ;
+      fhkb:isBrotherOf data:Ferdinand_I .
+
+  data:Joanna_of_Castile a fhkb:Woman ;
+      fhkb:hasMother data:Charles_V ;
+      fhkb:hasWife data:Philip_the_Handsome .
+
+  data:Radbot a fhkb:Man .
+
+  data:Rudolf_I a fhkb:Man ;
+      fhkb:hasFather data:Albert_I,
+          data:Rudolf_II .
+
+  data:Philip_the_Handsome a fhkb:Man ;
+      fhkb:hasFather data:Charles_V .
 
 
 
@@ -530,8 +728,8 @@ The final data graph after the sequence of edits:
 
 []
 Tool Calls:
-  ValidateShacl (07d31579-a068-4cd6-ba18-f593fdd6d923)
- Call ID: 07d31579-a068-4cd6-ba18-f593fdd6d923
+  ValidateShacl (b0a299fe-6e98-4738-bb7f-a38137c3a178)
+ Call ID: b0a299fe-6e98-4738-bb7f-a38137c3a178
   Args:
 
 ================================= Tool Message =================================
@@ -542,100 +740,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3890f194-401b-4b7c-8ed7-6148192b48e2)
- Call ID: 3890f194-401b-4b7c-8ed7-6148192b48e2
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Female', 'Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AddClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AddClass (6301c9e0-4af4-4969-8c3f-f7dd2e02e11b)
- Call ID: 6301c9e0-4af4-4969-8c3f-f7dd2e02e11b
-  Args:
-    subject: Female
-    type: fhkb:Sex
-  AddClass (8365e935-d837-46d4-9ae5-2c41479451d1)
- Call ID: 8365e935-d837-46d4-9ae5-2c41479451d1
-  Args:
-    subject: Male
-    type: fhkb:Sex
-  ValidateShacl (b8753c41-303c-4098-97cd-153c7d821e5a)
- Call ID: b8753c41-303c-4098-97cd-153c7d821e5a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after the sequence of edits.
-
-================================= Tool Message =================================
-
-The final data graph after the sequence of edits:
-
-  @prefix data: <http://example.org/data/> .
-  @prefix fhkb: <http://www.example.com/genealogy.owl#> .
-
-  data:Elisabeth_of_Carinthia a fhkb:Woman ;
-      fhkb:hasWife data:Albert_I .
-
-  data:Female a fhkb:Sex ;
-      fhkb:hasSex data:Ida_of_Lorraine .
-
-  data:Male a fhkb:Sex ;
-      fhkb:hasSex data:Guntram_the_Rich,
-          data:Radbot,
-          data:Rudolf_I_of_Germany .
-
-  data:Rudolf_II a fhkb:Man ;
-      fhkb:isFatherOf data:Rudolf_I_of_Germany .
-
-  data:Albert_I a fhkb:Man ;
-      fhkb:isFatherOf data:Rudolf_I_of_Germany .
-
-  data:Albert_IV_of_Habsburg a fhkb:Man .
-
-  data:Hedwig_of_Kyburg a fhkb:Woman .
-
-  data:Ida_of_Lorraine a fhkb:Woman ;
-      fhkb:hasWife data:Radbot .
-
-  data:Guntram_the_Rich a fhkb:Man .
-
-  data:Radbot a fhkb:Man ;
-      fhkb:isFatherOf data:Guntram_the_Rich .
-
-  data:Rudolf_I_of_Germany a fhkb:Man ;
-      fhkb:isFatherOf data:Albert_IV_of_Habsburg ;
-      fhkb:isMotherOf data:Hedwig_of_Kyburg .
-
-
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (14597946-20d0-4da4-a3c0-35cecbb64709)
- Call ID: 14597946-20d0-4da4-a3c0-35cecbb64709
+  Finish (324ea99b-3e15-4911-b773-b18072bbea40)
+ Call ID: 324ea99b-3e15-4911-b773-b18072bbea40
   Args:

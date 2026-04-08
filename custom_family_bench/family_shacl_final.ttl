@@ -1,0 +1,186 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix fhkb: <http://www.example.com/genealogy.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fhkb:Ancestor a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Ancestor-isAncestorOf,
+        fhkb:Man-isBrotherOf,
+        fhkb:Person-hasFather,
+        fhkb:Person-hasMother,
+        fhkb:Person-hasParent,
+        fhkb:Person-hasRelation,
+        fhkb:Woman-hasAncestor,
+        fhkb:Woman-hasSex,
+        fhkb:Woman-isBloodrelationOf,
+        fhkb:Woman-isSiblingOf,
+        fhkb:Woman-isSisterOf .
+
+fhkb:DomainEntity a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+fhkb:Female a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+fhkb:Male a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+fhkb:Man a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Man-hasSex,
+        fhkb:Man-isBrotherOf,
+        fhkb:Man-isUncleOf,
+        fhkb:Person-hasFather,
+        fhkb:Person-hasMother,
+        fhkb:Person-hasParent,
+        fhkb:Person-hasRelation,
+        fhkb:Woman-hasAncestor,
+        fhkb:Woman-isBloodrelationOf,
+        fhkb:Woman-isSiblingOf,
+        fhkb:Woman-isSisterOf .
+
+fhkb:Marriage a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Marriage-hasFemalePartner,
+        fhkb:Marriage-hasMalePartner,
+        fhkb:Marriage-hasPartner .
+
+fhkb:Person a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Man-isBrotherOf,
+        fhkb:Person-hasFather,
+        fhkb:Person-hasMother,
+        fhkb:Person-hasParent,
+        fhkb:Person-hasRelation,
+        fhkb:Person-hasSex,
+        fhkb:Woman-hasAncestor,
+        fhkb:Woman-isBloodrelationOf,
+        fhkb:Woman-isSiblingOf,
+        fhkb:Woman-isSisterOf .
+
+fhkb:Sex a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+fhkb:Woman a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Man-isBrotherOf,
+        fhkb:Person-hasFather,
+        fhkb:Person-hasMother,
+        fhkb:Person-hasParent,
+        fhkb:Person-hasRelation,
+        fhkb:Woman-hasAncestor,
+        fhkb:Woman-hasSex,
+        fhkb:Woman-isBloodrelationOf,
+        fhkb:Woman-isSiblingOf,
+        fhkb:Woman-isSisterOf .
+
+fhkb:Ancestor-isAncestorOf a sh:PropertyShape ;
+    dash:hasValueWithClass fhkb:Person ;
+    sh:minCount 1 ;
+    sh:path fhkb:isAncestorOf .
+
+fhkb:Man-hasSex a sh:PropertyShape ;
+    dash:hasValueWithClass fhkb:Male ;
+    sh:class fhkb:Sex ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasSex .
+
+fhkb:Man-isUncleOf a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:isUncleOf .
+
+fhkb:Marriage-hasFemalePartner a sh:PropertyShape ;
+    sh:class fhkb:Woman ;
+    sh:path fhkb:hasFemalePartner .
+
+fhkb:Marriage-hasMalePartner a sh:PropertyShape ;
+    sh:class fhkb:Man ;
+    sh:path fhkb:hasMalePartner .
+
+fhkb:Marriage-hasPartner a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:hasPartner .
+
+fhkb:Person-hasSex a sh:PropertyShape ;
+    sh:class fhkb:Sex ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasSex .
+
+fhkb:Woman-hasSex a sh:PropertyShape ;
+    dash:hasValueWithClass fhkb:Female ;
+    sh:class fhkb:Sex ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasSex .
+
+fhkb:Man-isBrotherOf a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:isBrotherOf .
+
+fhkb:Person-hasFather a sh:PropertyShape ;
+    sh:class fhkb:Man ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasFather .
+
+fhkb:Person-hasMother a sh:PropertyShape ;
+    sh:class fhkb:Woman ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path fhkb:hasMother .
+
+fhkb:Person-hasParent a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:maxCount 2 ;
+    sh:path fhkb:hasParent .
+
+fhkb:Person-hasRelation a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:hasRelation .
+
+fhkb:Woman-hasAncestor a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:hasAncestor .
+
+fhkb:Woman-isBloodrelationOf a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:isBloodrelationOf .
+
+fhkb:Woman-isSiblingOf a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:isSiblingOf .
+
+fhkb:Woman-isSisterOf a sh:PropertyShape ;
+    sh:class fhkb:Person ;
+    sh:path fhkb:isSisterOf .
+

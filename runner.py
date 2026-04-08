@@ -1,7 +1,7 @@
 import os
 from tqdm import tqdm
 import json
-from langchain.messages import HumanMessage, AIMessage, SystemMessage, ToolMessage
+from langchain.messages import HumanMessage, AIMessage, SystemMessage
 from langchain.chat_models import init_chat_model
 
 from configs.run_config import RunConfig
@@ -86,7 +86,7 @@ def run(config: RunConfig):
             temperature=config.model.temperature,
             max_retries=config.model.max_retries
         )
-        llm = llm.bind_tools(tool_obj.tools_schemas)
+        llm = llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
         
         append_trace(trace_path, "run.entry.agent.invoke", payload={
             "entry_id": task_entry.entry_id,
@@ -101,7 +101,7 @@ def run(config: RunConfig):
             context=TaskContext(
                 llm=llm,
                 entry_id=task_entry.entry_id,
-                input_text=task_entry.entry_id,
+                input_text=task_entry.input_text,
                 ontology_graph=task_entry.ontology_graph,
                 shacl_graph=task_entry.shacl_graph,
                 tracing_path=trace_path,

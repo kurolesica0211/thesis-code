@@ -2,7 +2,7 @@ import os
 from typing import List, Dict, Set, Tuple
 from collections import defaultdict
 from collections.abc import Generator
-from rdflib import Graph, URIRef
+from rdflib import BNode, Graph, URIRef
 from rdflib.namespace import OWL, RDF, RDFS
 
 from models.data_models import TaskEntry, Schema, RelationDef, DataEntry
@@ -90,20 +90,28 @@ class Loader:
         graph = Graph()
         graph.parse(path)
 
-        class_labels: Dict[str, str] = {}
+        def _to_label(node) -> str | None:
+            """Convert RDF node to compact label, skipping blank nodes."""
+            if isinstance(node, BNode):
+                return None
+            return node.n3(graph.namespace_manager)
+
         entities = set()
 
         # Extract all classes with their labels
-        for cls_uri in graph.subjects(RDF.type, OWL.Class): 
-            cls_label = cls_uri.n3(graph.namespace_manager)
-            class_labels[str(cls_uri)] = cls_label
+        for cls_uri in graph.subjects(RDF.type, OWL.Class):
+            cls_label = _to_label(cls_uri)
+            if cls_label is None:
+                continue
             entities.add(cls_label)
 
         # Build class hierarchy for transitive closure
         hierarchy = defaultdict(list)
         for subclass_uri, superclass_uri in graph.subject_objects(RDFS.subClassOf):
-            subclass = subclass_uri.n3(graph.namespace_manager)
-            superclass = superclass_uri.n3(graph.namespace_manager)
+            subclass = _to_label(subclass_uri)
+            superclass = _to_label(superclass_uri)
+            if subclass is None or superclass is None:
+                continue
             hierarchy[superclass].append(subclass)
             entities.add(subclass)
             entities.add(superclass)
@@ -129,8 +137,18 @@ class Loader:
             rel_label = prop_uri.n3(graph.namespace_manager)
 
             # Get domain and range
-            domains = {domain.n3(graph.namespace_manager) for domain in graph.objects(prop_uri, RDFS.domain)}
-            ranges = {range_.n3(graph.namespace_manager) for range_ in graph.objects(prop_uri, RDFS.range)}
+            domains = {
+                label
+                for domain in graph.objects(prop_uri, RDFS.domain)
+                for label in [_to_label(domain)]
+                if label is not None
+            }
+            ranges = {
+                label
+                for range_ in graph.objects(prop_uri, RDFS.range)
+                for label in [_to_label(range_)]
+                if label is not None
+            }
 
             entities.update(domains)
             entities.update(ranges)

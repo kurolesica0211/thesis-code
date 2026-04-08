@@ -1,6 +1,22 @@
-from rdflib import Graph, RDF, URIRef, BNode
+import re
+from urllib.parse import quote
+from enum import Enum
+from rdflib import Graph, RDF, URIRef, BNode, XSD, Literal
 
 from helpers import strip_ns, strip_uri
+
+
+def _sanitize_local_name(local_name: str) -> str:
+    """Normalize and escape a URI local name so it is safe to concatenate."""
+    cleaned = str(local_name).strip().strip("<>")
+    cleaned = re.sub(r"\s+", "_", cleaned)
+    cleaned = cleaned.replace(":", "_").replace("/", "_").replace("#", "_")
+    cleaned = cleaned.strip("._")
+
+    if not cleaned:
+        raise ValueError(f"Invalid local name: {local_name!r}")
+
+    return quote(cleaned, safe="-._~%")
 
 
 def create_safe_uri(graph: Graph, prefix: str, local_name: str) -> URIRef:
@@ -10,11 +26,12 @@ def create_safe_uri(graph: Graph, prefix: str, local_name: str) -> URIRef:
     
     if base_uri is None:
         raise ValueError(f"Prefix '{prefix}' is not defined in the graph headers.")
-    
-    return URIRef(f"{base_uri}{local_name}")
+
+    safe_local_name = _sanitize_local_name(local_name)
+    return URIRef(f"{base_uri}{safe_local_name}")
 
 
-def add_class(data_graph: Graph, subject: str, type: str) -> Graph:
+def assign_class(data_graph: Graph, subject: str, type: str) -> Graph:
     """Adds a triple ``(subject, RDF.type, type)`` to the graph.\n
     Assumes ``data`` namespace exists in the graph.\n
     Assumes that the type is of format ``namespace:local_name``."""
@@ -28,7 +45,7 @@ def add_class(data_graph: Graph, subject: str, type: str) -> Graph:
     return updated_graph
 
 
-def remove_class(data_graph: Graph, subject: str, type: str) -> Graph:
+def unassign_class(data_graph: Graph, subject: str, type: str) -> Graph:
     """Removes a triple ``(subject, RDF.type, type)`` from the graph.\n
     Assumes ``data`` namespace exists in the graph.\n
     Assumes that the type is of format ``namespace:local_name``."""
@@ -50,6 +67,7 @@ def add_triple(data_graph: Graph, subject: str, relation: str, object: str) -> G
     subject = strip_ns(strip_uri(subject))
     subj_uri = create_safe_uri(data_graph, "data", subject)
     object = strip_ns(strip_uri(object))
+    #TODO: account for literals here
     obj_uri = create_safe_uri(data_graph, "data", object)
     rel_uri = create_safe_uri(data_graph, *relation.split(":"))
     
@@ -86,3 +104,16 @@ def check_ents_typed(data_graph: Graph) -> list[URIRef]:
 def extract_classes(data_graph: Graph, uri: URIRef) -> list[URIRef]:
     cls_uris = data_graph.objects(uri, RDF.type)
     return list(cls_uris)
+
+
+literals = {name: getattr(XSD, name) for (name, _) in vars(XSD)["__annotations__"].items() if re.match("[a-z][a-zA-Z]*", name)}
+GraphLiterals = Enum("GraphLiterals", literals)
+def add_literal(data_graph: Graph, subject: str, relation: str, lit_value: str, lit_type: GraphLiterals):
+    subject = strip_ns(strip_uri(subject))
+    subj_uri = create_safe_uri(data_graph, "data", subject)
+    rel_uri = create_safe_uri(data_graph, *relation.split(":"))
+    lit = Literal(lit_value, datatype=lit_type.value)
+    
+    updated_graph = data_graph.add((subj_uri, rel_uri, lit))
+    
+    return updated_graph

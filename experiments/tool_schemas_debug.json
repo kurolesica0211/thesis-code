@@ -1,0 +1,663 @@
+{
+  "raw_pydantic_schemas": {
+    "AddClass": {
+      "description": "Use this tool to assign a class to a node. This is essentially AddTriple with relation being rdf:type\nand object being an allowed entity type. Note that it does not matter whether the subject node already\nexists (participates in any triples), the class assignment is anyway valid. Make sure that all nodes\nhave classes assigned to them!",
+      "properties": {
+        "subject": {
+          "description": "A node in the data graph to which you want to assign a class.",
+          "title": "Subject",
+          "type": "string"
+        },
+        "type": {
+          "description": "A type (out of the list of allowed entity types) that you want to assign to the subject node.",
+          "enum": [
+            "fhkb:Ancestor",
+            "fhkb:DomainEntity",
+            "fhkb:Female",
+            "fhkb:Male",
+            "fhkb:Man",
+            "fhkb:Marriage",
+            "fhkb:Person",
+            "fhkb:Sex",
+            "fhkb:Woman"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "type"
+      ],
+      "title": "AddClass",
+      "type": "object"
+    },
+    "RemoveClass": {
+      "description": "Use this tool to remove a class assigned to a node. This is essentially RemoveTriple with relation\nbeing rdf:type and object being an allowed entity type. Make sure that the subject node actually\nhas that class assigned to it which you want to remove! And also make sure that all nodes have\nclasses assigned to them!",
+      "properties": {
+        "subject": {
+          "description": "A node in the data graph which class you want to remove.",
+          "title": "Subject",
+          "type": "string"
+        },
+        "type": {
+          "description": "A type (out of the allowed entity types) that is assigned to the subject and should be removed",
+          "enum": [
+            "fhkb:Ancestor",
+            "fhkb:DomainEntity",
+            "fhkb:Female",
+            "fhkb:Male",
+            "fhkb:Man",
+            "fhkb:Marriage",
+            "fhkb:Person",
+            "fhkb:Sex",
+            "fhkb:Woman"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "type"
+      ],
+      "title": "RemoveClass",
+      "type": "object"
+    },
+    "AddTriple": {
+      "description": "Use this tool to add a triple to the data graph. Make sure the relation comes from the list of allowed relations\nfor this ontology.",
+      "properties": {
+        "subject": {
+          "description": "A subject node of the triple.",
+          "title": "Subject",
+          "type": "string"
+        },
+        "relation": {
+          "description": "A relation (out of the allowed relations) defined between the subject and object of this triple",
+          "enum": [
+            "fhkb:hasAncestor",
+            "fhkb:hasBrother",
+            "fhkb:hasChild",
+            "fhkb:hasDaughter",
+            "fhkb:hasFather",
+            "fhkb:hasFemalePartner",
+            "fhkb:hasHusband",
+            "fhkb:hasMalePartner",
+            "fhkb:hasMother",
+            "fhkb:hasParent",
+            "fhkb:hasPartner",
+            "fhkb:hasRelation",
+            "fhkb:hasSex",
+            "fhkb:hasSister",
+            "fhkb:hasSon",
+            "fhkb:hasSpouse",
+            "fhkb:hasWife",
+            "fhkb:isAncestorOf",
+            "fhkb:isBloodrelationOf",
+            "fhkb:isBrotherOf",
+            "fhkb:isChildOf",
+            "fhkb:isDaughterOf",
+            "fhkb:isFatherOf",
+            "fhkb:isFemalePartnerIn",
+            "fhkb:isHusbandOf",
+            "fhkb:isMalePartnerIn",
+            "fhkb:isMotherOf",
+            "fhkb:isParentOf",
+            "fhkb:isPartnerIn",
+            "fhkb:isSiblingOf",
+            "fhkb:isSisterOf",
+            "fhkb:isSonOf",
+            "fhkb:isSpouseOf",
+            "fhkb:isUncleOf",
+            "fhkb:isWifeOf"
+          ],
+          "title": "Relation",
+          "type": "string"
+        },
+        "object": {
+          "description": "An object node of the triple.",
+          "title": "Object",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "relation",
+        "object"
+      ],
+      "title": "AddTriple",
+      "type": "object"
+    },
+    "RemoveTriple": {
+      "description": "Use this tool to remove a triple from the data graph. Make sure the triple that you are about to remove actually exists.",
+      "properties": {
+        "subject": {
+          "description": "An existing subject node of the triple to be removed.",
+          "title": "Subject",
+          "type": "string"
+        },
+        "relation": {
+          "description": "A relation (out of the allowed relations) defined between the subject and object of the triple to be removed",
+          "enum": [
+            "fhkb:hasAncestor",
+            "fhkb:hasBrother",
+            "fhkb:hasChild",
+            "fhkb:hasDaughter",
+            "fhkb:hasFather",
+            "fhkb:hasFemalePartner",
+            "fhkb:hasHusband",
+            "fhkb:hasMalePartner",
+            "fhkb:hasMother",
+            "fhkb:hasParent",
+            "fhkb:hasPartner",
+            "fhkb:hasRelation",
+            "fhkb:hasSex",
+            "fhkb:hasSister",
+            "fhkb:hasSon",
+            "fhkb:hasSpouse",
+            "fhkb:hasWife",
+            "fhkb:isAncestorOf",
+            "fhkb:isBloodrelationOf",
+            "fhkb:isBrotherOf",
+            "fhkb:isChildOf",
+            "fhkb:isDaughterOf",
+            "fhkb:isFatherOf",
+            "fhkb:isFemalePartnerIn",
+            "fhkb:isHusbandOf",
+            "fhkb:isMalePartnerIn",
+            "fhkb:isMotherOf",
+            "fhkb:isParentOf",
+            "fhkb:isPartnerIn",
+            "fhkb:isSiblingOf",
+            "fhkb:isSisterOf",
+            "fhkb:isSonOf",
+            "fhkb:isSpouseOf",
+            "fhkb:isUncleOf",
+            "fhkb:isWifeOf"
+          ],
+          "title": "Relation",
+          "type": "string"
+        },
+        "object": {
+          "description": "An existing object node of the triple to be removed",
+          "title": "Object",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subject",
+        "relation",
+        "object"
+      ],
+      "title": "RemoveTriple",
+      "type": "object"
+    },
+    "ValidateShacl": {
+      "description": "Use this tool to validate that the current data graph adheres to the ontology.\nThe validation is performed through SHACL, the shapes are pre-generated.\nThe tool does not have any input arguments, the data graph is passed internally.",
+      "properties": {},
+      "title": "ValidateShacl",
+      "type": "object"
+    },
+    "Finish": {
+      "description": "Use this tool to finish the work. No input arguments required.",
+      "properties": {},
+      "title": "Finish",
+      "type": "object"
+    }
+  },
+  "provider_ready_payload": [
+    {
+      "type": "function",
+      "function": {
+        "name": "AddClass",
+        "description": "Use this tool to assign a class to a node. This is essentially AddTriple with relation being rdf:type\nand object being an allowed entity type. Note that it does not matter whether the subject node already\nexists (participates in any triples), the class assignment is anyway valid. Make sure that all nodes\nhave classes assigned to them!",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A node in the data graph to which you want to assign a class.",
+              "type": "string"
+            },
+            "type": {
+              "description": "A type (out of the list of allowed entity types) that you want to assign to the subject node.",
+              "enum": [
+                "fhkb:Ancestor",
+                "fhkb:DomainEntity",
+                "fhkb:Female",
+                "fhkb:Male",
+                "fhkb:Man",
+                "fhkb:Marriage",
+                "fhkb:Person",
+                "fhkb:Sex",
+                "fhkb:Woman"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "type"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "RemoveClass",
+        "description": "Use this tool to remove a class assigned to a node. This is essentially RemoveTriple with relation\nbeing rdf:type and object being an allowed entity type. Make sure that the subject node actually\nhas that class assigned to it which you want to remove! And also make sure that all nodes have\nclasses assigned to them!",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A node in the data graph which class you want to remove.",
+              "type": "string"
+            },
+            "type": {
+              "description": "A type (out of the allowed entity types) that is assigned to the subject and should be removed",
+              "enum": [
+                "fhkb:Ancestor",
+                "fhkb:DomainEntity",
+                "fhkb:Female",
+                "fhkb:Male",
+                "fhkb:Man",
+                "fhkb:Marriage",
+                "fhkb:Person",
+                "fhkb:Sex",
+                "fhkb:Woman"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "type"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "AddTriple",
+        "description": "Use this tool to add a triple to the data graph. Make sure the relation comes from the list of allowed relations\nfor this ontology.",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A subject node of the triple.",
+              "type": "string"
+            },
+            "relation": {
+              "description": "A relation (out of the allowed relations) defined between the subject and object of this triple",
+              "enum": [
+                "fhkb:hasAncestor",
+                "fhkb:hasBrother",
+                "fhkb:hasChild",
+                "fhkb:hasDaughter",
+                "fhkb:hasFather",
+                "fhkb:hasFemalePartner",
+                "fhkb:hasHusband",
+                "fhkb:hasMalePartner",
+                "fhkb:hasMother",
+                "fhkb:hasParent",
+                "fhkb:hasPartner",
+                "fhkb:hasRelation",
+                "fhkb:hasSex",
+                "fhkb:hasSister",
+                "fhkb:hasSon",
+                "fhkb:hasSpouse",
+                "fhkb:hasWife",
+                "fhkb:isAncestorOf",
+                "fhkb:isBloodrelationOf",
+                "fhkb:isBrotherOf",
+                "fhkb:isChildOf",
+                "fhkb:isDaughterOf",
+                "fhkb:isFatherOf",
+                "fhkb:isFemalePartnerIn",
+                "fhkb:isHusbandOf",
+                "fhkb:isMalePartnerIn",
+                "fhkb:isMotherOf",
+                "fhkb:isParentOf",
+                "fhkb:isPartnerIn",
+                "fhkb:isSiblingOf",
+                "fhkb:isSisterOf",
+                "fhkb:isSonOf",
+                "fhkb:isSpouseOf",
+                "fhkb:isUncleOf",
+                "fhkb:isWifeOf"
+              ],
+              "type": "string"
+            },
+            "object": {
+              "description": "An object node of the triple.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "relation",
+            "object"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "RemoveTriple",
+        "description": "Use this tool to remove a triple from the data graph. Make sure the triple that you are about to remove actually exists.",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "An existing subject node of the triple to be removed.",
+              "type": "string"
+            },
+            "relation": {
+              "description": "A relation (out of the allowed relations) defined between the subject and object of the triple to be removed",
+              "enum": [
+                "fhkb:hasAncestor",
+                "fhkb:hasBrother",
+                "fhkb:hasChild",
+                "fhkb:hasDaughter",
+                "fhkb:hasFather",
+                "fhkb:hasFemalePartner",
+                "fhkb:hasHusband",
+                "fhkb:hasMalePartner",
+                "fhkb:hasMother",
+                "fhkb:hasParent",
+                "fhkb:hasPartner",
+                "fhkb:hasRelation",
+                "fhkb:hasSex",
+                "fhkb:hasSister",
+                "fhkb:hasSon",
+                "fhkb:hasSpouse",
+                "fhkb:hasWife",
+                "fhkb:isAncestorOf",
+                "fhkb:isBloodrelationOf",
+                "fhkb:isBrotherOf",
+                "fhkb:isChildOf",
+                "fhkb:isDaughterOf",
+                "fhkb:isFatherOf",
+                "fhkb:isFemalePartnerIn",
+                "fhkb:isHusbandOf",
+                "fhkb:isMalePartnerIn",
+                "fhkb:isMotherOf",
+                "fhkb:isParentOf",
+                "fhkb:isPartnerIn",
+                "fhkb:isSiblingOf",
+                "fhkb:isSisterOf",
+                "fhkb:isSonOf",
+                "fhkb:isSpouseOf",
+                "fhkb:isUncleOf",
+                "fhkb:isWifeOf"
+              ],
+              "type": "string"
+            },
+            "object": {
+              "description": "An existing object node of the triple to be removed",
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "relation",
+            "object"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ValidateShacl",
+        "description": "Use this tool to validate that the current data graph adheres to the ontology.\nThe validation is performed through SHACL, the shapes are pre-generated.\nThe tool does not have any input arguments, the data graph is passed internally.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Finish",
+        "description": "Use this tool to finish the work. No input arguments required.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "bound_model_kwargs_keys": [
+    "tools"
+  ],
+  "bound_model_tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "AddClass",
+        "description": "Use this tool to assign a class to a node. This is essentially AddTriple with relation being rdf:type\nand object being an allowed entity type. Note that it does not matter whether the subject node already\nexists (participates in any triples), the class assignment is anyway valid. Make sure that all nodes\nhave classes assigned to them!",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A node in the data graph to which you want to assign a class.",
+              "type": "string"
+            },
+            "type": {
+              "description": "A type (out of the list of allowed entity types) that you want to assign to the subject node.",
+              "enum": [
+                "fhkb:Ancestor",
+                "fhkb:DomainEntity",
+                "fhkb:Female",
+                "fhkb:Male",
+                "fhkb:Man",
+                "fhkb:Marriage",
+                "fhkb:Person",
+                "fhkb:Sex",
+                "fhkb:Woman"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "type"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "RemoveClass",
+        "description": "Use this tool to remove a class assigned to a node. This is essentially RemoveTriple with relation\nbeing rdf:type and object being an allowed entity type. Make sure that the subject node actually\nhas that class assigned to it which you want to remove! And also make sure that all nodes have\nclasses assigned to them!",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A node in the data graph which class you want to remove.",
+              "type": "string"
+            },
+            "type": {
+              "description": "A type (out of the allowed entity types) that is assigned to the subject and should be removed",
+              "enum": [
+                "fhkb:Ancestor",
+                "fhkb:DomainEntity",
+                "fhkb:Female",
+                "fhkb:Male",
+                "fhkb:Man",
+                "fhkb:Marriage",
+                "fhkb:Person",
+                "fhkb:Sex",
+                "fhkb:Woman"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "type"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "AddTriple",
+        "description": "Use this tool to add a triple to the data graph. Make sure the relation comes from the list of allowed relations\nfor this ontology.",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "A subject node of the triple.",
+              "type": "string"
+            },
+            "relation": {
+              "description": "A relation (out of the allowed relations) defined between the subject and object of this triple",
+              "enum": [
+                "fhkb:hasAncestor",
+                "fhkb:hasBrother",
+                "fhkb:hasChild",
+                "fhkb:hasDaughter",
+                "fhkb:hasFather",
+                "fhkb:hasFemalePartner",
+                "fhkb:hasHusband",
+                "fhkb:hasMalePartner",
+                "fhkb:hasMother",
+                "fhkb:hasParent",
+                "fhkb:hasPartner",
+                "fhkb:hasRelation",
+                "fhkb:hasSex",
+                "fhkb:hasSister",
+                "fhkb:hasSon",
+                "fhkb:hasSpouse",
+                "fhkb:hasWife",
+                "fhkb:isAncestorOf",
+                "fhkb:isBloodrelationOf",
+                "fhkb:isBrotherOf",
+                "fhkb:isChildOf",
+                "fhkb:isDaughterOf",
+                "fhkb:isFatherOf",
+                "fhkb:isFemalePartnerIn",
+                "fhkb:isHusbandOf",
+                "fhkb:isMalePartnerIn",
+                "fhkb:isMotherOf",
+                "fhkb:isParentOf",
+                "fhkb:isPartnerIn",
+                "fhkb:isSiblingOf",
+                "fhkb:isSisterOf",
+                "fhkb:isSonOf",
+                "fhkb:isSpouseOf",
+                "fhkb:isUncleOf",
+                "fhkb:isWifeOf"
+              ],
+              "type": "string"
+            },
+            "object": {
+              "description": "An object node of the triple.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "relation",
+            "object"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "RemoveTriple",
+        "description": "Use this tool to remove a triple from the data graph. Make sure the triple that you are about to remove actually exists.",
+        "parameters": {
+          "properties": {
+            "subject": {
+              "description": "An existing subject node of the triple to be removed.",
+              "type": "string"
+            },
+            "relation": {
+              "description": "A relation (out of the allowed relations) defined between the subject and object of the triple to be removed",
+              "enum": [
+                "fhkb:hasAncestor",
+                "fhkb:hasBrother",
+                "fhkb:hasChild",
+                "fhkb:hasDaughter",
+                "fhkb:hasFather",
+                "fhkb:hasFemalePartner",
+                "fhkb:hasHusband",
+                "fhkb:hasMalePartner",
+                "fhkb:hasMother",
+                "fhkb:hasParent",
+                "fhkb:hasPartner",
+                "fhkb:hasRelation",
+                "fhkb:hasSex",
+                "fhkb:hasSister",
+                "fhkb:hasSon",
+                "fhkb:hasSpouse",
+                "fhkb:hasWife",
+                "fhkb:isAncestorOf",
+                "fhkb:isBloodrelationOf",
+                "fhkb:isBrotherOf",
+                "fhkb:isChildOf",
+                "fhkb:isDaughterOf",
+                "fhkb:isFatherOf",
+                "fhkb:isFemalePartnerIn",
+                "fhkb:isHusbandOf",
+                "fhkb:isMalePartnerIn",
+                "fhkb:isMotherOf",
+                "fhkb:isParentOf",
+                "fhkb:isPartnerIn",
+                "fhkb:isSiblingOf",
+                "fhkb:isSisterOf",
+                "fhkb:isSonOf",
+                "fhkb:isSpouseOf",
+                "fhkb:isUncleOf",
+                "fhkb:isWifeOf"
+              ],
+              "type": "string"
+            },
+            "object": {
+              "description": "An existing object node of the triple to be removed",
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject",
+            "relation",
+            "object"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "ValidateShacl",
+        "description": "Use this tool to validate that the current data graph adheres to the ontology.\nThe validation is performed through SHACL, the shapes are pre-generated.\nThe tool does not have any input arguments, the data graph is passed internally.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "Finish",
+        "description": "Use this tool to finish the work. No input arguments required.",
+        "parameters": {
+          "properties": {},
+          "type": "object"
+        }
+      }
+    }
+  ]
+}

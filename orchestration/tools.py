@@ -8,12 +8,13 @@ from langgraph.runtime import Runtime
 from langchain_core.messages.content import ToolCall
 from langgraph.graph import END
 
-from models.data_models import Schema, TaskState, TaskContext, ViolationTranslation, _ToolRuntime
+from models.data_models import Schema, TaskState, TaskContext, ViolationTranslation, ToolRuntime_
 from orchestration.tracing import append_trace
-from core.data_graph_functions import add_class as add_class_core
-from core.data_graph_functions import remove_class as remove_class_core
+from core.data_graph_functions import assign_class as assign_class_core
+from core.data_graph_functions import unassign_class as unassign_class_core
 from core.data_graph_functions import add_triple as add_triple_core
 from core.data_graph_functions import remove_triple as remove_triple_core
+from core.data_graph_functions import add_literal as add_literal_core, GraphLiterals
 from core.shacl_functions import pyshacl_validate, format_violations
 from prompts.prompt_engine import get_prompt, format_prompt
 from core.shacl_functions import format_violations
@@ -122,25 +123,26 @@ class ToolClass:
         self.Relation = Literal[tuple([reldef.relation for reldef in schema.relations])]
         self.Type = Literal[tuple(schema.entities)]
         
-        add_class_defs = {
-            "subject": (str, Field(description="A node in the data graph to which you want to assign a class.")),
+        assign_class_defs = {
+            "subject": (str, Field(description="A node in the data graph (if not exists yet, it is created)"+
+                                                "to which you want to assign a class.")),
             "type": (self.Type, Field(description="A type (out of the list of allowed entity types) " + 
                                                     "that you want to assign to the subject node."))
         }
-        remove_class_defs = {
-            "subject": (str, Field(description="A node in the data graph which class you want to remove.")),
+        unassign_class_defs = {
+            "subject": (str, Field(description="A node in the data graph (if not exists yet, it is created) which class you want to remove.")),
             "type": (self.Type, Field(description="A type (out of the allowed entity types) " +
                                                     "that is assigned to the subject and should be removed"))
         }
-        AddClass = create_model("AddClass", **add_class_defs)
-        AddClass.__doc__ = """
+        AssignClass = create_model("AssignClass", **assign_class_defs)
+        AssignClass.__doc__ = """
         Use this tool to assign a class to a node. This is essentially AddTriple with relation being rdf:type
         and object being an allowed entity type. Note that it does not matter whether the subject node already
         exists (participates in any triples), the class assignment is anyway valid. Make sure that all nodes
         have classes assigned to them!
         """
-        RemoveClass = create_model("RemoveClass", **remove_class_defs)
-        RemoveClass.__doc__ = """
+        UnassignClass = create_model("UnassignClass", **unassign_class_defs)
+        UnassignClass.__doc__ = """
         Use this tool to remove a class assigned to a node. This is essentially RemoveTriple with relation
         being rdf:type and object being an allowed entity type. Make sure that the subject node actually
         has that class assigned to it which you want to remove! And also make sure that all nodes have
@@ -180,16 +182,35 @@ class ToolClass:
             __doc__="""Use this tool to finish the work. No input arguments required."""
         )
         
-        self.tools_schemas = [AddClass, RemoveClass, AddTriple, RemoveTriple, ValidateShacl, Finish]
+        add_literal_defs = {
+            "subject": (str, Field(description="A node in the data graph (if not exists yet, it is created) "
+                                                +"to which you want to add a literal through a relation")),
+            "relation": (self.Relation, Field(description="A relation (out of the allowed relations) " + 
+                                                            "defined between the subject and the literal")),
+            "literal_value": (str, Field(description="The value that the literal is going to bear")),
+            "literal_type": (GraphLiterals, Field(description="The type of the literal out of the list of allowed literal types"))
+        }
+        AddLiteral = create_model("AddLiteral", **add_literal_defs)
+        AddLiteral.__doc__ = """
+        Use this tool to create a triple which object is going to be a literal value. This is essentially AddTriple
+        but with the object being a literal and thus with full validation support. As previously, if the subject node
+        does not exist yet, it is created. If there are problems with validating the literal_value, an error report
+        will be returned.
+        """
+        
+        #TODO: add RemoveLiteral
+        
+        self.tools_schemas = [AssignClass, UnassignClass, AddTriple, RemoveTriple, ValidateShacl, Finish, AddLiteral]
         self.tools = {
-            "AddClass": self.add_class,
-            "RemoveClass": self.remove_class,
+            "AssignClass": self.assign_class,
+            "UnassignClass": self.unassign_class,
             "AddTriple": self.add_triple,
             "RemoveTriple": self.remove_triple,
             "ValidateShacl": self.validate_shacl,
-            "Finish": self.finish
+            "Finish": self.finish,
+            "AddLiteral": self.add_literal
         }
-        self.data_graph_edit_tools = ["AddClass", "RemoveClass", "AddTriple", "RemoveTriple"]
+        self.data_graph_edit_tools = ["AssignClass", "UnassignClass", "AddTriple", "RemoveTriple"]
         
         
     def build_tool_node(self):
@@ -205,7 +226,7 @@ class ToolClass:
                 tool_calls: list[ToolCall] = last_msg.tool_calls
                 outputs = []
                 for call in tool_calls:
-                    tool_runtime = _ToolRuntime(
+                    tool_runtime = ToolRuntime_(
                         state=state,
                         context=runtime.context,
                         tool_call_id=call["id"]
@@ -231,8 +252,8 @@ class ToolClass:
                             ))
                         else:
                             messages.append(ToolMessage(
-                                content=("The final data graph after the sequence of edits:",
-                                         f"\n\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}"),
+                                content="The final data graph after the sequence of edits:" +
+                                         f"\n\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}",
                                 tool_call_id=output[-1]
                             ))
                     elif name == "ValidateShacl":
@@ -268,10 +289,10 @@ class ToolClass:
         return execute_tool_calls
 
 
-    def add_class(self, runtime: _ToolRuntime, subject: str, type: str):
+    def assign_class(self, runtime: ToolRuntime_, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
-            "run.entry.agent.tools.add_class.start",
+            "run.entry.agent.tools.assign_class.start",
             payload={
                 "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
@@ -283,11 +304,11 @@ class ToolClass:
         
         data_graph: Graph = runtime.state["data_graph"]
         
-        data_graph = add_class_core(data_graph, subject, type)
+        data_graph = assign_class_core(data_graph, subject, type)
         
         append_trace(
             runtime.context["tracing_path"],
-            "run.entry.agent.tools.add_class.finish",
+            "run.entry.agent.tools.assign_class.finish",
             payload={
                 "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
@@ -300,10 +321,10 @@ class ToolClass:
         return (data_graph, runtime.tool_call_id)
     
     
-    def remove_class(self, runtime: _ToolRuntime, subject: str, type: str):
+    def unassign_class(self, runtime: ToolRuntime_, subject: str, type: str):
         append_trace(
             runtime.context["tracing_path"],
-            "run.entry.agent.tools.remove_class.start",
+            "run.entry.agent.tools.unassign_class.start",
             payload={
                 "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
@@ -315,11 +336,11 @@ class ToolClass:
         
         data_graph: Graph = runtime.state["data_graph"]
         
-        data_graph = remove_class_core(data_graph, subject, type)
+        data_graph = unassign_class_core(data_graph, subject, type)
         
         append_trace(
             runtime.context["tracing_path"],
-            "run.entry.agent.tools.remove_class.finish",
+            "run.entry.agent.tools.unassign_class.finish",
             payload={
                 "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
@@ -332,7 +353,7 @@ class ToolClass:
         return (data_graph, runtime.tool_call_id)
     
     
-    def add_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
+    def add_triple(self, runtime: ToolRuntime_, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_triple.start",
@@ -366,7 +387,7 @@ class ToolClass:
         return (data_graph, runtime.tool_call_id)
     
     
-    def remove_triple(self, runtime: _ToolRuntime, subject: str, relation: str, object: str):
+    def remove_triple(self, runtime: ToolRuntime_, subject: str, relation: str, object: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_triple.start",
@@ -386,7 +407,7 @@ class ToolClass:
         
         append_trace(
             runtime.context["tracing_path"],
-            "run.entry.agent.tools.remove_triple.start",
+            "run.entry.agent.tools.remove_triple.finish",
             payload={
                 "entry_id": runtime.context["entry_id"],
                 "iterations": runtime.state["iterations"],
@@ -400,7 +421,7 @@ class ToolClass:
         return (data_graph, runtime.tool_call_id)
         
         
-    def validate_shacl(self, runtime: _ToolRuntime):
+    def validate_shacl(self, runtime: ToolRuntime_):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.validate_shacl.start",
@@ -445,7 +466,7 @@ class ToolClass:
             )
             
         
-    def finish(self, runtime: _ToolRuntime):
+    def finish(self, runtime: ToolRuntime_):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.finish.triggered",
@@ -460,3 +481,38 @@ class ToolClass:
         
         return check_entities_typed(runtime.state, runtime.context)
         
+        
+    def add_literal(self, runtime: ToolRuntime_, subject: str, relation: str, literal_value: str, literal_type: GraphLiterals):
+        append_trace(
+            runtime.context["tracing_path"],
+            "run.entry.agent.tools.add_literal.start",
+            payload={
+                "entry_id": runtime.context["entry_id"],
+                "iterations": runtime.state["iterations"],
+                "tool_call_id": runtime.tool_call_id,
+                "subject": subject,
+                "relation": relation,
+                "literal_value": literal_value,
+                "literal_type": literal_type.value
+            }
+        )
+        
+        data_graph: Graph = runtime.state["data_graph"]
+        
+        data_graph = add_literal_core(data_graph, subject, relation, literal_value, literal_type)
+        
+        append_trace(
+            runtime.context["tracing_path"],
+            "run.entry.agent.tools.add_literal.finish",
+            payload={
+                "entry_id": runtime.context["entry_id"],
+                "iterations": runtime.state["iterations"],
+                "tool_call_id": runtime.tool_call_id,
+                "subject": subject,
+                "relation": relation,
+                "literal_value": literal_value,
+                "literal_type": literal_type.value
+            }
+        )
+        
+        return (data_graph, runtime.tool_call_id)

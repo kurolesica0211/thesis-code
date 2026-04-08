@@ -7,7 +7,7 @@ def get_loader():
     dir = "custom_family_bench"
     input_text = "habsburgs.txt"
     ontology = "family_TBOX.owl"
-    shacl = "family_shacl_closed_with_hierarchy.ttl"
+    shacl = "family_shacl_final.ttl"
     
     data_entry = DataEntry(
         entry_id="habsburgs",

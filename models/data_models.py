@@ -103,7 +103,7 @@ class TaskContext(TypedDict):
     artifacts_dir: str
     
 
-class _ToolRuntime(BaseModel):
+class ToolRuntime_(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
     
     state: TaskState

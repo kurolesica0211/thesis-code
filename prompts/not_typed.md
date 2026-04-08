@@ -9,7 +9,7 @@ According to the pipeline rules, **every node must have a class assigned to it**
 
 Please perform the following steps:
 1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AddClass` tool for each node to assign its correct type.
+2. Use the `AssignClass` tool for each node to assign its correct type.
 3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
 
 Proceed with the necessary tool calls now.

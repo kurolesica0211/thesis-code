@@ -6,7 +6,7 @@ def test_calls_basic(iterations: int):
     if iterations == 0:
         response = AIMessage(content="AAAAAAA", tool_calls=[
             ToolCall(
-                name="AddClass",
+                name="AssignClass",
                 args={
                     "subject": "RandomSubject",
                     "type": "fhkb:Person"
@@ -31,7 +31,7 @@ def test_calls_basic(iterations: int):
     elif iterations == 1:
         response = AIMessage(content="AAAAAAAAAA", tool_calls=[
             ToolCall(
-                name="RemoveClass",
+                name="UnassignClass",
                 args={
                     "subject": "RandomSubject",
                     "type": "fhkb:Person"
@@ -76,7 +76,7 @@ def test_calls_basic(iterations: int):
     elif iterations == 4:
         response = AIMessage(content="AAAAAA", tool_calls=[
             ToolCall(
-                name="AddClass",
+                name="AssignClass",
                 args={
                     "subject": "RandomSubject2",
                     "type": "fhkb:Person"
@@ -84,7 +84,7 @@ def test_calls_basic(iterations: int):
                 id="8"
             ),
             ToolCall(
-                name="AddClass",
+                name="AssignClass",
                 args={
                     "subject": "RandomObject",
                     "type": "fhkb:Woman"

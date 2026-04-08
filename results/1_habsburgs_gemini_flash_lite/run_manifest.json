@@ -1,5 +1,5 @@
 {
-    "run_dir": "results/habsburgs_gemini_flash_lite",
+    "run_dir": "results/1_habsburgs_gemini_flash_lite",
     "config": {
         "model": {
             "name": "google_genai:gemini-3.1-flash-lite-preview",
@@ -22,14 +22,14 @@
         "output": {
             "base_dir": "results",
             "custom_tag": "habsburgs",
-            "run_dir": "results/habsburgs_gemini_flash_lite"
+            "run_dir": "results/1_habsburgs_gemini_flash_lite"
         },
         "dataset": {
             "source": "custom_family_bench"
         }
     },
     "task_manifests": [
-        "results/habsburgs_gemini_flash_lite\\habsburgs\\task_manifest.json"
+        "results/1_habsburgs_gemini_flash_lite\\habsburgs\\task_manifest.json"
     ],
-    "trace": "results/habsburgs_gemini_flash_lite\\trace.jsonl"
+    "trace": "results/1_habsburgs_gemini_flash_lite\\trace.jsonl"
 }
