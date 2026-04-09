@@ -12,7 +12,13 @@ fhkb:Ancestor a rdfs:Class,
     owl:intersectionOf [ ] ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Ancestor-isAncestorOf,
+    sh:property fhkb:Ancestor-alsoKnownAs,
+        fhkb:Ancestor-formerlyKnownAs,
+        fhkb:Ancestor-hasBirthYear,
+        fhkb:Ancestor-hasDeathYear,
+        fhkb:Ancestor-hasMarriageYear,
+        fhkb:Ancestor-isAncestorOf,
+        fhkb:Ancestor-knownAs,
         fhkb:Man-isBrotherOf,
         fhkb:Person-hasFather,
         fhkb:Person-hasMother,
@@ -27,17 +33,35 @@ fhkb:Ancestor a rdfs:Class,
 fhkb:DomainEntity a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) .
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:DomainEntity-alsoKnownAs,
+        fhkb:DomainEntity-formerlyKnownAs,
+        fhkb:DomainEntity-hasBirthYear,
+        fhkb:DomainEntity-hasDeathYear,
+        fhkb:DomainEntity-hasMarriageYear,
+        fhkb:DomainEntity-knownAs .
 
 fhkb:Female a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) .
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Female-alsoKnownAs,
+        fhkb:Female-formerlyKnownAs,
+        fhkb:Female-hasBirthYear,
+        fhkb:Female-hasDeathYear,
+        fhkb:Female-hasMarriageYear,
+        fhkb:Female-knownAs .
 
 fhkb:Male a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) .
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Male-alsoKnownAs,
+        fhkb:Male-formerlyKnownAs,
+        fhkb:Male-hasBirthYear,
+        fhkb:Male-hasDeathYear,
+        fhkb:Male-hasMarriageYear,
+        fhkb:Male-knownAs .
 
 fhkb:Man a rdfs:Class,
         sh:NodeShape ;
@@ -45,9 +69,15 @@ fhkb:Man a rdfs:Class,
     owl:intersectionOf [ ] ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Man-hasSex,
+    sh:property fhkb:Man-alsoKnownAs,
+        fhkb:Man-formerlyKnownAs,
+        fhkb:Man-hasBirthYear,
+        fhkb:Man-hasDeathYear,
+        fhkb:Man-hasMarriageYear,
+        fhkb:Man-hasSex,
         fhkb:Man-isBrotherOf,
         fhkb:Man-isUncleOf,
+        fhkb:Man-knownAs,
         fhkb:Person-hasFather,
         fhkb:Person-hasMother,
         fhkb:Person-hasParent,
@@ -61,20 +91,32 @@ fhkb:Marriage a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Marriage-hasFemalePartner,
+    sh:property fhkb:Marriage-alsoKnownAs,
+        fhkb:Marriage-formerlyKnownAs,
+        fhkb:Marriage-hasBirthYear,
+        fhkb:Marriage-hasDeathYear,
+        fhkb:Marriage-hasFemalePartner,
         fhkb:Marriage-hasMalePartner,
-        fhkb:Marriage-hasPartner .
+        fhkb:Marriage-hasMarriageYear,
+        fhkb:Marriage-hasPartner,
+        fhkb:Marriage-knownAs .
 
 fhkb:Person a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property fhkb:Man-isBrotherOf,
+        fhkb:Person-alsoKnownAs,
+        fhkb:Person-formerlyKnownAs,
+        fhkb:Person-hasBirthYear,
+        fhkb:Person-hasDeathYear,
         fhkb:Person-hasFather,
+        fhkb:Person-hasMarriageYear,
         fhkb:Person-hasMother,
         fhkb:Person-hasParent,
         fhkb:Person-hasRelation,
         fhkb:Person-hasSex,
+        fhkb:Person-knownAs,
         fhkb:Woman-hasAncestor,
         fhkb:Woman-isBloodrelationOf,
         fhkb:Woman-isSiblingOf,
@@ -83,7 +125,13 @@ fhkb:Person a rdfs:Class,
 fhkb:Sex a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) .
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property fhkb:Sex-alsoKnownAs,
+        fhkb:Sex-formerlyKnownAs,
+        fhkb:Sex-hasBirthYear,
+        fhkb:Sex-hasDeathYear,
+        fhkb:Sex-hasMarriageYear,
+        fhkb:Sex-knownAs .
 
 fhkb:Woman a rdfs:Class,
         sh:NodeShape ;
@@ -96,16 +144,109 @@ fhkb:Woman a rdfs:Class,
         fhkb:Person-hasMother,
         fhkb:Person-hasParent,
         fhkb:Person-hasRelation,
+        fhkb:Woman-alsoKnownAs,
+        fhkb:Woman-formerlyKnownAs,
         fhkb:Woman-hasAncestor,
+        fhkb:Woman-hasBirthYear,
+        fhkb:Woman-hasDeathYear,
+        fhkb:Woman-hasMarriageYear,
         fhkb:Woman-hasSex,
         fhkb:Woman-isBloodrelationOf,
         fhkb:Woman-isSiblingOf,
-        fhkb:Woman-isSisterOf .
+        fhkb:Woman-isSisterOf,
+        fhkb:Woman-knownAs .
+
+fhkb:Ancestor-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Ancestor-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Ancestor-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Ancestor-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Ancestor-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
 
 fhkb:Ancestor-isAncestorOf a sh:PropertyShape ;
     dash:hasValueWithClass fhkb:Person ;
     sh:minCount 1 ;
     sh:path fhkb:isAncestorOf .
+
+fhkb:Ancestor-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:DomainEntity-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:DomainEntity-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:DomainEntity-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:DomainEntity-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:DomainEntity-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
+fhkb:DomainEntity-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Female-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Female-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Female-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Female-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Female-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
+fhkb:Female-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Male-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Male-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Male-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Male-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Male-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
+fhkb:Male-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Man-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Man-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Man-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Man-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Man-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
 
 fhkb:Man-hasSex a sh:PropertyShape ;
     dash:hasValueWithClass fhkb:Male ;
@@ -118,6 +259,21 @@ fhkb:Man-isUncleOf a sh:PropertyShape ;
     sh:class fhkb:Person ;
     sh:path fhkb:isUncleOf .
 
+fhkb:Man-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Marriage-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Marriage-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Marriage-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Marriage-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
 fhkb:Marriage-hasFemalePartner a sh:PropertyShape ;
     sh:class fhkb:Woman ;
     sh:path fhkb:hasFemalePartner .
@@ -126,15 +282,75 @@ fhkb:Marriage-hasMalePartner a sh:PropertyShape ;
     sh:class fhkb:Man ;
     sh:path fhkb:hasMalePartner .
 
+fhkb:Marriage-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
 fhkb:Marriage-hasPartner a sh:PropertyShape ;
     sh:class fhkb:Person ;
     sh:path fhkb:hasPartner .
+
+fhkb:Marriage-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Person-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Person-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Person-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Person-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Person-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
 
 fhkb:Person-hasSex a sh:PropertyShape ;
     sh:class fhkb:Sex ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path fhkb:hasSex .
+
+fhkb:Person-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Sex-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Sex-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Sex-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Sex-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Sex-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
+fhkb:Sex-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
+
+fhkb:Woman-alsoKnownAs a sh:PropertyShape ;
+    sh:path fhkb:alsoKnownAs .
+
+fhkb:Woman-formerlyKnownAs a sh:PropertyShape ;
+    sh:path fhkb:formerlyKnownAs .
+
+fhkb:Woman-hasBirthYear a sh:PropertyShape ;
+    sh:path fhkb:hasBirthYear .
+
+fhkb:Woman-hasDeathYear a sh:PropertyShape ;
+    sh:path fhkb:hasDeathYear .
+
+fhkb:Woman-hasMarriageYear a sh:PropertyShape ;
+    sh:path fhkb:hasMarriageYear .
+
+fhkb:Woman-knownAs a sh:PropertyShape ;
+    sh:path fhkb:knownAs .
 
 fhkb:Woman-hasSex a sh:PropertyShape ;
     dash:hasValueWithClass fhkb:Female ;

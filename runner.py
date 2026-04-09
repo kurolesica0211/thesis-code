@@ -70,7 +70,7 @@ def run(config: RunConfig):
         }
         run_manifest["task_manifests"].append(task_manifest_path)
         
-        tool_obj = ToolClass(task_entry.schema_def)
+        tool_obj = ToolClass(task_entry.schema_def, task_entry.data_graph)
         agent = build_agent(tool_obj)
         
         main_user_prompt = format_prompt(

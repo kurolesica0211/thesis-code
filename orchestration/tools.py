@@ -10,15 +10,18 @@ from langgraph.graph import END
 
 from models.data_models import Schema, TaskState, TaskContext, ViolationTranslation, ToolRuntime_
 from orchestration.tracing import append_trace
-from core.data_graph_functions import assign_class as assign_class_core
-from core.data_graph_functions import unassign_class as unassign_class_core
-from core.data_graph_functions import add_triple as add_triple_core
-from core.data_graph_functions import remove_triple as remove_triple_core
-from core.data_graph_functions import add_literal as add_literal_core, GraphLiterals
+from core.data_graph_functions import (
+    assign_class as assign_class_core,
+    unassign_class as unassign_class_core,
+    add_triple as add_triple_core,
+    remove_triple as remove_triple_core,
+    add_literal as add_literal_core,
+    remove_literal as remove_literal_core,
+    GraphLiterals,
+    check_ents_typed
+)
 from core.shacl_functions import pyshacl_validate, format_violations
 from prompts.prompt_engine import get_prompt, format_prompt
-from core.shacl_functions import format_violations
-from core.data_graph_functions import check_ents_typed
 from helpers import strip_ns, strip_uri
 
 
@@ -119,7 +122,7 @@ class ToolClass:
     Class: type
     
     
-    def __init__(self, schema: Schema):
+    def __init__(self, schema: Schema, data_graph: Graph):
         self.Relation = Literal[tuple([reldef.relation for reldef in schema.relations])]
         self.Type = Literal[tuple(schema.entities)]
         
@@ -182,25 +185,44 @@ class ToolClass:
             __doc__="""Use this tool to finish the work. No input arguments required."""
         )
         
+        literals = [uri.value.n3(data_graph.namespace_manager) for uri in GraphLiterals]
+        self.LiteralsType = Literal[tuple(literals)]
+        
         add_literal_defs = {
             "subject": (str, Field(description="A node in the data graph (if not exists yet, it is created) "
                                                 +"to which you want to add a literal through a relation")),
             "relation": (self.Relation, Field(description="A relation (out of the allowed relations) " + 
                                                             "defined between the subject and the literal")),
             "literal_value": (str, Field(description="The value that the literal is going to bear")),
-            "literal_type": (GraphLiterals, Field(description="The type of the literal out of the list of allowed literal types"))
+            "literal_type": (self.LiteralsType, Field(description="The type of the literal out of the list of allowed literal types"))
         }
         AddLiteral = create_model("AddLiteral", **add_literal_defs)
         AddLiteral.__doc__ = """
-        Use this tool to create a triple which object is going to be a literal value. This is essentially AddTriple
+        Use (only) this tool to create a triple which object is going to be a literal value. This is essentially AddTriple
         but with the object being a literal and thus with full validation support. As previously, if the subject node
         does not exist yet, it is created. If there are problems with validating the literal_value, an error report
         will be returned.
         """
         
-        #TODO: add RemoveLiteral
+        remove_literal_defs = {
+            "subject": (str, Field(description="An existing node in the data graph "
+                                                +"from which you want to remove a relation ending with a literal")),
+            "relation": (self.Relation, Field(description="The relation " + 
+                                                            "defined between the subject and the literal")),
+            "literal_value": (str, Field(description="The value of the literal")),
+            "literal_type": (self.LiteralsType, Field(description="The datatype of the defined literal out of the list of allowed types."))
+        }
+        RemoveLiteral = create_model("RemoveLiteral", **remove_literal_defs)
+        RemoveLiteral.__doc__ = """
+        Use (only) this tool to remove a triple which has a literal as the object. This is essentially RemoveTriple but with
+        the correct handling of literals. To correctly specify the literal object of the triple, you need to provide
+        both the value and datatype, both of which can be identified from the literal. 
+        For example, literal '2026-04-08'^^xsd:date has type 'date' and value '2026-04-08'.
+        'Hello World'^^xsd:string has type 'string' and value 'Hello World.'
+        """
         
-        self.tools_schemas = [AssignClass, UnassignClass, AddTriple, RemoveTriple, ValidateShacl, Finish, AddLiteral]
+        
+        self.tools_schemas = [AssignClass, UnassignClass, AddTriple, RemoveTriple, ValidateShacl, Finish, AddLiteral, RemoveLiteral]
         self.tools = {
             "AssignClass": self.assign_class,
             "UnassignClass": self.unassign_class,
@@ -208,9 +230,11 @@ class ToolClass:
             "RemoveTriple": self.remove_triple,
             "ValidateShacl": self.validate_shacl,
             "Finish": self.finish,
-            "AddLiteral": self.add_literal
+            "AddLiteral": self.add_literal,
+            "RemoveLiteral": self.remove_literal
         }
-        self.data_graph_edit_tools = ["AssignClass", "UnassignClass", "AddTriple", "RemoveTriple"]
+        self.data_graph_edit_tools = ["AssignClass", "UnassignClass", "AddTriple", "RemoveTriple", "AddLiteral", "RemoveLiteral"]
+        self.literal_edit_tools = ["AddLiteral", "RemoveLiteral"]
         
         
     def build_tool_node(self):
@@ -224,7 +248,7 @@ class ToolClass:
             if type(last_msg) is AIMessage:
                 last_msg: AIMessage
                 tool_calls: list[ToolCall] = last_msg.tool_calls
-                outputs = []
+                call_results = []
                 for call in tool_calls:
                     tool_runtime = ToolRuntime_(
                         state=state,
@@ -236,31 +260,42 @@ class ToolClass:
                         state["data_graph"] = output[0]
                     elif call["name"] == "ValidateShacl":
                         state["violation_report"] = output[1]
-                    outputs.append((output, call["name"]))
+                    call_results.append((output, call["name"]))
                 
                 append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.executed_tools", payload={
                     "entry_id": runtime.context["entry_id"]
                 })
                 
                 messages = []
-                for i, (output, name) in enumerate(outputs):
+                for i, (_, name) in enumerate(reversed(call_results)):
                     if name in self.data_graph_edit_tools:
-                        if (i+1 < len(outputs)) and (outputs[i+1][-1] in self.data_graph_edit_tools):
-                            messages.append(ToolMessage(
-                                content="Look at the messages below to see the final data graph after the sequence of edits.",
-                                tool_call_id=output[-1]
-                            ))
+                        last_edit = len(call_results) - i - 1
+                        break
+                
+                for i, (output, name) in enumerate(call_results):
+                    content = []
+                    
+                    if name in self.data_graph_edit_tools:
+                        error = False
+                        err_msg = []
+                        
+                        if name in self.literal_edit_tools and output[1] is not None:
+                            error = True
+                            err_msg.append(f"Literal value validation error: {output[1]}")
+                        
+                        if error:
+                            content.append("Note that this edit to the data graph was not applied "+
+                                           f"due to the following errors:\n{textwrap.indent("\n".join(err_msg), '  ')}")
+                        
+                        if i == last_edit:
+                            content.append("The final data graph after all the edits:" +
+                                         f"\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}")
                         else:
-                            messages.append(ToolMessage(
-                                content="The final data graph after the sequence of edits:" +
-                                         f"\n\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}",
-                                tool_call_id=output[-1]
-                            ))
+                            content.append("Look at the messages below to see the final data graph after all the edits.")
+                            
                     elif name == "ValidateShacl":
-                        messages.append(ToolMessage(
-                            content=output[0],
-                            tool_call_id=output[-1]
-                        ))
+                        content.append(output[0])
+                        
                     elif name == "Finish":
                         if type(output) is not tuple and output == END:
                             append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.finish!", payload={
@@ -268,10 +303,13 @@ class ToolClass:
                             })
                             return Command(goto=END)
                         else:
-                            messages.append(ToolMessage(
-                                content=output[0],
-                                tool_call_id=output[-1]
-                            ))
+                            content.append(output[0])
+                
+                    msg_str = "\n\n".join(content)
+                    messages.append(ToolMessage(
+                        content=msg_str,
+                        tool_call_id=output[-1]
+                    ))
                             
                 append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.formatted_messages", payload={
                     "entry_id": runtime.context["entry_id"]
@@ -482,7 +520,7 @@ class ToolClass:
         return check_entities_typed(runtime.state, runtime.context)
         
         
-    def add_literal(self, runtime: ToolRuntime_, subject: str, relation: str, literal_value: str, literal_type: GraphLiterals):
+    def add_literal(self, runtime: ToolRuntime_, subject: str, relation: str, literal_value: str, literal_type: str):
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_literal.start",
@@ -493,13 +531,30 @@ class ToolClass:
                 "subject": subject,
                 "relation": relation,
                 "literal_value": literal_value,
-                "literal_type": literal_type.value
+                "literal_type": literal_type
             }
         )
         
         data_graph: Graph = runtime.state["data_graph"]
         
-        data_graph = add_literal_core(data_graph, subject, relation, literal_value, literal_type)
+        parsed, data_graph, err_msg = add_literal_core(data_graph, subject, relation, literal_value, literal_type)
+        if not parsed:
+            append_trace(
+                runtime.context["tracing_path"],
+                "run.entry.agent.tools.add_literal.parsing_error",
+                payload={
+                    "entry_id": runtime.context["entry_id"],
+                    "iterations": runtime.state["iterations"],
+                    "tool_call_id": runtime.tool_call_id,
+                    "subject": subject,
+                    "relation": relation,
+                    "literal_value": literal_value,
+                    "literal_type": literal_type,
+                    "err_msg": err_msg
+                }
+            )
+            
+            return (data_graph, err_msg, runtime.tool_call_id)
         
         append_trace(
             runtime.context["tracing_path"],
@@ -511,8 +566,61 @@ class ToolClass:
                 "subject": subject,
                 "relation": relation,
                 "literal_value": literal_value,
-                "literal_type": literal_type.value
+                "literal_type": literal_type
             }
         )
         
-        return (data_graph, runtime.tool_call_id)
+        return (data_graph, None, runtime.tool_call_id)
+    
+    
+    def remove_literal(self, runtime: ToolRuntime_, subject: str, relation: str, literal_value: str, literal_type: str):
+        append_trace(
+            runtime.context["tracing_path"],
+            "run.entry.agent.tools.remove_literal.start",
+            payload={
+                "entry_id": runtime.context["entry_id"],
+                "iterations": runtime.state["iterations"],
+                "tool_call_id": runtime.tool_call_id,
+                "subject": subject,
+                "relation": relation,
+                "literal_value": literal_value,
+                "literal_type": literal_type
+            }
+        )
+        
+        data_graph: Graph = runtime.state["data_graph"]
+        
+        parsed, data_graph, err_msg = remove_literal_core(data_graph, subject, relation, literal_value, literal_type)
+        if not parsed:
+            append_trace(
+                runtime.context["tracing_path"],
+                "run.entry.agent.tools.remove_literal.parsing_error",
+                payload={
+                    "entry_id": runtime.context["entry_id"],
+                    "iterations": runtime.state["iterations"],
+                    "tool_call_id": runtime.tool_call_id,
+                    "subject": subject,
+                    "relation": relation,
+                    "literal_value": literal_value,
+                    "literal_type": literal_type,
+                    "err_msg": err_msg
+                }
+            )
+            
+            return (data_graph, err_msg, runtime.tool_call_id)
+        
+        append_trace(
+            runtime.context["tracing_path"],
+            "run.entry.agent.tools.remove_literal.finish",
+            payload={
+                "entry_id": runtime.context["entry_id"],
+                "iterations": runtime.state["iterations"],
+                "tool_call_id": runtime.tool_call_id,
+                "subject": subject,
+                "relation": relation,
+                "literal_value": literal_value,
+                "literal_type": literal_type
+            }
+        )
+        
+        return (data_graph, None, runtime.tool_call_id)

@@ -1,0 +1,32 @@
+@prefix data: <http://example.org/data/> .
+@prefix fhkb: <http://www.example.com/genealogy.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_of_Carinthia a fhkb:Woman ;
+    fhkb:hasWife data:Albert_I .
+
+data:Ida_of_Lorraine a fhkb:Woman ;
+    fhkb:hasWife data:Radbot .
+
+data:Rudolf_II a fhkb:Man ;
+    fhkb:hasSon data:Rudolf_I_of_Germany .
+
+data:Albert_I a fhkb:Man ;
+    fhkb:hasSon data:Rudolf_I_of_Germany .
+
+data:Albert_IV_of_Habsburg a fhkb:Man .
+
+data:Guntram_the_Rich a fhkb:Man .
+
+data:Hedwig_of_Kyburg a fhkb:Woman .
+
+data:Radbot a fhkb:Man ;
+    fhkb:hasBirthYear 1020 ;
+    fhkb:isAncestorOf data:Guntram_the_Rich .
+
+data:Rudolf_I_of_Germany a fhkb:Man ;
+    fhkb:hasBirthYear 1218 ;
+    fhkb:hasDeathYear 1291 ;
+    fhkb:hasSon data:Albert_IV_of_Habsburg,
+        data:Hedwig_of_Kyburg .
+

@@ -19,7 +19,7 @@ runtime:
 output:
   base_dir: results
   custom_tag: habsburgs
-  run_dir: results/1_habsburgs_gemini_flash_lite
+  run_dir: results/2_habsburgs_gemini_flash_lite
 
 dataset:
   source: custom_family_bench

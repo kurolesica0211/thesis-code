@@ -132,6 +132,7 @@ class Loader:
         relations = []
         prop_nodes = set(graph.subjects(RDF.type, OWL.ObjectProperty))
         prop_nodes.update(graph.subjects(RDF.type, OWL.DatatypeProperty))
+        prop_nodes.update(graph.subjects(RDF.type, OWL.AnnotationProperty))
 
         for prop_uri in sorted(prop_nodes, key=str):
             rel_label = prop_uri.n3(graph.namespace_manager)

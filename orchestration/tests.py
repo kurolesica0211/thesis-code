@@ -23,6 +23,16 @@ def test_calls_basic(iterations: int):
                 id="1"
             ),
             ToolCall(
+                name="AddLiteral",
+                args={
+                    "subject": "RandomSubject",
+                    "relation": "fhkb:hasBirthYear",
+                    "literal_value": "2026-01-01",
+                    "literal_type": "xsd:date"
+                },
+                id="170"
+            ),
+            ToolCall(
                 name="ValidateShacl",
                 args={},
                 id="2"
@@ -55,6 +65,26 @@ def test_calls_basic(iterations: int):
                     "object": "RandomObject"
                 },
                 id="5"
+            ),
+            ToolCall(
+                name="RemoveLiteral",
+                args={
+                    "subject": "RandomSubject",
+                    "relation": "fhkb:hasBirthYear",
+                    "literal_value": "2026-01-01",
+                    "literal_type": "xsd:date"
+                },
+                id="171"
+            ),
+            ToolCall(
+                name="AddLiteral",
+                args={
+                    "subject": "RandomSubject",
+                    "relation": "fhkb:hasBirthYear",
+                    "literal_value": "aaa",
+                    "literal_type": "xsd:integer"
+                },
+                id="187"
             )
         ])
     elif iterations == 2:

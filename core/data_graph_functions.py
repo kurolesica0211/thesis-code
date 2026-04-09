@@ -2,6 +2,7 @@ import re
 from urllib.parse import quote
 from enum import Enum
 from rdflib import Graph, RDF, URIRef, BNode, XSD, Literal
+import logging, traceback
 
 from helpers import strip_ns, strip_uri
 
@@ -108,12 +109,81 @@ def extract_classes(data_graph: Graph, uri: URIRef) -> list[URIRef]:
 
 literals = {name: getattr(XSD, name) for (name, _) in vars(XSD)["__annotations__"].items() if re.match("[a-z][a-zA-Z]*", name)}
 GraphLiterals = Enum("GraphLiterals", literals)
-def add_literal(data_graph: Graph, subject: str, relation: str, lit_value: str, lit_type: GraphLiterals):
+
+class RdfLibExceptionCapture(logging.Handler):
+    def __init__(self):
+        super().__init__(level=logging.WARNING)
+        self.last_exception_line = None
+        self.last_record_message = None
+
+    def emit(self, record):
+        # First line logged by rdflib (without traceback)
+        self.last_record_message = record.getMessage()
+
+        # Actual exception attached by logger.exception(...)
+        if record.exc_info:
+            exc_type, exc, _ = record.exc_info
+            self.last_exception_line = traceback.format_exception_only(exc_type, exc)[-1].strip()
+
+def make_literal_and_extract_error(value: str, datatype) -> tuple[Literal, str]:
+    logger = logging.getLogger("rdflib.term")
+    capture = RdfLibExceptionCapture()
+
+    old_level = logger.level
+    old_propagate = logger.propagate
+    logger.setLevel(logging.WARNING)
+    logger.propagate = False
+    logger.addHandler(capture)
+
+    try:
+        lit = Literal(value, datatype=datatype)
+    finally:
+        logger.removeHandler(capture)
+        logger.setLevel(old_level)
+        logger.propagate = old_propagate
+
+    # Example: "ValueError: day is out of range for month"
+    return lit, capture.last_exception_line
+
+
+def add_literal(
+    data_graph: Graph,
+    subject: str,
+    relation: str,
+    lit_value: str,
+    lit_type: str
+) -> tuple[bool, Graph, str]:
     subject = strip_ns(strip_uri(subject))
     subj_uri = create_safe_uri(data_graph, "data", subject)
     rel_uri = create_safe_uri(data_graph, *relation.split(":"))
-    lit = Literal(lit_value, datatype=lit_type.value)
+    lit_uri = create_safe_uri(data_graph, *lit_type.split(":"))
+    lit, err_msg = make_literal_and_extract_error(lit_value, lit_uri)
+    
+    parsed = getattr(lit, "ill_typed", False) == False
+    if parsed == False:
+        return parsed, data_graph, err_msg
     
     updated_graph = data_graph.add((subj_uri, rel_uri, lit))
     
-    return updated_graph
+    return parsed, updated_graph, ""
+
+def remove_literal(
+    data_graph: Graph,
+    subject: str,
+    relation: str,
+    lit_value: str,
+    lit_type: str
+) -> tuple[bool, Graph, str]:
+    subject = strip_ns(strip_uri(subject))
+    subj_uri = create_safe_uri(data_graph, "data", subject)
+    rel_uri = create_safe_uri(data_graph, *relation.split(":"))
+    lit_uri = create_safe_uri(data_graph, *lit_type.split(":"))
+    lit, err_msg = make_literal_and_extract_error(lit_value, lit_uri)
+    
+    parsed = getattr(lit, "ill_typed", False) == False
+    if parsed == False:
+        return parsed, data_graph, err_msg
+    
+    updated_graph = data_graph.remove((subj_uri, rel_uri, lit))
+    
+    return parsed, updated_graph, ""
