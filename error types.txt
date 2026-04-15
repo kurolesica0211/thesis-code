@@ -1,0 +1,15 @@
+Assuming deductive closure (all of the possible additional statements have already been derived, e.g. domain and range constraints of inverse properties)
+
+1. Disjoint properties between the same pair of entities
+    1.1. Disjointness between two properties
+    1.2. Disjointness between a property and a property chain
+    1.3. Disjointness between two property chains
+2. Disjoint classes assigned to the same entity
+    2.1. Disjointness of two regular classes
+    2.2. Disjointness of a blank class (e.g., an owl:Restriction) and a regular class
+    2.3. Disjointness of two blank classes
+3. Violation of domain or range constraints of a relation
+4. Irreflexivity Violation: A property is owl:IrreflexiveProperty, but the data contains a triple $(A, P, A)$
+5. Asymmetry Violation: $(A, P, B)$ and $(B, P, A)$ both exist for an owl:AsymmetricProperty
+6. Max Cardinality Violation: A node has 3 values for a property restricted to maxQualifiedCardinality 2.
+7. Functional Property Violation: A FunctionalProperty (like hasBirthMother) points to two distinct individuals who are not the same.
