@@ -1,0 +1,224 @@
+@prefix :              <http://example.com/family_TBOX.ttl#> .
+@prefix dash:          <http://datashapes.org/dash#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix graphql:       <http://datashapes.org/graphql#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix owl2sh-closed: <http://data.sparna.fr/ontologies/owl2sh-closed#> .
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix swa:           <http://topbraid.org/swa#> .
+@prefix tosh:          <http://topbraid.org/tosh#> .
+@prefix xml:           <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+
+:Man-isBrotherOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isBrotherOf .
+
+:Person-isSiblingOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isSiblingOf .
+
+:Woman-isSisterOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isSisterOf .
+
+:Ancestor-isParentOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isParentOf .
+
+:Man-isFatherOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isFatherOf .
+
+:Person  rdf:type             rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           :Person-hasParent , :Person-isBloodrelationOf , :Person-hasSex , :Person-hasFather , :Person-hasMother , :Person-hasHusband , :Person-hasWife , :Person-isSpouseOf , :Person-isChildOf , :Person-hasSister , :Person-hasBrother , :Person-hasRelation , :Person-hasAncestor , :Person-hasSpouse , :Person-isSiblingOf , :Person-isPartnerIn .
+
+:Person-isBloodrelationOf
+        rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isBloodrelationOf .
+
+:Ancestor-hasSon  rdf:type  sh:PropertyShape ;
+        sh:class  :Man ;
+        sh:path   :hasSon .
+
+:Person-hasParent  rdf:type  sh:PropertyShape ;
+        sh:class     :Person , :Ancestor ;
+        sh:maxCount  2 ;
+        sh:path      :hasParent .
+
+:Ancestor-hasChild  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :hasChild .
+
+:Person-hasWife  rdf:type  sh:PropertyShape ;
+        sh:class  :Woman ;
+        sh:path   :hasWife .
+
+:Person-hasSex  rdf:type  sh:PropertyShape ;
+        sh:class     :Sex ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:path      :hasSex .
+
+:Person-hasSister  rdf:type  sh:PropertyShape ;
+        sh:class  :Woman ;
+        sh:path   :hasSister .
+
+:Man-isHusbandOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isHusbandOf .
+
+:Person-hasAncestor  rdf:type  sh:PropertyShape ;
+        sh:class  :Ancestor ;
+        sh:path   :hasAncestor .
+
+:Woman-isFemalePartnerIn
+        rdf:type  sh:PropertyShape ;
+        sh:class  :Marriage ;
+        sh:path   :isFemalePartnerIn .
+
+:Person-hasMother  rdf:type  sh:PropertyShape ;
+        sh:class     :Ancestor , :Woman ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:path      :hasMother .
+
+:Person-isPartnerIn  rdf:type  sh:PropertyShape ;
+        sh:class  :Marriage ;
+        sh:path   :isPartnerIn .
+
+:Woman-hasSex  rdf:type         sh:PropertyShape ;
+        dash:hasValueWithClass  :Female ;
+        sh:class                :Sex ;
+        sh:maxCount             1 ;
+        sh:minCount             1 ;
+        sh:path                 :hasSex .
+
+:Marriage  rdf:type           rdfs:Class , sh:NodeShape ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           :Marriage-hasMalePartner , :Marriage-hasFemalePartner , :Marriage-hasPartner .
+
+:Woman-isWifeOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isWifeOf .
+
+:Woman-isAuntOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isAuntOf .
+
+:Ancestor-isMotherOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isMotherOf .
+
+:Ancestor  rdf:type           sh:NodeShape , rdfs:Class ;
+        rdfs:subClassOf       []  ;
+        owl:intersectionOf    []  ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           :Ancestor-hasDaughter , :Ancestor-hasSon , :Ancestor-isParentOf , :Ancestor-isAncestorOf , :Ancestor-isFatherOf , :Ancestor-hasChild , :Ancestor-isMotherOf .
+
+:Person-hasHusband  rdf:type  sh:PropertyShape ;
+        sh:class  :Man ;
+        sh:path   :hasHusband .
+
+:Marriage-hasPartner  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :hasPartner .
+
+:Man-isMalePartnerIn  rdf:type  sh:PropertyShape ;
+        sh:class  :Marriage ;
+        sh:path   :isMalePartnerIn .
+
+:Person-hasFather  rdf:type  sh:PropertyShape ;
+        sh:class     :Man , :Ancestor ;
+        sh:maxCount  1 ;
+        sh:minCount  1 ;
+        sh:path      :hasFather .
+
+:Ancestor-isAncestorOf
+        rdf:type     sh:PropertyShape ;
+        sh:class     :Person ;
+        sh:minCount  1 ;
+        sh:path      :isAncestorOf .
+
+:Ancestor-isFatherOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isFatherOf .
+
+:Person-hasBrother  rdf:type  sh:PropertyShape ;
+        sh:class  :Man ;
+        sh:path   :hasBrother .
+
+:Marriage-hasFemalePartner
+        rdf:type  sh:PropertyShape ;
+        sh:class  :Woman ;
+        sh:path   :hasFemalePartner .
+
+:Person-isSpouseOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isSpouseOf .
+
+:Man-hasSex  rdf:type           sh:PropertyShape ;
+        dash:hasValueWithClass  :Male ;
+        sh:class                :Sex ;
+        sh:maxCount             1 ;
+        sh:minCount             1 ;
+        sh:path                 :hasSex .
+
+:Woman  rdf:type              sh:NodeShape , rdfs:Class ;
+        rdfs:subClassOf       []  ;
+        owl:intersectionOf    []  ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           :Woman-isDaughterOf , :Woman-isSisterOf , :Woman-isAuntOf , :Woman-isWifeOf , :Woman-isFemalePartnerIn , :Woman-hasSex , :Woman-isMotherOf .
+
+:Person-hasSpouse  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :hasSpouse .
+
+:Marriage-hasMalePartner
+        rdf:type  sh:PropertyShape ;
+        sh:class  :Man ;
+        sh:path   :hasMalePartner .
+
+:Man-isSonOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Ancestor ;
+        sh:path   :isSonOf .
+
+:Woman-isMotherOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isMotherOf .
+
+:Ancestor-hasDaughter
+        rdf:type  sh:PropertyShape ;
+        sh:class  :Woman ;
+        sh:path   :hasDaughter .
+
+:Woman-isDaughterOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Ancestor ;
+        sh:path   :isDaughterOf .
+
+:Person-isChildOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Ancestor ;
+        sh:path   :isChildOf .
+
+:Person-hasRelation  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :hasRelation .
+
+:Man-isUncleOf  rdf:type  sh:PropertyShape ;
+        sh:class  :Person ;
+        sh:path   :isUncleOf .
+
+:Man    rdf:type              rdfs:Class , sh:NodeShape ;
+        rdfs:subClassOf       []  ;
+        owl:intersectionOf    []  ;
+        sh:closed             true ;
+        sh:ignoredProperties  ( rdf:type ) ;
+        sh:property           :Man-hasSex , :Man-isUncleOf , :Man-isHusbandOf , :Man-isMalePartnerIn , :Man-isBrotherOf , :Man-isFatherOf , :Man-isSonOf .

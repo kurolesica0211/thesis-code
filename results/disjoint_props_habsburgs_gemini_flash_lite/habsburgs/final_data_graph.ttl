@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:Albert_I a :Man,
+        :Person .
+
+data:Ariel_I a :Man,
+        :Person .
+
+data:Charles_V a :Man,
+        :Person .
+
+data:Ferdinand_I a :Man,
+        :Person .
+
+data:Guntram_the_Rich a :Man,
+        :Person .
+
+data:Radbot a :Man,
+        :Person .
+
+data:Rudolf_II a :Man,
+        :Person .
+
+data:Rudolf_I_of_Germany a :Man,
+        :Person .
+

@@ -1,0 +1,6 @@
+{
+    "entry_id": "habsburgs",
+    "done_reason": "llm_finished",
+    "artifacts_dir": "results/disjoint_props_habsburgs_gemini_flash_lite/habsburgs/artifacts",
+    "results": "results/disjoint_props_habsburgs_gemini_flash_lite/habsburgs/final_data_graph.ttl"
+}

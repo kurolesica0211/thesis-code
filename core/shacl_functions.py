@@ -10,9 +10,9 @@ from core.data_graph_functions import extract_classes
 
 def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) -> tuple[bool, ValidationReport]:
     conforms, results_graph, _ = py_validate(
-        data_graph,
-        shacl_graph,
-        ont_graph,
+        data_graph=data_graph,
+        shacl_graph=shacl_graph,
+        ont_graph=ont_graph,
         abort_on_first=False
     )
     
@@ -94,6 +94,6 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
         if v.llm_explanation is not None and v.llm_instruction is not None:
             text += f"    LLM-provided explanation of the violation:\n{textwrap.indent(v.llm_explanation, '      ')}\n"
             text += f"    LLM-provided instruction on how to handle the violation:\n{textwrap.indent(v.llm_instruction, '      ')}"
-        text += "\n"
+        text += "\n\n\n"
         
     return text

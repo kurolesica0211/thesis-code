@@ -81,12 +81,17 @@ def run(config: RunConfig):
         )
         main_user_msg = HumanMessage(main_user_prompt)
         
-        llm = init_chat_model(
+        main_llm = init_chat_model(
             model=config.model.name,
             temperature=config.model.temperature,
             max_retries=config.model.max_retries
         )
-        llm = llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
+        main_llm = main_llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
+        translation_llm = init_chat_model(
+            model=config.model.name,
+            temperature=config.model.temperature,
+            max_retries=config.model.max_retries
+        )
         
         append_trace(trace_path, "run.entry.agent.invoke", payload={
             "entry_id": task_entry.entry_id,
@@ -99,7 +104,8 @@ def run(config: RunConfig):
                 task_manifest=task_manifest
             ),
             context=TaskContext(
-                llm=llm,
+                main_llm=main_llm,
+                translation_llm=translation_llm,
                 entry_id=task_entry.entry_id,
                 input_text=task_entry.input_text,
                 ontology_graph=task_entry.ontology_graph,

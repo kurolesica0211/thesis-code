@@ -5,8 +5,8 @@ from loaders.loader import Loader, DataEntry
 
 def get_loader():
     dir = "custom_family_bench"
-    input_text = "habsburgs.txt"
-    ontology = "family_TBOX.owl"
+    input_text = "disjoint_props_habsburgs.txt"
+    ontology = "family_TBOX.ttl"
     shacl = "family_shacl_final.ttl"
     
     data_entry = DataEntry(

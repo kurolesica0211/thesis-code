@@ -1,9 +1,10 @@
 Assuming deductive closure (all of the possible additional statements have already been derived, e.g. domain and range constraints of inverse properties)
 
 1. Disjoint properties between the same pair of entities
-    1.1. Disjointness between two properties
-    1.2. Disjointness between a property and a property chain
-    1.3. Disjointness between two property chains
+    1.1. Disjointness between two properties -- hasBrother and isChildOf
+    1.2. Disjointness between a property and a property chain -- isSiblingOf (:hasParent and :isParentOf) and isParentOf
+    1.3. Disjointness between two property chains -- isUncleOf (:isBrotherOf and :isParentOf)
+                                                     and isAuntOf (:isBrotherOf and :isParentOf)
 2. Disjoint classes assigned to the same entity
     2.1. Disjointness of two regular classes
     2.2. Disjointness of a blank class (e.g., an owl:Restriction) and a regular class

@@ -1,402 +1,610 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dash: <http://datashapes.org/dash#> .
-@prefix fhkb: <http://www.example.com/genealogy.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-fhkb:Ancestor a rdfs:Class,
+:Ancestor a rdfs:Class,
         sh:NodeShape ;
     rdfs:subClassOf [ ] ;
     owl:intersectionOf [ ] ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Ancestor-alsoKnownAs,
-        fhkb:Ancestor-formerlyKnownAs,
-        fhkb:Ancestor-hasBirthYear,
-        fhkb:Ancestor-hasDeathYear,
-        fhkb:Ancestor-hasMarriageYear,
-        fhkb:Ancestor-isAncestorOf,
-        fhkb:Ancestor-knownAs,
-        fhkb:Man-isBrotherOf,
-        fhkb:Person-hasFather,
-        fhkb:Person-hasMother,
-        fhkb:Person-hasParent,
-        fhkb:Person-hasRelation,
-        fhkb:Woman-hasAncestor,
-        fhkb:Woman-hasSex,
-        fhkb:Woman-isBloodrelationOf,
-        fhkb:Woman-isSiblingOf,
-        fhkb:Woman-isSisterOf .
+    sh:property
+    #---------- Annotation Properties ------------
+        :Ancestor-alsoKnownAs,
+        :Ancestor-formerlyKnownAs,
+        :Ancestor-knownAs,
+        :Ancestor-hasBirthYear,
+        :Ancestor-hasDeathYear,
+        :Ancestor-hasMarriageYear,
+    #--------- Ancestor's properties -------------
+        :Ancestor-hasChild,
+        :Ancestor-hasDaughter,
+        :Ancestor-hasSon,
+        :Ancestor-isAncestorOf,
+        :Ancestor-isFatherOf,
+        :Ancestor-isMotherOf,
+        :Ancestor-isParentOf,
+    #--------- Since Ancestor can be Man ---------
+        :Man-hasSex,
+        :Man-isBrotherOf,
+        :Man-isFatherOf,
+        :Man-isHusbandOf,
+        :Man-isMalePartnerIn,
+        :Man-isSonOf,
+        :Man-isUncleOf,
+    #--------- Since Ancestor can be Woman -------
+        :Woman-hasSex,
+        :Woman-isAuntOf,
+        :Woman-isDaughterOf,
+        :Woman-isFemalePartnerIn,
+        :Woman-isMotherOf,
+        :Woman-isSisterOf,
+        :Woman-isWifeOf,
+    #--------- Inherited Person's properties -----
+        :Person-hasAncestor,
+        :Person-hasBrother,
+        :Person-hasFather,
+        :Person-hasHusband,
+        :Person-hasMother,
+        :Person-hasParent,
+        :Person-hasRelation,
+        :Person-hasSex,
+        :Person-hasSister,
+        :Person-hasSpouse,
+        :Person-hasWife,
+        :Person-isBloodrelationOf,
+        :Person-isChildOf,
+        :Person-isPartnerIn,
+        :Person-isSiblingOf,
+        :Person-isSpouseOf .
 
-fhkb:DomainEntity a rdfs:Class,
+:DomainEntity a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:DomainEntity-alsoKnownAs,
-        fhkb:DomainEntity-formerlyKnownAs,
-        fhkb:DomainEntity-hasBirthYear,
-        fhkb:DomainEntity-hasDeathYear,
-        fhkb:DomainEntity-hasMarriageYear,
-        fhkb:DomainEntity-knownAs .
+    sh:property :DomainEntity-alsoKnownAs,
+        :DomainEntity-formerlyKnownAs,
+        :DomainEntity-hasBirthYear,
+        :DomainEntity-hasDeathYear,
+        :DomainEntity-hasMarriageYear,
+        :DomainEntity-knownAs .
 
-fhkb:Female a rdfs:Class,
+:Female a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Female-alsoKnownAs,
-        fhkb:Female-formerlyKnownAs,
-        fhkb:Female-hasBirthYear,
-        fhkb:Female-hasDeathYear,
-        fhkb:Female-hasMarriageYear,
-        fhkb:Female-knownAs .
+    sh:property :Female-alsoKnownAs,
+        :Female-formerlyKnownAs,
+        :Female-hasBirthYear,
+        :Female-hasDeathYear,
+        :Female-hasMarriageYear,
+        :Female-knownAs .
 
-fhkb:Male a rdfs:Class,
+:Male a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Male-alsoKnownAs,
-        fhkb:Male-formerlyKnownAs,
-        fhkb:Male-hasBirthYear,
-        fhkb:Male-hasDeathYear,
-        fhkb:Male-hasMarriageYear,
-        fhkb:Male-knownAs .
+    sh:property :Male-alsoKnownAs,
+        :Male-formerlyKnownAs,
+        :Male-hasBirthYear,
+        :Male-hasDeathYear,
+        :Male-hasMarriageYear,
+        :Male-knownAs .
 
-fhkb:Man a rdfs:Class,
-        sh:NodeShape ;
-    rdfs:subClassOf [ ] ;
-    owl:intersectionOf [ ] ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Man-alsoKnownAs,
-        fhkb:Man-formerlyKnownAs,
-        fhkb:Man-hasBirthYear,
-        fhkb:Man-hasDeathYear,
-        fhkb:Man-hasMarriageYear,
-        fhkb:Man-hasSex,
-        fhkb:Man-isBrotherOf,
-        fhkb:Man-isUncleOf,
-        fhkb:Man-knownAs,
-        fhkb:Person-hasFather,
-        fhkb:Person-hasMother,
-        fhkb:Person-hasParent,
-        fhkb:Person-hasRelation,
-        fhkb:Woman-hasAncestor,
-        fhkb:Woman-isBloodrelationOf,
-        fhkb:Woman-isSiblingOf,
-        fhkb:Woman-isSisterOf .
-
-fhkb:Marriage a rdfs:Class,
-        sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Marriage-alsoKnownAs,
-        fhkb:Marriage-formerlyKnownAs,
-        fhkb:Marriage-hasBirthYear,
-        fhkb:Marriage-hasDeathYear,
-        fhkb:Marriage-hasFemalePartner,
-        fhkb:Marriage-hasMalePartner,
-        fhkb:Marriage-hasMarriageYear,
-        fhkb:Marriage-hasPartner,
-        fhkb:Marriage-knownAs .
-
-fhkb:Person a rdfs:Class,
-        sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Man-isBrotherOf,
-        fhkb:Person-alsoKnownAs,
-        fhkb:Person-formerlyKnownAs,
-        fhkb:Person-hasBirthYear,
-        fhkb:Person-hasDeathYear,
-        fhkb:Person-hasFather,
-        fhkb:Person-hasMarriageYear,
-        fhkb:Person-hasMother,
-        fhkb:Person-hasParent,
-        fhkb:Person-hasRelation,
-        fhkb:Person-hasSex,
-        fhkb:Person-knownAs,
-        fhkb:Woman-hasAncestor,
-        fhkb:Woman-isBloodrelationOf,
-        fhkb:Woman-isSiblingOf,
-        fhkb:Woman-isSisterOf .
-
-fhkb:Sex a rdfs:Class,
-        sh:NodeShape ;
-    sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Sex-alsoKnownAs,
-        fhkb:Sex-formerlyKnownAs,
-        fhkb:Sex-hasBirthYear,
-        fhkb:Sex-hasDeathYear,
-        fhkb:Sex-hasMarriageYear,
-        fhkb:Sex-knownAs .
-
-fhkb:Woman a rdfs:Class,
+:Man a rdfs:Class,
         sh:NodeShape ;
     rdfs:subClassOf [ ] ;
     owl:intersectionOf [ ] ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property fhkb:Man-isBrotherOf,
-        fhkb:Person-hasFather,
-        fhkb:Person-hasMother,
-        fhkb:Person-hasParent,
-        fhkb:Person-hasRelation,
-        fhkb:Woman-alsoKnownAs,
-        fhkb:Woman-formerlyKnownAs,
-        fhkb:Woman-hasAncestor,
-        fhkb:Woman-hasBirthYear,
-        fhkb:Woman-hasDeathYear,
-        fhkb:Woman-hasMarriageYear,
-        fhkb:Woman-hasSex,
-        fhkb:Woman-isBloodrelationOf,
-        fhkb:Woman-isSiblingOf,
-        fhkb:Woman-isSisterOf,
-        fhkb:Woman-knownAs .
+    sh:property
+    #--------- Annotation Properties -------------
+        :Man-alsoKnownAs,
+        :Man-formerlyKnownAs,
+        :Man-hasBirthYear,
+        :Man-hasDeathYear,
+        :Man-hasMarriageYear,
+        :Man-knownAs,
+    #--------- Man's properties ------------------
+        :Man-hasSex,
+        :Man-isBrotherOf,
+        :Man-isFatherOf,
+        :Man-isHusbandOf,
+        :Man-isMalePartnerIn,
+        :Man-isSonOf,
+        :Man-isUncleOf,
+    #--------- Inherited Person's properties -----
+        :Person-hasAncestor,
+        :Person-hasBrother,
+        :Person-hasFather,
+        :Person-hasHusband,
+        :Person-hasMother,
+        :Person-hasParent,
+        :Person-hasRelation,
+        :Person-hasSex,
+        :Person-hasSister,
+        :Person-hasSpouse,
+        :Person-hasWife,
+        :Person-isBloodrelationOf,
+        :Person-isChildOf,
+        :Person-isPartnerIn,
+        :Person-isSiblingOf,
+        :Person-isSpouseOf,
+    #--------- Since Man can be Ancestor ---------
+        :Ancestor-hasChild,
+        :Ancestor-hasDaughter,
+        :Ancestor-hasSon,
+        :NotAncestor-isAncestorOf,
+        :Ancestor-isFatherOf,
+        :Ancestor-isMotherOf,
+        :Ancestor-isParentOf .
 
-fhkb:Ancestor-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Marriage a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property :Marriage-alsoKnownAs,
+        :Marriage-formerlyKnownAs,
+        :Marriage-hasBirthYear,
+        :Marriage-hasDeathYear,
+        :Marriage-hasFemalePartner,
+        :Marriage-hasMalePartner,
+        :Marriage-hasMarriageYear,
+        :Marriage-hasPartner,
+        :Marriage-knownAs .
 
-fhkb:Ancestor-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Person a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property
+    #--------- Annotation properties -------------
+        :Person-alsoKnownAs,
+        :Person-formerlyKnownAs,
+        :Person-hasBirthYear,
+        :Person-hasDeathYear,
+        :Person-hasMarriageYear,
+        :Person-knownAs,
+    #--------- Person's properties ---------------
+        :Person-hasAncestor,
+        :Person-hasBrother,
+        :Person-hasFather,
+        :Person-hasHusband,
+        :Person-hasMother,
+        :Person-hasParent,
+        :Person-hasRelation,
+        :Person-hasSex,
+        :Person-hasSister,
+        :Person-hasSpouse,
+        :Person-hasWife,
+        :Person-isBloodrelationOf,
+        :Person-isChildOf,
+        :Person-isPartnerIn,
+        :Person-isSiblingOf,
+        :Person-isSpouseOf,
+    #--------- Since Person can be Ancestor ------
+        :Ancestor-hasChild,
+        :Ancestor-hasDaughter,
+        :Ancestor-hasSon,
+        :NotAncestor-isAncestorOf,
+        :Ancestor-isFatherOf,
+        :Ancestor-isMotherOf,
+        :Ancestor-isParentOf,
+    #--------- Since Person can be Man -----------
+        :Man-hasSex,
+        :Man-isBrotherOf,
+        :Man-isFatherOf,
+        :Man-isHusbandOf,
+        :Man-isMalePartnerIn,
+        :Man-isSonOf,
+        :Man-isUncleOf,
+    #--------- Since Person can be Woman ---------
+        :Woman-hasSex,
+        :Woman-isAuntOf,
+        :Woman-isDaughterOf,
+        :Woman-isFemalePartnerIn,
+        :Woman-isMotherOf,
+        :Woman-isSisterOf,
+        :Woman-isWifeOf .
+ 
+:Sex a rdfs:Class,
+        sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property :Sex-alsoKnownAs,
+        :Sex-formerlyKnownAs,
+        :Sex-hasBirthYear,
+        :Sex-hasDeathYear,
+        :Sex-hasMarriageYear,
+        :Sex-knownAs .
 
-fhkb:Ancestor-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Woman a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property 
+    #--------- Annotation properties -------------
+        :Woman-alsoKnownAs,
+        :Woman-formerlyKnownAs,
+        :Woman-hasBirthYear,
+        :Woman-hasDeathYear,
+        :Woman-hasMarriageYear,
+        :Woman-knownAs,
+    #--------- Woman's properties ----------------
+        :Woman-hasSex,
+        :Woman-isAuntOf,
+        :Woman-isDaughterOf,
+        :Woman-isFemalePartnerIn,
+        :Woman-isMotherOf,
+        :Woman-isSisterOf,
+        :Woman-isWifeOf,
+    #--------- Inherited from Person -------------
+        :Person-hasAncestor,
+        :Person-hasBrother,
+        :Person-hasFather,
+        :Person-hasHusband,
+        :Person-hasMother,
+        :Person-hasParent,
+        :Person-hasRelation,
+        :Person-hasSex,
+        :Person-hasSister,
+        :Person-hasSpouse,
+        :Person-hasWife,
+        :Person-isBloodrelationOf,
+        :Person-isChildOf,
+        :Person-isPartnerIn,
+        :Person-isSiblingOf,
+        :Person-isSpouseOf,
+    #--------- Since Woman can be Ancestor -------
+        :Ancestor-hasChild,
+        :Ancestor-hasDaughter,
+        :Ancestor-hasSon,
+        :NotAncestor-isAncestorOf,
+        :Ancestor-isFatherOf,
+        :Ancestor-isMotherOf,
+        :Ancestor-isParentOf .
 
-fhkb:Ancestor-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Ancestor-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:Ancestor-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Ancestor-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
 
-fhkb:Ancestor-isAncestorOf a sh:PropertyShape ;
-    dash:hasValueWithClass fhkb:Person ;
+:Ancestor-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
+
+:Ancestor-hasChild a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :hasChild .
+
+:Ancestor-hasDaughter a sh:PropertyShape ;
+    sh:class :Woman ;
+    sh:path :hasDaughter .
+
+:Ancestor-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
+
+:Ancestor-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
+
+:Ancestor-hasSon a sh:PropertyShape ;
+    sh:class :Man ;
+    sh:path :hasSon .
+
+:Ancestor-isAncestorOf a sh:PropertyShape ;
+    sh:class :Person ;
     sh:minCount 1 ;
-    sh:path fhkb:isAncestorOf .
+    sh:path :isAncestorOf .
 
-fhkb:Ancestor-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:NotAncestor-isAncestorOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isAncestorOf .
 
-fhkb:DomainEntity-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Ancestor-isFatherOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isFatherOf .
 
-fhkb:DomainEntity-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Ancestor-isMotherOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isMotherOf .
 
-fhkb:DomainEntity-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Ancestor-isParentOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isParentOf .
 
-fhkb:DomainEntity-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Ancestor-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:DomainEntity-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:DomainEntity-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:DomainEntity-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:DomainEntity-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
 
-fhkb:Female-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:DomainEntity-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
 
-fhkb:Female-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:DomainEntity-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
 
-fhkb:Female-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:DomainEntity-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
 
-fhkb:Female-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:DomainEntity-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:Female-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Female-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:Female-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:Female-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
 
-fhkb:Male-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Female-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
 
-fhkb:Male-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Female-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
 
-fhkb:Male-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Female-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
 
-fhkb:Male-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Female-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:Male-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Male-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:Male-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:Male-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
 
-fhkb:Man-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Male-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
 
-fhkb:Man-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Male-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
 
-fhkb:Man-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Male-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
 
-fhkb:Man-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Male-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:Man-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Man-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:Man-hasSex a sh:PropertyShape ;
-    dash:hasValueWithClass fhkb:Male ;
-    sh:class fhkb:Sex ;
+:Man-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
+
+:Man-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
+
+:Man-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
+
+:Man-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
+
+:Man-hasSex a sh:PropertyShape ;
+    dash:hasValueWithClass :Male ;
+    sh:class :Sex ;
     sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasSex .
+    sh:path :hasSex .
 
-fhkb:Man-isUncleOf a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:isUncleOf .
+:Man-isBrotherOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isBrotherOf .
 
-fhkb:Man-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:Man-isFatherOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isFatherOf .
 
-fhkb:Marriage-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Man-isHusbandOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isHusbandOf .
 
-fhkb:Marriage-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Man-isMalePartnerIn a sh:PropertyShape ;
+    sh:class :Marriage ;
+    sh:path :isMalePartnerIn .
 
-fhkb:Marriage-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Man-isSonOf a sh:PropertyShape ;
+    sh:class :Ancestor ;
+    sh:path :isSonOf .
 
-fhkb:Marriage-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Man-isUncleOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isUncleOf .
 
-fhkb:Marriage-hasFemalePartner a sh:PropertyShape ;
-    sh:class fhkb:Woman ;
-    sh:path fhkb:hasFemalePartner .
+:Man-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:Marriage-hasMalePartner a sh:PropertyShape ;
-    sh:class fhkb:Man ;
-    sh:path fhkb:hasMalePartner .
+:Marriage-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
 
-fhkb:Marriage-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Marriage-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
 
-fhkb:Marriage-hasPartner a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:hasPartner .
+:Marriage-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
 
-fhkb:Marriage-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:Marriage-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
 
-fhkb:Person-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Marriage-hasFemalePartner a sh:PropertyShape ;
+    sh:class :Woman ;
+    sh:path :hasFemalePartner .
 
-fhkb:Person-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
+:Marriage-hasMalePartner a sh:PropertyShape ;
+    sh:class :Man ;
+    sh:path :hasMalePartner .
 
-fhkb:Person-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
+:Marriage-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
 
-fhkb:Person-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
+:Marriage-hasPartner a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :hasPartner .
 
-fhkb:Person-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
+:Marriage-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 
-fhkb:Person-hasSex a sh:PropertyShape ;
-    sh:class fhkb:Sex ;
+:Person-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
+
+:Person-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
+
+:Person-hasAncestor a sh:PropertyShape ;
+    sh:class :Ancestor ;
+    sh:path :hasAncestor .
+
+:Person-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
+
+:Person-hasBrother a sh:PropertyShape ;
+    sh:class :Man ;
+    sh:path :hasBrother .
+
+:Person-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
+
+:Person-hasFather a sh:PropertyShape ;
+    sh:class :Ancestor,
+        :Man ;
     sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasSex .
+    sh:path :hasFather .
 
-fhkb:Person-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
+:Person-hasHusband a sh:PropertyShape ;
+    sh:class :Man ;
+    sh:path :hasHusband .
 
-fhkb:Sex-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
+:Person-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
 
-fhkb:Sex-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
-
-fhkb:Sex-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
-
-fhkb:Sex-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
-
-fhkb:Sex-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
-
-fhkb:Sex-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
-
-fhkb:Woman-alsoKnownAs a sh:PropertyShape ;
-    sh:path fhkb:alsoKnownAs .
-
-fhkb:Woman-formerlyKnownAs a sh:PropertyShape ;
-    sh:path fhkb:formerlyKnownAs .
-
-fhkb:Woman-hasBirthYear a sh:PropertyShape ;
-    sh:path fhkb:hasBirthYear .
-
-fhkb:Woman-hasDeathYear a sh:PropertyShape ;
-    sh:path fhkb:hasDeathYear .
-
-fhkb:Woman-hasMarriageYear a sh:PropertyShape ;
-    sh:path fhkb:hasMarriageYear .
-
-fhkb:Woman-knownAs a sh:PropertyShape ;
-    sh:path fhkb:knownAs .
-
-fhkb:Woman-hasSex a sh:PropertyShape ;
-    dash:hasValueWithClass fhkb:Female ;
-    sh:class fhkb:Sex ;
+:Person-hasMother a sh:PropertyShape ;
+    sh:class :Ancestor,
+        :Woman ;
     sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasSex .
+    sh:path :hasMother .
 
-fhkb:Man-isBrotherOf a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:isBrotherOf .
-
-fhkb:Person-hasFather a sh:PropertyShape ;
-    sh:class fhkb:Man ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasFather .
-
-fhkb:Person-hasMother a sh:PropertyShape ;
-    sh:class fhkb:Woman ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path fhkb:hasMother .
-
-fhkb:Person-hasParent a sh:PropertyShape ;
-    sh:class fhkb:Person ;
+:Person-hasParent a sh:PropertyShape ;
+    sh:class :Ancestor,
+        :Person ;
     sh:maxCount 2 ;
-    sh:path fhkb:hasParent .
+    sh:path :hasParent .
 
-fhkb:Person-hasRelation a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:hasRelation .
+:Person-hasRelation a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :hasRelation .
 
-fhkb:Woman-hasAncestor a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:hasAncestor .
+:Person-hasSex a sh:PropertyShape ;
+    sh:class :Sex ;
+    sh:maxCount 1 ;
+    sh:path :hasSex .
 
-fhkb:Woman-isBloodrelationOf a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:isBloodrelationOf .
+:Person-hasSister a sh:PropertyShape ;
+    sh:class :Woman ;
+    sh:path :hasSister .
 
-fhkb:Woman-isSiblingOf a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:isSiblingOf .
+:Person-hasSpouse a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :hasSpouse .
 
-fhkb:Woman-isSisterOf a sh:PropertyShape ;
-    sh:class fhkb:Person ;
-    sh:path fhkb:isSisterOf .
+:Person-hasWife a sh:PropertyShape ;
+    sh:class :Woman ;
+    sh:path :hasWife .
+
+:Person-isBloodrelationOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isBloodrelationOf .
+
+:Person-isChildOf a sh:PropertyShape ;
+    sh:class :Ancestor ;
+    sh:path :isChildOf .
+
+:Person-isPartnerIn a sh:PropertyShape ;
+    sh:class :Marriage ;
+    sh:path :isPartnerIn .
+
+:Person-isSiblingOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isSiblingOf .
+
+:Person-isSpouseOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isSpouseOf .
+
+:Person-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
+
+:Sex-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
+
+:Sex-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
+
+:Sex-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
+
+:Sex-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
+
+:Sex-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
+
+:Sex-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
+
+:Woman-alsoKnownAs a sh:PropertyShape ;
+    sh:path :alsoKnownAs .
+
+:Woman-formerlyKnownAs a sh:PropertyShape ;
+    sh:path :formerlyKnownAs .
+
+:Woman-hasBirthYear a sh:PropertyShape ;
+    sh:path :hasBirthYear .
+
+:Woman-hasDeathYear a sh:PropertyShape ;
+    sh:path :hasDeathYear .
+
+:Woman-hasMarriageYear a sh:PropertyShape ;
+    sh:path :hasMarriageYear .
+
+:Woman-hasSex a sh:PropertyShape ;
+    dash:hasValueWithClass :Female ;
+    sh:class :Sex ;
+    sh:maxCount 1 ;
+    sh:path :hasSex .
+
+:Woman-isAuntOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isAuntOf .
+
+:Woman-isDaughterOf a sh:PropertyShape ;
+    sh:class :Ancestor ;
+    sh:path :isDaughterOf .
+
+:Woman-isFemalePartnerIn a sh:PropertyShape ;
+    sh:class :Marriage ;
+    sh:path :isFemalePartnerIn .
+
+:Woman-isMotherOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isMotherOf .
+
+:Woman-isSisterOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isSisterOf .
+
+:Woman-isWifeOf a sh:PropertyShape ;
+    sh:class :Person ;
+    sh:path :isWifeOf .
+
+:Woman-knownAs a sh:PropertyShape ;
+    sh:path :knownAs .
 

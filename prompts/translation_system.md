@@ -7,6 +7,8 @@ The editing agent is building a Knowledge Graph and has access to the following 
 - `AddTriple`: Adds a relationship between two nodes.
 - `UnassignClass`: Removes a class assignment.
 - `RemoveTriple`: Deletes a relationship.
+- `AddLiteral`: Adds a relationship between a node and a raw datapoint (literal)
+- `RemoveLiteral`: Removes a relationship.
 
 ### Your Task
 For every SHACL violation provided, you must generate a structured response containing:

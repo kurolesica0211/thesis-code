@@ -1,4 +1,5 @@
 import textwrap
+import json
 from pydantic import create_model, Field, BaseModel
 from langgraph.types import Command
 from typing import Literal, Callable
@@ -56,17 +57,19 @@ def violation_translation(state: TaskState, context: TaskContext):
         trans_user_msg = HumanMessage(content=trans_user_prompt)
         
         response_model = create_translation_response_model(len(state["violation_report"].violations))
-        llm = context["llm"].with_structured_output(response_model, include_raw=True)
+        
+        llm = context["translation_llm"].with_structured_output(response_model, include_raw=True)
         response = llm.invoke([trans_system_msg, trans_user_msg])
         ai_msg = response["raw"]
         parsed = response["parsed"]
         translation_convo = [trans_system_msg, trans_user_msg, ai_msg]
+        final_translation_convo = "\n\n".join([msg.pretty_repr() for msg in translation_convo])
         
         with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_convo.md", "w") as f:
-            f.write(translation_convo)
+            f.write(final_translation_convo)
         
         with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_metadata.md", "w") as f:
-            f.write(ai_msg.usage_metadata)
+            json.dump(ai_msg.usage_metadata, f, indent=4)
         
         report = state["violation_report"].model_copy()
         for i, v in enumerate(report.violations):

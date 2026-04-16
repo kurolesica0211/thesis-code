@@ -5,7 +5,7 @@ from typing import List, TypedDict, Annotated, Any
 from rdflib import Graph, URIRef
 from pydantic import BaseModel
 from operator import add
-
+from langchain_core.language_models.chat_models import BaseChatModel
 
 class RelationDef(BaseModel):
     relation: str
@@ -93,7 +93,8 @@ class TaskState(TypedDict, total=False):
     
     
 class TaskContext(TypedDict):
-    llm: Any
+    main_llm: Any
+    translation_llm: BaseChatModel
     entry_id: str
     input_text: str
     ontology_graph: Graph

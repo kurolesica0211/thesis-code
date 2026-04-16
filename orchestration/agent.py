@@ -18,7 +18,7 @@ def build_agent(tool_obj: ToolClass):
                 "iterations": state["iterations"]
             })
             
-            response = runtime.context["llm"].invoke(state["messages"])
+            response = runtime.context["main_llm"].invoke(state["messages"])
             #response = test_calls_basic(state["iterations"])
             
             append_trace(runtime.context["tracing_path"], "run.entry.agent.llm.finished", payload={
