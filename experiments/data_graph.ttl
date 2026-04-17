@@ -1,34 +1,5 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
+@prefix data: <http://example.org/data/> .
 
-  data:Albert_I a :Man ;
-      :isBrotherOf data:Rudolf_II ;
-      :isFatherOf data:Rudolf_II .
-
-  data:Charles_II a :Man ;
-      :isBrotherOf data:Philip_IV ;
-      :isFatherOf data:Philip_IV .
-
-  data:Maximilian a :Man ;
-      :isAuntOf data:Ariel_I ;
-      :isFatherOf data:Ferdinand_I .
-
-  data:Radbot a :Man ;
-      :isBrotherOf data:Guntram_the_Rich ;
-      :isFatherOf data:Guntram_the_Rich .
-
-  data:Rudolf_I_of_Germany a :Man .
-
-  data:Charles_V a :Man .
-
-  data:Ferdinand_I a :Man ;
-      :isBrotherOf data:Ariel_I .
-
-  data:Ariel_I a :Man ;
-      :isFatherOf data:Charles_V .
-
-  data:Guntram_the_Rich a :Man .
-
-  data:Philip_IV a :Man .
-
-  data:Rudolf_II a :Man .
+data:A a :Man ;
+    :isFatherOf data:A .

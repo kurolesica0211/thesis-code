@@ -21,8 +21,8 @@ Before executing any `AddTriple` call, you must mentally or explicitly (in your 
 * **Example Failure**: If the text says "John is the employer of Mary," the triple `(Mary, isEmployerOf, John)` fails because "Mary isEmployerOf John" is factually false.
 
 #### 2. Identifying the Anchor (Domain vs. Range)
-* **The Subject (Source)**: The "Origin" or "Owner." If the property is a verb, the Subject is the one performing it. 
-* **The Object (Target)**: The "Destination" or "Attribute." If the property is a verb, the Object is the one being acted upon.
+* **The Subject (Source)**: The "Origin" or "Owner." If the property is a verb, the Subject is the one performing it. Subject is always to the left of a relation.
+* **The Object (Target)**: The "Destination" or "Attribute." If the property is a verb, the Object is the one being acted upon. Object is always to the right of a relation.
 
 #### 3. Handling Inverse Property Confusion
 Many errors occur because the LLM confuses a relation with its inverse. You must be hyper-vigilant:

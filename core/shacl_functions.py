@@ -12,7 +12,8 @@ def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) ->
     conforms, results_graph, _ = py_validate(
         data_graph=data_graph,
         shacl_graph=shacl_graph,
-        ont_graph=ont_graph,
+        #ont_graph=ont_graph,
+        advanced=True,
         abort_on_first=False
     )
     

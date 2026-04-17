@@ -19,4 +19,4 @@ shacl_graph = shacl_graph.parse("custom_family_bench/family_shacl_final.ttl")
 
 conforms, report = pyshacl_validate(graph, ont_graph, shacl_graph)
 
-print(conforms)
+print(report.model_dump())

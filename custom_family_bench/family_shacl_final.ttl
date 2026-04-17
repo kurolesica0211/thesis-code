@@ -60,18 +60,71 @@
         :Person-isChildOf,
         :Person-isPartnerIn,
         :Person-isSiblingOf,
-        :Person-isSpouseOf .
+        :Person-isSpouseOf ;
+    sh:rule [
+        a sh:TripleRule ;
+        sh:subject sh:this ;
+        sh:predicate rdf:type ;
+        sh:object :Person ;
+    ] .
 
 :DomainEntity a rdfs:Class,
         sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
-    sh:property :DomainEntity-alsoKnownAs,
+    sh:property 
+    #--------- Annotation properties -------------
+        :DomainEntity-alsoKnownAs,
         :DomainEntity-formerlyKnownAs,
         :DomainEntity-hasBirthYear,
         :DomainEntity-hasDeathYear,
         :DomainEntity-hasMarriageYear,
-        :DomainEntity-knownAs .
+        :DomainEntity-knownAs,
+    #--------- Can be Ancestor -------------------
+        :Ancestor-hasChild,
+        :Ancestor-hasDaughter,
+        :Ancestor-hasSon,
+        :Ancestor-isAncestorOf,
+        :Ancestor-isFatherOf,
+        :Ancestor-isMotherOf,
+        :Ancestor-isParentOf,
+    #--------- Can be Man ------------------------
+        :Man-hasSex,
+        :Man-isBrotherOf,
+        :Man-isFatherOf,
+        :Man-isHusbandOf,
+        :Man-isMalePartnerIn,
+        :Man-isSonOf,
+        :Man-isUncleOf,
+    #--------- Can be Woman -------
+        :Woman-hasSex,
+        :Woman-isAuntOf,
+        :Woman-isDaughterOf,
+        :Woman-isFemalePartnerIn,
+        :Woman-isMotherOf,
+        :Woman-isSisterOf,
+        :Woman-isWifeOf,
+    #--------- Can be Person -----
+        :Person-hasAncestor,
+        :Person-hasBrother,
+        :Person-hasFather,
+        :Person-hasHusband,
+        :Person-hasMother,
+        :Person-hasParent,
+        :Person-hasRelation,
+        :Person-hasSex,
+        :Person-hasSister,
+        :Person-hasSpouse,
+        :Person-hasWife,
+        :Person-isBloodrelationOf,
+        :Person-isChildOf,
+        :Person-isPartnerIn,
+        :Person-isSiblingOf,
+        :Person-isSpouseOf,
+    #--------- Can be Marriage -------------------
+        :Marriage-hasFemalePartner,
+        :Marriage-hasMalePartner,
+        :Marriage-hasPartner.
 
 :Female a rdfs:Class,
         sh:NodeShape ;
@@ -141,7 +194,21 @@
         :NotAncestor-isAncestorOf,
         :Ancestor-isFatherOf,
         :Ancestor-isMotherOf,
-        :Ancestor-isParentOf .
+        :Ancestor-isParentOf ;
+    sh:rule [
+        a sh:TripleRule ;
+        sh:subject sh:this ;
+        sh:predicate rdf:type ;
+        sh:object :Person ;
+    ] .
+
+:ManDisjointnessShape
+    a sh:NodeShape ;
+    sh:targetClass :Man ;
+    sh:not [
+        sh:class :Woman ;
+    ] ;
+    sh:message "A node cannot be both a Man and a Woman." .
 
 :Marriage a rdfs:Class,
         sh:NodeShape ;
@@ -268,7 +335,25 @@
         :NotAncestor-isAncestorOf,
         :Ancestor-isFatherOf,
         :Ancestor-isMotherOf,
-        :Ancestor-isParentOf .
+        :Ancestor-isParentOf ;
+    sh:rule [
+        a sh:TripleRule ;
+        sh:subject sh:this ;
+        sh:predicate rdf:type ;
+        sh:object :Person ;
+    ] .
+
+:UncleInferenceShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf :isBrotherOf ;
+    sh:rule [
+        a sh:TripleRule ;
+        sh:subject sh:this ;
+        sh:predicate :isUncleOf ;
+        sh:object [
+            sh:path ( :isBrotherOf :hasChild )
+        ] ;
+    ] .
 
 :Ancestor-alsoKnownAs a sh:PropertyShape ;
     sh:path :alsoKnownAs .
@@ -398,7 +483,10 @@
 
 :Man-isBrotherOf a sh:PropertyShape ;
     sh:class :Person ;
-    sh:path :isBrotherOf .
+    sh:path :isBrotherOf ;
+    sh:disjoint ( :isChildOf
+                  :hasChild
+                ) .
 
 :Man-isFatherOf a sh:PropertyShape ;
     sh:class :Person ;
@@ -468,7 +556,10 @@
 
 :Person-hasBrother a sh:PropertyShape ;
     sh:class :Man ;
-    sh:path :hasBrother .
+    sh:path :hasBrother ;
+    sh:disjoint ( :isChildOf
+                  :hasChild
+                ) .
 
 :Person-hasDeathYear a sh:PropertyShape ;
     sh:path :hasDeathYear .
@@ -509,7 +600,10 @@
 
 :Person-hasSister a sh:PropertyShape ;
     sh:class :Woman ;
-    sh:path :hasSister .
+    sh:path :hasSister ;
+    sh:disjoint ( :isChildOf
+                  :hasChild
+                ) .
 
 :Person-hasSpouse a sh:PropertyShape ;
     sh:class :Person ;
@@ -533,7 +627,10 @@
 
 :Person-isSiblingOf a sh:PropertyShape ;
     sh:class :Person ;
-    sh:path :isSiblingOf .
+    sh:path :isSiblingOf ;
+    sh:disjoint ( :isChildOf
+                  :isParentOf
+                ) .
 
 :Person-isSpouseOf a sh:PropertyShape ;
     sh:class :Person ;
@@ -583,7 +680,8 @@
 
 :Woman-isAuntOf a sh:PropertyShape ;
     sh:class :Person ;
-    sh:path :isAuntOf .
+    sh:path :isAuntOf ;
+    sh:disjoint :isUncleOf .
 
 :Woman-isDaughterOf a sh:PropertyShape ;
     sh:class :Ancestor ;
@@ -599,7 +697,10 @@
 
 :Woman-isSisterOf a sh:PropertyShape ;
     sh:class :Person ;
-    sh:path :isSisterOf .
+    sh:path :isSisterOf ;
+    sh:disjoint ( :isChildOf
+                  :hasChild
+                ).
 
 :Woman-isWifeOf a sh:PropertyShape ;
     sh:class :Person ;
