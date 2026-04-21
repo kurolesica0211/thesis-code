@@ -15,7 +15,10 @@ Common challenges:
         1.2. Constraints should be inherited
     2. Property shapes propagation: :Man should get all prop shapes from :Person as well as from parallel shapes like :Ancestor (if not disjoint)
     3. For some constraints (like sh:disjoint) for each original prop all the children and equivalents should be listed as well
-    4. Inverses should be accounted for: domain, range, propertyDisjointWith, propertyChainAxiom, etc. constraints should all be correctly propagated in the ontology and transferred to the shapes, or dynamically create inverse triples with (3)
+    4. Inverse properties should be treated carefully:
+        4.1. domain and range constraints -- for inverse properties they need to be inferred, but whatever tool I tried, none gave that result. Protege shows correct inferrals, but when I export them, though with all the checkboxes marked, still there are no inferred domain/range in the ontology.
+        4.2. propertyDisjointWith -- not one reasoner inferred them; probably need to be specified in the ontology? but family ontology doesn't have it
+        4.3. propertyChainAxiom -- inverse triples should be inferred dynamically (3), otherwise if a property chain is stated in the inverses, it won't be recognized.
 
 (1)
 :UncleInferenceShape

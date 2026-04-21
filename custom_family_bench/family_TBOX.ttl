@@ -67,7 +67,7 @@
                 rdfs:domain :Person ;
                 rdfs:range :Man ;
                 owl:propertyDisjointWith ( :isChildOf
-                                           :hasChild
+                                           :isParentOf
                                          ) .
 
 
@@ -174,7 +174,7 @@
                rdfs:domain :Person ;
                rdfs:range :Woman ;
                owl:propertyDisjointWith ( :isChildOf
-                                           :hasChild
+                                           :isParentOf
                                          ) .
 
 
@@ -225,7 +225,7 @@
                  rdfs:subPropertyOf :isSiblingOf ;
                  rdfs:domain :Man ;
                  rdfs:range :Person ;
-                 owl:propertyDisjointWith ( :hasChild
+                 owl:propertyDisjointWith ( :isParentOf
                                             :isChildOf
                                           ) .
 
@@ -318,7 +318,7 @@
                 rdfs:domain :Woman ;
                 rdfs:range :Person ;
                 owl:propertyDisjointWith ( :isChildOf
-                                           :hasChild
+                                           :isParentOf
                                          ) .
 
 
@@ -407,15 +407,15 @@
                                rdf:type owl:Class
                              ] ;
          owl:disjointWith :Marriage ,
-                          :Woman .
+                          :Woman ,
+                          :Sex .
 
 
 ###  http://www.example.com/genealogy.owl#Marriage
 :Marriage rdf:type owl:Class ;
               rdfs:subClassOf :DomainEntity ;
               owl:disjointWith :Person ,
-                               :Sex ,
-                               :Woman .
+                               :Sex .
 
 
 ###  http://www.example.com/genealogy.owl#Person
@@ -443,7 +443,8 @@
                               owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                               owl:onClass :Person
                             ] ;
-            owl:disjointWith :Sex .
+            owl:disjointWith :Sex ,
+                             :Marriage .
 
 
 ###  http://www.example.com/genealogy.owl#Sex

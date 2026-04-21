@@ -12,10 +12,10 @@ graph = Graph()
 graph = graph.parse("experiments/data_graph.ttl")
 
 ont_graph = Graph()
-ont_graph = ont_graph.parse("custom_family_bench/family_TBOX.ttl")
+ont_graph = ont_graph.parse("custom_family_bench/test_ontology.ttl")
 
 shacl_graph = Graph()
-shacl_graph = shacl_graph.parse("custom_family_bench/family_shacl_final.ttl")
+shacl_graph = shacl_graph.parse("custom_family_bench/test_shapes.ttl")
 
 conforms, report = pyshacl_validate(graph, ont_graph, shacl_graph)
 
