@@ -356,7 +356,8 @@ esh:IrreflexiveConstraintComponent a sh:ConstraintComponent ;
     sh:parameter esh:IrreflexiveParameter ;
     sh:propertyValidator esh:IrreflexivePropertyValidator .
 
-esh:AsymmetricParameter sh:datatype xsd:boolean ;
+esh:AsymmetricParameter a sh:Parameter ;
+    sh:datatype xsd:boolean ;
     sh:description "When true, ensures that if A points to B, B does not point back to A." ;
     sh:name "is asymmetric" ;
     sh:path esh:isAsymmetric .
@@ -375,18 +376,21 @@ WHERE {
 esh:DisjointWithNodeValidator a sh:SPARQLSelectValidator ;
     sh:message "Class disjointness violation: {$this} cannot be an instance of {$disjointWith}." ;
     sh:select """
-SELECT $this
+SELECT $this ?disjointClass
 WHERE {
-    $this a $disjointWith .
+    $currentShape <http://example.org/esh#disjointWith> ?disjointClass .
+    $this a ?disjointClass .
 }
 """ .
 
-esh:DisjointWithParameter sh:description "Ensures the focus node is not an instance of the specified class." ;
+esh:DisjointWithParameter a sh:Parameter ;
+    sh:description "Ensures the focus node is not an instance of the specified class." ;
     sh:name "disjoint with class" ;
     sh:nodeKind sh:IRI ;
     sh:path esh:disjointWith .
 
-esh:IrreflexiveParameter sh:datatype xsd:boolean ;
+esh:IrreflexiveParameter a sh:Parameter ;
+    sh:datatype xsd:boolean ;
     sh:description "When true, ensures a node does not point to itself via this property." ;
     sh:name "is irreflexive" ;
     sh:path esh:isIrreflexive .

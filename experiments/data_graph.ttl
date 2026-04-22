@@ -1,8 +1,4 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
 
-data:B a :Man ;
-    :isFatherOf data:A .
-
-data:A a :Person ;
-    :hasFather data:B .
+data:A a :Man, :Woman .

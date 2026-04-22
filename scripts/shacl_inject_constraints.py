@@ -388,6 +388,7 @@ def ensure_disjoint_with_component(shapes: Graph) -> None:
 
     shapes.add((comp, RDF.type, SH.ConstraintComponent))
     shapes.add((comp, SH.parameter, param))
+    shapes.add((param, RDF.type, SH.Parameter))
     shapes.add((param, SH.path, ESH.disjointWith))
     shapes.add((param, SH.nodeKind, SH.IRI))
     shapes.add((param, SH.name, Literal("disjoint with class")))
@@ -413,11 +414,12 @@ def ensure_disjoint_with_component(shapes: Graph) -> None:
             validator,
             SH.select,
             Literal(
-                """
-SELECT $this
-WHERE {
-    $this a $disjointWith .
-}
+                f"""
+SELECT $this ?disjointClass
+WHERE {{
+    $currentShape <{ESH.disjointWith}> ?disjointClass .
+    $this a ?disjointClass .
+}}
 """,
             ),
         )
@@ -578,6 +580,7 @@ def ensure_irreflexive_component(shapes: Graph) -> None:
 
     shapes.add((comp, RDF.type, SH.ConstraintComponent))
     shapes.add((comp, SH.parameter, param))
+    shapes.add((param, RDF.type, SH.Parameter))
     shapes.add((param, SH.path, ESH.isIrreflexive))
     shapes.add((param, SH.datatype, XSD.boolean))
     shapes.add((param, SH.name, Literal("is irreflexive")))
@@ -621,6 +624,7 @@ def ensure_asymmetric_component(shapes: Graph) -> None:
 
     shapes.add((comp, RDF.type, SH.ConstraintComponent))
     shapes.add((comp, SH.parameter, param))
+    shapes.add((param, RDF.type, SH.Parameter))
     shapes.add((param, SH.path, ESH.isAsymmetric))
     shapes.add((param, SH.datatype, XSD.boolean))
     shapes.add((param, SH.name, Literal("is asymmetric")))

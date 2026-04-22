@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+# 1. Disjointness between properties
+data:A a :Person ;
+    :hasBrother data:B ;
+    :hasFather data:B .
+data:B a :Man .
+
+# 2. Disjointness of classes
+data:C a :Man;
+    a :Woman .
+
+# 3. Violation of domain/range constraints
+# Range
+data:D a :Person ;
+    :hasSister data:E .
+data:E a :Man .
+
+#Domain
+data:F a :Woman ;
+    :isFatherOf data:G .
+data:G a :Person .
+
+# 4. Irreflexivity violation
+data:I a :Man ;
+    :hasFather data:I .
+
+# 5. Asymmetricity violation
+data:J a :Man ;
+    :hasFather data:K .
+data:K a :Man ;
+    :hasFather data:J .
+
+# 6. Max (qualified) cardinality violation
+data:L a :Person ;
+    :hasParent data:M ;
+    :hasParent data:N ;
+    :hasParent data:P .
+data:M a :Person .
+data:N a :Person .
+data:P a :Person .
+
+# 7. Functional property violation
+data:X a :Person ;
+    :hasFather data:Y ;
+    :hasFather data:Y .
+data:Y a :Man ;
+    :hasFather data:Z ;
+    :hasFather data:Q .
+data:Z a :Man .
+data:Q a :Man .

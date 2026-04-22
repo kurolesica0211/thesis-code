@@ -8,13 +8,14 @@ from helpers import strip_uri, strip_ns
 from core.data_graph_functions import extract_classes
 
 
-def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph) -> tuple[bool, ValidationReport]:
+def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph, debug: bool = False) -> tuple[bool, ValidationReport]:
     conforms, results_graph, _ = py_validate(
-        data_graph=data_graph,
+        data_graph=data_graph + shacl_graph,
         shacl_graph=shacl_graph,
         #ont_graph=ont_graph,
         advanced=True,
         abort_on_first=False,
+        debug=debug
     )
     
     report = ValidationReport(conforms=conforms)
