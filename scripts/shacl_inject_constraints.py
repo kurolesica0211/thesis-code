@@ -406,7 +406,7 @@ def ensure_disjoint_with_component(shapes: Graph) -> None:
         (
             validator,
             SH.message,
-            Literal("Class disjointness violation: {$this} cannot be an instance of {$disjointWith}."),
+            Literal("Class disjointness violation."),
         )
     )
     shapes.add(
@@ -597,7 +597,7 @@ def ensure_irreflexive_component(shapes: Graph) -> None:
         (
             validator,
             SH.message,
-            Literal("Irreflexive violation: Node {$this} points to itself via {$PATH}."),
+            Literal("Irreflexive violation: Node {$this} points to itself."),
         )
     )
     shapes.add(
@@ -643,7 +643,7 @@ def ensure_asymmetric_component(shapes: Graph) -> None:
         (
             validator,
             SH.message,
-            Literal("Asymmetric violation: Node {$this} and Node {?value} point to each other via {$PATH}."),
+            Literal("Asymmetric violation: Node {$this} and another node point to each other."),
         )
     )
     shapes.add(
@@ -702,6 +702,54 @@ def remove_min_count(shapes: Graph) -> int:
     return len(triples)
 
 
+def add_multi_domain_subject_shapes(ontology: Graph, shapes: Graph) -> int:
+    """Create SHACL NodeShapes for properties with conjunctive URI domains.
+
+    For each property P that has multiple rdfs:domain class IRIs, create a
+    shape that targets sh:targetSubjectsOf P and adds one sh:class per domain
+    class. In SHACL, multiple sh:class constraints on a NodeShape are combined
+    with logical AND.
+
+    Blank-node domain expressions are ignored by design.
+    """
+
+    property_domains: Dict[URIRef, Set[URIRef]] = {}
+    for prop, _, domain in ontology.triples((None, RDFS.domain, None)):
+        if isinstance(prop, URIRef) and isinstance(domain, URIRef):
+            property_domains.setdefault(prop, set()).add(domain)
+
+    added = 0
+    for prop, domains in sorted(property_domains.items(), key=lambda item: str(item[0])):
+        if len(domains) < 2:
+            continue
+
+        shape_uri = stable_iri(ESH, "DomainConjunctionShape", prop)
+
+        if (shape_uri, RDF.type, SH.NodeShape) not in shapes:
+            shapes.add((shape_uri, RDF.type, SH.NodeShape))
+            added += 1
+
+        if (shape_uri, SH.targetSubjectsOf, prop) not in shapes:
+            shapes.add((shape_uri, SH.targetSubjectsOf, prop))
+            added += 1
+
+        class_predicate = SH["class"]
+        for domain_cls in sorted(domains, key=str):
+            if (shape_uri, class_predicate, domain_cls) not in shapes:
+                shapes.add((shape_uri, class_predicate, domain_cls))
+                added += 1
+
+        class_list = ", ".join(local_name(c) for c in sorted(domains, key=str))
+        message = Literal(
+            f"Any subject of {local_name(prop)} must be all of: {class_list}."
+        )
+        if (shape_uri, SH.message, message) not in shapes:
+            shapes.add((shape_uri, SH.message, message))
+            added += 1
+
+    return added
+
+
 def apply_all(ontology: Graph, shapes: Graph) -> Dict[str, int]:
     shapes.bind("esh", ESH)
 
@@ -712,6 +760,7 @@ def apply_all(ontology: Graph, shapes: Graph) -> Dict[str, int]:
     inferred_rules = add_superclass_inference_rules(ontology, shapes)
     prop_disjoint = enrich_property_disjointness(ontology, shapes)
     irref_added, asym_added = mark_irreflexive_and_asymmetric_properties(ontology, shapes)
+    multi_domain_shape_terms = add_multi_domain_subject_shapes(ontology, shapes)
     removed_min_count = remove_min_count(shapes)
 
     return {
@@ -723,6 +772,7 @@ def apply_all(ontology: Graph, shapes: Graph) -> Dict[str, int]:
         "property_disjoint_constraints_added": prop_disjoint,
         "irreflexive_flags_added": irref_added,
         "asymmetric_flags_added": asym_added,
+        "multi_domain_subject_shape_terms_added": multi_domain_shape_terms,
         "min_count_removed": removed_min_count,
     }
 

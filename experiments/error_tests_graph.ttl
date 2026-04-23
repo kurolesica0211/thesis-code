@@ -5,7 +5,7 @@
 data:A a :Person ;
     :hasBrother data:B ;
     :hasFather data:B .
-data:B a :Man .
+data:B a :Man, :Ancestor .
 
 # 2. Disjointness of classes
 data:C a :Man;
@@ -20,16 +20,16 @@ data:E a :Man .
 #Domain
 data:F a :Woman ;
     :isFatherOf data:G .
-data:G a :Person .
+data:G a :Person, :Ancestor .
 
 # 4. Irreflexivity violation
-data:I a :Man ;
+data:I a :Man, :Ancestor ;
     :hasFather data:I .
 
 # 5. Asymmetricity violation
-data:J a :Man ;
+data:J a :Man, :Ancestor ;
     :hasFather data:K .
-data:K a :Man ;
+data:K a :Man, :Ancestor ;
     :hasFather data:J .
 
 # 6. Max (qualified) cardinality violation
@@ -37,16 +37,16 @@ data:L a :Person ;
     :hasParent data:M ;
     :hasParent data:N ;
     :hasParent data:P .
-data:M a :Person .
-data:N a :Person .
-data:P a :Person .
+data:M a :Person, :Ancestor .
+data:N a :Person, :Ancestor .
+data:P a :Person, :Ancestor .
 
 # 7. Functional property violation
 data:X a :Person ;
     :hasFather data:Y ;
     :hasFather data:Y .
-data:Y a :Man ;
+data:Y a :Man, :Ancestor ;
     :hasFather data:Z ;
     :hasFather data:Q .
-data:Z a :Man .
-data:Q a :Man .
+data:Z a :Man, :Ancestor .
+data:Q a :Man, :Ancestor .

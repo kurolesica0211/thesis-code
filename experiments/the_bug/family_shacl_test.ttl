@@ -14,7 +14,7 @@
 
 :Man a rdfs:Class,
         sh:NodeShape ;
-    esh:disjointWith :Woman ;
+    esh:disjointWith :Woman, :DomainEntity, :Person, :Male, :Female ;
     rdfs:subClassOf [ ] ;
     owl:intersectionOf [ ] ;
     sh:closed true ;
@@ -27,7 +27,28 @@
 
 :Woman a rdfs:Class,
         sh:NodeShape ;
-    esh:disjointWith :Man ;
+    esh:disjointWith :Man, :DomainEntity, :Person, :Male, :Female ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+:Sex a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+:Male a rdfs:Class,
+        sh:NodeShape ;
+    rdfs:subClassOf [ ] ;
+    owl:intersectionOf [ ] ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) .
+
+:Female a rdfs:Class,
+        sh:NodeShape ;
     rdfs:subClassOf [ ] ;
     owl:intersectionOf [ ] ;
     sh:closed true ;
@@ -39,12 +60,12 @@ esh:DisjointWithConstraintComponent a sh:ConstraintComponent ;
 
 esh:DisjointWithNodeValidator a sh:SPARQLSelectValidator ;
     sh:message "Class disjointness violation: {$this} cannot be an instance of {$disjointWith}." ;
-    sh:select """
+    sh:select"""
 SELECT $this
 WHERE {
     $this a $disjointWith .
 }
-""" .
+""".
 
 esh:DisjointWithParameter a sh:Parameter ;
     sh:description "Ensures the focus node is not an instance of the specified class." ;

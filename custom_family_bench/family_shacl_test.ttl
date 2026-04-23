@@ -352,6 +352,18 @@ esh:DisjointWithConstraintComponent a sh:ConstraintComponent ;
     sh:nodeValidator esh:DisjointWithNodeValidator ;
     sh:parameter esh:DisjointWithParameter .
 
+esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
+    sh:class :Ancestor,
+        :Man ;
+    sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
+    sh:targetSubjectsOf :isFatherOf .
+
+esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
+    sh:class :Ancestor,
+        :Woman ;
+    sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
+    sh:targetSubjectsOf :isMotherOf .
+
 esh:IrreflexiveConstraintComponent a sh:ConstraintComponent ;
     sh:parameter esh:IrreflexiveParameter ;
     sh:propertyValidator esh:IrreflexivePropertyValidator .
@@ -363,7 +375,7 @@ esh:AsymmetricParameter a sh:Parameter ;
     sh:path esh:isAsymmetric .
 
 esh:AsymmetricPropertyValidator a sh:SPARQLSelectValidator ;
-    sh:message "Asymmetric violation: Node {$this} and Node {?value} point to each other via {$PATH}." ;
+    sh:message "Asymmetric violation: Node {$this} and another node point to each other via {$PATH}." ;
     sh:select """
 SELECT $this ?value
 WHERE {
@@ -374,7 +386,7 @@ WHERE {
 """ .
 
 esh:DisjointWithNodeValidator a sh:SPARQLSelectValidator ;
-    sh:message "Class disjointness violation: {$this} cannot be an instance of {$disjointWith}." ;
+    sh:message "Class disjointness violation." ;
     sh:select """
 SELECT $this ?disjointClass
 WHERE {
@@ -564,6 +576,8 @@ esh:InferTypeRule_Person a sh:TripleRule ;
     sh:path :hasBrother .
 
 :Person-hasFather a sh:PropertyShape ;
+    esh:isAsymmetric true ;
+    esh:isIrreflexive true ;
     sh:class :Ancestor,
         :Man ;
     sh:maxCount 1 ;
