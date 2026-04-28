@@ -6,6 +6,7 @@ from langchain.chat_models import init_chat_model
 
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
+from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
 from orchestration.tools import ToolClass
 from orchestration.tracing import append_trace
 from orchestration.agent import build_agent, TaskState, TaskContext
@@ -14,7 +15,7 @@ from models.data_models import TaskEntry
 
 def _build_loader(config: RunConfig):
     if config.dataset.source == "custom_family_bench":
-        loader = base_family_get_loader()
+        loader = look_up_family_get_loader()
         
     return loader
 
@@ -48,8 +49,10 @@ def run(config: RunConfig):
     main_system_prompt = get_prompt(main_system_prompt_path)
     main_system_msg = SystemMessage(main_system_prompt)
     
-    for task_entry in tqdm(loader.load(), total=loader.get_total()):
+    for i, task_entry in enumerate(tqdm(loader.load(), total=loader.get_total())):
         task_entry: TaskEntry
+        if config.runtime.same_data_graph and i > 0:
+            task_entry.data_graph = last_data_graph
         
         append_trace(trace_path, "run.entry.start", payload={
             "entry_idx": task_entry.entry_id
@@ -129,6 +132,7 @@ def run(config: RunConfig):
         #––––– Dump the results –––––––––––––––––––––––––––––––
         with open(results_path, "w") as f:
             f.write(final_state["data_graph"].serialize(format="turtle"))
+        last_data_graph = final_state["data_graph"]
             
         final_convo = "\n\n".join([msg.pretty_repr() for msg in final_state["messages"]])
         with open(f"{artifacts_dir}/final_convo.md", "w") as f:

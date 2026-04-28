@@ -1,3 +1,6 @@
 .vscode/
 .env
 __pycache__/
+custom_family_bench/british_royalty_texts/*.txt
+custom_family_bench/potential_texts/*.txt
+.DS_Store

@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDaughter data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasDeathYear 2022 ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSpouse data:Victoria .
+
+data:Prince_Edward a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Victoria_of_Saxe_Coburg_Saalfeld a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Victoria a :Person,
+        :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasFather data:Prince_Edward ;
+    :hasMarriageYear 1840 ;
+    :hasMother data:Princess_Victoria_of_Saxe_Coburg_Saalfeld ;
+    :hasSpouse data:Prince_Albert .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasSpouse data:George_VI ;
+    :isSpouseOf data:George_VI .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+

@@ -1,0 +1,1290 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data:Charles_III data:wdtLink wdt:Q43274 ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex :Male .
+
+data:Abel_Smith data:wdtLink wdt:Q4666619 ;
+    :hasParent data:Abel_Smith_1,
+        data:Jane_Beaumont ;
+    :hasSex :Male .
+
+data:Abel_Smith_1 data:wdtLink wdt:Q75374654 .
+
+data:Agnes_Kendeffy_de_Malmoviz data:wdtLink wdt:Q75448095 .
+
+data:Ahasverus_Ernst_Graf_von_Lehndorff data:wdtLink wdt:Q75393520 .
+
+data:Albert_Cristòfol_de_Dohna-Leistenau data:wdtLink wdt:Q11904762 .
+
+data:Alexandra_Feodorovna data:wdtLink wdt:Q57207 ;
+    :hasParent data:Frederick_William_III_of_Prussia,
+        data:Louise_of_Mecklenburg-Strelitz ;
+    :hasSex :Female .
+
+data:Alexandra_of_Denmark data:wdtLink wdt:Q152260 ;
+    :hasParent data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse-Kassel ;
+    :hasSex :Female .
+
+data:Alice_Leigh data:wdtLink wdt:Q100389112 .
+
+data:Andrew_Burnaby data:wdtLink wdt:Q3616247 ;
+    :hasParent data:Andrew_Burnaby_1,
+        data:Hannah_Beaumont ;
+    :hasSex :Male .
+
+data:Andrew_Burnaby_1 data:wdtLink wdt:Q75242666 .
+
+data:Ann data:wdtLink wdt:Q100389108 .
+
+data:Ann_Newland data:wdtLink wdt:Q100389124 .
+
+data:Anna_Barbara data:wdtLink wdt:Q101530157 .
+
+data:Anna_Boer_de_Kopascsel data:wdtLink wdt:Q75448102 .
+
+data:Anna_Petrovna_of_Russia data:wdtLink wdt:Q153319 .
+
+data:Anne-_Princess_Royal_and_Princess_of_Orange data:wdtLink wdt:Q239487 .
+
+data:Anne_Caroline_Salisbury data:wdtLink wdt:Q1102293 ;
+    :hasParent data:Frances_Webb,
+        data:Thomas_Salisbury ;
+    :hasSex :Female .
+
+data:Anne_Edwyn data:wdtLink wdt:Q75875389 ;
+    :hasParent data:John_Edwyn,
+        data:Mary ;
+    :hasSex :Female .
+
+data:Anne_Peploe data:wdtLink wdt:Q75507841 .
+
+data:Anne_Stafford data:wdtLink wdt:Q75386340 .
+
+data:Anne_Wellesley data:wdtLink wdt:Q6470028 ;
+    :hasParent data:Hyacinthe-Gabrielle_Roland,
+        data:Richard_Wellesley-_1st_Marquess_Wellesley ;
+    :hasSex :Female .
+
+data:Anne_Wellesley-_Countess_of_Mornington data:wdtLink wdt:Q66349619 ;
+    :hasParent data:Anne_Stafford,
+        data:Arthur_Hill-Trevor-_1st_Viscount_Dungannon ;
+    :hasSex :Female .
+
+data:Anton_Kornély data:wdtLink wdt:Q101530218 ;
+    :hasSex :Male .
+
+data:Arthur_Hill-Trevor-_1st_Viscount_Dungannon data:wdtLink wdt:Q4799071 .
+
+data:August_von_Senarclens_de_Grancy data:wdtLink wdt:Q68351 ;
+    :hasParent data:Cesar_Auguste_de_Senarclens_de_Grancy-_Seigneur_de_Saint-Denis,
+        data:Claudine_Marie-Rose_de_Loriol ;
+    :hasSex :Male .
+
+data:Augusta_Frederica_Wilhelmine_of_Nassau-Idstein data:wdtLink wdt:Q6592667 .
+
+data:Auguste_Victor_de_Senarclens-_Seigneur_de_Grancy-_Senarclens-_Gollion_et_de_Vufflens-le-Château data:wdtLink wdt:Q108733920 ;
+    :hasParent data:Louise_Benigne_Salomé_de_Gingins_La_Sarraz,
+        data:Pierre_Daniel_de_Senarclens-_Seigneur_de_Grancy-_Senarclens_et_de_Vufflens-le-Château ;
+    :hasSex :Male .
+
+data:Augustus-_Duke_of_Saxe-Gotha-Altenburg data:wdtLink wdt:Q62262 ;
+    :hasParent data:Ernest_II-_Duke_of_Saxe-Gotha-Altenburg,
+        data:Princess_Charlotte_of_Saxe-Meiningen ;
+    :hasSex :Male .
+
+data:Baron_Balthazar_Banffy_de_Losoncz data:wdtLink wdt:Q75240830 .
+
+data:Baron_Gregor_Inczedy_de_Nagy-Varad data:wdtLink wdt:Q75448091 .
+
+data:Baroness_Christine_Kemeny_de_Magyar-Gyero-Monostor data:wdtLink wdt:Q75269245 .
+
+data:Benno_Leopold_Ignatius_Lafontaine data:wdtLink wdt:Q101530195 ;
+    :hasParent data:Jean_de_La_Fontaine,
+        data:Maria_Rosalia_Bonelli ;
+    :hasSex :Male .
+
+data:Bryan_Hodgson-_of_Ashbourn data:wdtLink wdt:Q100389059 .
+
+data:Caroline_of_Nassau-Saarbrücken data:wdtLink wdt:Q469041 .
+
+data:Caroline_of_Orange-Nassau data:wdtLink wdt:Q256638 ;
+    :hasParent data:Anne-_Princess_Royal_and_Princess_of_Orange,
+        data:William_IV-_Prince_of_Orange ;
+    :hasSex :Female .
+
+data:Catherine_Armand data:wdtLink wdt:Q108733980 .
+
+data:Catherine_Cavendish-_Duchess_of_Devonshire data:wdtLink wdt:Q56778332 .
+
+data:Catherine_II_of_Russia data:wdtLink wdt:Q36450 ;
+    :hasParent data:Christian_August-_Prince_of_Anhalt-Zerbst,
+        data:Joanna_Elisabeth_of_Holstein-Gottorp ;
+    :hasSex :Female .
+
+data:Catherine_Tronchin data:wdtLink wdt:Q108733971 ;
+    :hasParent data:Catherine_Armand,
+        data:Pierre_Tronchin ;
+    :hasSex :Female .
+
+data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q238820 ;
+    :hasParent data:Charles_Cavendish-Bentinck,
+        data:Louisa_Burnaby ;
+    :hasSex :Female .
+
+data:Cesar_Auguste_de_Senarclens_de_Grancy-_Seigneur_de_Saint-Denis data:wdtLink wdt:Q76366874 ;
+    :hasParent data:Auguste_Victor_de_Senarclens-_Seigneur_de_Grancy-_Senarclens-_Gollion_et_de_Vufflens-le-Château,
+        data:Madelaine_de_Chandieu-_Dame_de_La_Chaux ;
+    :hasSex :Male .
+
+data:Charles_Alexander-_Duke_of_Württemberg data:wdtLink wdt:Q61946 .
+
+data:Charles_Augustus_of_Nassau-Weilburg data:wdtLink wdt:Q475952 .
+
+data:Charles_Cavendish-Bentinck data:wdtLink wdt:Q128341 ;
+    :hasParent data:Anne_Wellesley,
+        data:Lord_Charles_Bentinck ;
+    :hasSex :Male .
+
+data:Charles_Christian_of_Nassau-Weilburg data:wdtLink wdt:Q664164 ;
+    :hasParent data:Augusta_Frederica_Wilhelmine_of_Nassau-Idstein,
+        data:Charles_Augustus_of_Nassau-Weilburg ;
+    :hasSex :Male .
+
+data:Charles_Esaie_de_Chandieu-_Seigneur_de_Chabottes data:wdtLink wdt:Q108733939 .
+
+data:Charles_Frederick-_Duke_of_Schleswig-Holstein-Gottorp data:wdtLink wdt:Q57852 .
+
+data:Charles_of_Nassau-Usingen data:wdtLink wdt:Q475936 .
+
+data:Charlotte_Cavendish-_Marchioness_of_Hartington data:wdtLink wdt:Q3666720 ;
+    :hasParent data:Dorothy_Boyle-_Countess_of_Burlington_and_Countess_of_Cork,
+        data:Richard_Boyle-_3rd_Earl_of_Burlington ;
+    :hasSex :Female .
+
+data:Charlotte_Lyon-Bowes-_Lady_Glamis data:wdtLink wdt:Q2918041 ;
+    :hasParent data:Charlotte_Walsh,
+        data:Joseph_Valentine_Grimstead ;
+    :hasSex :Female .
+
+data:Charlotte_Philippine_Juliane_Westermann data:wdtLink wdt:Q101530184 ;
+    :hasParent data:Johann_Heinrich_Westermann,
+        data:Sophia_Elisabeth_Eleonore_Bode ;
+    :hasSex :Female .
+
+data:Charlotte_Walsh data:wdtLink wdt:Q61610878 ;
+    :hasParent data:Elizabeth,
+        data:John_Walsh ;
+    :hasSex :Female .
+
+data:Christian_August-_Prince_of_Anhalt-Zerbst data:wdtLink wdt:Q699473 .
+
+data:Christian_III-_Count_Palatine_of_Zweibrücken data:wdtLink wdt:Q61966 .
+
+data:Christian_Karl_Reinhard_of_Leiningen-Dachsburg-Falkenburg-Heidesheim data:wdtLink wdt:Q71995 .
+
+data:Christian_Ludwig_II-_Duke_of_Mecklenburg-Schwerin data:wdtLink wdt:Q664223 .
+
+data:Christian_VI_of_Denmark data:wdtLink wdt:Q154993 .
+
+data:Christiane_Emilie_of_Schwarzburg-Sondershausen data:wdtLink wdt:Q4241281 .
+
+data:Christine_Wilhelmine_of_Saxe-Eisenach data:wdtLink wdt:Q6335864 .
+
+data:Christopher_Alexander_Fagan data:wdtLink wdt:Q75892808 ;
+    :hasParent data:Christiana_Fitzmaurice,
+        data:Patrick_Fagan ;
+    :hasSex :Male .
+
+data:Claude_Bowes-Lyon-_13th_Earl_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q741870 ;
+    :hasParent data:Charlotte_Lyon-Bowes-_Lady_Glamis,
+        data:Thomas_Lyon-Bowes-_Lord_Glamis ;
+    :hasSex :Male .
+
+data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q335159 ;
+    :hasParent data:Claude_Bowes-Lyon-_13th_Earl_of_Strathmore_and_Kinghorne,
+        data:Frances_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSex :Male .
+
+data:Claudine_Marie-Rose_de_Loriol data:wdtLink wdt:Q76366875 ;
+    :hasParent data:Catherine_Tronchin,
+        data:Rodolphe_Daniel_de_Loriol-_Seigneur_de_Villars-_Etoy-_Chaumergy-_Montfort ;
+    :hasSex :Female .
+
+data:Count_Karl_Leopold_von_Schlieben data:wdtLink wdt:Q5176673 ;
+    :hasParent data:Countess_Katharina_Dorothea_Finck_of_Finckenstein,
+        data:Georg_Adam_von-_Graf_Schlieben ;
+    :hasSex :Male .
+
+data:Countess_Caroline_Felizitas_of_Leiningen-Dagsburg data:wdtLink wdt:Q5177056 ;
+    :hasParent data:Christian_Karl_Reinhard_of_Leiningen-Dachsburg-Falkenburg-Heidesheim,
+        data:Katharina_Polyxena_von_Solms-Rödelheim ;
+    :hasSex :Female .
+
+data:Countess_Caroline_of_Erbach-Fürstenau data:wdtLink wdt:Q203579 .
+
+data:Countess_Charlotte_of_Dohna-Leistenau data:wdtLink wdt:Q2616024 ;
+    :hasParent data:Albert_Cristòfol_de_Dohna-Leistenau,
+        data:Sophie_Henriette_of_Schleswig-Holstein-Sonderbourg-Beck ;
+    :hasSex :Female .
+
+data:Countess_Claudine_Rhédey_von_Kis-Rhéde data:wdtLink wdt:Q265865 ;
+    :hasParent data:László_Rhédey_de_Kis-Rhéde,
+        data:Ágnes_Inczédy_de_Nagy-Várad ;
+    :hasSex :Female .
+
+data:Countess_Friederike_of_Schlieben data:wdtLink wdt:Q3822926 ;
+    :hasParent data:Count_Karl_Leopold_von_Schlieben,
+        data:Marie_Eleanore_Gräfin_von_Lehndorff ;
+    :hasSex :Female .
+
+data:Countess_Karoline_Ernestine_of_Erbach-Schönberg data:wdtLink wdt:Q2291709 .
+
+data:Countess_Katharina_Dorothea_Finck_of_Finckenstein data:wdtLink wdt:Q91755 .
+
+data:Countess_Sophia_Albertine_of_Erbach-Erbach data:wdtLink wdt:Q463339 .
+
+data:Deborah_Chesalden data:wdtLink wdt:Q100389102 .
+
+data:Dorothea_Wilhelmine_of_Saxe-Zeitz data:wdtLink wdt:Q459142 .
+
+data:Dorothy_Bentinck-_Duchess_of_Portland data:wdtLink wdt:Q17308968 ;
+    :hasParent data:Charlotte_Cavendish-_Marchioness_of_Hartington,
+        data:William_Cavendish-_4th_Duke_of_Devonshire ;
+    :hasSex :Female .
+
+data:Dorothy_Boyle-_Countess_of_Burlington_and_Countess_of_Cork data:wdtLink wdt:Q18642364 .
+
+data:Dorothy_Smyth data:wdtLink wdt:Q75666243 .
+
+data:Duchess_Amelia_of_Württemberg data:wdtLink wdt:Q271080 ;
+    :hasParent data:Duke_Ludwig_of_Württemberg,
+        data:Henriette_of_Nassau-Weilburg ;
+    :hasSex :Female .
+
+data:Duchess_Charlotte_Georgine_of_Mecklenburg-Strelitz data:wdtLink wdt:Q261809 ;
+    :hasParent data:Karl_II-_Grand_Duke_of_Mecklenburg-Strelitz,
+        data:Landgravine_Friederike_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Duchess_Gustave_Caroline_of_Mecklenburg-Strelitz data:wdtLink wdt:Q3779909 .
+
+data:Duchess_Louise_Charlotte_of_Mecklenburg-Schwerin data:wdtLink wdt:Q61781 ;
+    :hasParent data:Frederick_Francis_I-_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Princess_Louise_of_Saxe-Gotha-Altenburg_1 ;
+    :hasSex :Female .
+
+data:Duchess_Luise_of_Brunswick-Wolfenbüttel data:wdtLink wdt:Q267458 .
+
+data:Duchess_Sophia_Frederica_of_Mecklenburg-Schwerin data:wdtLink wdt:Q237793 ;
+    :hasParent data:Louis-_Hereditary_Prince_of_Mecklenburg-Schwerin,
+        data:Princess_Charlotte_Sophie_of_Saxe-Coburg-Saalfeld ;
+    :hasSex :Female .
+
+data:Duke_Adolf_Friedrich_II-_Duke_of_Mecklenburg-Strelitz data:wdtLink wdt:Q361684 .
+
+data:Duke_Alexander_of_Württemberg data:wdtLink wdt:Q61155 ;
+    :hasParent data:Duke_Ludwig_of_Württemberg,
+        data:Henriette_of_Nassau-Weilburg ;
+    :hasSex :Male .
+
+data:Edward_Garritt data:wdtLink wdt:Q100389122 .
+
+data:Edward_Harley-_2nd_Earl_of_Oxford_and_Earl_Mortimer data:wdtLink wdt:Q5343313 .
+
+data:Edward_Salisbury-_of_Marshfield data:wdtLink wdt:Q100389111 .
+
+data:Edward_VII data:wdtLink wdt:Q20875 ;
+    :hasParent data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Victoria ;
+    :hasSex :Male .
+
+data:Edwyn_Andrew_Burnaby data:wdtLink wdt:Q61610956 ;
+    :hasParent data:Andrew_Burnaby,
+        data:Anne_Edwyn ;
+    :hasSex :Male .
+
+data:Edwyn_Burnaby data:wdtLink wdt:Q5346963 ;
+    :hasParent data:Edwyn_Andrew_Burnaby,
+        data:Mary_Browne ;
+    :hasSex :Male .
+
+data:Eleanor_Creswick data:wdtLink wdt:Q75793442 ;
+    :hasParent data:Elizabeth_Lautol,
+        data:Joseph_Creswick ;
+    :hasSex :Female .
+
+data:Elizabeth-Ellen_Alcock data:wdtLink wdt:Q100389061 .
+
+data:Elizabeth_Bayley data:wdtLink wdt:Q75507838 ;
+    :hasParent data:Anne_Peploe,
+        data:James_Bayley ;
+    :hasSex :Female .
+
+data:Elizabeth_Bushe data:wdtLink wdt:Q100389076 .
+
+data:Elizabeth_II data:wdtLink wdt:Q9682 ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex :Female .
+
+data:Elizabeth_Langley data:wdtLink wdt:Q75793452 .
+
+data:Elizabeth_Lautol data:wdtLink wdt:Q75793463 .
+
+data:Elizabeth_Martyn data:wdtLink wdt:Q76329835 .
+
+data:Elizabeth_Noel data:wdtLink wdt:Q75248662 .
+
+data:Elizabeth_Parker data:wdtLink wdt:Q76135911 .
+
+data:Elizabeth_Sale data:wdtLink wdt:Q75386337 .
+
+data:Ernest_Augustus_I-_Duke_of_Saxe-Weimar-Eisenach data:wdtLink wdt:Q65885 .
+
+data:Ernest_Frederick_I-_Duke_of_Saxe-Hildburghausen data:wdtLink wdt:Q169080 .
+
+data:Ernest_Frederick_II-_Duke_of_Saxe-Hildburghausen data:wdtLink wdt:Q570512 .
+
+data:Ernest_Frederick_III-_Duke_of_Saxe-Hildburghausen data:wdtLink wdt:Q699476 ;
+    :hasParent data:Countess_Caroline_of_Erbach-Fürstenau,
+        data:Ernest_Frederick_II-_Duke_of_Saxe-Hildburghausen ;
+    :hasSex :Male .
+
+data:Ernest_Frederick_of_Saxe-Coburg-Saalfeld data:wdtLink wdt:Q61431 .
+
+data:Ernest_I-_Duke_of_Saxe-Coburg_and_Gotha data:wdtLink wdt:Q58770 ;
+    :hasParent data:Countess_Augusta_Reuss_of_Ebersdorf,
+        data:Francis-_Duke_of_Saxe-Coburg-Saalfeld ;
+    :hasSex :Male .
+
+data:Ernest_II-_Duke_of_Saxe-Gotha-Altenburg data:wdtLink wdt:Q213698 .
+
+data:Ernestine_Augusta_of_Saxe-Weimar data:wdtLink wdt:Q453784 ;
+    :hasParent data:Ernest_Augustus_I-_Duke_of_Saxe-Weimar-Eisenach,
+        data:Sophie_Charlotte_of_Brandenburg-Bayreuth ;
+    :hasSex :Female .
+
+data:Ferdinand_Albert_II-_Duke_of_Brunswick-Wolfenbüttel data:wdtLink wdt:Q551123 .
+
+data:Frances_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q2592020 ;
+    :hasParent data:Henrietta_Mildred_Hodgson,
+        data:Oswald_Smith ;
+    :hasSex :Female .
+
+data:Frances_Mary_Mosley data:wdtLink wdt:Q61610896 ;
+    :hasParent data:Elizabeth_Bayley,
+        data:Sir_John_Parker_Mosley-_1st_Bt ;
+    :hasSex :Female .
+
+data:Frances_Skey data:wdtLink wdt:Q76277564 .
+
+data:Frances_Webb data:wdtLink wdt:Q20993858 ;
+    :hasParent data:Francis_Webb,
+        data:Mary_Garritt ;
+    :hasSex :Female .
+
+data:Francis-_Duke_of_Teck data:wdtLink wdt:Q535987 ;
+    :hasParent data:Countess_Claudine_Rhédey_von_Kis-Rhéde,
+        data:Duke_Alexander_of_Württemberg ;
+    :hasSex :Male .
+
+data:Francis_Josias-_Duke_of_Saxe-Coburg-Saalfeld data:wdtLink wdt:Q62273 .
+
+data:Francis_Tucker data:wdtLink wdt:Q75950560 .
+
+data:Francis_Webb data:wdtLink wdt:Q76277562 ;
+    :hasParent data:Frances_Skey,
+        data:John_Webb ;
+    :hasSex :Male .
+
+data:Franz_Joseph_Leonhardt data:wdtLink wdt:Q101530209 .
+
+data:Franz_Leopold_Lafontaine data:wdtLink wdt:Q214286 ;
+    :hasParent data:Benno_Leopold_Ignatius_Lafontaine,
+        data:Maria_Katharina_Franziska_Leonhardt ;
+    :hasSex :Male .
+
+data:Frederick-_Duke_of_Saxe-Hildburghausen data:wdtLink wdt:Q215903 ;
+    :hasParent data:Ernest_Frederick_III-_Duke_of_Saxe-Hildburghausen,
+        data:Ernestine_Augusta_of_Saxe-Weimar ;
+    :hasSex :Male .
+
+data:Frederick-_Hereditary_Prince_of_Baden-Durlach data:wdtLink wdt:Q62533 .
+
+data:Frederick-_Prince_of_Wales data:wdtLink wdt:Q165349 ;
+    :hasParent data:Caroline_of_Ansbach,
+        data:George_II_of_Great_Britain ;
+    :hasSex :Male .
+
+data:Frederick_Francis_I-_Grand_Duke_of_Mecklenburg-Schwerin data:wdtLink wdt:Q58025 .
+
+data:Frederick_II-_Duke_of_Saxe-Gotha-Altenburg data:wdtLink wdt:Q61447 .
+
+data:Frederick_IV-_Landgrave_of_Hesse-Homburg data:wdtLink wdt:Q529539 .
+
+data:Frederick_V-_Landgrave_of_Hesse-Homburg data:wdtLink wdt:Q214050 ;
+    :hasParent data:Frederick_IV-_Landgrave_of_Hesse-Homburg,
+        data:Ulrike_Louise_of_Solms-Braunfels ;
+    :hasSex :Male .
+
+data:Frederick_William-_Margrave_of_Brandenburg-Schwedt data:wdtLink wdt:Q689201 .
+
+data:Frederick_William_III_of_Prussia data:wdtLink wdt:Q37134 ;
+    :hasParent data:Frederika_Louisa_of_Hesse-Darmstadt,
+        data:Friedrich_Wilhelm_II_of_Prussia ;
+    :hasSex :Male .
+
+data:Frederik-_Hereditary_Prince_of_Denmark data:wdtLink wdt:Q374885 ;
+    :hasParent data:Frederick_V_of_Denmark,
+        data:Juliana_Maria_of_Brunswick-Wolfenbüttel ;
+    :hasSex :Male .
+
+data:Friedrich_Karl_Emanuel_Hauke data:wdtLink wdt:Q8861642 ;
+    :hasParent data:Ignatius_Hauck,
+        data:Maria_Franziska_Riedesel_zu_Eisenbach ;
+    :hasSex :Male .
+
+data:Friedrich_Karl_Ludwig-_Duke_of_Schleswig-Holstein-Sonderburg-Beck data:wdtLink wdt:Q62109 ;
+    :hasParent data:Countess_Charlotte_of_Dohna-Leistenau,
+        data:Karl_Anton_August_von_Schleswig-Holstein-Sonderburg-Beck ;
+    :hasSex :Male .
+
+data:Friedrich_Wilhelm-_Duke_of_Schleswig-Holstein-Sonderburg-Glücksburg data:wdtLink wdt:Q240302 ;
+    :hasParent data:Countess_Friederike_of_Schlieben,
+        data:Friedrich_Karl_Ludwig-_Duke_of_Schleswig-Holstein-Sonderburg-Beck ;
+    :hasSex :Male .
+
+data:Garret_Wesley-_1st_Earl_of_Mornington data:wdtLink wdt:Q3758414 ;
+    :hasParent data:Elizabeth_Sale,
+        data:Richard_Wesley-_1st_Baron_Mornington ;
+    :hasSex :Male .
+
+data:Georg_Adam_von-_Graf_Schlieben data:wdtLink wdt:Q55676699 .
+
+data:Georg_XX_Riedesel-_Freiherr_zu_Eisenbach data:wdtLink wdt:Q101530166 .
+
+data:George_Bowes data:wdtLink wdt:Q5537154 .
+
+data:George_Carpenter data:wdtLink wdt:Q75240817 ;
+    :hasParent data:George_Carpenter-_of_Redbourn,
+        data:Martha_Cox ;
+    :hasSex :Male .
+
+data:George_Carpenter-_of_Redbourn data:wdtLink wdt:Q100389032 .
+
+data:George_I_of_Greece data:wdtLink wdt:Q17142 ;
+    :hasParent data:Christian_IX_of_Denmark,
+        data:Louise_of_Hesse-Kassel ;
+    :hasSex :Male .
+
+data:George_Smith data:wdtLink wdt:Q5544616 ;
+    :hasParent data:Abel_Smith,
+        data:Mary_Bird ;
+    :hasSex :Male .
+
+data:George_V data:wdtLink wdt:Q269412 ;
+    :hasParent data:Alexandra_of_Denmark,
+        data:Edward_VII ;
+    :hasSex :Male .
+
+data:George_VI data:wdtLink wdt:Q280856 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex :Male .
+
+data:Gergely_Inczédy_de_Nagy-Várad data:wdtLink wdt:Q61611940 ;
+    :hasParent data:Agnes_Kendeffy_de_Malmoviz,
+        data:Baron_Gregor_Inczedy_de_Nagy-Varad ;
+    :hasSex :Male .
+
+data:Grand_Duke_Konstantin_Nikolayevich_of_Russia data:wdtLink wdt:Q446724 ;
+    :hasParent data:Alexandra_Feodorovna,
+        data:Nicholas_I_of_Russia ;
+    :hasSex :Male .
+
+data:Gustavus_Browne data:wdtLink wdt:Q100389099 .
+
+data:Hannah_Beaumont data:wdtLink wdt:Q75242665 .
+
+data:Heinrich_Wilhelm_Schweppenhäuser data:wdtLink wdt:Q101530173 ;
+    :hasParent data:Johann_Schweppenhäuser,
+        data:Maria_Magdalena_Boell ;
+    :hasSex :Male .
+
+data:Henrietta_Baker data:wdtLink wdt:Q75950566 ;
+    :hasParent data:Elizabeth_Bushe,
+        data:John_Baker-_of_Castle_Eve-_Kilkenny ;
+    :hasSex :Female .
+
+data:Henrietta_Harley-_Countess_of_Oxford_and_Countess_Mortimer data:wdtLink wdt:Q5715958 .
+
+data:Henrietta_Mildred_Hodgson data:wdtLink wdt:Q5716005 ;
+    :hasParent data:Mary_Tucker,
+        data:Robert_Hodgson ;
+    :hasSex :Female .
+
+data:Henry_Bentinck-_1st_Duke_of_Portland data:wdtLink wdt:Q126107 .
+
+data:Henry_XXIV-_Count_of_Reuss-Ebersdorf data:wdtLink wdt:Q571460 .
+
+data:Hyacinthe-Gabrielle_Roland data:wdtLink wdt:Q50822509 ;
+    :hasParent data:Christopher_Alexander_Fagan,
+        data:Hyacinthe_Gabrielle_Varis,
+        data:Pierre_Roland ;
+    :hasSex :Female .
+
+data:Hyacinthe_Gabrielle_Varis data:wdtLink wdt:Q75793432 ;
+    :hasSex :Female .
+
+data:Ignatius_Hauck data:wdtLink wdt:Q101530148 ;
+    :hasParent data:Anna_Barbara,
+        data:Johann_Kaspar_Hauke ;
+    :hasSex :Male .
+
+data:James_Bayley data:wdtLink wdt:Q75507840 .
+
+data:Jane_Beaumont data:wdtLink wdt:Q75242650 .
+
+data:Jean_Nicholson data:wdtLink wdt:Q75248500 .
+
+data:Jean_de_La_Fontaine data:wdtLink wdt:Q101530198 .
+
+data:Joanna_Elisabeth_of_Holstein-Gottorp data:wdtLink wdt:Q61826 .
+
+data:Johann_Heinrich_Westermann data:wdtLink wdt:Q101530187 .
+
+data:Johann_Kaspar_Hauke data:wdtLink wdt:Q101530152 .
+
+data:Johann_Schweppenhäuser data:wdtLink wdt:Q101530176 .
+
+data:John_Adcock data:wdtLink wdt:Q100389107 .
+
+data:John_Baker-_of_Castle_Eve-_Kilkenny data:wdtLink wdt:Q100389074 .
+
+data:John_Bowes-_9th_Earl_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q3809433 ;
+    :hasParent data:Jean_Nicholson,
+        data:Thomas_Lyon-_8th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex :Male .
+
+data:John_Edwyn data:wdtLink wdt:Q75875397 .
+
+data:John_Lister data:wdtLink wdt:Q75240829 .
+
+data:John_Maurice_Hauke data:wdtLink wdt:Q213888 ;
+    :hasParent data:Friedrich_Karl_Emanuel_Hauke,
+        data:Maria_Salomé_Schweppenhäuser ;
+    :hasSex :Male .
+
+data:John_Webb data:wdtLink wdt:Q76277563 .
+
+data:Joseph-_Duke_of_Saxe-Altenburg data:wdtLink wdt:Q213716 ;
+    :hasParent data:Duchess_Charlotte_Georgine_of_Mecklenburg-Strelitz,
+        data:Frederick-_Duke_of_Saxe-Hildburghausen ;
+    :hasSex :Male .
+
+data:Joseph_Creswick data:wdtLink wdt:Q75794104 .
+
+data:Joseph_Valentine_Grimstead data:wdtLink wdt:Q61610875 ;
+    :hasParent data:Eleanor_Creswick,
+        data:Thomas_Grimstead ;
+    :hasSex :Male .
+
+data:Judith_Cockayne data:wdtLink wdt:Q75501112 .
+
+data:Julia-_Princess_of_Battenberg data:wdtLink wdt:Q237311 ;
+    :hasParent data:John_Maurice_Hauke,
+        data:Sophie_Lafontaine ;
+    :hasSex :Female .
+
+data:Juliana_Maria_of_Brunswick-Wolfenbüttel data:wdtLink wdt:Q57637 ;
+    :hasParent data:Ferdinand_Albert_II-_Duke_of_Brunswick-Wolfenbüttel,
+        data:Princess_Antoinette_of_Brunswick-Wolfenbüttel ;
+    :hasSex :Female .
+
+data:Karl_Anton_August_von_Schleswig-Holstein-Sonderburg-Beck data:wdtLink wdt:Q64223 ;
+    :hasParent data:Peter_August_of_Schleswig-Holstein-Sonderburg-Beck,
+        data:Sofie_of_Hesse-Philippsthal ;
+    :hasSex :Male .
+
+data:Karl_Friedrich_I-_Grand_Duke_of_Baden data:wdtLink wdt:Q213671 ;
+    :hasParent data:Frederick-_Hereditary_Prince_of_Baden-Durlach,
+        data:Princess_Amalia_of_Nassau-Dietz ;
+    :hasSex :Male .
+
+data:Karolina_Barcsay_de_Nagy-Barcsa data:wdtLink wdt:Q61611942 ;
+    :hasParent data:Anna_Boer_de_Kopascsel,
+        data:Peter_Barcsay_de_Nagy-Barcsa ;
+    :hasSex :Female .
+
+data:Karoline_Luise_of_Hesse-Darmstadt data:wdtLink wdt:Q288703 ;
+    :hasParent data:Countess_Charlotte_of_Hanau-Lichtenberg,
+        data:Louis_VIII-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Katharina_Polyxena_von_Solms-Rödelheim data:wdtLink wdt:Q11913269 .
+
+data:Landgravine_Amalie_of_Hesse-Darmstadt data:wdtLink wdt:Q237730 ;
+    :hasParent data:Countess_Palatine_Caroline_of_Zweibrücken,
+        data:Louis_IX-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Landgravine_Caroline_of_Hesse-Darmstadt data:wdtLink wdt:Q458358 ;
+    :hasParent data:Countess_Palatine_Caroline_of_Zweibrücken,
+        data:Louis_IX-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Laszlo_Rhédey_von_Kis-Rhéde data:wdtLink wdt:Q75246792 .
+
+data:Lord_Charles_Bentinck data:wdtLink wdt:Q128343 ;
+    :hasParent data:Dorothy_Bentinck-_Duchess_of_Portland,
+        data:William_Cavendish-Bentinck-_3rd_Duke_of_Portland ;
+    :hasSex :Male .
+
+data:Louis-_Hereditary_Prince_of_Mecklenburg-Schwerin data:wdtLink wdt:Q69910 ;
+    :hasParent data:Christian_Ludwig_II-_Duke_of_Mecklenburg-Schwerin,
+        data:Duchess_Gustave_Caroline_of_Mecklenburg-Strelitz ;
+    :hasSex :Male .
+
+data:Louis_I-_Grand_Duke_of_Hesse data:wdtLink wdt:Q213527 ;
+    :hasParent data:Countess_Palatine_Caroline_of_Zweibrücken,
+        data:Louis_IX-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Male .
+
+data:Louis_II-_Grand_Duke_of_Hesse data:wdtLink wdt:Q166701 ;
+    :hasParent data:Louis_I-_Grand_Duke_of_Hesse,
+        data:Princess_Louise_of_Hesse-Darmstadt ;
+    :hasSex :Male .
+
+data:Louis_IV-_Grand_Duke_of_Hesse data:wdtLink wdt:Q164498 ;
+    :hasParent data:Prince_Charles_of_Hesse_and_by_Rhine,
+        data:Princess_Elisabeth_of_Prussia ;
+    :hasSex :Male .
+
+data:Louisa_Burnaby data:wdtLink wdt:Q1031989 ;
+    :hasParent data:Anne_Caroline_Salisbury,
+        data:Edwyn_Burnaby ;
+    :hasSex :Female .
+
+data:Louise_Benigne_Salomé_de_Gingins_La_Sarraz data:wdtLink wdt:Q108733929 .
+
+data:Louise_of_Great_Britain data:wdtLink wdt:Q168667 ;
+    :hasParent data:Caroline_of_Ansbach,
+        data:George_II_of_Great_Britain ;
+    :hasSex :Female .
+
+data:Louise_of_Mecklenburg-Strelitz data:wdtLink wdt:Q156723 ;
+    :hasParent data:Karl_II-_Grand_Duke_of_Mecklenburg-Strelitz,
+        data:Landgravine_Friederike_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:László_Rhédey_de_Kis-Rhéde data:wdtLink wdt:Q61611924 ;
+    :hasParent data:Mihály_Rhédey_de_Kis-Rhéde,
+        data:Teréz_Bánffy_de_Losoncz ;
+    :hasSex :Male .
+
+data:Madelaine_de_Chandieu-_Dame_de_La_Chaux data:wdtLink wdt:Q108733937 ;
+    :hasParent data:Charles_Esaie_de_Chandieu-_Seigneur_de_Chabottes,
+        data:Renée_Louise_de_Chandieu-Corcelles ;
+    :hasSex :Female .
+
+data:Madeleine_Monnier_de_Lisy data:wdtLink wdt:Q108733965 .
+
+data:Margaret_Cavendish_Bentinck-_Duchess_of_Portland data:wdtLink wdt:Q126219 ;
+    :hasParent data:Edward_Harley-_2nd_Earl_of_Oxford_and_Earl_Mortimer,
+        data:Henrietta_Harley-_Countess_of_Oxford_and_Countess_Mortimer ;
+    :hasSex :Female .
+
+data:Margaretha_Kilian data:wdtLink wdt:Q101530170 .
+
+data:Maria_Franziska_Riedesel_zu_Eisenbach data:wdtLink wdt:Q101530161 ;
+    :hasParent data:Georg_XX_Riedesel-_Freiherr_zu_Eisenbach,
+        data:Margaretha_Kilian ;
+    :hasSex :Female .
+
+data:Maria_Katharina_Franziska_Leonhardt data:wdtLink wdt:Q101530206 ;
+    :hasParent data:Franz_Joseph_Leonhardt,
+        data:Marie_Mayer ;
+    :hasSex :Female .
+
+data:Maria_Magdalena_Boell data:wdtLink wdt:Q101530179 .
+
+data:Maria_Rosalia_Bonelli data:wdtLink wdt:Q101530202 .
+
+data:Maria_Salomé_Schweppenhäuser data:wdtLink wdt:Q15833893 ;
+    :hasParent data:Charlotte_Philippine_Juliane_Westermann,
+        data:Heinrich_Wilhelm_Schweppenhäuser ;
+    :hasSex :Female .
+
+data:Maria_Thoroczkay_de_Thoroczko-Szent-Gyorgy data:wdtLink wdt:Q75448084 .
+
+data:Marie_Eleanore_Gräfin_von_Lehndorff data:wdtLink wdt:Q55649985 ;
+    :hasParent data:Ahasverus_Ernst_Graf_von_Lehndorff,
+        data:Marie_Louise_Henriette_von_Wallenrodt ;
+    :hasSex :Female .
+
+data:Marie_Louise_Henriette_von_Wallenrodt data:wdtLink wdt:Q101228691 .
+
+data:Marie_Mayer data:wdtLink wdt:Q101530212 .
+
+data:Martha_Cox data:wdtLink wdt:Q100389035 .
+
+data:Martin_Tucker data:wdtLink wdt:Q75240820 ;
+    :hasParent data:Dorothy_Smyth,
+        data:Francis_Tucker ;
+    :hasSex :Male .
+
+data:Mary data:wdtLink wdt:Q75875398 .
+
+data:Mary_Adcock data:wdtLink wdt:Q100389104 ;
+    :hasParent data:Ann,
+        data:John_Adcock ;
+    :hasSex :Female .
+
+data:Mary_Bird data:wdtLink wdt:Q75432493 ;
+    :hasParent data:Elizabeth_Martyn,
+        data:Thomas_Bird ;
+    :hasSex :Female .
+
+data:Mary_Bowes-_Countess_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q6779099 ;
+    :hasParent data:George_Bowes,
+        data:Mary_Gilbert ;
+    :hasSex :Female .
+
+data:Mary_Browne data:wdtLink wdt:Q61610958 ;
+    :hasParent data:Mary_Adcock,
+        data:William_Browne ;
+    :hasSex :Female .
+
+data:Mary_Elizabeth_Louisa_Rodney_Carpenter data:wdtLink wdt:Q61610856 ;
+    :hasParent data:George_Carpenter,
+        data:Mary_Elizabeth_Walsh ;
+    :hasSex :Female .
+
+data:Mary_Elizabeth_Walsh data:wdtLink wdt:Q75248491 ;
+    :hasParent data:Elizabeth,
+        data:John_Walsh ;
+    :hasSex :Female .
+
+data:Mary_Garritt data:wdtLink wdt:Q28778485 ;
+    :hasParent data:Ann_Newland,
+        data:Edward_Garritt ;
+    :hasSex :Female .
+
+data:Mary_Gilbert data:wdtLink wdt:Q75248498 .
+
+data:Mary_Lister data:wdtLink wdt:Q75240827 ;
+    :hasParent data:John_Lister,
+        data:Mary_Swainson ;
+    :hasSex :Female .
+
+data:Mary_Swainson data:wdtLink wdt:Q100389117 .
+
+data:Mary_Tucker data:wdtLink wdt:Q61610909 ;
+    :hasParent data:Henrietta_Baker,
+        data:Martin_Tucker ;
+    :hasSex :Female .
+
+data:Mary_of_Teck data:wdtLink wdt:Q76927 ;
+    :hasParent data:Francis-_Duke_of_Teck,
+        data:Princess_Mary_Adelaide_of_Cambridge ;
+    :hasSex :Female .
+
+data:Mihály_Rhédey_de_Kis-Rhéde data:wdtLink wdt:Q61611932 ;
+    :hasParent data:Laszlo_Rhédey_von_Kis-Rhéde,
+        data:Maria_Thoroczkay_de_Thoroczko-Szent-Gyorgy ;
+    :hasSex :Male .
+
+data:Mildred_Porteus data:wdtLink wdt:Q75240031 ;
+    :hasParent data:Judith_Cockayne,
+        data:Robert_Porteus ;
+    :hasSex :Female .
+
+data:Nicholas_I_of_Russia data:wdtLink wdt:Q130734 ;
+    :hasParent data:Paul_I_of_Russia,
+        data:Sophie_Dorothee_of_Württemberg ;
+    :hasSex :Male .
+
+data:Nicholas_Moseley data:wdtLink wdt:Q76135908 .
+
+data:Olga_Constantinovna_of_Russia data:wdtLink wdt:Q155178 ;
+    :hasParent data:Grand_Duke_Konstantin_Nikolayevich_of_Russia,
+        data:Princess_Alexandra_of_Saxe-Altenburg ;
+    :hasSex :Female .
+
+data:Oswald_Smith data:wdtLink wdt:Q16738479 ;
+    :hasParent data:Frances_Mary_Mosley,
+        data:George_Smith ;
+    :hasSex :Male .
+
+data:Patrick_Fagan data:wdtLink wdt:Q75892798 .
+
+data:Paul_II_de_Loriol_de_Pra-_Baron_de_Chamergy-_Seigneur_du_Villard_StSauveur data:wdtLink wdt:Q108733956 .
+
+data:Paul_I_of_Russia data:wdtLink wdt:Q15189 ;
+    :hasParent data:Catherine_II_of_Russia,
+        data:Peter_III_of_Russia ;
+    :hasSex :Male .
+
+data:Peter_August_of_Schleswig-Holstein-Sonderburg-Beck data:wdtLink wdt:Q62380 .
+
+data:Peter_Barcsay_de_Nagy-Barcsa data:wdtLink wdt:Q75240832 .
+
+data:Peter_III_of_Russia data:wdtLink wdt:Q151789 ;
+    :hasParent data:Anna_Petrovna_of_Russia,
+        data:Charles_Frederick-_Duke_of_Schleswig-Holstein-Gottorp ;
+    :hasSex :Male .
+
+data:Pierre_Daniel_de_Senarclens-_Seigneur_de_Grancy-_Senarclens_et_de_Vufflens-le-Château data:wdtLink wdt:Q108733921 .
+
+data:Pierre_Roland data:wdtLink wdt:Q75386352 ;
+    :hasParent data:Christiana_Fitzmaurice ;
+    :hasSex :Male .
+
+data:Pierre_Tronchin data:wdtLink wdt:Q108733972 .
+
+data:Prince_Adolphus-_Duke_of_Cambridge data:wdtLink wdt:Q313771 ;
+    :hasParent data:Charlotte_of_Mecklenburg-Strelitz,
+        data:George_III_of_Great_Britain ;
+    :hasSex :Male .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine data:wdtLink wdt:Q316524 ;
+    :hasParent data:August_von_Senarclens_de_Grancy,
+        data:Princess_Wilhelmine_of_Baden ;
+    :hasSex :Male .
+
+data:Prince_Andrew_of_Greece_and_Denmark data:wdtLink wdt:Q156531 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex :Male .
+
+data:Prince_Augustus_William_of_Prussia data:wdtLink wdt:Q213658 .
+
+data:Prince_Charles_of_Hesse_and_by_Rhine data:wdtLink wdt:Q703423 ;
+    :hasParent data:Louis_II-_Grand_Duke_of_Hesse,
+        data:Princess_Wilhelmine_of_Baden ;
+    :hasSex :Male .
+
+data:Prince_Edward-_Duke_of_Kent_and_Strathearn data:wdtLink wdt:Q157009 ;
+    :hasParent data:Charlotte_of_Mecklenburg-Strelitz,
+        data:George_III_of_Great_Britain ;
+    :hasSex :Male .
+
+data:Prince_Karl_Ludwig-_Hereditary_Prince_of_Baden data:wdtLink wdt:Q60522 ;
+    :hasParent data:Karl_Friedrich_I-_Grand_Duke_of_Baden,
+        data:Karoline_Luise_of_Hesse-Darmstadt ;
+    :hasSex :Male .
+
+data:Prince_Karl_Wilhelm_I-_Prince_of_Nassau-Usingen data:wdtLink wdt:Q181553 ;
+    :hasParent data:Charles_of_Nassau-Usingen,
+        data:Christine_Wilhelmine_of_Saxe-Eisenach ;
+    :hasSex :Male .
+
+data:Prince_Karl_of_Hesse-Kassel data:wdtLink wdt:Q213628 ;
+    :hasParent data:Friedrich_II-_Landgrave_of_Hesse-Kassel,
+        data:Princess_Mary_of_Great_Britain ;
+    :hasSex :Male .
+
+data:Prince_Louis_of_Battenberg data:wdtLink wdt:Q57468 ;
+    :hasParent data:Julia-_Princess_of_Battenberg,
+        data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasSex :Male .
+
+data:Prince_Philip-_Duke_of_Edinburgh data:wdtLink wdt:Q80976 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex :Male .
+
+data:Prince_Wilhelm_of_Prussia data:wdtLink wdt:Q62022 ;
+    :hasParent data:Frederika_Louisa_of_Hesse-Darmstadt,
+        data:Friedrich_Wilhelm_II_of_Prussia ;
+    :hasSex :Male .
+
+data:Prince_William_of_Hesse-Kassel data:wdtLink wdt:Q60709 ;
+    :hasParent data:Caroline_of_Nassau-Usingen,
+        data:Prince_Friedrich_of_Hesse-Kassel ;
+    :hasSex :Male .
+
+data:Princess_Alexandra_of_Saxe-Altenburg data:wdtLink wdt:Q57950 ;
+    :hasParent data:Duchess_Amelia_of_Württemberg,
+        data:Joseph-_Duke_of_Saxe-Altenburg ;
+    :hasSex :Female .
+
+data:Princess_Alice_of_Battenberg data:wdtLink wdt:Q116062 ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex :Female .
+
+data:Princess_Alice_of_the_United_Kingdom data:wdtLink wdt:Q155566 ;
+    :hasParent data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Victoria ;
+    :hasSex :Female .
+
+data:Princess_Amalia_of_Nassau-Dietz data:wdtLink wdt:Q71440 .
+
+data:Princess_Anna_Sophie_of_Schwarzburg-Rudolstadt data:wdtLink wdt:Q1090562 .
+
+data:Princess_Antoinette_of_Brunswick-Wolfenbüttel data:wdtLink wdt:Q259725 .
+
+data:Princess_Augusta_of_Hesse-Kassel data:wdtLink wdt:Q62068 ;
+    :hasParent data:Caroline_of_Nassau-Usingen,
+        data:Prince_Friedrich_of_Hesse-Kassel ;
+    :hasSex :Female .
+
+data:Princess_Augusta_of_Saxe-Gotha data:wdtLink wdt:Q76967 ;
+    :hasParent data:Frederick_II-_Duke_of_Saxe-Gotha-Altenburg,
+        data:Princess_Magdalena_Augusta_of_Anhalt-Zerbst ;
+    :hasSex :Female .
+
+data:Princess_Charlotte_Sophie_of_Saxe-Coburg-Saalfeld data:wdtLink wdt:Q65234 ;
+    :hasParent data:Francis_Josias-_Duke_of_Saxe-Coburg-Saalfeld,
+        data:Princess_Anna_Sophie_of_Schwarzburg-Rudolstadt ;
+    :hasSex :Female .
+
+data:Princess_Charlotte_of_Saxe-Meiningen data:wdtLink wdt:Q63603 .
+
+data:Princess_Elisabeth_of_Prussia data:wdtLink wdt:Q269351 ;
+    :hasParent data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Maria_Anna_of_Hesse-Homburg ;
+    :hasSex :Female .
+
+data:Princess_Louise_Caroline_of_Hesse-Kassel data:wdtLink wdt:Q1876689 ;
+    :hasParent data:Prince_Karl_of_Hesse-Kassel,
+        data:Princess_Louise_of_Denmark ;
+    :hasSex :Female .
+
+data:Princess_Louise_Charlotte_of_Denmark data:wdtLink wdt:Q232202 ;
+    :hasParent data:Duchess_Sophia_Frederica_of_Mecklenburg-Schwerin,
+        data:Frederik-_Hereditary_Prince_of_Denmark ;
+    :hasSex :Female .
+
+data:Princess_Louise_of_Denmark data:wdtLink wdt:Q1805444 ;
+    :hasParent data:Frederick_V_of_Denmark,
+        data:Louise_of_Great_Britain ;
+    :hasSex :Female .
+
+data:Princess_Louise_of_Hesse-Darmstadt data:wdtLink wdt:Q270161 ;
+    :hasParent data:Countess_Maria_Louise_Albertine_of_Leiningen-Falkenburg-Dagsburg,
+        data:Prince_Georg_Wilhelm_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Princess_Louise_of_Saxe-Gotha-Altenburg data:wdtLink wdt:Q235671 ;
+    :hasParent data:Augustus-_Duke_of_Saxe-Gotha-Altenburg,
+        data:Duchess_Louise_Charlotte_of_Mecklenburg-Schwerin ;
+    :hasSex :Female .
+
+data:Princess_Louise_of_Saxe-Gotha-Altenburg_1 data:wdtLink wdt:Q433341 .
+
+data:Princess_Magdalena_Augusta_of_Anhalt-Zerbst data:wdtLink wdt:Q64207 .
+
+data:Princess_Maria_Anna_of_Hesse-Homburg data:wdtLink wdt:Q261889 ;
+    :hasParent data:Frederick_V-_Landgrave_of_Hesse-Homburg,
+        data:Landgravine_Caroline_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Princess_Marie_Auguste_of_Thurn_and_Taxis data:wdtLink wdt:Q61789 .
+
+data:Princess_Mary_Adelaide_of_Cambridge data:wdtLink wdt:Q233997 ;
+    :hasParent data:Prince_Adolphus-_Duke_of_Cambridge,
+        data:Princess_Augusta_of_Hesse-Kassel ;
+    :hasSex :Female .
+
+data:Princess_Sophia_Dorothea_of_Prussia data:wdtLink wdt:Q62025 .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine data:wdtLink wdt:Q57658 ;
+    :hasParent data:Louis_IV-_Grand_Duke_of_Hesse,
+        data:Princess_Alice_of_the_United_Kingdom ;
+    :hasSex :Female .
+
+data:Princess_Victoria_of_Saxe-Coburg-Saalfeld data:wdtLink wdt:Q58067 ;
+    :hasParent data:Countess_Augusta_Reuss_of_Ebersdorf,
+        data:Francis-_Duke_of_Saxe-Coburg-Saalfeld ;
+    :hasSex :Female .
+
+data:Queen_Elizabeth-_The_Queen_Mother data:wdtLink wdt:Q10633 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex :Female .
+
+data:Renée_Louise_de_Chandieu-Corcelles data:wdtLink wdt:Q108733947 .
+
+data:Richard_Boyle-_3rd_Earl_of_Burlington data:wdtLink wdt:Q555723 .
+
+data:Richard_Wellesley-_1st_Marquess_Wellesley data:wdtLink wdt:Q335205 ;
+    :hasParent data:Anne_Wellesley-_Countess_of_Mornington,
+        data:Garret_Wesley-_1st_Earl_of_Mornington ;
+    :hasSex :Male .
+
+data:Richard_Wesley-_1st_Baron_Mornington data:wdtLink wdt:Q7329897 .
+
+data:Robert_Hodgson data:wdtLink wdt:Q7345539 ;
+    :hasParent data:Mildred_Porteus,
+        data:Robert_Hodgson_1 ;
+    :hasSex :Male .
+
+data:Robert_Hodgson_1 data:wdtLink wdt:Q75240030 ;
+    :hasParent data:Bryan_Hodgson-_of_Ashbourn,
+        data:Elizabeth-Ellen_Alcock ;
+    :hasSex :Male .
+
+data:Robert_Porteus data:wdtLink wdt:Q75240033 .
+
+data:Rodolphe_Daniel_de_Loriol-_Seigneur_de_Villars-_Etoy-_Chaumergy-_Montfort data:wdtLink wdt:Q108733954 ;
+    :hasParent data:Madeleine_Monnier_de_Lisy,
+        data:Paul_II_de_Loriol_de_Pra-_Baron_de_Chamergy-_Seigneur_du_Villard_StSauveur ;
+    :hasSex :Male .
+
+data:Sir_John_Parker_Mosley-_1st_Bt data:wdtLink wdt:Q75273894 ;
+    :hasParent data:Elizabeth_Parker,
+        data:Nicholas_Moseley ;
+    :hasSex :Male .
+
+data:Sofie_of_Hesse-Philippsthal data:wdtLink wdt:Q11950042 .
+
+data:Sophia_Elisabeth_Eleonore_Bode data:wdtLink wdt:Q101530191 .
+
+data:Sophia_Magdalene_of_Brandenburg-Kulmbach data:wdtLink wdt:Q234308 .
+
+data:Sophie_Antoinette_of_Brunswick-Wolfenbüttel data:wdtLink wdt:Q370107 .
+
+data:Sophie_Charlotte_of_Brandenburg-Bayreuth data:wdtLink wdt:Q6327385 .
+
+data:Sophie_Dorothee_of_Württemberg data:wdtLink wdt:Q57632 ;
+    :hasParent data:Friedrich_II_Eugen-_Duke_of_Württemberg,
+        data:Margravine_Friederike_of_Brandenburg-Schwedt ;
+    :hasSex :Female .
+
+data:Sophie_Henriette_of_Schleswig-Holstein-Sonderbourg-Beck data:wdtLink wdt:Q11950035 .
+
+data:Sophie_Lafontaine data:wdtLink wdt:Q56795693 ;
+    :hasParent data:Franz_Leopold_Lafontaine,
+        data:Theresia_of_Cornelly ;
+    :hasSex :Female .
+
+data:Teréz_Bánffy_de_Losoncz data:wdtLink wdt:Q61611934 ;
+    :hasParent data:Baron_Balthazar_Banffy_de_Losoncz,
+        data:Baroness_Christine_Kemeny_de_Magyar-Gyero-Monostor ;
+    :hasSex :Female .
+
+data:Theresia_of_Cornelly data:wdtLink wdt:Q56797160 ;
+    :hasParent data:Anton_Kornély ;
+    :hasSex :Female .
+
+data:Thomas_Bird data:wdtLink wdt:Q75547933 .
+
+data:Thomas_Grimstead data:wdtLink wdt:Q75793436 ;
+    :hasParent data:Elizabeth_Langley,
+        data:Valentine_Grimstead ;
+    :hasSex :Male .
+
+data:Thomas_Lyon-Bowes-_11th_Earl_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q3990679 ;
+    :hasParent data:John_Bowes-_9th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Bowes-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSex :Male .
+
+data:Thomas_Lyon-Bowes-_Lord_Glamis data:wdtLink wdt:Q533403 ;
+    :hasParent data:Mary_Elizabeth_Louisa_Rodney_Carpenter,
+        data:Thomas_Lyon-Bowes-_11th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex :Male .
+
+data:Thomas_Lyon-_8th_Earl_of_Strathmore_and_Kinghorne data:wdtLink wdt:Q7620341 .
+
+data:Thomas_Salisbury data:wdtLink wdt:Q61610963 ;
+    :hasParent data:Mary_Lister,
+        data:Thomas_Salisbury_1 ;
+    :hasSex :Male .
+
+data:Thomas_Salisbury_1 data:wdtLink wdt:Q75240000 ;
+    :hasParent data:Alice_Leigh,
+        data:Edward_Salisbury-_of_Marshfield ;
+    :hasSex :Male .
+
+data:Ulrike_Louise_of_Solms-Braunfels data:wdtLink wdt:Q325546 .
+
+data:Valentine_Grimstead data:wdtLink wdt:Q75793446 .
+
+data:William_Bentinck-_2nd_Duke_of_Portland data:wdtLink wdt:Q125872 ;
+    :hasParent data:Elizabeth_Noel,
+        data:Henry_Bentinck-_1st_Duke_of_Portland ;
+    :hasSex :Male .
+
+data:William_Browne data:wdtLink wdt:Q75240825 ;
+    :hasParent data:Deborah_Chesalden,
+        data:Gustavus_Browne ;
+    :hasSex :Male .
+
+data:William_Cavendish-Bentinck-_3rd_Duke_of_Portland data:wdtLink wdt:Q157208 ;
+    :hasParent data:Margaret_Cavendish_Bentinck-_Duchess_of_Portland,
+        data:William_Bentinck-_2nd_Duke_of_Portland ;
+    :hasSex :Male .
+
+data:William_Cavendish-_3rd_Duke_of_Devonshire data:wdtLink wdt:Q2400397 .
+
+data:William_Cavendish-_4th_Duke_of_Devonshire data:wdtLink wdt:Q238639 ;
+    :hasParent data:Catherine_Cavendish-_Duchess_of_Devonshire,
+        data:William_Cavendish-_3rd_Duke_of_Devonshire ;
+    :hasSex :Male .
+
+data:William_IV-_Prince_of_Orange data:wdtLink wdt:Q380949 .
+
+data:William_VIII-_Landgrave_of_Hesse-Kassel data:wdtLink wdt:Q531790 .
+
+data:Ágnes_Inczédy_de_Nagy-Várad data:wdtLink wdt:Q61611926 ;
+    :hasParent data:Gergely_Inczédy_de_Nagy-Várad,
+        data:Karolina_Barcsay_de_Nagy-Barcsa ;
+    :hasSex :Female .
+
+data:Caroline_of_Nassau-Usingen data:wdtLink wdt:Q2756857 ;
+    :hasParent data:Countess_Caroline_Felizitas_of_Leiningen-Dagsburg,
+        data:Prince_Karl_Wilhelm_I-_Prince_of_Nassau-Usingen ;
+    :hasSex :Female .
+
+data:Charlotte_of_Mecklenburg-Strelitz data:wdtLink wdt:Q161159 ;
+    :hasParent data:Duke_Charles_Louis_Frederick_of_Mecklenburg,
+        data:Princess_Elizabeth_Albertine_of_Saxe-Hildburghausen ;
+    :hasSex :Female .
+
+data:Christian_IX_of_Denmark data:wdtLink wdt:Q151305 ;
+    :hasParent data:Friedrich_Wilhelm-_Duke_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Princess_Louise_Caroline_of_Hesse-Kassel ;
+    :hasSex :Male .
+
+data:Christiana_Fitzmaurice data:wdtLink wdt:Q75892806 .
+
+data:Countess_Augusta_Reuss_of_Ebersdorf data:wdtLink wdt:Q61489 ;
+    :hasParent data:Countess_Karoline_Ernestine_of_Erbach-Schönberg,
+        data:Henry_XXIV-_Count_of_Reuss-Ebersdorf ;
+    :hasSex :Female .
+
+data:Countess_Charlotte_of_Hanau-Lichtenberg data:wdtLink wdt:Q64194 .
+
+data:Countess_Maria_Louise_Albertine_of_Leiningen-Falkenburg-Dagsburg data:wdtLink wdt:Q64218 .
+
+data:Duke_Charles_Louis_Frederick_of_Mecklenburg data:wdtLink wdt:Q699743 ;
+    :hasParent data:Christiane_Emilie_of_Schwarzburg-Sondershausen,
+        data:Duke_Adolf_Friedrich_II-_Duke_of_Mecklenburg-Strelitz ;
+    :hasSex :Male .
+
+data:Duke_Ludwig_of_Württemberg data:wdtLink wdt:Q213618 ;
+    :hasParent data:Friedrich_II_Eugen-_Duke_of_Württemberg,
+        data:Margravine_Friederike_of_Brandenburg-Schwedt ;
+    :hasSex :Male .
+
+data:Elizabeth data:wdtLink wdt:Q75793584 ;
+    :hasSex :Female .
+
+data:Francis-_Duke_of_Saxe-Coburg-Saalfeld data:wdtLink wdt:Q455554 ;
+    :hasParent data:Ernest_Frederick_of_Saxe-Coburg-Saalfeld,
+        data:Sophie_Antoinette_of_Brunswick-Wolfenbüttel ;
+    :hasSex :Male .
+
+data:Frederick_V_of_Denmark data:wdtLink wdt:Q156187 ;
+    :hasParent data:Christian_VI_of_Denmark,
+        data:Sophia_Magdalene_of_Brandenburg-Kulmbach ;
+    :hasSex :Male .
+
+data:Frederika_Louisa_of_Hesse-Darmstadt data:wdtLink wdt:Q235663 ;
+    :hasParent data:Countess_Palatine_Caroline_of_Zweibrücken,
+        data:Louis_IX-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Friedrich_II-_Landgrave_of_Hesse-Kassel data:wdtLink wdt:Q454473 ;
+    :hasParent data:Dorothea_Wilhelmine_of_Saxe-Zeitz,
+        data:William_VIII-_Landgrave_of_Hesse-Kassel ;
+    :hasSex :Male .
+
+data:Friedrich_II_Eugen-_Duke_of_Württemberg data:wdtLink wdt:Q58052 ;
+    :hasParent data:Charles_Alexander-_Duke_of_Württemberg,
+        data:Princess_Marie_Auguste_of_Thurn_and_Taxis ;
+    :hasSex :Male .
+
+data:Friedrich_Wilhelm_II_of_Prussia data:wdtLink wdt:Q152229 ;
+    :hasParent data:Duchess_Luise_of_Brunswick-Wolfenbüttel,
+        data:Prince_Augustus_William_of_Prussia ;
+    :hasSex :Male .
+
+data:George_III_of_Great_Britain data:wdtLink wdt:Q127318 ;
+    :hasParent data:Frederick-_Prince_of_Wales,
+        data:Princess_Augusta_of_Saxe-Gotha ;
+    :hasSex :Male .
+
+data:Henriette_of_Nassau-Weilburg data:wdtLink wdt:Q261381 ;
+    :hasParent data:Caroline_of_Orange-Nassau,
+        data:Charles_Christian_of_Nassau-Weilburg ;
+    :hasSex :Female .
+
+data:John_Walsh data:wdtLink wdt:Q75793565 ;
+    :hasSex :Male .
+
+data:Karl_II-_Grand_Duke_of_Mecklenburg-Strelitz data:wdtLink wdt:Q213601 ;
+    :hasParent data:Duke_Charles_Louis_Frederick_of_Mecklenburg,
+        data:Princess_Elizabeth_Albertine_of_Saxe-Hildburghausen ;
+    :hasSex :Male .
+
+data:Landgravine_Friederike_of_Hesse-Darmstadt data:wdtLink wdt:Q257483 ;
+    :hasParent data:Countess_Maria_Louise_Albertine_of_Leiningen-Falkenburg-Dagsburg,
+        data:Prince_Georg_Wilhelm_of_Hesse-Darmstadt ;
+    :hasSex :Female .
+
+data:Louis_VIII-_Landgrave_of_Hesse-Darmstadt data:wdtLink wdt:Q213677 .
+
+data:Louise_of_Hesse-Kassel data:wdtLink wdt:Q166028 ;
+    :hasParent data:Prince_William_of_Hesse-Kassel,
+        data:Princess_Louise_Charlotte_of_Denmark ;
+    :hasSex :Female .
+
+data:Margravine_Friederike_of_Brandenburg-Schwedt data:wdtLink wdt:Q255759 ;
+    :hasParent data:Frederick_William-_Margrave_of_Brandenburg-Schwedt,
+        data:Princess_Sophia_Dorothea_of_Prussia ;
+    :hasSex :Female .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha data:wdtLink wdt:Q152245 ;
+    :hasParent data:Ernest_I-_Duke_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Louise_of_Saxe-Gotha-Altenburg ;
+    :hasSex :Male .
+
+data:Prince_Friedrich_of_Hesse-Kassel data:wdtLink wdt:Q61207 ;
+    :hasParent data:Friedrich_II-_Landgrave_of_Hesse-Kassel,
+        data:Princess_Mary_of_Great_Britain ;
+    :hasSex :Male .
+
+data:Prince_Georg_Wilhelm_of_Hesse-Darmstadt data:wdtLink wdt:Q715230 .
+
+data:Princess_Elizabeth_Albertine_of_Saxe-Hildburghausen data:wdtLink wdt:Q389473 ;
+    :hasParent data:Countess_Sophia_Albertine_of_Erbach-Erbach,
+        data:Ernest_Frederick_I-_Duke_of_Saxe-Hildburghausen ;
+    :hasSex :Female .
+
+data:Princess_Mary_of_Great_Britain data:wdtLink wdt:Q60511 ;
+    :hasParent data:Caroline_of_Ansbach,
+        data:George_II_of_Great_Britain ;
+    :hasSex :Female .
+
+data:Princess_Wilhelmine_of_Baden data:wdtLink wdt:Q57533 ;
+    :hasParent data:Landgravine_Amalie_of_Hesse-Darmstadt,
+        data:Prince_Karl_Ludwig-_Hereditary_Prince_of_Baden ;
+    :hasSex :Female .
+
+data:Victoria data:wdtLink wdt:Q9439 ;
+    :hasParent data:Prince_Edward-_Duke_of_Kent_and_Strathearn,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld ;
+    :hasSex :Female .
+
+data:Caroline_of_Ansbach data:wdtLink wdt:Q76961 .
+
+data:George_II_of_Great_Britain data:wdtLink wdt:Q131981 .
+
+data:Countess_Palatine_Caroline_of_Zweibrücken data:wdtLink wdt:Q62063 ;
+    :hasParent data:Caroline_of_Nassau-Saarbrücken,
+        data:Christian_III-_Count_Palatine_of_Zweibrücken ;
+    :hasSex :Female .
+
+data:Louis_IX-_Landgrave_of_Hesse-Darmstadt data:wdtLink wdt:Q213610 ;
+    :hasParent data:Countess_Charlotte_of_Hanau-Lichtenberg,
+        data:Louis_VIII-_Landgrave_of_Hesse-Darmstadt ;
+    :hasSex :Male .
+

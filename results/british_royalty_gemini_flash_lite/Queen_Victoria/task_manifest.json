@@ -1,0 +1,6 @@
+{
+    "entry_id": "Queen_Victoria",
+    "done_reason": "llm_finished",
+    "artifacts_dir": "results/british_royalty_gemini_flash_lite/Queen_Victoria/artifacts",
+    "results": "results/british_royalty_gemini_flash_lite/Queen_Victoria/final_data_graph.ttl"
+}

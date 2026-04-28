@@ -1,0 +1,42 @@
+[
+    {
+        "input_tokens": 15442,
+        "output_tokens": 633,
+        "total_tokens": 16075,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    },
+    {
+        "input_tokens": 21361,
+        "output_tokens": 98,
+        "total_tokens": 21459,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    },
+    {
+        "input_tokens": 26193,
+        "output_tokens": 98,
+        "total_tokens": 26291,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    },
+    {
+        "input_tokens": 31191,
+        "output_tokens": 143,
+        "total_tokens": 31334,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    },
+    {
+        "input_tokens": 31999,
+        "output_tokens": 8,
+        "total_tokens": 32007,
+        "input_token_details": {
+            "cache_read": 0
+        }
+    }
+]

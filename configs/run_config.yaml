@@ -15,11 +15,12 @@ runtime:
   prompt_caching_enabled: false
   max_iterations: 10
   violation_translation: true
+  same_data_graph: true
 
 output:
   base_dir: results
-  custom_tag: habsburgs
-  run_dir: results/disjoint_props_habsburgs_gemini_flash_lite
+  custom_tag: british_royalty
+  run_dir: results/british_royalty_gemini_flash_lite_1
 
 dataset:
   source: custom_family_bench

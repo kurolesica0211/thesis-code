@@ -26,6 +26,7 @@ class RuntimeConfig(BaseModel):
     max_iterations: int = 10
     prompt_caching_enabled: bool = False
     violation_translation: bool = True
+    same_data_graph: bool = False
 
 
 class OutputConfig(BaseModel):
