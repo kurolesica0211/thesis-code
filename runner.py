@@ -1,14 +1,21 @@
 import os
 from tqdm import tqdm
 import json
+from copy import deepcopy
 from langchain.messages import HumanMessage, AIMessage, SystemMessage
 from langchain.chat_models import init_chat_model
+from rdflib import Graph
 
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
 from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
 from orchestration.tools import ToolClass
-from orchestration.tracing import append_trace
+from orchestration.tracing import (
+    append_trace,
+    init_artifact_files,
+    append_usage_metadata,
+    append_graph_snapshot,
+)
 from orchestration.agent import build_agent, TaskState, TaskContext
 from prompts.prompt_engine import get_prompt, format_prompt
 from models.data_models import TaskEntry
@@ -16,6 +23,7 @@ from models.data_models import TaskEntry
 def _build_loader(config: RunConfig):
     if config.dataset.source == "custom_family_bench":
         loader = look_up_family_get_loader()
+        #loader = base_family_get_loader()
         
     return loader
 
@@ -44,7 +52,7 @@ def run(config: RunConfig):
         "trace": trace_path,
     }
     
-    main_system_prompt_path = config.prompts.main_system
+    main_system_prompt_path = config.prompts.main_system if config.runtime.shacl_validation else config.prompts.main_system_without_shacl
     main_user_prompt_path = config.prompts.main_user
     main_system_prompt = get_prompt(main_system_prompt_path)
     main_system_msg = SystemMessage(main_system_prompt)
@@ -53,6 +61,7 @@ def run(config: RunConfig):
         task_entry: TaskEntry
         if config.runtime.same_data_graph and i > 0:
             task_entry.data_graph = last_data_graph
+        init_data_graph = deepcopy(task_entry.data_graph)
         
         append_trace(trace_path, "run.entry.start", payload={
             "entry_idx": task_entry.entry_id
@@ -61,7 +70,7 @@ def run(config: RunConfig):
         task_dir = os.path.join(run_dir, task_entry.entry_id)
         os.makedirs(task_dir, exist_ok=True)
         artifacts_dir = os.path.join(task_dir, "artifacts")
-        os.makedirs(artifacts_dir, exist_ok=True)
+        init_artifact_files(artifacts_dir)
         
         task_manifest_path = os.path.join(task_dir, "task_manifest.json")
         results_path = os.path.join(task_dir, "final_data_graph.ttl")
@@ -69,11 +78,12 @@ def run(config: RunConfig):
             "entry_id": task_entry.entry_id,
             "done_reason": "",
             "artifacts_dir": artifacts_dir,
-            "results": results_path
+            "results": results_path,
+            "iterations": 0
         }
         run_manifest["task_manifests"].append(task_manifest_path)
         
-        tool_obj = ToolClass(task_entry.schema_def, task_entry.data_graph)
+        tool_obj = ToolClass(task_entry.schema_def, task_entry.data_graph, config.runtime.shacl_validation)
         agent = build_agent(tool_obj)
         
         main_user_prompt = format_prompt(
@@ -124,26 +134,45 @@ def run(config: RunConfig):
             if final_state["task_manifest"]["done_reason"] != ""
             else "llm_finished"
         )
+        task_manifest["iterations"] = final_state["iterations"]
         append_trace(trace_path, "run.entry.finish", payload={
             "entry_idx": task_entry.entry_id,
             "done_reason": task_manifest["done_reason"]
         })
         
         #––––– Dump the results –––––––––––––––––––––––––––––––
-        with open(results_path, "w") as f:
-            f.write(final_state["data_graph"].serialize(format="turtle"))
+        final_state["data_graph"].serialize(format="turtle", destination=results_path)
         last_data_graph = final_state["data_graph"]
+        
+        delta_graph_path = os.path.join(task_dir, "delta_graph.ttl")
+        delta_graph: Graph = (last_data_graph - init_data_graph)
+        delta_graph.namespace_manager = last_data_graph.namespace_manager
+        delta_graph.serialize(format="turtle", destination=delta_graph_path)
+
+        append_graph_snapshot(
+            artifacts_dir,
+            "data_graph",
+            final_state["data_graph"].serialize(format="turtle"),
+            final_state["iterations"],
+            "final_data_graph",
+        )
             
         final_convo = "\n\n".join([msg.pretty_repr() for msg in final_state["messages"]])
-        with open(f"{artifacts_dir}/final_convo.md", "w") as f:
+        with open(f"{artifacts_dir}/convos/final_convo.md", "w", encoding="utf-8") as f:
             f.write(final_convo)
         
         usage_metadata = [msg.usage_metadata for msg in final_state["messages"] if type(msg) is AIMessage]
-        with open(f"{artifacts_dir}/convo_usage_metadata.json", "w") as f:
-            json.dump(usage_metadata, f, indent=4)
+        append_usage_metadata(
+            artifacts_dir,
+            "final",
+            {
+                "iteration": final_state["iterations"],
+                "metadata": usage_metadata,
+            },
+        )
         
-        with open(task_manifest_path, "w") as f:
+        with open(task_manifest_path, "w", encoding="utf-8") as f:
             json.dump(task_manifest, f, indent=4)
         
-    with open(f"{run_dir}/run_manifest.json", "w") as f:
+    with open(f"{run_dir}/run_manifest.json", "w", encoding="utf-8") as f:
         json.dump(run_manifest, f, indent=4)

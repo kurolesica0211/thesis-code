@@ -1,6 +1,0 @@
-{
-    "entry_id": "Elizabeth_II",
-    "done_reason": "llm_finished",
-    "artifacts_dir": "results/british_royalty_gemini_flash_lite/Elizabeth_II/artifacts",
-    "results": "results/british_royalty_gemini_flash_lite/Elizabeth_II/final_data_graph.ttl"
-}

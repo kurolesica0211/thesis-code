@@ -1,6 +1,0 @@
-{
-    "entry_id": "Queen_Elizabeth_the_Queen_Mother",
-    "done_reason": "llm_finished",
-    "artifacts_dir": "results/british_royalty_gemini_flash_lite_0/Queen_Elizabeth_the_Queen_Mother/artifacts",
-    "results": "results/british_royalty_gemini_flash_lite_0/Queen_Elizabeth_the_Queen_Mother/final_data_graph.ttl"
-}

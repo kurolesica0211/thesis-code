@@ -2,6 +2,9 @@
 .env
 __pycache__/
 custom_family_bench/royalty/texts/*.txt
+custom_family_bench/royalty/denoised_texts/*.txt
+custom_family_bench/royalty/test/*.txt
 text_denoising/denoised_texts/*.txt
 text_denoising/denoised_texts copy/*.txt
 .DS_Store
+results/

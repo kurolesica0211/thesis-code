@@ -5,7 +5,7 @@ from loaders.loader import Loader, DataEntry
 
 def get_loader():
     dir = "custom_family_bench"
-    input_text = "Queen_Victoria.txt"
+    input_text = "royalty/denoised_texts/Christian,_Crown_Prince_of_Denmark.txt"
     ontology = "family_TBOX.ttl"
     shacl = "family_shacl_final.ttl"
     

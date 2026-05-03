@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from rdflib import Graph
 
 from loaders.loader import Loader, DataEntry
 
@@ -9,8 +8,8 @@ def get_loader():
     bench_dir = Path("custom_family_bench")
     ontology = str(bench_dir.joinpath("family_TBOX.ttl"))
     shacl = str(bench_dir.joinpath("family_shacl_final.ttl"))
-    texts_dir = bench_dir.joinpath("british_royalty_texts")
-    last_run_dir = "british_royalty_gemini_flash_lite_0"
+    texts_dir = bench_dir.joinpath("royalty/test")
+    last_run_dir = "AAA"
     
     results_dir = Path("results")
     look_up_manifest = results_dir.joinpath(
@@ -18,7 +17,7 @@ def get_loader():
         "run_manifest.json"
     )
     if look_up_manifest.exists():
-        with open(look_up_manifest, "r") as f:
+        with open(look_up_manifest, "r", encoding="utf-8") as f:
             json_manifest = json.load(f)
             task_manifests = json_manifest["task_manifests"]
         processed_ids = set([str(Path(p).parent).split("/")[-1] for p in task_manifests])
@@ -28,13 +27,15 @@ def get_loader():
         data_graph_path = None
         
     ids = set([str(path).split("/")[-1].strip(".txt") for path in texts_dir.iterdir()])
-    final_ids = ids - processed_ids
+    final_ids = sorted(ids - processed_ids)
     
     data_entries = []
-    for task_id in final_ids:
+    text_filepaths = [str(texts_dir) + "/" + task_id + ".txt" for task_id in final_ids]
+    step = 1
+    for i in range(0, len(text_filepaths), step):
         entry = DataEntry(
-            entry_id=task_id,
-            text_filepaths=[str(texts_dir) + "/" + task_id + ".txt"],
+            entry_id=f"{i}_{i+step-1}",
+            text_filepaths=text_filepaths[i:i+step],
             ontology_filepath=ontology,
             shacl_filepath=shacl,
             data_graph_path=data_graph_path

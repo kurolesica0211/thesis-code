@@ -1,5 +1,4 @@
 import textwrap
-import json
 from pydantic import create_model, Field, BaseModel
 from langgraph.types import Command
 from typing import Literal, Callable
@@ -10,7 +9,7 @@ from langchain_core.messages.content import ToolCall
 from langgraph.graph import END
 
 from models.data_models import Schema, TaskState, TaskContext, ViolationTranslation, ToolRuntime_
-from orchestration.tracing import append_trace
+from orchestration.tracing import append_trace, append_usage_metadata, append_graph_snapshot
 from core.data_graph_functions import (
     assign_class as assign_class_core,
     unassign_class as unassign_class_core,
@@ -64,12 +63,20 @@ def violation_translation(state: TaskState, context: TaskContext):
         parsed = response["parsed"]
         translation_convo = [trans_system_msg, trans_user_msg, ai_msg]
         final_translation_convo = "\n\n".join([msg.pretty_repr() for msg in translation_convo])
-        
-        with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_convo.md", "w") as f:
+
+        convos_dir = f"{context['artifacts_dir']}/convos"
+        with open(f"{convos_dir}/{state['iterations']}_iter_translation_convo.md", "w", encoding="utf-8") as f:
             f.write(final_translation_convo)
-        
-        with open(f"{context["artifacts_dir"]}/{state["iterations"]}_iter_translation_metadata.md", "w") as f:
-            json.dump(ai_msg.usage_metadata, f, indent=4)
+
+        append_usage_metadata(
+            context["artifacts_dir"],
+            "translation",
+            {
+                "iteration": state["iterations"],
+                "shacl_tool_call_id": state["shacl_tool_call_id"],
+                "metadata": ai_msg.usage_metadata,
+            },
+        )
         
         report = state["violation_report"].model_copy()
         for i, v in enumerate(report.violations):
@@ -116,6 +123,23 @@ def check_entities_typed(state: TaskState, context: TaskContext):
                 format_prompt(context["config"]["prompts"]["not_typed"], nodes=not_typed_str),
                 state["finish_tool_call_id"]
             )
+            
+
+def check_min_iterations_reached(state: TaskState, context: TaskContext):
+    append_trace(context["tracing_path"], "run.event.agent.check_iterations_reached.start", payload={
+            "entry_id": context["entry_id"]
+        })
+    
+    if state["iterations"] < context["config"]["runtime"]["min_iterations"]:
+        append_trace(context["tracing_path"], "run.event.agent.check_iterations_reached.reached", payload={
+            "entry_id": context["entry_id"]
+        })
+        return (
+            "You finished earlier than is required, you may double-check your work. If you are sure that you have finished, just continue using the Finish tool.",
+            state["finish_tool_call_id"]
+        )
+    else:
+        return END
 
 
 class ToolClass:
@@ -125,7 +149,7 @@ class ToolClass:
     Class: type
     
     
-    def __init__(self, schema: Schema, data_graph: Graph):
+    def __init__(self, schema: Schema, data_graph: Graph, shacl_validation: bool = True):
         self.Relation = Literal[tuple([reldef.relation for reldef in schema.relations])]
         self.Type = Literal[tuple(schema.entities)]
         
@@ -225,17 +249,21 @@ class ToolClass:
         """
         
         
-        self.tools_schemas = [AssignClass, UnassignClass, AddTriple, RemoveTriple, ValidateShacl, Finish, AddLiteral, RemoveLiteral]
+        self.tools_schemas = [AssignClass, UnassignClass, AddTriple, RemoveTriple, Finish, AddLiteral, RemoveLiteral]
         self.tools = {
             "AssignClass": self.assign_class,
             "UnassignClass": self.unassign_class,
             "AddTriple": self.add_triple,
             "RemoveTriple": self.remove_triple,
-            "ValidateShacl": self.validate_shacl,
             "Finish": self.finish,
             "AddLiteral": self.add_literal,
             "RemoveLiteral": self.remove_literal
         }
+        
+        if shacl_validation == True:
+            self.tools_schemas.append(ValidateShacl)
+            self.tools["ValidateShacl"] = self.validate_shacl
+        
         self.data_graph_edit_tools = ["AssignClass", "UnassignClass", "AddTriple", "RemoveTriple", "AddLiteral", "RemoveLiteral"]
         self.literal_edit_tools = ["AddLiteral", "RemoveLiteral"]
         
@@ -252,6 +280,7 @@ class ToolClass:
                 last_msg: AIMessage
                 tool_calls: list[ToolCall] = last_msg.tool_calls
                 call_results = []
+                has_pending_data_graph_snapshot = False
                 for call in tool_calls:
                     tool_runtime = ToolRuntime_(
                         state=state,
@@ -261,15 +290,47 @@ class ToolClass:
                     output = self.tools[call["name"]](tool_runtime, **call["args"])
                     if call["name"] in self.data_graph_edit_tools:
                         state["data_graph"] = output[0]
+                        has_pending_data_graph_snapshot = True
                     elif call["name"] == "ValidateShacl":
+                        if has_pending_data_graph_snapshot:
+                            append_graph_snapshot(
+                                runtime.context["artifacts_dir"],
+                                "data_graph",
+                                state["data_graph"].serialize(format="turtle"),
+                                state["iterations"],
+                                "pre_validation",
+                                call["id"],
+                            )
+                            has_pending_data_graph_snapshot = False
+
                         state["violation_report"] = output[1]
+                        
+                        if len(output) > 3 and output[2]:
+                            append_graph_snapshot(
+                                runtime.context["artifacts_dir"],
+                                "validation_graph",
+                                output[3],
+                                state["iterations"],
+                                "validate_shacl",
+                                call["id"],
+                            )
                     call_results.append((output, call["name"]))
+
+                if has_pending_data_graph_snapshot:
+                    append_graph_snapshot(
+                        runtime.context["artifacts_dir"],
+                        "data_graph",
+                        state["data_graph"].serialize(format="turtle"),
+                        state["iterations"],
+                        "post_edits",
+                    )
                 
                 append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.executed_tools", payload={
                     "entry_id": runtime.context["entry_id"]
                 })
                 
                 messages = []
+                last_edit = -1
                 for i, (_, name) in enumerate(reversed(call_results)):
                     if name in self.data_graph_edit_tools:
                         last_edit = len(call_results) - i - 1
@@ -288,11 +349,11 @@ class ToolClass:
                         
                         if error:
                             content.append("Note that this edit to the data graph was not applied "+
-                                           f"due to the following errors:\n{textwrap.indent("\n".join(err_msg), '  ')}")
+                                                                                     f"due to the following errors:\n{textwrap.indent(chr(10).join(err_msg), '  ')}")
                         
                         if i == last_edit:
                             content.append("The final data graph after all the edits:" +
-                                         f"\n{textwrap.indent(output[0].serialize(format="turtle"), '  ')}")
+                                                                                 f"\n{textwrap.indent(output[0].serialize(format='turtle'), '  ')}")
                         else:
                             content.append("Look at the messages below to see the final data graph after all the edits.")
                             
@@ -474,8 +535,9 @@ class ToolClass:
         )
         
         data_graph: Graph = runtime.state["data_graph"]
-        
-        conforms, report = pyshacl_validate(data_graph, runtime.context["ontology_graph"], runtime.context["shacl_graph"])
+
+        conforms, report, graph = pyshacl_validate(data_graph, runtime.context["ontology_graph"], runtime.context["shacl_graph"])
+        validation_graph_ttl = graph.serialize(format="turtle")
         
         append_trace(
             runtime.context["tracing_path"],
@@ -492,10 +554,11 @@ class ToolClass:
         runtime.state["shacl_tool_call_id"] = runtime.tool_call_id
         
         if conforms:
-            return ("SHACL validation has not produced any violations.", runtime.tool_call_id)
+            return ("SHACL validation has not produced any violations.", report, runtime.tool_call_id, validation_graph_ttl)
         
         if runtime.context["config"]["runtime"]["violation_translation"]:
-            return violation_translation(runtime.state, runtime.context)
+            msg, report, tool_id = violation_translation(runtime.state, runtime.context)
+            return (msg, report, validation_graph_ttl, tool_id)
         else:
             return (
                 format_violations(report,
@@ -503,6 +566,7 @@ class ToolClass:
                                   runtime.context["ontology_graph"],
                                   runtime.context["shacl_graph"]),
                 report,
+                validation_graph_ttl,
                 runtime.tool_call_id
             )
             
@@ -520,7 +584,11 @@ class ToolClass:
         
         runtime.state["finish_tool_call_id"] = runtime.tool_call_id
         
-        return check_entities_typed(runtime.state, runtime.context)
+        check_one = check_entities_typed(runtime.state, runtime.context)
+        if check_one == END:
+            return check_min_iterations_reached(runtime.state, runtime.context)
+        else:
+            return check_one
         
         
     def add_literal(self, runtime: ToolRuntime_, subject: str, relation: str, literal_value: str, literal_type: str):

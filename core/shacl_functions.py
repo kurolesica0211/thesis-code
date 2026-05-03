@@ -23,7 +23,7 @@ def pyshacl_validate(data_graph: Graph, ont_graph: Graph, shacl_graph: Graph, de
     if not conforms:
         report.violations = parse_results_graph(results_graph)
     
-    return conforms, report
+    return conforms, report, results_graph
     
     
 def parse_results_graph(results_graph: Graph) -> list[Violation]:
@@ -82,8 +82,9 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
             text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
         text += "\n"
             
-        text += f"    Definition of the path:\n{textwrap.indent(serialize_shape(ont_graph, v.path), '      ')}"
-        text += "\n"
+        if v.path is not None:
+            text += f"    Definition of the path:\n{textwrap.indent(serialize_shape(ont_graph, v.path), '      ')}"
+            text += "\n"
         
         if v.value is not None:
             value_cls_uris = extract_classes(data_graph, v.value)

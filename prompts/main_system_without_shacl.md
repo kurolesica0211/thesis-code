@@ -53,14 +53,11 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 2. **Edit**: Use tools to modify the graph.
    - Every node MUST have a class assignment (`AssignClass`).
    - Ground every edit in text evidence.
-3. **Validate**: Use `ValidateShacl` to check constraints.
-4. **Iterate**: Address violations. If a violation (like MinCount) cannot be fixed without hallucinating data not in the text, **ignore the violation**.
-5. **Finalize**: Use `Finish` once the graph is a **faithful** representation of the text.
+3. **Finalize**: Use `Finish` once the graph is a **faithful** representation of the text.
 
 ### Tool Usage Constraints
 - **AssignClass / UnassignClass**: For `rdf:type` only.
 - **AddTriple / RemoveTriple**: For properties only.
 - **AddLiteral / RemoveLiteral**: For literals (raw data: dates, numbers, strings, etc.) only.
-- **ValidateShacl**: CRITICAL: ALWAYS validate your results before using Finish!
-- **Finish**: CRITICAL: ALWAYS use ValidateShacl before finishing!
+- **Finish**: Once you are finished, use this tool.
 - **Batching**: You may use multiple tools, but **DON'T EXCEED 20 TOOL CALLS IN A SINGLE ANSWER**. Focus on quality and grounding over quantity.

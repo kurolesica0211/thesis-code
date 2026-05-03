@@ -34,29 +34,32 @@ class Loader:
             shacl_graph       = Loader._load_graph(entry.shacl_filepath)
             data_graph        = Loader._load_data_graph(entry.data_graph_path, ont_graph.namespaces())
             
-            for text_path, gt_path in zip(entry.text_filepaths, entry.gold_triples_filepaths):
+            final_text = ""
+            for i, (text_path, _) in enumerate(zip(entry.text_filepaths, entry.gold_triples_filepaths)):
                 text = Loader._load_input_text(text_path)
-                gt_graph = Loader._load_gold_triples(gt_path) if gt_path is not None else None
+                #gt_graph = Loader._load_gold_triples(gt_path) if gt_path is not None else None
+                if i < len(entry.text_filepaths):
+                    final_text += text + "\n"
                 
-                task_entry = TaskEntry(
-                    entry_id=entry.entry_id,
-                    input_text=text,
-                    gold_triples_graph=gt_graph,
-                    ontology_graph=ont_graph,
-                    shacl_graph=shacl_graph,
-                    schema_def=schema,
-                    data_graph=data_graph
-                )
+            task_entry = TaskEntry(
+                entry_id=entry.entry_id,
+                input_text=final_text,
+                gold_triples_graph=None,
+                ontology_graph=ont_graph,
+                shacl_graph=shacl_graph,
+                schema_def=schema,
+                data_graph=data_graph
+            )
             
-                yield task_entry
+            yield task_entry
     
     def get_total(self) -> int:
         """Get total number of task entries"""
-        return sum([len(entry.text_filepaths) for entry in self.input_entries])
+        return len(self.input_entries)
     
     @staticmethod
     def _load_input_text(path: str) -> str:
-        with open(path, "r") as f:
+        with open(path, "r", encoding="utf-8") as f:
             text = f.read()
         return text
     

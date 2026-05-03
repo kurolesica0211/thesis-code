@@ -87,7 +87,7 @@ shacl_graph = shacl_graph.parse(args.shapes)
 
 if args.debug_log == "-":
     if args.bypass_merge == False:
-        conforms, report = pyshacl_validate(graph, ont_graph, shacl_graph)
+        conforms, report, _ = pyshacl_validate(graph, ont_graph, shacl_graph)
     else:
         conforms, results_graph, _ = py_validate(
 			data_graph=graph,
@@ -110,7 +110,7 @@ else:
 		with attach_debug_file_handlers(debug_file):
 			with redirect_stdout(debug_file), redirect_stderr(debug_file):
 					if args.bypass_merge == False:
-						conforms, report = pyshacl_validate(graph, ont_graph, shacl_graph, True)
+						conforms, report, _ = pyshacl_validate(graph, ont_graph, shacl_graph, True)
 					else:
 						conforms, results_graph, _ = py_validate(
 							data_graph=graph,
