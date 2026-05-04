@@ -26,7 +26,11 @@ def get_loader():
         processed_ids = set([])
         data_graph_path = None
         
-    ids = set([str(path).split("/")[-1].strip(".txt") for path in texts_dir.iterdir()])
+    ids = set([
+        str(path).split("/")[-1].strip(".txt")
+        for path in texts_dir.iterdir()
+        if not str(path).split("/")[-1].startswith(".")
+    ])
     final_ids = sorted(ids - processed_ids)
     
     data_entries = []

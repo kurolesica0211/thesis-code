@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pydantic import BaseModel, model_validator, ConfigDict
 from typing import List, TypedDict, Annotated, Any
-from rdflib import Graph, URIRef
+from rdflib import Graph, URIRef, Literal
 from pydantic import BaseModel
 from operator import add
 from langchain_core.language_models.chat_models import BaseChatModel
@@ -63,7 +63,7 @@ class Violation(BaseModel):
     severity: str | None = None
     focus: URIRef | None = None
     path: URIRef | None = None
-    value: URIRef | None = None
+    value: URIRef | Literal | None = None
     constraint: str | None = None
     source_shape: URIRef | None = None
     message: str | None = None

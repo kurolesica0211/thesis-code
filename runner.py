@@ -5,6 +5,7 @@ from copy import deepcopy
 from langchain.messages import HumanMessage, AIMessage, SystemMessage
 from langchain.chat_models import init_chat_model
 from rdflib import Graph
+from contextlib import nullcontext
 
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
@@ -19,6 +20,7 @@ from orchestration.tracing import (
 from orchestration.agent import build_agent, TaskState, TaskContext
 from prompts.prompt_engine import get_prompt, format_prompt
 from models.data_models import TaskEntry
+from orchestration.prompt_caching import google_cache, check_gemini
 
 def _build_loader(config: RunConfig):
     if config.dataset.source == "custom_family_bench":
@@ -94,40 +96,51 @@ def run(config: RunConfig):
         )
         main_user_msg = HumanMessage(main_user_prompt)
         
-        main_llm = init_chat_model(
-            model=config.model.name,
-            temperature=config.model.temperature,
-            max_retries=config.model.max_retries
-        )
-        main_llm = main_llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
-        translation_llm = init_chat_model(
-            model=config.model.name,
-            temperature=config.model.temperature,
-            max_retries=config.model.max_retries
-        )
-        
-        append_trace(trace_path, "run.entry.agent.invoke", payload={
-            "entry_id": task_entry.entry_id,
-        })
-        final_state = agent.invoke(
-            input=TaskState(
-                messages=[main_system_msg, main_user_msg],
-                data_graph=task_entry.data_graph,
-                iterations=0,
-                task_manifest=task_manifest
-            ),
-            context=TaskContext(
-                main_llm=main_llm,
-                translation_llm=translation_llm,
-                entry_id=task_entry.entry_id,
-                input_text=task_entry.input_text,
-                ontology_graph=task_entry.ontology_graph,
-                shacl_graph=task_entry.shacl_graph,
-                tracing_path=trace_path,
-                config=config.model_dump(),
-                artifacts_dir=artifacts_dir
+        use_cache = config.runtime.prompt_caching_enabled and check_gemini(config.model.name)
+        cm = google_cache(
+            config.model.name,
+            main_user_prompt,
+            main_user_prompt,
+            tool_obj.tools_schemas,
+        ) if use_cache else nullcontext()
+        with cm as value:
+            main_llm = init_chat_model(
+                model=config.model.name,
+                temperature=config.model.temperature,
+                max_retries=config.model.max_retries,
+                cached_content=value.name if value else None
             )
-        )
+            if not use_cache:
+                main_llm = main_llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
+            translation_llm = init_chat_model(
+                model=config.model.name,
+                temperature=config.model.temperature,
+                max_retries=config.model.max_retries
+            )
+            
+            append_trace(trace_path, "run.entry.agent.invoke", payload={
+                "entry_id": task_entry.entry_id,
+            })
+            messages = [HumanMessage("Start the work.")] if use_cache else [main_system_msg, main_user_msg]
+            final_state = agent.invoke(
+                input=TaskState(
+                    messages=messages,
+                    data_graph=task_entry.data_graph,
+                    iterations=0,
+                    task_manifest=task_manifest
+                ),
+                context=TaskContext(
+                    main_llm=main_llm,
+                    translation_llm=translation_llm,
+                    entry_id=task_entry.entry_id,
+                    input_text=task_entry.input_text,
+                    ontology_graph=task_entry.ontology_graph,
+                    shacl_graph=task_entry.shacl_graph,
+                    tracing_path=trace_path,
+                    config=config.model_dump(),
+                    artifacts_dir=artifacts_dir
+                )
+            )
         
         task_manifest["done_reason"] = (
             final_state["task_manifest"]["done_reason"] 
@@ -157,7 +170,12 @@ def run(config: RunConfig):
             "final_data_graph",
         )
             
-        final_convo = "\n\n".join([msg.pretty_repr() for msg in final_state["messages"]])
+        final_messages: list = deepcopy(final_state["messages"])
+        if use_cache:
+            del final_messages[0]
+            final_messages.insert(0, main_user_msg)
+            final_messages.insert(0, main_system_msg)
+        final_convo = "\n\n".join([msg.pretty_repr() for msg in final_messages])
         with open(f"{artifacts_dir}/convos/final_convo.md", "w", encoding="utf-8") as f:
             f.write(final_convo)
         

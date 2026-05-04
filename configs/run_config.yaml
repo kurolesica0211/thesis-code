@@ -1,6 +1,6 @@
 model:
   name: google_genai:gemini-3.1-flash-lite-preview
-  temperature: 0.7
+  temperature: 1.0
   max_retries: 4
 
 prompts:
@@ -13,13 +13,13 @@ prompts:
 
 runtime:
   delay_seconds: 4.0
-  prompt_caching_enabled: false
+  prompt_caching_enabled: true
   max_iterations: 20
   min_iterations: 0
   violation_translation: true
   shacl_validation: true
-  same_data_graph: true
-  async: false
+  same_data_graph: false
+  async: true
 
 output:
   base_dir: results
