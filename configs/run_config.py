@@ -31,6 +31,7 @@ class RuntimeConfig(BaseModel):
     violation_translation: bool = True
     same_data_graph: bool = False
     async_mode: bool = False
+    enforce_shacl: bool = True
 
     @model_validator(mode="before")
     @classmethod

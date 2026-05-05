@@ -16,15 +16,16 @@ runtime:
   prompt_caching_enabled: true
   max_iterations: 20
   min_iterations: 0
-  violation_translation: true
-  shacl_validation: true
+  violation_translation: false
+  shacl_validation: false
   same_data_graph: false
+  enforce_shacl: false
   async: true
 
 output:
   base_dir: results
   custom_tag: royalty
-  run_dir: results/royalty_gemini_flash_lite_test
+  run_dir: results/royalty_gemini_flash_lite_3_
 
 dataset:
   source: custom_family_bench

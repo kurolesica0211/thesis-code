@@ -41,7 +41,7 @@ def google_cache(
             tool_config=types.ToolConfig(
                 function_calling_config=types.FunctionCallingConfig(mode="ANY")
             ) if tool_schemas else None,
-            ttl="120s",
+            ttl="300s",
         ),
     )
     try:

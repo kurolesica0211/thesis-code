@@ -6,7 +6,7 @@ from langgraph.types import Command
 from orchestration.tools import ToolClass
 from orchestration.tracing import append_trace
 from models.data_models import TaskState, TaskContext
-from orchestration.tests import test_calls_basic
+from orchestration.tests import test_calls_basic, test_calls_basic1
 
 
 def build_agent(tool_obj: ToolClass):
@@ -19,7 +19,7 @@ def build_agent(tool_obj: ToolClass):
             })
             
             response = runtime.context["main_llm"].invoke(state["messages"])
-            #response = test_calls_basic(state["iterations"])
+            #response = test_calls_basic1(state["iterations"])
             
             append_trace(runtime.context["tracing_path"], "run.entry.agent.llm.finished", payload={
                 "entry_id": runtime.context["entry_id"],

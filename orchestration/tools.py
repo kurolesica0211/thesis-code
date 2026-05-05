@@ -125,6 +125,22 @@ def check_entities_typed(state: TaskState, context: TaskContext):
             )
             
 
+def check_shacl_used(state: TaskState, context: TaskContext):
+    if "violation_report" in state:
+        if state["violation_report"].conforms == True:
+            return END
+        else:
+            return (
+                "Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.",
+                state["finish_tool_call_id"]
+            )
+    else:
+        return (
+            "You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!",
+            state["finish_tool_call_id"]
+        )
+
+
 def check_min_iterations_reached(state: TaskState, context: TaskContext):
     append_trace(context["tracing_path"], "run.event.agent.check_iterations_reached.start", payload={
             "entry_id": context["entry_id"]
@@ -282,7 +298,19 @@ class ToolClass:
                 tool_calls: list[ToolCall] = last_msg.tool_calls
                 call_results = []
                 has_pending_data_graph_snapshot = False
+                violation_report = None
                 for call in tool_calls:
+                    if call["name"] == "ValidateShacl" and has_pending_data_graph_snapshot:
+                        append_graph_snapshot(
+                            runtime.context["artifacts_dir"],
+                            "data_graph",
+                            state["data_graph"].serialize(format="turtle"),
+                            state["iterations"],
+                            "pre_validation",
+                            call["id"],
+                        )
+                        has_pending_data_graph_snapshot = False
+                    
                     tool_runtime = ToolRuntime_(
                         state=state,
                         context=runtime.context,
@@ -293,18 +321,7 @@ class ToolClass:
                         state["data_graph"] = output[0]
                         has_pending_data_graph_snapshot = True
                     elif call["name"] == "ValidateShacl":
-                        if has_pending_data_graph_snapshot:
-                            append_graph_snapshot(
-                                runtime.context["artifacts_dir"],
-                                "data_graph",
-                                state["data_graph"].serialize(format="turtle"),
-                                state["iterations"],
-                                "pre_validation",
-                                call["id"],
-                            )
-                            has_pending_data_graph_snapshot = False
-
-                        state["violation_report"] = output[1]
+                        violation_report = output[1]
                         
                         if len(output) > 3 and output[2]:
                             append_graph_snapshot(
@@ -380,10 +397,13 @@ class ToolClass:
                     "entry_id": runtime.context["entry_id"]
                 })
                 
+                updt = {
+                    "messages": messages
+                }
+                if violation_report is not None:
+                    updt["violation_report"] = violation_report
                 return Command(
-                    update={
-                        "messages": messages,
-                    },
+                    update=updt,
                     goto="llm"
                 )
             else:
@@ -584,11 +604,20 @@ class ToolClass:
         
         runtime.state["finish_tool_call_id"] = runtime.tool_call_id
         
-        check_one = check_entities_typed(runtime.state, runtime.context)
-        if check_one == END:
-            return check_min_iterations_reached(runtime.state, runtime.context)
+        check_shacl = (
+            check_shacl_used(runtime.state, runtime.context)
+                       if runtime.context["config"]["runtime"]["enforce_shacl"]
+                       else END
+        )
+        if check_shacl == END:
+            check_typing = check_entities_typed(runtime.state, runtime.context)
+            if check_typing == END:
+                check_iterations = check_min_iterations_reached(runtime.state, runtime.context)
+                return check_iterations
+            else:
+                return check_typing
         else:
-            return check_one
+            return check_shacl
         
         
     def add_literal(self, runtime: ToolRuntime_, source: str, relation: str, literal_value: str, literal_type: str):

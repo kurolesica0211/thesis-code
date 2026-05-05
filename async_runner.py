@@ -232,7 +232,7 @@ async def run_async(config: RunConfig):
     append_trace(trace_path, "async_run.tasks_loaded", payload={"total": total_tasks})
     
     # Process tasks concurrently with a maximum of 10 workers
-    max_workers = 5
+    max_workers = 10
     delta_graphs: List[Graph] = []
     loop = asyncio.get_event_loop()
     

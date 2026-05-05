@@ -70,42 +70,40 @@ def format_violations(report: ValidationReport, data_graph: Graph, ont_graph: Gr
             flag = True
         
         text += f"  Violation [{i}]:\n"
-        text += f"    Severity: {v.severity}\n"
-        text += f"    Focus node: {strip_uri(strip_ns(str(v.focus)))}\n"
-        text += f"    Path: {strip_uri(strip_ns(str(v.path)))}\n"
-        text += f"    Value: {strip_uri(strip_ns(str(v.value)))}\n"
-        text += f"    Constraint: {v.constraint}\n"
         if not flag:
+            text += f"    Severity: {v.severity}\n"
+            text += f"    Focus node: {strip_uri(strip_ns(str(v.focus)))}\n"
+            text += f"    Path: {strip_uri(strip_ns(str(v.path)))}\n"
+            text += f"    Value: {strip_uri(strip_ns(str(v.value)))}\n"
+            text += f"    Constraint: {v.constraint}\n"
             text += f"    Source shape:\n{textwrap.indent(serialize_shape(shacl_graph, v.source_shape), '      ')}\n"
-        else:
-            text += f"    Source shape: {strip_uri(strip_ns(str(v.source_shape)))}\n"
-        text += f"    SHACL message: {v.message}\n"
-        text += "\n"
+            #text += f"    Source shape: {strip_uri(strip_ns(str(v.source_shape)))}\n"
         
-        focus_cls_uris = extract_classes(data_graph, v.focus)
-        text += f"    Classes assigned to the focus node: {[cls.n3(ont_graph.namespace_manager) for cls in focus_cls_uris]}\n"
+        text += f"    SHACL message: {v.message}\n"
+        
         if not flag:
+            focus_cls_uris = extract_classes(data_graph, v.focus)
+            text += f"    Classes assigned to the focus node: {[cls.n3(ont_graph.namespace_manager) for cls in focus_cls_uris]}\n"
             text += f"    Definitions of the classes assigned to the focus node:\n"
             for cls in focus_cls_uris:
                 text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
-        text += "\n"
+            text += "\n"
             
         if v.path is not None and not flag:
             text += f"    Definition of the path:\n{textwrap.indent(serialize_shape(ont_graph, v.path), '      ')}"
             text += "\n"
         
-        if v.value is not None:
+        if not flag and v.value is not None:
             value_cls_uris = extract_classes(data_graph, v.value)
             text += f"    Classes assigned to the value node: {[cls.n3(ont_graph.namespace_manager) for cls in value_cls_uris]}\n"
-            if not flag:
-                text += f"    Definitions of the classes assigned to the value node:\n"
-                for cls in focus_cls_uris:
-                    text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
-        text += "\n"
+            text += f"    Definitions of the classes assigned to the value node:\n"
+            for cls in focus_cls_uris:
+                text += f"      Class {cls.n3(ont_graph.namespace_manager)}:\n{textwrap.indent(serialize_shape(ont_graph, cls), '        ')}\n"
+            text += "\n"
                 
         if flag:
             text += f"    LLM-provided explanation of the violation:\n{textwrap.indent(v.llm_explanation, '      ')}\n"
-            text += f"    LLM-provided instruction on how to handle the violation:\n{textwrap.indent(v.llm_instruction, '      ')}"
-        text += "\n\n\n"
+            text += f"    LLM-provided instruction on how to handle the violation:\n{textwrap.indent(v.llm_instruction, '      ')}\n"
+        text += "\n\n"
         
     return text

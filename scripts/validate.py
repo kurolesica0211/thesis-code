@@ -1,4 +1,5 @@
 import sys
+import json
 from pathlib import Path
 from argparse import ArgumentParser
 from argparse import Namespace
@@ -126,4 +127,7 @@ else:
 						if not conforms:
 							report.violations = parse_results_graph(results_graph)
 
-print(report.model_dump())
+output_dir = Path("scripts/validation_reports/")
+output_dir.mkdir(exist_ok=True)
+with open(output_dir / (args.data_graph.split("/")[-1].removesuffix(".ttl") + "_report.json"), mode="w") as f:
+    json.dump(report.model_dump(), f, indent=4)
