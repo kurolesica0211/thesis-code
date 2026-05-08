@@ -1,7 +1,8 @@
 import re
 from urllib.parse import quote
 from enum import Enum
-from rdflib import Graph, RDF, URIRef, BNode, XSD, Literal
+from rdflib import Graph, RDF, URIRef, BNode, Literal
+from rdflib.term import XSDToPython
 import logging, traceback
 
 from helpers import strip_ns, strip_uri
@@ -107,7 +108,7 @@ def extract_classes(data_graph: Graph, uri: URIRef) -> list[URIRef]:
     return list(cls_uris)
 
 
-literals = {name: getattr(XSD, name) for (name, _) in vars(XSD)["__annotations__"].items() if re.match("[a-z][a-zA-Z]*", name)}
+literals = {str(uri).split("#")[-1]: uri for uri in XSDToPython.keys() - set([None])}
 GraphLiterals = Enum("GraphLiterals", literals)
 
 class RdfLibExceptionCapture(logging.Handler):
