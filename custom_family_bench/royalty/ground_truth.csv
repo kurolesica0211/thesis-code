@@ -1,7 +1,6 @@
 item,itemLabel,parent,parentLabel,genderLabel,article
 http://www.wikidata.org/entity/Q57304,Prince Bernhard of Lippe-Biesterfeld,http://www.wikidata.org/entity/Q2802589,Armgard of Sierstorpff-Cramm,male,https://en.wikipedia.org/wiki/Prince_Bernhard_of_Lippe-Biesterfeld
 http://www.wikidata.org/entity/Q57264,Alexandrine of Mecklenburg-Schwerin,http://www.wikidata.org/entity/Q232159,Grand Duchess Anastasia Mikhailovna of Russia,female,https://en.wikipedia.org/wiki/Alexandrine_of_Mecklenburg-Schwerin
-http://www.wikidata.org/entity/Q56641,Pim Lier,http://www.wikidata.org/entity/Q2359319,Mien Abbo-Wenneker,male,https://en.wikipedia.org/wiki/Pim_Lier
 http://www.wikidata.org/entity/Q57304,Prince Bernhard of Lippe-Biesterfeld,http://www.wikidata.org/entity/Q649601,Prince Bernhard of Lippe,male,https://en.wikipedia.org/wiki/Prince_Bernhard_of_Lippe-Biesterfeld
 http://www.wikidata.org/entity/Q56641,Pim Lier,http://www.wikidata.org/entity/Q503991,Duke Henry of Mecklenburg-Schwerin,male,https://en.wikipedia.org/wiki/Pim_Lier
 http://www.wikidata.org/entity/Q57264,Alexandrine of Mecklenburg-Schwerin,http://www.wikidata.org/entity/Q57974,Frederick Francis III,female,https://en.wikipedia.org/wiki/Alexandrine_of_Mecklenburg-Schwerin
@@ -181,7 +180,6 @@ http://www.wikidata.org/entity/Q7562997,"Archduchess Sophie, Princess of Windisc
 http://www.wikidata.org/entity/Q75383463,Lady Charlotte Wellesley,http://www.wikidata.org/entity/Q2960441,"Charles Wellesley, 9th Duke of Wellington",female,https://en.wikipedia.org/wiki/Lady_Charlotte_Wellesley
 http://www.wikidata.org/entity/Q4800637,"Arthur Wellesley, Earl of Mornington",http://www.wikidata.org/entity/Q2960441,"Charles Wellesley, 9th Duke of Wellington",male,"https://en.wikipedia.org/wiki/Arthur_Wellesley,_Earl_of_Mornington"
 http://www.wikidata.org/entity/Q75383463,Lady Charlotte Wellesley,http://www.wikidata.org/entity/Q7244552,Princess Antonia of Prussia,female,https://en.wikipedia.org/wiki/Lady_Charlotte_Wellesley
-http://www.wikidata.org/entity/Q4800637,"Arthur Wellesley, Earl of Mornington",http://www.wikidata.org/entity/Q7244552,Princess Antonia of Prussia,male,"https://en.wikipedia.org/wiki/Arthur_Wellesley,_Earl_of_Mornington"
 http://www.wikidata.org/entity/Q8951675,Archduchess Eleonore of Austria,http://www.wikidata.org/entity/Q1276954,Baroness Francesca Thyssen-Bornemisza,female,https://en.wikipedia.org/wiki/Eleonore_von_Habsburg
 http://www.wikidata.org/entity/Q3512965,Eilika Duchess of Oldenburg,http://www.wikidata.org/entity/Q75390946,Ilka Gräfin zu Ortenburg,female,https://en.wikipedia.org/wiki/Duchess_Eilika_of_Oldenburg
 http://www.wikidata.org/entity/Q8951675,Archduchess Eleonore of Austria,http://www.wikidata.org/entity/Q78515,Karl von Habsburg,female,https://en.wikipedia.org/wiki/Eleonore_von_Habsburg
@@ -273,7 +271,6 @@ http://www.wikidata.org/entity/Q12379343,Zenouska Mowatt,http://www.wikidata.org
 http://www.wikidata.org/entity/Q2121373,"Princess Carolina, Marchioness of Sala",http://www.wikidata.org/entity/Q263623,Princess Irene of the Netherlands,female,https://en.wikipedia.org/wiki/Princess_Carolina_de_Bourbon_de_Parme
 http://www.wikidata.org/entity/Q2325684,Prince Karl of Leiningen,http://www.wikidata.org/entity/Q778200,Grand Duchess Maria Kirillovna of Russia,male,https://en.wikipedia.org/wiki/Prince_Karl_of_Leiningen
 http://www.wikidata.org/entity/Q3141755,Prince Floris of Orange-Nassau-Vollenhoven,http://www.wikidata.org/entity/Q268821,Princess Margriet of the Netherlands,male,"https://en.wikipedia.org/wiki/Prince_Floris_of_Orange-Nassau,_van_Vollenhoven"
-http://www.wikidata.org/entity/Q3741799,Flora Vesterberg,http://www.wikidata.org/entity/Q662282,James Ogilvy,female,https://en.wikipedia.org/wiki/Flora_Ogilvy
 http://www.wikidata.org/entity/Q3743334,Marina Windsor,http://www.wikidata.org/entity/Q1009513,"George Windsor, Earl of St Andrews",female,https://en.wikipedia.org/wiki/Lady_Marina_Windsor
 http://www.wikidata.org/entity/Q3743378,Amelia Windsor,http://www.wikidata.org/entity/Q1009513,"George Windsor, Earl of St Andrews",female,https://en.wikipedia.org/wiki/Lady_Amelia_Windsor
 http://www.wikidata.org/entity/Q76249585,Maud Windsor,http://www.wikidata.org/entity/Q3735133,Lord Frederick Windsor,female,https://en.wikipedia.org/wiki/Maud_Windsor
@@ -291,7 +288,6 @@ http://www.wikidata.org/entity/Q4992674,Prince Maurits of Orange-Nassau-Vollenho
 http://www.wikidata.org/entity/Q5809645,"Prince Jaime, Count of Bardi",http://www.wikidata.org/entity/Q263623,Princess Irene of the Netherlands,male,https://en.wikipedia.org/wiki/Jaime_de_Bourbon_de_Parme
 http://www.wikidata.org/entity/Q538532,Grand Duchess Maria Vladimirovna of Russia,http://www.wikidata.org/entity/Q382226,"Grand Duke Vladimir Kirillovich, Grand Duke of Russia",female,https://en.wikipedia.org/wiki/Grand_Duchess_Maria_Vladimirovna_of_Russia
 http://www.wikidata.org/entity/Q242691,Princess Elisabeth of Denmark,http://www.wikidata.org/entity/Q381069,Prince Knud of Denmark,female,https://en.wikipedia.org/wiki/Princess_Elisabeth_of_Denmark
-http://www.wikidata.org/entity/Q6371369,"Karl, 12th Prince Kinsky of Wchinitz and Tettau",http://www.wikidata.org/entity/Q131584011,Roberta Cavanagh,male,"https://en.wikipedia.org/wiki/Karl,_12th_Prince_Kinsky_of_Wchinitz_and_Tettau"
 http://www.wikidata.org/entity/Q570902,Count Ingolf of Rosenborg,http://www.wikidata.org/entity/Q381069,Prince Knud of Denmark,male,https://en.wikipedia.org/wiki/Count_Ingolf_of_Rosenborg
 http://www.wikidata.org/entity/Q573263,Count Christian of Rosenborg,http://www.wikidata.org/entity/Q381069,Prince Knud of Denmark,male,https://en.wikipedia.org/wiki/Count_Christian_of_Rosenborg
 http://www.wikidata.org/entity/Q1878458,Prince Bernhard of Orange-Nassau-Vollenhoven,http://www.wikidata.org/entity/Q301365,Pieter van Vollenhoven,male,"https://en.wikipedia.org/wiki/Prince_Bernhard_of_Orange-Nassau,_van_Vollenhoven"
@@ -308,7 +304,6 @@ http://www.wikidata.org/entity/Q662282,James Ogilvy,http://www.wikidata.org/enti
 http://www.wikidata.org/entity/Q75426,Lady Gabriella Windsor,http://www.wikidata.org/entity/Q313752,Prince Michael of Kent,female,https://en.wikipedia.org/wiki/Lady_Gabriella_Kingston
 http://www.wikidata.org/entity/Q6371369,"Karl, 12th Prince Kinsky of Wchinitz and Tettau",http://www.wikidata.org/entity/Q321787,"Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau",male,"https://en.wikipedia.org/wiki/Karl,_12th_Prince_Kinsky_of_Wchinitz_and_Tettau"
 http://www.wikidata.org/entity/Q862535,Countess Luana of Orange-Nassau,http://www.wikidata.org/entity/Q352981,Prince Friso of the Netherlands,female,"https://en.wikipedia.org/wiki/Countess_Luana_of_Orange-Nassau,_Jonkvrouwe_van_Amsberg"
-http://www.wikidata.org/entity/Q674343,Lady Helen Taylor,http://www.wikidata.org/entity/Q158258,"Prince Edward, Duke of Kent",female,https://en.wikipedia.org/wiki/Lady_Helen_Taylor
 http://www.wikidata.org/entity/Q1009513,"George Windsor, Earl of St Andrews",http://www.wikidata.org/entity/Q158258,"Prince Edward, Duke of Kent",male,"https://en.wikipedia.org/wiki/George_Windsor,_Earl_of_St_Andrews"
 http://www.wikidata.org/entity/Q1217757,Lord Nicholas Windsor,http://www.wikidata.org/entity/Q158258,"Prince Edward, Duke of Kent",male,https://en.wikipedia.org/wiki/Lord_Nicholas_Windsor
 http://www.wikidata.org/entity/Q1772615,Countess Eloise of Orange-Nassau,http://www.wikidata.org/entity/Q355254,Prince Constantijn of the Netherlands,female,https://en.wikipedia.org/wiki/Countess_Eloise_of_Orange-Nassau
@@ -586,7 +581,6 @@ http://www.wikidata.org/entity/Q5041442,"Prince Carlo Alessandro, 3rd Duke of Ca
 http://www.wikidata.org/entity/Q2464604,Prince Karl of Hesse,http://www.wikidata.org/entity/Q2314771,Prince Christoph of Hesse-Kassel,male,https://en.wikipedia.org/wiki/Prince_Karl_of_Hesse
 http://www.wikidata.org/entity/Q24005341,Princess Mafalda of Hesse and by Rhine,http://www.wikidata.org/entity/Q63284,"Prince Moritz, Landgrave of Hesse",female,https://en.wikipedia.org/wiki/Mafalda_von_Hessen
 http://www.wikidata.org/entity/Q54386,"Infanta Elena, Duchess of Lugo",http://www.wikidata.org/entity/Q19943,Juan Carlos I of Spain,female,"https://en.wikipedia.org/wiki/Infanta_Elena,_Duchess_of_Lugo"
-http://www.wikidata.org/entity/Q75392606,Inés de Borbón-Dos Sicilias,http://www.wikidata.org/entity/Q1333222,"Infante Alfonso, Duke of Calabria",female,https://en.wikipedia.org/wiki/In%C3%A9s_de_Borb%C3%B3n-Dos_Sicilias
 http://www.wikidata.org/entity/Q63205821,Tatiana Radziwiłł,http://www.wikidata.org/entity/Q3035416,Prince Dominik Rainer Radziwiłł,female,https://en.wikipedia.org/wiki/Tatiana_Radziwi%C5%82%C5%82
 http://www.wikidata.org/entity/Q372954,Grand Duke Dmitri Pavlovich of Russia,http://www.wikidata.org/entity/Q372964,Grand Duke Paul Alexandrovich of Russia,male,https://en.wikipedia.org/wiki/Grand_Duke_Dmitri_Pavlovich_of_Russia
 http://www.wikidata.org/entity/Q2379307,Princess Eugénie of Greece and Denmark,http://www.wikidata.org/entity/Q170396,Prince George of Greece and Denmark,female,https://en.wikipedia.org/wiki/Princess_Eug%C3%A9nie_of_Greece_and_Denmark
@@ -624,7 +618,6 @@ http://www.wikidata.org/entity/Q165709,Princess Eugenie of York,http://www.wikid
 http://www.wikidata.org/entity/Q191045,Felipe VI of Spain,http://www.wikidata.org/entity/Q19943,Juan Carlos I of Spain,male,https://en.wikipedia.org/wiki/Felipe_VI
 http://www.wikidata.org/entity/Q946985,Prince Gonzalo de Bourbon,http://www.wikidata.org/entity/Q3052995,Emmanuelle de Dampierre,male,"https://en.wikipedia.org/wiki/Gonzalo,_Duke_of_Aquitaine"
 http://www.wikidata.org/entity/Q1626864,Princess Claude d’Orléans,http://www.wikidata.org/entity/Q261284,Isabelle of Orléans-Braganza,female,https://en.wikipedia.org/wiki/Princess_Claude_of_Orl%C3%A9ans
-http://www.wikidata.org/entity/Q765373,"Archduchess Margherita, Archduchess of Austria-Este",http://www.wikidata.org/entity/Q2278538,Princess Anne of Orléans,female,"https://en.wikipedia.org/wiki/Margherita,_Archduchess_of_Austria-Este"
 http://www.wikidata.org/entity/Q7244738,"Princess Marie, Princess Gundakar of Liechtenstein",http://www.wikidata.org/entity/Q3292297,Duchess Marie Thérèse of Württemberg,female,https://en.wikipedia.org/wiki/Princess_Marie_of_Liechtenstein_(born_1959)
 http://www.wikidata.org/entity/Q13091129,Princess Alexandra of Greece,http://www.wikidata.org/entity/Q2623984,Marina Karella,female,https://en.wikipedia.org/wiki/Princess_Alexandra_of_Greece_(born_1968)
 http://www.wikidata.org/entity/Q3387469,"Prince Pedro, Duke of Calabria",http://www.wikidata.org/entity/Q2072516,Princess Anne d'Orléans,male,"https://en.wikipedia.org/wiki/Prince_Pedro,_Duke_of_Calabria"
@@ -804,8 +797,6 @@ http://www.wikidata.org/entity/Q17502451,"Duke Wilhelm, Duke of Württemberg",ht
 http://www.wikidata.org/entity/Q62385,"Duke Carl, Duke of Württemberg",http://www.wikidata.org/entity/Q84971,"Duchess Rosa, Duchess of Württemberg",male,"https://en.wikipedia.org/wiki/Carl,_Duke_of_W%C3%BCrttemberg"
 http://www.wikidata.org/entity/Q3239518,Felipe de Marichalar y Borbón,http://www.wikidata.org/entity/Q726890,Jaime de Marichalar,male,https://en.wikipedia.org/wiki/Felipe_de_Marichalar_y_Borb%C3%B3n
 http://www.wikidata.org/entity/Q151754,"Anne, Princess Royal",http://www.wikidata.org/entity/Q9682,Elizabeth II,female,"https://en.wikipedia.org/wiki/Anne,_Princess_Royal"
-http://www.wikidata.org/entity/Q2825469,Adélaïde de Clermont-Tonnerre,http://www.wikidata.org/entity/Q75293812,Gilonne Boulay de la Meurthe,female,https://en.wikipedia.org/wiki/Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre
-http://www.wikidata.org/entity/Q131934987,Q131934987,http://www.wikidata.org/entity/Q165657,Princess Beatrice of York,female,https://en.wikipedia.org/wiki/Athena_Mapelli_Mozzi
 http://www.wikidata.org/entity/Q108703114,Sienna Mapelli Mozzi,http://www.wikidata.org/entity/Q165657,Princess Beatrice of York,female,https://en.wikipedia.org/wiki/Sienna_Mapelli_Mozzi
 http://www.wikidata.org/entity/Q119133052,Ernest Brooksbank,http://www.wikidata.org/entity/Q165709,Princess Eugenie of York,male,https://en.wikipedia.org/wiki/Ernest_Brooksbank
 http://www.wikidata.org/entity/Q17502451,"Duke Wilhelm, Duke of Württemberg",http://www.wikidata.org/entity/Q75167,"Duke Friedrich, Hereditary Duke of Württemberg",male,"https://en.wikipedia.org/wiki/Wilhelm,_Duke_of_W%C3%BCrttemberg"
@@ -836,12 +827,10 @@ http://www.wikidata.org/entity/Q2354262,Princess Johanna of Hesse and by Rhine,h
 http://www.wikidata.org/entity/Q6049946,Olimpia Torlonia,http://www.wikidata.org/entity/Q4716439,"Alessandro Torlonia, 5th Prince of Civitella-Cesi",female,https://en.wikipedia.org/wiki/Olimpia_Torlonia
 http://www.wikidata.org/entity/Q75384169,Princess Beatrix of Hohenlohe-Langenburg,http://www.wikidata.org/entity/Q66546,"Gottfried, 8th Prince of Hohenlohe-Langenburg",female,https://en.wikipedia.org/wiki/Princess_Beatrix_of_Hohenlohe-Langenburg
 http://www.wikidata.org/entity/Q6757730,"Marco Torlonia, 6th Prince of Civitella-Cesi",http://www.wikidata.org/entity/Q4716439,"Alessandro Torlonia, 5th Prince of Civitella-Cesi",male,"https://en.wikipedia.org/wiki/Marco_Torlonia,_6th_Prince_of_Civitella-Cesi"
-http://www.wikidata.org/entity/Q451724,"Duchess Diane, Duchess of Württemberg",http://www.wikidata.org/entity/Q538411,Prince Henri d'Orléans,female,"https://en.wikipedia.org/wiki/Diane,_Duchess_of_W%C3%BCrttemberg"
 http://www.wikidata.org/entity/Q487309,Paul Ilyinsky,http://www.wikidata.org/entity/Q372954,Grand Duke Dmitri Pavlovich of Russia,male,https://en.wikipedia.org/wiki/Paul_Ilyinsky
 http://www.wikidata.org/entity/Q526743,"Infante Carlos, Duke of Calabria",http://www.wikidata.org/entity/Q1333222,"Infante Alfonso, Duke of Calabria",male,"https://en.wikipedia.org/wiki/Infante_Carlos,_Duke_of_Calabria"
 http://www.wikidata.org/entity/Q534961,Prince Henri d’Orléans,http://www.wikidata.org/entity/Q538411,Prince Henri d'Orléans,male,"https://en.wikipedia.org/wiki/Henri,_Count_of_Paris_(born_1933)"
 http://www.wikidata.org/entity/Q603075,"Prince Alfonso de Bourbon, Duke of Cádiz",http://www.wikidata.org/entity/Q703780,"Infante Jaime, Duke of Segovia",male,"https://en.wikipedia.org/wiki/Alfonso,_Duke_of_Anjou_and_C%C3%A1diz"
-http://www.wikidata.org/entity/Q765373,"Archduchess Margherita, Archduchess of Austria-Este",http://www.wikidata.org/entity/Q431121,"Prince Amedeo, 3rd Duke of Aosta",female,"https://en.wikipedia.org/wiki/Margherita,_Archduchess_of_Austria-Este"
 http://www.wikidata.org/entity/Q946985,Prince Gonzalo de Bourbon,http://www.wikidata.org/entity/Q703780,"Infante Jaime, Duke of Segovia",male,"https://en.wikipedia.org/wiki/Gonzalo,_Duke_of_Aquitaine"
 http://www.wikidata.org/entity/Q1626864,Princess Claude d’Orléans,http://www.wikidata.org/entity/Q538411,Prince Henri d'Orléans,female,https://en.wikipedia.org/wiki/Princess_Claude_of_Orl%C3%A9ans
 http://www.wikidata.org/entity/Q2072516,Princess Anne d'Orléans,http://www.wikidata.org/entity/Q538411,Prince Henri d'Orléans,female,"https://en.wikipedia.org/wiki/Princess_Anne,_Duchess_of_Calabria"
@@ -931,7 +920,6 @@ http://www.wikidata.org/entity/Q3991503,Timothy Bowes-Lyon,http://www.wikidata.o
 http://www.wikidata.org/entity/Q6231704,"John Elphinstone, 17th Lord Elphinstone",http://www.wikidata.org/entity/Q6779476,"Mary Elphinstone, Lady Elphinstone",male,"https://en.wikipedia.org/wiki/John_Elphinstone,_17th_Lord_Elphinstone"
 http://www.wikidata.org/entity/Q3856119,"Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",http://www.wikidata.org/entity/Q75240065,Elizabeth Cator,male,"https://en.wikipedia.org/wiki/Fergus_Bowes-Lyon,_17th_Earl_of_Strathmore_and_Kinghorne"
 http://www.wikidata.org/entity/Q2962982,Gerald David Lascelles,http://www.wikidata.org/entity/Q233913,"Mary, Princess Royal and Countess of Harewood",male,https://en.wikipedia.org/wiki/Gerald_David_Lascelles
-http://www.wikidata.org/entity/Q6759834,Margaret Rhodes,http://www.wikidata.org/entity/Q6779476,"Mary Elphinstone, Lady Elphinstone",female,https://en.wikipedia.org/wiki/Margaret_Rhodes
 http://www.wikidata.org/entity/Q336609,"George Lascelles, 7th Earl of Harewood",http://www.wikidata.org/entity/Q233913,"Mary, Princess Royal and Countess of Harewood",male,"https://en.wikipedia.org/wiki/George_Lascelles,_7th_Earl_of_Harewood"
 http://www.wikidata.org/entity/Q619788,"David Lascelles, 8th Earl of Harewood",http://www.wikidata.org/entity/Q2010206,Marion Stein,male,"https://en.wikipedia.org/wiki/David_Lascelles,_8th_Earl_of_Harewood"
 http://www.wikidata.org/entity/Q336691,"Patricia Knatchbull, 2nd Countess Mountbatten of Burma",http://www.wikidata.org/entity/Q271995,"Edwina Mountbatten, Countess Mountbatten of Burma",female,"https://en.wikipedia.org/wiki/Patricia_Knatchbull,_2nd_Countess_Mountbatten_of_Burma"
@@ -965,7 +953,6 @@ http://www.wikidata.org/entity/Q246026,"Patrick Anson, 5th Earl of Lichfield",ht
 http://www.wikidata.org/entity/Q6469925,Amanda Ellingworth,http://www.wikidata.org/entity/Q332969,"John Knatchbull, 7th Baron Brabourne",female,https://en.wikipedia.org/wiki/Lady_Amanda_Ellingworth
 http://www.wikidata.org/entity/Q4494086,Jeremy Lascelles,http://www.wikidata.org/entity/Q336609,"George Lascelles, 7th Earl of Harewood",male,https://en.wikipedia.org/wiki/Jeremy_Lascelles
 http://www.wikidata.org/entity/Q26215204,"James Elphinstone, 18th Lord Elphinstone",http://www.wikidata.org/entity/Q54162487,Jean Frances Hambro,male,"https://en.wikipedia.org/wiki/James_Elphinstone,_18th_Lord_Elphinstone"
-http://www.wikidata.org/entity/Q21548582,"Granville Leveson-Gower, 6th Earl Granville",http://www.wikidata.org/entity/Q75348152,Doon Aileen Plunket,male,"https://en.wikipedia.org/wiki/Fergus_Leveson-Gower,_6th_Earl_Granville"
 http://www.wikidata.org/entity/Q16195113,Ashley Hicks,http://www.wikidata.org/entity/Q3268202,Lady Pamela Hicks,male,https://en.wikipedia.org/wiki/Ashley_Hicks
 http://www.wikidata.org/entity/Q75332807,Lady Elizabeth Shakerley,http://www.wikidata.org/entity/Q2871729,Princess Anne of Denmark,female,https://en.wikipedia.org/wiki/Lady_Elizabeth_Shakerley
 http://www.wikidata.org/entity/Q1699743,"John Dalrymple, 14th Earl of Stair",http://www.wikidata.org/entity/Q6228439,"John Dalrymple, 13th Earl of Stair",male,"https://en.wikipedia.org/wiki/John_Dalrymple,_14th_Earl_of_Stair"
@@ -973,7 +960,6 @@ http://www.wikidata.org/entity/Q1936171,India Hicks,http://www.wikidata.org/enti
 http://www.wikidata.org/entity/Q336783,"George Mountbatten, 4th Marquess of Milford Haven",http://www.wikidata.org/entity/Q2752971,"David Mountbatten, 3rd Marquess of Milford Haven",male,"https://en.wikipedia.org/wiki/George_Mountbatten,_4th_Marquess_of_Milford_Haven"
 http://www.wikidata.org/entity/Q335615,"Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",http://www.wikidata.org/entity/Q3856119,"Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne",male,"https://en.wikipedia.org/wiki/Michael_Bowes-Lyon,_18th_Earl_of_Strathmore_and_Kinghorne"
 http://www.wikidata.org/entity/Q6679418,Lord Ivar Mountbatten,http://www.wikidata.org/entity/Q75383906,Janet Bryce,male,https://en.wikipedia.org/wiki/Lord_Ivar_Mountbatten
-http://www.wikidata.org/entity/Q7422845,Sarah Troughton,http://www.wikidata.org/entity/Q75248480,Mary Colman,female,https://en.wikipedia.org/wiki/Sarah_Troughton
 http://www.wikidata.org/entity/Q1936171,India Hicks,http://www.wikidata.org/entity/Q3268202,Lady Pamela Hicks,female,https://en.wikipedia.org/wiki/India_Hicks
 http://www.wikidata.org/entity/Q21548582,"Granville Leveson-Gower, 6th Earl Granville",http://www.wikidata.org/entity/Q25998958,"Granville Leveson-Gower, 5th Earl Granville",male,"https://en.wikipedia.org/wiki/Fergus_Leveson-Gower,_6th_Earl_Granville"
 http://www.wikidata.org/entity/Q16195113,Ashley Hicks,http://www.wikidata.org/entity/Q5238032,David Nightingale Hicks,male,https://en.wikipedia.org/wiki/Ashley_Hicks
@@ -1001,12 +987,10 @@ http://www.wikidata.org/entity/Q2414886,Lady Margarita Armstrong-Jones,http://ww
 http://www.wikidata.org/entity/Q3736601,Arthur Chatto,http://www.wikidata.org/entity/Q331657,Daniel Chatto,male,https://en.wikipedia.org/wiki/Arthur_Chatto
 http://www.wikidata.org/entity/Q4381222,Samuel Chatto,http://www.wikidata.org/entity/Q331657,Daniel Chatto,male,https://en.wikipedia.org/wiki/Samuel_Chatto
 http://www.wikidata.org/entity/Q11324270,Nicholas Knatchbull,http://www.wikidata.org/entity/Q1948021,"Norton Knatchbull, 3rd Earl Mountbatten of Burma",male,https://en.wikipedia.org/wiki/Nicholas_Knatchbull_(born_1981)
-http://www.wikidata.org/entity/Q4720674,Alexandra Hooper,http://www.wikidata.org/entity/Q1948021,"Norton Knatchbull, 3rd Earl Mountbatten of Burma",female,https://en.wikipedia.org/wiki/Alexandra_Hooper
 http://www.wikidata.org/entity/Q75774742,Daisy Knatchbull,http://www.wikidata.org/entity/Q75383945,Philip Knatchbull,female,https://en.wikipedia.org/wiki/Daisy_Knatchbull
 http://www.wikidata.org/entity/Q75248478,Albemarle Bowes-Lyon,http://www.wikidata.org/entity/Q63806478,Michael Bowes-Lyon,male,https://en.wikipedia.org/wiki/Albemarle_Bowes-Lyon
 http://www.wikidata.org/entity/Q84795732,Jeanne Marie Langtry,http://www.wikidata.org/entity/Q63196804,Edward Langtry,female,https://en.wikipedia.org/wiki/Jeanne_Marie_Langtry
 http://www.wikidata.org/entity/Q16018831,Mary Malcolm,http://www.wikidata.org/entity/Q3147302,Ian Malcolm,female,https://en.wikipedia.org/wiki/Mary_Malcolm
 http://www.wikidata.org/entity/Q75328030,Angelica Hicks,http://www.wikidata.org/entity/Q75328043,Allegra Hicks,female,https://en.wikipedia.org/wiki/Angelica_Hicks
-http://www.wikidata.org/entity/Q75248480,Mary Colman,http://www.wikidata.org/entity/Q63806478,Michael Bowes-Lyon,female,https://en.wikipedia.org/wiki/Lady_Mary_Colman
 http://www.wikidata.org/entity/Q11801765,Simon Bowes-Lyon,http://www.wikidata.org/entity/Q5231604,David Bowes-Lyon,male,https://en.wikipedia.org/wiki/Simon_Bowes-Lyon
 http://www.wikidata.org/entity/Q25998958,"Granville Leveson-Gower, 5th Earl Granville",http://www.wikidata.org/entity/Q1149075,"William Leveson-Gower, 4th Earl Granville",male,"https://en.wikipedia.org/wiki/Granville_Leveson-Gower,_5th_Earl_Granville"
