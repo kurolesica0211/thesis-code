@@ -10,6 +10,7 @@ from contextlib import nullcontext
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
 from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
+from loaders.bernhard_loader import get_loader as bernhard_get_loader
 from orchestration.tools import ToolClass
 from orchestration.tracing import (
     append_trace,
@@ -24,9 +25,7 @@ from orchestration.prompt_caching import google_cache, check_gemini
 
 def _build_loader(config: RunConfig):
     if config.dataset.source == "custom_family_bench":
-        loader = look_up_family_get_loader()
-        #loader = base_family_get_loader()
-        
+        loader = bernhard_get_loader()
     return loader
 
 def _compute_run_dir(config: RunConfig) -> str:
@@ -104,12 +103,14 @@ def run(config: RunConfig):
             tool_obj.tools_schemas,
         ) if use_cache else nullcontext()
         with cm as value:
-            main_llm = init_chat_model(
+            llm_kwargs = dict(
                 model=config.model.name,
                 temperature=config.model.temperature,
                 max_retries=config.model.max_retries,
-                cached_content=value.name if value else None
             )
+            if use_cache and value:
+                llm_kwargs["cached_content"] = value.name
+            main_llm = init_chat_model(**llm_kwargs)
             if not use_cache:
                 main_llm = main_llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
             translation_llm = init_chat_model(

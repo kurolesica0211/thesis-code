@@ -1,0 +1,31 @@
+model:
+  name: openrouter:google/gemini-2.0-flash-001
+  temperature: 0.0
+  max_retries: 4
+
+prompts:
+  main_system: prompts/main_system.md
+  main_system_without_shacl: prompts/main_system_without_shacl.md
+  main_user: prompts/main_user.md
+  translation_system: prompts/translation_system.md
+  translation_user: prompts/translation_user.md
+  not_typed: prompts/not_typed.md
+
+runtime:
+  delay_seconds: 2.0
+  prompt_caching_enabled: false
+  max_iterations: 10
+  min_iterations: 0
+  violation_translation: false
+  shacl_validation: true
+  enforce_shacl: true
+  same_data_graph: false
+  async: false
+
+output:
+  base_dir: results
+  custom_tag: bernhard
+  run_dir: results/bernhard_run
+
+dataset:
+  source: custom_family_bench

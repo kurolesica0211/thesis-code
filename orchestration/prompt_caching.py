@@ -1,10 +1,10 @@
 from contextlib import contextmanager
 from typing import Sequence
-from google import genai
-from google.genai import types
 
 
 def _build_cache_tools(tool_schemas: Sequence[type] | None):
+    from google import genai
+    from google.genai import types
     tools = []
     for schema in tool_schemas or []:
         tools.append(
@@ -28,6 +28,8 @@ def google_cache(
     user_prompt: str,
     tool_schemas: Sequence[type] | None = None,
 ):
+    from google import genai
+    from google.genai import types
     client = genai.Client()
     cache = client.caches.create(
         model=model.removeprefix("google_genai:"),

@@ -1,0 +1,12 @@
+langchain
+langchain-core
+langchain-openai
+langchain-openrouter
+langgraph
+rdflib
+pyshacl
+litellm
+python-dotenv
+pydantic
+tqdm
+pyyaml
