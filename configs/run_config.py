@@ -1,31 +1,45 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import List, Literal, Optional
+from typing import Literal, Optional
 
 import yaml
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class ModelConfig(BaseModel):
     name: str = "gemini/gemini-flash-lite-latest"
+    temperature: float = 0.0
+    max_retries: int = 4
 
 
 class PromptConfig(BaseModel):
-    extraction_template: str = "prompts/zero_shot_rdf.md"
-    violation_translation_template: str = "prompts/two_step_correction/violation_translation.md"
-    correction_template: str = "prompts/two_step_correction/correction.md"
-
-
-class ShaclConfig(BaseModel):
-    enabled: bool = True
-    max_rounds: int = 1
-    log_enabled: bool = True
-    prompt_caching_enabled: bool = True
+    main_system: str = "prompts/main_system.md"
+    main_system_without_shacl: str = "prompts/main_system_without_shacl.md"
+    main_user: str = "prompts/main_user.md"
+    translation_system: str = "prompts/translation_system.md"
+    translation_user: str = "prompts/translation_user.md"
+    not_typed: str = "prompts/not_typed.md"
 
 
 class RuntimeConfig(BaseModel):
     delay_seconds: float = 4.0
+    max_iterations: int = 10
+    min_iterations: int = 5
+    prompt_caching_enabled: bool = False
+    shacl_validation: bool = True
+    violation_translation: bool = True
+    same_data_graph: bool = False
+    async_mode: bool = False
+    enforce_shacl: bool = True
+
+    @model_validator(mode="before")
+    @classmethod
+    def map_async_key(cls, data):
+        if isinstance(data, dict) and "async" in data and "async_mode" not in data:
+            data = data.copy()
+            data["async_mode"] = data["async"]
+        return data
 
 
 class OutputConfig(BaseModel):
@@ -34,33 +48,16 @@ class OutputConfig(BaseModel):
     run_dir: Optional[str] = None
 
 
-class OSKGCDataConfig(BaseModel):
-    data_dir: str = "OSKGC/data"
-    split: str = "dev"
-    ontology_dir: str = "OSKGC/ontologies/rdf"
-    shacl_shapes_dir: str = "OSKGC/ontologies/shacl_shapes"
-
-
-class FamilyDataConfig(BaseModel):
-    input_text_file: str = "custom_family_bench/habsburgs.txt"
-    ontology_file: str = "custom_family_bench/family_TBOX.owl"
-    shacl_file: str = "custom_family_bench/family_TBOX_shacl_closed.ttl"
-
-
 class DatasetConfig(BaseModel):
-    source: Literal["custom_family_bench", "oskgc"] = "custom_family_bench"
-    oskgc: OSKGCDataConfig = Field(default_factory=OSKGCDataConfig)
-    custom_family_bench: FamilyDataConfig = Field(default_factory=FamilyDataConfig)
+    source: Literal["custom_family_bench"] = "custom_family_bench"
 
 
 class RunConfig(BaseModel):
     model: ModelConfig = Field(default_factory=ModelConfig)
     prompts: PromptConfig = Field(default_factory=PromptConfig)
-    shacl: ShaclConfig = Field(default_factory=ShaclConfig)
     runtime: RuntimeConfig = Field(default_factory=RuntimeConfig)
     output: OutputConfig = Field(default_factory=OutputConfig)
     dataset: DatasetConfig = Field(default_factory=DatasetConfig)
-    categories: List[str] = []
 
     @staticmethod
     def from_yaml(path: str) -> "RunConfig":

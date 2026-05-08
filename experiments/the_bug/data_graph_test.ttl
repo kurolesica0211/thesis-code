@@ -1,0 +1,5 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:A a :Man ;
+    a :Woman .

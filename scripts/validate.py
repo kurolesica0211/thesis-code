@@ -1,44 +1,133 @@
 import sys
+import json
 from pathlib import Path
+from argparse import ArgumentParser
+from argparse import Namespace
+from contextlib import redirect_stdout, redirect_stderr
+from contextlib import contextmanager
+import logging
+from dotenv import load_dotenv
 
+load_dotenv()
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from rdflib import Graph
-import json
-from validators.shacl_validator import OntologyIndex, validate_batch
-from models.data_models import Triple, TripleSchema, EntryExtractionResult
-from typing import List
-import dataclasses
+from core.shacl_functions import pyshacl_validate
+import pyshacl.entrypoints as pyshacl_entrypoints
+from pyshacl import validate as py_validate
 
-shapes = Graph()
-shapes.parse("custom_family_bench/family_TBOX_shacl_opened.ttl", format="turtle")
+from core.shacl_functions import parse_results_graph
+from models.data_models import ValidationReport
 
-with open("custom_family_bench/family_TBOX_shacl_opened.ttl", "r", encoding="utf-8") as f:
-    shacl_data = f.read()
 
-with open("custom_family_bench/family_TBOX.owl", "r", encoding="utf-8") as f:
-    ontology_data = f.read()
+def parse_args() -> Namespace:
+	parser = ArgumentParser()
+	parser.add_argument(
+		"--ontology",
+		required=True
+	)
+	parser.add_argument(
+		"--shapes",
+		required=True
+	)
+	parser.add_argument(
+		"--data-graph",
+		required=True
+	)
+	parser.add_argument(
+		"--debug-log",
+		default="-",
+		help="File path to write pyshacl debug output.",
+	)
+	parser.add_argument(
+		"--bypass-merge",
+		default=False,
+		type=bool,
+		help="Whether to bypass the data graph + shacl shapes merge"
+	)
+	return parser.parse_args()
 
-with open("results/habsburgs_rdf_shacl_gemini_gemini-flash-lite-latest/results.json", "r", encoding="utf-8") as f:
-    records = json.load(f)
-    
-ont_idx = OntologyIndex(ontology_data, "xml")
 
-pred_triples: List[Triple] = []
-pred_schemas: List[TripleSchema] = []
+@contextmanager
+def attach_debug_file_handlers(debug_file):
+	logger_names = ["pyshacl", "pyshacl-validate"]
+	handler = logging.StreamHandler(debug_file)
+	handler.setLevel(logging.DEBUG)
+	handler.setFormatter(logging.Formatter("%(message)s"))
+	original_pyshacl_stderr = pyshacl_entrypoints.stderr
 
-for triple in records[0]["pred_triples"]:
-    pred_triples.append(Triple(**triple))
-for schema in records[0]["pred_schemas"]:
-    pred_schemas.append(TripleSchema(**schema))
+	configured_loggers = []
+	for logger_name in logger_names:
+		logger = logging.getLogger(logger_name)
+		configured_loggers.append((logger, logger.level))
+		logger.setLevel(logging.DEBUG)
+		logger.addHandler(handler)
 
-extraction_results = EntryExtractionResult(triples=pred_triples, schemas=pred_schemas)
-extraction_dict = {"entry_1": extraction_results}
+	# pyshacl's default logger writes to pyshacl.entrypoints.stderr.
+	pyshacl_entrypoints.stderr = debug_file
 
-validation_results = validate_batch(extraction_dict, ontology_data, shacl_data, ontology_format="xml")
+	try:
+		yield
+	finally:
+		for logger, prev_level in configured_loggers:
+			logger.removeHandler(handler)
+			logger.setLevel(prev_level)
+		pyshacl_entrypoints.stderr = original_pyshacl_stderr
+		handler.flush()
 
-with open("validation_report.txt", "w", encoding="utf-8") as f:
-    f.write(json.dumps(dataclasses.asdict(validation_results[0]), indent=2))
-    
-with open("data_graph.ttl", "w", encoding="utf-8") as f:
-    f.write(validation_results[2])
+args = parse_args()
+
+graph = Graph()
+graph = graph.parse(args.data_graph)
+
+ont_graph = Graph()
+ont_graph = ont_graph.parse(args.ontology)
+
+shacl_graph = Graph()
+shacl_graph = shacl_graph.parse(args.shapes)
+
+if args.debug_log == "-":
+    if args.bypass_merge == False:
+        conforms, report, _ = pyshacl_validate(graph, ont_graph, shacl_graph)
+    else:
+        conforms, results_graph, _ = py_validate(
+			data_graph=graph,
+			shacl_graph=shacl_graph,
+			#ont_graph=ont_graph,
+			advanced=True,
+			abort_on_first=False,
+			debug=False
+		)
+        
+        report = ValidationReport(conforms=conforms)
+        
+        if not conforms:
+            report.violations = parse_results_graph(results_graph)
+else:
+	debug_log_path = Path(args.debug_log)
+	debug_log_path.parent.mkdir(parents=True, exist_ok=True)
+	with debug_log_path.open("w", encoding="utf-8") as debug_file:
+		# Capture both plain stream output and logger output from pyshacl.
+		with attach_debug_file_handlers(debug_file):
+			with redirect_stdout(debug_file), redirect_stderr(debug_file):
+					if args.bypass_merge == False:
+						conforms, report, _ = pyshacl_validate(graph, ont_graph, shacl_graph, True)
+					else:
+						conforms, results_graph, _ = py_validate(
+							data_graph=graph,
+							shacl_graph=shacl_graph,
+							#ont_graph=ont_graph,
+							advanced=True,
+							abort_on_first=False,
+							debug=True
+						)
+						
+						report = ValidationReport(conforms=conforms)
+						
+						if not conforms:
+							report.violations = parse_results_graph(results_graph)
+
+output_dir = Path("scripts/validation_reports/")
+output_dir.mkdir(exist_ok=True)
+with open(output_dir / (args.data_graph.split("/")[-1].removesuffix(".ttl") + "_report.json"), mode="w") as f:
+    json.dump(report.model_dump(), f, indent=4)
