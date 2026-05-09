@@ -1,0 +1,4525 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Adam_Karol_Czartoryski a :Person ;
+    rdfs:label "Adam Karol Czartoryski" ;
+    data:wdtLink wdt:Q2823967 ;
+    :hasParent data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Adélaïde_de_Clermont-Tonnerre a :Person ;
+    rdfs:label "Adélaïde de Clermont-Tonnerre" ;
+    data:wdtLink wdt:Q2825469 ;
+    :hasParent data:Renaud_de_Clermont-Tonnerre ;
+    :hasSex data:female .
+
+data:Albemarle_Bowes-Lyon a :Person ;
+    rdfs:label "Albemarle Bowes-Lyon" ;
+    data:wdtLink wdt:Q75248478 ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male .
+
+data:Albert_Windsor a :Person ;
+    rdfs:label "Albert Windsor" ;
+    data:wdtLink wdt:Q75616658 ;
+    :hasParent data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:male .
+
+data:Alexander_Elphinstone-_19th_Lord_Elphinstone a :Person ;
+    rdfs:label "Alexander Elphinstone, 19th Lord Elphinstone" ;
+    data:wdtLink wdt:Q4718803 ;
+    :hasParent data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Willa_Chetwode ;
+    :hasSex data:male .
+
+data:Alexander_Lascelles-_Viscount_Lascelles a :Person ;
+    rdfs:label "Alexander Lascelles, Viscount Lascelles" ;
+    data:wdtLink wdt:Q4719359 ;
+    :hasParent data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasSex data:male .
+
+data:Alexandra_Hooper a :Person ;
+    rdfs:label "Alexandra Hooper" ;
+    data:wdtLink wdt:Q4720674 ;
+    :hasParent data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female .
+
+data:Alfonso-_Prince_of_Asturias a :Person ;
+    rdfs:label "Alfonso, Prince of Asturias" ;
+    data:wdtLink wdt:Q518846 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
+
+data:Amanda_Ellingworth a :Person ;
+    rdfs:label "Amanda Ellingworth" ;
+    data:wdtLink wdt:Q6469925 ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female .
+
+data:Amelia_Morales_y_de_Grecia a :Person ;
+    rdfs:label "Amelia Morales y de Grecia" ;
+    data:wdtLink wdt:Q75662169 ;
+    :hasParent data:Carlos_Morales_Quintana,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Amelia_Windsor a :Person ;
+    rdfs:label "Amelia Windsor" ;
+    data:wdtLink wdt:Q3743378 ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female .
+
+data:Angelica_Hicks a :Person ;
+    rdfs:label "Angelica Hicks" ;
+    data:wdtLink wdt:Q75328030 ;
+    :hasParent data:Allegra_Hicks,
+        data:Ashley_Hicks ;
+    :hasSex data:female .
+
+data:Archduchess_Eleonore_of_Austria a :Person ;
+    rdfs:label "Archduchess Eleonore of Austria" ;
+    data:wdtLink wdt:Q8951675 ;
+    :hasParent data:Baroness_Francesca_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasSex data:female .
+
+data:Archduchess_Gabriela_of_Austria a :Person ;
+    rdfs:label "Archduchess Gabriela of Austria" ;
+    data:wdtLink wdt:Q113733 ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina-_Crown_Princess_of_Austria ;
+    :hasSex data:female .
+
+data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person ;
+    rdfs:label "Archduchess Sophie, Princess of Windisch-Graetz" ;
+    data:wdtLink wdt:Q7562997 ;
+    :hasParent data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria,
+        data:Archduke_Ferdinand_of_Austria ;
+    :hasSex data:female .
+
+data:Archduchess_Walburga-_Countess_Douglas a :Person ;
+    rdfs:label "Archduchess Walburga, Countess Douglas" ;
+    data:wdtLink wdt:Q77555 ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina-_Crown_Princess_of_Austria ;
+    :hasSex data:female .
+
+data:Archduke_Ferdinand_Zvonimir_of_Austria a :Person ;
+    rdfs:label "Archduke Ferdinand Zvonimir of Austria" ;
+    data:wdtLink wdt:Q1032270 ;
+    :hasParent data:Baroness_Francesca_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasSex data:male .
+
+data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Person ;
+    rdfs:label "Archduke Gottfried of Austria, Hereditary Grand Duke of Tuscany" ;
+    data:wdtLink wdt:Q2679087 ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Archduke_Peter_Ferdinand-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:male .
+
+data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Person ;
+    rdfs:label "Archduke Sigismund, Hereditary Grand Duke of Tuscany" ;
+    data:wdtLink wdt:Q2019524 ;
+    :hasParent data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :hasSex data:male .
+
+data:Arthur_Chatto a :Person ;
+    rdfs:label "Arthur Chatto" ;
+    data:wdtLink wdt:Q3736601 ;
+    :hasParent data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :hasSex data:male .
+
+data:Arthur_Wellesley-_Earl_of_Mornington a :Person ;
+    rdfs:label "Arthur Wellesley, Earl of Mornington" ;
+    data:wdtLink wdt:Q4800637 ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasSex data:male .
+
+data:August_Brooksbank a :Person ;
+    rdfs:label "August Brooksbank" ;
+    data:wdtLink wdt:Q105597990 ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :hasSex data:male .
+
+data:Beatrix_von_Storch a :Person ;
+    rdfs:label "Beatrix von Storch" ;
+    data:wdtLink wdt:Q14924803 ;
+    :hasParent data:Felicitas-Anita_Gräfin_Schwerin_von_Krosigk,
+        data:Huno_Herzog_von_Oldenburg ;
+    :hasSex data:female .
+
+data:Bernhard-_Prince_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Bernhard, Prince of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q746752 ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Friedrich_of_Saxe-Meiningen ;
+    :hasSex data:male .
+
+data:Bertrand_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Bertrand de Orléans e Bragança" ;
+    data:wdtLink wdt:Q198780 ;
+    :hasParent data:Pedro_Henrique_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:male .
+
+data:Carlos_Morales_y_de_Grecia a :Person ;
+    rdfs:label "Carlos Morales y de Grecia" ;
+    data:wdtLink wdt:Q75486738 ;
+    :hasParent data:Carlos_Morales_Quintana,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Catharina-Amalia-_Princess_of_Orange a :Person ;
+    rdfs:label "Catharina-Amalia, Princess of Orange" ;
+    data:wdtLink wdt:Q855749 ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Christian-_Crown_Prince_of_Denmark a :Person ;
+    rdfs:label "Christian, Crown Prince of Denmark" ;
+    data:wdtLink wdt:Q160495 ;
+    :hasParent data:Frederik_X_of_Denmark,
+        data:Queen_Mary_of_Denmark ;
+    :hasSex data:male .
+
+data:Christian_Duke__of_Oldenburg a :Person ;
+    rdfs:label "Christian Duke  of Oldenburg" ;
+    data:wdtLink wdt:Q5312748 ;
+    :hasParent data:Ameli-_Duchess_of_Oldenburg,
+        data:Anton-Günther-_Duke_of_Oldenburg ;
+    :hasSex data:male .
+
+data:Christina_Oxenberg a :Person ;
+    rdfs:label "Christina Oxenberg" ;
+    data:wdtLink wdt:Q27107390 ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female .
+
+data:Count_Christian_of_Rosenborg a :Person ;
+    rdfs:label "Count Christian of Rosenborg" ;
+    data:wdtLink wdt:Q573263 ;
+    :hasParent data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:male .
+
+data:Count_Claus-Casimir_of_Orange-Nassau a :Person ;
+    rdfs:label "Count Claus-Casimir of Orange-Nassau" ;
+    data:wdtLink wdt:Q3358467 ;
+    :hasParent data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Count_Felix_of_Monpezat a :Person ;
+    rdfs:label "Count Felix of Monpezat" ;
+    data:wdtLink wdt:Q1004751 ;
+    :hasParent data:Alexandra_Manley-_Countess_of_Frederiksborg,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:male .
+
+data:Count_Henrik_of_Monpezat a :Person ;
+    rdfs:label "Count Henrik of Monpezat" ;
+    data:wdtLink wdt:Q2317090 ;
+    :hasParent data:Prince_Joachim_of_Denmark,
+        data:Princess_Marie_of_Denmark ;
+    :hasSex data:male .
+
+data:Count_Ingolf_of_Rosenborg a :Person ;
+    rdfs:label "Count Ingolf of Rosenborg" ;
+    data:wdtLink wdt:Q570902 ;
+    :hasParent data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:male .
+
+data:Count_Nikolai_of_Monpezat a :Person ;
+    rdfs:label "Count Nikolai of Monpezat" ;
+    data:wdtLink wdt:Q241033 ;
+    :hasParent data:Alexandra_Manley-_Countess_of_Frederiksborg,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:male .
+
+data:Countess_Athena_of_Monpezat a :Person ;
+    rdfs:label "Countess Athena of Monpezat" ;
+    data:wdtLink wdt:Q2036974 ;
+    :hasParent data:Prince_Joachim_of_Denmark,
+        data:Princess_Marie_of_Denmark ;
+    :hasSex data:female .
+
+data:Countess_Eloise_of_Orange-Nassau a :Person ;
+    rdfs:label "Countess Eloise of Orange-Nassau" ;
+    data:wdtLink wdt:Q1772615 ;
+    :hasParent data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Countess_Leonore_of_Orange-Nassau a :Person ;
+    rdfs:label "Countess Leonore of Orange-Nassau" ;
+    data:wdtLink wdt:Q2377795 ;
+    :hasParent data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Countess_Luana_of_Orange-Nassau a :Person ;
+    rdfs:label "Countess Luana of Orange-Nassau" ;
+    data:wdtLink wdt:Q862535 ;
+    :hasParent data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female .
+
+data:Countess_Zaria_of_Orange-Nassau a :Person ;
+    rdfs:label "Countess Zaria of Orange-Nassau" ;
+    data:wdtLink wdt:Q4590996 ;
+    :hasParent data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female .
+
+data:Daisy_Knatchbull a :Person ;
+    rdfs:label "Daisy Knatchbull" ;
+    data:wdtLink wdt:Q75774742 ;
+    :hasParent data:Atalanta_Cowen,
+        data:Philip_Knatchbull ;
+    :hasSex data:female .
+
+data:David_Chavchavadze a :Person ;
+    rdfs:label "David Chavchavadze" ;
+    data:wdtLink wdt:Q2621015 ;
+    :hasParent data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male .
+
+data:Donata_of_Mecklenburg a :Person ;
+    rdfs:label "Donata of Mecklenburg" ;
+    data:wdtLink wdt:Q5311288 ;
+    :hasParent data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
+        data:Princess_Barbara_of_Prussia ;
+    :hasSex data:female .
+
+data:Duchess_Diane-_Duchess_of_Württemberg a :Person ;
+    rdfs:label "Duchess Diane, Duchess of Württemberg" ;
+    data:wdtLink wdt:Q451724 ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female .
+
+data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg a :Person ;
+    rdfs:label "Duchess Helena, Hereditary Duchess of Württemberg" ;
+    data:wdtLink wdt:Q86044 ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Archduke_Peter_Ferdinand-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:female .
+
+data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Marie Antoinette of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q115132 ;
+    :hasParent data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:female .
+
+data:Duke_Carl-_Duke_of_Württemberg a :Person ;
+    rdfs:label "Duke Carl, Duke of Württemberg" ;
+    data:wdtLink wdt:Q62385 ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male .
+
+data:Duke_Friedrich_August_of_Oldenburg a :Person ;
+    rdfs:label "Duke Friedrich August of Oldenburg" ;
+    data:wdtLink wdt:Q3201780 ;
+    :hasParent data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male .
+
+data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duke Johann Albrecht of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q61464 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Person ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q2754379 ;
+    :hasParent data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:male .
+
+data:Duke_Wilhelm-_Duke_of_Württemberg a :Person ;
+    rdfs:label "Duke Wilhelm, Duke of Württemberg" ;
+    data:wdtLink wdt:Q17502451 ;
+    :hasParent data:Duchess_Marie-_Hereditary_Duchess_of_Württemberg,
+        data:Duke_Friedrich-_Hereditary_Duke_of_Württemberg ;
+    :hasSex data:male .
+
+data:Edward_VIII a :Person ;
+    rdfs:label "Edward VIII" ;
+    data:wdtLink wdt:Q590227 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:male .
+
+data:Edward_Windsor-_Lord_Downpatrick a :Person ;
+    rdfs:label "Edward Windsor, Lord Downpatrick" ;
+    data:wdtLink wdt:Q3736843 ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:male .
+
+data:Eilika_Duchess_of_Oldenburg a :Person ;
+    rdfs:label "Eilika Duchess of Oldenburg" ;
+    data:wdtLink wdt:Q3512965 ;
+    :hasParent data:Duke_Johann_of_Oldenburg,
+        data:Ilka_Gräfin_zu_Ortenburg ;
+    :hasSex data:female .
+
+data:Ernest_Brooksbank a :Person ;
+    rdfs:label "Ernest Brooksbank" ;
+    data:wdtLink wdt:Q119133052 ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :hasSex data:male .
+
+data:Eugénie_de_Bourbon a :Person ;
+    rdfs:label "Eugénie de Bourbon" ;
+    data:wdtLink wdt:Q16999217 ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:female .
+
+data:Felipe_de_Marichalar_y_Borbón a :Person ;
+    rdfs:label "Felipe de Marichalar y Borbón" ;
+    data:wdtLink wdt:Q3239518 ;
+    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasSex data:male .
+
+data:Ferdinand_dOrléans-_Duke_of_Montpensier a :Person ;
+    rdfs:label "Ferdinand d'Orléans, Duke of Montpensier" ;
+    data:wdtLink wdt:Q969754 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male .
+
+data:Fergus_Bowes-Lyon a :Person ;
+    rdfs:label "Fergus Bowes-Lyon" ;
+    data:wdtLink wdt:Q5444165 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Fernand_Sanz a :Person ;
+    rdfs:label "Fernand Sanz" ;
+    data:wdtLink wdt:Q26455 ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasSex data:male .
+
+data:Flora_Vesterberg a :Person ;
+    rdfs:label "Flora Vesterberg" ;
+    data:wdtLink wdt:Q3741799 ;
+    :hasParent data:Julia_Ogilvy ;
+    :hasSex data:female .
+
+data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q215791 ;
+    :hasParent data:Frederick_Francis_IV,
+        data:Princess_Alexandra_of_Hanover ;
+    :hasSex data:male .
+
+data:Georg_von_Habsburg a :Person ;
+    rdfs:label "Georg von Habsburg" ;
+    data:wdtLink wdt:Q112096 ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina-_Crown_Princess_of_Austria ;
+    :hasSex data:male .
+
+data:George_II_of_Greece a :Person ;
+    rdfs:label "George II of Greece" ;
+    data:wdtLink wdt:Q152935 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:male .
+
+data:Gerald_David_Lascelles a :Person ;
+    rdfs:label "Gerald David Lascelles" ;
+    data:wdtLink wdt:Q2962982 ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Andrei Vladimirovich of Russia" ;
+    data:wdtLink wdt:Q502763 ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasSex data:male .
+
+data:Grand_Duke_Boris_Vladimirovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Boris Vladimirovich of Russia" ;
+    data:wdtLink wdt:Q373048 ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasSex data:male .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia" ;
+    data:wdtLink wdt:Q2468206 ;
+    :hasParent data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasSex data:male .
+
+data:Granville_Leveson-Gower-_6th_Earl_Granville a :Person ;
+    rdfs:label "Granville Leveson-Gower, 6th Earl Granville" ;
+    data:wdtLink wdt:Q21548582 ;
+    :hasParent data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasSex data:male .
+
+data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg" ;
+    data:wdtLink wdt:Q1797936 ;
+    :hasParent data:Princess_Benedikte_of_Denmark,
+        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:male .
+
+data:Heinrich_XIII_Prinz_Reuss a :Person ;
+    rdfs:label "Heinrich XIII Prinz Reuss" ;
+    data:wdtLink wdt:Q75392006 ;
+    :hasParent data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin,
+        data:Prince_Heinrich_I_Reuss_of_Köstritz ;
+    :hasSex data:male .
+
+data:Hermann_Leiningen a :Person ;
+    rdfs:label "Hermann Leiningen" ;
+    data:wdtLink wdt:Q8562880 ;
+    :hasParent data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasSex data:male .
+
+data:Hilmar_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Hilmar Bussche-Haddenhausen" ;
+    data:wdtLink wdt:Q1618862 ;
+    :hasParent data:Juliana_von_Salviati,
+        data:Julius_Ernst_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:male .
+
+data:India_Hicks a :Person ;
+    rdfs:label "India Hicks" ;
+    data:wdtLink wdt:Q1936171 ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female .
+
+data:India_Oxenberg a :Person ;
+    rdfs:label "India Oxenberg" ;
+    data:wdtLink wdt:Q75244337 ;
+    :hasParent data:Catherine_Oxenberg ;
+    :hasSex data:female .
+
+data:Infanta_Isabel_Alfonsa_of_Spain a :Person ;
+    rdfs:label "Infanta Isabel Alfonsa of Spain" ;
+    data:wdtLink wdt:Q2457276 ;
+    :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias,
+        data:Prince_Carlos_of_the_Two_Sicilies ;
+    :hasSex data:female .
+
+data:Infanta_Margarita-_Duchess_of_Soria a :Person ;
+    rdfs:label "Infanta Margarita, Duchess of Soria" ;
+    data:wdtLink wdt:Q237165 ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:female .
+
+data:Infanta_María_Cristina_of_Spain a :Person ;
+    rdfs:label "Infanta María Cristina of Spain" ;
+    data:wdtLink wdt:Q2412713 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female .
+
+data:Infanta_Pilar-_Duchess_of_Badajoz a :Person ;
+    rdfs:label "Infanta Pilar, Duchess of Badajoz" ;
+    data:wdtLink wdt:Q240580 ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:female .
+
+data:Infanta_Sofía_of_Spain a :Person ;
+    rdfs:label "Infanta Sofía of Spain" ;
+    data:wdtLink wdt:Q847010 ;
+    :hasParent data:Felipe_VI_of_Spain,
+        data:Queen_Letizia_of_Spain ;
+    :hasSex data:female .
+
+data:Infante_Alfonso_of_Spain a :Person ;
+    rdfs:label "Infante Alfonso of Spain" ;
+    data:wdtLink wdt:Q704310 ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male .
+
+data:Infante_Ferdinand_of_Spain a :Person ;
+    rdfs:label "Infante Ferdinand of Spain" ;
+    data:wdtLink wdt:Q4997826 ;
+    :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias,
+        data:Prince_Carlos_of_the_Two_Sicilies ;
+    :hasSex data:male .
+
+data:Infante_Gonzalo_of_Spain a :Person ;
+    rdfs:label "Infante Gonzalo of Spain" ;
+    data:wdtLink wdt:Q1332391 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
+
+data:Inés_de_Borbón-Dos_Sicilias a :Person ;
+    rdfs:label "Inés de Borbón-Dos Sicilias" ;
+    data:wdtLink wdt:Q75392606 ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasSex data:female .
+
+data:Irene_Urdangarin_y_de_Borbón a :Person ;
+    rdfs:label "Irene Urdangarin y de Borbón" ;
+    data:wdtLink wdt:Q3232528 ;
+    :hasParent data:Infanta_Cristina_of_Spain,
+        data:Iñaki_Urdangarin ;
+    :hasSex data:female .
+
+data:Iris_Mountbatten a :Person ;
+    rdfs:label "Iris Mountbatten" ;
+    data:wdtLink wdt:Q10315513 ;
+    :hasParent data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Irene_Mountbatten-_Marchioness_of_Carisbrooke ;
+    :hasSex data:female .
+
+data:Isabella_Windsor a :Person ;
+    rdfs:label "Isabella Windsor" ;
+    data:wdtLink wdt:Q76306742 ;
+    :hasParent data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman ;
+    :hasSex data:female .
+
+data:Isla_Phillips a :Person ;
+    rdfs:label "Isla Phillips" ;
+    data:wdtLink wdt:Q5921597 ;
+    :hasParent data:Autumn_Phillips,
+        data:Peter_Phillips ;
+    :hasSex data:female .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
+    data:wdtLink wdt:Q75317760 ;
+    :hasParent data:Prince_Pedro-_Duke_of_Calabria,
+        data:Sofía_Landaluce_y_Melgarejo ;
+    :hasSex data:male .
+
+data:James-_Earl_of_Wessex a :Person ;
+    rdfs:label "James, Earl of Wessex" ;
+    data:wdtLink wdt:Q550183 ;
+    :hasParent data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Sophie-_Duchess_of_Edinburgh ;
+    :hasSex data:male .
+
+data:James_Lascelles a :Person ;
+    rdfs:label "James Lascelles" ;
+    data:wdtLink wdt:Q2038298 ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male .
+
+data:James_Ogilvy a :Person ;
+    rdfs:label "James Ogilvy" ;
+    data:wdtLink wdt:Q662282 ;
+    :hasParent data:Angus_Ogilvy,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasSex data:male .
+
+data:Jean-Christophe-_Prince_Napoléon a :Person ;
+    rdfs:label "Jean-Christophe, Prince Napoléon" ;
+    data:wdtLink wdt:Q620337 ;
+    :hasParent data:Prince_Charles_Bonaparte,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasSex data:male .
+
+data:Jeremy_Lascelles a :Person ;
+    rdfs:label "Jeremy Lascelles" ;
+    data:wdtLink wdt:Q4494086 ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male .
+
+data:John_Dalrymple-_14th_Earl_of_Stair a :Person ;
+    rdfs:label "John Dalrymple, 14th Earl of Stair" ;
+    data:wdtLink wdt:Q1699743 ;
+    :hasParent data:Davina_Bowes-Lyon,
+        data:John_Dalrymple-_13th_Earl_of_Stair ;
+    :hasSex data:male .
+
+data:John_Elphinstone-_17th_Lord_Elphinstone a :Person ;
+    rdfs:label "John Elphinstone, 17th Lord Elphinstone" ;
+    data:wdtLink wdt:Q6231704 ;
+    :hasParent data:Mary_Elphinstone-_Lady_Elphinstone,
+        data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :hasSex data:male .
+
+data:Karl-_12th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Person ;
+    rdfs:label "Karl, 12th Prince Kinsky of Wchinitz and Tettau" ;
+    data:wdtLink wdt:Q6371369 ;
+    :hasParent data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male .
+
+data:Karl_Friedrich-_Prince_of_Hohenzollern a :Person ;
+    rdfs:label "Karl Friedrich, Prince of Hohenzollern" ;
+    data:wdtLink wdt:Q78201 ;
+    :hasParent data:Prince_Friedrich_Wilhelm-_Prince_of_Hohenzollern,
+        data:Princess_Margarita_of_Leiningen ;
+    :hasSex data:male .
+
+data:Katherine_Bowes-Lyon a :Person ;
+    rdfs:label "Katherine Bowes-Lyon" ;
+    data:wdtLink wdt:Q75248488 ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasSex data:female .
+
+data:Lady_Charlotte_Wellesley a :Person ;
+    rdfs:label "Lady Charlotte Wellesley" ;
+    data:wdtLink wdt:Q75383463 ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female .
+
+data:Lady_Cosima_Windsor a :Person ;
+    rdfs:label "Lady Cosima Windsor" ;
+    data:wdtLink wdt:Q3272681 ;
+    :hasParent data:Alexander_Windsor-_Earl_of_Ulster,
+        data:Claire_Booth ;
+    :hasSex data:female .
+
+data:Lady_Davina_Windsor a :Person ;
+    rdfs:label "Lady Davina Windsor" ;
+    data:wdtLink wdt:Q268139 ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female .
+
+data:Lady_Elizabeth_Shakerley a :Person ;
+    rdfs:label "Lady Elizabeth Shakerley" ;
+    data:wdtLink wdt:Q75332807 ;
+    :hasParent data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:female .
+
+data:Lady_Gabriella_Windsor a :Person ;
+    rdfs:label "Lady Gabriella Windsor" ;
+    data:wdtLink wdt:Q75426 ;
+    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:female .
+
+data:Lady_Helen_Taylor a :Person ;
+    rdfs:label "Lady Helen Taylor" ;
+    data:wdtLink wdt:Q674343 ;
+    :hasParent data:Katharine-_Duchess_of_Kent ;
+    :hasSex data:female .
+
+data:Lady_Louise_Mountbatten-Windsor a :Person ;
+    rdfs:label "Lady Louise Mountbatten-Windsor" ;
+    data:wdtLink wdt:Q680304 ;
+    :hasParent data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Sophie-_Duchess_of_Edinburgh ;
+    :hasSex data:female .
+
+data:Lady_Margarita_Armstrong-Jones a :Person ;
+    rdfs:label "Lady Margarita Armstrong-Jones" ;
+    data:wdtLink wdt:Q2414886 ;
+    :hasParent data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasSex data:female .
+
+data:Lady_Mary_Wellesley a :Person ;
+    rdfs:label "Lady Mary Wellesley" ;
+    data:wdtLink wdt:Q75383406 ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female .
+
+data:Lena_Tindall a :Person ;
+    rdfs:label "Lena Tindall" ;
+    data:wdtLink wdt:Q63676181 ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female .
+
+data:Lennart_Bernadotte a :Person ;
+    rdfs:label "Lennart Bernadotte" ;
+    data:wdtLink wdt:Q564226 ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:male .
+
+data:Leonor-_Princess_of_Asturias a :Person ;
+    rdfs:label "Leonor, Princess of Asturias" ;
+    data:wdtLink wdt:Q214369 ;
+    :hasParent data:Felipe_VI_of_Spain,
+        data:Queen_Letizia_of_Spain ;
+    :hasSex data:female .
+
+data:Leopold_IV-_Prince_of_Lippe a :Person ;
+    rdfs:label "Leopold IV, Prince of Lippe" ;
+    data:wdtLink wdt:Q61279 ;
+    :hasParent data:Ernest_II-_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :hasSex data:male .
+
+data:Lord_Ivar_Mountbatten a :Person ;
+    rdfs:label "Lord Ivar Mountbatten" ;
+    data:wdtLink wdt:Q6679418 ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasSex data:male .
+
+data:Lord_Leopold_Mountbatten a :Person ;
+    rdfs:label "Lord Leopold Mountbatten" ;
+    data:wdtLink wdt:Q2205590 ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male .
+
+data:Louis_Windsor a :Person ;
+    rdfs:label "Louis Windsor" ;
+    data:wdtLink wdt:Q76254812 ;
+    :hasParent data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:male .
+
+data:Louis_de_Bourbon a :Person ;
+    rdfs:label "Louis de Bourbon" ;
+    data:wdtLink wdt:Q12495326 ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:male .
+
+data:Louise_Mountbatten a :Person ;
+    rdfs:label "Louise Mountbatten" ;
+    data:wdtLink wdt:Q115477 ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:Lucas_Tindall a :Person ;
+    rdfs:label "Lucas Tindall" ;
+    data:wdtLink wdt:Q106153177 ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:male .
+
+data:Luiz_Philippe_of_Orléans-Braganza a :Person ;
+    rdfs:label "Luiz Philippe of Orléans-Braganza" ;
+    data:wdtLink wdt:Q29474202 ;
+    :hasParent data:Ana_Maria_de_Moraes_e_Carmo,
+        data:Eudes_de_Orléans_e_Bragança ;
+    :hasSex data:male .
+
+data:Luís_Filipe-_Prince_Royal_of_Portugal a :Person ;
+    rdfs:label "Luís Filipe, Prince Royal of Portugal" ;
+    data:wdtLink wdt:Q372740 ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasSex data:male .
+
+data:Luís_Gastão_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Luís Gastão de Orléans e Bragança" ;
+    data:wdtLink wdt:Q763206 ;
+    :hasParent data:Pedro_Henrique_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:male .
+
+data:Manuel_II_of_Portugal a :Person ;
+    rdfs:label "Manuel II of Portugal" ;
+    data:wdtLink wdt:Q154308 ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasSex data:male .
+
+data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi a :Person ;
+    rdfs:label "Marco Torlonia, 6th Prince of Civitella-Cesi" ;
+    data:wdtLink wdt:Q6757730 ;
+    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasSex data:male .
+
+data:Margaret_Rhodes a :Person ;
+    rdfs:label "Margaret Rhodes" ;
+    data:wdtLink wdt:Q6759834 ;
+    :hasParent data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :hasSex data:female .
+
+data:Margareta_of_Romania a :Person ;
+    rdfs:label "Margareta of Romania" ;
+    data:wdtLink wdt:Q663875 ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Mariam_de_Bagration a :Person ;
+    rdfs:label "Mariam de Bagration" ;
+    data:wdtLink wdt:Q16115785 ;
+    :hasParent data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Irakli_Bagration_of_Mukhrani ;
+    :hasSex data:female .
+
+data:Marina_Windsor a :Person ;
+    rdfs:label "Marina Windsor" ;
+    data:wdtLink wdt:Q3743334 ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female .
+
+data:Mary_Colman a :Person ;
+    rdfs:label "Mary Colman" ;
+    data:wdtLink wdt:Q75248480 ;
+    :hasParent data:Elizabeth_Cator ;
+    :hasSex data:female .
+
+data:Mary_Malcolm a :Person ;
+    rdfs:label "Mary Malcolm" ;
+    data:wdtLink wdt:Q16018831 ;
+    :hasParent data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :hasSex data:female .
+
+data:Maud_Windsor a :Person ;
+    rdfs:label "Maud Windsor" ;
+    data:wdtLink wdt:Q76249585 ;
+    :hasParent data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman ;
+    :hasSex data:female .
+
+data:Mia_Tindall a :Person ;
+    rdfs:label "Mia Tindall" ;
+    data:wdtLink wdt:Q28536747 ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female .
+
+data:Michael-Benedikt_of_Saxe-Weimar-Eisenach a :Person ;
+    rdfs:label "Michael-Benedikt of Saxe-Weimar-Eisenach" ;
+    data:wdtLink wdt:Q1926723 ;
+    :hasParent data:Baroness_Elisabeth_of_Wangenheim-Winterstein,
+        data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:male .
+
+data:Nerissa_Bowes-Lyon a :Person ;
+    rdfs:label "Nerissa Bowes-Lyon" ;
+    data:wdtLink wdt:Q75251053 ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasSex data:female .
+
+data:Nicholas_Knatchbull a :Person ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:wdtLink wdt:Q11324270 ;
+    :hasParent data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male .
+
+data:Nicholas_Knatchbull_1 a :Person ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:wdtLink wdt:Q75383948 ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male .
+
+data:Nicholas_de_Roumanie a :Person ;
+    rdfs:label "Nicholas de Roumanie" ;
+    data:wdtLink wdt:Q1753485 ;
+    :hasParent data:Princess_Elena_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :hasSex data:male .
+
+data:Nicodemus-_Hereditary_Prince_of_Löwenstein-Wertheim-Rosenberg a :Person ;
+    rdfs:label "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg" ;
+    data:wdtLink wdt:Q7028910 ;
+    :hasParent data:Leo_Löwenstein,
+        data:Stephanie_Freiin_von_Brenken ;
+    :hasSex data:male .
+
+data:Oskar_of_Prussia a :Person ;
+    rdfs:label "Oskar of Prussia" ;
+    data:wdtLink wdt:Q100307 ;
+    :hasParent data:Armgard_Else_Helene_von_Veltheim,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasSex data:male .
+
+data:Paul_Ilyinsky a :Person ;
+    rdfs:label "Paul Ilyinsky" ;
+    data:wdtLink wdt:Q487309 ;
+    :hasParent data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasSex data:male .
+
+data:Pedro_Luiz_de_Orleans_e_Bragança a :Person ;
+    rdfs:label "Pedro Luiz de Orleans e Bragança" ;
+    data:wdtLink wdt:Q978898 ;
+    :hasParent data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasSex data:male .
+
+data:Philipp-_Prince_of_Hohenlohe-Langenburg a :Person ;
+    rdfs:label "Philipp, Prince of Hohenlohe-Langenburg" ;
+    data:wdtLink wdt:Q95828 ;
+    :hasParent data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ ;
+    :hasSex data:male .
+
+data:Pia_Maria_of_Orléans-Braganza a :Person ;
+    rdfs:label "Pia Maria of Orléans-Braganza" ;
+    data:wdtLink wdt:Q3382159 ;
+    :hasParent data:Luís_de_Orléans_e_Bragança,
+        data:Princess_Maria_Pia_of_the_Two_Sicilies ;
+    :hasSex data:female .
+
+data:Pim_Lier a :Person ;
+    rdfs:label "Pim Lier" ;
+    data:wdtLink wdt:Q56641 ;
+    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin ;
+    :hasSex data:male .
+
+data:Prince_Achileas-Andreas_of_Denmark a :Person ;
+    rdfs:label "Prince Achileas-Andreas of Denmark" ;
+    data:wdtLink wdt:Q11282796 ;
+    :hasParent data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
+    data:wdtLink wdt:Q2031618 ;
+    :hasParent data:Prince_Amedeo-_5th_Duke_of_Aosta,
+        data:Princess_Claude_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Alexander-_Prince_of_Orange a :Person ;
+    rdfs:label "Prince Alexander, Prince of Orange" ;
+    data:wdtLink wdt:Q1938760 ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Alexander_Ferdinand_of_Prussia a :Person ;
+    rdfs:label "Prince Alexander Ferdinand of Prussia" ;
+    data:wdtLink wdt:Q2189056 ;
+    :hasParent data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male .
+
+data:Prince_Alexander_of_Serbia_1 a :Person ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:wdtLink wdt:Q3268153 ;
+    :hasParent data:Alexander-_Crown_Prince_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male .
+
+data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este a :Person ;
+    rdfs:label "Prince Amedeo, Hereditary Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q2071496 ;
+    :hasParent data:Prince_Lorenz-_Archduke_of_Austria-Este,
+        data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:male .
+
+data:Prince_Archie_of_Sussex a :Person ;
+    rdfs:label "Prince Archie of Sussex" ;
+    data:wdtLink wdt:Q62938826 ;
+    :hasParent data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasSex data:male .
+
+data:Prince_Aschwin_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Prince Aschwin of Lippe-Biesterfeld" ;
+    data:wdtLink wdt:Q2336212 ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasSex data:male .
+
+data:Prince_Bernhard-_Margrave_of_Baden a :Person ;
+    rdfs:label "Prince Bernhard, Margrave of Baden" ;
+    data:wdtLink wdt:Q96731 ;
+    :hasParent data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:male .
+
+data:Prince_Bernhard_of_Orange-Nassau-Vollenhoven a :Person ;
+    rdfs:label "Prince Bernhard of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q1878458 ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino a :Person ;
+    rdfs:label "Prince Carlo Alessandro, 3rd Duke of Castel Duino" ;
+    data:wdtLink wdt:Q5041442 ;
+    :hasParent data:Prince_Raimundo-_2nd_Duke_of_Castel_Duino,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Charles-Philippe_dOrléans a :Person ;
+    rdfs:label "Prince Charles-Philippe d'Orléans" ;
+    data:wdtLink wdt:Q2958306 ;
+    :hasParent data:Béatrice_dOrléans,
+        data:Prince_Michel_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Christian_of_Hanover a :Person ;
+    rdfs:label "Prince Christian of Hanover" ;
+    data:wdtLink wdt:Q4383359 ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasSex data:male .
+
+data:Prince_Christoph_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Prince Christoph of Schleswig-Holstein" ;
+    data:wdtLink wdt:Q1210791 ;
+    :hasParent data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasSex data:male .
+
+data:Prince_Constantine_Alexios_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Constantine Alexios of Greece and Denmark" ;
+    data:wdtLink wdt:Q2793486 ;
+    :hasParent data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Dimitri_Karađorđević a :Person ;
+    rdfs:label "Prince Dimitri Karađorđević" ;
+    data:wdtLink wdt:Q1781299 ;
+    :hasParent data:Prince_Alexander_of_Serbia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSex data:male .
+
+data:Prince_Eitel_Friedrich_of_Prussia a :Person ;
+    rdfs:label "Prince Eitel Friedrich of Prussia" ;
+    data:wdtLink wdt:Q62056 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Ernst_August_of_Hanover a :Person ;
+    rdfs:label "Prince Ernst August of Hanover" ;
+    data:wdtLink wdt:Q4383225 ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasSex data:male .
+
+data:Prince_Eudes_dOrléans a :Person ;
+    rdfs:label "Prince Eudes d'Orléans" ;
+    data:wdtLink wdt:Q3059503 ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male .
+
+data:Prince_Filippo_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Prince Filippo of the Two Sicilies" ;
+    data:wdtLink wdt:Q3745365 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Floris_of_Orange-Nassau-Vollenhoven a :Person ;
+    rdfs:label "Prince Floris of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q3141755 ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_François_dOrléans a :Person ;
+    rdfs:label "Prince François d’Orléans" ;
+    data:wdtLink wdt:Q2740253 ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male .
+
+data:Prince_Friedrich_Wilhelm_of_Lippe a :Person ;
+    rdfs:label "Prince Friedrich Wilhelm of Lippe" ;
+    data:wdtLink wdt:Q7243987 ;
+    :hasParent data:Christa_Irene_von_Arnim-Kitzscher,
+        data:Prince_Ernst_August_of_Lippe ;
+    :hasSex data:male .
+
+data:Prince_Gabriel_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Prince Gabriel of the Two Sicilies" ;
+    data:wdtLink wdt:Q3756709 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Gaston_dOrléans a :Person ;
+    rdfs:label "Prince Gaston d’Orléans" ;
+    data:wdtLink wdt:Q4259487 ;
+    :hasParent data:Prince_Jean_dOrléans,
+        data:Princess_Philomena_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Georg_Friedrich-_Prince_of_Prussia a :Person ;
+    rdfs:label "Prince Georg Friedrich, Prince of Prussia" ;
+    data:wdtLink wdt:Q57355 ;
+    :hasParent data:Donata_Countess_of_Castell-Rüdenhausen,
+        data:Prince_Louis_Ferdinand_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover a :Person ;
+    rdfs:label "Prince Georg Wilhelm, Hereditary Prince of Hanover" ;
+    data:wdtLink wdt:Q2131670 ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male .
+
+data:Prince_Georg_Wilhelm_of_Hanover a :Person ;
+    rdfs:label "Prince Georg Wilhelm of Hanover" ;
+    data:wdtLink wdt:Q61777 ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_George_of_Wales a :Person ;
+    rdfs:label "Prince George of Wales" ;
+    data:wdtLink wdt:Q13590412 ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male .
+
+data:Prince_Gonzalo_de_Bourbon a :Person ;
+    rdfs:label "Prince Gonzalo de Bourbon" ;
+    data:wdtLink wdt:Q946985 ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasSex data:male .
+
+data:Prince_Heinrich_of_Hanover a :Person ;
+    rdfs:label "Prince Heinrich of Hanover" ;
+    data:wdtLink wdt:Q74913 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male .
+
+data:Prince_Heinrich_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Prince Heinrich of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q869909 ;
+    :hasParent data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:male .
+
+data:Prince_Henry_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:wdtLink wdt:Q7902792 ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Prince_Hubertus_of_Prussia a :Person ;
+    rdfs:label "Prince Hubertus of Prussia" ;
+    data:wdtLink wdt:Q70760 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male .
+
+data:Prince_Hugo_de_Bourbon_de_Parme a :Person ;
+    rdfs:label "Prince Hugo de Bourbon de Parme" ;
+    data:wdtLink wdt:Q75317573 ;
+    :hasParent data:Brigitte_Klynstra,
+        data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :hasSex data:male .
+
+data:Prince_Jaime-_Count_of_Bardi a :Person ;
+    rdfs:label "Prince Jaime, Count of Bardi" ;
+    data:wdtLink wdt:Q5809645 ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_John_of_the_United_Kingdom a :Person ;
+    rdfs:label "Prince John of the United Kingdom" ;
+    data:wdtLink wdt:Q310488 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:male .
+
+data:Prince_Juan_de_Bagration-Mukhrani a :Person ;
+    rdfs:label "Prince Juan de Bagration-Mukhrani" ;
+    data:wdtLink wdt:Q58304095 ;
+    :hasParent data:Bagrat_de_Bagration_y_de_Baviera,
+        data:Maria_del_Carmen_de_Ulloa_y_de_Suelves ;
+    :hasSex data:male .
+
+data:Prince_Karl_Emich_of_Leiningen a :Person ;
+    rdfs:label "Prince Karl Emich of Leiningen" ;
+    data:wdtLink wdt:Q7244117 ;
+    :hasParent data:Duchess_Eilika_of_Oldenburg,
+        data:Emich-_7th_Prince_of_Leiningen ;
+    :hasSex data:male .
+
+data:Prince_Karl_of_Hesse a :Person ;
+    rdfs:label "Prince Karl of Hesse" ;
+    data:wdtLink wdt:Q2464604 ;
+    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Louis_of_Wales a :Person ;
+    rdfs:label "Prince Louis of Wales" ;
+    data:wdtLink wdt:Q38668629 ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male .
+
+data:Prince_Ludwig_Rudolph_of_Hanover a :Person ;
+    rdfs:label "Prince Ludwig Rudolph of Hanover" ;
+    data:wdtLink wdt:Q3337692 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male .
+
+data:Prince_Maurice_of_Battenberg a :Person ;
+    rdfs:label "Prince Maurice of Battenberg" ;
+    data:wdtLink wdt:Q2351869 ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male .
+
+data:Prince_Maurice_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Maurice of the Netherlands" ;
+    data:wdtLink wdt:Q2735203 ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Maurits_of_Orange-Nassau-Vollenhoven a :Person ;
+    rdfs:label "Prince Maurits of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q4992674 ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Michael_of_Prussia a :Person ;
+    rdfs:label "Prince Michael of Prussia" ;
+    data:wdtLink wdt:Q125361 ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Nikola_of_Serbia a :Person ;
+    rdfs:label "Prince Nikola of Serbia" ;
+    data:wdtLink wdt:Q4590782 ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:male .
+
+data:Prince_Nikola_of_Yugoslavia a :Person ;
+    rdfs:label "Prince Nikola of Yugoslavia" ;
+    data:wdtLink wdt:Q4590751 ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Nikolaos_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Nikolaos of Greece and Denmark" ;
+    data:wdtLink wdt:Q583639 ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Peter of Greece and Denmark" ;
+    data:wdtLink wdt:Q601229 ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Peter_of_Serbia a :Person ;
+    rdfs:label "Prince Peter of Serbia" ;
+    data:wdtLink wdt:Q2467920 ;
+    :hasParent data:Alexander-_Crown_Prince_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male .
+
+data:Prince_Philippe-_Duke_of_Orléans a :Person ;
+    rdfs:label "Prince Philippe, Duke of Orléans" ;
+    data:wdtLink wdt:Q708874 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male .
+
+data:Prince_Philippos_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Philippos of Greece and Denmark" ;
+    data:wdtLink wdt:Q1966130 ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven a :Person ;
+    rdfs:label "Prince Pieter-Christiaan of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q1999473 ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Richard_of_Hesse a :Person ;
+    rdfs:label "Prince Richard of Hesse" ;
+    data:wdtLink wdt:Q2150403 ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Sigismund_of_Prussia a :Person ;
+    rdfs:label "Prince Sigismund of Prussia" ;
+    data:wdtLink wdt:Q64704 ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Prince_Sigismund_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Sigismund of Prussia" ;
+    data:wdtLink wdt:Q2800847 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
+
+data:Prince_Stefan_of_Serbia a :Person ;
+    rdfs:label "Prince Stefan of Serbia" ;
+    data:wdtLink wdt:Q50220539 ;
+    :hasParent data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasSex data:male .
+
+data:Prince_Vincent_of_Denmark a :Person ;
+    rdfs:label "Prince Vincent of Denmark" ;
+    data:wdtLink wdt:Q1640126 ;
+    :hasParent data:Frederik_X_of_Denmark,
+        data:Queen_Mary_of_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Waldemar_of_Prussia a :Person ;
+    rdfs:label "Prince Waldemar of Prussia" ;
+    data:wdtLink wdt:Q63093 ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Prince_Waldemar_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Waldemar of Prussia" ;
+    data:wdtLink wdt:Q3026877 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
+
+data:Prince_Wilhelm_Victor_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm Victor of Prussia" ;
+    data:wdtLink wdt:Q7244274 ;
+    :hasParent data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasSex data:male .
+
+data:Prince_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm of Prussia" ;
+    data:wdtLink wdt:Q77556 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male .
+
+data:Prince_William_of_Gloucester a :Person ;
+    rdfs:label "Prince William of Gloucester" ;
+    data:wdtLink wdt:Q657778 ;
+    :hasParent data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasSex data:male .
+
+data:Prince_Wolfgang_of_Hesse a :Person ;
+    rdfs:label "Prince Wolfgang of Hesse" ;
+    data:wdtLink wdt:Q67038 ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male .
+
+data:Princess_Alexandra_of_Greece a :Person ;
+    rdfs:label "Princess Alexandra of Greece" ;
+    data:wdtLink wdt:Q13091129 ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Alexandra_of_Hanover_1 a :Person ;
+    rdfs:label "Princess Alexandra of Hanover" ;
+    data:wdtLink wdt:Q1208034 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover_1,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSex data:female .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Princess Alexandra of Sayn-Wittgenstein-Berleburg" ;
+    data:wdtLink wdt:Q1797989 ;
+    :hasParent data:Princess_Benedikte_of_Denmark,
+        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female .
+
+data:Princess_Alexandrine_of_Prussia a :Person ;
+    rdfs:label "Princess Alexandrine of Prussia" ;
+    data:wdtLink wdt:Q75112 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female .
+
+data:Princess_Alexia_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Alexia of the Netherlands" ;
+    data:wdtLink wdt:Q1061685 ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Princess_Ariane_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Ariane of the Netherlands" ;
+    data:wdtLink wdt:Q1076063 ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person ;
+    rdfs:label "Princess Beatrix of Hohenlohe-Langenburg" ;
+    data:wdtLink wdt:Q75384169 ;
+    :hasParent data:Gottfried-_8th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Carolina-_Marchioness_of_Sala a :Person ;
+    rdfs:label "Princess Carolina, Marchioness of Sala" ;
+    data:wdtLink wdt:Q2121373 ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Princess_Cecilie_Viktoria_of_Prussia a :Person ;
+    rdfs:label "Princess Cecilie Viktoria of Prussia" ;
+    data:wdtLink wdt:Q105976 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female .
+
+data:Princess_Charlotte_of_Wales a :Person ;
+    rdfs:label "Princess Charlotte of Wales" ;
+    data:wdtLink wdt:Q18002970 ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female .
+
+data:Princess_Christina_Margarethe_of_Hesse a :Person ;
+    rdfs:label "Princess Christina Margarethe of Hesse" ;
+    data:wdtLink wdt:Q6530298 ;
+    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Christina_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Christina of the Netherlands" ;
+    data:wdtLink wdt:Q435324 ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
+
+data:Princess_Elisabeth_of_Denmark a :Person ;
+    rdfs:label "Princess Elisabeth of Denmark" ;
+    data:wdtLink wdt:Q242691 ;
+    :hasParent data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Elizabeth of Greece and Denmark" ;
+    data:wdtLink wdt:Q19006 ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q177769 ;
+    :hasParent data:Bernhard_III-_Duke_of_Saxe-Meiningen,
+        data:Princess_Charlotte_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Herzeleide_of_Prussia a :Person ;
+    rdfs:label "Princess Herzeleide of Prussia" ;
+    data:wdtLink wdt:Q2169403 ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Irene of Greece and Denmark" ;
+    data:wdtLink wdt:Q242298 ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:female .
+
+data:Princess_Irina_of_Romania a :Person ;
+    rdfs:label "Princess Irina of Romania" ;
+    data:wdtLink wdt:Q6658829 ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Isabella_of_Denmark a :Person ;
+    rdfs:label "Princess Isabella of Denmark" ;
+    data:wdtLink wdt:Q1429306 ;
+    :hasParent data:Frederik_X_of_Denmark,
+        data:Queen_Mary_of_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Isabelle_dOrléans_1 a :Person ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:wdtLink wdt:Q273237 ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female .
+
+data:Princess_Johanna_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Johanna of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q2354262 ;
+    :hasParent data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse,
+        data:Louis-_Prince_of_Hesse_and_by_Rhine,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Margaret-_Hereditary_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:Princess_Josephine_of_Denmark a :Person ;
+    rdfs:label "Princess Josephine of Denmark" ;
+    data:wdtLink wdt:Q3185931 ;
+    :hasParent data:Frederik_X_of_Denmark,
+        data:Queen_Mary_of_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Katarina_of_Serbia a :Person ;
+    rdfs:label "Princess Katarina of Serbia" ;
+    data:wdtLink wdt:Q16911051 ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:female .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Katherine of Greece and Denmark" ;
+    data:wdtLink wdt:Q242338 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Kira_of_Prussia a :Person ;
+    rdfs:label "Princess Kira of Prussia" ;
+    data:wdtLink wdt:Q77937 ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Lilibet_of_Sussex a :Person ;
+    rdfs:label "Princess Lilibet of Sussex" ;
+    data:wdtLink wdt:Q107125551 ;
+    :hasParent data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasSex data:female .
+
+data:Princess_Lucia_of_Bourbon-Two_Sicilies a :Person ;
+    rdfs:label "Princess Lucia of Bourbon-Two Sicilies" ;
+    data:wdtLink wdt:Q2783067 ;
+    :hasParent data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Princess_Maria-_Duchess_of_Calabria ;
+    :hasSex data:female .
+
+data:Princess_Luisa_Maria_of_Belgium a :Person ;
+    rdfs:label "Princess Luisa Maria of Belgium" ;
+    data:wdtLink wdt:Q2057996 ;
+    :hasParent data:Prince_Lorenz-_Archduke_of_Austria-Este,
+        data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:female .
+
+data:Princess_Mafalda_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Mafalda of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q24005341 ;
+    :hasParent data:Prince_Moritz-_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female .
+
+data:Princess_Margarita_de_Bourbon_de_Parme a :Person ;
+    rdfs:label "Princess Margarita de Bourbon de Parme" ;
+    data:wdtLink wdt:Q1765834 ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Princess_Maria-Olympia_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Maria-Olympia of Greece and Denmark" ;
+    data:wdtLink wdt:Q11341012 ;
+    :hasParent data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasSex data:female .
+
+data:Princess_Maria_Carolina-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Princess Maria Carolina, Duchess of Calabria" ;
+    data:wdtLink wdt:Q7244714 ;
+    :hasParent data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasSex data:female .
+
+data:Princess_Maria_Chiara-_Duchess_of_Noto a :Person ;
+    rdfs:label "Princess Maria Chiara, Duchess of Noto" ;
+    data:wdtLink wdt:Q29966442 ;
+    :hasParent data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasSex data:female .
+
+data:Princess_Maria_Cristina_of_Savoy-Aosta a :Person ;
+    rdfs:label "Princess Maria Cristina of Savoy-Aosta" ;
+    data:wdtLink wdt:Q7244716 ;
+    :hasParent data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Princess_Anne_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Maria_Immacolata_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Maria Immacolata of the Two Sicilies" ;
+    data:wdtLink wdt:Q2465289 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female .
+
+data:Princess_Maria_of_Romania a :Person ;
+    rdfs:label "Princess Maria of Romania" ;
+    data:wdtLink wdt:Q1212263 ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person ;
+    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
+    data:wdtLink wdt:Q7244738 ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:female .
+
+data:Princess_Marie_Alexandra_of_Baden a :Person ;
+    rdfs:label "Princess Marie Alexandra of Baden" ;
+    data:wdtLink wdt:Q3260259 ;
+    :hasParent data:Prince_Maximilian_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasSex data:female .
+
+data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person ;
+    rdfs:label "Princess María de la Esperanza of Bourbon-Two Sicilies" ;
+    data:wdtLink wdt:Q110952627 ;
+    :hasParent data:Prince_Carlos_of_the_Two_Sicilies,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Princess Nathalie of Sayn-Wittgenstein-Berleburg" ;
+    data:wdtLink wdt:Q265691 ;
+    :hasParent data:Princess_Benedikte_of_Denmark,
+        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female .
+
+data:Princess_Olga-_Duchess_of_Aosta a :Person ;
+    rdfs:label "Princess Olga, Duchess of Aosta" ;
+    data:wdtLink wdt:Q2502204 ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Olympia-_Princess_Napoléon a :Person ;
+    rdfs:label "Princess Olympia, Princess Napoléon" ;
+    data:wdtLink wdt:Q71582125 ;
+    :hasParent data:Archduchess_Maria_Béatrice_of_Austria-Este,
+        data:Count_Riprand_of_Arco-Zinneberg ;
+    :hasSex data:female .
+
+data:Princess_Paulina_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Paulina of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q75976254 ;
+    :hasParent data:Floria-Franziska_Gräfin_von_Faber-Castell,
+        data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasSex data:female .
+
+data:Princess_Sibilla_of_Luxembourg a :Person ;
+    rdfs:label "Princess Sibilla of Luxembourg" ;
+    data:wdtLink wdt:Q2001499 ;
+    :hasParent data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller ;
+    :hasSex data:female .
+
+data:Princess_Sophie_of_Romania a :Person ;
+    rdfs:label "Princess Sophie of Romania" ;
+    data:wdtLink wdt:Q1468375 ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Sophie_of_Saxe-Weimar-Eisenach a :Person ;
+    rdfs:label "Princess Sophie of Saxe-Weimar-Eisenach" ;
+    data:wdtLink wdt:Q6351902 ;
+    :hasParent data:Princess_Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_I-_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:female .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:wdtLink wdt:Q292274 ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female .
+
+data:Princess_Urraca_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Urraca of the Two Sicilies" ;
+    data:wdtLink wdt:Q4006506 ;
+    :hasParent data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Princess_Maria-_Duchess_of_Calabria ;
+    :hasSex data:female .
+
+data:Princess_Viktoria_of_Prussia a :Person ;
+    rdfs:label "Princess Viktoria of Prussia" ;
+    data:wdtLink wdt:Q60382 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person ;
+    rdfs:label "Princess Xenia Georgievna of Russia" ;
+    data:wdtLink wdt:Q433753 ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia_1,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Q131934987 a :Person ;
+    rdfs:label "Q131934987" ;
+    data:wdtLink wdt:Q131934987 ;
+    :hasParent data:Edoardo_Mapelli_Mozzi ;
+    :hasSex data:female .
+
+data:Rafael_de_Orléans-Bragança a :Person ;
+    rdfs:label "Rafael de Orléans-Bragança" ;
+    data:wdtLink wdt:Q4215159 ;
+    :hasParent data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasSex data:male .
+
+data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin a :Person ;
+    rdfs:label "Roger Marie Vincent Philippe Lévêque de Vilmorin" ;
+    data:wdtLink wdt:Q970135 ;
+    :hasParent data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin,
+        data:Marie_Mélanie_de_Gaufridy_de_Dortan ;
+    :hasSex data:male .
+
+data:Rosie_Stancer a :Person ;
+    rdfs:label "Rosie Stancer" ;
+    data:wdtLink wdt:Q7368919 ;
+    :hasParent data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :hasSex data:female .
+
+data:Rufus_Gilman a :Person ;
+    rdfs:label "Rufus Gilman" ;
+    data:wdtLink wdt:Q76245057 ;
+    :hasParent data:George_Gilman,
+        data:Lady_Rose_Windsor ;
+    :hasSex data:male .
+
+data:Samuel_Chatto a :Person ;
+    rdfs:label "Samuel Chatto" ;
+    data:wdtLink wdt:Q4381222 ;
+    :hasParent data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :hasSex data:male .
+
+data:Sarah_Troughton a :Person ;
+    rdfs:label "Sarah Troughton" ;
+    data:wdtLink wdt:Q7422845 ;
+    :hasParent data:Timothy_Colman ;
+    :hasSex data:female .
+
+data:Savannah_Phillips a :Person ;
+    rdfs:label "Savannah Phillips" ;
+    data:wdtLink wdt:Q3077944 ;
+    :hasParent data:Autumn_Phillips,
+        data:Peter_Phillips ;
+    :hasSex data:female .
+
+data:Sienna_Mapelli_Mozzi a :Person ;
+    rdfs:label "Sienna Mapelli Mozzi" ;
+    data:wdtLink wdt:Q108703114 ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasSex data:female .
+
+data:Simon_Bowes-Lyon a :Person ;
+    rdfs:label "Simon Bowes-Lyon" ;
+    data:wdtLink wdt:Q11801765 ;
+    :hasParent data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay ;
+    :hasSex data:male .
+
+data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q7518316 ;
+    :hasParent data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Stephan-_Hereditary_Prince_of_Lippe a :Person ;
+    rdfs:label "Stephan, Hereditary Prince of Lippe" ;
+    data:wdtLink wdt:Q7608111 ;
+    :hasParent data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSex data:male .
+
+data:Tatiana_Mountbatten a :Person ;
+    rdfs:label "Tatiana Mountbatten" ;
+    data:wdtLink wdt:Q58301908 ;
+    :hasParent data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Sarah_Walker ;
+    :hasSex data:female .
+
+data:Tatiana_Radziwiłł a :Person ;
+    rdfs:label "Tatiana Radziwiłł" ;
+    data:wdtLink wdt:Q63205821 ;
+    :hasParent data:Prince_Dominik_Rainer_Radziwiłł,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Tatiana_von_Preussen a :Person ;
+    rdfs:label "Tatiana von Preussen" ;
+    data:wdtLink wdt:Q45319451 ;
+    :hasParent data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :hasSex data:female .
+
+data:Thomas_Anson-_6th_Earl_of_Lichfield a :Person ;
+    rdfs:label "Thomas Anson, 6th Earl of Lichfield" ;
+    data:wdtLink wdt:Q10382174 ;
+    :hasParent data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasSex data:male .
+
+data:Timothy_Bowes-Lyon a :Person ;
+    rdfs:label "Timothy Bowes-Lyon" ;
+    data:wdtLink wdt:Q3991503 ;
+    :hasParent data:Dorothy_Osborne,
+        data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Timothy_Knatchbull a :Person ;
+    rdfs:label "Timothy Knatchbull" ;
+    data:wdtLink wdt:Q75383946 ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male .
+
+data:Victoria_de_Marichalar_y_Borbón a :Person ;
+    rdfs:label "Victoria de Marichalar y Borbón" ;
+    data:wdtLink wdt:Q3232562 ;
+    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasSex data:female .
+
+data:William-_Prince_of_Orange a :Person ;
+    rdfs:label "William, Prince of Orange" ;
+    data:wdtLink wdt:Q587967 ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Wittekind-_Prince_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Wittekind, Prince of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q70797 ;
+    :hasParent data:Duchess_Altburg_of_Oldenburg,
+        data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male .
+
+data:Xan_Windsor-_Lord_Culloden a :Person ;
+    rdfs:label "Xan Windsor, Lord Culloden" ;
+    data:wdtLink wdt:Q3270399 ;
+    :hasParent data:Alexander_Windsor-_Earl_of_Ulster,
+        data:Claire_Booth ;
+    :hasSex data:male .
+
+data:Zenouska_Mowatt a :Person ;
+    rdfs:label "Zenouska Mowatt" ;
+    data:wdtLink wdt:Q12379343 ;
+    :hasParent data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :hasSex data:female .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Person ;
+    rdfs:label "Alexander Mountbatten, 1st Marquess of Carisbrooke" ;
+    data:wdtLink wdt:Q337477 ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male .
+
+data:Alexander_of_Greece a :Person ;
+    rdfs:label "Alexander of Greece" ;
+    data:wdtLink wdt:Q151742 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:male .
+
+data:Alexandra_Blahova a :Person ;
+    rdfs:label "Alexandra Blahova" ;
+    data:wdtLink wdt:Q75383387 .
+
+data:Alexandra_of_Yugoslavia a :Person ;
+    rdfs:label "Alexandra of Yugoslavia" ;
+    data:wdtLink wdt:Q167423 ;
+    :hasParent data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasSex data:female .
+
+data:Allegra_Hicks a :Person ;
+    rdfs:label "Allegra Hicks" ;
+    data:wdtLink wdt:Q75328043 .
+
+data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Person ;
+    rdfs:label "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg" ;
+    data:wdtLink wdt:Q104235 .
+
+data:Ameli-_Duchess_of_Oldenburg a :Person ;
+    rdfs:label "Ameli, Duchess of Oldenburg" ;
+    data:wdtLink wdt:Q4742208 .
+
+data:Ana_Maria_de_Moraes_e_Carmo a :Person ;
+    rdfs:label "Ana Maria de Moraes e Carmo" ;
+    data:wdtLink wdt:Q75392818 .
+
+data:Anastasia-_Princess_of_Löwenstein-Wertheim-Rosenberg a :Person ;
+    rdfs:label "Anastasia, Princess of Löwenstein-Wertheim-Rosenberg" ;
+    data:wdtLink wdt:Q4751836 .
+
+data:Andrew_Elphinstone a :Person ;
+    rdfs:label "Andrew Elphinstone" ;
+    data:wdtLink wdt:Q54164320 .
+
+data:Anton-Günther-_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Anton-Günther, Duke of Oldenburg" ;
+    data:wdtLink wdt:Q65639 ;
+    :hasParent data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male .
+
+data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria a :Person ;
+    rdfs:label "Archduchess Helene, Archduchess Ferdinand of Austria" ;
+    data:wdtLink wdt:Q23659419 .
+
+data:Archduchess_Margherita-_Archduchess_of_Austria-Este a :Person ;
+    rdfs:label "Archduchess Margherita, Archduchess of Austria-Este" ;
+    data:wdtLink wdt:Q765373 .
+
+data:Archduchess_Maria_Béatrice_of_Austria-Este a :Person ;
+    rdfs:label "Archduchess Maria Béatrice of Austria-Este" ;
+    data:wdtLink wdt:Q21198012 .
+
+data:Archduke_Ferdinand_of_Austria a :Person ;
+    rdfs:label "Archduke Ferdinand of Austria" ;
+    data:wdtLink wdt:Q12165601 .
+
+data:Archduke_Leopold_Franz_of_Austria a :Person ;
+    rdfs:label "Archduke Leopold Franz of Austria" ;
+    data:wdtLink wdt:Q3198365 .
+
+data:Armgard_Else_Helene_von_Veltheim a :Person ;
+    rdfs:label "Armgard Else Helene von Veltheim" ;
+    data:wdtLink wdt:Q75383555 .
+
+data:Armin-_Prince_of_Lippe a :Person ;
+    rdfs:label "Armin, Prince of Lippe" ;
+    data:wdtLink wdt:Q73464 .
+
+data:Ashley_Hicks a :Person ;
+    rdfs:label "Ashley Hicks" ;
+    data:wdtLink wdt:Q16195113 ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:male .
+
+data:Aspasia_Manos a :Person ;
+    rdfs:label "Aspasia Manos" ;
+    data:wdtLink wdt:Q240442 .
+
+data:Atalanta_Cowen a :Person ;
+    rdfs:label "Atalanta Cowen" ;
+    data:wdtLink wdt:Q75716787 .
+
+data:Audrey_Emery a :Person ;
+    rdfs:label "Audrey Emery" ;
+    data:wdtLink wdt:Q450692 .
+
+data:Augustyn_Józef_Czartoryski a :Person ;
+    rdfs:label "Augustyn Józef Czartoryski" ;
+    data:wdtLink wdt:Q2083425 .
+
+data:Bagrat_de_Bagration_y_de_Baviera a :Person ;
+    rdfs:label "Bagrat de Bagration y de Baviera" ;
+    data:wdtLink wdt:Q5408136 ;
+    :hasParent data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Irakli_Bagration_of_Mukhrani ;
+    :hasSex data:male .
+
+data:Baron_Aschwin_of_Sierstorpff-Cramm a :Person ;
+    rdfs:label "Baron Aschwin of Sierstorpff-Cramm" ;
+    data:wdtLink wdt:Q2658302 .
+
+data:Baroness_Elisabeth_of_Wangenheim-Winterstein a :Person ;
+    rdfs:label "Baroness Elisabeth of Wangenheim-Winterstein" ;
+    data:wdtLink wdt:Q100832 .
+
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen" ;
+    data:wdtLink wdt:Q2099997 ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:female .
+
+data:Bernhard_III-_Duke_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Bernhard III, Duke of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q61104 .
+
+data:Brigid_Guinness a :Person ;
+    rdfs:label "Brigid Guinness" ;
+    data:wdtLink wdt:Q6469999 .
+
+data:Brigitte_Klynstra a :Person ;
+    rdfs:label "Brigitte Klynstra" ;
+    data:wdtLink wdt:Q75317570 .
+
+data:Béatrice_dOrléans a :Person ;
+    rdfs:label "Béatrice d'Orléans" ;
+    data:wdtLink wdt:Q2929493 .
+
+data:Carmen_Martínez-Bordiú_y_Franco a :Person ;
+    rdfs:label "Carmen Martínez-Bordiú y Franco" ;
+    data:wdtLink wdt:Q2939617 .
+
+data:Carol_II_of_Romania a :Person ;
+    rdfs:label "Carol II of Romania" ;
+    data:wdtLink wdt:Q212897 .
+
+data:Catherine_Oxenberg a :Person ;
+    rdfs:label "Catherine Oxenberg" ;
+    data:wdtLink wdt:Q235284 ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female .
+
+data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach a :Person ;
+    rdfs:label "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach" ;
+    data:wdtLink wdt:Q1590241 ;
+    :hasParent data:Princess_Feodora_of_Saxe-Meiningen,
+        data:Wilhelm_Ernst_I-_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:male .
+
+data:Christa_Irene_von_Arnim-Kitzscher a :Person ;
+    rdfs:label "Christa Irene von Arnim-Kitzscher" ;
+    data:wdtLink wdt:Q75323647 .
+
+data:Claus_Felix_von_Amsberg a :Person ;
+    rdfs:label "Claus Felix von Amsberg" ;
+    data:wdtLink wdt:Q2439092 ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:male .
+
+data:Count_Riprand_of_Arco-Zinneberg a :Person ;
+    rdfs:label "Count Riprand of Arco-Zinneberg" ;
+    data:wdtLink wdt:Q75294377 .
+
+data:Countess_Maria_Carolina_Zamoyska a :Person ;
+    rdfs:label "Countess Maria Carolina Zamoyska" ;
+    data:wdtLink wdt:Q3847184 .
+
+data:Danica-_Hereditary_Princess_of_Serbia a :Person ;
+    rdfs:label "Danica, Hereditary Princess of Serbia" ;
+    data:wdtLink wdt:Q61855462 .
+
+data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Person ;
+    rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon" ;
+    data:wdtLink wdt:Q1091237 ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSex data:male .
+
+data:David_Bowes-Lyon a :Person ;
+    rdfs:label "David Bowes-Lyon" ;
+    data:wdtLink wdt:Q5231604 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:David_Lascelles-_8th_Earl_of_Harewood a :Person ;
+    rdfs:label "David Lascelles, 8th Earl of Harewood" ;
+    data:wdtLink wdt:Q619788 ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male .
+
+data:Davina_Bowes-Lyon a :Person ;
+    rdfs:label "Davina Bowes-Lyon" ;
+    data:wdtLink wdt:Q75253177 .
+
+data:Donata_Countess_of_Castell-Rüdenhausen a :Person ;
+    rdfs:label "Donata Countess of Castell-Rüdenhausen" ;
+    data:wdtLink wdt:Q16466734 .
+
+data:Dorothy_Osborne a :Person ;
+    rdfs:label "Dorothy Osborne" ;
+    data:wdtLink wdt:Q75240055 .
+
+data:Duchess_Altburg_of_Oldenburg a :Person ;
+    rdfs:label "Duchess Altburg of Oldenburg" ;
+    data:wdtLink wdt:Q5311285 .
+
+data:Duchess_Eilika_of_Oldenburg a :Person ;
+    rdfs:label "Duchess Eilika of Oldenburg" ;
+    data:wdtLink wdt:Q16698801 .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q2525746 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female .
+
+data:Duchess_Marie-_Hereditary_Duchess_of_Württemberg a :Person ;
+    rdfs:label "Duchess Marie, Hereditary Duchess of Württemberg" ;
+    data:wdtLink wdt:Q75323778 .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Person ;
+    rdfs:label "Duchess Marie of Mecklenburg-Strelitz" ;
+    data:wdtLink wdt:Q69425 .
+
+data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Woizlawa Feodora of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q96733 ;
+    :hasParent data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Victoria_Feodora_Reuss ;
+    :hasSex data:female .
+
+data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duke Adolf Friedrich of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q60697 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male .
+
+data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duke Christian Ludwig of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q70203 ;
+    :hasParent data:Frederick_Francis_IV,
+        data:Princess_Alexandra_of_Hanover ;
+    :hasSex data:male .
+
+data:Duke_Friedrich-_Hereditary_Duke_of_Württemberg a :Person ;
+    rdfs:label "Duke Friedrich, Hereditary Duke of Württemberg" ;
+    data:wdtLink wdt:Q75167 .
+
+data:Duke_Johann_of_Oldenburg a :Person ;
+    rdfs:label "Duke Johann of Oldenburg" ;
+    data:wdtLink wdt:Q75390945 .
+
+data:Edward_Langtry a :Person ;
+    rdfs:label "Edward Langtry" ;
+    data:wdtLink wdt:Q63196804 .
+
+data:Elena_Sanz a :Person ;
+    rdfs:label "Elena Sanz" ;
+    data:wdtLink wdt:Q5384669 .
+
+data:Elise_von_Vieregge a :Person ;
+    rdfs:label "Elise von Vieregge" ;
+    data:wdtLink wdt:Q13576445 .
+
+data:Emich-_7th_Prince_of_Leiningen a :Person ;
+    rdfs:label "Emich, 7th Prince of Leiningen" ;
+    data:wdtLink wdt:Q5371081 ;
+    :hasParent data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Karl-_6th_Prince_of_Leiningen ;
+    :hasSex data:male .
+
+data:Emma_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Emma of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q57664 .
+
+data:Eudes_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Eudes de Orléans e Bragança" ;
+    data:wdtLink wdt:Q7243973 .
+
+data:Felicitas-Anita_Gräfin_Schwerin_von_Krosigk a :Person ;
+    rdfs:label "Felicitas-Anita Gräfin Schwerin von Krosigk" ;
+    data:wdtLink wdt:Q75390944 .
+
+data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q3856119 ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male .
+
+data:Floria-Franziska_Gräfin_von_Faber-Castell a :Person ;
+    rdfs:label "Floria-Franziska Gräfin von Faber-Castell" ;
+    data:wdtLink wdt:Q75976238 .
+
+data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Person ;
+    rdfs:label "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau" ;
+    data:wdtLink wdt:Q321787 ;
+    :hasParent data:Mathilde_Freiin_von_dem_Bussche-Haddenhausen,
+        data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
+    data:wdtLink wdt:Q62129 .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Person ;
+    rdfs:label "Gabriele von dem Bussche-Ippenburg" ;
+    data:wdtLink wdt:Q13638711 .
+
+data:Georg-_Prince_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Georg, Prince of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q659557 ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Friedrich_of_Saxe-Meiningen ;
+    :hasSex data:male .
+
+data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse a :Person ;
+    rdfs:label "Georg Donatus, Hereditary Grand Duke of Hesse" ;
+    data:wdtLink wdt:Q60737 .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Georg von dem Bussche-Haddenhausen" ;
+    data:wdtLink wdt:Q4329958 .
+
+data:George_Gilman a :Person ;
+    rdfs:label "George Gilman" ;
+    data:wdtLink wdt:Q75623574 .
+
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
+    data:wdtLink wdt:Q335129 ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
+    data:wdtLink wdt:Q336783 ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Maria Pavlovna of Russia" ;
+    data:wdtLink wdt:Q235438 ;
+    :hasParent data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia" ;
+    data:wdtLink wdt:Q538532 ;
+    :hasParent data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:female .
+
+data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Dmitri Pavlovich of Russia" ;
+    data:wdtLink wdt:Q372954 ;
+    :hasParent data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Person ;
+    rdfs:label "Grand Duke Vladimir Kirillovich, Grand Duke of Russia" ;
+    data:wdtLink wdt:Q382226 ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male .
+
+data:Granville_Leveson-Gower-_5th_Earl_Granville a :Person ;
+    rdfs:label "Granville Leveson-Gower, 5th Earl Granville" ;
+    data:wdtLink wdt:Q25998958 ;
+    :hasParent data:Rose_Leveson-Gower-_Countess_Granville,
+        data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasSex data:male .
+
+data:Hedwig_of_Sierstorpff-Driburg a :Person ;
+    rdfs:label "Hedwig of Sierstorpff-Driburg" ;
+    data:wdtLink wdt:Q4862973 .
+
+data:Helen_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Helen of Greece and Denmark" ;
+    data:wdtLink wdt:Q162177 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female .
+
+data:Huno_Herzog_von_Oldenburg a :Person ;
+    rdfs:label "Huno Herzog von Oldenburg" ;
+    data:wdtLink wdt:Q75390943 .
+
+data:Ian_Malcolm a :Person ;
+    rdfs:label "Ian Malcolm" ;
+    data:wdtLink wdt:Q3147302 .
+
+data:Ilka_Gräfin_zu_Ortenburg a :Person ;
+    rdfs:label "Ilka Gräfin zu Ortenburg" ;
+    data:wdtLink wdt:Q75390946 .
+
+data:Infanta_Cristina_of_Spain a :Person ;
+    rdfs:label "Infanta Cristina of Spain" ;
+    data:wdtLink wdt:Q230580 ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female .
+
+data:Infanta_Maria_Teresa_Isabel_of_Spain a :Person ;
+    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
+    data:wdtLink wdt:Q255389 ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:female .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Person ;
+    rdfs:label "Infante Alfonso, Duke of Calabria" ;
+    data:wdtLink wdt:Q1333222 ;
+    :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias,
+        data:Prince_Carlos_of_the_Two_Sicilies ;
+    :hasSex data:male .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria" ;
+    data:wdtLink wdt:Q526743 ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasSex data:male .
+
+data:Ingeborg_Alix_von_Oldenburg a :Person ;
+    rdfs:label "Ingeborg Alix von Oldenburg" ;
+    data:wdtLink wdt:Q15876671 .
+
+data:Irene_Mountbatten-_Marchioness_of_Carisbrooke a :Person ;
+    rdfs:label "Irene Mountbatten, Marchioness of Carisbrooke" ;
+    data:wdtLink wdt:Q6069164 .
+
+data:Isobel_Weatherall a :Person ;
+    rdfs:label "Isobel Weatherall" ;
+    data:wdtLink wdt:Q75248473 .
+
+data:Iñaki_Urdangarin a :Person ;
+    rdfs:label "Iñaki Urdangarin" ;
+    data:wdtLink wdt:Q356560 .
+
+data:James_Elphinstone-_18th_Lord_Elphinstone a :Person ;
+    rdfs:label "James Elphinstone, 18th Lord Elphinstone" ;
+    data:wdtLink wdt:Q26215204 ;
+    :hasParent data:Andrew_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasSex data:male .
+
+data:Jean_Frances_Hambro a :Person ;
+    rdfs:label "Jean Frances Hambro" ;
+    data:wdtLink wdt:Q54162487 .
+
+data:Jeanne_Marie_Langtry a :Person ;
+    rdfs:label "Jeanne Marie Langtry" ;
+    data:wdtLink wdt:Q84795732 ;
+    :hasParent data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female .
+
+data:John_Dalrymple-_13th_Earl_of_Stair a :Person ;
+    rdfs:label "John Dalrymple, 13th Earl of Stair" ;
+    data:wdtLink wdt:Q6228439 .
+
+data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin a :Person ;
+    rdfs:label "Joseph-Marie-Philippe Lévêque de Vilmorin" ;
+    data:wdtLink wdt:Q3381015 .
+
+data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Josias, Hereditary Prince of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q75911 .
+
+data:Julia_Ogilvy a :Person ;
+    rdfs:label "Julia Ogilvy" ;
+    data:wdtLink wdt:Q15956270 .
+
+data:Juliana_von_Salviati a :Person ;
+    rdfs:label "Juliana von Salviati" ;
+    data:wdtLink wdt:Q3218785 .
+
+data:Julius_Ernst_von_dem_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Julius Ernst von dem Bussche-Haddenhausen" ;
+    data:wdtLink wdt:Q55617934 .
+
+data:Klara-Marie_von_Korff_gennant_Schmising-Kerssenbrock a :Person ;
+    rdfs:label "Klara-Marie von Korff gennant Schmising-Kerssenbrock" ;
+    data:wdtLink wdt:Q75391437 .
+
+data:Kraft-_Prince_of_Hohenlohe-Langenburg a :Person ;
+    rdfs:label "Kraft, Prince of Hohenlohe-Langenburg" ;
+    data:wdtLink wdt:Q72937 ;
+    :hasParent data:Gottfried-_8th_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Lady_Mary_Leveson-Gower a :Person ;
+    rdfs:label "Lady Mary Leveson-Gower" ;
+    data:wdtLink wdt:Q75721792 .
+
+data:Lady_Rose_Windsor a :Person ;
+    rdfs:label "Lady Rose Windsor" ;
+    data:wdtLink wdt:Q430785 ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female .
+
+data:Laetitia_dArenberg a :Person ;
+    rdfs:label "Laetitia d'Arenberg" ;
+    data:wdtLink wdt:Q6408488 .
+
+data:Leo_Löwenstein a :Person ;
+    rdfs:label "Leo Löwenstein" ;
+    data:wdtLink wdt:Q7740003 ;
+    :hasParent data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg,
+        data:Anastasia-_Princess_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasSex data:male .
+
+data:Leonora_Anson-_Countess_of_Lichfield a :Person ;
+    rdfs:label "Leonora Anson, Countess of Lichfield" ;
+    data:wdtLink wdt:Q6526686 .
+
+data:Lillie_Langtry a :Person ;
+    rdfs:label "Lillie Langtry" ;
+    data:wdtLink wdt:Q297743 .
+
+data:Louis-_Prince_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Louis, Prince of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q61270 .
+
+data:Margaret_Messenger a :Person ;
+    rdfs:label "Margaret Messenger" ;
+    data:wdtLink wdt:Q75381841 .
+
+data:Maria_del_Carmen_de_Ulloa_y_de_Suelves a :Person ;
+    rdfs:label "Maria del Carmen de Ulloa y de Suelves" ;
+    data:wdtLink wdt:Q75317936 .
+
+data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Marie Alix, Duchess of Schleswig-Holstein" ;
+    data:wdtLink wdt:Q6490795 ;
+    :hasParent data:Ingeborg_Alix_von_Oldenburg,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasSex data:female .
+
+data:Marie_Mélanie_de_Gaufridy_de_Dortan a :Person ;
+    rdfs:label "Marie Mélanie de Gaufridy de Dortan" ;
+    data:wdtLink wdt:Q75270431 .
+
+data:Marina_Ogilvy a :Person ;
+    rdfs:label "Marina Ogilvy" ;
+    data:wdtLink wdt:Q3312290 ;
+    :hasParent data:Angus_Ogilvy,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasSex data:female .
+
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
+    data:wdtLink wdt:Q6779476 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female .
+
+data:Mary_McCorquodale a :Person ;
+    rdfs:label "Mary McCorquodale" ;
+    data:wdtLink wdt:Q75240080 .
+
+data:Mathilde_Freiin_von_dem_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Mathilde Freiin von dem Bussche-Haddenhausen" ;
+    data:wdtLink wdt:Q131584006 .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q335615 ;
+    :hasParent data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_McCorquodale ;
+    :hasSex data:male .
+
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person ;
+    rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven" ;
+    data:wdtLink wdt:Q259488 .
+
+data:Nina_Georgievna_of_Russia a :Person ;
+    rdfs:label "Nina Georgievna of Russia" ;
+    data:wdtLink wdt:Q898347 ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia_1,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Norton Knatchbull, 3rd Earl Mountbatten of Burma" ;
+    data:wdtLink wdt:Q1948021 ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male .
+
+data:Olimpia_Torlonia a :Person ;
+    rdfs:label "Olimpia Torlonia" ;
+    data:wdtLink wdt:Q6049946 ;
+    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasSex data:female .
+
+data:Patrick_Anson-_5th_Earl_of_Lichfield a :Person ;
+    rdfs:label "Patrick Anson, 5th Earl of Lichfield" ;
+    data:wdtLink wdt:Q246026 ;
+    :hasParent data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male .
+
+data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Patrick Bowes-Lyon, 15th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q1758535 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Paul-Annick_Weiller a :Person ;
+    rdfs:label "Paul-Annick Weiller" ;
+    data:wdtLink wdt:Q75393705 .
+
+data:Paul_Chavchavadze a :Person ;
+    rdfs:label "Paul Chavchavadze" ;
+    data:wdtLink wdt:Q16028068 .
+
+data:Paul_Mowatt a :Person ;
+    rdfs:label "Paul Mowatt" ;
+    data:wdtLink wdt:Q17429006 .
+
+data:Peter-_Duke_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Peter, Duke of Schleswig-Holstein" ;
+    data:wdtLink wdt:Q739253 .
+
+data:Peter_II_of_Yugoslavia a :Person ;
+    rdfs:label "Peter II of Yugoslavia" ;
+    data:wdtLink wdt:Q223183 .
+
+data:Philip-_Hereditary_Prince_of_Serbia a :Person ;
+    rdfs:label "Philip, Hereditary Prince of Serbia" ;
+    data:wdtLink wdt:Q3268142 ;
+    :hasParent data:Alexander-_Crown_Prince_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male .
+
+data:Philip_Knatchbull a :Person ;
+    rdfs:label "Philip Knatchbull" ;
+    data:wdtLink wdt:Q75383945 .
+
+data:Prince_Adalbert_of_Prussia a :Person ;
+    rdfs:label "Prince Adalbert of Prussia" ;
+    data:wdtLink wdt:Q50998 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Aimone, 4th Duke of Aosta" ;
+    data:wdtLink wdt:Q169902 ;
+    :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :hasSex data:male .
+
+data:Prince_Alexander_of_Serbia a :Person ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:wdtLink wdt:Q2242035 ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz a :Person ;
+    rdfs:label "Prince Alfonso de Bourbon, Duke of Cádiz" ;
+    data:wdtLink wdt:Q603075 ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasSex data:male .
+
+data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Amedeo, 3rd Duke of Aosta" ;
+    data:wdtLink wdt:Q431121 ;
+    :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :hasSex data:male .
+
+data:Prince_Amedeo-_5th_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Amedeo, 5th Duke of Aosta" ;
+    data:wdtLink wdt:Q452039 ;
+    :hasParent data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasSex data:male .
+
+data:Prince_Andreas_of_Prussia a :Person ;
+    rdfs:label "Prince Andreas of Prussia" ;
+    data:wdtLink wdt:Q75381594 .
+
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:wdtLink wdt:Q58777 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Carlos-_Hereditary_Duke_of_Parma a :Person ;
+    rdfs:label "Prince Carlos, Hereditary Duke of Parma" ;
+    data:wdtLink wdt:Q510259 ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_Charles_Bonaparte a :Person ;
+    rdfs:label "Prince Charles Bonaparte" ;
+    data:wdtLink wdt:Q704776 .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:wdtLink wdt:Q447757 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_Dominik_Rainer_Radziwiłł a :Person ;
+    rdfs:label "Prince Dominik Rainer Radziwiłł" ;
+    data:wdtLink wdt:Q3035416 .
+
+data:Prince_Donatus-_Landgrave_of_Hesse a :Person ;
+    rdfs:label "Prince Donatus, Landgrave of Hesse" ;
+    data:wdtLink wdt:Q71778 ;
+    :hasParent data:Prince_Moritz-_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:male .
+
+data:Prince_Ernst_August_of_Lippe a :Person ;
+    rdfs:label "Prince Ernst August of Lippe" ;
+    data:wdtLink wdt:Q2295856 ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Julius_Ernest_of_Lippe-Biesterfeld ;
+    :hasSex data:male .
+
+data:Prince_Ferdinand_of_Bavaria a :Person ;
+    rdfs:label "Prince Ferdinand of Bavaria" ;
+    data:wdtLink wdt:Q2537215 .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince Franz Wilhelm of Prussia" ;
+    data:wdtLink wdt:Q64217 ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasSex data:male .
+
+data:Prince_Frederick_of_Prussia a :Person ;
+    rdfs:label "Prince Frederick of Prussia" ;
+    data:wdtLink wdt:Q70632 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male .
+
+data:Prince_Friedrich_Wilhelm-_Prince_of_Hohenzollern a :Person ;
+    rdfs:label "Prince Friedrich Wilhelm, Prince of Hohenzollern" ;
+    data:wdtLink wdt:Q69420 .
+
+data:Prince_Heinrich_I_Reuss_of_Köstritz a :Person ;
+    rdfs:label "Prince Heinrich I Reuss of Köstritz" ;
+    data:wdtLink wdt:Q7244058 .
+
+data:Prince_Jean_dOrléans a :Person ;
+    rdfs:label "Prince Jean d'Orléans" ;
+    data:wdtLink wdt:Q592349 ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male .
+
+data:Prince_Joachim_of_Prussia a :Person ;
+    rdfs:label "Prince Joachim of Prussia" ;
+    data:wdtLink wdt:Q60371 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Julius_Ernest_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Prince Julius Ernest of Lippe-Biesterfeld" ;
+    data:wdtLink wdt:Q24788963 .
+
+data:Prince_Karl_Franz_of_Prussia a :Person ;
+    rdfs:label "Prince Karl Franz of Prussia" ;
+    data:wdtLink wdt:Q635489 ;
+    :hasParent data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt ;
+    :hasSex data:male .
+
+data:Prince_Karl_of_Leiningen a :Person ;
+    rdfs:label "Prince Karl of Leiningen" ;
+    data:wdtLink wdt:Q2325684 ;
+    :hasParent data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Karl-_6th_Prince_of_Leiningen ;
+    :hasSex data:male .
+
+data:Prince_Louis_Ferdinand_of_Prussia a :Person ;
+    rdfs:label "Prince Louis Ferdinand of Prussia" ;
+    data:wdtLink wdt:Q63575 .
+
+data:Prince_Maximilian-_Margrave_of_Baden a :Person ;
+    rdfs:label "Prince Maximilian, Margrave of Baden" ;
+    data:wdtLink wdt:Q1913939 ;
+    :hasParent data:Prince_Berthold-_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:male .
+
+data:Prince_Michel_dOrléans a :Person ;
+    rdfs:label "Prince Michel d'Orléans" ;
+    data:wdtLink wdt:Q3311149 .
+
+data:Prince_Pedro-_Duke_of_Calabria a :Person ;
+    rdfs:label "Prince Pedro, Duke of Calabria" ;
+    data:wdtLink wdt:Q3387469 ;
+    :hasParent data:Infante_Carlos-_Duke_of_Calabria,
+        data:Princess_Anne_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Raimundo-_2nd_Duke_of_Castel_Duino a :Person ;
+    rdfs:label "Prince Raimundo, 2nd Duke of Castel Duino" ;
+    data:wdtLink wdt:Q7284421 .
+
+data:Prince_Ranieri-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Ranieri, Duke of Castro" ;
+    data:wdtLink wdt:Q1943652 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Stefan_of_Schaumburg-Lippe a :Person ;
+    rdfs:label "Prince Stefan of Schaumburg-Lippe" ;
+    data:wdtLink wdt:Q15882344 .
+
+data:Prince_Wilhelm-Karl_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm-Karl of Prussia" ;
+    data:wdtLink wdt:Q92141 ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Wilhelm-_Duke_of_Södermanland a :Person ;
+    rdfs:label "Prince Wilhelm, Duke of Södermanland" ;
+    data:wdtLink wdt:Q435739 .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Princess Adelaide of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q261826 ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Friedrich_of_Saxe-Meiningen ;
+    :hasSex data:female .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Person ;
+    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    data:wdtLink wdt:Q2419996 .
+
+data:Princess_Anne_dOrléans a :Person ;
+    rdfs:label "Princess Anne d'Orléans" ;
+    data:wdtLink wdt:Q2072516 ;
+    :hasParent data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :hasSex data:female .
+
+data:Princess_Anne_of_Orléans a :Person ;
+    rdfs:label "Princess Anne of Orléans" ;
+    data:wdtLink wdt:Q2278538 ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female .
+
+data:Princess_Barbara_of_Prussia a :Person ;
+    rdfs:label "Princess Barbara of Prussia" ;
+    data:wdtLink wdt:Q3104331 .
+
+data:Princess_Beatrice_of_York a :Person ;
+    rdfs:label "Princess Beatrice of York" ;
+    data:wdtLink wdt:Q165657 ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasSex data:female .
+
+data:Princess_Béatrice_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Béatrice of the Two Sicilies" ;
+    data:wdtLink wdt:Q4925346 ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:female .
+
+data:Princess_Caroline_of_Monaco a :Person ;
+    rdfs:label "Princess Caroline of Monaco" ;
+    data:wdtLink wdt:Q233966 .
+
+data:Princess_Cecilie_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Cecilie of Greece and Denmark" ;
+    data:wdtLink wdt:Q236196 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:Princess_Charlotte_of_Croÿ a :Person ;
+    rdfs:label "Princess Charlotte of Croÿ" ;
+    data:wdtLink wdt:Q75383564 .
+
+data:Princess_Charlotte_of_Prussia a :Person ;
+    rdfs:label "Princess Charlotte of Prussia" ;
+    data:wdtLink wdt:Q58670 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female .
+
+data:Princess_Claude_dOrléans a :Person ;
+    rdfs:label "Princess Claude d’Orléans" ;
+    data:wdtLink wdt:Q1626864 ;
+    :hasParent data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :hasSex data:female .
+
+data:Princess_Elena_of_Romania a :Person ;
+    rdfs:label "Princess Elena of Romania" ;
+    data:wdtLink wdt:Q2423576 ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Françoise_of_Orléans a :Person ;
+    rdfs:label "Princess Françoise of Orléans" ;
+    data:wdtLink wdt:Q577228 ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female .
+
+data:Princess_Henriette_of_Schönaich-Carolath a :Person ;
+    rdfs:label "Princess Henriette of Schönaich-Carolath" ;
+    data:wdtLink wdt:Q2306331 .
+
+data:Princess_Irene-_Duchess_of_Aosta a :Person ;
+    rdfs:label "Princess Irene, Duchess of Aosta" ;
+    data:wdtLink wdt:Q236770 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Leonida_Bagration_of_Mukhrani a :Person ;
+    rdfs:label "Princess Leonida Bagration of Mukhrani" ;
+    data:wdtLink wdt:Q788565 .
+
+data:Princess_Margaret-_Hereditary_Grand_Duchess_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Margaret, Hereditary Grand Duchess of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q1894917 .
+
+data:Princess_Margarita_of_Leiningen a :Person ;
+    rdfs:label "Princess Margarita of Leiningen" ;
+    data:wdtLink wdt:Q2591944 .
+
+data:Princess_Maria_Luisa-_9th_Princess_of_Koháry a :Person ;
+    rdfs:label "Princess Maria Luisa, 9th Princess of Koháry" ;
+    data:wdtLink wdt:Q3292104 .
+
+data:Princess_Maria_Pia_of_Savoy a :Person ;
+    rdfs:label "Princess Maria Pia of Savoy" ;
+    data:wdtLink wdt:Q922418 .
+
+data:Princess_Marie_Auguste_of_Anhalt a :Person ;
+    rdfs:label "Princess Marie Auguste of Anhalt" ;
+    data:wdtLink wdt:Q63014 .
+
+data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies a :Person ;
+    rdfs:label "Princess María de los Dolores of Bourbon-Two Sicilies" ;
+    data:wdtLink wdt:Q2635204 ;
+    :hasParent data:Prince_Carlos_of_the_Two_Sicilies,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Philomena_dOrléans a :Person ;
+    rdfs:label "Princess Philomena d'Orléans" ;
+    data:wdtLink wdt:Q32595643 .
+
+data:Princess_Valerie-_Margravine_of_Baden a :Person ;
+    rdfs:label "Princess Valerie, Margravine of Baden" ;
+    data:wdtLink wdt:Q6425396 .
+
+data:Princess_Victoria_Feodora_Reuss a :Person ;
+    rdfs:label "Princess Victoria Feodora Reuss" ;
+    data:wdtLink wdt:Q2008995 .
+
+data:Rachel_Spender-Clay a :Person ;
+    rdfs:label "Rachel Spender-Clay" ;
+    data:wdtLink wdt:Q75240077 .
+
+data:Renaud_de_Clermont-Tonnerre a :Person ;
+    rdfs:label "Renaud de Clermont-Tonnerre" ;
+    data:wdtLink wdt:Q33104541 .
+
+data:Robert-_Archduke_of_Austria-Este a :Person ;
+    rdfs:label "Robert, Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q112108 .
+
+data:Robin_Medforth-Mills a :Person ;
+    rdfs:label "Robin Medforth-Mills" ;
+    data:wdtLink wdt:Q7352653 .
+
+data:Rose_Leveson-Gower-_Countess_Granville a :Person ;
+    rdfs:label "Rose Leveson-Gower, Countess Granville" ;
+    data:wdtLink wdt:Q7367831 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female .
+
+data:Sarah_Walker a :Person ;
+    rdfs:label "Sarah Walker" ;
+    data:wdtLink wdt:Q75240463 .
+
+data:Serena_Armstrong-Jones-_Countess_of_Snowdon a :Person ;
+    rdfs:label "Serena Armstrong-Jones, Countess of Snowdon" ;
+    data:wdtLink wdt:Q4493736 .
+
+data:Sir_Samuel_Clayton a :Person ;
+    rdfs:label "Sir Samuel Clayton" ;
+    data:wdtLink wdt:Q75721793 .
+
+data:Sofía_Landaluce_y_Melgarejo a :Person ;
+    rdfs:label "Sofía Landaluce y Melgarejo" ;
+    data:wdtLink wdt:Q65031050 .
+
+data:Stephanie_Freiin_von_Brenken a :Person ;
+    rdfs:label "Stephanie Freiin von Brenken" ;
+    data:wdtLink wdt:Q75706705 .
+
+data:Timothy_Colman a :Person ;
+    rdfs:label "Timothy Colman" ;
+    data:wdtLink wdt:Q7807119 .
+
+data:Traute_Becker a :Person ;
+    rdfs:label "Traute Becker" ;
+    data:wdtLink wdt:Q75374290 .
+
+data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Person ;
+    rdfs:label "Ulrich, 10th Prince Kinsky of Wchinitz and Tettau" ;
+    data:wdtLink wdt:Q7879786 .
+
+data:Wilhelm_von_Amsberg a :Person ;
+    rdfs:label "Wilhelm von Amsberg" ;
+    data:wdtLink wdt:Q4285590 .
+
+data:Wilhelmina_of_the_Netherlands a :Person ;
+    rdfs:label "Wilhelmina of the Netherlands" ;
+    data:wdtLink wdt:Q150747 ;
+    :hasParent data:Emma_of_Waldeck_and_Pyrmont,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Willa_Chetwode a :Person ;
+    rdfs:label "Willa Chetwode" ;
+    data:wdtLink wdt:Q75261337 .
+
+data:William_Leveson-Gower-_4th_Earl_Granville a :Person ;
+    rdfs:label "William Leveson-Gower, 4th Earl Granville" ;
+    data:wdtLink wdt:Q1149075 .
+
+data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Person ;
+    rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi" ;
+    data:wdtLink wdt:Q4716439 .
+
+data:Alexander_Windsor-_Earl_of_Ulster a :Person ;
+    rdfs:label "Alexander Windsor, Earl of Ulster" ;
+    data:wdtLink wdt:Q621866 ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:male .
+
+data:Alexandra_Manley-_Countess_of_Frederiksborg a :Person ;
+    rdfs:label "Alexandra Manley, Countess of Frederiksborg" ;
+    data:wdtLink wdt:Q272905 .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q57264 ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female .
+
+data:Amélie_of_Orléans a :Person ;
+    rdfs:label "Amélie of Orléans" ;
+    data:wdtLink wdt:Q236965 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Andrew_Mountbatten-Windsor a :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:wdtLink wdt:Q153330 ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Angus_Ogilvy a :Person ;
+    rdfs:label "Angus Ogilvy" ;
+    data:wdtLink wdt:Q544609 .
+
+data:Anne-_Princess_Royal a :Person ;
+    rdfs:label "Anne, Princess Royal" ;
+    data:wdtLink wdt:Q151754 ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female .
+
+data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Person ;
+    rdfs:label "Antony Armstrong-Jones, 1st Earl of Snowdon" ;
+    data:wdtLink wdt:Q335260 .
+
+data:Antônio_de_Orleans_e_Bragança a :Person ;
+    rdfs:label "Antônio de Orleans e Bragança" ;
+    data:wdtLink wdt:Q2414301 .
+
+data:Armgard_of_Sierstorpff-Cramm a :Person ;
+    rdfs:label "Armgard of Sierstorpff-Cramm" ;
+    data:wdtLink wdt:Q2802589 ;
+    :hasParent data:Baron_Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasSex data:female .
+
+data:Autumn_Phillips a :Person ;
+    rdfs:label "Autumn Phillips" ;
+    data:wdtLink wdt:Q455160 .
+
+data:Baroness_Francesca_Thyssen-Bornemisza a :Person ;
+    rdfs:label "Baroness Francesca Thyssen-Bornemisza" ;
+    data:wdtLink wdt:Q1276954 .
+
+data:Carlos_I_of_Portugal a :Person ;
+    rdfs:label "Carlos I of Portugal" ;
+    data:wdtLink wdt:Q158874 .
+
+data:Carlos_Morales_Quintana a :Person ;
+    rdfs:label "Carlos Morales Quintana" ;
+    data:wdtLink wdt:Q5066498 .
+
+data:Chantal_Hochuli a :Person ;
+    rdfs:label "Chantal Hochuli" ;
+    data:wdtLink wdt:Q3336838 .
+
+data:Charles_III a :Person ;
+    rdfs:label "Charles III" ;
+    data:wdtLink wdt:Q43274 ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Christian_X_of_Denmark a :Person ;
+    rdfs:label "Christian X of Denmark" ;
+    data:wdtLink wdt:Q156617 .
+
+data:Claire_Booth a :Person ;
+    rdfs:label "Claire Booth" ;
+    data:wdtLink wdt:Q45962 .
+
+data:Countess_Ina_Marie_von_Bassewitz a :Person ;
+    rdfs:label "Countess Ina Marie von Bassewitz" ;
+    data:wdtLink wdt:Q772541 .
+
+data:Daniel_Chatto a :Person ;
+    rdfs:label "Daniel Chatto" ;
+    data:wdtLink wdt:Q331657 .
+
+data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "David Mountbatten, 3rd Marquess of Milford Haven" ;
+    data:wdtLink wdt:Q2752971 ;
+    :hasParent data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male .
+
+data:David_Nightingale_Hicks a :Person ;
+    rdfs:label "David Nightingale Hicks" ;
+    data:wdtLink wdt:Q5238032 .
+
+data:Diana-_Princess_of_Wales a :Person ;
+    rdfs:label "Diana, Princess of Wales" ;
+    data:wdtLink wdt:Q9685 .
+
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Person ;
+    rdfs:label "Duchess Rosa, Duchess of Württemberg" ;
+    data:wdtLink wdt:Q84971 ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Archduke_Peter_Ferdinand-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:female .
+
+data:Duke_Henry_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duke Henry of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q503991 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q637951 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male .
+
+data:Edoardo_Mapelli_Mozzi a :Person ;
+    rdfs:label "Edoardo Mapelli Mozzi" ;
+    data:wdtLink wdt:Q68688016 .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
+    data:wdtLink wdt:Q271995 .
+
+data:Emmanuelle_de_Dampierre a :Person ;
+    rdfs:label "Emmanuelle de Dampierre" ;
+    data:wdtLink wdt:Q3052995 .
+
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:wdtLink wdt:Q191045 ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male .
+
+data:Frederick_Francis_IV a :Person ;
+    rdfs:label "Frederick Francis IV" ;
+    data:wdtLink wdt:Q57930 ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male .
+
+data:George_VI a :Person ;
+    rdfs:label "George VI" ;
+    data:wdtLink wdt:Q280856 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:male .
+
+data:Gottfried-_8th_Prince_of_Hohenlohe-Langenburg a :Person ;
+    rdfs:label "Gottfried, 8th Prince of Hohenlohe-Langenburg" ;
+    data:wdtLink wdt:Q66546 .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia" ;
+    data:wdtLink wdt:Q237341 ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Maria Kirillovna of Russia" ;
+    data:wdtLink wdt:Q778200 ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia_1 a :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia" ;
+    data:wdtLink wdt:Q524451 .
+
+data:Grand_Duke_Paul_Alexandrovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Paul Alexandrovich of Russia" ;
+    data:wdtLink wdt:Q372964 .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:wdtLink wdt:Q1389258 .
+
+data:Henry_Lascelles-_6th_Earl_of_Harewood a :Person ;
+    rdfs:label "Henry Lascelles, 6th Earl of Harewood" ;
+    data:wdtLink wdt:Q2653986 .
+
+data:Howard_Oxenberg a :Person ;
+    rdfs:label "Howard Oxenberg" ;
+    data:wdtLink wdt:Q75393300 .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
+    data:wdtLink wdt:Q33218 .
+
+data:Infanta_Beatriz_of_Spain a :Person ;
+    rdfs:label "Infanta Beatriz of Spain" ;
+    data:wdtLink wdt:Q269493 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female .
+
+data:Infanta_Elena-_Duchess_of_Lugo a :Person ;
+    rdfs:label "Infanta Elena, Duchess of Lugo" ;
+    data:wdtLink wdt:Q54386 ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Person ;
+    rdfs:label "Infanta Maria de las Mercedes of Spain" ;
+    data:wdtLink wdt:Q3847609 ;
+    :hasParent data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :hasSex data:female .
+
+data:Infante_Jaime-_Duke_of_Segovia a :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia" ;
+    data:wdtLink wdt:Q703780 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
+
+data:Irakli_Bagration_of_Mukhrani a :Person ;
+    rdfs:label "Irakli Bagration of Mukhrani" ;
+    data:wdtLink wdt:Q2576581 .
+
+data:Jack_Brooksbank a :Person ;
+    rdfs:label "Jack Brooksbank" ;
+    data:wdtLink wdt:Q57401350 .
+
+data:Jaime_de_Marichalar a :Person ;
+    rdfs:label "Jaime de Marichalar" ;
+    data:wdtLink wdt:Q726890 .
+
+data:Janet_Bryce a :Person ;
+    rdfs:label "Janet Bryce" ;
+    data:wdtLink wdt:Q75383906 .
+
+data:Karl-_6th_Prince_of_Leiningen a :Person ;
+    rdfs:label "Karl, 6th Prince of Leiningen" ;
+    data:wdtLink wdt:Q16661984 .
+
+data:Karl_von_Habsburg a :Person ;
+    rdfs:label "Karl von Habsburg" ;
+    data:wdtLink wdt:Q78515 ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina-_Crown_Princess_of_Austria ;
+    :hasSex data:male .
+
+data:Lady_Pamela_Hicks a :Person ;
+    rdfs:label "Lady Pamela Hicks" ;
+    data:wdtLink wdt:Q3268202 ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female .
+
+data:Lady_Paola_Windsor a :Person ;
+    rdfs:label "Lady Paola Windsor" ;
+    data:wdtLink wdt:Q6350285 .
+
+data:Lady_Sarah_Chatto a :Person ;
+    rdfs:label "Lady Sarah Chatto" ;
+    data:wdtLink wdt:Q1040807 ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSex data:female .
+
+data:Lord_Frederick_Windsor a :Person ;
+    rdfs:label "Lord Frederick Windsor" ;
+    data:wdtLink wdt:Q3735133 ;
+    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male .
+
+data:Lord_Nicholas_Windsor a :Person ;
+    rdfs:label "Lord Nicholas Windsor" ;
+    data:wdtLink wdt:Q1217757 ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male .
+
+data:Louis_Alphonse_de_Bourbon a :Person ;
+    rdfs:label "Louis Alphonse de Bourbon" ;
+    data:wdtLink wdt:Q1871533 ;
+    :hasParent data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasSex data:male .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
+    data:wdtLink wdt:Q311442 ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:wdtLink wdt:Q157068 ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Luís_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Luís de Orléans e Bragança" ;
+    data:wdtLink wdt:Q2617325 .
+
+data:Margrethe_II_of_Denmark a :Person ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:wdtLink wdt:Q102139 ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female .
+
+data:Marie_Bonaparte a :Person ;
+    rdfs:label "Marie Bonaparte" ;
+    data:wdtLink wdt:Q115472 .
+
+data:Marie_Christine-_Princess_Michael_of_Kent a :Person ;
+    rdfs:label "Marie Christine, Princess Michael of Kent" ;
+    data:wdtLink wdt:Q93535 .
+
+data:Marina_Karella a :Person ;
+    rdfs:label "Marina Karella" ;
+    data:wdtLink wdt:Q2623984 .
+
+data:Mark_Phillips a :Person ;
+    rdfs:label "Mark Phillips" ;
+    data:wdtLink wdt:Q547893 .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Person ;
+    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
+    data:wdtLink wdt:Q233913 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:female .
+
+data:María_Margarita_Vargas_Santaella a :Person ;
+    rdfs:label "María Margarita Vargas Santaella" ;
+    data:wdtLink wdt:Q3296460 .
+
+data:Meghan-_Duchess_of_Sussex a :Person ;
+    rdfs:label "Meghan, Duchess of Sussex" ;
+    data:wdtLink wdt:Q3304418 .
+
+data:Michael_Bowes-Lyon a :Person ;
+    rdfs:label "Michael Bowes-Lyon" ;
+    data:wdtLink wdt:Q63806478 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Nikolaus, Hereditary Grand Duke of Oldenburg" ;
+    data:wdtLink wdt:Q64976 ;
+    :hasParent data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male .
+
+data:Pedro_Henrique_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Pedro Henrique de Orléans e Bragança" ;
+    data:wdtLink wdt:Q1362941 ;
+    :hasParent data:Luís_de_Orléans_e_Bragança,
+        data:Princess_Maria_Pia_of_the_Two_Sicilies ;
+    :hasSex data:male .
+
+data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Penelope Knatchbull, Countess Mountbatten of Burma" ;
+    data:wdtLink wdt:Q30323763 .
+
+data:Peter_Phillips a :Person ;
+    rdfs:label "Peter Phillips" ;
+    data:wdtLink wdt:Q344908 ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasSex data:male .
+
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Person ;
+    rdfs:label "Philipp Albrecht, Duke of Württemberg" ;
+    data:wdtLink wdt:Q62965 .
+
+data:Prince_Bernhard_of_Lippe a :Person ;
+    rdfs:label "Prince Bernhard of Lippe" ;
+    data:wdtLink wdt:Q649601 ;
+    :hasParent data:Ernest_II-_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :hasSex data:male .
+
+data:Prince_Berthold-_Margrave_of_Baden a :Person ;
+    rdfs:label "Prince Berthold, Margrave of Baden" ;
+    data:wdtLink wdt:Q62602 ;
+    :hasParent data:Prince_Maximilian_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasSex data:male .
+
+data:Prince_Carlo-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Carlo, Duke of Castro" ;
+    data:wdtLink wdt:Q1850305 ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:male .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Person ;
+    rdfs:label "Prince Christoph of Hesse-Kassel" ;
+    data:wdtLink wdt:Q2314771 ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Edward-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Edward, Duke of Edinburgh" ;
+    data:wdtLink wdt:Q154920 ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Prince_Edward-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:wdtLink wdt:Q158258 ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
+    data:wdtLink wdt:Q445106 .
+
+data:Prince_Ferdinand_Pius-_Duke_of_Calabria a :Person ;
+    rdfs:label "Prince Ferdinand Pius, Duke of Calabria" ;
+    data:wdtLink wdt:Q2290508 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Ferdinando-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro" ;
+    data:wdtLink wdt:Q2324276 ;
+    :hasParent data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:male .
+
+data:Prince_Friso_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Friso of the Netherlands" ;
+    data:wdtLink wdt:Q352981 ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_George_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince George of Greece and Denmark" ;
+    data:wdtLink wdt:Q170396 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_Harry-_Duke_of_Sussex a :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex" ;
+    data:wdtLink wdt:Q152316 ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasSex data:male .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Person ;
+    rdfs:label "Prince Henry, Duke of Gloucester" ;
+    data:wdtLink wdt:Q117174 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:male .
+
+data:Prince_Lorenz-_Archduke_of_Austria-Este a :Person ;
+    rdfs:label "Prince Lorenz, Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q379479 ;
+    :hasParent data:Archduchess_Margherita-_Archduchess_of_Austria-Este,
+        data:Robert-_Archduke_of_Austria-Este ;
+    :hasSex data:male .
+
+data:Prince_Maximilian_of_Baden a :Person ;
+    rdfs:label "Prince Maximilian of Baden" ;
+    data:wdtLink wdt:Q76908 .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Michael of Greece and Denmark" ;
+    data:wdtLink wdt:Q724825 ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male .
+
+data:Prince_Michael_of_Kent a :Person ;
+    rdfs:label "Prince Michael of Kent" ;
+    data:wdtLink wdt:Q313752 ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Moritz-_Landgrave_of_Hesse a :Person ;
+    rdfs:label "Prince Moritz, Landgrave of Hesse" ;
+    data:wdtLink wdt:Q63284 ;
+    :hasParent data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:male .
+
+data:Prince_Oskar_of_Prussia a :Person ;
+    rdfs:label "Prince Oskar of Prussia" ;
+    data:wdtLink wdt:Q61242 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Philipp-_Landgrave_of_Hesse a :Person ;
+    rdfs:label "Prince Philipp, Landgrave of Hesse" ;
+    data:wdtLink wdt:Q60741 ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male .
+
+data:Prince_Tomislav_of_Yugoslavia a :Person ;
+    rdfs:label "Prince Tomislav of Yugoslavia" ;
+    data:wdtLink wdt:Q594386 .
+
+data:Princess_Alexandra-_Lady_Ogilvy a :Person ;
+    rdfs:label "Princess Alexandra, Lady Ogilvy" ;
+    data:wdtLink wdt:Q170191 ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Alexandra_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Alexandra of Greece and Denmark" ;
+    data:wdtLink wdt:Q232728 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female .
+
+data:Princess_Alexandra_of_Hanover a :Person ;
+    rdfs:label "Princess Alexandra of Hanover" ;
+    data:wdtLink wdt:Q61243 ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female .
+
+data:Princess_Alexia_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Alexia of Greece and Denmark" ;
+    data:wdtLink wdt:Q242348 ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female .
+
+data:Princess_Alice-_Duchess_of_Gloucester a :Person ;
+    rdfs:label "Princess Alice, Duchess of Gloucester" ;
+    data:wdtLink wdt:Q246915 .
+
+data:Princess_Anne_of_Denmark a :Person ;
+    rdfs:label "Princess Anne of Denmark" ;
+    data:wdtLink wdt:Q2871729 ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasSex data:female .
+
+data:Princess_Antonia_of_Prussia a :Person ;
+    rdfs:label "Princess Antonia of Prussia" ;
+    data:wdtLink wdt:Q7244552 ;
+    :hasParent data:Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasSex data:female .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Person ;
+    rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
+    data:wdtLink wdt:Q170194 .
+
+data:Princess_Camilla-_Duchess_of_Castro a :Person ;
+    rdfs:label "Princess Camilla, Duchess of Castro" ;
+    data:wdtLink wdt:Q4994262 .
+
+data:Princess_Chantal-_Duchess_of_Castro a :Person ;
+    rdfs:label "Princess Chantal, Duchess of Castro" ;
+    data:wdtLink wdt:Q3666240 .
+
+data:Princess_Christine_of_Ligne a :Person ;
+    rdfs:label "Princess Christine of Ligne" ;
+    data:wdtLink wdt:Q7244586 .
+
+data:Princess_Elizabeth_of_Serbia a :Person ;
+    rdfs:label "Princess Elizabeth of Serbia" ;
+    data:wdtLink wdt:Q257926 ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Eugenie_of_York a :Person ;
+    rdfs:label "Princess Eugenie of York" ;
+    data:wdtLink wdt:Q165709 ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasSex data:female .
+
+data:Princess_Eugénie_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Eugénie of Greece and Denmark" ;
+    data:wdtLink wdt:Q2379307 ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q66639 ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Friedrich_of_Saxe-Meiningen ;
+    :hasSex data:female .
+
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Princess Helene of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q2280905 .
+
+data:Princess_Hélène_of_Orléans a :Person ;
+    rdfs:label "Princess Hélène of Orléans" ;
+    data:wdtLink wdt:Q260525 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Mabel_of_Orange-Nassau a :Person ;
+    rdfs:label "Princess Mabel of Orange-Nassau" ;
+    data:wdtLink wdt:Q269679 .
+
+data:Princess_Mafalda_of_Savoy a :Person ;
+    rdfs:label "Princess Mafalda of Savoy" ;
+    data:wdtLink wdt:Q235832 .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Person ;
+    rdfs:label "Princess Margaret, Countess of Snowdon" ;
+    data:wdtLink wdt:Q153815 ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:Princess_Margarita_of_Baden a :Person ;
+    rdfs:label "Princess Margarita of Baden" ;
+    data:wdtLink wdt:Q3424937 ;
+    :hasParent data:Prince_Berthold-_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Margarita of Greece and Denmark" ;
+    data:wdtLink wdt:Q240317 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:Princess_Maria-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Princess Maria, Duchess of Calabria" ;
+    data:wdtLink wdt:Q70768 .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person ;
+    rdfs:label "Princess Maria Elisabeth of Bavaria" ;
+    data:wdtLink wdt:Q285326 .
+
+data:Princess_Maria_Pia_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Maria Pia of the Two Sicilies" ;
+    data:wdtLink wdt:Q2624237 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Maria of Greece and Denmark" ;
+    data:wdtLink wdt:Q232732 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female .
+
+data:Princess_Marie_Louise_of_Hanover a :Person ;
+    rdfs:label "Princess Marie Louise of Hanover" ;
+    data:wdtLink wdt:Q271998 ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female .
+
+data:Princess_Marie_of_Denmark a :Person ;
+    rdfs:label "Princess Marie of Denmark" ;
+    data:wdtLink wdt:Q231895 .
+
+data:Princess_Marie_of_Windisch-Graetz a :Person ;
+    rdfs:label "Princess Marie of Windisch-Graetz" ;
+    data:wdtLink wdt:Q2071733 .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Sophie of Greece and Denmark" ;
+    data:wdtLink wdt:Q630371 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg" ;
+    data:wdtLink wdt:Q4164797 .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Person ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:wdtLink wdt:Q255382 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:wdtLink wdt:Q10633 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female .
+
+data:Queen_Letizia_of_Spain a :Person ;
+    rdfs:label "Queen Letizia of Spain" ;
+    data:wdtLink wdt:Q201589 .
+
+data:Sarah_Ferguson a :Person ;
+    rdfs:label "Sarah Ferguson" ;
+    data:wdtLink wdt:Q55720 .
+
+data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Person ;
+    rdfs:label "Sidney Elphinstone, 16th Lord Elphinstone" ;
+    data:wdtLink wdt:Q3960165 .
+
+data:Sophie-_Duchess_of_Edinburgh a :Person ;
+    rdfs:label "Sophie, Duchess of Edinburgh" ;
+    data:wdtLink wdt:Q155203 .
+
+data:Sophie_Winkleman a :Person ;
+    rdfs:label "Sophie Winkleman" ;
+    data:wdtLink wdt:Q2631078 .
+
+data:Thomas_Anson-_Viscount_Anson a :Person ;
+    rdfs:label "Thomas Anson, Viscount Anson" ;
+    data:wdtLink wdt:Q75390868 .
+
+data:Wilhelm_Ernst_I-_Grand_Duke_of_Saxe-Weimar-Eisenach a :Person ;
+    rdfs:label "Wilhelm Ernst I, Grand Duke of Saxe-Weimar-Eisenach" ;
+    data:wdtLink wdt:Q58037 .
+
+data:Alexander-_Crown_Prince_of_Serbia a :Person ;
+    rdfs:label "Alexander, Crown Prince of Serbia" ;
+    data:wdtLink wdt:Q815126 ;
+    :hasParent data:Alexandra_of_Yugoslavia,
+        data:Peter_II_of_Yugoslavia ;
+    :hasSex data:male .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Person ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:wdtLink wdt:Q450684 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female .
+
+data:Archduke_Peter_Ferdinand-_Hereditary_Grand_Duke_of_Tuscany a :Person ;
+    rdfs:label "Archduke Peter Ferdinand, Hereditary Grand Duke of Tuscany" ;
+    data:wdtLink wdt:Q670121 .
+
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:wdtLink wdt:Q29574 ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
+
+data:Birgitte-_Duchess_of_Gloucester a :Person ;
+    rdfs:label "Birgitte, Duchess of Gloucester" ;
+    data:wdtLink wdt:Q241584 .
+
+data:Catherine-_Princess_of_Wales a :Person ;
+    rdfs:label "Catherine, Princess of Wales" ;
+    data:wdtLink wdt:Q10479 .
+
+data:Charles_Wellesley-_9th_Duke_of_Wellington a :Person ;
+    rdfs:label "Charles Wellesley, 9th Duke of Wellington" ;
+    data:wdtLink wdt:Q2960441 .
+
+data:Elizabeth_Cator a :Person ;
+    rdfs:label "Elizabeth Cator" ;
+    data:wdtLink wdt:Q75240065 .
+
+data:Ernest_II-_Count_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Ernest II, Count of Lippe-Biesterfeld" ;
+    data:wdtLink wdt:Q66592 .
+
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:wdtLink wdt:Q57672 ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:wdtLink wdt:Q61079 ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:wdtLink wdt:Q58070 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person ;
+    rdfs:label "Fenella Hepburn-Stuart-Forbes-Trefusis" ;
+    data:wdtLink wdt:Q75381423 .
+
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:wdtLink wdt:Q61351 ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:female .
+
+data:Frederick_Francis_III a :Person ;
+    rdfs:label "Frederick Francis III" ;
+    data:wdtLink wdt:Q57974 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male .
+
+data:Frederik_IX_of_Denmark a :Person ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:wdtLink wdt:Q151312 ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasSex data:male .
+
+data:George_Lascelles-_7th_Earl_of_Harewood a :Person ;
+    rdfs:label "George Lascelles, 7th Earl of Harewood" ;
+    data:wdtLink wdt:Q336609 ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male .
+
+data:George_Windsor-_Earl_of_St_Andrews a :Person ;
+    rdfs:label "George Windsor, Earl of St Andrews" ;
+    data:wdtLink wdt:Q1009513 ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:wdtLink wdt:Q232159 .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
+    data:wdtLink wdt:Q232483 ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasSex data:female .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Kirill Vladimirovich of Russia" ;
+    data:wdtLink wdt:Q160948 ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasSex data:male .
+
+data:Ingrid_of_Sweden a :Person ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:wdtLink wdt:Q163010 .
+
+data:John_Bowes-Lyon a :Person ;
+    rdfs:label "John Bowes-Lyon" ;
+    data:wdtLink wdt:Q75411 ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:wdtLink wdt:Q19943 ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male .
+
+data:Karoline_of_Wartensleben a :Person ;
+    rdfs:label "Karoline of Wartensleben" ;
+    data:wdtLink wdt:Q2176785 .
+
+data:Katharine-_Duchess_of_Kent a :Person ;
+    rdfs:label "Katharine, Duchess of Kent" ;
+    data:wdtLink wdt:Q236678 .
+
+data:Maria_Christina_of_Austria a :Person ;
+    rdfs:label "Maria Christina of Austria" ;
+    data:wdtLink wdt:Q538125 .
+
+data:Marie-Chantal-_Crown_Princess_of_Greece a :Person ;
+    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
+    data:wdtLink wdt:Q243049 .
+
+data:Marion_Stein a :Person ;
+    rdfs:label "Marion Stein" ;
+    data:wdtLink wdt:Q2010206 .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Person ;
+    rdfs:label "María de las Mercedes, Princess of Asturias" ;
+    data:wdtLink wdt:Q129179 ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:female .
+
+data:Mike_Tindall a :Person ;
+    rdfs:label "Mike Tindall" ;
+    data:wdtLink wdt:Q1386944 .
+
+data:Paul_of_Greece a :Person ;
+    rdfs:label "Paul of Greece" ;
+    data:wdtLink wdt:Q155394 ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:male .
+
+data:Pavlos-_Crown_Prince_of_Greece a :Person ;
+    rdfs:label "Pavlos, Crown Prince of Greece" ;
+    data:wdtLink wdt:Q381700 ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
+    data:wdtLink wdt:Q159609 ;
+    :hasParent data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasSex data:male .
+
+data:Prince_Constantijn_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Constantijn of the Netherlands" ;
+    data:wdtLink wdt:Q355254 ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Prince_George-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince George, Duke of Kent" ;
+    data:wdtLink wdt:Q160770 ;
+    :hasParent data:George_V,
+        data:Mary_of_Teck ;
+    :hasSex data:male .
+
+data:Prince_Henri_dOrléans a :Person ;
+    rdfs:label "Prince Henri d'Orléans" ;
+    data:wdtLink wdt:Q538411 ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Henry_of_Prussia a :Person ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:wdtLink wdt:Q57569 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
+
+data:Prince_Knud_of_Denmark a :Person ;
+    rdfs:label "Prince Knud of Denmark" ;
+    data:wdtLink wdt:Q381069 ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark" ;
+    data:wdtLink wdt:Q170160 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_Paul_of_Yugoslavia a :Person ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:wdtLink wdt:Q313128 .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Person ;
+    rdfs:label "Prince Richard, Duke of Gloucester" ;
+    data:wdtLink wdt:Q170294 ;
+    :hasParent data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasSex data:male .
+
+data:Princess_Benedikte_of_Denmark a :Person ;
+    rdfs:label "Princess Benedikte of Denmark" ;
+    data:wdtLink wdt:Q817052 ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Person ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark" ;
+    data:wdtLink wdt:Q264675 .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Irene of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q233990 .
+
+data:Princess_Laurentien_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Laurentien of the Netherlands" ;
+    data:wdtLink wdt:Q267367 .
+
+data:Princess_Louise_of_Orléans a :Person ;
+    rdfs:label "Princess Louise of Orléans" ;
+    data:wdtLink wdt:Q962762 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
+    data:wdtLink wdt:Q2312463 .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Person ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt" ;
+    data:wdtLink wdt:Q154388 .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:wdtLink wdt:Q170184 ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Olga of Greece and Denmark" ;
+    data:wdtLink wdt:Q235432 ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Person ;
+    rdfs:label "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    data:wdtLink wdt:Q2534736 .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
+    data:wdtLink wdt:Q164500 .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Person ;
+    rdfs:label "Princess Viktoria Luise of Prussia" ;
+    data:wdtLink wdt:Q57529 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:female .
+
+data:Queen_Máxima_of_the_Netherlands a :Person ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:wdtLink wdt:Q460960 .
+
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:wdtLink wdt:Q156548 ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:female .
+
+data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg" ;
+    data:wdtLink wdt:Q62492 .
+
+data:Sophie_of_Württemberg a :Person ;
+    rdfs:label "Sophie of Württemberg" ;
+    data:wdtLink wdt:Q168674 .
+
+data:Sylvana_Windsor-_Countess_of_St_Andrews a :Person ;
+    rdfs:label "Sylvana Windsor, Countess of St Andrews" ;
+    data:wdtLink wdt:Q763241 .
+
+data:William-_Prince_of_Wales a :Person ;
+    rdfs:label "William, Prince of Wales" ;
+    data:wdtLink wdt:Q36812 ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasSex data:male .
+
+data:William_Alexander_of_the_Netherlands a :Person ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:wdtLink wdt:Q154952 ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male .
+
+data:Zara_Tindall a :Person ;
+    rdfs:label "Zara Tindall" ;
+    data:wdtLink wdt:Q147663 ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasSex data:female .
+
+data:Alfonso_XII_of_Spain a :Person ;
+    rdfs:label "Alfonso XII of Spain" ;
+    data:wdtLink wdt:Q32347 .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasParent data:Ernest_II-_Count_of_Lippe-Biesterfeld,
+        data:Karoline_of_Wartensleben ;
+    :hasSex data:female .
+
+data:Duchess_Marie_Thérèse_of_Württemberg a :Person ;
+    rdfs:label "Duchess Marie Thérèse of Württemberg" ;
+    data:wdtLink wdt:Q3292297 ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:female .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q231463 ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:female .
+
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:wdtLink wdt:Q9682 ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover" ;
+    data:wdtLink wdt:Q437001 .
+
+data:Frederik_X_of_Denmark a :Person ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:wdtLink wdt:Q1004037 ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
+    data:wdtLink wdt:Q312819 .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Person ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
+    data:wdtLink wdt:Q235128 ;
+    :hasParent data:Prince_Carlos_of_the_Two_Sicilies,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:female .
+
+data:Infante_Juan-_Count_of_Barcelona a :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:wdtLink wdt:Q313857 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
+
+data:Isabelle_of_Orléans-Braganza a :Person ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:wdtLink wdt:Q261284 .
+
+data:John_Knatchbull-_7th_Baron_Brabourne a :Person ;
+    rdfs:label "John Knatchbull, 7th Baron Brabourne" ;
+    data:wdtLink wdt:Q332969 .
+
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:wdtLink wdt:Q154946 ;
+    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Otto_von_Habsburg a :Person ;
+    rdfs:label "Otto von Habsburg" ;
+    data:wdtLink wdt:Q76343 .
+
+data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Patricia Knatchbull, 2nd Countess Mountbatten of Burma" ;
+    data:wdtLink wdt:Q336691 ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female .
+
+data:Pieter_van_Vollenhoven a :Person ;
+    rdfs:label "Pieter van Vollenhoven" ;
+    data:wdtLink wdt:Q301365 .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:wdtLink wdt:Q57304 ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasSex data:male .
+
+data:Prince_Carlos_Hugo-_Duke_of_Parma a :Person ;
+    rdfs:label "Prince Carlos Hugo, Duke of Parma" ;
+    data:wdtLink wdt:Q537914 .
+
+data:Prince_Frederick_Charles_of_Hesse a :Person ;
+    rdfs:label "Prince Frederick Charles of Hesse" ;
+    data:wdtLink wdt:Q63679 .
+
+data:Prince_Friedrich_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Prince Friedrich of Saxe-Meiningen" ;
+    data:wdtLink wdt:Q691072 .
+
+data:Prince_Henri_dOrléans_1 a :Person ;
+    rdfs:label "Prince Henri d’Orléans" ;
+    data:wdtLink wdt:Q534961 ;
+    :hasParent data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :hasSex data:male .
+
+data:Prince_Henry_of_Battenberg a :Person ;
+    rdfs:label "Prince Henry of Battenberg" ;
+    data:wdtLink wdt:Q444347 .
+
+data:Prince_Jean_dOrléans_1 a :Person ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:wdtLink wdt:Q578791 .
+
+data:Prince_Joachim_of_Denmark a :Person ;
+    rdfs:label "Prince Joachim of Denmark" ;
+    data:wdtLink wdt:Q159101 ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:wdtLink wdt:Q80976 ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Person ;
+    rdfs:label "Princess Augusta Reuss of Köstritz" ;
+    data:wdtLink wdt:Q63095 .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:wdtLink wdt:Q158140 .
+
+data:Princess_Irene_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Irene of the Netherlands" ;
+    data:wdtLink wdt:Q263623 ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
+
+data:Princess_Isabelle_dOrléans a :Person ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:wdtLink wdt:Q261322 ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_Margaret_of_Prussia a :Person ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:wdtLink wdt:Q61338 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female .
+
+data:Princess_Margriet_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Margriet of the Netherlands" ;
+    data:wdtLink wdt:Q268821 ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Victoria of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q57658 .
+
+data:Queen_Mary_of_Denmark a :Person ;
+    rdfs:label "Queen Mary of Denmark" ;
+    data:wdtLink wdt:Q208615 .
+
+data:Regina-_Crown_Princess_of_Austria a :Person ;
+    rdfs:label "Regina, Crown Princess of Austria" ;
+    data:wdtLink wdt:Q77335 ;
+    :hasParent data:Georg-_Prince_of_Saxe-Meiningen,
+        data:Klara-Marie_von_Korff_gennant_Schmising-Kerssenbrock ;
+    :hasSex data:female .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Person ;
+    rdfs:label "Thyra, Crown Princess of Hanover" ;
+    data:wdtLink wdt:Q217504 .
+
+data:William_III_of_the_Netherlands a :Person ;
+    rdfs:label "William III of the Netherlands" ;
+    data:wdtLink wdt:Q125649 .
+
+data:Constantine_II_of_Greece a :Person ;
+    rdfs:label "Constantine II of Greece" ;
+    data:wdtLink wdt:Q151773 ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:male .
+
+data:Michael_I_of_Romania a :Person ;
+    rdfs:label "Michael I of Romania" ;
+    data:wdtLink wdt:Q930013 ;
+    :hasParent data:Carol_II_of_Romania,
+        data:Helen_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark" ;
+    data:wdtLink wdt:Q156531 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_Louis_of_Battenberg a :Person ;
+    rdfs:label "Prince Louis of Battenberg" ;
+    data:wdtLink wdt:Q57468 .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:wdtLink wdt:Q116062 ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:Queen_Anne-Marie_of_Greece a :Person ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:wdtLink wdt:Q564889 ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female .
+
+data:Queen_Anne_of_Romania a :Person ;
+    rdfs:label "Queen Anne of Romania" ;
+    data:wdtLink wdt:Q563765 .
+
+data:Constantine_I_of_Greece a :Person ;
+    rdfs:label "Constantine I of Greece" ;
+    data:wdtLink wdt:Q152099 ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q235812 ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female .
+
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:wdtLink wdt:Q269412 .
+
+data:Mary_of_Teck a :Person ;
+    rdfs:label "Mary of Teck" ;
+    data:wdtLink wdt:Q76927 .
+
+data:Prince_Carlos_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Prince Carlos of the Two Sicilies" ;
+    data:wdtLink wdt:Q518879 ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Philippe-_Count_of_Paris a :Person ;
+    rdfs:label "Prince Philippe, Count of Paris" ;
+    data:wdtLink wdt:Q354477 .
+
+data:Princess_María_Isabel_of_Orléans a :Person ;
+    rdfs:label "Princess María Isabel of Orléans" ;
+    data:wdtLink wdt:Q242879 .
+
+data:Sophia_of_Prussia a :Person ;
+    rdfs:label "Sophia of Prussia" ;
+    data:wdtLink wdt:Q155822 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female .
+
+data:Victoria_Eugenie_of_Battenberg a :Person ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:wdtLink wdt:Q160001 ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:female .
+
+data:Wilhelm-_German_Crown_Prince a :Person ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:wdtLink wdt:Q57621 ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:wdtLink wdt:Q18363 ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:male .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
+    data:wdtLink wdt:Q161247 .
+
+data:Frederick_Francis_II a :Person ;
+    rdfs:label "Frederick Francis II" ;
+    data:wdtLink wdt:Q57976 .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:wdtLink wdt:Q17142 .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:wdtLink wdt:Q155178 .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:wdtLink wdt:Q2677 ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
+
+data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q238820 .
+
+data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q335159 .
+
+data:Frederick_III-_German_Emperor a :Person ;
+    rdfs:label "Frederick III, German Emperor" ;
+    data:wdtLink wdt:Q58600 .
+
+data:Prince_Alfonso-_Count_of_Caserta a :Person ;
+    rdfs:label "Prince Alfonso, Count of Caserta" ;
+    data:wdtLink wdt:Q439014 .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:wdtLink wdt:Q255400 .
+
+data:Victoria-_Princess_Royal a :Person ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:wdtLink wdt:Q116728 .
+
+data:female a :Female .
+
+data:male a :Male .
+

@@ -7,7 +7,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://example.com/family_TBOX.ttl#> .
 
-<http://example.com/family_TBOX.ttl> rdf:type owl:Ontology ;
+<http://example.com/family_TBOX.ttl#> rdf:type owl:Ontology ;
                                       dcterms:source <http://www.co-ode.org/roberts/family-tree.owl> .
 
 #################################################################
@@ -16,7 +16,6 @@
 
 ###  http://www.example.com/genealogy.owl#alsoKnownAs
 :alsoKnownAs rdf:type owl:AnnotationProperty .
-
 
 ###  http://www.example.com/genealogy.owl#formerlyKnownAs
 :formerlyKnownAs rdf:type owl:AnnotationProperty .
@@ -66,9 +65,7 @@
                 owl:inverseOf :isBrotherOf ;
                 rdfs:domain :Person ;
                 rdfs:range :Man ;
-                owl:propertyDisjointWith ( :isChildOf
-                                           :isParentOf
-                                         ) .
+                owl:propertyDisjointWith :isChildOf, :isParentOf .
 
 
 ###  http://www.example.com/genealogy.owl#hasChild
@@ -173,9 +170,7 @@
                owl:inverseOf :isSisterOf ;
                rdfs:domain :Person ;
                rdfs:range :Woman ;
-               owl:propertyDisjointWith ( :isChildOf
-                                           :isParentOf
-                                         ) .
+               owl:propertyDisjointWith :isChildOf, :isParentOf .
 
 
 ###  http://www.example.com/genealogy.owl#hasSon
@@ -225,9 +220,7 @@
                  rdfs:subPropertyOf :isSiblingOf ;
                  rdfs:domain :Man ;
                  rdfs:range :Person ;
-                 owl:propertyDisjointWith ( :isParentOf
-                                            :isChildOf
-                                          ) .
+                 owl:propertyDisjointWith :isParentOf, :isChildOf .
 
 
 ###  http://www.example.com/genealogy.owl#isChildOf
@@ -304,9 +297,6 @@
                           owl:TransitiveProperty ;
                  rdfs:domain :Person ;
                  rdfs:range :Person ;
-                 owl:propertyDisjointWith ( :isParentOf 
-                                            :isChildOf
-                                          ) ;
                  owl:propertyChainAxiom ( :hasParent
                                           :isParentOf
                                         ) .
@@ -317,9 +307,7 @@
                 rdfs:subPropertyOf :isSiblingOf ;
                 rdfs:domain :Woman ;
                 rdfs:range :Person ;
-                owl:propertyDisjointWith ( :isChildOf
-                                           :isParentOf
-                                         ) .
+                owl:propertyDisjointWith :isChildOf, :isParentOf .
 
 
 ###  http://www.example.com/genealogy.owl#isSonOf
@@ -340,7 +328,6 @@
 :isUncleOf rdf:type owl:ObjectProperty ;
                rdfs:domain :Man ;
                rdfs:range :Person ;
-               owl:propertyDisjointWith :isAuntOf ;
                owl:propertyChainAxiom ( :isBrotherOf
                                         :isParentOf
                                       ) .
@@ -350,7 +337,6 @@
 :isAuntOf rdf:type owl:ObjectProperty ;
                rdfs:domain :Woman ;
                rdfs:range :Person ;
-               owl:propertyDisjointWith :isUncleOf ;
                owl:propertyChainAxiom ( :isSisterOf
                                         :isParentOf
                                       ) .
