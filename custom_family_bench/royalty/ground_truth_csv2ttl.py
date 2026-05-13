@@ -11,7 +11,8 @@ from __future__ import annotations
 import argparse
 import csv
 from pathlib import Path
-from rdflib import Graph, Literal, Namespace, OWL, RDF, RDFS, URIRef
+from rdflib import BNode, Graph, Literal, Namespace, OWL, RDF, RDFS, URIRef
+from rdflib.collection import Collection
 
 
 MALE_WIKIDATA = "http://www.wikidata.org/entity/Q6581097"
@@ -86,9 +87,11 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
                 return value
         return ""
 
+    distinct_people: set[URIRef] = set()
+
     with input_path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
-        required_columns = {"item", "parent", "genderLabel", "itemLabel", "parentLabel"}
+        required_columns = {"item", "parent", "genderLabel", "itemLabel", "parentLabel", "parentGenderLabel"}
         missing = required_columns.difference(reader.fieldnames or [])
         if missing:
             missing_cols = ", ".join(sorted(missing))
@@ -112,6 +115,7 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
                 ancestorLabel += f"_{len(ext_a)}"
             
             gender = row_value(row, "genderLabel", "gender")
+            parent_gender = row_value(row, "parentGenderLabel")
 
             if item and parent:
                 graph.add((itemLabel, ONT_NS.hasParent, ancestorLabel))
@@ -121,6 +125,8 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
                 graph.add((ancestorLabel, RDFS.label, Literal(parent_label_text)))
                 graph.add((itemLabel, RDF.type, ONT_NS.Person))
                 graph.add((ancestorLabel, RDF.type, ONT_NS.Person))
+                distinct_people.add(itemLabel)
+                distinct_people.add(ancestorLabel)
 
             sex_name = gender_to_ontology_value(gender)
             if sex_name == "Male":
@@ -131,6 +137,23 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
                 sex_value = None
             if item and sex_value:
                 graph.add((itemLabel, ONT_NS.hasSex, sex_value))
+            
+            parent_sex_name = gender_to_ontology_value(parent_gender)
+            if parent_sex_name == "Male":
+                parent_sex_value = male_individual
+            elif parent_sex_name == "Female":
+                parent_sex_value = female_individual
+            else:
+                parent_sex_value = None
+            if parent and parent_sex_value:
+                graph.add((ancestorLabel, ONT_NS.hasSex, parent_sex_value))
+
+    if distinct_people:
+        all_different = BNode()
+        list_node = BNode()
+        graph.add((all_different, RDF.type, OWL.AllDifferent))
+        graph.add((all_different, OWL.distinctMembers, list_node))
+        Collection(graph, list_node, sorted(distinct_people, key=str))
     
     graph.serialize(output_path, "turtle")
 

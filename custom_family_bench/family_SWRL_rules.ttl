@@ -18,6 +18,118 @@
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.com/family_TBOX.ttl#hasBrother
+:hasBrother rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasChild
+:hasChild rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasDaughter
+:hasDaughter rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasFather
+:hasFather rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasMother
+:hasMother rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasParent
+:hasParent rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasSex
+:hasSex rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasSister
+:hasSister rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#hasSon
+:hasSon rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isAuntOf
+:isAuntOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isBrotherOf
+:isBrotherOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isChildOf
+:isChildOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isDaughterOf
+:isDaughterOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isFatherOf
+:isFatherOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isMotherOf
+:isMotherOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isParentOf
+:isParentOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isSiblingOf
+:isSiblingOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isSisterOf
+:isSisterOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isSonOf
+:isSonOf rdf:type owl:ObjectProperty .
+
+
+###  http://example.com/family_TBOX.ttl#isUncleOf
+:isUncleOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com/family_TBOX.ttl#Ancestor
+:Ancestor rdf:type owl:Class .
+
+
+###  http://example.com/family_TBOX.ttl#Female
+:Female rdf:type owl:Class .
+
+
+###  http://example.com/family_TBOX.ttl#Male
+:Male rdf:type owl:Class .
+
+
+###  http://example.com/family_TBOX.ttl#Man
+:Man rdf:type owl:Class .
+
+
+###  http://example.com/family_TBOX.ttl#Person
+:Person rdf:type owl:Class .
+
+
+###  http://example.com/family_TBOX.ttl#Woman
+:Woman rdf:type owl:Class .
+
+
+#################################################################
 #    Rules
 #################################################################
 
@@ -175,7 +287,13 @@
                                                                   <http://www.w3.org/2003/11/swrl#argument1> :z ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> :y
                                                                 ] ;
-                                                      rdf:rest rdf:nil
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
                                                     ]
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
