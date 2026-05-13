@@ -246,8 +246,6 @@ class RunMetrics:
 	valid_predicted_total: int
 	correct_predicted_total: int
 	precision: float
-	candidate_gold_total: int
-	recall: float
 
 
 def evaluate_task_directory(
@@ -319,9 +317,6 @@ def evaluate_task_directory(
 			correct_predicted_total += 1
 			run_correct_keys.add(canonical_key)
 
-	candidate_gold_keys = {key for key in gold_keys if key[1] in candidate_entities and key[2] in candidate_entities}
-	candidate_gold_total = len(candidate_gold_keys)
-	recall = (correct_predicted_total / candidate_gold_total) if candidate_gold_total else 0.0
 	precision = (correct_predicted_total / semantic_predicted_total) if semantic_predicted_total else 0.0
 
 	metrics = RunMetrics(
@@ -338,8 +333,6 @@ def evaluate_task_directory(
 		valid_predicted_total=semantic_predicted_total,
 		correct_predicted_total=correct_predicted_total,
 		precision=precision,
-		candidate_gold_total=candidate_gold_total,
-		recall=recall,
 	)
 	return metrics, run_correct_keys
 
@@ -354,7 +347,6 @@ def aggregate_results(
 	total_annotation_or_type_filtered = sum(run.annotation_or_type_filtered for run in runs)
 	total_entity_mismatch_filtered = sum(run.entity_mismatch_filtered for run in runs)
 	total_relation_mismatch_filtered = sum(run.relation_mismatch_filtered for run in runs)
-	total_candidate_gold = sum(run.candidate_gold_total for run in runs)
 
 	precision = (total_correct_predicted / total_valid_predicted) if total_valid_predicted else 0.0
 	recall = (len(global_correct_keys) / len(global_gold_keys)) if global_gold_keys else 0.0
@@ -371,7 +363,6 @@ def aggregate_results(
 		"total_annotation_or_type_filtered": total_annotation_or_type_filtered,
 		"total_entity_mismatch_filtered": total_entity_mismatch_filtered,
 		"total_relation_mismatch_filtered": total_relation_mismatch_filtered,
-		"sum_candidate_gold_total": total_candidate_gold,
 	}
 
 
