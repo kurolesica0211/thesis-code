@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
+    data:posIndicesFull "3664:3679",
+        "4186:4201",
+        "4232:4247" ;
+    data:posIndicesPart "3916:3924",
+        "3925:3930",
+        "4020:4025",
+        "4572:4580",
+        "6288:6296" ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
+        "Maria da Gloria" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander-_Crown_Prince_of_Serbia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alexander, Crown Prince of Serbia" ;
+    data:posIndicesFull "214:237" ;
+    data:posIndicesPart "1057:1063",
+        "1133:1142",
+        "1350:1355",
+        "1356:1362",
+        "1363:1372",
+        "1651:1660",
+        "1881:1890",
+        "1926:1932",
+        "2350:2355",
+        "2356:2362",
+        "2363:2372",
+        "2458:2467",
+        "2699:2704",
+        "2705:2711",
+        "2933:2939",
+        "3010:3019",
+        "3212:3221",
+        "3320:3329",
+        "3557:3566",
+        "3858:3864",
+        "4133:4142",
+        "4172:4181",
+        "4308:4313",
+        "4314:4320",
+        "4321:4330",
+        "435:444",
+        "4566:4571",
+        "4648:4657",
+        "4863:4868",
+        "4869:4875",
+        "4876:4885",
+        "5040:5049",
+        "5164:5173",
+        "550:555",
+        "556:562",
+        "5695:5704",
+        "5764:5770",
+        "5847:5853",
+        "5988:5994",
+        "6093:6099",
+        "6223:6228",
+        "6229:6235",
+        "6236:6245",
+        "6366:6371",
+        "6372:6378",
+        "6464:6470",
+        "6633:6639",
+        "6723:6729",
+        "6857:6863",
+        "7138:7144",
+        "7180:7185",
+        "7186:7192",
+        "7337:7343",
+        "7382:7388",
+        "7521:7527",
+        "7571:7577",
+        "7667:7673",
+        "7792:7798",
+        "7800:7806",
+        "7887:7896",
+        "8049:8055",
+        "8221:8227",
+        "824:833",
+        "8339:8348",
+        "969:978" ;
+    data:wdtLink wdt:Q815126 ;
+    :alsoKnownAs "Aleksandar Karađorđević",
+        "Alexander Karageorgievich, Crown Prince of Yugoslavia",
+        "Crown Prince Alexander Karađorđević",
+        "Crown Prince Alexander of Yugoslavia" ;
+    :hasMother data:Alexandra_of_Yugoslavia ;
+    :hasParent data:Alexandra_of_Yugoslavia ;
+    :hasSex data:male ;
+    :isChildOf data:Alexandra_of_Yugoslavia ;
+    :isSonOf data:Alexandra_of_Yugoslavia .
+
+data:Alexander_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alexander of Greece" ;
+    data:posIndicesFull "493:512" ;
+    data:posIndicesPart "1133:1142",
+        "1363:1372",
+        "1651:1660",
+        "1881:1890",
+        "2363:2372",
+        "2458:2467",
+        "3010:3019",
+        "3212:3221",
+        "3320:3329",
+        "3557:3566",
+        "4133:4142",
+        "4172:4181",
+        "4321:4330",
+        "4648:4657",
+        "4876:4885",
+        "5040:5049",
+        "5164:5173",
+        "5695:5704",
+        "6236:6245",
+        "7887:7896",
+        "824:833",
+        "8339:8348",
+        "969:978" ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece",
+        "King Alexander I of Greece",
+        "King Alexander of Greece" ;
+    :hasChild data:Alexandra_of_Yugoslavia ;
+    :hasDaughter data:Alexandra_of_Yugoslavia ;
+    :hasSex data:male ;
+    :isFatherOf data:Alexandra_of_Yugoslavia ;
+    :isParentOf data:Alexandra_of_Yugoslavia .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Aspasia Manos" ;
+    data:posIndicesFull "3262:3300" ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou",
+        "Princess Aspasia of Greece and Denmark" ;
+    :hasChild data:Alexandra_of_Yugoslavia ;
+    :hasDaughter data:Alexandra_of_Yugoslavia ;
+    :hasSex data:female ;
+    :isMotherOf data:Alexandra_of_Yugoslavia ;
+    :isParentOf data:Alexandra_of_Yugoslavia .
+
+data:Alexandra_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Alexandra of Yugoslavia" ;
+    data:posIndicesFull "3077:3100",
+        "493:512" ;
+    data:posIndicesPart "1232:1242",
+        "1513:1523",
+        "1713:1723",
+        "1845:1855",
+        "2676:2686",
+        "5152:5162",
+        "5188:5198",
+        "5282:5292",
+        "5398:5408",
+        "5633:5643",
+        "589:599",
+        "708:718" ;
+    data:wdtLink wdt:Q167423 ;
+    :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
+        "Alexandra of Greece",
+        "Alexandra of Greece, Queen of Yugoslavia" ;
+    :hasChild data:Alexander-_Crown_Prince_of_Serbia ;
+    :hasFather data:Alexander_of_Greece ;
+    :hasMother data:Aspasia_Manos ;
+    :hasParent data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasSex data:female ;
+    :hasSon data:Alexander-_Crown_Prince_of_Serbia ;
+    :isChildOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isDaughterOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isMotherOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isParentOf data:Alexander-_Crown_Prince_of_Serbia .
+

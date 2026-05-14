@@ -1,0 +1,152 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
+    data:posIndicesFull "5826:5844" ;
+    data:posIndicesPart "5920:5926",
+        "5957:5963" ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philippe, Count of Paris" ;
+    data:posIndicesFull "325:356" ;
+    data:posIndicesPart "1190:1195",
+        "1212:1217",
+        "1352:1357",
+        "1609:1615",
+        "1653:1658",
+        "1768:1773",
+        "1777:1782",
+        "1848:1853",
+        "1971:1977",
+        "2566:2574",
+        "3039:3045",
+        "428:436",
+        "5292:5300",
+        "5819:5825",
+        "5920:5926",
+        "5957:5963",
+        "6203:6211",
+        "631:636" ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans",
+        "Louis-Philippe-Albert d' Orléans" ;
+    :hasChild data:Princess_Hélène_of_Orléans ;
+    :hasDaughter data:Princess_Hélène_of_Orléans ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Hélène_of_Orléans ;
+    :isParentOf data:Princess_Hélène_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess María Isabel of Orléans" ;
+    data:posIndicesFull "370:382" ;
+    data:posIndicesPart "1072:1079",
+        "1458:1465",
+        "2066:2073",
+        "2194:2201",
+        "2254:2261",
+        "2584:2591",
+        "3312:3320",
+        "4592:4600",
+        "4843:4851",
+        "5968:5976",
+        "6070:6078",
+        "840:847" ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans",
+        "Maria Isabella",
+        "Princess Maria Isabel of Orléans, Infanta of Spain",
+        "Princess Marie Isabelle of Orleans" ;
+    :hasChild data:Princess_Hélène_of_Orléans ;
+    :hasDaughter data:Princess_Hélène_of_Orléans ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Hélène_of_Orléans ;
+    :isParentOf data:Princess_Hélène_of_Orléans .
+
+data:Princess_Hélène_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Hélène of Orléans" ;
+    data:posIndicesFull "0:26",
+        "46:79" ;
+    data:posIndicesPart "1072:1079",
+        "1458:1465",
+        "1522:1528",
+        "1911:1917",
+        "2066:2073",
+        "2194:2201",
+        "2254:2261",
+        "2289:2295",
+        "2493:2499",
+        "2584:2591",
+        "2680:2686",
+        "278:284",
+        "2790:2796",
+        "3237:3243",
+        "3312:3320",
+        "3417:3423",
+        "3569:3575",
+        "3733:3739",
+        "3813:3819",
+        "3829:3835",
+        "3945:3951",
+        "4014:4020",
+        "4181:4187",
+        "4372:4378",
+        "4592:4600",
+        "4843:4851",
+        "5117:5123",
+        "5302:5308",
+        "5567:5573",
+        "5696:5702",
+        "5804:5810",
+        "5968:5976",
+        "6070:6078",
+        "6079:6085",
+        "6169:6175",
+        "6336:6342",
+        "6428:6434",
+        "6565:6571",
+        "6723:6729",
+        "6850:6856",
+        "840:847" ;
+    data:wdtLink wdt:Q260525 ;
+    :alsoKnownAs "Elena D'Aosta",
+        "H.R.H. Elena di Francia",
+        "Hélène Louise Henriette d'Orléans",
+        "Princess Helene of Orleans" ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans .
+

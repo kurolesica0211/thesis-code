@@ -1,0 +1,147 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Elizabeth_Cator a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth Cator" ;
+    data:posIndicesFull "527:551" ;
+    data:posIndicesPart "621:626",
+        "663:672" ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon",
+        "Elizabeth Margaret Bowes-Lyon",
+        "Elizabeth Margaret Cator" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael Bowes-Lyon" ;
+    data:posIndicesFull "0:34" ;
+    data:posIndicesPart "204:209",
+        "210:214",
+        "284:289",
+        "290:294",
+        "340:345",
+        "346:350",
+        "422:427",
+        "428:432",
+        "508:513",
+        "514:518",
+        "724:729",
+        "730:734",
+        "817:822",
+        "823:827" ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon",
+        "Hon. Michael Claude Hamilton Bowes-Lyon",
+        "Michael Claude Hamilton Bowes-Lyon" ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isUncleOf data:Elizabeth_II .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George VI" ;
+    data:posIndicesFull "686:713" ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George",
+        "Albert Frederick Arthur George Windsor",
+        "Albert Windsor",
+        "Bertie",
+        "George Windsor",
+        "H.M. King George VI",
+        "Industrial Prince",
+        "King George VI",
+        "Prince Albert Frederick Arthur George of Cornwall and York",
+        "Prince Albert Frederick Arthur George of Wales",
+        "Prince Albert Frederick Arthur George of York",
+        "Prince Albert Frederick Arthur George, Duke of York",
+        "Prince Albert of Cornwall and York",
+        "Prince Albert of Wales",
+        "Prince Albert of York",
+        "Prince Albert, Duke of York",
+        "The Prince Albert Frederick Arthur George of the United Kingdom",
+        "The Prince Albert Frederick Arthur George, Duke of York",
+        "The Prince Albert of the United Kingdom",
+        "The Prince Albert, Duke of York" ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasSex data:male ;
+    :isFatherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "118:133",
+        "134:150",
+        "173:188" ;
+    data:posIndicesPart "663:672" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasSex data:female ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isSisterOf data:Michael_Bowes-Lyon .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "173:191",
+        "179:191" ;
+    data:posIndicesPart "663:672" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother .
+

@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "385:405",
+        "385:441" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasChild data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Christina of the Netherlands" ;
+    data:posIndicesFull "474:488" ;
+    data:posIndicesPart "2418:2426",
+        "2532:2540",
+        "2637:2645",
+        "2816:2824",
+        "562:573" ;
+    data:wdtLink wdt:Q435324 ;
+    :alsoKnownAs "Christina of the Netherlands",
+        "Christina van Lippe-Biesterfeld",
+        "Christina van Oranje",
+        "Maria Christina of the Netherlands",
+        "Maria Christina van Oranje-Nassau",
+        "Princess Maria Christina of the Netherlands",
+        "Princess Marijke" ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt" ;
+    data:posIndicesFull "474:514" ;
+    data:posIndicesPart "2418:2426",
+        "2532:2540",
+        "2637:2645",
+        "2816:2824" ;
+    data:wdtLink wdt:Q154388 ;
+    :hasChild data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasSex data:female ;
+    :hasSon data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelmina of the Netherlands" ;
+    data:posIndicesFull "603:619",
+        "609:619" ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
+        "Princess Wilhelmina of the Netherlands",
+        "Queen Wilhelmina",
+        "Queen Wilhelmina of the Netherlands",
+        "Wilhelmina",
+        "Wilhelmina I",
+        "Wilhelmina Koningin der Nederlanden" ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands .
+
+data:Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Adolf Friedrich of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "0:62" ;
+    data:posIndicesPart "1113:1117",
+        "1227:1231",
+        "1395:1399",
+        "1799:1803",
+        "1910:1915",
+        "2058:2062",
+        "2143:2148",
+        "2149:2158",
+        "2346:2351",
+        "2352:2361",
+        "2619:2623",
+        "2918:2923",
+        "2924:2933",
+        "336:344",
+        "346:351",
+        "352:361",
+        "660:665",
+        "666:675",
+        "798:803",
+        "804:813",
+        "959:964",
+        "965:974" ;
+    data:wdtLink wdt:Q60697 ;
+    :alsoKnownAs "Adolf Friedrich Herzog von Mecklenburg-Schwerin",
+        "Duke Adolf Friedrich Albrecht Heinrich of Mecklenburg-Schwerin",
+        "Duke Of Mecklenburg Schwerin Adolf Friedrich",
+        "Herzog von Mecklenburg-Schwerin Adolf Friedrich" ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isUncleOf data:Juliana_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "2747:2754",
+        "2747:2773" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasChild data:Princess_Christina_of_the_Netherlands ;
+    :hasDaughter data:Princess_Christina_of_the_Netherlands ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Princess_Christina_of_the_Netherlands ;
+    :isParentOf data:Princess_Christina_of_the_Netherlands .
+

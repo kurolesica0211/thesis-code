@@ -1,0 +1,214 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:India_Oxenberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "India Oxenberg" ;
+    data:posIndicesFull "0:20" ;
+    data:posIndicesPart "1105:1113",
+        "1195:1203",
+        "1447:1455",
+        "1746:1754",
+        "1833:1841",
+        "1924:1932",
+        "2197:2205",
+        "2299:2307",
+        "2407:2415",
+        "254:262",
+        "2604:2612",
+        "2687:2695",
+        "2799:2807",
+        "2809:2817",
+        "2944:2952",
+        "3075:3083",
+        "3198:3206",
+        "3263:3271",
+        "3298:3306",
+        "3664:3672",
+        "3759:3767",
+        "3838:3846",
+        "3937:3945",
+        "553:561",
+        "687:695",
+        "779:787" ;
+    data:wdtLink wdt:Q75244337 ;
+    :alsoKnownAs "India Riven Oxenberg" ;
+    :hasMother data:Catherine_Oxenberg ;
+    :hasParent data:Catherine_Oxenberg ;
+    :hasSex data:female ;
+    :isChildOf data:Catherine_Oxenberg ;
+    :isDaughterOf data:Catherine_Oxenberg .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Howard Oxenberg" ;
+    data:posIndicesFull "976:991" ;
+    data:posIndicesPart "1105:1113",
+        "1195:1203",
+        "1447:1455",
+        "1746:1754",
+        "1833:1841",
+        "1924:1932",
+        "2197:2205",
+        "2299:2307",
+        "2407:2415",
+        "2604:2612",
+        "2687:2695",
+        "2799:2807",
+        "2809:2817",
+        "2944:2952",
+        "3075:3083",
+        "3198:3206",
+        "3263:3271",
+        "3298:3306",
+        "3664:3672",
+        "3759:3767",
+        "3838:3846",
+        "3937:3945" ;
+    data:wdtLink wdt:Q75393300 ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasSex data:male ;
+    :isFatherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:Princess_Elizabeth_of_Serbia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elizabeth of Serbia" ;
+    data:posIndicesFull "114:146",
+        "939:971" ;
+    data:posIndicesPart "1084:1093",
+        "1172:1178",
+        "1335:1343",
+        "1694:1702",
+        "2010:2018",
+        "2144:2152",
+        "524:532" ;
+    data:wdtLink wdt:Q257926 ;
+    :alsoKnownAs "Elizabeth Karageorgievich, Princess of Yugoslavia",
+        "Jelisaveta Karađorđević",
+        "Princess Elizabeth of Yugoslavia" ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasSex data:female ;
+    :isMotherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:Christina_Oxenberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Christina Oxenberg" ;
+    data:posIndicesFull "1418:1436" ;
+    data:posIndicesPart "1447:1455",
+        "1746:1754",
+        "1833:1841",
+        "1924:1932",
+        "2197:2205",
+        "2299:2307",
+        "2407:2415",
+        "2604:2612",
+        "2687:2695",
+        "2799:2807",
+        "2809:2817",
+        "2944:2952",
+        "3075:3083",
+        "3198:3206",
+        "3263:3271",
+        "3298:3306",
+        "3664:3672",
+        "3759:3767",
+        "3838:3846",
+        "3937:3945" ;
+    data:wdtLink wdt:Q27107390 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :hasSister data:Catherine_Oxenberg ;
+    :isAuntOf data:India_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Catherine_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Catherine Oxenberg" ;
+    data:posIndicesFull "366:384",
+        "733:751" ;
+    data:posIndicesPart "1105:1113",
+        "1195:1203",
+        "1447:1455",
+        "1746:1754",
+        "1833:1841",
+        "1924:1932",
+        "2197:2205",
+        "2299:2307",
+        "2407:2415",
+        "2604:2612",
+        "2687:2695",
+        "2799:2807",
+        "2809:2817",
+        "2944:2952",
+        "3075:3083",
+        "3198:3206",
+        "3263:3271",
+        "3298:3306",
+        "3341:3350",
+        "3444:3453",
+        "3551:3560",
+        "3664:3672",
+        "3759:3767",
+        "3838:3846",
+        "3937:3945",
+        "553:561",
+        "779:787" ;
+    data:wdtLink wdt:Q235284 ;
+    :alsoKnownAs "Catherine van Dien" ;
+    :hasChild data:India_Oxenberg ;
+    :hasDaughter data:India_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :hasSister data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isMotherOf data:India_Oxenberg ;
+    :isParentOf data:India_Oxenberg ;
+    :isSiblingOf data:Christina_Oxenberg ;
+    :isSisterOf data:Christina_Oxenberg .
+

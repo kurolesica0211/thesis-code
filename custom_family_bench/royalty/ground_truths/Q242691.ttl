@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "335:346" ;
+    data:posIndicesPart "1494:1501",
+        "1896:1903",
+        "524:531",
+        "697:706",
+        "844:853" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "390:402" ;
+    data:posIndicesPart "1119:1128",
+        "1494:1501",
+        "1896:1903",
+        "524:531" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark" ;
+    data:posIndicesFull "269:306",
+        "625:662" ;
+    data:posIndicesPart "1482:1490",
+        "1494:1501",
+        "1896:1903",
+        "524:531",
+        "936:944" ;
+    data:wdtLink wdt:Q264675 ;
+    :hasChild data:Princess_Elisabeth_of_Denmark ;
+    :hasDaughter data:Princess_Elisabeth_of_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Elisabeth_of_Denmark ;
+    :isParentOf data:Princess_Elisabeth_of_Denmark .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elisabeth of Denmark" ;
+    data:posIndicesFull "0:29" ;
+    data:posIndicesPart "1339:1348",
+        "1482:1490",
+        "1494:1501",
+        "1791:1800",
+        "1896:1903",
+        "2007:2016",
+        "2119:2128",
+        "2196:2205",
+        "256:263",
+        "524:531",
+        "559:568",
+        "936:944",
+        "945:954",
+        "997:1006" ;
+    data:wdtLink wdt:Q242691 ;
+    :alsoKnownAs "Elisabeth zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark" ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isDaughterOf data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "1761:1772",
+        "357:368" ;
+    data:posIndicesPart "1494:1501",
+        "1896:1903",
+        "524:531" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasChild data:Margrethe_II_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Princess_Elisabeth_of_Denmark .
+

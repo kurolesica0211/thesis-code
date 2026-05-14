@@ -1,0 +1,1000 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Audrey_Emery a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Audrey Emery" ;
+    data:posIndicesFull "1498:1510",
+        "17129:17141" ;
+    data:posIndicesPart "17369:17375" ;
+    data:wdtLink wdt:Q450692 ;
+    :alsoKnownAs "Anna Audrey Emery" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "2353:2366",
+        "2353:2385",
+        "450:463",
+        "450:482" ;
+    data:posIndicesPart "10287:10291",
+        "10577:10581",
+        "10783:10787",
+        "10966:10970",
+        "11165:11169",
+        "11317:11321",
+        "1194:1198",
+        "11957:11961",
+        "12911:12915",
+        "13230:13236",
+        "14034:14040",
+        "14233:14237",
+        "14434:14438",
+        "14485:14489",
+        "15437:15441",
+        "1555:1559",
+        "15647:15651",
+        "15692:15696",
+        "15910:15914",
+        "15969:15973",
+        "16128:16132",
+        "16272:16276",
+        "16349:16353",
+        "16407:16411",
+        "16529:16533",
+        "16562:16566",
+        "16629:16635",
+        "17198:17202",
+        "17554:17558",
+        "1757:1761",
+        "17949:17953",
+        "1812:1816",
+        "18148:18152",
+        "18282:18286",
+        "18470:18474",
+        "18516:18522",
+        "18620:18624",
+        "18750:18754",
+        "1897:1901",
+        "19084:19088",
+        "19129:19135",
+        "19441:19445",
+        "19595:19599",
+        "19683:19687",
+        "19922:19926",
+        "2057:2061",
+        "20644:20648",
+        "21041:21045",
+        "21308:21314",
+        "2623:2627",
+        "2691:2697",
+        "2792:2796",
+        "2831:2835",
+        "3454:3458",
+        "3876:3880",
+        "4133:4137",
+        "4308:4312",
+        "4462:4466",
+        "4578:4582",
+        "4897:4901",
+        "4988:4992",
+        "5284:5288",
+        "5651:5655",
+        "5832:5836",
+        "6003:6007",
+        "6267:6271",
+        "650:654",
+        "6517:6521",
+        "6616:6620",
+        "6878:6882",
+        "7427:7433",
+        "8059:8063",
+        "817:821",
+        "9762:9766" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male .
+
+data:Grand_Duke_Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duke Paul Alexandrovich of Russia" ;
+    data:posIndicesFull "127:166" ;
+    data:posIndicesPart "10281:10286",
+        "10287:10291",
+        "10571:10576",
+        "10577:10581",
+        "10777:10782",
+        "10783:10787",
+        "10960:10965",
+        "10966:10970",
+        "11159:11164",
+        "11165:11169",
+        "11311:11316",
+        "11317:11321",
+        "11614:11620",
+        "1188:1193",
+        "1194:1198",
+        "11951:11956",
+        "11957:11961",
+        "12195:12201",
+        "12700:12705",
+        "12905:12910",
+        "12911:12915",
+        "13124:13129",
+        "13183:13189",
+        "13385:13391",
+        "14227:14232",
+        "14233:14237",
+        "14428:14433",
+        "14434:14438",
+        "14479:14484",
+        "14485:14489",
+        "15241:15246",
+        "15431:15436",
+        "15437:15441",
+        "1549:1554",
+        "1555:1559",
+        "15641:15646",
+        "15647:15651",
+        "15686:15691",
+        "15692:15696",
+        "15904:15909",
+        "15910:15914",
+        "15963:15968",
+        "15969:15973",
+        "16122:16127",
+        "16128:16132",
+        "16236:16242",
+        "16266:16271",
+        "16272:16276",
+        "16343:16348",
+        "16349:16353",
+        "16401:16406",
+        "16407:16411",
+        "16523:16528",
+        "16529:16533",
+        "16556:16561",
+        "16562:16566",
+        "16643:16656",
+        "16818:16824",
+        "16920:16925",
+        "17192:17197",
+        "17198:17202",
+        "1751:1756",
+        "17548:17553",
+        "17554:17558",
+        "1757:1761",
+        "17591:17595",
+        "17645:17649",
+        "17777:17783",
+        "1786:1792",
+        "17943:17948",
+        "17949:17953",
+        "1806:1811",
+        "1812:1816",
+        "18142:18147",
+        "18148:18152",
+        "18223:18228",
+        "18276:18281",
+        "18282:18286",
+        "18464:18469",
+        "18470:18474",
+        "18494:18499",
+        "18614:18619",
+        "18620:18624",
+        "18649:18655",
+        "18744:18749",
+        "18750:18754",
+        "1891:1896",
+        "1897:1901",
+        "1902:1906",
+        "19078:19083",
+        "1907:1920",
+        "19084:19088",
+        "19143:19156",
+        "19388:19394",
+        "1941:1946",
+        "19435:19440",
+        "19441:19445",
+        "19589:19594",
+        "19595:19599",
+        "19642:19648",
+        "19677:19682",
+        "19683:19687",
+        "19916:19921",
+        "19922:19926",
+        "20312:20318",
+        "20476:20480",
+        "2051:2056",
+        "20578:20582",
+        "2057:2061",
+        "2062:2066",
+        "20638:20643",
+        "20644:20648",
+        "2067:2080",
+        "21035:21040",
+        "21041:21045",
+        "2129:2135",
+        "2471:2476",
+        "2508:2514",
+        "2560:2565",
+        "2596:2602",
+        "2623:2627",
+        "2758:2763",
+        "2786:2791",
+        "2792:2796",
+        "2797:2801",
+        "2810:2814",
+        "2825:2830",
+        "2831:2835",
+        "2842:2855",
+        "3448:3453",
+        "3454:3458",
+        "3466:3479",
+        "3483:3489",
+        "3781:3786",
+        "3870:3875",
+        "3876:3880",
+        "3881:3885",
+        "4026:4031",
+        "4105:4109",
+        "4127:4132",
+        "4133:4137",
+        "4145:4158",
+        "4173:4178",
+        "4302:4307",
+        "4308:4312",
+        "4324:4329",
+        "4456:4461",
+        "4462:4466",
+        "4467:4471",
+        "4572:4577",
+        "4578:4582",
+        "4583:4587",
+        "4891:4896",
+        "4897:4901",
+        "4982:4987",
+        "4988:4992",
+        "5278:5283",
+        "5284:5288",
+        "5289:5293",
+        "5634:5640",
+        "5645:5650",
+        "5651:5655",
+        "5656:5660",
+        "5826:5831",
+        "5832:5836",
+        "5858:5863",
+        "5944:5949",
+        "5997:6002",
+        "6003:6007",
+        "602:608",
+        "6056:6061",
+        "6261:6266",
+        "6267:6271",
+        "644:649",
+        "650:654",
+        "6511:6516",
+        "6517:6521",
+        "6610:6615",
+        "6616:6620",
+        "683:688",
+        "6872:6877",
+        "6878:6882",
+        "6883:6887",
+        "6913:6919",
+        "7046:7051",
+        "8053:8058",
+        "8059:8063",
+        "811:816",
+        "8127:8133",
+        "817:821",
+        "8191:8197",
+        "829:842",
+        "8477:8483",
+        "856:861",
+        "8588:8593",
+        "8665:8671",
+        "894:900",
+        "9756:9761",
+        "9762:9766" ;
+    data:wdtLink wdt:Q372964 ;
+    :hasChild data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isFatherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia .
+
+data:Prince_Wilhelm-_Duke_of_Södermanland a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wilhelm, Duke of Södermanland" ;
+    data:posIndicesFull "7253:7277" ;
+    data:posIndicesPart "10287:10291",
+        "10577:10581",
+        "10783:10787",
+        "10966:10970",
+        "11165:11169",
+        "11317:11321",
+        "11957:11961",
+        "12911:12915",
+        "13230:13236",
+        "14034:14040",
+        "14233:14237",
+        "14434:14438",
+        "14485:14489",
+        "15437:15441",
+        "15647:15651",
+        "15692:15696",
+        "15910:15914",
+        "15969:15973",
+        "16128:16132",
+        "16272:16276",
+        "16349:16353",
+        "16407:16411",
+        "16529:16533",
+        "16562:16566",
+        "16629:16635",
+        "17198:17202",
+        "17554:17558",
+        "17949:17953",
+        "18148:18152",
+        "18282:18286",
+        "18470:18474",
+        "18516:18522",
+        "18620:18624",
+        "18750:18754",
+        "19084:19088",
+        "19129:19135",
+        "19441:19445",
+        "19595:19599",
+        "19683:19687",
+        "19922:19926",
+        "20644:20648",
+        "21041:21045",
+        "21308:21314",
+        "7427:7433",
+        "8059:8063",
+        "9762:9766" ;
+    data:wdtLink wdt:Q435739 ;
+    :alsoKnownAs "Prince Wilhelm of Sweden" ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasSex data:male ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isFatherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte .
+
+data:Lennart_Bernadotte a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Lennart Bernadotte" ;
+    data:posIndicesFull "21315:21333" ;
+    data:wdtLink wdt:Q564226 ;
+    :hasFather data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasParent data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isSonOf data:Prince_Wilhelm-_Duke_of_Södermanland .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "2230:2238",
+        "2230:2248",
+        "7260:7267" ;
+    data:posIndicesPart "12932:12938",
+        "5141:5147",
+        "8974:8980" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "2253:2282" ;
+    data:posIndicesPart "11614:11620",
+        "12195:12201",
+        "13183:13189",
+        "13385:13391",
+        "13726:13730",
+        "16236:16242",
+        "16818:16824",
+        "17777:17783",
+        "18649:18655",
+        "19388:19394",
+        "19642:19648",
+        "20312:20318",
+        "2508:2514",
+        "2596:2602",
+        "3483:3489",
+        "5332:5336",
+        "5427:5431",
+        "5634:5640",
+        "6913:6919",
+        "8127:8133",
+        "8191:8197",
+        "8477:8483",
+        "8665:8671" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark .
+
+data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duke Dmitri Pavlovich of Russia" ;
+    data:posIndicesFull "0:37" ;
+    data:posIndicesPart "1020:1026",
+        "10220:10226",
+        "10281:10286",
+        "10287:10291",
+        "10292:10298",
+        "10435:10441",
+        "10571:10576",
+        "10577:10581",
+        "10582:10588",
+        "10646:10652",
+        "10777:10782",
+        "10783:10787",
+        "10823:10829",
+        "10960:10965",
+        "10966:10970",
+        "10971:10977",
+        "11159:11164",
+        "11165:11169",
+        "11170:11176",
+        "11177:11186",
+        "11311:11316",
+        "11317:11321",
+        "11322:11328",
+        "11390:11396",
+        "11522:11531",
+        "11614:11620",
+        "11662:11668",
+        "11720:11726",
+        "1188:1193",
+        "1194:1198",
+        "11951:11956",
+        "11957:11961",
+        "11962:11968",
+        "1199:1205",
+        "12038:12047",
+        "12195:12201",
+        "12282:12291",
+        "12433:12439",
+        "12558:12567",
+        "12700:12705",
+        "12732:12741",
+        "12905:12910",
+        "12911:12915",
+        "13080:13086",
+        "13124:13129",
+        "13183:13189",
+        "13267:13273",
+        "13385:13391",
+        "13468:13477",
+        "13599:13605",
+        "13786:13792",
+        "13871:13877",
+        "13967:13973",
+        "14068:14074",
+        "14227:14232",
+        "14233:14237",
+        "14238:14244",
+        "14428:14433",
+        "14434:14438",
+        "14479:14484",
+        "14485:14489",
+        "14585:14591",
+        "14676:14682",
+        "14735:14741",
+        "14812:14818",
+        "15031:15037",
+        "15152:15158",
+        "15241:15246",
+        "15431:15436",
+        "15437:15441",
+        "15483:15492",
+        "1549:1554",
+        "1555:1559",
+        "15641:15646",
+        "15647:15651",
+        "15686:15691",
+        "15692:15696",
+        "15787:15793",
+        "15904:15909",
+        "15910:15914",
+        "15963:15968",
+        "15969:15973",
+        "16122:16127",
+        "16128:16132",
+        "16236:16242",
+        "16266:16271",
+        "16272:16276",
+        "16343:16348",
+        "16349:16353",
+        "16401:16406",
+        "16407:16411",
+        "16412:16418",
+        "16419:16428",
+        "16523:16528",
+        "16529:16533",
+        "16556:16561",
+        "16562:16566",
+        "16567:16573",
+        "16636:16642",
+        "16818:16824",
+        "16920:16925",
+        "17028:17034",
+        "17192:17197",
+        "17198:17202",
+        "17203:17209",
+        "1751:1756",
+        "17548:17553",
+        "17554:17558",
+        "1757:1761",
+        "17777:17783",
+        "1786:1792",
+        "17943:17948",
+        "17949:17953",
+        "1806:1811",
+        "1812:1816",
+        "18142:18147",
+        "18148:18152",
+        "18153:18159",
+        "1817:1823",
+        "18223:18228",
+        "18236:18242",
+        "18243:18252",
+        "18276:18281",
+        "18282:18286",
+        "18464:18469",
+        "18470:18474",
+        "18494:18499",
+        "18614:18619",
+        "18620:18624",
+        "18649:18655",
+        "18744:18749",
+        "18750:18754",
+        "18755:18761",
+        "1891:1896",
+        "18923:18929",
+        "1897:1901",
+        "19078:19083",
+        "19084:19088",
+        "19089:19095",
+        "19136:19142",
+        "19388:19394",
+        "1941:1946",
+        "19435:19440",
+        "19441:19445",
+        "19589:19594",
+        "19595:19599",
+        "19600:19606",
+        "19642:19648",
+        "19677:19682",
+        "19683:19687",
+        "19688:19694",
+        "19916:19921",
+        "19922:19926",
+        "19927:19933",
+        "19934:19943",
+        "20106:20112",
+        "20227:20233",
+        "20312:20318",
+        "2034:2040",
+        "20388:20394",
+        "2051:2056",
+        "2057:2061",
+        "20638:20643",
+        "20644:20648",
+        "20649:20655",
+        "20810:20816",
+        "21035:21040",
+        "21041:21045",
+        "21046:21052",
+        "21156:21162",
+        "21247:21253",
+        "2129:2135",
+        "2184:2190",
+        "2471:2476",
+        "2508:2514",
+        "2560:2565",
+        "2596:2602",
+        "2623:2627",
+        "2758:2763",
+        "2786:2791",
+        "2792:2796",
+        "2825:2830",
+        "2831:2835",
+        "2944:2950",
+        "3187:3193",
+        "3337:3343",
+        "3386:3392",
+        "3448:3453",
+        "3454:3458",
+        "3483:3489",
+        "3514:3520",
+        "3753:3759",
+        "3781:3786",
+        "3870:3875",
+        "3876:3880",
+        "3998:4004",
+        "4026:4031",
+        "4127:4132",
+        "4133:4137",
+        "4173:4178",
+        "4302:4307",
+        "4308:4312",
+        "4324:4329",
+        "4456:4461",
+        "4462:4466",
+        "4572:4577",
+        "4578:4582",
+        "4696:4702",
+        "4891:4896",
+        "4897:4901",
+        "4902:4908",
+        "4982:4987",
+        "4988:4992",
+        "5035:5041",
+        "5191:5197",
+        "5278:5283",
+        "5284:5288",
+        "5634:5640",
+        "5645:5650",
+        "5651:5655",
+        "5752:5758",
+        "5826:5831",
+        "5832:5836",
+        "5858:5863",
+        "5944:5949",
+        "5997:6002",
+        "6003:6007",
+        "602:608",
+        "6056:6061",
+        "6147:6153",
+        "6261:6266",
+        "6267:6271",
+        "644:649",
+        "650:654",
+        "6511:6516",
+        "6517:6521",
+        "6538:6544",
+        "655:661",
+        "6610:6615",
+        "6616:6620",
+        "6801:6807",
+        "683:688",
+        "6855:6861",
+        "6872:6877",
+        "6878:6882",
+        "6913:6919",
+        "7046:7051",
+        "7291:7297",
+        "7677:7683",
+        "7796:7802",
+        "7825:7831",
+        "8053:8058",
+        "8059:8063",
+        "811:816",
+        "8127:8133",
+        "817:821",
+        "8191:8197",
+        "8291:8297",
+        "8441:8447",
+        "8477:8483",
+        "856:861",
+        "8571:8577",
+        "8588:8593",
+        "8665:8671",
+        "8684:8690",
+        "8738:8744",
+        "8811:8817",
+        "894:900",
+        "9152:9158",
+        "9756:9761",
+        "9762:9766",
+        "9767:9773",
+        "9774:9783" ;
+    data:wdtLink wdt:Q372954 ;
+    :alsoKnownAs "Dimitrii Pavlovich Romanov, Grand Duke of Russia" ;
+    :hasFather data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSonOf data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isUncleOf data:Lennart_Bernadotte .
+
+data:Alexander_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alexander of Greece" ;
+    data:posIndicesFull "2001:2020",
+        "332:356",
+        "337:356" ;
+    data:posIndicesPart "1126:1135",
+        "1303:1312",
+        "16277:16286",
+        "2113:2122",
+        "7570:7579" ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece",
+        "King Alexander I of Greece",
+        "King Alexander of Greece" ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Helen_of_Greece_and_Denmark ;
+    :isBrotherOf data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece .
+
+data:George_II_of_Greece a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George II of Greece" ;
+    data:posIndicesFull "306:330",
+        "311:330" ;
+    data:posIndicesPart "12932:12938",
+        "5141:5147",
+        "8974:8980" ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece" ;
+    :hasBrother data:Alexander_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Helen_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Helen of Greece and Denmark" ;
+    data:posIndicesFull "358:385" ;
+    data:posIndicesPart "14000:14007",
+        "14059:14066",
+        "18045:18052" ;
+    data:wdtLink wdt:Q162177 ;
+    :alsoKnownAs "Helen, Queen Mother of Romania",
+        "Helen, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen",
+        "Queen Helen, Queen Mother of Romania",
+        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen, The Queen Mother of Romania",
+        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:female ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isDaughterOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "425:444",
+        "430:444" ;
+    data:posIndicesPart "17591:17595",
+        "17645:17649",
+        "1902:1906",
+        "20476:20480",
+        "20578:20582",
+        "2062:2066",
+        "2797:2801",
+        "2810:2814",
+        "3881:3885",
+        "4105:4109",
+        "4467:4471",
+        "4583:4587",
+        "5289:5293",
+        "5656:5660",
+        "6883:6887" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Helen_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark ;
+    :isSonOf data:Constantine_I_of_Greece .
+
+data:Princess_Alexandra_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexandra of Greece and Denmark" ;
+    data:posIndicesFull "1955:1985",
+        "1992:2032",
+        "2001:2032" ;
+    data:posIndicesPart "13717:13725",
+        "14000:14007",
+        "14059:14066",
+        "17500:17508",
+        "18045:18052",
+        "2201:2210",
+        "2772:2781",
+        "2903:2912",
+        "3240:3249",
+        "9103:9111",
+        "9387:9396",
+        "9485:9494",
+        "9703:9712" ;
+    data:wdtLink wdt:Q232728 ;
+    :alsoKnownAs "Alexandra Georgievna of Russia",
+        "Alexandra of Greece and Denmark",
+        "Grand Duchess Alexandra Georgievna, Grand Duchess Pavlovna of Russia" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSon data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isAuntOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSisterOf data:Constantine_I_of_Greece .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "18372:18390",
+        "18372:18400",
+        "18377:18390",
+        "18377:18400",
+        "2300:2318",
+        "2305:2318" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasChild data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSon data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isParentOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Prince_Philip-_Duke_of_Edinburgh .
+

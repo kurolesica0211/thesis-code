@@ -1,0 +1,117 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "1279:1292" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasChild data:Prince_Constantijn_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Constantijn_of_the_Netherlands ;
+    :isMotherOf data:Prince_Constantijn_of_the_Netherlands ;
+    :isParentOf data:Prince_Constantijn_of_the_Netherlands .
+
+data:Princess_Laurentien_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Laurentien of the Netherlands" ;
+    data:posIndicesFull "1066:1104",
+        "297:335" ;
+    data:posIndicesPart "1350:1358",
+        "1359:1369",
+        "427:438",
+        "505:513",
+        "514:524",
+        "692:703",
+        "903:911" ;
+    data:wdtLink wdt:Q267367 ;
+    :alsoKnownAs "Laurentien Brinkhorst",
+        "Petra Laurentien Brinkhorst",
+        "Princess Petra Laurentien of the Netherlands, Princess of Orange-Nassau, Mrs. van Amsberg" ;
+    :hasChild data:Countess_Leonore_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Leonore_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :isMotherOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isParentOf data:Countess_Leonore_of_Orange-Nassau .
+
+data:Countess_Leonore_of_Orange-Nassau a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Leonore of Orange-Nassau" ;
+    data:posIndicesFull "64:121",
+        "64:97" ;
+    data:posIndicesPart "1132:1140",
+        "1236:1242",
+        "357:365",
+        "366:373",
+        "636:644",
+        "645:652" ;
+    data:wdtLink wdt:Q2377795 ;
+    :alsoKnownAs "Countess Leonore of Orange-Nassau, Jonkvrouwe van Amsberg",
+        "Leonore Marie Irene Enrica van Oranje-Nassau van Amsberg Gravin van Oranje-Nassau",
+        "Leonore van Oranje-Nassau van Amsberg" ;
+    :hasFather data:Prince_Constantijn_of_the_Netherlands ;
+    :hasMother data:Princess_Laurentien_of_the_Netherlands ;
+    :hasParent data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Constantijn_of_the_Netherlands,
+        data:Princess_Laurentien_of_the_Netherlands .
+
+data:Prince_Constantijn_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Constantijn of the Netherlands" ;
+    data:posIndicesFull "255:292",
+        "262:292" ;
+    data:posIndicesPart "1043:1049",
+        "1050:1061",
+        "1327:1333",
+        "1334:1345",
+        "427:438",
+        "482:488",
+        "489:500",
+        "692:703" ;
+    data:wdtLink wdt:Q355254 ;
+    :alsoKnownAs "Constantijn Christof Frederik Aschwin of the Netherlands",
+        "Constantijn of the Netherlands",
+        "Constantijn van Oranje-Nassau",
+        "Prince Constantijn Christof Frederik Aschwin of the Netherlands",
+        "Prince Constantijn Christof Frederik Aschwin of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg" ;
+    :hasChild data:Countess_Leonore_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Leonore_of_Orange-Nassau ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Beatrix_of_the_Netherlands ;
+    :isFatherOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isParentOf data:Countess_Leonore_of_Orange-Nassau ;
+    :isSonOf data:Beatrix_of_the_Netherlands .
+

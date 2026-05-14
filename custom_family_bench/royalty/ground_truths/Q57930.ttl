@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1812:1823" ;
+    data:posIndicesPart "2263:2270",
+        "2291:2300",
+        "2989:2996" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "2189:2204" ;
+    data:posIndicesPart "2379:2383",
+        "2526:2530",
+        "3220:3224" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isBrotherOf data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Princess_Alexandra_of_Hanover .
+
+data:Princess_Alexandra_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexandra of Hanover" ;
+    data:posIndicesFull "2109:2138" ;
+    data:posIndicesPart "2222:2229",
+        "2245:2253" ;
+    data:wdtLink wdt:Q61243 ;
+    :alsoKnownAs "Alexandra of Hanover and Cumberland",
+        "Princess Alexandra Louise Marie Olga Elisabeth Therese Vera of Hanover and Cumberland",
+        "Princess Alexandra of Hanover and Cumberland" ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasSex data:female ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isSisterOf data:Ernst_August-_Duke_of_Brunswick .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "1027:1047" ;
+    data:posIndicesPart "1562:1571",
+        "1572:1579",
+        "1960:1969",
+        "1970:1977",
+        "2083:2092",
+        "2093:2100",
+        "2393:2402",
+        "2431:2440",
+        "2441:2448",
+        "2669:2678",
+        "2679:2686",
+        "2998:3007",
+        "3008:3015" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_III ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:posIndicesFull "318:363",
+        "332:363" ;
+    data:posIndicesPart "1016:1021",
+        "1204:1213",
+        "1320:1325",
+        "1401:1406",
+        "1492:1497",
+        "1590:1595",
+        "1596:1603",
+        "1604:1613",
+        "1853:1858",
+        "2373:2378",
+        "2701:2706",
+        "2814:2819",
+        "3174:3179",
+        "3214:3219",
+        "497:502",
+        "949:954" ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia",
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasSex data:female ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis III" ;
+    data:posIndicesFull "1148:1168" ;
+    data:posIndicesPart "1562:1571",
+        "1572:1579",
+        "1960:1969",
+        "1970:1977",
+        "2083:2092",
+        "2093:2100",
+        "2393:2402",
+        "2431:2440",
+        "2441:2448",
+        "2669:2678",
+        "2679:2686",
+        "2998:3007",
+        "3008:3015" ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz III",
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSonOf data:Frederick_Francis_II .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "0:20",
+        "1066:1086",
+        "1356:1376",
+        "203:223" ;
+    data:posIndicesPart "1562:1571",
+        "1572:1579",
+        "1960:1969",
+        "1970:1977",
+        "2083:2092",
+        "2093:2100",
+        "2393:2402",
+        "2431:2440",
+        "2441:2448",
+        "2669:2678",
+        "2679:2686",
+        "2998:3007",
+        "3008:3015",
+        "509:518",
+        "519:526",
+        "673:682",
+        "683:690",
+        "884:893",
+        "894:901" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+

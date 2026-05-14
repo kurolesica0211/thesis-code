@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Amélie_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amélie of Orléans" ;
+    data:posIndicesFull "955:972" ;
+    data:posIndicesPart "2199:2205",
+        "2227:2233",
+        "2452:2458" ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans",
+        "Maria Amélia",
+        "Marie Amelie d'Orleans",
+        "Marie Amelie of Orleans",
+        "Marie Amélie d'Orléans",
+        "Marie Amélie of Orléans" ;
+    :hasChild data:Manuel_II_of_Portugal ;
+    :hasSex data:female ;
+    :hasSon data:Manuel_II_of_Portugal ;
+    :isMotherOf data:Manuel_II_of_Portugal ;
+    :isParentOf data:Manuel_II_of_Portugal .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Manuel II of Portugal" ;
+    data:posIndicesFull "1013:1022",
+        "2291:2300",
+        "2986:2995",
+        "3425:3434",
+        "4:13",
+        "6798:6807",
+        "7390:7399",
+        "7629:7638",
+        "8144:8153",
+        "9807:9816" ;
+    data:posIndicesPart "10180:10186",
+        "10398:10404",
+        "10506:10512",
+        "10642:10650",
+        "10785:10791",
+        "10811:10817",
+        "11087:11093",
+        "11249:11257",
+        "11349:11355",
+        "11361:11369",
+        "11435:11441",
+        "1161:1167",
+        "11630:11636",
+        "11664:11672",
+        "11922:11928",
+        "11968:11974",
+        "12113:12119",
+        "1313:1319",
+        "1407:1413",
+        "1526:1532",
+        "1678:1684",
+        "1765:1771",
+        "192:198",
+        "2083:2089",
+        "2166:2172",
+        "2382:2388",
+        "2544:2552",
+        "2766:2772",
+        "282:288",
+        "2955:2961",
+        "3254:3262",
+        "3697:3703",
+        "3930:3936",
+        "395:401",
+        "4108:4114",
+        "435:441",
+        "4481:4487",
+        "4653:4659",
+        "4685:4693",
+        "4735:4743",
+        "5028:5034",
+        "5082:5088",
+        "5304:5312",
+        "5327:5333",
+        "5356:5364",
+        "5420:5426",
+        "5618:5624",
+        "5781:5787",
+        "6095:6103",
+        "6201:6207",
+        "622:630",
+        "6300:6306",
+        "648:654",
+        "6532:6538",
+        "6610:6618",
+        "6669:6677",
+        "708:714",
+        "7338:7346",
+        "7679:7685",
+        "774:780",
+        "7913:7921",
+        "8398:8404",
+        "8792:8798",
+        "8998:9004",
+        "9222:9228",
+        "9661:9667" ;
+    data:wdtLink wdt:Q154308 ;
+    :alsoKnownAs "Manuel II",
+        "Manuel the Patriot",
+        "Manuel the Unfortunate" ;
+    :hasMother data:Amélie_of_Orléans ;
+    :hasParent data:Amélie_of_Orléans ;
+    :hasSex data:male ;
+    :isChildOf data:Amélie_of_Orléans ;
+    :isSonOf data:Amélie_of_Orléans .
+

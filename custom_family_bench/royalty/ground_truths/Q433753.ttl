@@ -1,0 +1,104 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:posIndicesFull "3598:3638" ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo",
+        "Prince Christophoros of Greece and Denmark" ;
+    :hasSex data:male ;
+    :isUncleOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia" ;
+    data:posIndicesFull "101:140" ;
+    data:posIndicesPart "1262:1267",
+        "2110:2115",
+        "2381:2386",
+        "240:245",
+        "3035:3040",
+        "3181:3187",
+        "352:358",
+        "453:458",
+        "459:463",
+        "473:485",
+        "505:510",
+        "511:515",
+        "539:544",
+        "545:549" ;
+    data:wdtLink wdt:Q524451 ;
+    :hasChild data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasDaughter data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isParentOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Xenia Georgievna of Russia" ;
+    data:posIndicesFull "0:35" ;
+    data:posIndicesPart "1161:1166",
+        "1404:1409",
+        "1516:1521",
+        "1638:1643",
+        "1819:1824",
+        "1882:1887",
+        "2012:2017",
+        "2072:2077",
+        "2324:2329",
+        "2395:2400",
+        "2598:2606",
+        "2607:2612",
+        "2650:2655",
+        "2685:2690",
+        "272:277",
+        "2982:2987",
+        "299:307",
+        "3049:3054",
+        "3073:3081",
+        "3082:3087",
+        "3102:3107",
+        "313:323",
+        "3181:3187",
+        "3254:3259",
+        "3381:3386",
+        "352:358",
+        "3575:3580",
+        "3714:3719",
+        "3793:3798",
+        "3835:3840",
+        "3959:3967",
+        "3968:3973",
+        "3974:3984",
+        "685:690",
+        "999:1004" ;
+    data:wdtLink wdt:Q433753 ;
+    :alsoKnownAs "Xenia Georgievna Holstein-Gottorp-Romanova",
+        "Xenia Georgievna Romanova",
+        "Xenia Georgievna of Holstein-Gottorp" ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasSex data:female ;
+    :isChildOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isDaughterOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 .
+

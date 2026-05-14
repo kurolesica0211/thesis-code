@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Georg_von_Habsburg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Georg von Habsburg" ;
+    data:posIndicesFull "0:18",
+        "400:418" ;
+    data:posIndicesPart "100:105",
+        "106:114",
+        "144:152",
+        "198:203",
+        "554:562",
+        "620:625",
+        "714:722" ;
+    data:wdtLink wdt:Q112096 ;
+    :alsoKnownAs "Archduke Georg of Austria",
+        "Archduke Georg von Habsburg",
+        "Archduke Paul Georg Maria Joseph Dominikus of Austria" ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "285:302" ;
+    data:posIndicesPart "554:562",
+        "714:722" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasChild data:Georg_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Georg_von_Habsburg ;
+    :isFatherOf data:Georg_von_Habsburg ;
+    :isParentOf data:Georg_von_Habsburg .
+

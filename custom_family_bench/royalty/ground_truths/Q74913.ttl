@@ -1,0 +1,170 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "118:133",
+        "321:336" ;
+    data:posIndicesPart "676:685" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover ;
+    :hasSex data:male ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover ;
+    :isFatherOf data:Ernst_August-_Prince_of_Hanover ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover .
+
+data:Prince_Ernst_August_of_Hanover a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ernst August of Hanover" ;
+    data:posIndicesFull "314:347" ;
+    data:posIndicesPart "651:658" ;
+    data:wdtLink wdt:Q4383225 ;
+    :alsoKnownAs "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph Prince of Hanover",
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph, Hereditary Prince of Hanover",
+        "Ernst August Prince of Hanover",
+        "Ernst August Prinz von Hannover",
+        "Ernst August von Hannover",
+        "Ernst August, Hereditary Prince of Hanover",
+        "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
+        "Prince Ernst August Jr." ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasSex data:male ;
+    :isChildOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSonOf data:Ernst_August-_Prince_of_Hanover_1 .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    data:posIndicesFull "186:245",
+        "195:245" ;
+    data:wdtLink wdt:Q2534736 ;
+    :alsoKnownAs "Ortrud of Schleswig-Holstein-Sonderburg-Glucksburg",
+        "Ortrude de Schleswig-Holstein-Sonderbourg-Glucksbourg" ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :hasSex data:female ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :isMotherOf data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover .
+
+data:Prince_Heinrich_of_Hanover a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Heinrich of Hanover" ;
+    data:posIndicesFull "0:27" ;
+    data:posIndicesPart "146:152",
+        "262:269",
+        "385:392",
+        "413:421",
+        "651:658",
+        "740:748",
+        "84:92" ;
+    data:wdtLink wdt:Q74913 ;
+    :alsoKnownAs "Heinrich Julius Prinz von Hannover",
+        "Heinrich Julius of Hanover",
+        "Heinrich Prinz von Hannover",
+        "Heinrich of Hanover",
+        "Prince Heinrich Julius of Hanover" ;
+    :hasBrother data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male ;
+    :isBrotherOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isChildOf data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isSiblingOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSonOf data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isUncleOf data:Prince_Ernst_August_of_Hanover .
+
+data:Ernst_August-_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "314:347",
+        "321:347" ;
+    data:posIndicesPart "651:658" ;
+    data:wdtLink wdt:Q61079 ;
+    :alsoKnownAs "Ernest Augustus of Hanover",
+        "Ernest Augustus, Prince of Hanover",
+        "Ernst August IV",
+        "Ernst August of Hanover",
+        "Prince Ernest Augustus of Hanover",
+        "Prince Ernst August of Hanover" ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick ;
+    :hasSex data:male ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :isChildOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isFatherOf data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Heinrich_of_Hanover ;
+    :isSonOf data:Ernst_August-_Duke_of_Brunswick .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "314:347",
+        "321:347" ;
+    data:posIndicesPart "651:658" ;
+    data:wdtLink wdt:Q58070 ;
+    :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
+        "Ernst August Prinz von Hannover",
+        "Ernst August of Hanover",
+        "Ernst August von Hanover",
+        "Prince Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
+        "Prince Ernst August Sr.",
+        "Prince Ernst August of Hanover",
+        "Prince Ernst August of Hanover (born 1954)" ;
+    :hasBrother data:Prince_Heinrich_of_Hanover ;
+    :hasChild data:Prince_Ernst_August_of_Hanover ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Ernst_August_of_Hanover ;
+    :isBrotherOf data:Prince_Heinrich_of_Hanover ;
+    :isChildOf data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isFatherOf data:Prince_Ernst_August_of_Hanover ;
+    :isParentOf data:Prince_Ernst_August_of_Hanover ;
+    :isSiblingOf data:Prince_Heinrich_of_Hanover ;
+    :isSonOf data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg .
+

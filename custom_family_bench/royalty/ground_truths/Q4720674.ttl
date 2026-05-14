@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Nicholas_Knatchbull_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:posIndicesFull "1556:1575" ;
+    data:posIndicesPart "1860:1868" ;
+    data:wdtLink wdt:Q75383948 ;
+    :alsoKnownAs "Hon. Nicholas Knatchbull",
+        "Hon. Nicholas Timothy Charles Knatchbull",
+        "Nicholas Timothy Charles Knatchbull" ;
+    :hasBrother data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :isBrotherOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isSiblingOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isUncleOf data:Nicholas_Knatchbull .
+
+data:Alexandra_Hooper a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Alexandra Hooper" ;
+    data:wdtLink wdt:Q4720674 ;
+    :alsoKnownAs "Alexandra Victoria Edwina Diana Hooper",
+        "Alexandra Victoria Edwina Diana Knatchbull",
+        "Hon. Alexandra Hooper",
+        "Hon. Alexandra Knatchbull",
+        "Hon. Alexandra Victoria Edwina Diana Hooper",
+        "Hon. Alexandra Victoria Edwina Diana Knatchbull",
+        "Lady Alexandra Knatchbull",
+        "Lady Alexandra Victoria Edwina Diana Hooper",
+        "Lady Alexandra Victoria Edwina Diana Knatchbull" ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasMother data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isChildOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Nicholas_Knatchbull ;
+    :isSisterOf data:Nicholas_Knatchbull .
+
+data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Norton Knatchbull, 3rd Earl Mountbatten of Burma" ;
+    data:posIndicesFull "0:61" ;
+    data:posIndicesPart "1087:1098",
+        "1479:1490",
+        "1496:1500",
+        "1501:1512",
+        "1516:1521",
+        "1626:1636",
+        "1670:1674",
+        "1675:1686",
+        "1690:1695",
+        "1771:1782",
+        "194:205",
+        "282:292",
+        "298:309",
+        "330:341",
+        "345:350",
+        "375:385",
+        "408:419",
+        "539:549",
+        "685:689",
+        "690:701",
+        "705:710",
+        "823:834",
+        "836:847",
+        "970:980" ;
+    data:wdtLink wdt:Q1948021 ;
+    :alsoKnownAs "Norton Brabourne",
+        "Norton Knatchbull",
+        "Norton Knatchbull, 8th Baron Brabourne",
+        "Norton Knatchbull, Lord Romsey",
+        "Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma",
+        "Norton Louis Philip Knatchbull, 8th Baron Brabourne",
+        "Norton Louis Philip Knatchbull, Lord Romsey",
+        "Norton Mountbatten",
+        "Norton Romsey" ;
+    :hasBrother data:Nicholas_Knatchbull_1 ;
+    :hasChild data:Nicholas_Knatchbull ;
+    :hasSex data:male ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isBrotherOf data:Nicholas_Knatchbull_1 ;
+    :isFatherOf data:Nicholas_Knatchbull ;
+    :isParentOf data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Nicholas_Knatchbull_1 .
+
+data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Penelope Knatchbull, Countess Mountbatten of Burma" ;
+    data:posIndicesFull "1113:1139" ;
+    data:posIndicesPart "1479:1490",
+        "1501:1512",
+        "1516:1521",
+        "1626:1636",
+        "1675:1686",
+        "1690:1695",
+        "1771:1782" ;
+    data:wdtLink wdt:Q30323763 ;
+    :alsoKnownAs "Penelope Brabourne",
+        "Penelope Eastwood",
+        "Penelope Knatchbull, Baroness Brabourne",
+        "Penelope Knatchbull, Lady Brabourne",
+        "Penelope Knatchbull, Lady Romsey",
+        "Penelope Meredith Eastwood",
+        "Penelope Meredith Knatchbull, Baroness Brabourne",
+        "Penelope Meredith Knatchbull, Countess Mountbatten of Burma",
+        "Penelope Meredith Knatchbull, Lady Brabourne",
+        "Penelope Meredith Knatchbull, Lady Romsey",
+        "Penelope Mountbatten",
+        "Penelope Romsey" ;
+    :hasChild data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :hasDaughter data:Alexandra_Hooper ;
+    :hasSex data:female ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isMotherOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isParentOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:posIndicesFull "1556:1575" ;
+    data:posIndicesPart "1860:1868" ;
+    data:wdtLink wdt:Q11324270 ;
+    :alsoKnownAs "5DN",
+        "AMA",
+        "Deep N Beeper",
+        "Hon. Nicholas Louis Charles Norton Knatchbull",
+        "Nicholas Louis Charles Norton Knatchbull",
+        "Safe As Milk" ;
+    :hasFather data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSister data:Alexandra_Hooper ;
+    :isBrotherOf data:Alexandra_Hooper ;
+    :isChildOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Alexandra_Hooper ;
+    :isSonOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma .
+

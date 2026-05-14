@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Beatrix_von_Storch a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix von Storch" ;
+    data:posIndicesFull "0:42",
+        "1269:1287",
+        "1822:1840",
+        "1932:1950",
+        "2047:2065" ;
+    data:posIndicesPart "1079:1085",
+        "1374:1380",
+        "1430:1436",
+        "2332:2338",
+        "2464:2470",
+        "2725:2731",
+        "399:406",
+        "527:533",
+        "644:650",
+        "736:742",
+        "811:817" ;
+    data:wdtLink wdt:Q14924803 ;
+    :alsoKnownAs "Beatrice Amelie Ehrengard Eilika von Holstein-Gottorp, Herzogin von Oldenburg",
+        "Beatrix Amelie Ehrengard Eilika von Storch" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

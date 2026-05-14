@@ -1,0 +1,160 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "150:189",
+        "970:1009" ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany",
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin" ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isMotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "335:345",
+        "943:953",
+        "943:954" ;
+    data:posIndicesPart "1108:1115",
+        "1251:1258",
+        "1444:1451",
+        "1634:1641",
+        "1737:1744",
+        "1866:1873",
+        "2067:2074",
+        "2167:2174",
+        "2306:2313",
+        "2392:2399",
+        "2434:2441",
+        "2804:2811",
+        "3022:3029",
+        "3079:3086",
+        "3261:3268",
+        "3320:3327",
+        "631:638" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wilhelm of Prussia" ;
+    data:posIndicesFull "0:63" ;
+    data:posIndicesPart "1058:1064",
+        "1108:1115",
+        "1251:1258",
+        "1444:1451",
+        "1585:1591",
+        "1634:1641",
+        "1737:1744",
+        "1866:1873",
+        "2067:2074",
+        "2167:2174",
+        "2306:2313",
+        "2392:2399",
+        "2434:2441",
+        "2602:2609",
+        "2804:2811",
+        "3022:3029",
+        "3079:3086",
+        "3261:3268",
+        "3320:3327",
+        "3376:3382",
+        "631:638" ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "116:144",
+        "363:383",
+        "874:894" ;
+    data:posIndicesPart "1058:1064",
+        "1108:1115",
+        "1251:1258",
+        "1413:1419",
+        "1444:1451",
+        "1579:1584",
+        "1585:1591",
+        "1634:1641",
+        "1737:1744",
+        "1866:1873",
+        "2067:2074",
+        "2167:2174",
+        "2257:2263",
+        "2306:2313",
+        "2392:2399",
+        "2434:2441",
+        "2804:2811",
+        "3022:3029",
+        "3079:3086",
+        "3133:3139",
+        "3261:3268",
+        "3320:3327",
+        "3376:3382",
+        "3439:3445",
+        "430:436",
+        "570:576",
+        "631:638" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+

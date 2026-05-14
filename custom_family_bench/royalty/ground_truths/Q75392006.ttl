@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Heinrich_XIII_Prinz_Reuss a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Heinrich XIII Prinz Reuss" ;
+    data:posIndicesFull "0:25" ;
+    data:posIndicesPart "1161:1166",
+        "1179:1184",
+        "1350:1355",
+        "1416:1421",
+        "1522:1530",
+        "1660:1665",
+        "1693:1698",
+        "1913:1918",
+        "1985:1990",
+        "1991:1996",
+        "2187:2192",
+        "2242:2247",
+        "2437:2442",
+        "2528:2533",
+        "2619:2624",
+        "2837:2842",
+        "2916:2921",
+        "3116:3121",
+        "3137:3142",
+        "3223:3228",
+        "3348:3353",
+        "3485:3490",
+        "3662:3667",
+        "3859:3864",
+        "4010:4015",
+        "4106:4111",
+        "418:423",
+        "4325:4330",
+        "4485:4490",
+        "4557:4562",
+        "4571:4579",
+        "4590:4595",
+        "4687:4695",
+        "4857:4862",
+        "503:508",
+        "50:55",
+        "5199:5204",
+        "5222:5227",
+        "5379:5384",
+        "5538:5546",
+        "5557:5562",
+        "5608:5613",
+        "5644:5649",
+        "5779:5784",
+        "5952:5957",
+        "6154:6159",
+        "670:675",
+        "777:785",
+        "788:793",
+        "939:944" ;
+    data:wdtLink wdt:Q75392006 ;
+    :alsoKnownAs "Heinrich Reuss",
+        "Heinrich XIII Prinz Reuss zu Köstritz",
+        "Prince Heinrich XIII" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

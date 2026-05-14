@@ -1,0 +1,164 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Dominik_Rainer_Radziwiłł a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Dominik Rainer Radziwiłł" ;
+    data:posIndicesFull "1118:1149",
+        "1125:1149" ;
+    data:posIndicesPart "1349:1355" ;
+    data:wdtLink wdt:Q3035416 ;
+    :alsoKnownAs "Dominic Rainer Radziwill",
+        "Dominik Rainer Radziwiłł",
+        "Dominique Radziwill",
+        "Prince Dominic Rainer Radziwill" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "513:521",
+        "513:531" ;
+    data:posIndicesPart "798:804" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_George_of_Greece_and_Denmark ;
+    :isFatherOf data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "536:565" ;
+    data:posIndicesPart "1030:1036" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasChild data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Prince_George_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Marie_Bonaparte a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie Bonaparte" ;
+    data:posIndicesFull "365:389",
+        "374:389" ;
+    data:wdtLink wdt:Q115472 ;
+    :alsoKnownAs "Princess Marie Bonaparte" ;
+    :hasChild data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Peter of Greece and Denmark" ;
+    data:posIndicesFull "594:628" ;
+    data:posIndicesPart "1196:1202",
+        "1349:1355" ;
+    data:wdtLink wdt:Q601229 ;
+    :alsoKnownAs "Panayiotis zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Greece and Denmark" ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isChildOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isSonOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark .
+
+data:Princess_Eugénie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Eugénie of Greece and Denmark" ;
+    data:posIndicesFull "0:38",
+        "9:38" ;
+    data:posIndicesPart "1308:1315",
+        "888:896" ;
+    data:wdtLink wdt:Q2379307 ;
+    :alsoKnownAs "Eugénie of Greece and Denmark",
+        "Princess Eugenie of Greece and Denmark" ;
+    :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Peter_of_Greece_and_Denmark .
+
+data:Prince_George_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George of Greece and Denmark" ;
+    data:posIndicesFull "315:350" ;
+    data:posIndicesPart "1196:1202",
+        "1349:1355",
+        "791:797",
+        "798:804" ;
+    data:wdtLink wdt:Q170396 ;
+    :alsoKnownAs "Prince Georgios of Greece and Denmark" ;
+    :hasChild data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Peter_of_Greece_and_Denmark,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia .
+

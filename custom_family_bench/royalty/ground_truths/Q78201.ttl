@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Karl_Friedrich-_Prince_of_Hohenzollern a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Karl Friedrich, Prince of Hohenzollern" ;
+    data:wdtLink wdt:Q78201 ;
+    :alsoKnownAs "Karl Friedrich Fürst von Hohenzollern-Sigmaringen" ;
+    :hasMother data:Princess_Margarita_of_Leiningen ;
+    :hasParent data:Princess_Margarita_of_Leiningen ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Margarita_of_Leiningen ;
+    :isSonOf data:Princess_Margarita_of_Leiningen .
+
+data:Princess_Margarita_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margarita of Leiningen" ;
+    data:posIndicesFull "188:219" ;
+    data:posIndicesPart "422:430" ;
+    data:wdtLink wdt:Q2591944 ;
+    :alsoKnownAs "Margarita, Princess of Hohenzollern",
+        "Princess Margarita, Princess of Hohenzollern" ;
+    :hasChild data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :hasSex data:female ;
+    :hasSon data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isMotherOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isParentOf data:Karl_Friedrich-_Prince_of_Hohenzollern .
+

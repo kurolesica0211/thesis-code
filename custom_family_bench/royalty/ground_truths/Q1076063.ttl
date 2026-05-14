@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Máxima_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:posIndicesFull "1097:1103",
+        "145:151",
+        "1561:1567",
+        "2137:2143",
+        "459:465",
+        "758:789",
+        "764:770",
+        "764:789" ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
+        "Maxima Zorreguieta",
+        "Máxima",
+        "Máxima Zorreguieta",
+        "Máxima of the Netherlands" ;
+    :hasChild data:Princess_Ariane_of_the_Netherlands ;
+    :hasDaughter data:Princess_Ariane_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Ariane_of_the_Netherlands ;
+    :isParentOf data:Princess_Ariane_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "427:448",
+        "732:753" ;
+    data:posIndicesPart "1538:1547" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasChild data:Princess_Ariane_of_the_Netherlands ;
+    :hasDaughter data:Princess_Ariane_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Ariane_of_the_Netherlands ;
+    :isParentOf data:Princess_Ariane_of_the_Netherlands .
+
+data:Princess_Ariane_of_the_Netherlands a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Ariane of the Netherlands" ;
+    data:posIndicesFull "2022:2056",
+        "2022:2083",
+        "2031:2056",
+        "64:125",
+        "64:98",
+        "73:98" ;
+    data:posIndicesPart "1088:1096",
+        "1161:1169",
+        "1170:1176",
+        "1291:1299",
+        "1405:1413",
+        "1414:1420",
+        "1552:1560",
+        "1633:1639",
+        "1803:1811",
+        "1812:1818",
+        "2119:2125",
+        "2247:2255",
+        "467:475",
+        "476:482",
+        "593:601",
+        "602:608",
+        "791:799",
+        "800:806",
+        "946:954",
+        "998:1006" ;
+    data:wdtLink wdt:Q1076063 ;
+    :alsoKnownAs "Ariane Wilhelmina Máxima Ines of the Netherlands",
+        "Ariane Wilhelmina Máxima Ines van Amsberg",
+        "Ariane Wilhelmina Máxima Inez van Amsberg",
+        "Ariane of the Netherlands",
+        "Ariane van Amsberg",
+        "Ariane van Oranje-Nassau",
+        "Princess Ariane Wilhelmina Máxima Ines of the Netherlands",
+        "Princess Ariane Wilhelmina Máxima Ines of the Netherlands, Princess of Orange-Nassau",
+        "Princess Ariane of the Netherlands, Princess of Orange-Nassau" ;
+    :hasFather data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Queen_Máxima_of_the_Netherlands ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands .
+

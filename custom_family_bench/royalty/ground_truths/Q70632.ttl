@@ -1,0 +1,104 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Brigid Guinness" ;
+    data:posIndicesFull "361:376" ;
+    data:wdtLink wdt:Q6469999 ;
+    :alsoKnownAs "Brigid Katharine Rachel Guinness",
+        "Brigid Katharine Rachel Ness",
+        "Brigid Ness",
+        "Lady Brigid Katharine Rachel Guinness",
+        "Lady Brigid Katharine Rachel Ness",
+        "Lady Brigid Ness",
+        "Princess Frederick of Prussia" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "0:16",
+        "331:347",
+        "338:347",
+        "7:16" ;
+    data:posIndicesPart "744:751" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "270:309" ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany",
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin" ;
+    :hasChild data:Prince_Frederick_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Frederick_of_Prussia ;
+    :isMotherOf data:Prince_Frederick_of_Prussia ;
+    :isParentOf data:Prince_Frederick_of_Prussia .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "234:254" ;
+    data:posIndicesPart "460:466" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasChild data:Prince_Frederick_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Prince_Frederick_of_Prussia ;
+    :isParentOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Frederica_of_Hanover .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Frederick of Prussia" ;
+    data:posIndicesFull "0:54",
+        "166:188",
+        "559:581",
+        "64:115" ;
+    data:wdtLink wdt:Q70632 ;
+    :alsoKnownAs "Friedrich Georg Wilhelm Christoph Prinz von Preussen",
+        "Friedrich Georg Wilhelm Christoph Prinz von Preußen",
+        "Friedrich von Preussen",
+        "Prince Frederick George William Christopher of Prussia",
+        "Prince Friedrich Georg Wilhelm Christoph Prinz of Prussia" ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+

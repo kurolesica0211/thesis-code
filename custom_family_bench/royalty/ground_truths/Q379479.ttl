@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
+    data:posIndicesFull "170:187",
+        "890:907" ;
+    data:posIndicesPart "1216:1227",
+        "1247:1254",
+        "1310:1317",
+        "1318:1322",
+        "220:227",
+        "228:232",
+        "363:370",
+        "392:399",
+        "615:626",
+        "641:649",
+        "713:720",
+        "742:749" ;
+    data:wdtLink wdt:Q170194 ;
+    :alsoKnownAs "Astrid of Belgium" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Lorenz-_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Lorenz, Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q379479 ;
+    :alsoKnownAs "Lorenz Otto Erzherzog von Österreich" ;
+    :hasFather data:Robert-_Archduke_of_Austria-Este ;
+    :hasParent data:Robert-_Archduke_of_Austria-Este ;
+    :hasSex data:male ;
+    :isChildOf data:Robert-_Archduke_of_Austria-Este ;
+    :isSonOf data:Robert-_Archduke_of_Austria-Este .
+
+data:Robert-_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Robert, Archduke of Austria-Este" ;
+    data:posIndicesFull "567:599" ;
+    data:posIndicesPart "1247:1254",
+        "1298:1306",
+        "1310:1317",
+        "1318:1322",
+        "713:720",
+        "742:749" ;
+    data:wdtLink wdt:Q112108 ;
+    :alsoKnownAs "Robert Karl Erzherzog von Österreich",
+        "Robert Karl Ludwig Maximilian Michael Maria Anton Franz Ferdinand Joseph Otto Hubert Georg Pius Johannes Marcus d'Aviano",
+        "Roberto de Habsburgo" ;
+    :hasChild data:Prince_Lorenz-_Archduke_of_Austria-Este ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Lorenz-_Archduke_of_Austria-Este ;
+    :isFatherOf data:Prince_Lorenz-_Archduke_of_Austria-Este ;
+    :isParentOf data:Prince_Lorenz-_Archduke_of_Austria-Este .
+

@@ -1,0 +1,72 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexandra_Blahova a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Alexandra Blahova" ;
+    data:posIndicesFull "348:365" ;
+    data:posIndicesPart "638:647" ;
+    data:wdtLink wdt:Q75383387 ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasSex data:female ;
+    :isMotherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen .
+
+data:Prince_Andreas_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Andreas of Prussia" ;
+    data:posIndicesFull "318:343" ;
+    data:wdtLink wdt:Q75381594 ;
+    :alsoKnownAs "Andreas Prinz von Preußen",
+        "Prince William Andreas of Prussia",
+        "Prince William Andrew of Prussia",
+        "William Andrew Prinz von Preußen" ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasSex data:male ;
+    :isFatherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen .
+
+data:Tatiana_von_Preussen a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Tatiana von Preussen" ;
+    data:posIndicesFull "0:20",
+        "180:200",
+        "278:298" ;
+    data:posIndicesPart "583:591",
+        "666:674",
+        "710:718" ;
+    data:wdtLink wdt:Q45319451 ;
+    :alsoKnownAs "Tatiana Brigid Honor Womack",
+        "Tatiana Brigid Honor von Preussen",
+        "Tatiana Brigid Honor von Preußen",
+        "Tatiana Womack",
+        "Tatiana von Preußen" ;
+    :hasFather data:Prince_Andreas_of_Prussia ;
+    :hasMother data:Alexandra_Blahova ;
+    :hasParent data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :hasSex data:female ;
+    :isChildOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :isDaughterOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia .
+

@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
+    data:posIndicesFull "1054:1058",
+        "1561:1565" ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime",
+        "Jaime de Borbón y Landaluce",
+        "Jaime di Borbone-Due Sicilie" ;
+    :hasSex data:male .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "721:749" ;
+    data:posIndicesPart "1154:1162",
+        "1497:1505",
+        "1761:1769",
+        "2251:2259",
+        "2622:2630" ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:posIndicesFull "730:758" ;
+    data:posIndicesPart "877:884" ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
+    :hasChild data:Princess_Claude_dOrléans ;
+    :hasDaughter data:Princess_Claude_dOrléans ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Claude_dOrléans ;
+    :isParentOf data:Princess_Claude_dOrléans .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
+    data:posIndicesFull "1259:1287" ;
+    data:posIndicesPart "1350:1356",
+        "1535:1540",
+        "2068:2074",
+        "2611:2617",
+        "2651:2655",
+        "2732:2738",
+        "3002:3008" ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste",
+        "Prince Aimone of Savoy-Aosta",
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta",
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta",
+        "Prince Aimone, Duke of Aosta",
+        "Prince Aimone, The 6th Duke of Aosta",
+        "Prince Aimone, The Duke of Aosta" ;
+    :hasMother data:Princess_Claude_dOrléans ;
+    :hasParent data:Princess_Claude_dOrléans ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Claude_dOrléans ;
+    :isSonOf data:Princess_Claude_dOrléans .
+
+data:Princess_Claude_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Claude d’Orléans" ;
+    data:wdtLink wdt:Q1626864 ;
+    :alsoKnownAs "Princess Claude Marie Agnès Catherine d'Orléans",
+        "Princess Claude, Duchess of Aosta" ;
+    :hasChild data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza ;
+    :isDaughterOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone-_6th_Duke_of_Aosta .
+

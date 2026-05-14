@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduke_Leopold_Franz_of_Austria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Archduke Leopold Franz of Austria" ;
+    data:posIndicesFull "646:679" ;
+    data:wdtLink wdt:Q3198365 ;
+    :alsoKnownAs "Leopold Franz Erzherzog von Österreich" ;
+    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:male ;
+    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isFatherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany .
+
+data:Laetitia_dArenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Laetitia d'Arenberg" ;
+    data:posIndicesFull "516:535" ;
+    data:wdtLink wdt:Q6408488 ;
+    :alsoKnownAs "Laetitia Marie Madelaine Susanne Valentine de Belzunce-d'Arenberg" ;
+    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:female ;
+    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isMotherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany .
+
+data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Archduke Sigismund, Hereditary Grand Duke of Tuscany" ;
+    data:posIndicesFull "0:41" ;
+    data:posIndicesPart "1060:1069",
+        "283:291",
+        "315:323",
+        "389:394",
+        "404:411",
+        "451:456",
+        "457:461",
+        "465:472",
+        "732:737",
+        "764:773",
+        "924:933" ;
+    data:wdtLink wdt:Q2019524 ;
+    :alsoKnownAs "Archduke Sigismund Otto of Austria",
+        "Archduke Sigismund Otto, Grand Duke of Tuscany",
+        "Archduke Sigismund of Austria",
+        "Archduke Sigismund, Grand Duke of Tuscany",
+        "Sigismund Otto Erzherzog von Österreich",
+        "Sigismund Otto of Austria",
+        "Sigismund of Austria" ;
+    :hasFather data:Archduke_Leopold_Franz_of_Austria ;
+    :hasMother data:Laetitia_dArenberg ;
+    :hasParent data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :hasSex data:male ;
+    :isChildOf data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :isSonOf data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg .
+

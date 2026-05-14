@@ -1,0 +1,116 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Albemarle Bowes-Lyon" ;
+    data:posIndicesFull "224:242",
+        "674:692" ;
+    data:posIndicesPart "2657:2661",
+        "2673:2677",
+        "2777:2782",
+        "598:603",
+        "604:608",
+        "643:648",
+        "649:653" ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon",
+        "Hon. Michael Albemarle Bowes-Lyon",
+        "Hon. Michael Bowes-Lyon",
+        "Michael Albemarle Bowes-Lyon",
+        "Michael Bowes-Lyon" ;
+    :hasSex data:male ;
+    :isUncleOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Isobel_Weatherall a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Isobel Weatherall" ;
+    data:posIndicesFull "303:320",
+        "821:838" ;
+    data:wdtLink wdt:Q75248473 ;
+    :alsoKnownAs "Isobel Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Isobel Bowes-Lyon, Lady Glamis",
+        "Isobel Charlotte Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Isobel Charlotte Bowes-Lyon, Lady Glamis",
+        "Isobel Charlotte Weatherall",
+        "Isobel Charlotte, Countess of Strathmore and Kinghorne",
+        "Isobel, Countess of Strathmore and Kinghorne" ;
+    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female ;
+    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne" ;
+    data:posIndicesFull "224:242",
+        "224:281",
+        "674:692",
+        "674:731" ;
+    data:posIndicesPart "1143:1147",
+        "1157:1167",
+        "1374:1384",
+        "1409:1419",
+        "1558:1562",
+        "1647:1657",
+        "1815:1825",
+        "1979:1989",
+        "2152:2162",
+        "2208:2218",
+        "2325:2329",
+        "2389:2393",
+        "2567:2577",
+        "2582:2591",
+        "2593:2603",
+        "2657:2661",
+        "2673:2677",
+        "2777:2782",
+        "432:442",
+        "598:603",
+        "604:608",
+        "643:648",
+        "649:653",
+        "887:897" ;
+    data:wdtLink wdt:Q335615 ;
+    :alsoKnownAs "Michael Bowes-Lyon",
+        "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne" ;
+    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q7518316 ;
+    :alsoKnownAs "Simon Patrick Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
+    :hasFather data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Isobel_Weatherall ;
+    :hasParent data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :isChildOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSonOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+

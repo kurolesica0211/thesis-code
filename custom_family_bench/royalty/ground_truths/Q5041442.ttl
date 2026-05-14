@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Carlo Alessandro, 3rd Duke of Castel Duino" ;
+    data:wdtLink wdt:Q5041442 ;
+    :alsoKnownAs "Carlo Alessandro della Torre e Tasso, Duke di Castel Duino",
+        "Prince Carlo Alessandro della Torre e Tasso, Duke di Castel Duino" ;
+    :hasMother data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isSonOf data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Princess_Eugénie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Eugénie of Greece and Denmark" ;
+    data:posIndicesFull "268:306",
+        "277:306" ;
+    data:posIndicesPart "456:462" ;
+    data:wdtLink wdt:Q2379307 ;
+    :alsoKnownAs "Eugénie of Greece and Denmark",
+        "Princess Eugenie of Greece and Denmark" ;
+    :hasChild data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isMotherOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isParentOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino .
+

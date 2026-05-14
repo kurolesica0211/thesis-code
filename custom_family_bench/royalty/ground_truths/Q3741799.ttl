@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Flora_Vesterberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Flora Vesterberg" ;
+    data:wdtLink wdt:Q3741799 ;
+    :alsoKnownAs "Flora Ogilvy" ;
+    :hasMother data:Julia_Ogilvy ;
+    :hasParent data:Julia_Ogilvy ;
+    :hasSex data:female ;
+    :isChildOf data:Julia_Ogilvy ;
+    :isDaughterOf data:Julia_Ogilvy .
+
+data:Julia_Ogilvy a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Julia Ogilvy" ;
+    data:posIndicesFull "169:193" ;
+    data:posIndicesPart "346:352",
+        "434:440" ;
+    data:wdtLink wdt:Q15956270 ;
+    :alsoKnownAs "Julia Caroline Rawlinson",
+        "Julia Rawlinson" ;
+    :hasChild data:Flora_Vesterberg ;
+    :hasDaughter data:Flora_Vesterberg ;
+    :hasSex data:female ;
+    :isMotherOf data:Flora_Vesterberg ;
+    :isParentOf data:Flora_Vesterberg .
+

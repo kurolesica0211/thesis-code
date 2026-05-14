@@ -1,0 +1,89 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Adalbert_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Adalbert of Prussia" ;
+    data:posIndicesFull "116:144",
+        "790:816" ;
+    data:posIndicesPart "1078:1084",
+        "1112:1118",
+        "1119:1127",
+        "1224:1230",
+        "1231:1239",
+        "1491:1497",
+        "1575:1581",
+        "1582:1590",
+        "304:310",
+        "455:461",
+        "520:526",
+        "967:973",
+        "974:982" ;
+    data:wdtLink wdt:Q50998 ;
+    :alsoKnownAs "Prince Adalbert Ferdinand Berengar Viktor of Prussia" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "210:248" ;
+    data:posIndicesPart "1320:1328",
+        "1621:1629",
+        "258:266",
+        "536:544",
+        "566:574",
+        "616:621",
+        "622:633",
+        "677:682",
+        "773:781",
+        "864:872" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Adelaide_of_Saxe-Meiningen .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Adelaide of Saxe-Meiningen" ;
+    data:posIndicesFull "0:35",
+        "116:144",
+        "790:816" ;
+    data:posIndicesPart "1311:1319",
+        "1320:1328",
+        "1612:1620",
+        "1621:1629",
+        "258:266",
+        "355:359",
+        "360:369",
+        "536:544",
+        "566:574",
+        "864:872" ;
+    data:wdtLink wdt:Q261826 ;
+    :alsoKnownAs "Princess Adalbert of Prussia",
+        "Princess Adelheid, Princess Adalbert of Prussia" ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+

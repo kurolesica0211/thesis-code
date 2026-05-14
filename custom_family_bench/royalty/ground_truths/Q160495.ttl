@@ -1,0 +1,332 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "4761:4787" ;
+    data:posIndicesPart "6236:6241",
+        "6401:6406",
+        "6577:6582" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Christian-_Crown_Prince_of_Denmark a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian, Crown Prince of Denmark" ;
+    data:posIndicesFull "1436:1465",
+        "21:55",
+        "21:74",
+        "79:108" ;
+    data:posIndicesPart "1094:1103",
+        "1116:1125",
+        "1255:1260",
+        "1261:1267",
+        "1283:1288",
+        "1289:1295",
+        "1300:1305",
+        "1330:1335",
+        "1699:1706",
+        "1769:1776",
+        "1870:1876",
+        "1877:1886",
+        "1926:1932",
+        "2073:2082",
+        "2205:2214",
+        "2494:2501",
+        "2540:2549",
+        "2767:2776",
+        "2937:2946",
+        "3084:3090",
+        "3107:3116",
+        "322:327",
+        "3270:3276",
+        "3288:3295",
+        "328:334",
+        "3333:3342",
+        "3386:3392",
+        "338:345",
+        "3761:3770",
+        "3812:3821",
+        "3911:3920",
+        "4020:4027",
+        "4100:4109",
+        "4161:4168",
+        "4207:4216",
+        "4331:4337",
+        "4338:4347",
+        "4517:4526",
+        "473:482",
+        "4793:4798",
+        "4799:4805",
+        "4810:4815",
+        "4840:4845",
+        "4846:4852",
+        "4857:4862",
+        "4924:4929",
+        "5138:5145",
+        "5203:5212",
+        "5347:5356",
+        "5476:5485",
+        "5566:5575",
+        "5818:5827",
+        "5935:5940",
+        "5941:5947",
+        "5951:5958",
+        "5960:5969",
+        "6159:6168",
+        "6197:6206",
+        "6211:6220",
+        "6379:6385",
+        "6386:6395",
+        "6412:6417",
+        "6418:6424",
+        "658:665",
+        "6623:6628",
+        "6629:6635",
+        "6694:6703",
+        "6758:6763",
+        "6764:6770",
+        "6771:6780",
+        "6800:6809",
+        "6913:6922",
+        "6958:6964",
+        "7005:7011",
+        "7108:7113",
+        "7134:7143",
+        "7503:7512",
+        "7580:7589",
+        "760:769",
+        "7613:7618",
+        "7619:7625",
+        "7626:7635",
+        "7719:7724",
+        "985:992" ;
+    data:wdtLink wdt:Q160495 ;
+    :alsoKnownAs "Christian Valdemar Henri John",
+        "Christian Valdemar Henri John, Crown Prince of Denmark",
+        "Christian Valdemar Henri John, Crown Prince of Denmark, Count of Monpezat",
+        "Christian, Crown Prince of Denmark, Count of Monpezat",
+        "Prince Christian of Denmark, Count of Monpezat",
+        "Prins Christian til Danmark" ;
+    :hasFather data:Frederik_X_of_Denmark ;
+    :hasParent data:Frederik_X_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Frederik_X_of_Denmark ;
+    :isSonOf data:Frederik_X_of_Denmark .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "1455:1460",
+        "3091:3097",
+        "862:866",
+        "98:103" ;
+    data:posIndicesPart "1261:1267",
+        "1289:1295",
+        "1699:1706",
+        "1769:1776",
+        "1870:1876",
+        "1926:1932",
+        "2494:2501",
+        "3270:3276",
+        "3277:3284",
+        "3288:3295",
+        "328:334",
+        "3386:3392",
+        "338:345",
+        "4020:4027",
+        "4161:4168",
+        "4331:4337",
+        "4799:4805",
+        "4846:4852",
+        "5138:5145",
+        "5941:5947",
+        "5951:5958",
+        "6379:6385",
+        "6418:6424",
+        "658:665",
+        "6629:6635",
+        "6764:6770",
+        "6958:6964",
+        "7005:7011",
+        "7619:7625",
+        "985:992" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasChild data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isFatherOf data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "298:310",
+        "3524:3536",
+        "4397:4409",
+        "4697:4709",
+        "6242:6254",
+        "6:18" ;
+    data:posIndicesPart "1699:1706",
+        "1769:1776",
+        "2494:2501",
+        "3288:3295",
+        "338:345",
+        "4020:4027",
+        "4161:4168",
+        "5138:5145",
+        "5951:5958",
+        "658:665",
+        "985:992" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isMotherOf data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Prince_Joachim_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Joachim of Denmark" ;
+    data:posIndicesFull "1163:1188" ;
+    data:posIndicesPart "1699:1706",
+        "1769:1776",
+        "1870:1876",
+        "1926:1932",
+        "2494:2501",
+        "3084:3090",
+        "3270:3276",
+        "3288:3295",
+        "3386:3392",
+        "4020:4027",
+        "4161:4168",
+        "4331:4337",
+        "4799:4805",
+        "4846:4852",
+        "5138:5145",
+        "5941:5947",
+        "5951:5958",
+        "6379:6385",
+        "6418:6424",
+        "6629:6635",
+        "6764:6770",
+        "6958:6964",
+        "7005:7011",
+        "7619:7625" ;
+    data:wdtLink wdt:Q159101 ;
+    :alsoKnownAs "Joachim Holger Valdemar Christian, Prince of Denmark",
+        "Joachim Holger Waldemar Christian",
+        "Prince Joachim of Denmark, Count of Monpezat" ;
+    :hasBrother data:Frederik_X_of_Denmark ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isBrotherOf data:Frederik_X_of_Denmark ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Frederik_X_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isUncleOf data:Christian-_Crown_Prince_of_Denmark .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "207:217" ;
+    data:posIndicesPart "1552:1560",
+        "1699:1706",
+        "1769:1776",
+        "2494:2501",
+        "3288:3295",
+        "338:345",
+        "4020:4027",
+        "4161:4168",
+        "5138:5145",
+        "5951:5958",
+        "6033:6041",
+        "6146:6154",
+        "6425:6433",
+        "658:665",
+        "6636:6644",
+        "6682:6690",
+        "985:992" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasBrother data:Prince_Joachim_of_Denmark ;
+    :hasChild data:Christian-_Crown_Prince_of_Denmark ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Christian-_Crown_Prince_of_Denmark ;
+    :isBrotherOf data:Prince_Joachim_of_Denmark ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isFatherOf data:Christian-_Crown_Prince_of_Denmark ;
+    :isParentOf data:Christian-_Crown_Prince_of_Denmark ;
+    :isSiblingOf data:Prince_Joachim_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark .
+

@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "1022:1042",
+        "383:403" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasParent data:Frederick_Francis_III ;
+    :hasSex data:male ;
+    :isChildOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_III .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "592:612" ;
+    data:posIndicesPart "1077:1086" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasChild data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isFatherOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isParentOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Augusta Reuss of Köstritz" ;
+    data:posIndicesFull "659:693" ;
+    data:posIndicesPart "2220:2228",
+        "2731:2739",
+        "2930:2938" ;
+    data:wdtLink wdt:Q63095 ;
+    :hasChild data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :hasSex data:female ;
+    :hasSon data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isMotherOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isParentOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III .
+
+data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Johann Albrecht of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "0:31",
+        "520:551" ;
+    data:posIndicesPart "1016:1020",
+        "1067:1071",
+        "1143:1147",
+        "1405:1409",
+        "1698:1702",
+        "1885:1889",
+        "2424:2428",
+        "2577:2581",
+        "2855:2859",
+        "3035:3039",
+        "3162:3168",
+        "329:340",
+        "341:349",
+        "411:415",
+        "419:430",
+        "707:711",
+        "905:909",
+        "913:924",
+        "943:947" ;
+    data:wdtLink wdt:Q61464 ;
+    :alsoKnownAs "Duke John Albert of Mecklenburg",
+        "Johann Albrecht Herzog zu Mecklenburg" ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isUncleOf data:Frederick_Francis_IV .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis III" ;
+    data:posIndicesFull "876:897" ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz III",
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasBrother data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isBrotherOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Duke_Johann_Albrecht_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz .
+

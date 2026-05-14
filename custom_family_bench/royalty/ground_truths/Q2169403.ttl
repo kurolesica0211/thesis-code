@@ -1,0 +1,165 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Oskar_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Oskar of Prussia" ;
+    data:posIndicesFull "178:201",
+        "185:201" ;
+    data:posIndicesPart "817:824" ;
+    data:wdtLink wdt:Q100307 ;
+    :alsoKnownAs "Prince Oscar of Prussia" ;
+    :hasSex data:male .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "1050:1059",
+        "1050:1070" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Countess_Ina_Marie_von_Bassewitz a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Ina Marie von Bassewitz" ;
+    data:posIndicesFull "285:317" ;
+    data:posIndicesPart "454:462",
+        "478:483" ;
+    data:wdtLink wdt:Q772541 ;
+    :alsoKnownAs "Countess Ina-Marie Helene Adele Elise von Bassewitz",
+        "Ina Marie Bassewitz" ;
+    :hasChild data:Princess_Herzeleide_of_Prussia ;
+    :hasDaughter data:Princess_Herzeleide_of_Prussia ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Herzeleide_of_Prussia ;
+    :isParentOf data:Princess_Herzeleide_of_Prussia .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "1456:1476" ;
+    data:posIndicesPart "1569:1575",
+        "1664:1671" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasBrother data:Prince_Oskar_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Oskar_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Oskar_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Frederica_of_Hanover,
+        data:Princess_Herzeleide_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "238:248",
+        "931:941",
+        "931:942" ;
+    data:posIndicesPart "1489:1496",
+        "1664:1671",
+        "749:756" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Prince_Oskar_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Oskar_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isFatherOf data:Prince_Oskar_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Prince_Oskar_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Princess_Herzeleide_of_Prussia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Herzeleide of Prussia" ;
+    data:posIndicesFull "1156:1166",
+        "463:473",
+        "666:676",
+        "763:773",
+        "958:968",
+        "9:19" ;
+    data:wdtLink wdt:Q2169403 ;
+    :alsoKnownAs "Herzeleide",
+        "Herzeleide-Ina-Marie Sophie Charlotte Else Prinzessin von Preußen" ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMother data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasSex data:female ;
+    :isAuntOf data:Oskar_of_Prussia ;
+    :isChildOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :isDaughterOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia .
+
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Oskar of Prussia" ;
+    data:posIndicesFull "178:201",
+        "185:201" ;
+    data:posIndicesPart "1175:1181",
+        "1277:1283",
+        "360:366",
+        "807:813",
+        "817:824" ;
+    data:wdtLink wdt:Q61242 ;
+    :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia",
+        "Oskar of Prussia",
+        "Prince Oskar Karl Gustav Adolf of Prussia" ;
+    :hasBrother data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Princess_Herzeleide_of_Prussia ;
+    :hasDaughter data:Princess_Herzeleide_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Princess_Herzeleide_of_Prussia ;
+    :isParentOf data:Princess_Herzeleide_of_Prussia ;
+    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Frederica_of_Hanover .
+

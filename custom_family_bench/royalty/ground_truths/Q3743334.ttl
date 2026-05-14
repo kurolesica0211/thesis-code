@@ -1,0 +1,234 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "670:683",
+        "670:697",
+        "685:697" ;
+    data:posIndicesPart "1137:1143",
+        "1153:1157" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasSex data:male ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews ;
+    :isFatherOf data:George_Windsor-_Earl_of_St_Andrews ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Helen Taylor" ;
+    data:posIndicesFull "237:250",
+        "42:55",
+        "845:858" ;
+    data:posIndicesPart "195:199",
+        "614:618",
+        "983:987" ;
+    data:wdtLink wdt:Q674343 ;
+    :alsoKnownAs "Helen Marina Lucy Taylor",
+        "Helen Marina Lucy Windsor",
+        "Helen Taylor",
+        "Helen Windsor",
+        "Lady Helen Marina Lucy Taylor",
+        "Lady Helen Marina Lucy Windsor",
+        "The Lady Helen Marina Lucy Taylor" ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent ;
+    :hasSex data:female ;
+    :isAuntOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent ;
+    :isDaughterOf data:Katharine-_Duchess_of_Kent ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews ;
+    :isSisterOf data:George_Windsor-_Earl_of_St_Andrews .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Katharine, Duchess of Kent" ;
+    data:posIndicesFull "742:768" ;
+    data:posIndicesPart "835:844" ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent",
+        "Katharine Lucy Mary Worsley",
+        "Katharine Lucy Mary, Duchess of Kent",
+        "Katharine Worsley" ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasSex data:female ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews ;
+    :isMotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lady_Helen_Taylor .
+
+data:Sylvana_Windsor-_Countess_of_St_Andrews a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sylvana Windsor, Countess of St Andrews" ;
+    data:posIndicesFull "440:457" ;
+    data:wdtLink wdt:Q763241 ;
+    :alsoKnownAs "Dr Sylvana Tomaselli",
+        "Sylvana Palma Tomaselli",
+        "Sylvana Tomaselli",
+        "Sylvana Windsor" ;
+    :hasChild data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :hasDaughter data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :hasSex data:female ;
+    :hasSon data:Edward_Windsor-_Lord_Downpatrick ;
+    :isMotherOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isParentOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Amelia_Windsor a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amelia Windsor" ;
+    data:posIndicesFull "619:633" ;
+    data:wdtLink wdt:Q3743378 ;
+    :alsoKnownAs "Lady Amelia Sophia Theodora Mary Margaret Windsor",
+        "Mel Windsor",
+        "The Lady Amelia Sophia Theodora Mary Margaret Windsor" ;
+    :hasBrother data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Marina_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isDaughterOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSisterOf data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Edward_Windsor-_Lord_Downpatrick a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward Windsor, Lord Downpatrick" ;
+    data:posIndicesFull "554:586",
+        "570:586" ;
+    data:wdtLink wdt:Q3736843 ;
+    :alsoKnownAs "Eddy Downpatrick",
+        "Edward Downpatrick",
+        "Edward Edmund Maximilian George Windsor, Baron Downpatrick",
+        "Lord Downpatrick" ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:male ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBrotherOf data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isSonOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews .
+
+data:Marina_Windsor a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marina Windsor" ;
+    data:wdtLink wdt:Q3743334 ;
+    :alsoKnownAs "Lady Marina Charlotte Alexandra Katharine Helen Windsor",
+        "Lady Marina Charlotte Windsor",
+        "Lady Marina-Charlotte Alexandra Katherine Helen Windsor",
+        "Lady Marina-Charlotte Windsor",
+        "Marina Charlotte Windsor",
+        "Marina-Charlotte Windsor" ;
+    :hasBrother data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Amelia_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isDaughterOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick ;
+    :isSisterOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick .
+
+data:George_Windsor-_Earl_of_St_Andrews a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Windsor, Earl of St Andrews" ;
+    data:posIndicesFull "353:367",
+        "353:387" ;
+    data:wdtLink wdt:Q1009513 ;
+    :alsoKnownAs "George Philip Nicholas Windsor",
+        "George Philip Nicholas Windsor, Earl of St Andrews",
+        "George Philip Nicholas Windsor, Earl of St. Andrews",
+        "George St Andrews",
+        "George St. Andrews",
+        "George Windsor" ;
+    :hasChild data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :hasDaughter data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :hasSon data:Edward_Windsor-_Lord_Downpatrick ;
+    :isBrotherOf data:Lady_Helen_Taylor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isParentOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSiblingOf data:Lady_Helen_Taylor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent .
+

@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Pieter van Vollenhoven" ;
+    data:posIndicesFull "225:247" ;
+    data:posIndicesPart "1132:1138",
+        "329:335",
+        "761:772",
+        "998:1009" ;
+    data:wdtLink wdt:Q301365 ;
+    :hasChild data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :isFatherOf data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Floris_of_Orange-Nassau-Vollenhoven .
+
+data:Princess_Margriet_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margriet of the Netherlands" ;
+    data:posIndicesFull "184:220",
+        "193:220" ;
+    data:posIndicesPart "1258:1269",
+        "1372:1380",
+        "671:682",
+        "702:710",
+        "739:747",
+        "932:940",
+        "941:949" ;
+    data:wdtLink wdt:Q268821 ;
+    :alsoKnownAs "Margriet Francisca  of the Netherlands",
+        "Margriet Francisca van Oranje-Nassau",
+        "Margriet of the Netherlands",
+        "Margriet van Oranje",
+        "Princess Margriet Francisca of the Netherlands" ;
+    :hasChild data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :isMotherOf data:Prince_Floris_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Floris_of_Orange-Nassau-Vollenhoven .
+
+data:Prince_Floris_of_Orange-Nassau-Vollenhoven a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Floris of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q3141755 ;
+    :alsoKnownAs "Floris Frederik Martijn van Vollenhoven, Prins van Oranje-Nassau",
+        "Floris of Orange-Nassau, van Vollenhoven",
+        "Floris van Oranje-Nassau, van Vollenhoven",
+        "Floris van Vollenhoven" ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet_of_the_Netherlands ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands .
+

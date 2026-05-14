@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Walburga-_Countess_Douglas a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Walburga, Countess Douglas" ;
+    data:posIndicesFull "798:829" ;
+    data:posIndicesPart "1062:1070",
+        "1071:1078",
+        "1177:1184",
+        "1325:1333",
+        "1388:1395",
+        "1457:1464",
+        "1581:1588",
+        "1638:1645",
+        "1727:1734",
+        "1929:1936" ;
+    data:wdtLink wdt:Q77555 ;
+    :alsoKnownAs "Archduchess Walburga Maria Franziska Helene Elisabeth of Austria",
+        "Archduchess Walburga of Austria",
+        "The Archduchess Walburga of Austria",
+        "Walburga Habsburg Douglas",
+        "Walburga von Habsburg",
+        "Walburga von Habsburg av Douglas" ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasSex data:female ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isDaughterOf data:Otto_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "311:328" ;
+    data:posIndicesPart "1917:1921",
+        "540:548",
+        "720:728" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasChild data:Archduchess_Walburga-_Countess_Douglas ;
+    :hasDaughter data:Archduchess_Walburga-_Countess_Douglas ;
+    :hasSex data:male ;
+    :isFatherOf data:Archduchess_Walburga-_Countess_Douglas ;
+    :isParentOf data:Archduchess_Walburga-_Countess_Douglas .
+

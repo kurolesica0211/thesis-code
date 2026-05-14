@@ -1,0 +1,148 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Margaret_Messenger a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margaret Messenger" ;
+    data:posIndicesFull "1847:1874" ;
+    data:wdtLink wdt:Q75381841 ;
+    :alsoKnownAs "Margaret Lascelles, Viscountess Lascelles",
+        "Margaret Rosalind Lascelles, Viscountess Lascelles",
+        "Margaret Rosalind Messenger",
+        "Margaret Rosalind, Viscountess Lascelles",
+        "Margaret, Viscountess Lascelles" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Gerald David Lascelles" ;
+    data:posIndicesFull "661:677" ;
+    data:posIndicesPart "1037:1046",
+        "1293:1302",
+        "1829:1838",
+        "1888:1897",
+        "1965:1974",
+        "893:902" ;
+    data:wdtLink wdt:Q2962982 ;
+    :alsoKnownAs "Gerald Lascelles",
+        "Hon. Gerald David Lascelles",
+        "Hon. Gerald Lascelles" ;
+    :hasBrother data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasSex data:male ;
+    :isBrotherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isSiblingOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isUncleOf data:David_Lascelles-_8th_Earl_of_Harewood .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marion Stein" ;
+    data:posIndicesFull "399:411" ;
+    data:wdtLink wdt:Q2010206 ;
+    :alsoKnownAs "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Lascelles, Countess of Harewood",
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Stein",
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Thorpe",
+        "Maria Stein",
+        "Marion Harewood",
+        "Marion Lascelles, Countess of Harewood",
+        "Marion Thorpe" ;
+    :hasChild data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasSex data:female ;
+    :hasSon data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isMotherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isParentOf data:David_Lascelles-_8th_Earl_of_Harewood .
+
+data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Lascelles, 7th Earl of Harewood" ;
+    data:posIndicesFull "12:28",
+        "220:236" ;
+    data:posIndicesPart "1037:1046",
+        "1176:1184",
+        "1293:1302",
+        "1542:1546",
+        "1550:1558",
+        "1736:1744",
+        "1829:1838",
+        "1888:1897",
+        "1965:1974",
+        "2023:2031",
+        "362:366",
+        "370:378",
+        "452:460",
+        "771:777",
+        "814:822",
+        "893:902" ;
+    data:wdtLink wdt:Q336609 ;
+    :alsoKnownAs "George Harewood",
+        "George Henry Hubert Lascelles, 7th Earl of Harewood",
+        "George Henry Hubert Lascelles, Viscount Lascelles",
+        "George Lascelles",
+        "George Lascelles, Viscount Lascelles",
+        "Hon. George Henry Hubert Lascelles",
+        "Hon. George Lascelles",
+        "Lascelles, George" ;
+    :hasBrother data:Gerald_David_Lascelles ;
+    :hasChild data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isBrotherOf data:Gerald_David_Lascelles ;
+    :isFatherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isParentOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isSiblingOf data:Gerald_David_Lascelles .
+
+data:David_Lascelles-_8th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "David Lascelles, 8th Earl of Harewood" ;
+    data:posIndicesFull "0:50" ;
+    data:posIndicesPart "1037:1046",
+        "1176:1184",
+        "1293:1302",
+        "1542:1546",
+        "1550:1558",
+        "1736:1744",
+        "1829:1838",
+        "1888:1897",
+        "1965:1974",
+        "2023:2031",
+        "208:213",
+        "362:366",
+        "370:378",
+        "452:460",
+        "814:822",
+        "893:902" ;
+    data:wdtLink wdt:Q619788 ;
+    :alsoKnownAs "David Harewood",
+        "David Henry George Lascelles, 8th Earl of Harewood",
+        "David Henry George Lascelles, Viscount Lascelles",
+        "David Lascelles, Viscount Lascelles" ;
+    :hasFather data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male ;
+    :isChildOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSonOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein .
+

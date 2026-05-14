@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Davina_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Davina Bowes-Lyon" ;
+    data:posIndicesFull "229:256",
+        "301:317" ;
+    data:posIndicesPart "1001:1007",
+        "367:373",
+        "586:591",
+        "592:596" ;
+    data:wdtLink wdt:Q75253177 ;
+    :alsoKnownAs "Davina Dalrymple, Countess of Stair",
+        "Davina Dalrymple, Viscountess Dalrymple",
+        "Davina Katherine Bowes-Lyon",
+        "Davina Katherine Dalrymple, Countess of Stair",
+        "Davina Katherine Dalrymple, Viscountess Dalrymple",
+        "Davina Stair" ;
+    :hasChild data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :hasSex data:female ;
+    :hasSon data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isMotherOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isParentOf data:John_Dalrymple-_14th_Earl_of_Stair .
+
+data:John_Dalrymple-_14th_Earl_of_Stair a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "John Dalrymple, 14th Earl of Stair" ;
+    data:posIndicesFull "0:46" ;
+    data:posIndicesPart "1061:1066",
+        "1106:1111",
+        "161:166",
+        "190:194",
+        "195:204",
+        "211:215",
+        "219:224",
+        "351:356",
+        "686:695",
+        "918:923" ;
+    data:wdtLink wdt:Q1699743 ;
+    :alsoKnownAs "John David James Dalrymple, 14th Earl of Stair",
+        "John Stair" ;
+    :hasMother data:Davina_Bowes-Lyon ;
+    :hasParent data:Davina_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isChildOf data:Davina_Bowes-Lyon ;
+    :isSonOf data:Davina_Bowes-Lyon .
+

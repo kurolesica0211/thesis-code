@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Adelaide of Saxe-Meiningen" ;
+    data:posIndicesFull "265:291" ;
+    data:posIndicesPart "460:468" ;
+    data:wdtLink wdt:Q261826 ;
+    :alsoKnownAs "Princess Adalbert of Prussia",
+        "Princess Adelheid, Princess Adalbert of Prussia" ;
+    :hasChild data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isMotherOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:posIndicesFull "327:330" ;
+    data:posIndicesPart "375:381",
+        "552:558",
+        "559:566",
+        "919:925",
+        "926:933" ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi" ;
+    :hasBrother data:Prince_Adalbert_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Adalbert_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Adalbert_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Wilhelm_Victor_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "228:238" ;
+    data:posIndicesPart "559:566",
+        "926:933" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Prince_Adalbert_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Adalbert_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :isFatherOf data:Prince_Adalbert_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Adalbert_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia .
+
+data:Prince_Wilhelm_Victor_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wilhelm Victor of Prussia" ;
+    data:posIndicesFull "0:32" ;
+    data:posIndicesPart "180:186",
+        "187:194",
+        "195:201",
+        "375:381",
+        "552:558",
+        "559:566",
+        "567:573",
+        "919:925",
+        "926:933" ;
+    data:wdtLink wdt:Q7244274 ;
+    :alsoKnownAs "Wilhelm-Victor Prinz von Preußen" ;
+    :hasFather data:Prince_Adalbert_of_Prussia ;
+    :hasMother data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasParent data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isSonOf data:Prince_Adalbert_of_Prussia,
+        data:Princess_Adelaide_of_Saxe-Meiningen .
+
+data:Prince_Adalbert_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Adalbert of Prussia" ;
+    data:posIndicesFull "265:291" ;
+    data:posIndicesPart "375:381",
+        "382:390",
+        "552:558",
+        "919:925" ;
+    data:wdtLink wdt:Q50998 ;
+    :alsoKnownAs "Prince Adalbert Ferdinand Berengar Viktor of Prussia" ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasChild data:Prince_Wilhelm_Victor_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+

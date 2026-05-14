@@ -1,0 +1,140 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elizabeth_Cator a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth Cator" ;
+    data:posIndicesFull "278:302" ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon",
+        "Elizabeth Margaret Bowes-Lyon",
+        "Elizabeth Margaret Cator" ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasSex data:female ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isMotherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "383:401",
+        "389:401" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael Bowes-Lyon" ;
+    data:posIndicesFull "227:261" ;
+    data:posIndicesPart "542:547",
+        "548:552",
+        "646:651",
+        "652:656",
+        "904:909",
+        "910:914" ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon",
+        "Hon. Michael Claude Hamilton Bowes-Lyon",
+        "Michael Claude Hamilton Bowes-Lyon" ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isFatherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "112:128",
+        "383:398",
+        "441:457",
+        "826:841",
+        "842:858",
+        "96:111" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasSex data:female ;
+    :isAuntOf data:Albemarle_Bowes-Lyon ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isSisterOf data:Michael_Bowes-Lyon .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Albemarle Bowes-Lyon" ;
+    data:posIndicesFull "0:28",
+        "8:28" ;
+    data:posIndicesPart "141:146",
+        "147:151",
+        "542:547",
+        "548:552",
+        "646:651",
+        "652:656",
+        "904:909",
+        "910:914" ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon",
+        "Hon. Michael Albemarle Bowes-Lyon",
+        "Hon. Michael Bowes-Lyon",
+        "Michael Albemarle Bowes-Lyon",
+        "Michael Bowes-Lyon" ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Cator ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isChildOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isSonOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon .
+

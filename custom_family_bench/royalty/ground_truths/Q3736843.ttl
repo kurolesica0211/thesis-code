@@ -1,0 +1,126 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Edward_Windsor-_Lord_Downpatrick a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward Windsor, Lord Downpatrick" ;
+    data:posIndicesFull "106:122",
+        "41:57" ;
+    data:posIndicesPart "1148:1159",
+        "1337:1348",
+        "1486:1497",
+        "1527:1534",
+        "1768:1779",
+        "1932:1943",
+        "2029:2040",
+        "304:315",
+        "375:386",
+        "429:436",
+        "560:566",
+        "801:812",
+        "978:989" ;
+    data:wdtLink wdt:Q3736843 ;
+    :alsoKnownAs "Eddy Downpatrick",
+        "Edward Downpatrick",
+        "Edward Edmund Maximilian George Windsor, Baron Downpatrick",
+        "Lord Downpatrick" ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasSex data:male ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews ;
+    :isSonOf data:George_Windsor-_Earl_of_St_Andrews .
+
+data:Lord_Nicholas_Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Lord Nicholas Windsor" ;
+    data:posIndicesFull "1745:1766",
+        "1750:1766" ;
+    data:wdtLink wdt:Q1217757 ;
+    :alsoKnownAs "Lord Nicholas Charles Edward Jonathan Windsor",
+        "Nicholas Charles Edward Jonathan Windsor",
+        "Nicholas Windsor" ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasParent data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBrotherOf data:George_Windsor-_Earl_of_St_Andrews ;
+    :isChildOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews ;
+    :isSonOf data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:Edward_Windsor-_Lord_Downpatrick .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "772:785",
+        "772:799",
+        "787:799" ;
+    data:posIndicesPart "1725:1729",
+        "2119:2123" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:male ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isFatherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor .
+
+data:George_Windsor-_Earl_of_St_Andrews a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Windsor, Earl of St Andrews" ;
+    data:posIndicesFull "25:39",
+        "585:599",
+        "711:725",
+        "711:745" ;
+    data:posIndicesPart "1527:1534",
+        "429:436",
+        "847:854" ;
+    data:wdtLink wdt:Q1009513 ;
+    :alsoKnownAs "George Philip Nicholas Windsor",
+        "George Philip Nicholas Windsor, Earl of St Andrews",
+        "George Philip Nicholas Windsor, Earl of St. Andrews",
+        "George St Andrews",
+        "George St. Andrews",
+        "George Windsor" ;
+    :hasBrother data:Lord_Nicholas_Windsor ;
+    :hasChild data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasParent data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Edward_Windsor-_Lord_Downpatrick ;
+    :isBrotherOf data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:Edward_Windsor-_Lord_Downpatrick ;
+    :isParentOf data:Edward_Windsor-_Lord_Downpatrick ;
+    :isSiblingOf data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Prince_Edward-_Duke_of_Kent .
+

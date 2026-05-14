@@ -1,0 +1,322 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Maria-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria, Duchess of Calabria" ;
+    data:posIndicesFull "809:851" ;
+    data:posIndicesPart "947:952" ;
+    data:wdtLink wdt:Q70768 ;
+    :alsoKnownAs "Princess Maria Ludwiga Theresia of Bavaria",
+        "Princess Maria Ludwiga Theresia, Duchess of Calabria",
+        "Princess Maria of Bavaria" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Fernand_Sanz a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Fernand Sanz" ;
+    data:posIndicesFull "933:946" ;
+    data:wdtLink wdt:Q26455 ;
+    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala" ;
+    :hasSex data:male ;
+    :hasSister data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBrotherOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSiblingOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Carlos, Duke of Calabria" ;
+    data:posIndicesFull "1315:1352",
+        "1322:1352",
+        "474:511",
+        "481:511" ;
+    data:posIndicesPart "1544:1550",
+        "1929:1935",
+        "2092:2099",
+        "2146:2152",
+        "2334:2340" ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria",
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma",
+        "Carlos of Bourbon-Two Sicilies",
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
+        "Prince Carlos of Bourbon-Two Sicilies" ;
+    :hasFather data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasParent data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isChildOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSonOf data:Infante_Alfonso-_Duke_of_Calabria .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "María de las Mercedes, Princess of Asturias" ;
+    data:posIndicesFull "1678:1721" ;
+    data:posIndicesPart "2003:2008",
+        "2012:2015",
+        "2016:2024",
+        "2321:2329" ;
+    data:wdtLink wdt:Q129179 ;
+    :alsoKnownAs "María de las Mercedes of Spain" ;
+    :hasBrother data:Fernand_Sanz ;
+    :hasChild data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasSex data:female ;
+    :hasSon data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isMotherOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSiblingOf data:Fernand_Sanz ;
+    :isSisterOf data:Fernand_Sanz .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Alfonso, Duke of Calabria" ;
+    data:posIndicesFull "1129:1162" ;
+    data:posIndicesPart "1273:1280",
+        "2092:2099",
+        "2216:2223" ;
+    data:wdtLink wdt:Q1333222 ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasMother data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isChildOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isFatherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSonOf data:María_de_las_Mercedes-_Princess_of_Asturias .
+
+data:Prince_Alfonso-_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Alfonso, Count of Caserta" ;
+    data:posIndicesFull "299:331" ;
+    data:posIndicesPart "1273:1280",
+        "1419:1424",
+        "1727:1732",
+        "1922:1928",
+        "2216:2223" ;
+    data:wdtLink wdt:Q439014 ;
+    :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
+    :hasChild data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isFatherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isParentOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "345:394" ;
+    data:posIndicesPart "1077:1084",
+        "1085:1088",
+        "1089:1097",
+        "2198:2201",
+        "2202:2210",
+        "2471:2474",
+        "2475:2483",
+        "2702:2709",
+        "437:440",
+        "441:449",
+        "513:518",
+        "531:539",
+        "564:569",
+        "620:625",
+        "637:645",
+        "947:952" ;
+    data:wdtLink wdt:Q255400 ;
+    :hasChild data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isMotherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isParentOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro .
+
+data:Prince_Ferdinand_Pius-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ferdinand Pius, Duke of Calabria" ;
+    data:posIndicesFull "0:21",
+        "23:43" ;
+    data:posIndicesPart "1029:1038",
+        "1375:1384",
+        "1455:1464",
+        "1922:1928",
+        "2503:2512",
+        "265:274",
+        "2688:2697",
+        "417:426",
+        "598:607",
+        "791:800" ;
+    data:wdtLink wdt:Q2290508 ;
+    :alsoKnownAs "Ferdinand Prinz von Bourbon-Sizilien",
+        "Ferdinando Pio Maria",
+        "Prince Ferdinand Pius" ;
+    :hasBrother data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isChildOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isSonOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
+
+data:Prince_Filippo_of_the_Two_Sicilies a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Filippo of the Two Sicilies" ;
+    data:posIndicesFull "698:735" ;
+    data:posIndicesPart "1085:1088",
+        "1089:1097",
+        "1922:1928",
+        "2198:2201",
+        "2202:2210",
+        "2471:2474",
+        "2475:2483" ;
+    data:wdtLink wdt:Q3745365 ;
+    :alsoKnownAs "Filippo di Borbone-Due Sicilie",
+        "Prince Philip of Bourbon-Two Sicilies" ;
+    :hasBrother data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isChildOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Gabriel_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isSonOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
+
+data:Prince_Gabriel_of_the_Two_Sicilies a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Gabriel of the Two Sicilies" ;
+    data:posIndicesFull "741:779" ;
+    data:posIndicesPart "1085:1088",
+        "1089:1097",
+        "1922:1928",
+        "2198:2201",
+        "2202:2210",
+        "2471:2474",
+        "2475:2483" ;
+    data:wdtLink wdt:Q3756709 ;
+    :alsoKnownAs "Gabriele di Borbone-Due Sicilie",
+        "Prince Gabriele of Bourbon-Two Sicilies" ;
+    :hasBrother data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isChildOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isSonOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
+
+data:Prince_Ranieri-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ranieri, Duke of Castro" ;
+    data:posIndicesFull "1180:1210",
+        "1484:1514",
+        "666:696" ;
+    data:posIndicesPart "1922:1928",
+        "2117:2124" ;
+    data:wdtLink wdt:Q1943652 ;
+    :hasBrother data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies ;
+    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies ;
+    :isChildOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Prince_Filippo_of_the_Two_Sicilies,
+        data:Prince_Gabriel_of_the_Two_Sicilies ;
+    :isSonOf data:Prince_Alfonso-_Count_of_Caserta,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
+

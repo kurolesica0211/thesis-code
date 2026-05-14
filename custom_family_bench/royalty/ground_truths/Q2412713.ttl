@@ -1,0 +1,81 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "276:288",
+        "276:297" ;
+    data:posIndicesPart "482:489",
+        "680:687" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasChild data:Infanta_María_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_María_Cristina_of_Spain ;
+    :hasSex data:male ;
+    :isFatherOf data:Infanta_María_Cristina_of_Spain ;
+    :isParentOf data:Infanta_María_Cristina_of_Spain .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "302:332" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasChild data:Infanta_María_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_María_Cristina_of_Spain ;
+    :hasSex data:female ;
+    :isMotherOf data:Infanta_María_Cristina_of_Spain ;
+    :isParentOf data:Infanta_María_Cristina_of_Spain .
+
+data:Infanta_María_Cristina_of_Spain a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta María Cristina of Spain" ;
+    data:posIndicesFull "0:31" ;
+    data:posIndicesPart "1053:1060",
+        "540:548",
+        "717:725",
+        "856:864",
+        "918:925",
+        "932:940",
+        "953:958" ;
+    data:wdtLink wdt:Q2412713 ;
+    :alsoKnownAs "Infanta María Cristina, Countess Marone",
+        "María Cristina de Borbón y Battenberg" ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+

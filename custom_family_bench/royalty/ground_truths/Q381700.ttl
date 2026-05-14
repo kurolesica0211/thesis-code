@@ -1,0 +1,548 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Marie-Chantal-_Crown_Princess_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
+    data:posIndicesFull "10327:10347",
+        "1403:1423",
+        "1964:1979" ;
+    data:posIndicesPart "10220:10226",
+        "11022:11028",
+        "11067:11072",
+        "11083:11089",
+        "11400:11406",
+        "12215:12221",
+        "12340:12348",
+        "12493:12501",
+        "2117:2122",
+        "2453:2459",
+        "2525:2530",
+        "2661:2667",
+        "3056:3061",
+        "3105:3111",
+        "3391:3397",
+        "3929:3934",
+        "5176:5182",
+        "6132:6138",
+        "6573:6579",
+        "7443:7449",
+        "7539:7545",
+        "7861:7867",
+        "8066:8071",
+        "8072:8079",
+        "8209:8214",
+        "8215:8222",
+        "9038:9046",
+        "9293:9298",
+        "9578:9584",
+        "9717:9723" ;
+    data:wdtLink wdt:Q243049 ;
+    :alsoKnownAs "Mari Santal",
+        "Mari Santal Miler",
+        "Maria of Greece",
+        "Marie Chantal",
+        "Marie-Chantal Miller",
+        "Marie-Chantel Miller" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Felipe_VI_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "11609:11618",
+        "1669:1678",
+        "1669:1687",
+        "4654:4663",
+        "4654:4672" ;
+    data:posIndicesPart "2279:2284" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :isChildOf data:Queen_Sofía_of_Spain ;
+    :isSonOf data:Queen_Sofía_of_Spain .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "11748:11758",
+        "1692:1702",
+        "1692:1713" ;
+    data:posIndicesPart "11175:11182",
+        "11207:11214",
+        "11432:11439",
+        "12123:12130",
+        "12283:12290",
+        "7704:7711",
+        "9728:9735" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Margrethe_II_of_Denmark ;
+    :isSonOf data:Margrethe_II_of_Denmark .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "11748:11756",
+        "12266:12274",
+        "1692:1700",
+        "2317:2325",
+        "979:987" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasDaughter data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isMotherOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :isParentOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "2317:2328",
+        "2317:2339",
+        "979:990" ;
+    data:posIndicesPart "11175:11182",
+        "11207:11214",
+        "11432:11439",
+        "11709:11716",
+        "11783:11790",
+        "12123:12130",
+        "12283:12290",
+        "7704:7711",
+        "9728:9735" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "2363:2379",
+        "3072:3084",
+        "995:1007" ;
+    data:posIndicesPart "11474:11480" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :isMotherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "5606:5619",
+        "6197:6210" ;
+    data:posIndicesPart "10220:10226",
+        "11022:11028",
+        "11083:11089",
+        "11400:11406",
+        "12215:12221",
+        "6132:6138",
+        "6573:6579",
+        "7443:7449",
+        "7539:7545",
+        "7861:7867",
+        "9578:9584",
+        "9717:9723" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasDaughter data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isFatherOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :isParentOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain .
+
+data:Pavlos-_Crown_Prince_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Pavlos, Crown Prince of Greece" ;
+    data:posIndicesFull "78:108" ;
+    data:posIndicesPart "10004:10010",
+        "10220:10226",
+        "10295:10301",
+        "10519:10525",
+        "10782:10788",
+        "10976:10982",
+        "11022:11028",
+        "11067:11072",
+        "11073:11079",
+        "11083:11089",
+        "11197:11203",
+        "11287:11293",
+        "11400:11406",
+        "11792:11798",
+        "11887:11893",
+        "12215:12221",
+        "12429:12435",
+        "1329:1335",
+        "1388:1394",
+        "1543:1549",
+        "1749:1755",
+        "2106:2112",
+        "2117:2122",
+        "2123:2129",
+        "2381:2387",
+        "2453:2459",
+        "2525:2530",
+        "2531:2537",
+        "2539:2545",
+        "2661:2667",
+        "3105:3111",
+        "3391:3397",
+        "378:384",
+        "389:394",
+        "395:401",
+        "3998:4004",
+        "405:411",
+        "4086:4092",
+        "4292:4298",
+        "4679:4685",
+        "4798:4804",
+        "493:499",
+        "4968:4974",
+        "5133:5139",
+        "5176:5182",
+        "5314:5320",
+        "5401:5407",
+        "5700:5706",
+        "574:580",
+        "5962:5968",
+        "6132:6138",
+        "6224:6230",
+        "629:635",
+        "6463:6469",
+        "6573:6579",
+        "6586:6592",
+        "6665:6671",
+        "6813:6819",
+        "6931:6937",
+        "7110:7116",
+        "7256:7262",
+        "7395:7401",
+        "7443:7449",
+        "7539:7545",
+        "7652:7658",
+        "7851:7857",
+        "7861:7867",
+        "7870:7876",
+        "8055:8061",
+        "8129:8135",
+        "8367:8373",
+        "8501:8507",
+        "8674:8680",
+        "8898:8904",
+        "8991:8997",
+        "9126:9132",
+        "9271:9277",
+        "9366:9372",
+        "942:948",
+        "9578:9584",
+        "9699:9705",
+        "9717:9723",
+        "9800:9806" ;
+    data:wdtLink wdt:Q381700 ;
+    :alsoKnownAs "Paul, Crown Prince of Greece",
+        "Pavlos de Grecia",
+        "Pavlos zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Prince of Greece" ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :isChildOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSonOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "1929:1945",
+        "1934:1948",
+        "1981:1995",
+        "582:596",
+        "774:788" ;
+    data:posIndicesPart "10220:10226",
+        "10664:10675",
+        "11022:11028",
+        "11083:11089",
+        "11400:11406",
+        "12215:12221",
+        "1465:1476",
+        "2453:2459",
+        "2661:2667",
+        "2799:2810",
+        "2938:2949",
+        "3105:3111",
+        "3391:3397",
+        "3615:3626",
+        "3788:3799",
+        "3840:3851",
+        "4310:4321",
+        "4406:4417",
+        "4985:4996",
+        "5176:5182",
+        "5834:5845",
+        "6132:6138",
+        "6149:6160",
+        "6573:6579",
+        "6745:6756",
+        "7443:7449",
+        "7539:7545",
+        "7861:7867",
+        "8765:8776",
+        "9578:9584",
+        "9717:9723" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasChild data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Pavlos-_Crown_Prince_of_Greece ;
+    :isBrotherOf data:Queen_Sofía_of_Spain ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isFatherOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isParentOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Queen_Sofía_of_Spain ;
+    :isSonOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Felipe_VI_of_Spain .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "11669:11681",
+        "1601:1613",
+        "1601:1624",
+        "2196:2208" ;
+    data:posIndicesPart "11175:11182",
+        "11207:11214",
+        "11432:11439",
+        "12123:12130",
+        "12283:12290",
+        "7704:7711",
+        "9728:9735" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAuntOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "1953:1979" ;
+    data:posIndicesPart "10220:10226",
+        "11022:11028",
+        "11083:11089",
+        "11400:11406",
+        "11555:11560",
+        "11700:11705",
+        "11923:11928",
+        "12215:12221",
+        "12385:12390",
+        "2190:2195",
+        "2262:2267",
+        "2348:2353",
+        "2453:2459",
+        "2661:2667",
+        "3051:3055",
+        "3056:3061",
+        "3105:3111",
+        "3391:3397",
+        "3924:3928",
+        "3929:3934",
+        "5176:5182",
+        "6132:6138",
+        "6573:6579",
+        "7443:7449",
+        "7539:7545",
+        "7861:7867",
+        "8066:8071",
+        "8209:8214",
+        "9288:9292",
+        "9293:9298",
+        "9578:9584",
+        "9717:9723" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasChild data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :hasSon data:Pavlos-_Crown_Prince_of_Greece ;
+    :isAuntOf data:Frederik_X_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isParentOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "19:30",
+        "19:39" ;
+    data:posIndicesPart "1123:1128",
+        "11544:11549",
+        "11555:11560",
+        "11572:11577",
+        "11643:11648",
+        "11700:11705",
+        "11923:11928",
+        "12385:12390",
+        "1629:1634",
+        "1638:1643",
+        "2190:2195",
+        "2244:2249",
+        "2262:2267",
+        "2279:2284",
+        "2348:2353",
+        "611:616" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Felipe_VI_of_Spain ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:female ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAuntOf data:Pavlos-_Crown_Prince_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isDaughterOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isMotherOf data:Felipe_VI_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSisterOf data:Constantine_II_of_Greece .
+

@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Maria Pavlovna of Russia" ;
+    data:posIndicesFull "319:357" ;
+    data:posIndicesPart "1061:1066",
+        "1067:1074",
+        "2143:2148" ;
+    data:wdtLink wdt:Q235438 ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasSex data:female ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isMotherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte .
+
+data:Prince_Wilhelm-_Duke_of_Södermanland a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wilhelm, Duke of Södermanland" ;
+    data:posIndicesFull "277:313" ;
+    data:posIndicesPart "1231:1237",
+        "1565:1571",
+        "1621:1627",
+        "393:399",
+        "415:419",
+        "526:532",
+        "855:861" ;
+    data:wdtLink wdt:Q435739 ;
+    :alsoKnownAs "Prince Wilhelm of Sweden" ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasSex data:male ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isFatherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte .
+
+data:Lennart_Bernadotte a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Lennart Bernadotte" ;
+    data:posIndicesFull "1774:1792",
+        "1930:1948",
+        "714:732",
+        "7:25",
+        "947:965" ;
+    data:posIndicesPart "1034:1044",
+        "1210:1217",
+        "1238:1248",
+        "1295:1302",
+        "1326:1336",
+        "1528:1538",
+        "1636:1646",
+        "1995:2005",
+        "2112:2122",
+        "2187:2197",
+        "368:378",
+        "456:466" ;
+    data:wdtLink wdt:Q564226 ;
+    :hasFather data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:male ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isSonOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland .
+

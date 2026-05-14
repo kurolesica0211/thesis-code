@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "304:321",
+        "647:664" ;
+    data:posIndicesPart "1043:1047",
+        "1257:1261",
+        "1404:1412",
+        "1675:1679",
+        "1982:1986",
+        "843:847",
+        "883:887" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasSex data:male .
+
+data:Regina-_Crown_Princess_of_Austria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Regina, Crown Princess of Austria" ;
+    data:posIndicesFull "0:19" ;
+    data:posIndicesPart "1195:1201",
+        "1246:1252",
+        "1277:1284",
+        "1423:1429",
+        "1733:1740",
+        "1800:1806",
+        "1858:1864",
+        "1971:1977",
+        "382:388",
+        "463:469",
+        "524:530",
+        "722:727",
+        "752:759",
+        "832:838",
+        "917:924",
+        "945:951" ;
+    data:wdtLink wdt:Q77335 ;
+    :alsoKnownAs "Crown Princess Regina of Austria",
+        "Regina von Habsburg" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

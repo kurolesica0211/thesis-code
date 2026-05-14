@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Iñaki_Urdangarin a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Iñaki Urdangarin" ;
+    data:posIndicesFull "197:213" ;
+    data:wdtLink wdt:Q356560 ;
+    :alsoKnownAs "Don Iñaki Urdangarin Liebaert" ;
+    :hasChild data:Irene_Urdangarin_y_de_Borbón ;
+    :hasDaughter data:Irene_Urdangarin_y_de_Borbón ;
+    :hasSex data:male ;
+    :isFatherOf data:Irene_Urdangarin_y_de_Borbón ;
+    :isParentOf data:Irene_Urdangarin_y_de_Borbón .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "242:255" ;
+    data:posIndicesPart "349:353" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasChild data:Infanta_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_Cristina_of_Spain ;
+    :hasSex data:male ;
+    :isFatherOf data:Infanta_Cristina_of_Spain ;
+    :isParentOf data:Infanta_Cristina_of_Spain .
+
+data:Infanta_Cristina_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Cristina of Spain" ;
+    data:posIndicesFull "156:172" ;
+    data:wdtLink wdt:Q230580 ;
+    :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
+        "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
+        "Infanta Cristina" ;
+    :hasChild data:Irene_Urdangarin_y_de_Borbón ;
+    :hasDaughter data:Irene_Urdangarin_y_de_Borbón ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:female ;
+    :isChildOf data:Juan_Carlos_I_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain ;
+    :isMotherOf data:Irene_Urdangarin_y_de_Borbón ;
+    :isParentOf data:Irene_Urdangarin_y_de_Borbón .
+
+data:Irene_Urdangarin_y_de_Borbón a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Irene Urdangarin y de Borbón" ;
+    data:posIndicesFull "0:48" ;
+    data:posIndicesPart "109:114" ;
+    data:wdtLink wdt:Q3232528 ;
+    :alsoKnownAs "Irene Urdangarin",
+        "Irene Urdangarin y de Borbon",
+        "Irene Urdangarín",
+        "Irene Urdangarín y de Borbón",
+        "Irene de Todos los Santos Urdangarin y de Borbón" ;
+    :hasFather data:Iñaki_Urdangarin ;
+    :hasMother data:Infanta_Cristina_of_Spain ;
+    :hasParent data:Infanta_Cristina_of_Spain,
+        data:Iñaki_Urdangarin ;
+    :hasSex data:female ;
+    :isChildOf data:Infanta_Cristina_of_Spain,
+        data:Iñaki_Urdangarin ;
+    :isDaughterOf data:Infanta_Cristina_of_Spain,
+        data:Iñaki_Urdangarin .
+

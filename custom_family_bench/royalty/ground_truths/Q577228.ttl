@@ -1,0 +1,306 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
+    data:posIndicesFull "1568:1596" ;
+    data:posIndicesPart "1886:1892" ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste",
+        "Prince Aimone of Savoy-Aosta",
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta",
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta",
+        "Prince Aimone, Duke of Aosta",
+        "Prince Aimone, The 6th Duke of Aosta",
+        "Prince Aimone, The Duke of Aosta" ;
+    :hasSex data:male .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:posIndicesFull "699:739" ;
+    data:posIndicesPart "1548:1554",
+        "1670:1676",
+        "1886:1892",
+        "2051:2057",
+        "762:773",
+        "838:844",
+        "995:1002" ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo",
+        "Prince Christophoros of Greece and Denmark" ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Alexandra_of_Greece a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexandra of Greece" ;
+    data:posIndicesFull "1407:1435" ;
+    data:posIndicesPart "1531:1539",
+        "1548:1554",
+        "1670:1676",
+        "1844:1852",
+        "2051:2057" ;
+    data:wdtLink wdt:Q13091129 ;
+    :alsoKnownAs "Alexandra zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece",
+        "Princess Alexandra Elli Francisca Maria of Greece" ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Anne_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Anne d'Orléans" ;
+    data:posIndicesFull "109:119" ;
+    data:posIndicesPart "1531:1539",
+        "1844:1852" ;
+    data:wdtLink wdt:Q2072516 ;
+    :alsoKnownAs "Anne Maruerite Brigitte Marie d'Orléans",
+        "Anne d’Orléans",
+        "Princess Anne Marguerite Brigitte Marie d'Orléans",
+        "Princess Anne d’Orléans" ;
+    :hasBrother data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:female ;
+    :isAuntOf data:Prince_Aimone-_6th_Duke_of_Aosta,
+        data:Prince_François_dOrléans,
+        data:Prince_Jean_dOrléans ;
+    :isSiblingOf data:Prince_Henri_dOrléans_1 ;
+    :isSisterOf data:Prince_Henri_dOrléans_1 .
+
+data:Prince_François_dOrléans a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince François d’Orléans" ;
+    data:posIndicesFull "0:28",
+        "309:328",
+        "9:28" ;
+    data:posIndicesPart "1886:1892",
+        "549:555" ;
+    data:wdtLink wdt:Q2740253 ;
+    :alsoKnownAs "François Henri Louis Marie d'Orléans",
+        "François d’Orléans",
+        "Prince François Henri Louis Marie d'Orléans" ;
+    :hasBrother data:Prince_Jean_dOrléans ;
+    :hasFather data:Prince_Henri_dOrléans_1 ;
+    :hasParent data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Jean_dOrléans ;
+    :isChildOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Prince_Jean_dOrléans ;
+    :isSonOf data:Prince_Henri_dOrléans_1 .
+
+data:Prince_Jean_dOrléans a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Jean d'Orléans" ;
+    data:posIndicesFull "109:119",
+        "371:385" ;
+    data:posIndicesPart "1886:1892",
+        "549:555" ;
+    data:wdtLink wdt:Q592349 ;
+    :alsoKnownAs "Jean Carl Pierre Marie d'Orléans",
+        "Jean IV",
+        "Jean d'Orléans" ;
+    :hasBrother data:Prince_François_dOrléans ;
+    :hasFather data:Prince_Henri_dOrléans_1 ;
+    :hasParent data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_François_dOrléans ;
+    :isChildOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Prince_François_dOrléans ;
+    :isSonOf data:Prince_Henri_dOrléans_1 .
+
+data:Prince_Jean_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "109:119",
+        "371:385" ;
+    data:posIndicesPart "1886:1892",
+        "549:555" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasChild data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :hasDaughter data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :isParentOf data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "498:526" ;
+    data:posIndicesPart "1531:1539",
+        "1844:1852" ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasChild data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :hasDaughter data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans ;
+    :isParentOf data:Princess_Anne_of_Orléans,
+        data:Princess_Françoise_of_Orléans .
+
+data:Princess_Anne_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Anne of Orléans" ;
+    data:posIndicesFull "109:119" ;
+    data:posIndicesPart "1531:1539",
+        "1844:1852" ;
+    data:wdtLink wdt:Q2278538 ;
+    :alsoKnownAs "Anne Hélène Marie d'Orléans",
+        "Anne d'Orléans",
+        "Princess Anne Hélène Marie d'Orléans",
+        "Princess Anne, Dowager Duchess of Aosta",
+        "Princess Anne, Duchess of Aosta",
+        "Princess Anne, The Dowager Duchess of Aosta",
+        "Princess Anne, The Duchess of Aosta" ;
+    :hasFather data:Prince_Jean_dOrléans_1 ;
+    :hasMother data:Princess_Isabelle_dOrléans ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Françoise_of_Orléans ;
+    :isAuntOf data:Prince_Henri_dOrléans_1,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Anne_dOrléans ;
+    :isChildOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isDaughterOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_Françoise_of_Orléans ;
+    :isSisterOf data:Princess_Françoise_of_Orléans .
+
+data:Prince_Henri_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henri d’Orléans" ;
+    data:posIndicesFull "645:653" ;
+    data:posIndicesPart "1886:1892" ;
+    data:wdtLink wdt:Q534961 ;
+    :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans",
+        "Henri VIII",
+        "Henri d’Orléans" ;
+    :hasChild data:Prince_François_dOrléans,
+        data:Prince_Jean_dOrléans ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Anne_dOrléans ;
+    :hasSon data:Prince_François_dOrléans,
+        data:Prince_Jean_dOrléans ;
+    :isBrotherOf data:Princess_Anne_dOrléans ;
+    :isFatherOf data:Prince_François_dOrléans,
+        data:Prince_Jean_dOrléans ;
+    :isParentOf data:Prince_François_dOrléans,
+        data:Prince_Jean_dOrléans ;
+    :isSiblingOf data:Princess_Anne_dOrléans ;
+    :isUncleOf data:Prince_Aimone-_6th_Duke_of_Aosta .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michael of Greece and Denmark" ;
+    data:posIndicesFull "1156:1192" ;
+    data:posIndicesPart "1548:1554",
+        "1670:1676",
+        "1789:1796",
+        "1886:1892",
+        "2051:2057" ;
+    data:wdtLink wdt:Q724825 ;
+    :alsoKnownAs "Michel de Grece" ;
+    :hasChild data:Princess_Alexandra_of_Greece ;
+    :hasDaughter data:Princess_Alexandra_of_Greece ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Françoise_of_Orléans ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :isFatherOf data:Princess_Alexandra_of_Greece ;
+    :isParentOf data:Princess_Alexandra_of_Greece ;
+    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans .
+
+data:Princess_Françoise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Françoise of Orléans" ;
+    data:posIndicesFull "0:28",
+        "699:739" ;
+    data:posIndicesPart "1531:1539",
+        "1767:1776",
+        "1844:1852",
+        "1907:1916",
+        "528:537" ;
+    data:wdtLink wdt:Q577228 ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans",
+        "Françoise Isabelle Louise Marie of Orléans",
+        "Françoise of Guise",
+        "Françoise of Orléans",
+        "Princess Christopher of Greece and Denmark",
+        "Princess François d'Orléans",
+        "Princess Françoise Isabelle Louise Marie d'Orléans",
+        "Princess Françoise Isabelle Louise Marie of Orléans",
+        "Princess Françoise, Princess Christopher of Greece and Denmark" ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Jean_dOrléans_1 ;
+    :hasMother data:Princess_Isabelle_dOrléans ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Orléans ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Henri_dOrléans_1,
+        data:Princess_Anne_dOrléans ;
+    :isChildOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isDaughterOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Anne_of_Orléans ;
+    :isSisterOf data:Princess_Anne_of_Orléans .
+

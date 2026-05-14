@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Helene, Archduchess Ferdinand of Austria" ;
+    data:posIndicesFull "300:337" ;
+    data:posIndicesPart "1040:1049",
+        "408:415" ;
+    data:wdtLink wdt:Q23659419 ;
+    :alsoKnownAs "Countess Helene of Toerring-Jettenbach",
+        "Helene Gräfin zu Törring-Jettenbach",
+        "Helene Marina Elisabeth Gräfin zu Törring-Jettenbach",
+        "Helene zu Törring-Jettenbach" ;
+    :hasChild data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasDaughter data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasSex data:female ;
+    :isMotherOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isParentOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz .
+
+data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Sophie, Princess of Windisch-Graetz" ;
+    data:posIndicesFull "0:40" ;
+    data:posIndicesPart "187:193",
+        "498:506",
+        "540:546",
+        "611:619",
+        "686:694",
+        "814:820",
+        "890:896",
+        "938:946",
+        "947:953",
+        "978:986",
+        "987:993" ;
+    data:wdtLink wdt:Q7562997 ;
+    :alsoKnownAs "Sofia de Habsburg",
+        "Sophie Franziska Maria Germaine Erzherzogin von Österreich",
+        "Sophie Franziska Maria Germaine Habsburg",
+        "Sophie Franziska Maria Germaine of Habsburg-Lorraine, Archduchess of Austria",
+        "Sophie Franziska of Austria" ;
+    :hasMother data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :hasParent data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :hasSex data:female ;
+    :isChildOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isDaughterOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria .
+

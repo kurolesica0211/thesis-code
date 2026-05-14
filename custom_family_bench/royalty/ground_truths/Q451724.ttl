@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Duke_Carl-_Duke_of_Württemberg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Carl, Duke of Württemberg" ;
+    data:posIndicesFull "585:610" ;
+    data:posIndicesPart "1201:1212",
+        "1373:1377",
+        "1378:1382",
+        "1386:1397",
+        "1433:1437",
+        "1441:1452",
+        "1534:1538",
+        "1595:1599",
+        "1624:1628",
+        "1674:1685" ;
+    data:wdtLink wdt:Q62385 ;
+    :alsoKnownAs "Carl, Duke of Württemberg",
+        "Karl Maria Herzog von Württemberg" ;
+    :hasSex data:male .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
+    data:posIndicesFull "1030:1034" ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime",
+        "Jaime de Borbón y Landaluce",
+        "Jaime di Borbone-Due Sicilie" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Diane-_Duchess_of_Württemberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Diane, Duchess of Württemberg" ;
+    data:wdtLink wdt:Q451724 ;
+    :alsoKnownAs "Crown Princess Diane of Württemberg",
+        "Diane Françoise Marie d'Orléans",
+        "Diane Françoise Marie d'Orléans von Württemberg",
+        "Diane Françoise Marie von Württemberg",
+        "Diane d'Orléans",
+        "Diane d'Orléans von Württemberg",
+        "Diane von Württemberg",
+        "Diane, Crown Princess of Württemberg",
+        "Duchess Diane, Dowager Duchess of Württemberg",
+        "Duchess Diane, The Dowager Duchess of Württemberg",
+        "Duchess Diane, The Duchess of Württemberg",
+        "Princess Diane Françoise Marie d'Orléans",
+        "Princess Diane d'Orléans" ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza ;
+    :isDaughterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:posIndicesFull "783:811",
+        "993:1021" ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
+    :hasChild data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :hasDaughter data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :hasSex data:female ;
+    :isMotherOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isParentOf data:Duchess_Diane-_Duchess_of_Württemberg .
+

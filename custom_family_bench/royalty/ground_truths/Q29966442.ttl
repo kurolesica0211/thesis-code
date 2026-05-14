@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Carlo-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Carlo, Duke of Castro" ;
+    data:posIndicesFull "244:272" ;
+    data:posIndicesPart "382:387",
+        "482:488",
+        "947:953" ;
+    data:wdtLink wdt:Q1850305 ;
+    :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies",
+        "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro" ;
+    :hasChild data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :hasDaughter data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :isParentOf data:Princess_Maria_Chiara-_Duchess_of_Noto .
+
+data:Princess_Camilla-_Duchess_of_Castro a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Camilla, Duchess of Castro" ;
+    data:posIndicesFull "277:293" ;
+    data:posIndicesPart "324:332",
+        "418:426",
+        "444:452" ;
+    data:wdtLink wdt:Q4994262 ;
+    :alsoKnownAs "Camilla Crociani",
+        "Camilla de Bourbon des Deux-Siciles",
+        "Camilla di Borbone delle Due Sicilie",
+        "Princess Camilla, The Duchess of Castro",
+        "Queen Camilla of the Two Sicilies",
+        "Queen Camilla, Queen Consort of the Two Sicilies",
+        "Queen Camilla, The Queen Consort of the Two Sicilies" ;
+    :hasChild data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :hasDaughter data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Maria_Chiara-_Duchess_of_Noto ;
+    :isParentOf data:Princess_Maria_Chiara-_Duchess_of_Noto .
+
+data:Princess_Maria_Chiara-_Duchess_of_Noto a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Chiara, Duchess of Noto" ;
+    data:posIndicesFull "127:150",
+        "44:89" ;
+    data:posIndicesPart "192:197",
+        "198:204",
+        "324:332",
+        "333:338",
+        "418:426",
+        "444:452",
+        "568:573",
+        "574:580",
+        "808:814" ;
+    data:wdtLink wdt:Q29966442 ;
+    :alsoKnownAs "Maria Chiara di Borbone",
+        "Princess Maria Chiara Amalia Carola Luisa Carmen of Bourbon-Two Sicilies",
+        "Princess Maria Chiara of Bourbon-Two Sicilies" ;
+    :hasFather data:Prince_Carlo-_Duke_of_Castro ;
+    :hasMother data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasParent data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :isDaughterOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro .
+

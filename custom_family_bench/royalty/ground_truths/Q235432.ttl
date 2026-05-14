@@ -1,0 +1,639 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "7118:7131" ;
+    data:posIndicesPart "10269:10275",
+        "10425:10431",
+        "10753:10759",
+        "11295:11301",
+        "7350:7356",
+        "7532:7538",
+        "7650:7656" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
+    data:posIndicesFull "1606:1648",
+        "316:358" ;
+    data:posIndicesPart "2119:2125",
+        "7402:7407",
+        "7408:7415",
+        "7416:7421",
+        "7422:7434",
+        "9463:9470",
+        "9631:9636",
+        "9637:9649" ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:posIndicesFull "213:240",
+        "222:240",
+        "4481:4506",
+        "4488:4506",
+        "490:515",
+        "497:515" ;
+    data:posIndicesPart "10269:10275",
+        "10425:10431",
+        "10753:10759",
+        "11295:11301",
+        "1151:1155",
+        "2855:2861",
+        "3838:3844",
+        "4316:4322",
+        "4657:4661",
+        "4812:4818",
+        "4819:4823",
+        "4867:4877",
+        "4906:4916",
+        "4932:4936",
+        "5084:5090",
+        "5173:5183",
+        "5678:5688",
+        "579:585",
+        "5855:5861",
+        "586:590",
+        "5885:5891",
+        "6057:6061",
+        "6101:6111",
+        "615:625",
+        "6327:6333",
+        "6334:6338",
+        "6551:6561",
+        "6869:6875",
+        "6876:6880",
+        "7188:7194",
+        "7195:7199",
+        "7220:7230",
+        "7350:7356",
+        "735:745",
+        "7532:7538",
+        "7548:7558",
+        "7650:7656",
+        "7657:7661",
+        "7751:7755",
+        "849:855",
+        "856:860",
+        "8715:8719",
+        "8951:8955",
+        "9046:9056",
+        "9200:9204",
+        "939:949",
+        "9540:9544",
+        "988:992" ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich",
+        "Paul Karageorgevich",
+        "Paul of Yugoslavia",
+        "Pavle Karađorđević",
+        "Prince of Yugoslavia Paul",
+        "Prince of Yugoslavia Pavle",
+        "Prince of Yugoslavia Pavle Karađorđević" ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isFatherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Helen of Greece and Denmark" ;
+    data:posIndicesFull "9357:9387" ;
+    data:posIndicesPart "9666:9672" ;
+    data:wdtLink wdt:Q162177 ;
+    :alsoKnownAs "Helen, Queen Mother of Romania",
+        "Helen, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen",
+        "Queen Helen, Queen Mother of Romania",
+        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen, The Queen Mother of Romania",
+        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:female ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isDaughterOf data:Constantine_I_of_Greece .
+
+data:Edward_VIII a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward VIII" ;
+    data:posIndicesFull "4339:4350" ;
+    data:posIndicesPart "4375:4381" ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor",
+        "Duke of Windsor",
+        "Edward Albert Christian George Andrew Patrick David",
+        "Edward Albert Christian George Andrew Patrick David Windsor",
+        "Edward VIII Edward VIII of the United Kingdom",
+        "Edward VIII Edward VIII, King of the United Kingdom",
+        "Edward VIII of the United Kingdom",
+        "Edward Windsor",
+        "Edward, Duke of Windsor",
+        "Edward, Prince of Wales",
+        "King Edward VIII",
+        "Prince Edward",
+        "Prince Edward, Duke of Windsor" ;
+    :hasBrother data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBrotherOf data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George VI" ;
+    data:posIndicesFull "6760:6766" ;
+    data:posIndicesPart "7900:7906" ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George",
+        "Albert Frederick Arthur George Windsor",
+        "Albert Windsor",
+        "Bertie",
+        "George Windsor",
+        "H.M. King George VI",
+        "Industrial Prince",
+        "King George VI",
+        "Prince Albert Frederick Arthur George of Cornwall and York",
+        "Prince Albert Frederick Arthur George of Wales",
+        "Prince Albert Frederick Arthur George of York",
+        "Prince Albert Frederick Arthur George, Duke of York",
+        "Prince Albert of Cornwall and York",
+        "Prince Albert of Wales",
+        "Prince Albert of York",
+        "Prince Albert, Duke of York",
+        "The Prince Albert Frederick Arthur George of the United Kingdom",
+        "The Prince Albert Frederick Arthur George, Duke of York",
+        "The Prince Albert of the United Kingdom",
+        "The Prince Albert, Duke of York" ;
+    :hasBrother data:Edward_VIII,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBrotherOf data:Edward_VIII,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:Prince_George-_Duke_of_Kent ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1424:1447",
+        "1429:1437",
+        "1429:1447",
+        "383:406",
+        "388:396",
+        "388:406" ;
+    data:posIndicesPart "2432:2438",
+        "2995:3001",
+        "7859:7865",
+        "7900:7906",
+        "9666:9672" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "11959:11973",
+        "9:23" ;
+    data:posIndicesPart "10045:10049",
+        "10379:10383",
+        "10600:10604",
+        "10663:10667",
+        "10940:10944",
+        "11025:11029",
+        "1193:1197",
+        "1343:1347",
+        "1458:1462",
+        "1747:1751",
+        "1940:1944",
+        "2086:2090",
+        "2119:2125",
+        "251:255",
+        "2942:2946",
+        "3120:3124",
+        "3534:3538",
+        "3874:3878",
+        "4045:4049",
+        "4167:4171",
+        "4386:4390",
+        "4651:4655",
+        "4923:4927",
+        "5185:5189",
+        "5430:5434",
+        "5717:5721",
+        "6392:6396",
+        "6563:6567",
+        "667:671",
+        "7013:7017",
+        "7210:7214",
+        "7757:7761",
+        "7958:7962",
+        "8093:8097",
+        "8436:8440",
+        "8501:8505",
+        "8788:8792",
+        "8842:8846",
+        "8957:8961",
+        "9140:9144",
+        "9295:9299",
+        "9531:9535",
+        "9617:9621",
+        "9704:9708",
+        "994:998" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Serbia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:posIndicesFull "10182:10212" ;
+    data:posIndicesPart "10425:10431",
+        "10753:10759",
+        "10760:10769",
+        "11111:11117",
+        "11295:11301",
+        "11302:11311" ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia" ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "8321:8333" ;
+    data:posIndicesPart "10269:10275",
+        "10425:10431",
+        "10753:10759",
+        "11295:11301",
+        "9474:9478" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasParent data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Michael_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_Michael_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michael of Kent" ;
+    data:posIndicesFull "10233:10255" ;
+    data:posIndicesPart "10425:10431",
+        "10753:10759",
+        "11170:11177",
+        "11295:11301" ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin",
+        "Prince Michael George Charles Franklin of Kent" ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasParent data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Olga of Greece and Denmark" ;
+    data:posIndicesFull "0:35",
+        "11950:11985",
+        "11959:11985",
+        "213:240",
+        "4481:4506",
+        "490:515",
+        "9:35" ;
+    data:posIndicesPart "10045:10049",
+        "10370:10378",
+        "10379:10383",
+        "10591:10599",
+        "10600:10604",
+        "10663:10667",
+        "10931:10939",
+        "10940:10944",
+        "11016:11024",
+        "11025:11029",
+        "11325:11333",
+        "11504:11512",
+        "11524:11532",
+        "1193:1197",
+        "1343:1347",
+        "1449:1457",
+        "1458:1462",
+        "1747:1751",
+        "1940:1944",
+        "2086:2090",
+        "2192:2200",
+        "242:250",
+        "2432:2438",
+        "251:255",
+        "2942:2946",
+        "2995:3001",
+        "3120:3124",
+        "3234:3242",
+        "3296:3304",
+        "3525:3533",
+        "3534:3538",
+        "3728:3735",
+        "3874:3878",
+        "4045:4049",
+        "4167:4171",
+        "4386:4390",
+        "4651:4655",
+        "4693:4701",
+        "4923:4927",
+        "4991:4999",
+        "5161:5169",
+        "5185:5189",
+        "5430:5434",
+        "5578:5586",
+        "5717:5721",
+        "5916:5924",
+        "6392:6396",
+        "6563:6567",
+        "658:666",
+        "667:671",
+        "7013:7017",
+        "7210:7214",
+        "7460:7468",
+        "7757:7761",
+        "7859:7865",
+        "7958:7962",
+        "8093:8097",
+        "8366:8374",
+        "8436:8440",
+        "8501:8505",
+        "8652:8660",
+        "8788:8792",
+        "8842:8846",
+        "8957:8961",
+        "9140:9144",
+        "9295:9299",
+        "9531:9535",
+        "9617:9621",
+        "9666:9672",
+        "9704:9708",
+        "9841:9849",
+        "994:998",
+        "9966:9974" ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark",
+        "Princess Paul of Yugoslavia" ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George, Duke of Kent" ;
+    data:posIndicesFull "8306:8333",
+        "8313:8333" ;
+    data:posIndicesPart "10269:10275",
+        "10425:10431",
+        "10753:10759",
+        "11295:11301",
+        "9474:9478" ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales",
+        "George Edward Alexander Edmund, Duke of Kent",
+        "George Kent",
+        "George of Wales",
+        "George, Duke of Kent",
+        "Prince George Edward Alexander Edmund of Wales",
+        "Prince George Edward Alexander Edmund, Duke of Kent",
+        "Prince George of Wales",
+        "The Prince George Edward Alexander Edmund of the United Kingdom",
+        "The Prince George Edward Alexander Edmund, Duke of Kent",
+        "The Prince George of the United Kingdom",
+        "The Prince George, Duke of Kent" ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "2355:2373",
+        "2360:2373",
+        "3090:3103" ;
+    data:posIndicesPart "2599:2610",
+        "2995:3001",
+        "7859:7865",
+        "9666:9672" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Helen_of_Greece_and_Denmark ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Helen_of_Greece_and_Denmark ;
+    :isParentOf data:Helen_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Nicholas of Greece and Denmark" ;
+    data:posIndicesFull "1543:1580",
+        "274:311" ;
+    data:posIndicesPart "10269:10275",
+        "10425:10431",
+        "10753:10759",
+        "11295:11301",
+        "1872:1880",
+        "2277:2285",
+        "2432:2438",
+        "2855:2861",
+        "2995:3001",
+        "3728:3735",
+        "3838:3844",
+        "4316:4322",
+        "450:456",
+        "4546:4552",
+        "469:476",
+        "4812:4818",
+        "5084:5090",
+        "579:585",
+        "5855:5861",
+        "5885:5891",
+        "6327:6333",
+        "6869:6875",
+        "7188:7194",
+        "7350:7356",
+        "7532:7538",
+        "7650:7656",
+        "7859:7865",
+        "849:855",
+        "9666:9672" ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Helen_of_Greece_and_Denmark,
+        data:Prince_Philip-_Duke_of_Edinburgh .
+

@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Isobel_Weatherall a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Isobel Weatherall" ;
+    data:posIndicesFull "1701:1728" ;
+    data:posIndicesPart "1900:1910" ;
+    data:wdtLink wdt:Q75248473 ;
+    :alsoKnownAs "Isobel Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Isobel Bowes-Lyon, Lady Glamis",
+        "Isobel Charlotte Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Isobel Charlotte Bowes-Lyon, Lady Glamis",
+        "Isobel Charlotte Weatherall",
+        "Isobel Charlotte, Countess of Strathmore and Kinghorne",
+        "Isobel, Countess of Strathmore and Kinghorne" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Mary_McCorquodale a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary McCorquodale" ;
+    data:posIndicesFull "522:546" ;
+    data:posIndicesPart "2587:2591" ;
+    data:wdtLink wdt:Q75240080 ;
+    :alsoKnownAs "Mary Bowes-Lyon",
+        "Mary Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Mary Pamela Bowes-Lyon",
+        "Mary Pamela Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Mary Pamela McCorquodale",
+        "Mary Strathmore",
+        "The Countess of Strathmore" ;
+    :hasChild data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female ;
+    :hasSon data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne" ;
+    data:posIndicesFull "608:626" ;
+    data:posIndicesPart "1028:1038",
+        "1094:1104",
+        "1134:1138",
+        "1142:1152",
+        "1157:1166",
+        "1323:1333",
+        "1514:1519",
+        "1607:1617",
+        "1885:1895",
+        "1977:1987",
+        "2083:2093",
+        "2223:2233",
+        "2285:2290",
+        "2291:2295",
+        "2462:2472" ;
+    data:wdtLink wdt:Q335615 ;
+    :alsoKnownAs "Michael Bowes-Lyon",
+        "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne" ;
+    :hasMother data:Mary_McCorquodale ;
+    :hasParent data:Mary_McCorquodale ;
+    :hasSex data:male ;
+    :isChildOf data:Mary_McCorquodale ;
+    :isSonOf data:Mary_McCorquodale .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Albemarle Bowes-Lyon" ;
+    data:posIndicesFull "608:626" ;
+    data:posIndicesPart "1514:1519",
+        "2285:2290",
+        "2291:2295" ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon",
+        "Hon. Michael Albemarle Bowes-Lyon",
+        "Hon. Michael Bowes-Lyon",
+        "Michael Albemarle Bowes-Lyon",
+        "Michael Bowes-Lyon" ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasParent data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isChildOf data:Michael_Bowes-Lyon ;
+    :isSonOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Fergus Bowes-Lyon" ;
+    data:posIndicesFull "444:461",
+        "8:25" ;
+    data:posIndicesPart "1514:1519",
+        "2285:2290",
+        "2291:2295" ;
+    data:wdtLink wdt:Q5444165 ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBrotherOf data:Michael_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Michael_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isUncleOf data:Albemarle_Bowes-Lyon .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "1241:1257",
+        "1574:1590",
+        "1853:1869",
+        "2321:2337",
+        "296:311",
+        "652:667",
+        "668:684",
+        "737:752",
+        "792:808" ;
+    data:posIndicesPart "982:991" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:female ;
+    :isAuntOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :isSisterOf data:Fergus_Bowes-Lyon,
+        data:Michael_Bowes-Lyon .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael Bowes-Lyon" ;
+    data:posIndicesFull "608:626" ;
+    data:posIndicesPart "1514:1519",
+        "2285:2290",
+        "2291:2295" ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon",
+        "Hon. Michael Claude Hamilton Bowes-Lyon",
+        "Michael Claude Hamilton Bowes-Lyon" ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isFatherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother .
+

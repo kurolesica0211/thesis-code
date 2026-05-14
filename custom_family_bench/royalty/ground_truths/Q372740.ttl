@@ -1,0 +1,161 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Amélie_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amélie of Orléans" ;
+    data:posIndicesFull "3020:3032" ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans",
+        "Maria Amélia",
+        "Marie Amelie d'Orleans",
+        "Marie Amelie of Orleans",
+        "Marie Amélie d'Orléans",
+        "Marie Amélie of Orléans" ;
+    :hasChild data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :hasSex data:female ;
+    :hasSon data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :isMotherOf data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :isParentOf data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal .
+
+data:Carlos_I_of_Portugal a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Carlos I of Portugal" ;
+    data:posIndicesFull "1003:1023",
+        "365:385" ;
+    data:posIndicesPart "1376:1384",
+        "2543:2549",
+        "2618:2624",
+        "551:559",
+        "592:600",
+        "765:773" ;
+    data:wdtLink wdt:Q158874 ;
+    :alsoKnownAs "Carlos I, King of Portugal",
+        "Carlos de Bragança",
+        "Carlos the Diplomat",
+        "Carlos the Martyr",
+        "King of Portugal Carlos Ferdinand-Louis-Marie-Francois d'Assise",
+        "King of Portugal Carlos I",
+        "King of Portugal Charles I" ;
+    :hasChild data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :hasSex data:male ;
+    :hasSon data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :isFatherOf data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal ;
+    :isParentOf data:Luís_Filipe-_Prince_Royal_of_Portugal,
+        data:Manuel_II_of_Portugal .
+
+data:Luís_Filipe-_Prince_Royal_of_Portugal a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Luís Filipe, Prince Royal of Portugal" ;
+    data:posIndicesFull "4:41" ;
+    data:posIndicesPart "1123:1127",
+        "1128:1134",
+        "1162:1167",
+        "1238:1244",
+        "1245:1250",
+        "1376:1384",
+        "1476:1482",
+        "1483:1488",
+        "1679:1684",
+        "1716:1720",
+        "1721:1727",
+        "1920:1924",
+        "1925:1931",
+        "2119:2125",
+        "2183:2189",
+        "2310:2314",
+        "2315:2321",
+        "2395:2399",
+        "2505:2510",
+        "2551:2555",
+        "2556:2562",
+        "2651:2655",
+        "2656:2662",
+        "2834:2838",
+        "2839:2845",
+        "2898:2903",
+        "3272:3278",
+        "451:457",
+        "458:463",
+        "479:485",
+        "541:545",
+        "551:559",
+        "576:582",
+        "583:588",
+        "592:600",
+        "765:773",
+        "787:791",
+        "792:798",
+        "966:972",
+        "973:978",
+        "982:990" ;
+    data:wdtLink wdt:Q372740 ;
+    :hasBrother data:Manuel_II_of_Portugal ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Amélie_of_Orléans ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasSex data:male ;
+    :isBrotherOf data:Manuel_II_of_Portugal ;
+    :isChildOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :isSiblingOf data:Manuel_II_of_Portugal ;
+    :isSonOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Manuel II of Portugal" ;
+    data:posIndicesFull "2823:2832",
+        "2975:2984",
+        "2975:2996",
+        "3137:3146",
+        "740:749" ;
+    data:posIndicesPart "1376:1384",
+        "2413:2419",
+        "2596:2602",
+        "2697:2703",
+        "835:841",
+        "982:990" ;
+    data:wdtLink wdt:Q154308 ;
+    :alsoKnownAs "Manuel II",
+        "Manuel the Patriot",
+        "Manuel the Unfortunate" ;
+    :hasBrother data:Luís_Filipe-_Prince_Royal_of_Portugal ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Amélie_of_Orléans ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasSex data:male ;
+    :isBrotherOf data:Luís_Filipe-_Prince_Royal_of_Portugal ;
+    :isChildOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :isSiblingOf data:Luís_Filipe-_Prince_Royal_of_Portugal ;
+    :isSonOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal .
+

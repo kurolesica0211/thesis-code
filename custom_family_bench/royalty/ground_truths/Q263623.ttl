@@ -1,0 +1,258 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Armgard of Sierstorpff-Cramm" ;
+    data:posIndicesFull "6918:6946" ;
+    data:posIndicesPart "6986:6993" ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
+        "Armgard von Cramm",
+        "Baroness Armgard of Sierstorpff-Cramm",
+        "Baroness Armgard von Cramm",
+        "Countess Bodo von Oeynhausen",
+        "Princess Bernhard of Lippe-Biesterfeld" ;
+    :hasSex data:female .
+
+data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Hugo de Bourbon de Parme" ;
+    data:posIndicesFull "220:231",
+        "2588:2599",
+        "3323:3334",
+        "5406:5417",
+        "6231:6242",
+        "6510:6521",
+        "8139:8150",
+        "8332:8343",
+        "9404:9415" ;
+    data:posIndicesPart "2167:2173",
+        "2245:2251",
+        "3969:3975",
+        "4656:4662",
+        "4881:4887",
+        "6892:6898",
+        "7682:7688",
+        "8459:8465",
+        "8494:8501" ;
+    data:wdtLink wdt:Q75317573 ;
+    :alsoKnownAs "Carlos Hugo",
+        "Carlos Hugo Roderik Sybren",
+        "Carlos Hugo Roderik Sybren Klynstra",
+        "Carlos Hugo Roderik Sybren de Bourbon de Parme",
+        "Carlos Hugo de Bourbon de Parme",
+        "Hugo Klynstra",
+        "Hugo Klynstra de Bourbon de Parme",
+        "Hugo de Bourbon de Parme",
+        "Prince Carlos Hugo Roderik Sybren de Bourbon de Parme" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "496:531",
+        "505:531" ;
+    data:posIndicesPart "1009:1020",
+        "1548:1559",
+        "3472:3483",
+        "3907:3918",
+        "3949:3960",
+        "4366:4377",
+        "4533:4544",
+        "5000:5011",
+        "6330:6337",
+        "640:651",
+        "7265:7276",
+        "7458:7469",
+        "814:825",
+        "8798:8809",
+        "9177:9188",
+        "9291:9302" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Princess_Irene_of_the_Netherlands ;
+    :isSisterOf data:Princess_Irene_of_the_Netherlands .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of the Netherlands" ;
+    data:posIndicesFull "0:33",
+        "10085:10118",
+        "10094:10118",
+        "9534:9567",
+        "9543:9567",
+        "9:33" ;
+    data:posIndicesPart "1009:1020",
+        "1170:1175",
+        "1247:1255",
+        "1422:1427",
+        "1532:1540",
+        "1548:1559",
+        "1688:1696",
+        "1697:1702",
+        "1761:1766",
+        "1798:1803",
+        "1903:1908",
+        "2277:2285",
+        "2316:2324",
+        "2325:2330",
+        "2566:2571",
+        "2761:2769",
+        "2770:2775",
+        "2995:3003",
+        "3120:3125",
+        "3472:3483",
+        "358:366",
+        "3907:3918",
+        "3925:3933",
+        "3934:3939",
+        "3949:3960",
+        "4266:4274",
+        "4366:4377",
+        "4457:4465",
+        "4466:4471",
+        "4533:4544",
+        "4597:4605",
+        "4779:4787",
+        "4788:4793",
+        "483:494",
+        "5000:5011",
+        "5319:5327",
+        "5328:5333",
+        "5423:5431",
+        "558:566",
+        "5616:5624",
+        "5625:5630",
+        "5818:5823",
+        "589:597",
+        "6126:6134",
+        "6135:6140",
+        "6200:6205",
+        "6321:6329",
+        "6341:6349",
+        "640:651",
+        "6484:6492",
+        "6493:6498",
+        "6674:6679",
+        "6977:6985",
+        "7101:7106",
+        "7265:7276",
+        "7356:7361",
+        "7458:7469",
+        "745:750",
+        "7480:7488",
+        "7489:7494",
+        "7588:7593",
+        "7666:7671",
+        "7772:7777",
+        "7989:7994",
+        "814:825",
+        "8384:8392",
+        "8393:8398",
+        "8576:8584",
+        "8751:8756",
+        "8798:8809",
+        "8955:8960",
+        "9025:9033",
+        "9034:9039",
+        "9177:9188",
+        "9291:9302",
+        "9338:9346" ;
+    data:wdtLink wdt:Q263623 ;
+    :alsoKnownAs "Irene Emma Elisabeth of the Netherlands",
+        "Irene Emma Elisabeth van Oranje-Nassau",
+        "Irene of the Netherlands",
+        "Irene van Oranje",
+        "Princess Irene Emma Elisabeth of the Netherlands" ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "100:113",
+        "100:132",
+        "106:113",
+        "106:132",
+        "1256:1263",
+        "4155:4168",
+        "4161:4168",
+        "4625:4638",
+        "4631:4638" ;
+    data:posIndicesPart "1009:1020",
+        "1548:1559",
+        "3472:3483",
+        "3907:3918",
+        "3949:3960",
+        "4533:4544",
+        "483:494",
+        "5000:5011",
+        "640:651",
+        "7265:7276",
+        "7458:7469",
+        "814:825",
+        "8798:8809",
+        "9177:9188",
+        "9291:9302" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands .
+

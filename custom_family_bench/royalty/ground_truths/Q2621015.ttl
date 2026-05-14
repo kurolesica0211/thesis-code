@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Nina_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Nina Georgievna of Russia" ;
+    data:posIndicesFull "262:296",
+        "271:296" ;
+    data:posIndicesPart "825:831" ;
+    data:wdtLink wdt:Q898347 ;
+    :alsoKnownAs "Nina Chavchavadze",
+        "Nina Georgievna Chavchavadze",
+        "Princess Nina Georgievna of Russia" ;
+    :hasChild data:David_Chavchavadze ;
+    :hasSex data:female ;
+    :hasSon data:David_Chavchavadze ;
+    :isMotherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze .
+
+data:Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Paul Chavchavadze" ;
+    data:posIndicesFull "228:245" ;
+    data:posIndicesPart "1184:1188",
+        "423:427",
+        "570:582",
+        "764:776",
+        "885:897" ;
+    data:wdtLink wdt:Q16028068 ;
+    :alsoKnownAs "Paule Chavchavadze",
+        "Pavel Aleksandrovich Tchavchavadze, Prince Tchavchavadze" ;
+    :hasChild data:David_Chavchavadze ;
+    :hasSex data:male ;
+    :hasSon data:David_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "David Chavchavadze" ;
+    data:posIndicesFull "0:18",
+        "1072:1090" ;
+    data:posIndicesPart "186:198",
+        "570:582",
+        "764:776",
+        "885:897" ;
+    data:wdtLink wdt:Q2621015 ;
+    :alsoKnownAs "David Tchavchavadze, Prince Tchavchavadze",
+        "Prince David Chavchavadze" ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasMother data:Nina_Georgievna_of_Russia ;
+    :hasParent data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :isChildOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :isSonOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze .
+

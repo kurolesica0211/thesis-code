@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Gabriela_of_Austria a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Gabriela of Austria" ;
+    data:posIndicesFull "0:21",
+        "1168:1189",
+        "1274:1295",
+        "1403:1424",
+        "1911:1932",
+        "2143:2164",
+        "222:243",
+        "4305:4326",
+        "636:657" ;
+    data:posIndicesPart "1030:1041",
+        "1045:1052",
+        "1595:1603",
+        "1759:1767",
+        "201:208",
+        "513:521",
+        "604:612",
+        "782:789" ;
+    data:wdtLink wdt:Q113733 ;
+    :alsoKnownAs "Archduchess Gabriela Maria of Austria",
+        "Gabriela von Habsburg",
+        "The Archduchess Gabriela of Austria" ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasSex data:female ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isDaughterOf data:Otto_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "310:327" ;
+    data:posIndicesPart "981:989" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasChild data:Archduchess_Gabriela_of_Austria ;
+    :hasDaughter data:Archduchess_Gabriela_of_Austria ;
+    :hasSex data:male ;
+    :isFatherOf data:Archduchess_Gabriela_of_Austria ;
+    :isParentOf data:Archduchess_Gabriela_of_Austria .
+

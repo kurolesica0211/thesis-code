@@ -1,0 +1,267 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "565:581" ;
+    data:posIndicesPart "2215:2221",
+        "3821:3827",
+        "856:862" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasSex data:male .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "314:318",
+        "3467:3472",
+        "3541:3545",
+        "627:631",
+        "744:748" ;
+    data:posIndicesPart "1033:1041",
+        "1108:1116",
+        "1887:1895" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Xenia Georgievna of Russia" ;
+    data:posIndicesFull "2115:2150" ;
+    data:posIndicesPart "2247:2253",
+        "2969:2974",
+        "3018:3023",
+        "3149:3155",
+        "3199:3205" ;
+    data:wdtLink wdt:Q433753 ;
+    :alsoKnownAs "Xenia Georgievna Holstein-Gottorp-Romanova",
+        "Xenia Georgievna Romanova",
+        "Xenia Georgievna of Holstein-Gottorp" ;
+    :hasSex data:female .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "2537:2555" ;
+    data:posIndicesPart "2557:2565" ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans",
+        "Isabelle d’Orléans",
+        "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Françoise_of_Orléans ;
+    :isAuntOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Françoise_of_Orléans ;
+    :isSisterOf data:Princess_Françoise_of_Orléans .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "565:583",
+        "570:583" ;
+    data:posIndicesPart "2215:2221",
+        "3821:3827",
+        "856:862" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Princess_Françoise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Françoise of Orléans" ;
+    data:posIndicesFull "0:40",
+        "2339:2368",
+        "2348:2368" ;
+    data:posIndicesPart "1033:1041",
+        "1108:1116",
+        "1887:1895",
+        "2408:2417",
+        "2667:2674",
+        "2746:2755" ;
+    data:wdtLink wdt:Q577228 ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans",
+        "Françoise Isabelle Louise Marie of Orléans",
+        "Françoise of Guise",
+        "Françoise of Orléans",
+        "Princess Christopher of Greece and Denmark",
+        "Princess François d'Orléans",
+        "Princess Françoise Isabelle Louise Marie d'Orléans",
+        "Princess Françoise Isabelle Louise Marie of Orléans",
+        "Princess Françoise, Princess Christopher of Greece and Denmark" ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans_1 ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSisterOf data:Princess_Isabelle_dOrléans_1 .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1246:1254",
+        "1246:1264",
+        "175:198",
+        "180:188",
+        "180:198",
+        "421:444",
+        "426:434",
+        "426:444" ;
+    data:posIndicesPart "2215:2221",
+        "2237:2243",
+        "3821:3827",
+        "585:591",
+        "856:862" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michael of Greece and Denmark" ;
+    data:posIndicesFull "2757:2793" ;
+    data:posIndicesPart "2898:2904",
+        "3223:3229",
+        "3419:3425",
+        "3649:3655",
+        "3799:3805",
+        "3821:3827" ;
+    data:wdtLink wdt:Q724825 ;
+    :alsoKnownAs "Michel de Grece" ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Françoise_of_Orléans ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:posIndicesFull "0:40",
+        "510:517" ;
+    data:posIndicesPart "1266:1277",
+        "1324:1335",
+        "1530:1536",
+        "1568:1579",
+        "1709:1720",
+        "2002:2008",
+        "2009:2020",
+        "2160:2171",
+        "2215:2221",
+        "2283:2289",
+        "2290:2301",
+        "2835:2841",
+        "2842:2853",
+        "2898:2904",
+        "2905:2916",
+        "3223:3229",
+        "3230:3241",
+        "3419:3425",
+        "3426:3437",
+        "363:374",
+        "3649:3655",
+        "3656:3667",
+        "3799:3805",
+        "3806:3817",
+        "3821:3827",
+        "614:625",
+        "856:862",
+        "894:905" ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo",
+        "Prince Christophoros of Greece and Denmark" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Princess_Xenia_Georgievna_of_Russia .
+

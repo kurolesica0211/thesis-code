@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "3289:3300",
+        "969:980" ;
+    data:posIndicesPart "1048:1055",
+        "2661:2668",
+        "3670:3677",
+        "3878:3886",
+        "4322:4329" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasChild data:Margrethe_II_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isFatherOf data:Margrethe_II_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark ;
+    :isUncleOf data:Count_Christian_of_Rosenborg .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "1527:1539" ;
+    data:posIndicesPart "1783:1792",
+        "2661:2668",
+        "3411:3420",
+        "3670:3677",
+        "4222:4231",
+        "4322:4329",
+        "4392:4401" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark" ;
+    data:posIndicesFull "568:605" ;
+    data:posIndicesPart "1048:1055",
+        "1136:1144",
+        "1505:1513",
+        "1774:1782",
+        "2661:2668",
+        "3402:3410",
+        "3422:3430",
+        "3670:3677",
+        "4322:4329" ;
+    data:wdtLink wdt:Q264675 ;
+    :hasChild data:Count_Christian_of_Rosenborg ;
+    :hasSex data:female ;
+    :hasSon data:Count_Christian_of_Rosenborg ;
+    :isMotherOf data:Count_Christian_of_Rosenborg ;
+    :isParentOf data:Count_Christian_of_Rosenborg .
+
+data:Count_Christian_of_Rosenborg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Count Christian of Rosenborg" ;
+    data:posIndicesFull "0:28",
+        "174:201",
+        "181:201",
+        "6:28" ;
+    data:posIndicesPart "1266:1275",
+        "1590:1599",
+        "1828:1837",
+        "1962:1971",
+        "2241:2250",
+        "2356:2365",
+        "2515:2524",
+        "2579:2584",
+        "2588:2597",
+        "2670:2679",
+        "2834:2843",
+        "3045:3054",
+        "3183:3188",
+        "3189:3198",
+        "3457:3462",
+        "3463:3472",
+        "3702:3707",
+        "3708:3717",
+        "4240:4245",
+        "4246:4255",
+        "4412:4417",
+        "4418:4427",
+        "4509:4518",
+        "679:688",
+        "946:955" ;
+    data:wdtLink wdt:Q573263 ;
+    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
+        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
+        "Christian of Denmark",
+        "Christian of Rosenborg",
+        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark",
+        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
+        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
+        "Prince Christian of Denmark" ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSonOf data:Princess_Caroline-Mathilde_of_Denmark .
+

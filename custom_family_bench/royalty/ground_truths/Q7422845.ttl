@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Sarah_Troughton a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sarah Troughton" ;
+    data:posIndicesFull "5:25" ;
+    data:posIndicesPart "1042:1051",
+        "1197:1206",
+        "1258:1267",
+        "1399:1408",
+        "1491:1500",
+        "488:497",
+        "562:571",
+        "58:67" ;
+    data:wdtLink wdt:Q7422845 ;
+    :alsoKnownAs "Sarah Colman",
+        "Sarah Rose Colman",
+        "Sarah Rose Troughton" ;
+    :hasFather data:Timothy_Colman ;
+    :hasParent data:Timothy_Colman ;
+    :hasSex data:female ;
+    :isChildOf data:Timothy_Colman ;
+    :isDaughterOf data:Timothy_Colman .
+
+data:Timothy_Colman a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Timothy Colman" ;
+    data:posIndicesFull "146:160" ;
+    data:posIndicesPart "296:302",
+        "335:341",
+        "401:407" ;
+    data:wdtLink wdt:Q7807119 ;
+    :alsoKnownAs "Sir Timothy James Alan Colman",
+        "Σερ Τιμόθι Κόλμαν",
+        "Τιμόθι Τζέιμς Άλαν Κόλμαν" ;
+    :hasChild data:Sarah_Troughton ;
+    :hasDaughter data:Sarah_Troughton ;
+    :hasSex data:male ;
+    :isFatherOf data:Sarah_Troughton ;
+    :isParentOf data:Sarah_Troughton .
+

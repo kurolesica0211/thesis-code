@@ -1,0 +1,330 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "138:146",
+        "469:477" ;
+    data:posIndicesPart "1266:1273" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasBrother data:Charles_III ;
+    :hasSex data:male ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III ;
+    :isUncleOf data:William-_Prince_of_Wales .
+
+data:Diana-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Diana, Princess of Wales" ;
+    data:posIndicesFull "263:268",
+        "263:287",
+        "49:54",
+        "691:696",
+        "776:781" ;
+    data:posIndicesPart "1875:1883",
+        "2008:2013",
+        "2076:2084",
+        "2488:2496" ;
+    data:wdtLink wdt:Q9685 ;
+    :alsoKnownAs "Diana",
+        "Diana Frances Spencer",
+        "Diana Princess of Wales",
+        "Diana Spencer",
+        "Lady Di",
+        "Lady Diana Frances Spencer",
+        "Lady Diana Spencer",
+        "Princess Di",
+        "Princess Diana",
+        "The People's Princess",
+        "The Princess of Wales" ;
+    :hasChild data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSon data:William-_Prince_of_Wales ;
+    :isMotherOf data:William-_Prince_of_Wales ;
+    :isParentOf data:William-_Prince_of_Wales .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Charles III" ;
+    data:posIndicesFull "1498:1509",
+        "242:254",
+        "242:258",
+        "247:258" ;
+    data:posIndicesPart "724:731" ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III",
+        "Charles III of England",
+        "Charles III of the United Kingdom",
+        "Charles Mountbatten-Windsor",
+        "Charles Philip Arthur George",
+        "Charles Philip Arthur George Mountbatten-Windsor",
+        "Charles Philip Arthur George Windsor",
+        "Charles Philip Arthur George, Prince of Wales",
+        "Charles Wales",
+        "Charles Windsor",
+        "Charles the Third",
+        "HM King Charles III",
+        "His Majesty",
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+        "His Majesty The King",
+        "His Royal Highness Charles III of Great Britain",
+        "King Charles",
+        "King Charles III",
+        "King of England",
+        "Prince Charles",
+        "Prince Charles Philip Arthur George of Edinburgh",
+        "Prince Charles Philip Arthur George, Prince of Wales",
+        "Prince Charles of Edinburgh",
+        "Prince Charles, Duke of Rothesay",
+        "Prince Charles, Prince of Wales",
+        "The Prince Charles Philip Arthur George, Prince of Wales",
+        "The Prince Charles, Prince of Wales" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isFatherOf data:William-_Prince_of_Wales ;
+    :isParentOf data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor .
+
+data:Catherine-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Catherine, Princess of Wales" ;
+    data:posIndicesFull "189:217" ;
+    data:posIndicesPart "1875:1883",
+        "2008:2013",
+        "2076:2084",
+        "2488:2496",
+        "509:518" ;
+    data:wdtLink wdt:Q10479 ;
+    :alsoKnownAs "Catherine Elizabeth Middleton",
+        "Catherine Elizabeth, Duchess of Cambridge",
+        "Catherine Elizabeth, Duchess of Cornwall and Cambridge",
+        "Catherine Elizabeth, Princess of Wales",
+        "Catherine Middleton",
+        "Catherine Princess of Wales",
+        "Catherine, Duchess of Cambridge",
+        "Catherine, Duchess of Cornwall and Cambridge",
+        "Duchess Catherine",
+        "Duchess Kate",
+        "Kate Middleton",
+        "Kate Princess of Wales",
+        "Princess Catherine",
+        "Princess Kate" ;
+    :hasChild data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :hasDaughter data:Princess_Charlotte_of_Wales ;
+    :hasSex data:female ;
+    :hasSon data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isMotherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isParentOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales .
+
+data:Prince_George_of_Wales a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George of Wales" ;
+    data:posIndicesFull "604:617" ;
+    data:posIndicesPart "1111:1117",
+        "1998:2004",
+        "2008:2013" ;
+    data:wdtLink wdt:Q13590412 ;
+    :alsoKnownAs "George Alexander Louis Mountbatten-Windsor",
+        "George Alexander Louis of Cambridge",
+        "George Alexander Louis of Cornwall and Cambridge",
+        "George Alexander Louis of Wales",
+        "George Cambridge",
+        "George Mountbatten-Windsor",
+        "George of Cambridge",
+        "George of Cornwall and Cambridge",
+        "George of Wales",
+        "Prince George",
+        "Prince George Alexander Louis",
+        "Prince George Alexander Louis of Cambridge",
+        "Prince George Alexander Louis of Cornwall and Cambridge",
+        "Prince George Alexander Louis of Wales",
+        "Prince George of Cambridge" ;
+    :hasBrother data:Prince_Louis_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasMother data:Catherine-_Princess_of_Wales ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Charlotte_of_Wales ;
+    :isBrotherOf data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isChildOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isSonOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales .
+
+data:Prince_Louis_of_Wales a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Louis of Wales" ;
+    data:posIndicesFull "622:634" ;
+    data:posIndicesPart "1998:2004",
+        "2008:2013",
+        "2438:2443" ;
+    data:wdtLink wdt:Q38668629 ;
+    :alsoKnownAs "Louis Arthur Charles of Cambridge",
+        "Louis Arthur Charles of Cornwall and Cambridge",
+        "Louis Arthur Charles of Wales",
+        "Louis Cambridge",
+        "Louis Wales",
+        "Louis of Cambridge",
+        "Louis of Cornwall and Cambridge",
+        "Louis of Wales",
+        "Prince Louis",
+        "Prince Louis Arthur Charles of Cambridge",
+        "Prince Louis Arthur Charles of Cornwall and Cambridge",
+        "Prince Louis Arthur Charles of Wales",
+        "Prince Louis of Cambridge",
+        "Prince Louis of Cornwall and Cambridge" ;
+    :hasBrother data:Prince_George_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasMother data:Catherine-_Princess_of_Wales ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Charlotte_of_Wales ;
+    :isBrotherOf data:Prince_George_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isChildOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isSonOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales .
+
+data:Princess_Charlotte_of_Wales a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Charlotte of Wales" ;
+    data:posIndicesFull "0:27",
+        "1192:1211",
+        "1938:1965",
+        "1947:1965",
+        "2035:2048",
+        "298:311",
+        "783:796",
+        "9:27" ;
+    data:posIndicesPart "1037:1046",
+        "1449:1458",
+        "1515:1524",
+        "1689:1698",
+        "1790:1799",
+        "2122:2131",
+        "2488:2496",
+        "671:680",
+        "968:977" ;
+    data:wdtLink wdt:Q18002970 ;
+    :alsoKnownAs "Charlotte Cambridge",
+        "Charlotte Elizabeth Diana Mountbatten-Windsor",
+        "Charlotte Elizabeth Diana of Wales",
+        "Charlotte Mountbatten-Windsor",
+        "Charlotte Wales",
+        "Charlotte Windsor",
+        "Charlotte of Wales",
+        "Princess Charlotte Elizabeth Diana of Cornwall and Cambridge",
+        "Princess Charlotte Elizabeth Diana of Wales",
+        "Princess Charlotte of Cornwall and Cambridge" ;
+    :hasBrother data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasMother data:Catherine-_Princess_of_Wales ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :isChildOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isDaughterOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isSisterOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales .
+
+data:William-_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William, Prince of Wales" ;
+    data:posIndicesFull "159:166",
+        "159:183",
+        "490:504",
+        "497:504" ;
+    data:posIndicesPart "1998:2004",
+        "2008:2013" ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam",
+        "Prince William",
+        "Prince William Arthur Philip Louis of Wales",
+        "Prince William Arthur Philip Louis, Duke of Cambridge",
+        "Prince William of Wales",
+        "Prince William, Duke of Cambridge",
+        "William Arthur Philip Louis",
+        "William Arthur Philip Louis Mountbatten-Windsor",
+        "William Arthur Philip Louis, Prince of Wales",
+        "William Cambridge",
+        "William Wales",
+        "William Windsor" ;
+    :hasChild data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :hasDaughter data:Princess_Charlotte_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana-_Princess_of_Wales ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isChildOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isFatherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isParentOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:Princess_Charlotte_of_Wales ;
+    :isSonOf data:Charles_III,
+        data:Diana-_Princess_of_Wales .
+

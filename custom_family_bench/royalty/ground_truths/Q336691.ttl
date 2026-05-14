@@ -1,0 +1,354 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:John_Knatchbull-_7th_Baron_Brabourne a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "John Knatchbull, 7th Baron Brabourne" ;
+    data:posIndicesFull "1071:1107" ;
+    data:posIndicesPart "1665:1674",
+        "1999:2008",
+        "2051:2060",
+        "2669:2673",
+        "3766:3775",
+        "4695:4705" ;
+    data:wdtLink wdt:Q332969 ;
+    :alsoKnownAs "John Brabourne" ;
+    :hasChild data:Amanda_Ellingworth ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasSex data:male ;
+    :isFatherOf data:Amanda_Ellingworth ;
+    :isParentOf data:Amanda_Ellingworth .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "1950:1963",
+        "380:393",
+        "380:412",
+        "4458:4471",
+        "4458:4490" ;
+    data:posIndicesPart "1631:1635",
+        "1835:1841",
+        "3089:3093" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Princess_Alice_of_Battenberg .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
+    data:posIndicesFull "2708:2728",
+        "3224:3244",
+        "4100:4120",
+        "41:61",
+        "4254:4274",
+        "547:567" ;
+    data:posIndicesPart "224:235",
+        "239:244",
+        "298:304",
+        "3868:3876",
+        "896:902" ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten",
+        "Dame Edwina Cynthia Annette Mountbatten",
+        "Edwina Cynthia Annette Ashley",
+        "Edwina Cynthia Annette Mountbatten",
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma",
+        "Lady Mountbatten of Burma" ;
+    :hasChild data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasDaughter data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isParentOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma .
+
+data:Amanda_Ellingworth a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amanda Ellingworth" ;
+    data:posIndicesFull "2211:2228" ;
+    data:wdtLink wdt:Q6469925 ;
+    :alsoKnownAs "Amanda Knatchbull",
+        "Amanda Knatchbull Ellingworth",
+        "Amanda Patricia Victoria Ellingworth",
+        "Amanda Patricia Victoria Knatchbull",
+        "Lady Amanda Knatchbull",
+        "Lady Amanda Patricia Victoria Ellingworth",
+        "Lady Amanda Patricia Victoria Knatchbull" ;
+    :hasFather data:John_Knatchbull-_7th_Baron_Brabourne ;
+    :hasMother data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isChildOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma .
+
+data:Louise_Mountbatten a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "255:281",
+        "262:281" ;
+    data:posIndicesPart "511:522" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Louis of Battenberg" ;
+    data:posIndicesFull "255:281",
+        "262:281" ;
+    data:posIndicesPart "1835:1841" ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg",
+        "Count Louis of Battenberg",
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven",
+        "Louis Alexander of Battenberg",
+        "Louis Milford Haven",
+        "Louis Mountbatten, 1st Marquess of Milford Haven",
+        "Louis of Battenberg",
+        "Prince Louis Alexander of Battenberg",
+        "Sir Louis Alexander Mountbatten",
+        "Sir Louis Mountbatten" ;
+    :hasChild data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Pamela Hicks" ;
+    data:posIndicesFull "1537:1560",
+        "1542:1560",
+        "341:358" ;
+    data:posIndicesPart "1660:1664",
+        "1994:1998",
+        "2046:2050",
+        "2885:2889",
+        "3361:3365",
+        "506:510" ;
+    data:wdtLink wdt:Q3268202 ;
+    :alsoKnownAs "Lady Pamela Carmen Louise Hicks",
+        "Lady Pamela Carmen Louise Mountbatten",
+        "Lady Pamela Mountbatten",
+        "Pamela Carmen Louise Hicks",
+        "Pamela Carmen Louise Mountbatten",
+        "Pamela Mountbatten" ;
+    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isAuntOf data:Amanda_Ellingworth ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isSiblingOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSisterOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1162:1166",
+        "1407:1412",
+        "2870:2875",
+        "4361:4366",
+        "712:716",
+        "990:995" ;
+    data:posIndicesPart "1498:1506",
+        "1518:1526",
+        "1595:1603",
+        "2920:2928",
+        "2975:2983",
+        "3057:3065",
+        "3524:3532",
+        "4591:4599" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAuntOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Patricia Knatchbull, 2nd Countess Mountbatten of Burma" ;
+    data:posIndicesFull "718:738" ;
+    data:posIndicesPart "1217:1225",
+        "2349:2357",
+        "2890:2898",
+        "2929:2937",
+        "2984:2992",
+        "3066:3074",
+        "3248:3253",
+        "3366:3374",
+        "3533:3541",
+        "3560:3568",
+        "3868:3876",
+        "4600:4608",
+        "4695:4705" ;
+    data:wdtLink wdt:Q336691 ;
+    :alsoKnownAs "Patricia Edwina Victoria Knatchbull, 2nd Countess Mountbatten of Burma",
+        "Patricia Edwina Victoria Knatchbull, Baroness Brabourne",
+        "Patricia Edwina Victoria Knatchbull, Lady Brabourne",
+        "Patricia Edwina Victoria Mountbatten",
+        "Patricia Knatchbull",
+        "Patricia Knatchbull, Baroness Brabourne",
+        "Patricia Knatchbull, Lady Brabourne",
+        "Patricia Mountbatten" ;
+    :hasChild data:Amanda_Ellingworth ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Pamela_Hicks ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isMotherOf data:Amanda_Ellingworth ;
+    :isParentOf data:Amanda_Ellingworth ;
+    :isSiblingOf data:Lady_Pamela_Hicks ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1867:1883",
+        "255:281" ;
+    data:posIndicesPart "3248:3253",
+        "511:522",
+        "571:576" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasChild data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasDaughter data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isParentOf data:Lady_Pamela_Hicks,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+

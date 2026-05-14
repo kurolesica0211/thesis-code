@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
 """Convert royalty family CSV rows into gold TTL triples.
 
-This script intentionally emits only two ontology predicates:
+This script emits the following ontology predicates:
 - :hasParent
 - :hasSex
+- :alsoKnownAs (for aliases)
 """
-
 from __future__ import annotations
 
 import argparse
@@ -45,6 +44,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("custom_family_bench/royalty/ground_truth.ttl"),
         help="Path to output TTL (default: custom_family_bench/royalty/ground_truth.ttl)",
     )
+    parser.add_argument(
+        "--aliases",
+        type=Path,
+        default=Path("custom_family_bench/royalty/misc/gold_triples_csvs/aliases.csv"),
+        help="Path to aliases CSV (default: custom_family_bench/royalty/misc/gold_triples_csvs/aliases.csv)",
+    )
     return parser.parse_args()
 
 
@@ -61,7 +66,39 @@ def gender_to_ontology_value(gender_uri: str) -> str | None:
     return None
 
 
-def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
+def load_aliases(aliases_path: Path) -> dict[str, list[str]]:
+    """Load aliases from CSV file.
+    
+    Returns a dictionary mapping Wikidata URIs to lists of aliases.
+    """
+    aliases_dict: dict[str, list[str]] = {}
+    
+    if not aliases_path.exists():
+        print(f"Warning: Aliases file not found at {aliases_path}. Continuing without aliases.")
+        return aliases_dict
+    
+    with aliases_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        required_columns = {"item", "alias"}
+        missing = required_columns.difference(reader.fieldnames or [])
+        if missing:
+            missing_cols = ", ".join(sorted(missing))
+            print(f"Warning: Missing required alias CSV columns: {missing_cols}. Continuing without aliases.")
+            return aliases_dict
+        
+        for row in reader:
+            item = (row.get("item") or "").strip()
+            alias = (row.get("alias") or "").strip()
+            
+            if item and alias:
+                if item not in aliases_dict:
+                    aliases_dict[item] = []
+                aliases_dict[item].append(alias)
+    
+    return aliases_dict
+
+
+def convert_csv_to_ttl(input_path: Path, output_path: Path, aliases_path: Path) -> None:
     graph = Graph()
     graph.bind("", ONTOLOGY_PREFIX)
     graph.bind("data", DATA_PREFIX)
@@ -79,6 +116,9 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
     graph.add((male_individual, RDF.type, ONT_NS.Male))
     graph.add((female_individual, RDF.type, ONT_NS.Female))
     graph.add((DATA_NS.wdtLink, RDF.type, OWL.AnnotationProperty))
+    
+    # Load aliases
+    aliases_map = load_aliases(aliases_path)
 
     def row_value(row: dict[str, str], *keys: str) -> str:
         for key in keys:
@@ -127,6 +167,18 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
                 graph.add((ancestorLabel, RDF.type, ONT_NS.Person))
                 distinct_people.add(itemLabel)
                 distinct_people.add(ancestorLabel)
+                
+                # Add aliases for item if they exist
+                item_str = str(item)
+                if item_str in aliases_map:
+                    for alias in aliases_map[item_str]:
+                        graph.add((itemLabel, ONT_NS.alsoKnownAs, Literal(alias)))
+                
+                # Add aliases for parent if they exist
+                parent_str = str(parent)
+                if parent_str in aliases_map:
+                    for alias in aliases_map[parent_str]:
+                        graph.add((ancestorLabel, ONT_NS.alsoKnownAs, Literal(alias)))
 
             sex_name = gender_to_ontology_value(gender)
             if sex_name == "Male":
@@ -160,7 +212,7 @@ def convert_csv_to_ttl(input_path: Path, output_path: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    convert_csv_to_ttl(args.input, args.output)
+    convert_csv_to_ttl(args.input, args.output, args.aliases)
     print(f"Wrote TTL to {args.output}")
 
 

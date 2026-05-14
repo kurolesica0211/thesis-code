@@ -1,0 +1,220 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Danica-_Hereditary_Princess_of_Serbia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Danica, Hereditary Princess of Serbia" ;
+    data:posIndicesFull "3173:3190",
+        "3207:3224" ;
+    data:posIndicesPart "3360:3368",
+        "3447:3455",
+        "3539:3545",
+        "3615:3623",
+        "3769:3777",
+        "3920:3926",
+        "3955:3963",
+        "3964:3970",
+        "4256:4262",
+        "4319:4327",
+        "4835:4841",
+        "4987:4993",
+        "5018:5024",
+        "5230:5238",
+        "5239:5245",
+        "5726:5734",
+        "5735:5741",
+        "6083:6089",
+        "6604:6610",
+        "6612:6622",
+        "6720:6730",
+        "6791:6801",
+        "6812:6818",
+        "6968:6976",
+        "7032:7040",
+        "7041:7047",
+        "7745:7753",
+        "7825:7831",
+        "8581:8587" ;
+    data:wdtLink wdt:Q61855462 ;
+    :alsoKnownAs "Danica Karađorđević",
+        "Danica Marinković" ;
+    :hasChild data:Prince_Stefan_of_Serbia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Stefan_of_Serbia ;
+    :isMotherOf data:Prince_Stefan_of_Serbia ;
+    :isParentOf data:Prince_Stefan_of_Serbia .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
+    data:posIndicesFull "1013:1028",
+        "6977:6992" ;
+    data:posIndicesPart "1439:1447",
+        "1454:1461",
+        "1700:1707",
+        "3360:3368",
+        "3447:3455",
+        "3462:3469",
+        "3615:3623",
+        "3624:3629",
+        "3769:3777",
+        "3955:3963",
+        "4319:4327",
+        "4465:4470",
+        "5230:5238",
+        "5726:5734",
+        "7745:7753",
+        "9294:9299" ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
+        "Maria da Gloria" ;
+    :hasChild data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasSex data:female ;
+    :hasSon data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isMotherOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isParentOf data:Philip-_Hereditary_Prince_of_Serbia .
+
+data:Philip-_Hereditary_Prince_of_Serbia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Philip, Hereditary Prince of Serbia" ;
+    data:posIndicesFull "270:305",
+        "99:117" ;
+    data:posIndicesPart "1271:1277",
+        "1504:1510",
+        "1541:1547",
+        "1761:1767",
+        "2009:2015",
+        "2069:2075",
+        "2180:2186",
+        "2394:2400",
+        "2496:2502",
+        "2573:2579",
+        "2597:2603",
+        "2628:2634",
+        "2681:2687",
+        "2769:2775",
+        "2841:2847",
+        "2908:2914",
+        "2987:2993",
+        "3192:3198",
+        "3311:3317",
+        "3539:3545",
+        "3701:3707",
+        "3747:3753",
+        "3920:3926",
+        "3996:4002",
+        "4176:4182",
+        "4245:4251",
+        "4349:4355",
+        "4356:4362",
+        "4487:4493",
+        "4629:4635",
+        "4715:4721",
+        "4722:4728",
+        "4825:4831",
+        "4835:4841",
+        "4854:4860",
+        "4987:4993",
+        "5018:5024",
+        "5026:5032",
+        "5118:5124",
+        "5125:5131",
+        "5209:5215",
+        "5380:5386",
+        "5387:5393",
+        "5621:5627",
+        "5705:5711",
+        "586:592",
+        "6027:6033",
+        "6083:6089",
+        "6109:6115",
+        "6249:6255",
+        "6256:6262",
+        "6377:6383",
+        "6384:6390",
+        "6505:6511",
+        "6604:6610",
+        "6612:6622",
+        "661:667",
+        "6623:6629",
+        "6682:6688",
+        "6720:6730",
+        "6731:6737",
+        "6773:6779",
+        "6791:6801",
+        "6802:6808",
+        "6812:6818",
+        "7247:7253",
+        "724:734",
+        "7273:7279",
+        "7327:7333",
+        "735:741",
+        "7424:7430",
+        "7474:7480",
+        "7688:7694",
+        "7825:7831",
+        "8018:8024",
+        "813:819",
+        "820:826",
+        "8252:8258",
+        "8259:8265",
+        "8281:8287",
+        "8380:8386",
+        "8548:8554",
+        "8581:8587",
+        "8731:8737",
+        "8800:8806",
+        "9102:9108",
+        "929:935" ;
+    data:wdtLink wdt:Q3268142 ;
+    :alsoKnownAs "Filip Karađorđević",
+        "Philip Karageorgievich, Prince of Yugoslavia",
+        "Philip Karađorđević",
+        "Prince Philip, Hereditary Prince of Serbia" ;
+    :hasChild data:Prince_Stefan_of_Serbia ;
+    :hasMother data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasParent data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Stefan_of_Serbia ;
+    :isChildOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isFatherOf data:Prince_Stefan_of_Serbia ;
+    :isParentOf data:Prince_Stefan_of_Serbia ;
+    :isSonOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+
+data:Prince_Stefan_of_Serbia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Stefan of Serbia" ;
+    data:wdtLink wdt:Q50220539 ;
+    :alsoKnownAs "Esteban Karađorđević",
+        "Prince Stefan Karageorgievich",
+        "Prince Stefan Karađorđević",
+        "Stefan Karađorđević of Serbia" ;
+    :hasFather data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasMother data:Danica-_Hereditary_Princess_of_Serbia ;
+    :hasParent data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasSex data:male ;
+    :isChildOf data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isSonOf data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia .
+

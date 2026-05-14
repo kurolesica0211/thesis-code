@@ -1,0 +1,358 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:posIndicesFull "3349:3385",
+        "3356:3385",
+        "478:514",
+        "485:514" ;
+    data:posIndicesPart "10146:10152",
+        "10153:10161",
+        "10506:10512",
+        "11683:11689",
+        "11770:11776",
+        "11777:11785",
+        "12056:12062",
+        "12063:12071",
+        "12439:12445",
+        "12446:12454",
+        "12512:12518",
+        "12649:12655",
+        "13514:13520",
+        "13521:13529",
+        "14081:14087",
+        "14088:14096",
+        "14952:14957",
+        "14958:14969",
+        "15153:15158",
+        "15159:15170",
+        "15250:15255",
+        "15256:15267",
+        "1914:1920",
+        "3266:3272",
+        "3737:3745",
+        "3980:3986",
+        "4109:4115",
+        "4116:4124",
+        "4741:4749",
+        "4789:4794",
+        "4821:4826",
+        "4935:4941",
+        "4942:4950",
+        "5419:5425",
+        "5426:5434",
+        "6938:6944",
+        "6945:6953",
+        "788:796",
+        "9887:9895" ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe-Biesterfeld",
+        "Bernhard, Prince Consort of the Netherlands",
+        "Prince Bernhard of the Netherlands",
+        "Prince Bernhard, Prince Consort of the Netherlands",
+        "Z.K.H. Prins Bernhard" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Woizlawa Feodora of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "4468:4516" ;
+    data:posIndicesPart "14531:14538",
+        "14542:14553",
+        "14732:14743",
+        "14916:14923",
+        "14927:14938",
+        "15117:15124",
+        "15128:15139" ;
+    data:wdtLink wdt:Q96733 ;
+    :alsoKnownAs "Woizlawa-Feodora Herzogin von Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:Duke_Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Henry of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "1627:1661",
+        "421:455" ;
+    data:posIndicesPart "10537:10541",
+        "14542:14553",
+        "14732:14743",
+        "14927:14938",
+        "15128:15139",
+        "4554:4565",
+        "4566:4574" ;
+    data:wdtLink wdt:Q503991 ;
+    :alsoKnownAs "Dudley S. Van Antwerp",
+        "Duke Heinrich of Mecklenburg-Schwerin",
+        "Hendrik van Mecklenburg-Schwerin",
+        "Prince Hendrik, Prince Consort of the Netherlands",
+        "Prince Henry of Mecklenburg-Schwerin" ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isFatherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands ;
+    :isUncleOf data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin .
+
+data:Emma_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Emma of Waldeck and Pyrmont" ;
+    data:posIndicesFull "13882:13892",
+        "4332:4342" ;
+    data:posIndicesPart "14462:14466" ;
+    data:wdtLink wdt:Q57664 ;
+    :alsoKnownAs "Emma of the Netherlands",
+        "Emma, prinses van Waldeck en Pyrmont",
+        "Princess Emma of Waldeck and Pyrmont",
+        "Queen Emma" ;
+    :hasChild data:Wilhelmina_of_the_Netherlands ;
+    :hasDaughter data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Wilhelmina_of_the_Netherlands ;
+    :isParentOf data:Wilhelmina_of_the_Netherlands .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William III of the Netherlands" ;
+    data:posIndicesFull "4316:4327" ;
+    data:posIndicesPart "10906:10917",
+        "15077:15088",
+        "4887:4898",
+        "5833:5844",
+        "5955:5966",
+        "6996:7007",
+        "7815:7826",
+        "8086:8097",
+        "8301:8312",
+        "8431:8442",
+        "8537:8548",
+        "8963:8974",
+        "9307:9318",
+        "9690:9701" ;
+    data:wdtLink wdt:Q125649 ;
+    :alsoKnownAs "King William III of the Netherlands",
+        "Prince William of Orange",
+        "Willem III",
+        "Willem III der Nederlanden",
+        "Willem III of the Netherlands",
+        "William III",
+        "Z.M. den Koning" ;
+    :hasChild data:Wilhelmina_of_the_Netherlands ;
+    :hasDaughter data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isFatherOf data:Wilhelmina_of_the_Netherlands ;
+    :isParentOf data:Wilhelmina_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "0:7",
+        "10099:10106",
+        "10302:10315",
+        "10308:10315",
+        "1030:1037",
+        "10678:10691",
+        "10684:10691",
+        "10951:10964",
+        "10957:10964",
+        "11223:11236",
+        "11229:11236",
+        "11306:11319",
+        "11312:11319",
+        "12252:12259",
+        "12761:12774",
+        "12767:12774",
+        "12959:12972",
+        "12965:12972",
+        "13022:13029",
+        "13106:13119",
+        "13112:13119",
+        "1326:1333",
+        "13304:13311",
+        "13381:13388",
+        "13475:13482",
+        "13710:13717",
+        "1392:1399",
+        "14063:14070",
+        "14232:14239",
+        "14361:14368",
+        "14447:14454",
+        "1479:1486",
+        "14852:14887",
+        "14861:14868",
+        "14861:14887",
+        "15011:15018",
+        "15055:15062",
+        "2145:2152",
+        "2273:2280",
+        "232:239",
+        "232:268",
+        "2344:2351",
+        "2442:2449",
+        "2617:2624",
+        "2786:2793",
+        "3544:3551",
+        "3608:3615",
+        "370:377",
+        "4287:4294",
+        "4383:4390",
+        "4964:4971",
+        "5274:5281",
+        "5635:5642",
+        "6039:6046",
+        "6248:6255",
+        "6445:6452",
+        "6497:6504",
+        "6926:6933",
+        "7101:7108",
+        "715:722",
+        "7267:7274",
+        "7401:7408",
+        "7433:7440",
+        "7623:7630",
+        "7881:7888",
+        "8147:8160",
+        "8153:8160",
+        "8640:8647",
+        "8714:8727",
+        "8720:8727",
+        "9149:9162",
+        "9155:9162",
+        "929:936",
+        "9424:9437",
+        "9430:9437",
+        "9740:9747" ;
+    data:posIndicesPart "1197:1208",
+        "2009:2020",
+        "2101:2112",
+        "2923:2934",
+        "5955:5966",
+        "624:635",
+        "7815:7826",
+        "8301:8312",
+        "8431:8442",
+        "851:862",
+        "8537:8548",
+        "9307:9318",
+        "9690:9701" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasFather data:Duke_Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Duke_Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Duke_Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina_of_the_Netherlands .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelmina of the Netherlands" ;
+    data:posIndicesFull "1005:1015",
+        "13930:13940",
+        "14473:14483",
+        "14473:14502",
+        "1594:1610",
+        "1600:1610",
+        "1704:1714",
+        "1741:1751",
+        "2050:2060",
+        "258:268",
+        "3038:3054",
+        "3044:3054",
+        "3796:3812",
+        "3802:3812",
+        "3878:3888",
+        "400:416",
+        "406:416",
+        "5040:5056",
+        "5046:5056",
+        "5491:5507",
+        "5497:5507",
+        "5879:5895",
+        "5885:5895",
+        "6839:6855",
+        "6845:6855",
+        "7161:7171",
+        "7345:7355",
+        "7540:7550",
+        "773:783",
+        "900:910" ;
+    data:posIndicesPart "10906:10917",
+        "1197:1208",
+        "15077:15088",
+        "2923:2934",
+        "5833:5844",
+        "624:635",
+        "6996:7007",
+        "7815:7826",
+        "8086:8097",
+        "8301:8312",
+        "8431:8442",
+        "851:862",
+        "8537:8548",
+        "8963:8974",
+        "9307:9318",
+        "9690:9701" ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
+        "Princess Wilhelmina of the Netherlands",
+        "Queen Wilhelmina",
+        "Queen Wilhelmina of the Netherlands",
+        "Wilhelmina",
+        "Wilhelmina I",
+        "Wilhelmina Koningin der Nederlanden" ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Emma_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Emma_of_Waldeck_and_Pyrmont,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Emma_of_Waldeck_and_Pyrmont,
+        data:William_III_of_the_Netherlands ;
+    :isDaughterOf data:Emma_of_Waldeck_and_Pyrmont,
+        data:William_III_of_the_Netherlands ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands .
+

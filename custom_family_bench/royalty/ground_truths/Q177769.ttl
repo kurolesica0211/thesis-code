@@ -1,0 +1,321 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Bernhard_III-_Duke_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Bernhard III, Duke of Saxe-Meiningen" ;
+    data:posIndicesFull "146:158",
+        "146:182" ;
+    data:posIndicesPart "3510:3514",
+        "3618:3622",
+        "474:482",
+        "505:509",
+        "510:519",
+        "6301:6305",
+        "6306:6315" ;
+    data:wdtLink wdt:Q61104 ;
+    :alsoKnownAs "Bernhard III" ;
+    :hasChild data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen_1 .
+
+data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen" ;
+    data:posIndicesFull "0:34",
+        "9:34" ;
+    data:posIndicesPart "1003:1010",
+        "1174:1181",
+        "1366:1374",
+        "1470:1477",
+        "1650:1657",
+        "1867:1874",
+        "2127:2134",
+        "2246:2253",
+        "2283:2291",
+        "2579:2586",
+        "2716:2723",
+        "285:292",
+        "2881:2888",
+        "2925:2933",
+        "2934:2941",
+        "3214:3221",
+        "3426:3433",
+        "3510:3514",
+        "3573:3580",
+        "3618:3622",
+        "3758:3765",
+        "3882:3890",
+        "3891:3898",
+        "4104:4111",
+        "412:420",
+        "421:428",
+        "4591:4598",
+        "4823:4830",
+        "4900:4907",
+        "5019:5026",
+        "505:509",
+        "510:519",
+        "5195:5202",
+        "5308:5315",
+        "5505:5512",
+        "5529:5536",
+        "5672:5679",
+        "5781:5788",
+        "5868:5875",
+        "5982:5989",
+        "6147:6154",
+        "6259:6266",
+        "6301:6305",
+        "6306:6315",
+        "6447:6454",
+        "6513:6521",
+        "6848:6855",
+        "725:733" ;
+    data:wdtLink wdt:Q177769 ;
+    :alsoKnownAs "Feodora Viktoria Auguste Marie Marianne of Saxe-Meiningen",
+        "Feodora de Saxonia-Meiningen",
+        "Feodora de Saxònia-Meiningen",
+        "Feodora of Saxe-Meiningen",
+        "Princess Feodora Viktoria Auguste Marie Marianne of Saxe-Meiningen" ;
+    :hasFather data:Bernhard_III-_Duke_of_Saxe-Meiningen ;
+    :hasMother data:Princess_Charlotte_of_Prussia ;
+    :hasParent data:Bernhard_III-_Duke_of_Saxe-Meiningen,
+        data:Princess_Charlotte_of_Prussia ;
+    :hasSex data:female ;
+    :isChildOf data:Bernhard_III-_Duke_of_Saxe-Meiningen,
+        data:Princess_Charlotte_of_Prussia ;
+    :isDaughterOf data:Bernhard_III-_Duke_of_Saxe-Meiningen,
+        data:Princess_Charlotte_of_Prussia .
+
+data:Frederick_III-_German_Emperor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick III, German Emperor" ;
+    data:posIndicesFull "237:250",
+        "237:261" ;
+    data:posIndicesPart "1603:1609",
+        "3111:3118",
+        "343:349",
+        "350:357",
+        "3970:3976",
+        "4075:4081",
+        "596:602",
+        "616:625" ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany",
+        "Friedrich III",
+        "Friedrich III of Germany",
+        "Friedrich Wilhelm Nikolaus Karl",
+        "King Frederick III of Prussia",
+        "Kronprinz Friedrich Wilhelm" ;
+    :hasChild data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm_II ;
+    :isFatherOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "1088:1105",
+        "644:661" ;
+    data:posIndicesPart "1154:1159",
+        "1366:1374",
+        "1582:1590",
+        "2053:2061",
+        "2283:2291",
+        "2406:2411",
+        "2470:2478",
+        "2925:2933",
+        "3704:3712",
+        "3882:3890",
+        "3938:3946",
+        "3985:3993",
+        "4134:4142",
+        "4296:4304",
+        "5420:5428",
+        "6513:6521",
+        "725:733",
+        "815:823" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasChild data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Wilhelm_II ;
+    :isMotherOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "5036:5040",
+        "6348:6354" ;
+    data:posIndicesPart "6513:6521" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Charlotte_of_Prussia ;
+    :isAuntOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Charlotte_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Charlotte_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "3024:3049",
+        "3039:3049" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :isBrotherOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :isSonOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Princess_Feodora_of_Saxe-Meiningen_1 .
+
+data:Princess_Charlotte_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Charlotte of Prussia" ;
+    data:posIndicesFull "534:563",
+        "543:563" ;
+    data:posIndicesPart "1217:1226",
+        "1366:1374",
+        "1954:1963",
+        "2283:2291",
+        "2838:2847",
+        "2925:2933",
+        "3549:3558",
+        "3882:3890",
+        "5578:5587",
+        "5698:5707",
+        "5744:5753",
+        "5814:5823",
+        "5948:5957",
+        "6513:6521",
+        "725:733",
+        "825:834" ;
+    data:wdtLink wdt:Q58670 ;
+    :alsoKnownAs "Charlotte of Prussia",
+        "Duchess Charlotte, Duchess Consort of Saxe-Meiningen",
+        "Princess Victoria Elizabeth Augusta Charlotte of Prussia",
+        "Victoria Elizabeth Augusta Charlotte of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+

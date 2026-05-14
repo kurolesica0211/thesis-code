@@ -1,0 +1,109 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Paulina_of_Hesse_and_by_Rhine a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Paulina of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q75976254 ;
+    :alsoKnownAs "Paulina Elisabeth Adelheid Tatiana Suzanne Prinzessin von Hessen-Kassel" ;
+    :hasFather data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasParent data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isDaughterOf data:Prince_Donatus-_Landgrave_of_Hesse .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg" ;
+    data:posIndicesFull "324:371" ;
+    data:posIndicesPart "1945:1953",
+        "2254:2262",
+        "2351:2359",
+        "2372:2380",
+        "2415:2423" ;
+    data:wdtLink wdt:Q4164797 ;
+    :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg" ;
+    :hasChild data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isMotherOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isParentOf data:Prince_Donatus-_Landgrave_of_Hesse .
+
+data:Prince_Donatus-_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Donatus, Landgrave of Hesse" ;
+    data:posIndicesFull "48:80" ;
+    data:posIndicesPart "1043:1048",
+        "1399:1406",
+        "1543:1550",
+        "1810:1816",
+        "1817:1824",
+        "1900:1909",
+        "1913:1918",
+        "2169:2174",
+        "2202:2209",
+        "2481:2488",
+        "2520:2526",
+        "2634:2641",
+        "283:292",
+        "2911:2916",
+        "2933:2939",
+        "296:301",
+        "3028:3035",
+        "3067:3073",
+        "3077:3082",
+        "3199:3205",
+        "3288:3295",
+        "3322:3327",
+        "3345:3351",
+        "3377:3383",
+        "3478:3483",
+        "3533:3538",
+        "3784:3789",
+        "3821:3827",
+        "383:390",
+        "3890:3895",
+        "3946:3952",
+        "3985:3994",
+        "423:428",
+        "473:482",
+        "572:578",
+        "582:587",
+        "653:658",
+        "716:721",
+        "732:739",
+        "763:770",
+        "834:839",
+        "952:957",
+        "999:1004" ;
+    data:wdtLink wdt:Q71778 ;
+    :alsoKnownAs "Donatus, Landgrave of Hesse",
+        "Heinrich Donatus Philipp Umberto",
+        "Heinrich Donatus Philipp Umberto Prinz von Hessen-Kassel Landgraf von Hessen" ;
+    :hasChild data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+

@@ -1,0 +1,499 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "20771:20782",
+        "6212:6223" ;
+    data:posIndicesPart "10047:10052",
+        "11250:11255",
+        "11624:11629",
+        "12150:12155",
+        "12292:12297",
+        "12399:12404",
+        "12595:12600",
+        "13387:13392",
+        "13534:13539",
+        "13971:13976",
+        "14083:14088",
+        "14212:14217",
+        "14263:14268",
+        "14586:14591",
+        "14728:14733",
+        "14992:14997",
+        "15456:15461",
+        "16036:16041",
+        "16798:16803",
+        "17127:17132",
+        "18219:18224",
+        "18637:18642",
+        "18807:18812",
+        "19201:19206",
+        "19286:19291",
+        "19408:19413",
+        "20270:20275",
+        "6454:6459",
+        "6804:6809",
+        "8374:8379",
+        "8412:8417",
+        "8535:8540",
+        "8641:8646",
+        "8855:8860",
+        "9119:9124",
+        "9150:9155",
+        "9279:9284",
+        "9339:9344" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Count_Henrik_of_Monpezat a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Count Henrik of Monpezat" ;
+    data:posIndicesFull "5463:5487" ;
+    data:posIndicesPart "6369:6374",
+        "6390:6398",
+        "6575:6580",
+        "6597:6605" ;
+    data:wdtLink wdt:Q2317090 ;
+    :alsoKnownAs "Count Henrik Carl Joachim Alain of Monpezat",
+        "Henrik Carl Joachim Alain",
+        "Henrik Carl Joachim Alain of Monpezat",
+        "Henrik Carl Joachim Alain, Prince of Denmark",
+        "Prince Henrik Carl Joachim Alain of Denmark",
+        "Prince Henrik Carl Joachim Alain of Denmark, Count of Monpezat",
+        "Prince Henrik of Denmark",
+        "Prince Henrik of Denmark, Count of Monpezat" ;
+    :hasSex data:male .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "15232:15236",
+        "18414:18420",
+        "20666:20672",
+        "5301:5306",
+        "5463:5487",
+        "5470:5476",
+        "5881:5887",
+        "699:704",
+        "7514:7520" ;
+    data:posIndicesPart "10401:10408",
+        "10483:10490",
+        "10752:10759",
+        "10998:11005",
+        "11054:11061",
+        "11689:11696",
+        "12752:12759",
+        "13651:13657",
+        "14049:14056",
+        "1469:1475",
+        "15335:15342",
+        "16222:16229",
+        "16672:16679",
+        "1674:1680",
+        "17312:17319",
+        "1821:1828",
+        "20009:20015",
+        "2002:2008",
+        "20054:20060",
+        "20094:20100",
+        "2094:2100",
+        "2181:2187",
+        "2267:2273",
+        "2282:2289",
+        "3925:3932",
+        "4105:4111",
+        "4561:4568",
+        "6057:6063",
+        "6085:6091",
+        "6519:6525",
+        "6632:6638",
+        "6655:6662",
+        "8219:8226",
+        "8488:8495",
+        "8544:8551",
+        "9394:9401",
+        "9624:9631",
+        "974:981",
+        "9788:9795" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isFatherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "11521:11533",
+        "1543:1555",
+        "17454:17466",
+        "4289:4301",
+        "639:651" ;
+    data:posIndicesPart "16932:16938",
+        "1697:1703",
+        "19790:19796",
+        "2025:2031",
+        "2083:2089",
+        "20997:21003",
+        "2397:2403",
+        "2478:2484",
+        "4983:4989",
+        "6107:6113" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasChild data:Margrethe_II_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Margrethe_II_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark .
+
+data:Prince_Knud_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Knud of Denmark" ;
+    data:posIndicesFull "2154:2176" ;
+    data:posIndicesPart "10401:10408",
+        "10483:10490",
+        "10752:10759",
+        "10998:11005",
+        "11054:11061",
+        "11689:11696",
+        "12752:12759",
+        "13651:13657",
+        "14049:14056",
+        "15335:15342",
+        "16222:16229",
+        "16672:16679",
+        "17312:17319",
+        "18407:18413",
+        "20009:20015",
+        "20054:20060",
+        "20094:20100",
+        "20659:20665",
+        "3925:3932",
+        "4105:4111",
+        "4112:4116",
+        "4561:4568",
+        "6057:6063",
+        "6085:6091",
+        "6519:6525",
+        "6632:6638",
+        "6655:6662",
+        "7507:7513",
+        "8219:8226",
+        "8488:8495",
+        "8544:8551",
+        "9394:9401",
+        "9624:9631",
+        "9788:9795" ;
+    data:wdtLink wdt:Q381069 ;
+    :alsoKnownAs "Prince Knud Christian Frederik Michael of Denmark" ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Margrethe_II_of_Denmark .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1613:1624",
+        "1969:1980",
+        "1969:1991",
+        "3071:3082" ;
+    data:posIndicesPart "10401:10408",
+        "10483:10490",
+        "10752:10759",
+        "10998:11005",
+        "11054:11061",
+        "11320:11329",
+        "11689:11696",
+        "12752:12759",
+        "12803:12812",
+        "13658:13667",
+        "13788:13797",
+        "14049:14056",
+        "15335:15342",
+        "16222:16229",
+        "16672:16679",
+        "17312:17319",
+        "18142:18151",
+        "1821:1828",
+        "19368:19377",
+        "19947:19956",
+        "3925:3932",
+        "4561:4568",
+        "5746:5755",
+        "5814:5823",
+        "6655:6662",
+        "8219:8226",
+        "8488:8495",
+        "8544:8551",
+        "9394:9401",
+        "9624:9631",
+        "9655:9664",
+        "9727:9736",
+        "9788:9795" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasChild data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "19901:19911" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isUncleOf data:Count_Henrik_of_Monpezat .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "1497:1508",
+        "3128:3139",
+        "623:634",
+        "7660:7671" ;
+    data:posIndicesPart "10401:10408",
+        "10483:10490",
+        "10752:10759",
+        "10998:11005",
+        "11037:11045",
+        "11054:11061",
+        "11689:11696",
+        "1169:1177",
+        "1261:1269",
+        "12752:12759",
+        "13116:13124",
+        "13148:13156",
+        "13775:13783",
+        "14049:14056",
+        "15335:15342",
+        "16222:16229",
+        "16672:16679",
+        "17312:17319",
+        "1821:1828",
+        "2282:2289",
+        "2759:2767",
+        "3925:3932",
+        "4349:4357",
+        "4561:4568",
+        "5734:5742",
+        "5854:5862",
+        "6655:6662",
+        "757:765",
+        "7898:7906",
+        "8219:8226",
+        "8488:8495",
+        "8544:8551",
+        "9394:9401",
+        "9624:9631",
+        "974:981",
+        "9788:9795" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasBrother data:Prince_Knud_of_Denmark ;
+    :hasChild data:Margrethe_II_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Knud_of_Denmark ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Prince_Knud_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "12736:12748",
+        "14089:14101",
+        "15802:15814",
+        "16042:16054",
+        "20890:20907",
+        "21:33",
+        "6:18" ;
+    data:posIndicesPart "10401:10408",
+        "10483:10490",
+        "10752:10759",
+        "10793:10802",
+        "10998:11005",
+        "11054:11061",
+        "11140:11149",
+        "11689:11696",
+        "11896:11905",
+        "12019:12028",
+        "1209:1218",
+        "12529:12538",
+        "12967:12976",
+        "13093:13102",
+        "13540:13549",
+        "13680:13689",
+        "13831:13840",
+        "13977:13986",
+        "14049:14056",
+        "14424:14433",
+        "14815:14824",
+        "15072:15081",
+        "15174:15183",
+        "15335:15342",
+        "15585:15594",
+        "16199:16208",
+        "16222:16229",
+        "16319:16328",
+        "16444:16453",
+        "16543:16552",
+        "16672:16679",
+        "17054:17063",
+        "17065:17074",
+        "17219:17228",
+        "17312:17319",
+        "17526:17535",
+        "17626:17635",
+        "17879:17888",
+        "1821:1828",
+        "18321:18330",
+        "18503:18512",
+        "1857:1866",
+        "18701:18710",
+        "18945:18954",
+        "19583:19592",
+        "19704:19713",
+        "20186:20195",
+        "20406:20415",
+        "20545:20554",
+        "2282:2289",
+        "2305:2314",
+        "2534:2543",
+        "2625:2634",
+        "2855:2864",
+        "3084:3093",
+        "3152:3161",
+        "3259:3268",
+        "3690:3699",
+        "3925:3932",
+        "4048:4057",
+        "4223:4232",
+        "436:445",
+        "4561:4568",
+        "4709:4718",
+        "4754:4763",
+        "4876:4885",
+        "5244:5253",
+        "5613:5622",
+        "5979:5988",
+        "6275:6284",
+        "6655:6662",
+        "7260:7269",
+        "7396:7405",
+        "7788:7797",
+        "779:788",
+        "8219:8226",
+        "8344:8353",
+        "842:851",
+        "8488:8495",
+        "8544:8551",
+        "8562:8571",
+        "8765:8774",
+        "9394:9401",
+        "9424:9433",
+        "9624:9631",
+        "974:981",
+        "9788:9795",
+        "9990:9999" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark .
+

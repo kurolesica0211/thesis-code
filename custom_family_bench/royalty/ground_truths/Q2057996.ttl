@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Robert-_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Robert, Archduke of Austria-Este" ;
+    data:posIndicesFull "1138:1170" ;
+    data:wdtLink wdt:Q112108 ;
+    :alsoKnownAs "Robert Karl Erzherzog von Österreich",
+        "Robert Karl Ludwig Maximilian Michael Maria Anton Franz Ferdinand Joseph Otto Hubert Georg Pius Johannes Marcus d'Aviano",
+        "Roberto de Habsburgo" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
+    data:posIndicesFull "37:54" ;
+    data:posIndicesPart "1009:1016",
+        "1017:1021",
+        "1187:1195",
+        "1235:1243",
+        "1244:1250",
+        "1303:1309",
+        "1407:1415",
+        "1513:1521",
+        "1599:1607",
+        "1608:1614",
+        "1836:1844",
+        "304:311",
+        "312:316",
+        "428:436",
+        "437:443",
+        "601:607",
+        "706:714",
+        "715:721",
+        "918:926",
+        "927:933",
+        "961:968",
+        "969:973" ;
+    data:wdtLink wdt:Q170194 ;
+    :alsoKnownAs "Astrid of Belgium" ;
+    :hasChild data:Princess_Luisa_Maria_of_Belgium ;
+    :hasDaughter data:Princess_Luisa_Maria_of_Belgium ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isParentOf data:Princess_Luisa_Maria_of_Belgium .
+
+data:Princess_Luisa_Maria_of_Belgium a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Luisa Maria of Belgium" ;
+    data:wdtLink wdt:Q2057996 ;
+    :alsoKnownAs "Luisa Maria Anna Martine Pilar",
+        "Luisa Maria de Belgique, Princesse de Belgique",
+        "Luisa Maria van België" ;
+    :hasMother data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:female ;
+    :isChildOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isDaughterOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
+

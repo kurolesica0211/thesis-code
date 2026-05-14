@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:posIndicesFull "1409:1427" ;
+    data:posIndicesPart "1470:1476",
+        "1480:1490" ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich",
+        "Paul Karageorgevich",
+        "Paul of Yugoslavia",
+        "Pavle Karađorđević",
+        "Prince of Yugoslavia Paul",
+        "Prince of Yugoslavia Pavle",
+        "Prince of Yugoslavia Pavle Karađorđević" ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isFatherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia .
+
+data:Princess_Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Pia of Savoy" ;
+    data:posIndicesFull "991:1018" ;
+    data:posIndicesPart "1072:1077",
+        "1078:1081",
+        "1126:1134",
+        "1267:1275" ;
+    data:wdtLink wdt:Q922418 ;
+    :alsoKnownAs "Maria Pia di Savoia",
+        "Maria Pia di Savoia-Carignano, Principessa d'Italia" ;
+    :hasChild data:Prince_Dimitri_Karađorđević ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Dimitri_Karađorđević ;
+    :isMotherOf data:Prince_Dimitri_Karađorđević ;
+    :isParentOf data:Prince_Dimitri_Karađorđević .
+
+data:Prince_Alexander_of_Serbia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:posIndicesFull "1606:1632",
+        "940:970" ;
+    data:posIndicesPart "1109:1115",
+        "1199:1205",
+        "1302:1308",
+        "1395:1401",
+        "1453:1462",
+        "1470:1476",
+        "1769:1778" ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia" ;
+    :hasChild data:Prince_Dimitri_Karađorđević ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasParent data:Prince_Paul_of_Yugoslavia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Dimitri_Karađorđević ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Dimitri_Karađorđević ;
+    :isParentOf data:Prince_Dimitri_Karađorđević ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia .
+
+data:Prince_Dimitri_Karađorđević a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Dimitri Karađorđević" ;
+    data:posIndicesFull "216:238" ;
+    data:posIndicesPart "1109:1115",
+        "1199:1205",
+        "1302:1308",
+        "1309:1316",
+        "1395:1401",
+        "1470:1476",
+        "1511:1518",
+        "1547:1559",
+        "1674:1681",
+        "1813:1820",
+        "349:355",
+        "356:363",
+        "491:497",
+        "498:505",
+        "586:592",
+        "593:600",
+        "790:796",
+        "797:804",
+        "857:863",
+        "864:871",
+        "876:882" ;
+    data:wdtLink wdt:Q1781299 ;
+    :alsoKnownAs "Dimitri Karađorđević",
+        "Dimitri Nicolas Paul Georg Maria Karageorgievich",
+        "Prince Dimitri Umberto Anton Peter Maria of Yugoslavia",
+        "prince Dimitri Karađorđević" ;
+    :hasFather data:Prince_Alexander_of_Serbia ;
+    :hasMother data:Princess_Maria_Pia_of_Savoy ;
+    :hasParent data:Prince_Alexander_of_Serbia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isSonOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Maria_Pia_of_Savoy .
+

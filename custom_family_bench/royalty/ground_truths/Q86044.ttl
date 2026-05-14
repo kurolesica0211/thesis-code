@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Helena, Hereditary Duchess of Württemberg" ;
+    data:posIndicesFull "0:29" ;
+    data:posIndicesPart "1016:1026",
+        "1035:1046",
+        "1090:1101",
+        "1191:1197",
+        "1246:1252",
+        "462:472",
+        "481:492",
+        "494:500",
+        "533:544",
+        "549:559",
+        "560:567",
+        "579:590",
+        "604:610",
+        "799:805",
+        "983:989" ;
+    data:wdtLink wdt:Q86044 ;
+    :alsoKnownAs "Archduchess Helena of Austria" ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isDaughterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSiblingOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isSisterOf data:Duchess_Rosa-_Duchess_of_Württemberg .
+
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Rosa, Duchess of Württemberg" ;
+    data:posIndicesFull "1373:1400",
+        "1373:1421" ;
+    data:wdtLink wdt:Q84971 ;
+    :alsoKnownAs "Archduchess Rosa of Austria",
+        "Archduchess Rosa of Austria, Princess of Tuscany",
+        "Duchess Rosa, The Duchess of Württemberg" ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isDaughterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSiblingOf data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg ;
+    :isSisterOf data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:posIndicesFull "750:797" ;
+    data:posIndicesPart "1016:1026",
+        "1116:1127",
+        "1305:1310" ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
+    :hasChild data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasDaughter data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasSex data:female ;
+    :isMotherOf data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isParentOf data:Duchess_Helena-_Hereditary_Duchess_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg .
+

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Josias, Hereditary Prince of Waldeck and Pyrmont" ;
+    data:posIndicesFull "372:398" ;
+    data:posIndicesPart "1228:1234",
+        "1238:1245",
+        "1250:1257",
+        "659:666",
+        "671:678",
+        "987:994",
+        "999:1006" ;
+    data:wdtLink wdt:Q75911 ;
+    :alsoKnownAs "Josias Georg Wilhelm Adolf" ;
+    :hasChild data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :hasSon data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isFatherOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont .
+
+data:Wittekind-_Prince_of_Waldeck_and_Pyrmont a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wittekind, Prince of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q70797 ;
+    :alsoKnownAs "Wittekind Adolf Heinrich Georg Wilhelm Prinz zu Waldeck und Pyrmont" ;
+    :hasFather data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :isChildOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :isSonOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont .
+

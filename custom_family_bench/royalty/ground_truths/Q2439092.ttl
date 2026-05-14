@@ -1,0 +1,83 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen" ;
+    data:posIndicesFull "648:691",
+        "657:691" ;
+    data:posIndicesPart "754:757",
+        "758:765",
+        "766:778",
+        "795:803",
+        "817:820",
+        "821:828" ;
+    data:wdtLink wdt:Q2099997 ;
+    :alsoKnownAs "Gösta Julie Adelheid Marion Marie von Amsberg",
+        "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen",
+        "Gösta von Amsberg",
+        "Gösta von dem Bussche-Haddenhausen" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elise_von_Vieregge a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elise von Vieregge" ;
+    data:posIndicesFull "427:444" ;
+    data:wdtLink wdt:Q13576445 ;
+    :alsoKnownAs "Elise Hedwig Alexandrine von Vieregge" ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasSex data:female ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isMotherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm von Amsberg" ;
+    data:posIndicesFull "375:394" ;
+    data:wdtLink wdt:Q4285590 ;
+    :alsoKnownAs "Wilhelm Karl Friedrich August Louis von Amsberg" ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasSex data:male ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isFatherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Claus Felix von Amsberg" ;
+    data:posIndicesFull "0:23" ;
+    data:posIndicesPart "496:501",
+        "598:603" ;
+    data:wdtLink wdt:Q2439092 ;
+    :alsoKnownAs "Klaus Felix von Amsberg" ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:male ;
+    :isChildOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isSonOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg .
+

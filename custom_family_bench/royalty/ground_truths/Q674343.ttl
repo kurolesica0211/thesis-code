@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "130:143",
+        "130:157",
+        "145:157" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Katharine, Duchess of Kent" ;
+    data:posIndicesFull "163:189" ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent",
+        "Katharine Lucy Mary Worsley",
+        "Katharine Lucy Mary, Duchess of Kent",
+        "Katharine Worsley" ;
+    :hasChild data:Lady_Helen_Taylor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Helen_Taylor ;
+    :isParentOf data:Lady_Helen_Taylor .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Helen Taylor" ;
+    data:posIndicesFull "0:29",
+        "259:289",
+        "264:289",
+        "5:29" ;
+    data:posIndicesPart "1015:1020",
+        "1040:1046",
+        "1084:1089",
+        "460:465",
+        "544:549",
+        "825:830",
+        "921:926" ;
+    data:wdtLink wdt:Q674343 ;
+    :alsoKnownAs "Helen Marina Lucy Taylor",
+        "Helen Marina Lucy Windsor",
+        "Helen Taylor",
+        "Helen Windsor",
+        "Lady Helen Marina Lucy Taylor",
+        "Lady Helen Marina Lucy Windsor",
+        "The Lady Helen Marina Lucy Taylor" ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent ;
+    :hasSex data:female ;
+    :isChildOf data:Katharine-_Duchess_of_Kent ;
+    :isDaughterOf data:Katharine-_Duchess_of_Kent .
+

@@ -1,0 +1,182 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duke Vladimir Kirillovich, Grand Duke of Russia" ;
+    data:posIndicesFull "981:1022" ;
+    data:posIndicesPart "1057:1063",
+        "1424:1429",
+        "1460:1466",
+        "4106:4112",
+        "4223:4228",
+        "4229:4233",
+        "4234:4242",
+        "4243:4254",
+        "4289:4297",
+        "4589:4600",
+        "5722:5730",
+        "5964:5975" ;
+    data:wdtLink wdt:Q382226 ;
+    :alsoKnownAs "Grand Duke Vladimir Kirillovich of Russia",
+        "Prince Vladimir Kirillovich of Russia" ;
+    :hasSex data:male ;
+    :hasSister data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isBrotherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isUncleOf data:Emich-_7th_Prince_of_Leiningen .
+
+data:Prince_Karl_Emich_of_Leiningen a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Karl Emich of Leiningen" ;
+    data:posIndicesFull "1307:1327",
+        "285:312",
+        "379:399",
+        "5470:5490",
+        "70:100",
+        "7:34" ;
+    data:posIndicesPart "1559:1568",
+        "1666:1675",
+        "1713:1719",
+        "1720:1724",
+        "1725:1730",
+        "1896:1902",
+        "1906:1915",
+        "1981:1990",
+        "2021:2025",
+        "2026:2031",
+        "2144:2150",
+        "2151:2156",
+        "2166:2170",
+        "2174:2183",
+        "2302:2308",
+        "2309:2314",
+        "2359:2368",
+        "2469:2475",
+        "2567:2571",
+        "2572:2577",
+        "2658:2662",
+        "2663:2668",
+        "2873:2877",
+        "2878:2883",
+        "3176:3185",
+        "3276:3285",
+        "3453:3457",
+        "3562:3566",
+        "3567:3572",
+        "3746:3750",
+        "3751:3756",
+        "4117:4123",
+        "4374:4378",
+        "4379:4384",
+        "4932:4936",
+        "4937:4942",
+        "5114:5120",
+        "5559:5563",
+        "5564:5569",
+        "5862:5866",
+        "5867:5872",
+        "5941:5945",
+        "5946:5951" ;
+    data:wdtLink wdt:Q7244117 ;
+    :alsoKnownAs "Emperor Nicholas III",
+        "Karl-Emich Nikolaus Friedrich Hermann Erbprinz zu Leiningen",
+        "Nikolai Kirillovich Romanov" ;
+    :hasFather data:Emich-_7th_Prince_of_Leiningen ;
+    :hasParent data:Emich-_7th_Prince_of_Leiningen ;
+    :hasSex data:male ;
+    :isChildOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isSonOf data:Emich-_7th_Prince_of_Leiningen .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Maria Kirillovna of Russia" ;
+    data:posIndicesFull "764:780" ;
+    data:posIndicesPart "1057:1063",
+        "1424:1429",
+        "1430:1437",
+        "1438:1443",
+        "1460:1466",
+        "3803:3808",
+        "4106:4112",
+        "4223:4228",
+        "955:961" ;
+    data:wdtLink wdt:Q778200 ;
+    :alsoKnownAs "Maria Kirillovna",
+        "Maria Kirillovna of Russia",
+        "Maria Kirillovna, Princess of Leiningen" ;
+    :hasBrother data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasChild data:Emich-_7th_Prince_of_Leiningen ;
+    :hasSex data:female ;
+    :hasSon data:Emich-_7th_Prince_of_Leiningen ;
+    :isMotherOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isParentOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isSisterOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia .
+
+data:Emich-_7th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Emich, 7th Prince of Leiningen" ;
+    data:posIndicesFull "476:506" ;
+    data:posIndicesPart "1260:1265",
+        "1559:1568",
+        "1666:1675",
+        "1713:1719",
+        "1725:1730",
+        "1896:1902",
+        "1906:1915",
+        "1981:1990",
+        "2026:2031",
+        "2144:2150",
+        "2151:2156",
+        "2174:2183",
+        "2302:2308",
+        "2309:2314",
+        "2359:2368",
+        "2469:2475",
+        "2572:2577",
+        "2663:2668",
+        "2878:2883",
+        "3176:3185",
+        "3276:3285",
+        "3567:3572",
+        "3751:3756",
+        "4117:4123",
+        "4379:4384",
+        "4937:4942",
+        "5114:5120",
+        "5341:5346",
+        "5415:5421",
+        "5564:5569",
+        "5867:5872",
+        "5946:5951" ;
+    data:wdtLink wdt:Q5371081 ;
+    :hasChild data:Prince_Karl_Emich_of_Leiningen ;
+    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_Emich_of_Leiningen ;
+    :isChildOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isFatherOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isParentOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSonOf data:Grand_Duchess_Maria_Kirillovna_of_Russia .
+

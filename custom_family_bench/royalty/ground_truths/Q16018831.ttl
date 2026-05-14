@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1114:1118",
+        "1258:1262",
+        "764:768" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry ;
+    :isAuntOf data:Mary_Malcolm ;
+    :isSiblingOf data:Jeanne_Marie_Langtry ;
+    :isSisterOf data:Jeanne_Marie_Langtry .
+
+data:Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ian Malcolm" ;
+    data:posIndicesFull "308:319" ;
+    data:posIndicesPart "1120:1127",
+        "1209:1216",
+        "770:777",
+        "955:962" ;
+    data:wdtLink wdt:Q3147302 ;
+    :alsoKnownAs "Ian Zachary Malcolm",
+        "Sir Ian Zachary Malcolm",
+        "Sir Ian Zachary Malcolm, 17th of Poltalloch" ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasSex data:male ;
+    :isFatherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lillie Langtry" ;
+    data:posIndicesFull "408:422" ;
+    data:wdtLink wdt:Q297743 ;
+    :alsoKnownAs "Emilie Charlotte Langtry",
+        "Emilie Charlotte Le Breton",
+        "Emilie Charlotte Le Breton De Bathe",
+        "Emilie Charlotte Le Breton Langtry",
+        "Emily Charlotte le Breton",
+        "Jersey Lilly",
+        "Jersey Lily",
+        "Lilly Langtry",
+        "Lily Langtry",
+        "Mrs. Langtry" ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasSex data:female ;
+    :isMotherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry .
+
+data:Mary_Malcolm a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary Malcolm" ;
+    data:posIndicesFull "0:18",
+        "455:467",
+        "546:558",
+        "6:18" ;
+    data:posIndicesPart "1120:1127",
+        "1209:1216",
+        "770:777",
+        "955:962" ;
+    data:wdtLink wdt:Q16018831 ;
+    :alsoKnownAs "Helen Mary Malcolm" ;
+    :hasFather data:Ian_Malcolm ;
+    :hasMother data:Jeanne_Marie_Langtry ;
+    :hasParent data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :hasSex data:female ;
+    :isChildOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isDaughterOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry .
+
+data:Jeanne_Marie_Langtry a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Jeanne Marie Langtry" ;
+    data:posIndicesFull "324:338" ;
+    data:wdtLink wdt:Q84795732 ;
+    :alsoKnownAs "Jeanne Langtry",
+        "Jeanne Marie Malcolm" ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasMother data:Lillie_Langtry ;
+    :hasParent data:Lillie_Langtry ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Lillie_Langtry ;
+    :isDaughterOf data:Lillie_Langtry ;
+    :isMotherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+

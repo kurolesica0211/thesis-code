@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau" ;
+    data:posIndicesFull "0:55" ;
+    data:posIndicesPart "1029:1035",
+        "1058:1064",
+        "1120:1125",
+        "1126:1132",
+        "1224:1229",
+        "1230:1236",
+        "1373:1379",
+        "1481:1487",
+        "1518:1524",
+        "318:323",
+        "324:330",
+        "614:619",
+        "620:626",
+        "646:652",
+        "735:741",
+        "745:753",
+        "758:764",
+        "857:863",
+        "981:986",
+        "987:993" ;
+    data:wdtLink wdt:Q321787 ;
+    :hasFather data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasParent data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male ;
+    :isChildOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isSonOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+
+data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ulrich, 10th Prince Kinsky of Wchinitz and Tettau" ;
+    data:posIndicesFull "400:449",
+        "6:55" ;
+    data:posIndicesPart "1029:1035",
+        "1058:1064",
+        "1126:1132",
+        "1230:1236",
+        "1373:1379",
+        "1481:1487",
+        "1518:1524",
+        "620:626",
+        "646:652",
+        "735:741",
+        "745:753",
+        "758:764",
+        "857:863",
+        "987:993" ;
+    data:wdtLink wdt:Q7879786 ;
+    :hasChild data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male ;
+    :hasSon data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isFatherOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isParentOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+

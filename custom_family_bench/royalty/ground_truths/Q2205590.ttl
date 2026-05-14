@@ -1,0 +1,107 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry of Battenberg" ;
+    data:posIndicesFull "490:516",
+        "497:516",
+        "786:812",
+        "793:812" ;
+    data:posIndicesPart "1264:1270",
+        "1375:1381",
+        "1431:1437",
+        "1447:1457",
+        "1788:1794",
+        "2339:2345",
+        "2394:2404",
+        "723:729" ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg",
+        "Henry Maurice Battenberg",
+        "Henry of Battenberg",
+        "Prince Henry Maurice of Battenberg" ;
+    :hasChild data:Lord_Leopold_Mountbatten ;
+    :hasSex data:male ;
+    :hasSon data:Lord_Leopold_Mountbatten ;
+    :isFatherOf data:Lord_Leopold_Mountbatten ;
+    :isParentOf data:Lord_Leopold_Mountbatten .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:posIndicesFull "490:516",
+        "618:635",
+        "618:657",
+        "786:812" ;
+    data:posIndicesPart "1042:1048",
+        "1049:1056",
+        "1630:1638",
+        "2101:2107",
+        "2108:2115" ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore",
+        "Princess Beatrice",
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
+        "Princess Beatrice of Battenberg",
+        "Princess Henry of Battenberg",
+        "The Princess Beatrice" ;
+    :hasChild data:Lord_Leopold_Mountbatten ;
+    :hasSex data:female ;
+    :hasSon data:Lord_Leopold_Mountbatten ;
+    :isMotherOf data:Lord_Leopold_Mountbatten ;
+    :isParentOf data:Lord_Leopold_Mountbatten .
+
+data:Lord_Leopold_Mountbatten a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Lord Leopold Mountbatten" ;
+    data:posIndicesFull "0:37",
+        "1085:1113",
+        "230:258",
+        "2703:2727",
+        "5:37",
+        "994:1022" ;
+    data:posIndicesPart "1190:1197",
+        "1686:1693",
+        "1795:1802",
+        "1871:1878",
+        "2120:2127",
+        "2308:2315",
+        "2479:2486",
+        "2487:2498",
+        "2736:2740",
+        "2741:2748",
+        "442:449" ;
+    data:wdtLink wdt:Q2205590 ;
+    :alsoKnownAs "Leopold Arthur Louis Mountbatten",
+        "Leopold Arthur Louis of Battenberg",
+        "Lord Leopold Arthur Louis Mountbatten",
+        "Major Lord Leopold Arthur Louis Mountbatten",
+        "Prince Leopold of Battenberg" ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom .
+

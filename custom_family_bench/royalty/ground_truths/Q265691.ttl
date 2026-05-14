@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "351:361",
+        "351:372" ;
+    data:posIndicesPart "1158:1165",
+        "1852:1859",
+        "442:449",
+        "837:844" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Margrethe_II_of_Denmark ;
+    :isSonOf data:Margrethe_II_of_Denmark .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Nathalie of Sayn-Wittgenstein-Berleburg" ;
+    data:posIndicesFull "0:48" ;
+    data:posIndicesPart "1037:1045",
+        "1211:1219",
+        "1347:1356",
+        "1400:1408",
+        "1409:1417",
+        "1688:1697",
+        "1708:1716",
+        "1717:1725",
+        "1835:1843",
+        "2038:2047",
+        "2109:2117",
+        "386:394",
+        "395:403",
+        "537:541",
+        "542:554",
+        "555:564",
+        "589:598",
+        "606:615",
+        "626:634",
+        "919:927",
+        "928:936" ;
+    data:wdtLink wdt:Q265691 ;
+    :alsoKnownAs "Nathalie Xenia Margareta Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg",
+        "Princess Nathalie, Mrs. Johannsmann" ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Princess_Benedikte_of_Denmark ;
+    :isDaughterOf data:Princess_Benedikte_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "267:279",
+        "267:290" ;
+    data:posIndicesPart "1158:1165",
+        "1852:1859",
+        "442:449",
+        "837:844" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Benedikte_of_Denmark ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAuntOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Princess_Benedikte_of_Denmark .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Benedikte of Denmark" ;
+    data:posIndicesFull "160:189",
+        "485:514" ;
+    data:posIndicesPart "1158:1165",
+        "1400:1408",
+        "1708:1716",
+        "1835:1843",
+        "1852:1859",
+        "2014:2023",
+        "837:844",
+        "919:927" ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
+    :hasChild data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark ;
+    :isMotherOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+

@@ -1,0 +1,198 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Eugenie_of_York a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Eugenie of York" ;
+    data:posIndicesFull "648:664" ;
+    data:posIndicesPart "1900:1904",
+        "1995:1999",
+        "2672:2676",
+        "6207:6211",
+        "6270:6277",
+        "6715:6719",
+        "6975:6979",
+        "7220:7224",
+        "7687:7691",
+        "907:914" ;
+    data:wdtLink wdt:Q165709 ;
+    :alsoKnownAs "Eugenie Victoria Helena",
+        "Eugenie Victoria Helena Mountbatten-Windsor",
+        "Her Royal Highness Princess Eugenie of York",
+        "Princess Eugenie",
+        "Princess Eugenie Victoria Helena of York",
+        "Princess Eugenie, Mrs Brooksbank",
+        "Princess Eugenie, Mrs Jack Brooksbank" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_York ;
+    :isAuntOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Princess_Beatrice_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York .
+
+data:Princess_Beatrice_of_York a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Beatrice of York" ;
+    data:posIndicesFull "0:17",
+        "0:44",
+        "2025:2038",
+        "2977:2994",
+        "4632:4645",
+        "6542:6555",
+        "7582:7599",
+        "7582:7607",
+        "7778:7795",
+        "7778:7822" ;
+    data:posIndicesPart "1011:1019",
+        "1104:1112",
+        "1226:1234",
+        "1334:1342",
+        "133:141",
+        "1522:1530",
+        "1592:1600",
+        "1864:1872",
+        "1900:1904",
+        "1995:1999",
+        "2166:2174",
+        "2345:2353",
+        "2535:2543",
+        "2672:2676",
+        "2685:2693",
+        "2832:2840",
+        "292:300",
+        "3109:3117",
+        "3329:3337",
+        "3422:3430",
+        "3599:3607",
+        "4190:4198",
+        "4229:4237",
+        "429:437",
+        "4375:4383",
+        "4524:4532",
+        "4781:4789",
+        "5182:5190",
+        "5342:5350",
+        "543:547",
+        "549:557",
+        "5531:5539",
+        "5627:5635",
+        "5852:5860",
+        "6049:6057",
+        "6175:6183",
+        "6207:6211",
+        "6506:6514",
+        "6715:6719",
+        "6758:6766",
+        "684:692",
+        "6975:6979",
+        "7001:7009",
+        "7220:7224",
+        "7297:7305",
+        "7373:7381",
+        "916:924" ;
+    data:wdtLink wdt:Q165657 ;
+    :alsoKnownAs "Bea York",
+        "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York",
+        "Beatrice York",
+        "H.R.H. Princess Beatrice of York",
+        "Princess Beatrice",
+        "Princess Beatrice Elizabeth Mary of York",
+        "Princess Beatrice Elizabeth Mary, Mrs Mapelli Mozzi",
+        "Princess Beatrice Elizabeth Mary, Mrs. Mapelli Mozzi",
+        "Princess Beatrice, Mrs Edoardo Mapelli Mozzi",
+        "Princess Beatrice, Mrs Mapelli Mozzi",
+        "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi",
+        "Princess Beatrice, Mrs. Mapelli Mozzi" ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Eugenie_of_York ;
+    :isMotherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Princess_Eugenie_of_York ;
+    :isSisterOf data:Princess_Eugenie_of_York .
+
+data:Q131934987 a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Q131934987" ;
+    data:wdtLink wdt:Q131934987 ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasParent data:Edoardo_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Sienna_Mapelli_Mozzi ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi ;
+    :isSiblingOf data:Sienna_Mapelli_Mozzi ;
+    :isSisterOf data:Sienna_Mapelli_Mozzi .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edoardo Mapelli Mozzi" ;
+    data:posIndicesFull "23:44",
+        "309:330",
+        "3732:3753",
+        "7801:7822" ;
+    data:posIndicesPart "3776:3783",
+        "3784:3789",
+        "3896:3903",
+        "3904:3909",
+        "4067:4074",
+        "4101:4108",
+        "4109:4114",
+        "4242:4249",
+        "4250:4255",
+        "4392:4399",
+        "4400:4405" ;
+    data:wdtLink wdt:Q68688016 ;
+    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi",
+        "Count Edoardo Mapelli Mozzi",
+        "Edoardo Alessandro Mapelli Mozzi" ;
+    :hasChild data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :isFatherOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi .
+
+data:Sienna_Mapelli_Mozzi a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sienna Mapelli Mozzi" ;
+    data:posIndicesFull "4937:4967" ;
+    data:posIndicesPart "5051:5057" ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice_of_York ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasSex data:female ;
+    :hasSister data:Q131934987 ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isSiblingOf data:Q131934987 ;
+    :isSisterOf data:Q131934987 .
+

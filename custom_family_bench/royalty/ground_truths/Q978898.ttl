@@ -1,0 +1,96 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Pedro_Luiz_de_Orleans_e_Bragança a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Pedro Luiz de Orleans e Bragança" ;
+    data:posIndicesFull "0:30" ;
+    data:posIndicesPart "1062:1067",
+        "1068:1072",
+        "1117:1124",
+        "1127:1135",
+        "1175:1180",
+        "1689:1693",
+        "1833:1838",
+        "1976:1981",
+        "210:215",
+        "2157:2162",
+        "2173:2178",
+        "2191:2196",
+        "2197:2201",
+        "2292:2296",
+        "2582:2587",
+        "2588:2592",
+        "2619:2624",
+        "2625:2629",
+        "2701:2705",
+        "2733:2738",
+        "2739:2743",
+        "2947:2952",
+        "2987:2992",
+        "2993:2997",
+        "3114:3118",
+        "3257:3262",
+        "3263:3267",
+        "3460:3468",
+        "3566:3570",
+        "3745:3750",
+        "3751:3755",
+        "3916:3921",
+        "3922:3926",
+        "398:403",
+        "4073:4078",
+        "4079:4083",
+        "436:441",
+        "442:446",
+        "659:664",
+        "665:669",
+        "798:803",
+        "804:808",
+        "868:873",
+        "874:878" ;
+    data:wdtLink wdt:Q978898 ;
+    :alsoKnownAs "Pedro Luis of Orleans-Braganza",
+        "Pedro Luiz of Orléans-Braganza",
+        "Pedro Luís van Orléans-Braganza" ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Princess_Christine_of_Ligne ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Christine_of_Ligne ;
+    :isSonOf data:Princess_Christine_of_Ligne .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Christine of Ligne" ;
+    data:posIndicesFull "1012:1039" ;
+    data:posIndicesPart "1280:1288",
+        "1372:1377",
+        "1383:1391",
+        "1446:1451",
+        "1543:1552",
+        "3654:3662",
+        "3671:3676" ;
+    data:wdtLink wdt:Q7244586 ;
+    :alsoKnownAs "Christine, Princess Imperial of Brazil",
+        "Princess Christine of Orleans-Braganza" ;
+    :hasChild data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :hasSex data:female ;
+    :hasSon data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isMotherOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isParentOf data:Pedro_Luiz_de_Orleans_e_Bragança .
+

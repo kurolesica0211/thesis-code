@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Kira_of_Prussia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Kira of Prussia" ;
+    data:posIndicesFull "508:523" ;
+    data:posIndicesPart "1359:1363" ;
+    data:wdtLink wdt:Q77937 ;
+    :alsoKnownAs "Kira Auguste Viktoria Friederike Prinzessin von Preußen",
+        "Kira Prussia",
+        "Kira of Prussia",
+        "Princess Kira Auguste Viktoria Friederike of Prussia" ;
+    :hasSex data:female .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "236:275" ;
+    data:posIndicesPart "1264:1271",
+        "1383:1390",
+        "1597:1604",
+        "289:296",
+        "688:695",
+        "735:742",
+        "885:892" ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany",
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin" ;
+    :hasChild data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasDaughter data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isParentOf data:Princess_Cecilie_Viktoria_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "474:484" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince .
+
+data:Princess_Cecilie_Viktoria_of_Prussia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Cecilie Viktoria of Prussia" ;
+    data:posIndicesFull "0:27" ;
+    data:posIndicesPart "1264:1271",
+        "1383:1390",
+        "1597:1604",
+        "289:296",
+        "688:695",
+        "735:742",
+        "885:892" ;
+    data:wdtLink wdt:Q105976 ;
+    :alsoKnownAs "Princess Cecilie of Prussia" ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Kira_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isDaughterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "202:230" ;
+    data:posIndicesPart "1135:1141",
+        "1165:1171",
+        "489:495",
+        "597:603",
+        "631:637",
+        "807:813" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasChild data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasDaughter data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isParentOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+

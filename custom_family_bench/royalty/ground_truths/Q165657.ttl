@@ -1,0 +1,463 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Zara_Tindall a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Zara Tindall" ;
+    data:posIndicesFull "8174:8185" ;
+    data:wdtLink wdt:Q147663 ;
+    :alsoKnownAs "Zara Anne Elizabeth Tindall",
+        "Zara Phillips" ;
+    :hasSex data:female .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edoardo Mapelli Mozzi" ;
+    data:posIndicesFull "23:44",
+        "3929:3950",
+        "418:439",
+        "8853:8874" ;
+    data:posIndicesPart "3973:3980",
+        "3981:3986",
+        "4093:4100",
+        "4101:4106",
+        "4264:4271",
+        "4298:4305",
+        "4306:4311",
+        "4439:4446",
+        "4447:4452",
+        "4589:4596",
+        "4597:4602" ;
+    data:wdtLink wdt:Q68688016 ;
+    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi",
+        "Count Edoardo Mapelli Mozzi",
+        "Edoardo Alessandro Mapelli Mozzi" ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :isFatherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "2790:2808",
+        "2796:2808",
+        "3286:3304",
+        "3292:3304",
+        "5601:5619",
+        "5607:5619",
+        "689:707",
+        "695:707" ;
+    data:posIndicesPart "5871:5880" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasSex data:female ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III .
+
+data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Harry, Duke of Sussex" ;
+    data:posIndicesFull "8745:8754" ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales",
+        "Harry Sussex",
+        "Harry Wales",
+        "Harry Windsor",
+        "Henry Charles Albert David",
+        "Henry Sussex",
+        "Henry Wales",
+        "Henry Windsor",
+        "Prince Harry",
+        "Prince Harry of Wales",
+        "Prince Henry",
+        "Prince Henry Charles Albert",
+        "Prince Henry Charles Albert David",
+        "Prince Henry of Wales",
+        "Prince Henry, Duke of Sussex",
+        "Prince Henry, Duke of Sussex, KCVO",
+        "The Prince Henry, Duke of Sussex" ;
+    :hasBrother data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasSex data:male ;
+    :isBrotherOf data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "2745:2758",
+        "2745:2777",
+        "712:725",
+        "712:744",
+        "8392:8405" ;
+    data:posIndicesPart "2467:2473",
+        "6568:6574",
+        "7890:7894",
+        "7898:7907",
+        "8167:8173",
+        "8731:8735" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sarah Ferguson" ;
+    data:posIndicesFull "193:207" ;
+    data:wdtLink wdt:Q55720 ;
+    :alsoKnownAs "Fergie",
+        "Sarah Margaret Ferguson",
+        "Sarah Margaret Mountbatten-Windsor",
+        "Sarah Mountbatten-Windsor" ;
+    :hasChild data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York .
+
+data:William-_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William, Prince of Wales" ;
+    data:posIndicesFull "6509:6523",
+        "6516:6523",
+        "7605:7612" ;
+    data:posIndicesPart "8167:8173" ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam",
+        "Prince William",
+        "Prince William Arthur Philip Louis of Wales",
+        "Prince William Arthur Philip Louis, Duke of Cambridge",
+        "Prince William of Wales",
+        "Prince William, Duke of Cambridge",
+        "William Arthur Philip Louis",
+        "William Arthur Philip Louis Mountbatten-Windsor",
+        "William Arthur Philip Louis, Prince of Wales",
+        "William Cambridge",
+        "William Wales",
+        "William Windsor" ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSonOf data:Charles_III .
+
+data:Sienna_Mapelli_Mozzi a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sienna Mapelli Mozzi" ;
+    data:posIndicesFull "5413:5443" ;
+    data:posIndicesPart "5527:5533" ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice_of_York ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasSex data:female ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York .
+
+data:Princess_Eugenie_of_York a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Eugenie of York" ;
+    data:posIndicesFull "845:861" ;
+    data:posIndicesPart "1104:1111",
+        "2097:2101",
+        "2192:2196",
+        "2869:2873",
+        "6683:6687",
+        "6746:6753",
+        "7191:7195",
+        "7703:7707",
+        "7948:7952",
+        "8739:8743" ;
+    data:wdtLink wdt:Q165709 ;
+    :alsoKnownAs "Eugenie Victoria Helena",
+        "Eugenie Victoria Helena Mountbatten-Windsor",
+        "Her Royal Highness Princess Eugenie of York",
+        "Princess Eugenie",
+        "Princess Eugenie Victoria Helena of York",
+        "Princess Eugenie, Mrs Brooksbank",
+        "Princess Eugenie, Mrs Jack Brooksbank" ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_York ;
+    :isAuntOf data:Sienna_Mapelli_Mozzi ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isSiblingOf data:Princess_Beatrice_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York .
+
+data:Princess_Beatrice_of_York a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Beatrice of York" ;
+    data:posIndicesFull "0:17",
+        "0:44",
+        "2222:2235",
+        "3174:3191",
+        "5108:5121",
+        "7018:7031",
+        "8634:8651",
+        "8634:8659",
+        "8830:8847",
+        "8830:8874" ;
+    data:posIndicesPart "1113:1121",
+        "1208:1216",
+        "1301:1309",
+        "1423:1431",
+        "1531:1539",
+        "1719:1727",
+        "1789:1797",
+        "2061:2069",
+        "2097:2101",
+        "2192:2196",
+        "2363:2371",
+        "242:250",
+        "2542:2550",
+        "2732:2740",
+        "2869:2873",
+        "2882:2890",
+        "3029:3037",
+        "3306:3314",
+        "3526:3534",
+        "3619:3627",
+        "3796:3804",
+        "401:409",
+        "4387:4395",
+        "4426:4434",
+        "4572:4580",
+        "5000:5008",
+        "5257:5265",
+        "538:546",
+        "5658:5666",
+        "5818:5826",
+        "6007:6015",
+        "6103:6111",
+        "6328:6336",
+        "6525:6533",
+        "652:656",
+        "6651:6659",
+        "6683:6687",
+        "6982:6990",
+        "7191:7195",
+        "7324:7332",
+        "746:754",
+        "7703:7707",
+        "7729:7737",
+        "7948:7952",
+        "8215:8223",
+        "8425:8433",
+        "881:889" ;
+    data:wdtLink wdt:Q165657 ;
+    :alsoKnownAs "Bea York",
+        "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York",
+        "Beatrice York",
+        "H.R.H. Princess Beatrice of York",
+        "Princess Beatrice",
+        "Princess Beatrice Elizabeth Mary of York",
+        "Princess Beatrice Elizabeth Mary, Mrs Mapelli Mozzi",
+        "Princess Beatrice Elizabeth Mary, Mrs. Mapelli Mozzi",
+        "Princess Beatrice, Mrs Edoardo Mapelli Mozzi",
+        "Princess Beatrice, Mrs Mapelli Mozzi",
+        "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi",
+        "Princess Beatrice, Mrs. Mapelli Mozzi" ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Eugenie_of_York ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Princess_Eugenie_of_York ;
+    :isSisterOf data:Princess_Eugenie_of_York .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "162:188" ;
+    data:posIndicesPart "1284:1291",
+        "1483:1490",
+        "4378:4385",
+        "4539:4545",
+        "4689:4696",
+        "4845:4851",
+        "4986:4992" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales,
+        data:Zara_Tindall .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Charles III" ;
+    data:posIndicesFull "224:236",
+        "224:240",
+        "229:240",
+        "3469:3480" ;
+    data:posIndicesPart "2453:2460",
+        "7242:7249" ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III",
+        "Charles III of England",
+        "Charles III of the United Kingdom",
+        "Charles Mountbatten-Windsor",
+        "Charles Philip Arthur George",
+        "Charles Philip Arthur George Mountbatten-Windsor",
+        "Charles Philip Arthur George Windsor",
+        "Charles Philip Arthur George, Prince of Wales",
+        "Charles Wales",
+        "Charles Windsor",
+        "Charles the Third",
+        "HM King Charles III",
+        "His Majesty",
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+        "His Majesty The King",
+        "His Royal Highness Charles III of Great Britain",
+        "King Charles",
+        "King Charles III",
+        "King of England",
+        "Prince Charles",
+        "Prince Charles Philip Arthur George of Edinburgh",
+        "Prince Charles Philip Arthur George, Prince of Wales",
+        "Prince Charles of Edinburgh",
+        "Prince Charles, Duke of Rothesay",
+        "Prince Charles, Prince of Wales",
+        "The Prince Charles Philip Arthur George, Prince of Wales",
+        "The Prince Charles, Prince of Wales" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Zara_Tindall .
+

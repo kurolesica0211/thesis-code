@@ -1,0 +1,113 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia" ;
+    data:posIndicesFull "899:941" ;
+    data:posIndicesPart "1182:1187",
+        "1196:1202",
+        "1256:1261",
+        "1279:1285",
+        "1305:1310",
+        "1311:1318",
+        "1319:1324" ;
+    data:wdtLink wdt:Q538532 ;
+    :alsoKnownAs "Crown Princess Maria Vladimirovna",
+        "Crown Princess Maria Vladimirovna of Russia",
+        "Grand Duchess Maria Vladimirovna, Grand Duchess of Russia",
+        "Maria Vladimirovna, Crown Princess of Russia",
+        "Maria Vladimirovna, Grand Duchess of Russia",
+        "Mariya Vladimirovna Romanov, Grand Duchess of Russia" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Franz Wilhelm of Prussia" ;
+    data:posIndicesFull "0:38",
+        "0:57",
+        "1603:1636" ;
+    data:posIndicesPart "1287:1292",
+        "1293:1300",
+        "263:270",
+        "286:291",
+        "292:299",
+        "300:306",
+        "310:317",
+        "477:483",
+        "543:549",
+        "550:555",
+        "556:563",
+        "636:643",
+        "656:661",
+        "662:669",
+        "846:851",
+        "852:859" ;
+    data:wdtLink wdt:Q64217 ;
+    :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan",
+        "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen" ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSonOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Prince_Joachim_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Joachim of Prussia" ;
+    data:posIndicesFull "581:606",
+        "588:595" ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim",
+        "Joachim Franz Hubert",
+        "Prince Joachim Franz Humbert of Prussia" ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Prince_Karl_Franz_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Karl Franz of Prussia" ;
+    data:posIndicesFull "363:391" ;
+    data:posIndicesPart "1287:1292",
+        "477:483",
+        "543:549",
+        "550:555",
+        "656:661",
+        "846:851" ;
+    data:wdtLink wdt:Q635489 ;
+    :alsoKnownAs "Karl Franz Joseph",
+        "Karl Franz Joseph Prinz von Preußen",
+        "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia" ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasParent data:Prince_Joachim_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isChildOf data:Prince_Joachim_of_Prussia ;
+    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSonOf data:Prince_Joachim_of_Prussia .
+

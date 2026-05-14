@@ -1,0 +1,234 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Queen_Máxima_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:posIndicesFull "3209:3215",
+        "3959:3965",
+        "3959:3977",
+        "5690:5696",
+        "808:814",
+        "808:826" ;
+    data:posIndicesPart "1207:1212",
+        "1358:1369",
+        "1698:1703",
+        "1834:1839",
+        "1847:1858",
+        "2009:2020",
+        "2181:2192",
+        "2273:2284",
+        "2413:2424",
+        "2589:2600",
+        "2801:2812",
+        "3039:3050",
+        "3627:3638",
+        "4140:4151",
+        "6152:6163",
+        "6482:6493",
+        "6506:6517",
+        "6535:6546",
+        "7084:7095",
+        "7114:7125",
+        "7983:7994",
+        "8205:8216" ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
+        "Maxima Zorreguieta",
+        "Máxima",
+        "Máxima Zorreguieta",
+        "Máxima of the Netherlands" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "1107:1114",
+        "1260:1273",
+        "1266:1273",
+        "1890:1897",
+        "509:522",
+        "515:522" ;
+    data:posIndicesPart "1358:1369",
+        "2009:2020",
+        "2181:2192",
+        "2273:2284",
+        "2413:2424",
+        "2589:2600",
+        "2801:2812",
+        "3039:3050",
+        "3228:3239",
+        "3627:3638",
+        "4140:4151",
+        "6152:6163",
+        "6482:6493",
+        "6506:6517",
+        "651:662",
+        "6535:6546",
+        "7084:7095",
+        "7114:7125",
+        "737:748",
+        "7983:7994",
+        "8205:8216" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:posIndicesFull "1496:1532",
+        "1503:1532" ;
+    data:posIndicesPart "1747:1753",
+        "1776:1782",
+        "1939:1945",
+        "4336:4342",
+        "4789:4795",
+        "5660:5666",
+        "5881:5887",
+        "6165:6171",
+        "6932:6937",
+        "8191:8197",
+        "8244:8250" ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe-Biesterfeld",
+        "Bernhard, Prince Consort of the Netherlands",
+        "Prince Bernhard of the Netherlands",
+        "Prince Bernhard, Prince Consort of the Netherlands",
+        "Z.K.H. Prins Bernhard" ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isFatherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "3726:3738",
+        "6117:6138",
+        "7713:7734" ;
+    data:posIndicesPart "4140:4151",
+        "4564:4573",
+        "5053:5062",
+        "5248:5257",
+        "5574:5583",
+        "5914:5923",
+        "6214:6223",
+        "6283:6292",
+        "6449:6458",
+        "6482:6493",
+        "6506:6517",
+        "6535:6546",
+        "6605:6614",
+        "7084:7095",
+        "7097:7104",
+        "7114:7125",
+        "7251:7260",
+        "7530:7539",
+        "7871:7880",
+        "7913:7920",
+        "7983:7994",
+        "8007:8014",
+        "8048:8055",
+        "8205:8216" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Beatrix_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "3152:3165" ;
+    data:posIndicesPart "3228:3239",
+        "3384:3391",
+        "3478:3485",
+        "3627:3638",
+        "4140:4151",
+        "5385:5392",
+        "6152:6163",
+        "6482:6493",
+        "6506:6517",
+        "6535:6546",
+        "7084:7095",
+        "7114:7125",
+        "7983:7994",
+        "8205:8216" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isMotherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands .
+

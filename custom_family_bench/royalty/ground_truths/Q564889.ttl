@@ -1,0 +1,690 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "19:30",
+        "19:39",
+        "4846:4883" ;
+    data:posIndicesPart "11184:11189",
+        "11614:11619",
+        "14365:14370",
+        "16320:16325",
+        "16509:16514",
+        "1891:1896",
+        "2491:2496",
+        "2622:2627",
+        "2823:2828",
+        "3022:3027",
+        "4386:4391",
+        "5008:5013",
+        "533:538",
+        "561:566",
+        "6240:6245",
+        "6266:6271",
+        "6703:6708",
+        "716:721",
+        "8040:8045" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :isAuntOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSisterOf data:Constantine_II_of_Greece .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "1628:1663",
+        "2127:2155" ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Alexandrine, Queen of Denmark",
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Duchess Alexandrine of Mecklenburg-Schwerin",
+        "Queen Alexandrine of Denmark" ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isMotherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1601:1612",
+        "1601:1623",
+        "2111:2122",
+        "3267:3278" ;
+    data:posIndicesPart "12276:12283",
+        "16611:16618",
+        "1900:1907",
+        "2641:2650",
+        "2657:2664",
+        "2842:2851",
+        "2858:2865",
+        "3433:3440",
+        "4423:4430",
+        "4500:4507",
+        "5526:5533",
+        "8049:8056",
+        "9695:9702" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "8073:8078" ;
+    data:posIndicesPart "10071:10077",
+        "12004:12010",
+        "12135:12141",
+        "12276:12283",
+        "16611:16618",
+        "9695:9702" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isFatherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "14391:14407",
+        "14396:14410",
+        "2762:2776",
+        "286:302",
+        "291:305" ;
+    data:posIndicesPart "10296:10307",
+        "10336:10342",
+        "10457:10463",
+        "10588:10594",
+        "10605:10616",
+        "10733:10739",
+        "10769:10780",
+        "10915:10926",
+        "11045:11051",
+        "11119:11125",
+        "1136:1142",
+        "1161:1172",
+        "11660:11671",
+        "11785:11796",
+        "1187:1193",
+        "11936:11947",
+        "12052:12063",
+        "12227:12238",
+        "12295:12301",
+        "1231:1242",
+        "12321:12327",
+        "12359:12370",
+        "12503:12509",
+        "12625:12631",
+        "12648:12659",
+        "12815:12821",
+        "12989:12995",
+        "13047:13058",
+        "13379:13390",
+        "13612:13618",
+        "13868:13874",
+        "13996:14007",
+        "14422:14433",
+        "14757:14768",
+        "14940:14946",
+        "15043:15054",
+        "15097:15108",
+        "15291:15302",
+        "15361:15372",
+        "15395:15401",
+        "15482:15488",
+        "15713:15724",
+        "15748:15759",
+        "16151:16157",
+        "16433:16439",
+        "16570:16576",
+        "16681:16692",
+        "2417:2423",
+        "4306:4317",
+        "4335:4341",
+        "4432:4443",
+        "4522:4533",
+        "4818:4829",
+        "4953:4964",
+        "5072:5078",
+        "510:521",
+        "5234:5245",
+        "5457:5468",
+        "550:556",
+        "5584:5595",
+        "5650:5661",
+        "5987:5993",
+        "6037:6043",
+        "6275:6281",
+        "6592:6598",
+        "6842:6848",
+        "6958:6964",
+        "7099:7105",
+        "7146:7157",
+        "735:741",
+        "7478:7484",
+        "7552:7563",
+        "7853:7859",
+        "7908:7919",
+        "8177:8188",
+        "8315:8326",
+        "8510:8516",
+        "8549:8560",
+        "8598:8609",
+        "8700:8711",
+        "8800:8811",
+        "9035:9046",
+        "9366:9377",
+        "9526:9537",
+        "9855:9866",
+        "9907:9913",
+        "9952:9958" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBrotherOf data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Sofía_of_Spain .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "471:487" ;
+    data:posIndicesPart "1549:1555",
+        "1696:1702",
+        "1749:1755",
+        "2212:2218",
+        "2974:2980" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :isMotherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "2912:2922",
+        "2912:2933" ;
+    data:posIndicesPart "12276:12283",
+        "16611:16618",
+        "3093:3101",
+        "3433:3440",
+        "4423:4430",
+        "4500:4507",
+        "5526:5533",
+        "8049:8056",
+        "9695:9702" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark .
+
+data:Prince_Nikolaos_of_Greece_and_Denmark a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Nikolaos of Greece and Denmark" ;
+    data:posIndicesFull "9312:9349" ;
+    data:posIndicesPart "10071:10077",
+        "10336:10342",
+        "10457:10463",
+        "10588:10594",
+        "10733:10739",
+        "11045:11051",
+        "11119:11125",
+        "12004:12010",
+        "12135:12141",
+        "12276:12283",
+        "12295:12301",
+        "12321:12327",
+        "12503:12509",
+        "12625:12631",
+        "12815:12821",
+        "12989:12995",
+        "13612:13618",
+        "13868:13874",
+        "14940:14946",
+        "15395:15401",
+        "15482:15488",
+        "16151:16157",
+        "16433:16439",
+        "16570:16576",
+        "16611:16618",
+        "9695:9702",
+        "9907:9913",
+        "9952:9958" ;
+    data:wdtLink wdt:Q583639 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :isChildOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSonOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "10862:10874",
+        "14170:14182",
+        "8004:8016",
+        "8004:8027",
+        "84:96" ;
+    data:posIndicesPart "12276:12283",
+        "1559:1566",
+        "16611:16618",
+        "1874:1883",
+        "1900:1907",
+        "2366:2373",
+        "2428:2435",
+        "2657:2664",
+        "2858:2865",
+        "3433:3440",
+        "3904:3913",
+        "4423:4430",
+        "4500:4507",
+        "5526:5533",
+        "8162:8171",
+        "9695:9702" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAuntOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "170:194" ;
+    data:posIndicesPart "10281:10285",
+        "10286:10291",
+        "10336:10342",
+        "1035:1039",
+        "10375:10379",
+        "10380:10385",
+        "1040:1045",
+        "10457:10463",
+        "10588:10594",
+        "1058:1062",
+        "1063:1068",
+        "10733:10739",
+        "10754:10758",
+        "10759:10764",
+        "10903:10907",
+        "10908:10913",
+        "10971:10975",
+        "10976:10981",
+        "11045:11051",
+        "11119:11125",
+        "11184:11189",
+        "1136:1142",
+        "11436:11440",
+        "11441:11446",
+        "11632:11636",
+        "11637:11642",
+        "11770:11774",
+        "11775:11780",
+        "1187:1193",
+        "11921:11925",
+        "11926:11931",
+        "12037:12041",
+        "12042:12047",
+        "12202:12206",
+        "12207:12212",
+        "12295:12301",
+        "12321:12327",
+        "12344:12348",
+        "12349:12354",
+        "12503:12509",
+        "12625:12631",
+        "12633:12637",
+        "12638:12643",
+        "12815:12821",
+        "1297:1301",
+        "12989:12995",
+        "1302:1307",
+        "13032:13036",
+        "13037:13042",
+        "13304:13309",
+        "13364:13368",
+        "13369:13374",
+        "13612:13618",
+        "13868:13874",
+        "13981:13985",
+        "13986:13991",
+        "14121:14125",
+        "14126:14131",
+        "14365:14370",
+        "14371:14375",
+        "14376:14381",
+        "14656:14660",
+        "14661:14666",
+        "14730:14734",
+        "14735:14740",
+        "14940:14946",
+        "15110:15114",
+        "15115:15120",
+        "15276:15280",
+        "15281:15286",
+        "15346:15350",
+        "15351:15356",
+        "15395:15401",
+        "15482:15488",
+        "15507:15511",
+        "15512:15517",
+        "15657:15661",
+        "15662:15667",
+        "15847:15851",
+        "15852:15857",
+        "15879:15883",
+        "15884:15889",
+        "16019:16023",
+        "16024:16029",
+        "16151:16157",
+        "16161:16165",
+        "16166:16171",
+        "16320:16325",
+        "16433:16439",
+        "16509:16514",
+        "16515:16519",
+        "16520:16525",
+        "16570:16576",
+        "16697:16701",
+        "16702:16707",
+        "1831:1835",
+        "1836:1841",
+        "1891:1896",
+        "1986:1990",
+        "1991:1996",
+        "2417:2423",
+        "2491:2496",
+        "2572:2576",
+        "2577:2582",
+        "2622:2627",
+        "2823:2828",
+        "2877:2881",
+        "2882:2887",
+        "3041:3045",
+        "3046:3051",
+        "3230:3234",
+        "3235:3240",
+        "3445:3449",
+        "3450:3455",
+        "3968:3972",
+        "3973:3978",
+        "4030:4034",
+        "4035:4040",
+        "405:409",
+        "410:415",
+        "4158:4162",
+        "4163:4168",
+        "4248:4252",
+        "4253:4258",
+        "4335:4341",
+        "4386:4391",
+        "4581:4585",
+        "4586:4591",
+        "4918:4922",
+        "4923:4928",
+        "5031:5035",
+        "5036:5041",
+        "5072:5078",
+        "533:538",
+        "5473:5477",
+        "5478:5483",
+        "550:556",
+        "561:566",
+        "5635:5639",
+        "5640:5645",
+        "568:572",
+        "5713:5717",
+        "5718:5723",
+        "573:578",
+        "5800:5804",
+        "5805:5810",
+        "5987:5993",
+        "6037:6043",
+        "6144:6148",
+        "6149:6154",
+        "6240:6245",
+        "6266:6271",
+        "6275:6281",
+        "6283:6287",
+        "6288:6293",
+        "6396:6400",
+        "6401:6406",
+        "6514:6518",
+        "6519:6524",
+        "6592:6598",
+        "6600:6604",
+        "6605:6610",
+        "6703:6708",
+        "6709:6713",
+        "6714:6719",
+        "6842:6848",
+        "6958:6964",
+        "7099:7105",
+        "716:721",
+        "735:741",
+        "7478:7484",
+        "752:756",
+        "7568:7572",
+        "7573:7578",
+        "757:762",
+        "7757:7761",
+        "7762:7767",
+        "7853:7859",
+        "7893:7897",
+        "7898:7903",
+        "8040:8045",
+        "8136:8140",
+        "8141:8146",
+        "843:847",
+        "848:853",
+        "8510:8516",
+        "8534:8538",
+        "8539:8544",
+        "8583:8587",
+        "8588:8593",
+        "8685:8689",
+        "8690:8695",
+        "8785:8789",
+        "8790:8795",
+        "9001:9005",
+        "9006:9011",
+        "9185:9189",
+        "9190:9195",
+        "9234:9238",
+        "9239:9244",
+        "9351:9355",
+        "9356:9361",
+        "9511:9515",
+        "9516:9521",
+        "9624:9628",
+        "9629:9634",
+        "9840:9844",
+        "9845:9850",
+        "9907:9913",
+        "9952:9958" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "10362:10373",
+        "3329:3340",
+        "3583:3594",
+        "444:455",
+        "444:466",
+        "4690:4701" ;
+    data:posIndicesPart "12276:12283",
+        "1338:1346",
+        "1521:1529",
+        "1559:1566",
+        "16611:16618",
+        "1900:1907",
+        "2366:2373",
+        "2428:2435",
+        "2657:2664",
+        "2858:2865",
+        "3093:3101",
+        "3433:3440",
+        "4423:4430",
+        "4500:4507",
+        "5526:5533",
+        "8049:8056",
+        "9695:9702" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark .
+

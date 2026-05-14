@@ -1,0 +1,653 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "9811:9827",
+        "9815:9827" ;
+    data:posIndicesPart "12039:12045" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasSex data:male .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "10269:10284",
+        "249:264",
+        "5852:5877",
+        "5857:5877" ;
+    data:posIndicesPart "10477:10482",
+        "10501:10506",
+        "1079:1084",
+        "11636:11641",
+        "11898:11903",
+        "1795:1800",
+        "2426:2432",
+        "3112:3117",
+        "5990:5995",
+        "6476:6481",
+        "666:671",
+        "6677:6682",
+        "7654:7660",
+        "7662:7667",
+        "781:786",
+        "894:899",
+        "9177:9186",
+        "919:925",
+        "9565:9571",
+        "9573:9578" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasSex data:female ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "2847:2856",
+        "4197:4205",
+        "706:714",
+        "947:955" ;
+    data:posIndicesPart "10710:10717",
+        "9209:9220",
+        "9433:9440" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBrotherOf data:Anne-_Princess_Royal ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Anne-_Princess_Royal ;
+    :isSonOf data:Elizabeth_II .
+
+data:Anne-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Anne, Princess Royal" ;
+    data:posIndicesFull "1936:1950",
+        "1940:1950",
+        "834:848",
+        "838:848" ;
+    data:posIndicesPart "1132:1140",
+        "11393:11398",
+        "11787:11792",
+        "12212:12217",
+        "12326:12331",
+        "12466:12471",
+        "12565:12573",
+        "12574:12579",
+        "12712:12717",
+        "12731:12739",
+        "12740:12745",
+        "12974:12979",
+        "2909:2914",
+        "3022:3027",
+        "3306:3311",
+        "4772:4780",
+        "5653:5658",
+        "5828:5833",
+        "7013:7018",
+        "7977:7982",
+        "8143:8148",
+        "8439:8447",
+        "8448:8453",
+        "8668:8676",
+        "8677:8682",
+        "8704:8712",
+        "9168:9176",
+        "9737:9742",
+        "9924:9929" ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom",
+        "Anne Mountbatten-Windsor",
+        "Princess Anne",
+        "Princess Anne Elizabeth Alice Louise of Edinburgh",
+        "Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "Princess Anne of Edinburgh",
+        "Princess Anne, Princess Royal",
+        "Princess Anne, The Princess Royal",
+        "The Princess Anne",
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "The Princess Anne, Princess Royal" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasSex data:female ;
+    :isChildOf data:Elizabeth_II ;
+    :isDaughterOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor .
+
+data:Henry_Lascelles-_6th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henry Lascelles, 6th Earl of Harewood" ;
+    data:posIndicesFull "290:305",
+        "290:325" ;
+    data:posIndicesPart "10151:10156",
+        "10188:10196",
+        "10950:10958",
+        "10996:11001",
+        "11009:11018",
+        "11055:11063",
+        "12269:12274",
+        "12285:12294",
+        "12414:12418",
+        "12422:12430",
+        "1621:1626",
+        "2327:2332",
+        "4292:4300",
+        "4921:4929",
+        "5232:5241",
+        "5418:5423",
+        "5434:5443",
+        "5470:5474",
+        "5478:5486",
+        "5546:5550",
+        "6063:6068",
+        "6293:6301",
+        "6343:6348",
+        "6629:6634",
+        "7701:7709",
+        "7761:7769",
+        "7850:7859",
+        "8115:8123",
+        "8288:8293",
+        "8372:8380",
+        "8474:8479",
+        "8508:8512",
+        "8516:8524",
+        "8970:8975" ;
+    data:wdtLink wdt:Q2653986 ;
+    :alsoKnownAs "Henry George Charles Lascelles",
+        "Henry George Charles Lascelles, 6th Earl of Harewood",
+        "Henry George Charles Lascelles, Viscount Lascelles",
+        "Henry Harewood",
+        "Henry Lascelles",
+        "Henry Lascelles, Viscount Lascelles",
+        "Lord Harewood" ;
+    :hasChild data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :hasSex data:male ;
+    :hasSon data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :isFatherOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :isParentOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles .
+
+data:Edward_VIII a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward VIII" ;
+    data:posIndicesFull "10575:10590",
+        "11200:11210",
+        "11253:11264",
+        "1509:1520",
+        "200:217",
+        "206:217",
+        "874:889",
+        "879:889",
+        "8880:8891",
+        "9005:9016",
+        "9034:9049",
+        "9228:9243" ;
+    data:posIndicesPart "2307:2313",
+        "5225:5231" ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor",
+        "Duke of Windsor",
+        "Edward Albert Christian George Andrew Patrick David",
+        "Edward Albert Christian George Andrew Patrick David Windsor",
+        "Edward VIII Edward VIII of the United Kingdom",
+        "Edward VIII Edward VIII, King of the United Kingdom",
+        "Edward VIII of the United Kingdom",
+        "Edward Windsor",
+        "Edward, Duke of Windsor",
+        "Edward, Prince of Wales",
+        "King Edward VIII",
+        "Prince Edward",
+        "Prince Edward, Duke of Windsor" ;
+    :hasBrother data:George_VI ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Elizabeth_II,
+        data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles,
+        data:Prince_Edward-_Duke_of_Kent .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "11230:11238",
+        "12163:12171",
+        "156:169",
+        "161:169",
+        "6458:6471",
+        "6463:6471",
+        "763:776",
+        "768:776",
+        "8618:8626" ;
+    data:posIndicesPart "10903:10909",
+        "1628:1634",
+        "4254:4260",
+        "4346:4352",
+        "4825:4831",
+        "7638:7644" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasChild data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII,
+        data:George_VI ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Lascelles, 7th Earl of Harewood" ;
+    data:posIndicesFull "383:399",
+        "383:421" ;
+    data:posIndicesPart "10188:10196",
+        "10903:10909",
+        "10950:10958",
+        "11009:11018",
+        "11055:11063",
+        "12285:12294",
+        "12414:12418",
+        "12422:12430",
+        "1628:1634",
+        "4254:4260",
+        "4292:4300",
+        "4346:4352",
+        "4825:4831",
+        "4921:4929",
+        "5232:5241",
+        "5434:5443",
+        "5470:5474",
+        "5478:5486",
+        "5546:5550",
+        "6293:6301",
+        "7638:7644",
+        "7701:7709",
+        "7761:7769",
+        "7850:7859",
+        "8115:8123",
+        "8372:8380",
+        "8508:8512",
+        "8516:8524" ;
+    data:wdtLink wdt:Q336609 ;
+    :alsoKnownAs "George Harewood",
+        "George Henry Hubert Lascelles, 7th Earl of Harewood",
+        "George Henry Hubert Lascelles, Viscount Lascelles",
+        "George Lascelles",
+        "George Lascelles, Viscount Lascelles",
+        "Hon. George Henry Hubert Lascelles",
+        "Hon. George Lascelles",
+        "Lascelles, George" ;
+    :hasBrother data:Gerald_David_Lascelles ;
+    :hasFather data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :hasMother data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :isBrotherOf data:Gerald_David_Lascelles ;
+    :isChildOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSiblingOf data:Gerald_David_Lascelles ;
+    :isSonOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Gerald David Lascelles" ;
+    data:posIndicesFull "427:449" ;
+    data:posIndicesPart "11009:11018",
+        "12285:12294",
+        "5232:5241",
+        "5434:5443",
+        "7850:7859",
+        "8848:8853" ;
+    data:wdtLink wdt:Q2962982 ;
+    :alsoKnownAs "Gerald Lascelles",
+        "Hon. Gerald David Lascelles",
+        "Hon. Gerald Lascelles" ;
+    :hasBrother data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasFather data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :hasMother data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :isBrotherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isChildOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSiblingOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isSonOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George VI" ;
+    data:posIndicesFull "11269:11278",
+        "1540:1549",
+        "222:231" ;
+    data:posIndicesPart "10903:10909",
+        "4254:4260",
+        "4346:4352",
+        "4825:4831",
+        "7638:7644" ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George",
+        "Albert Frederick Arthur George Windsor",
+        "Albert Windsor",
+        "Bertie",
+        "George Windsor",
+        "H.M. King George VI",
+        "Industrial Prince",
+        "King George VI",
+        "Prince Albert Frederick Arthur George of Cornwall and York",
+        "Prince Albert Frederick Arthur George of Wales",
+        "Prince Albert Frederick Arthur George of York",
+        "Prince Albert Frederick Arthur George, Duke of York",
+        "Prince Albert of Cornwall and York",
+        "Prince Albert of Wales",
+        "Prince Albert of York",
+        "Prince Albert, Duke of York",
+        "The Prince Albert Frederick Arthur George of the United Kingdom",
+        "The Prince Albert Frederick Arthur George, Duke of York",
+        "The Prince Albert of the United Kingdom",
+        "The Prince Albert, Duke of York" ;
+    :hasBrother data:Edward_VIII ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles,
+        data:Prince_Edward-_Duke_of_Kent .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "10269:10287",
+        "10275:10287",
+        "11299:11311",
+        "249:267",
+        "255:267" ;
+    data:posIndicesPart "9177:9186" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSon data:Andrew_Mountbatten-Windsor ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
+    data:posIndicesFull "0:20",
+        "10096:10109",
+        "11569:11582",
+        "11731:11744",
+        "11731:11752",
+        "11972:11985",
+        "12108:12121",
+        "12108:12130",
+        "12231:12244",
+        "12345:12358",
+        "12345:12381",
+        "12485:12498",
+        "12485:12520",
+        "13081:13101",
+        "13081:13126",
+        "2556:2569",
+        "9908:9921" ;
+    data:posIndicesPart "10174:10178",
+        "10188:10196",
+        "1037:1041",
+        "10545:10549",
+        "10817:10821",
+        "10950:10958",
+        "11055:11063",
+        "11149:11153",
+        "1132:1140",
+        "11393:11398",
+        "11407:11411",
+        "11763:11767",
+        "1177:1181",
+        "11787:11792",
+        "12565:12573",
+        "12574:12579",
+        "12689:12693",
+        "12712:12717",
+        "12731:12739",
+        "12740:12745",
+        "12924:12928",
+        "12974:12979",
+        "1352:1356",
+        "1669:1673",
+        "180:184",
+        "1951:1959",
+        "2046:2054",
+        "2196:2200",
+        "2222:2226",
+        "2368:2372",
+        "2909:2914",
+        "3022:3027",
+        "3306:3311",
+        "3407:3411",
+        "349:357",
+        "3604:3608",
+        "3904:3908",
+        "3973:3977",
+        "4091:4095",
+        "4280:4288",
+        "4292:4300",
+        "4479:4483",
+        "451:455",
+        "4635:4639",
+        "4772:4780",
+        "478:486",
+        "4807:4811",
+        "487:492",
+        "4921:4929",
+        "5046:5050",
+        "5087:5091",
+        "5190:5194",
+        "528:532",
+        "5320:5324",
+        "5405:5409",
+        "5478:5486",
+        "5579:5583",
+        "5653:5658",
+        "5720:5724",
+        "5828:5833",
+        "5891:5895",
+        "5955:5959",
+        "6054:6058",
+        "6113:6117",
+        "6293:6301",
+        "6482:6486",
+        "6620:6624",
+        "6683:6687",
+        "7013:7018",
+        "7074:7078",
+        "7252:7256",
+        "7668:7672",
+        "7689:7697",
+        "7701:7709",
+        "7747:7751",
+        "7761:7769",
+        "787:791",
+        "7977:7982",
+        "8083:8087",
+        "8115:8123",
+        "8143:8148",
+        "8236:8240",
+        "8372:8380",
+        "8439:8447",
+        "8448:8453",
+        "849:857",
+        "8516:8524",
+        "8641:8645",
+        "8668:8676",
+        "8677:8682",
+        "8704:8712",
+        "8767:8771",
+        "8961:8965",
+        "9168:9176",
+        "9579:9583",
+        "9618:9622",
+        "9737:9742" ;
+    data:wdtLink wdt:Q233913 ;
+    :alsoKnownAs "Mary Harewood",
+        "Mary, Princess Royal",
+        "Princess Mary",
+        "Princess Mary of Wales",
+        "Princess Mary of York",
+        "Princess Mary of the United Kingdom",
+        "Princess Mary, Countess of Harewood",
+        "Princess Mary, Princess Royal of the United Kingdom",
+        "Princess Mary, Viscountess Lascelles",
+        "Princess Victoria Alexandra Alice Mary of Wales",
+        "Princess Victoria Alexandra Alice Mary of York",
+        "Princess Victoria Alexandra Alice Mary of the United Kingdom",
+        "Princess Victoria Alexandra Alice Mary, Countess of Harewood",
+        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
+        "Victoria Alexandra Alice Mary Windsor",
+        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:female ;
+    :hasSon data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :isAuntOf data:Elizabeth_II,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isDaughterOf data:George_V ;
+    :isMotherOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :isParentOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isSisterOf data:Edward_VIII,
+        data:George_VI .
+

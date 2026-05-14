@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "2230:2243" ;
+    data:posIndicesPart "3998:4005",
+        "4519:4530",
+        "4754:4765" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isMotherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands .
+
+data:Queen_Máxima_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:posIndicesFull "627:633",
+        "943:949" ;
+    data:posIndicesPart "1059:1070",
+        "1104:1115",
+        "1416:1427",
+        "2176:2187",
+        "4519:4530",
+        "4754:4765",
+        "4935:4940",
+        "5304:5309",
+        "5421:5426" ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
+        "Maxima Zorreguieta",
+        "Máxima",
+        "Máxima Zorreguieta",
+        "Máxima of the Netherlands" ;
+    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasSex data:female ;
+    :isMotherOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isParentOf data:Catharina-Amalia-_Princess_of_Orange .
+
+data:Catharina-Amalia-_Princess_of_Orange a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Catharina-Amalia, Princess of Orange" ;
+    data:posIndicesFull "1866:1891",
+        "323:363",
+        "64:100",
+        "713:738",
+        "722:762",
+        "74:100" ;
+    data:posIndicesPart "1182:1191",
+        "1192:1198",
+        "1330:1338",
+        "1556:1565",
+        "1566:1572",
+        "2189:2198",
+        "2199:2205",
+        "2308:2317",
+        "2318:2324",
+        "2373:2381",
+        "2385:2391",
+        "2468:2477",
+        "2478:2484",
+        "2684:2692",
+        "2758:2767",
+        "2768:2774",
+        "2825:2831",
+        "2877:2886",
+        "2887:2893",
+        "3068:3077",
+        "3078:3084",
+        "3399:3408",
+        "3409:3415",
+        "3469:3478",
+        "3479:3485",
+        "3552:3561",
+        "3562:3568",
+        "3648:3657",
+        "3658:3664",
+        "3730:3739",
+        "3740:3746",
+        "3794:3802",
+        "3904:3913",
+        "3914:3920",
+        "3989:3997",
+        "4068:4074",
+        "4146:4155",
+        "4156:4162",
+        "4415:4423",
+        "4461:4470",
+        "4471:4477",
+        "4645:4654",
+        "4655:4661",
+        "4853:4862",
+        "4863:4869",
+        "4980:4989",
+        "4990:4996",
+        "5068:5077",
+        "5078:5084",
+        "5100:5108",
+        "5341:5350",
+        "5351:5357",
+        "5474:5483",
+        "5484:5490",
+        "555:564",
+        "5574:5583",
+        "5584:5590",
+        "565:571",
+        "5856:5864",
+        "5934:5943",
+        "5944:5950",
+        "6078:6087",
+        "6088:6094",
+        "6209:6218",
+        "6219:6225",
+        "6533:6541",
+        "664:672",
+        "684:692" ;
+    data:wdtLink wdt:Q855749 ;
+    :alsoKnownAs "Amalia van Orange",
+        "Amalia, Princess of Orange",
+        "Catharina-Amalia Beatrix Carmen Victoria",
+        "Catharina-Amalia Beatrix Carmen Victoria Prinses van Oranje",
+        "Catharina-Amalia van Orange",
+        "Catharina-Amalia, Princess of Orange",
+        "Crown Princess Catharina-Amalia",
+        "Princess Amalia of Orange-Nassau",
+        "Princess Amalia of the Netherlands",
+        "Princess Amalia of the Netherlands, Princess of Orange-Nassau",
+        "Princess Catharina-Amalia",
+        "Princess Catharina-Amalia of Orange-Nassau",
+        "Princess Catharina-Amalia of the Netherlands",
+        "Princess Catharina-Amalia of the Netherlands, Princess of Orange-Nassau" ;
+    :hasFather data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Queen_Máxima_of_the_Netherlands ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isChildOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "3032:3053",
+        "595:616",
+        "884:918" ;
+    data:posIndicesPart "1059:1070",
+        "1104:1115",
+        "1416:1427",
+        "2176:2187",
+        "4032:4041",
+        "4519:4530",
+        "4754:4765" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Beatrix_of_the_Netherlands ;
+    :isFatherOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isParentOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isSonOf data:Beatrix_of_the_Netherlands .
+

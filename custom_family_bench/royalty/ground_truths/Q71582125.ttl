@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Béatrice_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Maria Béatrice of Austria-Este" ;
+    data:posIndicesFull "527:569" ;
+    data:posIndicesPart "1681:1686",
+        "1705:1716",
+        "1720:1727",
+        "1728:1732",
+        "643:648",
+        "660:667",
+        "668:672",
+        "777:784",
+        "785:789",
+        "931:938" ;
+    data:wdtLink wdt:Q21198012 ;
+    :alsoKnownAs "Archduchess Maria Beatrice of Austria-Este, Princess of Modena",
+        "Maria Beatrix Erzherzogin von Österreich" ;
+    :hasChild data:Princess_Olympia-_Princess_Napoléon ;
+    :hasDaughter data:Princess_Olympia-_Princess_Napoléon ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Olympia-_Princess_Napoléon ;
+    :isParentOf data:Princess_Olympia-_Princess_Napoléon .
+
+data:Princess_Olympia-_Princess_Napoléon a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Olympia, Princess Napoléon" ;
+    data:posIndicesFull "104:111",
+        "104:137",
+        "1078:1085",
+        "1330:1337",
+        "1781:1788",
+        "32:39",
+        "375:382",
+        "70:77",
+        "940:947" ;
+    data:posIndicesPart "1277:1285",
+        "2041:2049",
+        "794:802" ;
+    data:wdtLink wdt:Q71582125 ;
+    :alsoKnownAs "Olympia",
+        "Olympia Gräfin von und zu Arco-Zinneberg",
+        "Olympia von und zu Arco-Zinneberg",
+        "Princess Olympia, The Princess Napoléon" ;
+    :hasMother data:Archduchess_Maria_Béatrice_of_Austria-Este ;
+    :hasParent data:Archduchess_Maria_Béatrice_of_Austria-Este ;
+    :hasSex data:female ;
+    :isChildOf data:Archduchess_Maria_Béatrice_of_Austria-Este ;
+    :isDaughterOf data:Archduchess_Maria_Béatrice_of_Austria-Este .
+

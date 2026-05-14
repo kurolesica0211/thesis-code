@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "0:38" ;
+    data:posIndicesPart "1034:1039",
+        "1052:1060",
+        "1296:1304",
+        "198:206",
+        "287:295",
+        "362:367",
+        "462:467",
+        "512:517",
+        "578:583",
+        "706:711",
+        "769:777",
+        "930:935",
+        "985:990" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasFather data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasParent data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :isChildOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Ernest_II-_Count_of_Lippe-Biesterfeld .
+
+data:Ernest_II-_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ernest II, Count of Lippe-Biesterfeld" ;
+    data:posIndicesFull "235:272",
+        "97:134" ;
+    data:posIndicesPart "1034:1039",
+        "362:367",
+        "462:467",
+        "512:517",
+        "578:583",
+        "675:681",
+        "706:711",
+        "930:935",
+        "985:990" ;
+    data:wdtLink wdt:Q66592 ;
+    :hasChild data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasDaughter data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isFatherOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isParentOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+

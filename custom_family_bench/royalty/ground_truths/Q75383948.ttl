@@ -1,0 +1,344 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
+    data:posIndicesFull "3598:3618" ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten",
+        "Dame Edwina Cynthia Annette Mountbatten",
+        "Edwina Cynthia Annette Ashley",
+        "Edwina Cynthia Annette Mountbatten",
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma",
+        "Lady Mountbatten of Burma" ;
+    :hasChild data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasDaughter data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isMotherOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isParentOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma .
+
+data:Louise_Mountbatten a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "1125:1143",
+        "708:725" ;
+    data:posIndicesPart "2742:2753",
+        "2880:2891",
+        "2981:2992",
+        "3373:3384",
+        "768:779" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:posIndicesFull "3264:3283" ;
+    data:wdtLink wdt:Q11324270 ;
+    :alsoKnownAs "5DN",
+        "AMA",
+        "Deep N Beeper",
+        "Hon. Nicholas Louis Charles Norton Knatchbull",
+        "Nicholas Louis Charles Norton Knatchbull",
+        "Safe As Milk" ;
+    :hasFather data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasParent data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :isChildOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isSonOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1407:1413",
+        "2301:2305",
+        "5:10" ;
+    data:posIndicesPart "1171:1179",
+        "1503:1511" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten ;
+    :isAuntOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1125:1143",
+        "708:725" ;
+    data:posIndicesPart "2737:2741",
+        "2742:2753",
+        "2757:2762",
+        "2880:2891",
+        "2981:2992",
+        "3373:3384",
+        "3622:3627",
+        "763:767",
+        "768:779",
+        "783:788" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasChild data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasDaughter data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isParentOf data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:John_Knatchbull-_7th_Baron_Brabourne a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "John Knatchbull, 7th Baron Brabourne" ;
+    data:posIndicesFull "111:125",
+        "2003:2017" ;
+    data:posIndicesPart "1061:1070",
+        "1254:1263",
+        "1447:1456",
+        "1573:1582",
+        "1872:1881",
+        "2154:2163",
+        "2389:2398",
+        "257:266",
+        "2710:2719",
+        "3166:3175",
+        "3219:3228",
+        "3397:3406",
+        "3513:3522",
+        "356:365",
+        "410:420",
+        "426:431",
+        "432:441",
+        "510:519",
+        "790:799",
+        "865:869",
+        "876:885",
+        "968:977" ;
+    data:wdtLink wdt:Q332969 ;
+    :alsoKnownAs "John Brabourne" ;
+    :hasChild data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasSex data:male ;
+    :hasSon data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isParentOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma .
+
+data:Amanda_Ellingworth a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amanda Ellingworth" ;
+    data:posIndicesFull "1698:1738",
+        "1703:1738" ;
+    data:wdtLink wdt:Q6469925 ;
+    :alsoKnownAs "Amanda Knatchbull",
+        "Amanda Knatchbull Ellingworth",
+        "Amanda Patricia Victoria Ellingworth",
+        "Amanda Patricia Victoria Knatchbull",
+        "Lady Amanda Knatchbull",
+        "Lady Amanda Patricia Victoria Ellingworth",
+        "Lady Amanda Patricia Victoria Knatchbull" ;
+    :hasBrother data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasFather data:John_Knatchbull-_7th_Baron_Brabourne ;
+    :hasMother data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isAuntOf data:Nicholas_Knatchbull ;
+    :isChildOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isSisterOf data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma .
+
+data:Nicholas_Knatchbull_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:posIndicesFull "1764:1799",
+        "3264:3283" ;
+    data:wdtLink wdt:Q75383948 ;
+    :alsoKnownAs "Hon. Nicholas Knatchbull",
+        "Hon. Nicholas Timothy Charles Knatchbull",
+        "Nicholas Timothy Charles Knatchbull" ;
+    :hasBrother data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasFather data:John_Knatchbull-_7th_Baron_Brabourne ;
+    :hasMother data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSister data:Amanda_Ellingworth ;
+    :isBrotherOf data:Amanda_Ellingworth,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isChildOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Amanda_Ellingworth,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isSonOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isUncleOf data:Nicholas_Knatchbull .
+
+data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Norton Knatchbull, 3rd Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1613:1674",
+        "2450:2467" ;
+    data:posIndicesPart "2737:2741",
+        "2742:2753",
+        "2757:2762",
+        "2880:2891",
+        "2981:2992",
+        "3373:3384",
+        "3622:3627" ;
+    data:wdtLink wdt:Q1948021 ;
+    :alsoKnownAs "Norton Brabourne",
+        "Norton Knatchbull",
+        "Norton Knatchbull, 8th Baron Brabourne",
+        "Norton Knatchbull, Lord Romsey",
+        "Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma",
+        "Norton Louis Philip Knatchbull, 8th Baron Brabourne",
+        "Norton Louis Philip Knatchbull, Lord Romsey",
+        "Norton Mountbatten",
+        "Norton Romsey" ;
+    :hasBrother data:Nicholas_Knatchbull_1 ;
+    :hasChild data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull-_7th_Baron_Brabourne ;
+    :hasMother data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasParent data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSister data:Amanda_Ellingworth ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isBrotherOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1 ;
+    :isChildOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma ;
+    :isFatherOf data:Nicholas_Knatchbull ;
+    :isParentOf data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1 ;
+    :isSonOf data:John_Knatchbull-_7th_Baron_Brabourne,
+        data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma .
+
+data:Patricia_Knatchbull-_2nd_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Patricia Knatchbull, 2nd Countess Mountbatten of Burma" ;
+    data:posIndicesFull "668:688" ;
+    data:posIndicesPart "2742:2753",
+        "2757:2762",
+        "2880:2891",
+        "2981:2992",
+        "3373:3384",
+        "3417:3425",
+        "3588:3596",
+        "3622:3627",
+        "768:779",
+        "783:788" ;
+    data:wdtLink wdt:Q336691 ;
+    :alsoKnownAs "Patricia Edwina Victoria Knatchbull, 2nd Countess Mountbatten of Burma",
+        "Patricia Edwina Victoria Knatchbull, Baroness Brabourne",
+        "Patricia Edwina Victoria Knatchbull, Lady Brabourne",
+        "Patricia Edwina Victoria Mountbatten",
+        "Patricia Knatchbull",
+        "Patricia Knatchbull, Baroness Brabourne",
+        "Patricia Knatchbull, Lady Brabourne",
+        "Patricia Mountbatten" ;
+    :hasChild data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasDaughter data:Amanda_Ellingworth ;
+    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSon data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isMotherOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isParentOf data:Amanda_Ellingworth,
+        data:Nicholas_Knatchbull_1,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma .
+

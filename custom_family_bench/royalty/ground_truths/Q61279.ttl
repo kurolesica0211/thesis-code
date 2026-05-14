@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Karoline_of_Wartensleben a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Karoline of Wartensleben" ;
+    data:posIndicesFull "439:463" ;
+    data:wdtLink wdt:Q2176785 ;
+    :alsoKnownAs "Karoline Friederike Cäcilie Klothilde Gräfin von Wartensleben" ;
+    :hasChild data:Leopold_IV-_Prince_of_Lippe ;
+    :hasSex data:female ;
+    :hasSon data:Leopold_IV-_Prince_of_Lippe ;
+    :isMotherOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isParentOf data:Leopold_IV-_Prince_of_Lippe .
+
+data:Leopold_IV-_Prince_of_Lippe a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Leopold IV, Prince of Lippe" ;
+    data:posIndicesFull "0:27" ;
+    data:posIndicesPart "1028:1035",
+        "1144:1149",
+        "1243:1249",
+        "1285:1292",
+        "1310:1316",
+        "1320:1325",
+        "1434:1441",
+        "1458:1464",
+        "1571:1578",
+        "1650:1657",
+        "1715:1720",
+        "1784:1791",
+        "1839:1846",
+        "1898:1904",
+        "2023:2029",
+        "2033:2038",
+        "2097:2102",
+        "2158:2164",
+        "2168:2173",
+        "2417:2422",
+        "2528:2535",
+        "2642:2647",
+        "264:269",
+        "2740:2746",
+        "277:282",
+        "2795:2801",
+        "2898:2904",
+        "2915:2921",
+        "2981:2988",
+        "3108:3113",
+        "3215:3222",
+        "3369:3376",
+        "336:343",
+        "347:352",
+        "408:413",
+        "465:472",
+        "489:494",
+        "528:533",
+        "606:611",
+        "635:640",
+        "674:679",
+        "732:738",
+        "750:757",
+        "845:852",
+        "975:982" ;
+    data:wdtLink wdt:Q61279 ;
+    :hasMother data:Karoline_of_Wartensleben ;
+    :hasParent data:Karoline_of_Wartensleben ;
+    :hasSex data:male ;
+    :isChildOf data:Karoline_of_Wartensleben ;
+    :isSonOf data:Karoline_of_Wartensleben .
+

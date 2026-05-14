@@ -1,0 +1,910 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Fernand_Sanz a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Fernand Sanz" ;
+    data:posIndicesFull "16530:16543" ;
+    data:wdtLink wdt:Q26455 ;
+    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala" ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infanta_Sofía_of_Spain a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Sofía of Spain" ;
+    data:posIndicesFull "1554:1569",
+        "25656:25671" ;
+    data:posIndicesPart "10706:10711",
+        "11265:11270",
+        "11400:11405",
+        "11573:11578",
+        "11813:11818",
+        "12050:12055",
+        "14226:14231",
+        "15087:15092",
+        "15599:15604",
+        "15769:15774",
+        "15794:15799",
+        "16415:16420",
+        "1744:1749",
+        "17674:17679",
+        "17874:17879",
+        "17889:17894",
+        "19114:19119",
+        "19234:19239",
+        "21081:21086",
+        "21430:21435",
+        "21674:21679",
+        "2210:2215",
+        "22269:22274",
+        "22566:22571",
+        "2474:2479",
+        "24778:24783",
+        "25207:25212",
+        "25269:25274",
+        "2647:2652",
+        "27321:27328",
+        "27910:27915",
+        "28537:28542",
+        "28616:28621",
+        "28707:28712",
+        "28905:28910",
+        "3433:3438",
+        "6696:6701",
+        "7140:7145",
+        "7202:7207",
+        "7724:7729",
+        "9297:9302",
+        "9733:9738" ;
+    data:wdtLink wdt:Q847010 ;
+    :alsoKnownAs "Princess Sofia",
+        "Sofía de Borbón y Ortiz, infanta de España" ;
+    :hasFather data:Felipe_VI_of_Spain ;
+    :hasParent data:Felipe_VI_of_Spain ;
+    :hasSex data:female ;
+    :isChildOf data:Felipe_VI_of_Spain ;
+    :isDaughterOf data:Felipe_VI_of_Spain .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "1271:1283",
+        "26838:26850",
+        "3025:3037",
+        "7262:7274",
+        "770:782" ;
+    data:posIndicesPart "12498:12505",
+        "27752:27759",
+        "3675:3682",
+        "4346:4353",
+        "4478:4485",
+        "4769:4776",
+        "5001:5008",
+        "5111:5118",
+        "5170:5177",
+        "5292:5299",
+        "5559:5566",
+        "5669:5676",
+        "6223:6230",
+        "7303:7310",
+        "7381:7388" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasBrother data:Fernand_Sanz ;
+    :hasChild data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Fernand_Sanz ;
+    :isFatherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Fernand_Sanz .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1554:1591",
+        "16155:16166",
+        "17:29",
+        "25656:25693" ;
+    data:posIndicesPart "1032:1037",
+        "10706:10711",
+        "1102:1107",
+        "11265:11270",
+        "11400:11405",
+        "11573:11578",
+        "11813:11818",
+        "12050:12055",
+        "13464:13469",
+        "14226:14231",
+        "1486:1491",
+        "15087:15092",
+        "15599:15604",
+        "15769:15774",
+        "15794:15799",
+        "16415:16420",
+        "16544:16549",
+        "17380:17385",
+        "1744:1749",
+        "17674:17679",
+        "17874:17879",
+        "17889:17894",
+        "19114:19119",
+        "19234:19239",
+        "21081:21086",
+        "21430:21435",
+        "21674:21679",
+        "2210:2215",
+        "22269:22274",
+        "22566:22571",
+        "2474:2479",
+        "24778:24783",
+        "25207:25212",
+        "25269:25274",
+        "2647:2652",
+        "27910:27915",
+        "28537:28542",
+        "28616:28621",
+        "28707:28712",
+        "28905:28910",
+        "3433:3438",
+        "3999:4004",
+        "573:578",
+        "6696:6701",
+        "7140:7145",
+        "7202:7207",
+        "7724:7729",
+        "801:806",
+        "9297:9302",
+        "9733:9738" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_Cristina_of_Spain ;
+    :hasSex data:female ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isMotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
+    data:posIndicesFull "2913:2967" ;
+    data:posIndicesPart "13876:13881",
+        "14904:14909",
+        "25965:25974",
+        "27023:27032",
+        "27321:27328",
+        "5861:5870",
+        "7466:7471",
+        "9867:9870" ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies" ;
+    :hasChild data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDaughter data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasSex data:female ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isMotherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Infanta_Cristina_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Cristina of Spain" ;
+    data:posIndicesFull "16968:16984" ;
+    data:posIndicesPart "17674:17679",
+        "17874:17879",
+        "17889:17894",
+        "19114:19119",
+        "19234:19239",
+        "21081:21086",
+        "21430:21435",
+        "21674:21679",
+        "22269:22274",
+        "22566:22571",
+        "24778:24783",
+        "25207:25212",
+        "25269:25274",
+        "27321:27328",
+        "28537:28542",
+        "28616:28621",
+        "28707:28712",
+        "28905:28910" ;
+    data:wdtLink wdt:Q230580 ;
+    :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
+        "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
+        "Infanta Cristina" ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :isAuntOf data:Infanta_Sofía_of_Spain ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain ;
+    :isSisterOf data:Felipe_VI_of_Spain .
+
+data:Infanta_Margarita-_Duchess_of_Soria a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Margarita, Duchess of Soria" ;
+    data:posIndicesFull "3595:3630" ;
+    data:posIndicesPart "16986:16993",
+        "27321:27328" ;
+    data:wdtLink wdt:Q237165 ;
+    :alsoKnownAs "Margarita Maria",
+        "Margarita Maria de Borbón y de Borbón, Infanta de España" ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isDaughterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Infanta_Pilar-_Duchess_of_Badajoz a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Pilar, Duchess of Badajoz" ;
+    data:posIndicesFull "3544:3577" ;
+    data:posIndicesPart "16986:16993",
+        "27321:27328",
+        "27329:27334",
+        "3949:3954",
+        "5652:5657" ;
+    data:wdtLink wdt:Q240580 ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Margarita-_Duchess_of_Soria ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isDaughterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Felipe_VI_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "19367:19376",
+        "21303:21312",
+        "24187:24196",
+        "2568:2577" ;
+    data:posIndicesPart "10706:10711",
+        "11113:11119",
+        "11265:11270",
+        "11400:11405",
+        "11573:11578",
+        "11813:11818",
+        "12050:12055",
+        "14226:14231",
+        "15087:15092",
+        "15599:15604",
+        "15769:15774",
+        "15794:15799",
+        "16415:16420",
+        "17135:17141",
+        "17674:17679",
+        "17874:17879",
+        "17889:17894",
+        "18181:18187",
+        "19114:19119",
+        "19234:19239",
+        "19991:19997",
+        "21065:21071",
+        "21081:21086",
+        "21430:21435",
+        "21674:21679",
+        "22269:22274",
+        "22566:22571",
+        "24778:24783",
+        "25207:25212",
+        "25269:25274",
+        "2647:2652",
+        "27839:27845",
+        "28537:28542",
+        "28616:28621",
+        "28707:28712",
+        "28905:28910",
+        "3433:3438",
+        "6696:6701",
+        "7140:7145",
+        "7202:7207",
+        "7724:7729",
+        "9297:9302",
+        "9733:9738" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasChild data:Infanta_Sofía_of_Spain ;
+    :hasDaughter data:Infanta_Sofía_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Cristina_of_Spain ;
+    :isBrotherOf data:Infanta_Cristina_of_Spain ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Infanta_Sofía_of_Spain ;
+    :isParentOf data:Infanta_Sofía_of_Spain ;
+    :isSiblingOf data:Infanta_Cristina_of_Spain ;
+    :isSonOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:posIndicesFull "2875:2907",
+        "720:752",
+        "7212:7244" ;
+    data:posIndicesPart "10080:10084",
+        "10157:10161",
+        "10375:10379",
+        "10579:10583",
+        "10927:10931",
+        "11168:11172",
+        "11444:11448",
+        "11628:11632",
+        "11907:11911",
+        "12013:12017",
+        "1206:1210",
+        "12210:12214",
+        "12288:12292",
+        "12419:12423",
+        "12656:12660",
+        "12968:12972",
+        "13011:13015",
+        "13095:13099",
+        "1327:1331",
+        "13337:13341",
+        "13712:13716",
+        "13801:13805",
+        "13871:13875",
+        "1387:1391",
+        "14017:14021",
+        "1431:1435",
+        "14445:14449",
+        "14650:14654",
+        "15236:15240",
+        "1534:1538",
+        "15431:15435",
+        "15506:15510",
+        "15944:15948",
+        "16590:16594",
+        "1697:1701",
+        "17183:17187",
+        "17255:17259",
+        "18310:18314",
+        "1837:1841",
+        "1862:1866",
+        "18779:18783",
+        "19010:19014",
+        "19447:19451",
+        "19545:19549",
+        "19754:19758",
+        "19946:19950",
+        "20132:20136",
+        "20418:20422",
+        "20522:20526",
+        "2065:2069",
+        "20698:20702",
+        "20875:20879",
+        "21137:21141",
+        "21458:21462",
+        "21681:21685",
+        "21854:21858",
+        "22007:22011",
+        "22136:22140",
+        "22394:22398",
+        "22523:22527",
+        "23092:23096",
+        "23118:23122",
+        "23345:23349",
+        "23441:23445",
+        "23621:23625",
+        "23634:23638",
+        "23849:23853",
+        "23972:23976",
+        "24141:24145",
+        "24306:24310",
+        "24444:24448",
+        "24559:24563",
+        "24742:24746",
+        "2495:2499",
+        "24978:24982",
+        "25068:25072",
+        "25332:25336",
+        "25485:25489",
+        "25613:25617",
+        "25900:25904",
+        "25965:25974",
+        "2598:2602",
+        "26188:26192",
+        "26365:26369",
+        "26465:26469",
+        "26637:26641",
+        "26944:26948",
+        "27023:27032",
+        "27093:27097",
+        "27168:27172",
+        "2759:2763",
+        "28447:28451",
+        "28579:28583",
+        "28750:28754",
+        "3305:3309",
+        "3515:3519",
+        "3726:3730",
+        "3888:3892",
+        "4180:4184",
+        "4338:4345",
+        "4663:4670",
+        "4895:4899",
+        "4976:4980",
+        "5236:5240",
+        "5258:5262",
+        "5392:5396",
+        "5420:5424",
+        "5766:5770",
+        "5852:5857",
+        "5861:5870",
+        "5890:5894",
+        "6010:6015",
+        "6092:6096",
+        "6188:6192",
+        "6304:6308",
+        "6404:6408",
+        "6558:6562",
+        "7276:7280",
+        "7575:7582",
+        "7583:7587",
+        "7631:7635",
+        "7772:7776",
+        "8088:8092",
+        "8274:8278",
+        "8331:8335",
+        "8603:8607",
+        "8734:8738",
+        "8820:8824",
+        "8889:8893",
+        "915:919",
+        "9277:9281",
+        "9334:9338",
+        "9543:9547",
+        "9569:9573",
+        "9584:9588" ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona" ;
+    :hasChild data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDaughter data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Alfonso_XIII .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "10025:10038",
+        "130:143",
+        "16137:16150",
+        "27261:27274",
+        "27349:27362",
+        "27406:27419",
+        "3185:3249",
+        "354:418" ;
+    data:posIndicesPart "10080:10084",
+        "10085:10091",
+        "10157:10161",
+        "10162:10168",
+        "1032:1037",
+        "10375:10379",
+        "10380:10386",
+        "10412:10418",
+        "10579:10583",
+        "10584:10590",
+        "10706:10711",
+        "10927:10931",
+        "10932:10938",
+        "1102:1107",
+        "11168:11172",
+        "11173:11179",
+        "11265:11270",
+        "11400:11405",
+        "11444:11448",
+        "11449:11455",
+        "11573:11578",
+        "11628:11632",
+        "11633:11639",
+        "11813:11818",
+        "11907:11911",
+        "11912:11918",
+        "12013:12017",
+        "12018:12024",
+        "12050:12055",
+        "1206:1210",
+        "1211:1217",
+        "12210:12214",
+        "12215:12221",
+        "12288:12292",
+        "12293:12299",
+        "12419:12423",
+        "12424:12430",
+        "12656:12660",
+        "12661:12667",
+        "12968:12972",
+        "12973:12979",
+        "13011:13015",
+        "13016:13022",
+        "13095:13099",
+        "13100:13106",
+        "1327:1331",
+        "1332:1338",
+        "13337:13341",
+        "13342:13348",
+        "13712:13716",
+        "13717:13723",
+        "13801:13805",
+        "13806:13812",
+        "13871:13875",
+        "1387:1391",
+        "1392:1398",
+        "14017:14021",
+        "14022:14028",
+        "14226:14231",
+        "1431:1435",
+        "1436:1442",
+        "14445:14449",
+        "14450:14456",
+        "14650:14654",
+        "14655:14661",
+        "1486:1491",
+        "15087:15092",
+        "15236:15240",
+        "15241:15247",
+        "1534:1538",
+        "1539:1545",
+        "15431:15435",
+        "15436:15442",
+        "15506:15510",
+        "15511:15517",
+        "15599:15604",
+        "15769:15774",
+        "15794:15799",
+        "15944:15948",
+        "15949:15955",
+        "16415:16420",
+        "16590:16594",
+        "16595:16601",
+        "1697:1701",
+        "1702:1708",
+        "17126:17132",
+        "17183:17187",
+        "17188:17194",
+        "17255:17259",
+        "17260:17266",
+        "1744:1749",
+        "17674:17679",
+        "17874:17879",
+        "17889:17894",
+        "18310:18314",
+        "18315:18321",
+        "1837:1841",
+        "1842:1848",
+        "1862:1866",
+        "1867:1873",
+        "18779:18783",
+        "18784:18790",
+        "19010:19014",
+        "19015:19021",
+        "19114:19119",
+        "19234:19239",
+        "19447:19451",
+        "19452:19458",
+        "19545:19549",
+        "19550:19556",
+        "19754:19758",
+        "19946:19950",
+        "19951:19957",
+        "20132:20136",
+        "20137:20143",
+        "20418:20422",
+        "20423:20429",
+        "20522:20526",
+        "20527:20533",
+        "2065:2069",
+        "20698:20702",
+        "20703:20709",
+        "2070:2076",
+        "20875:20879",
+        "20880:20886",
+        "21081:21086",
+        "21137:21141",
+        "21142:21148",
+        "21430:21435",
+        "21458:21462",
+        "21463:21469",
+        "21674:21679",
+        "21681:21685",
+        "21686:21692",
+        "21854:21858",
+        "21859:21865",
+        "22007:22011",
+        "22012:22018",
+        "2210:2215",
+        "22136:22140",
+        "22141:22147",
+        "22269:22274",
+        "22394:22398",
+        "22399:22405",
+        "22523:22527",
+        "22528:22534",
+        "22566:22571",
+        "23092:23096",
+        "23097:23103",
+        "23118:23122",
+        "23123:23129",
+        "23345:23349",
+        "23350:23356",
+        "23441:23445",
+        "23446:23452",
+        "23621:23625",
+        "23626:23632",
+        "23634:23638",
+        "23639:23645",
+        "23849:23853",
+        "23854:23860",
+        "23972:23976",
+        "23977:23983",
+        "24141:24145",
+        "24146:24152",
+        "24306:24310",
+        "24311:24317",
+        "24444:24448",
+        "24449:24455",
+        "24559:24563",
+        "24564:24570",
+        "24742:24746",
+        "24747:24753",
+        "2474:2479",
+        "24778:24783",
+        "2495:2499",
+        "24978:24982",
+        "24983:24989",
+        "2500:2506",
+        "25068:25072",
+        "25073:25079",
+        "25207:25212",
+        "25269:25274",
+        "25332:25336",
+        "25337:25343",
+        "25485:25489",
+        "25490:25496",
+        "25613:25617",
+        "25618:25624",
+        "25900:25904",
+        "25905:25911",
+        "2598:2602",
+        "2603:2609",
+        "26188:26192",
+        "26193:26199",
+        "26365:26369",
+        "26370:26376",
+        "26465:26469",
+        "26470:26476",
+        "2647:2652",
+        "26637:26641",
+        "26642:26648",
+        "26944:26948",
+        "26949:26955",
+        "27093:27097",
+        "27098:27104",
+        "27168:27172",
+        "27173:27179",
+        "2759:2763",
+        "2764:2770",
+        "2833:2837",
+        "2838:2844",
+        "28447:28451",
+        "28452:28458",
+        "28537:28542",
+        "28579:28583",
+        "28584:28590",
+        "28616:28621",
+        "28707:28712",
+        "28750:28754",
+        "28755:28761",
+        "28905:28910",
+        "3305:3309",
+        "3310:3316",
+        "3433:3438",
+        "3515:3519",
+        "3520:3526",
+        "3726:3730",
+        "3731:3737",
+        "3888:3892",
+        "4180:4184",
+        "4185:4191",
+        "4895:4899",
+        "4900:4906",
+        "4976:4980",
+        "4981:4987",
+        "5236:5240",
+        "5241:5247",
+        "5258:5262",
+        "5263:5269",
+        "5392:5396",
+        "5397:5403",
+        "5420:5424",
+        "5425:5431",
+        "573:578",
+        "5766:5770",
+        "5771:5777",
+        "5890:5894",
+        "5895:5901",
+        "602:606",
+        "607:613",
+        "6092:6096",
+        "6097:6103",
+        "6188:6192",
+        "6193:6199",
+        "6304:6308",
+        "6309:6315",
+        "6404:6408",
+        "6409:6415",
+        "6558:6562",
+        "6563:6569",
+        "6696:6701",
+        "694:698",
+        "699:705",
+        "7140:7145",
+        "7202:7207",
+        "7276:7280",
+        "7281:7287",
+        "7583:7587",
+        "7588:7594",
+        "7631:7635",
+        "7636:7642",
+        "7724:7729",
+        "7772:7776",
+        "7777:7783",
+        "801:806",
+        "8088:8092",
+        "8093:8099",
+        "8274:8278",
+        "8279:8285",
+        "8331:8335",
+        "8336:8342",
+        "8603:8607",
+        "8608:8614",
+        "8734:8738",
+        "8739:8745",
+        "8820:8824",
+        "8825:8831",
+        "8889:8893",
+        "8894:8900",
+        "915:919",
+        "920:926",
+        "9277:9281",
+        "9282:9288",
+        "9297:9302",
+        "9334:9338",
+        "9339:9345",
+        "9543:9547",
+        "9555:9561",
+        "9569:9573",
+        "9574:9580",
+        "9584:9588",
+        "9589:9595",
+        "9733:9738" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_Cristina_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isFatherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona .
+

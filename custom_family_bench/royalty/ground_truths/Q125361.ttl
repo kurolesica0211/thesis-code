@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia" ;
+    data:posIndicesFull "380:419" ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova",
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia",
+        "Kira Kirillovna, Princess of Prussia",
+        "Princess Louis Ferdinand of Prussia" ;
+    :hasChild data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Michael_of_Prussia ;
+    :isMotherOf data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
+    data:posIndicesFull "340:374" ;
+    data:posIndicesPart "674:681" ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen",
+        "Prince Louis Ferdinand",
+        "Prince Louis Ferdinand of Prussia" ;
+    :hasChild data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Michael_of_Prussia ;
+    :isFatherOf data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Prince_Michael_of_Prussia,
+        data:Princess_Kira_of_Prussia .
+
+data:Prince_Michael_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michael of Prussia" ;
+    data:wdtLink wdt:Q125361 ;
+    :alsoKnownAs "Michael Prinz von Preußen" ;
+    :hasFather data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Kira_of_Prussia ;
+    :isBrotherOf data:Princess_Kira_of_Prussia ;
+    :isChildOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSiblingOf data:Princess_Kira_of_Prussia ;
+    :isSonOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia .
+
+data:Princess_Kira_of_Prussia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Kira of Prussia" ;
+    data:posIndicesFull "271:286" ;
+    data:posIndicesPart "674:681" ;
+    data:wdtLink wdt:Q77937 ;
+    :alsoKnownAs "Kira Auguste Viktoria Friederike Prinzessin von Preußen",
+        "Kira Prussia",
+        "Kira of Prussia",
+        "Princess Kira Auguste Viktoria Friederike of Prussia" ;
+    :hasBrother data:Prince_Michael_of_Prussia ;
+    :hasFather data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:female ;
+    :isChildOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isDaughterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSiblingOf data:Prince_Michael_of_Prussia ;
+    :isSisterOf data:Prince_Michael_of_Prussia .
+

@@ -1,0 +1,155 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Elizabeth_Cator a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth Cator" ;
+    data:posIndicesFull "186:206" ;
+    data:posIndicesPart "1388:1397" ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon",
+        "Elizabeth Margaret Bowes-Lyon",
+        "Elizabeth Margaret Cator" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Fenella Hepburn-Stuart-Forbes-Trefusis" ;
+    data:posIndicesFull "653:691" ;
+    data:posIndicesPart "1318:1325",
+        "1326:1334" ;
+    data:wdtLink wdt:Q75381423 ;
+    :alsoKnownAs "Fenella Bowes-Lyon",
+        "Hon. Fenella Bowes-Lyon",
+        "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis" ;
+    :hasChild data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Princess_Anne_of_Denmark .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "273:291",
+        "279:291" ;
+    data:posIndicesPart "1388:1397" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:John_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "John Bowes-Lyon" ;
+    data:posIndicesFull "0:23",
+        "399:414" ;
+    data:posIndicesPart "1112:1117",
+        "1118:1122",
+        "1298:1303",
+        "1304:1308",
+        "634:639",
+        "640:644",
+        "885:890",
+        "891:895" ;
+    data:wdtLink wdt:Q75411 ;
+    :alsoKnownAs "Hon. John Bowes-Lyon",
+        "Hon. John Herbert \"Jock\" Bowes-Lyon",
+        "Hon. John Herbert Bowes-Lyon",
+        "Jock Bowes-Lyon",
+        "John Herbert Bowes-Lyon" ;
+    :hasChild data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Princess_Anne_of_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isFatherOf data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "186:206",
+        "219:234",
+        "235:251",
+        "273:288" ;
+    data:posIndicesPart "1388:1397" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Anne_of_Denmark ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:John_Bowes-Lyon ;
+    :isSisterOf data:John_Bowes-Lyon .
+
+data:Princess_Anne_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Anne of Denmark" ;
+    data:posIndicesFull "1068:1076" ;
+    data:posIndicesPart "1379:1387" ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson",
+        "Anne Anson, Viscountess Anson",
+        "Anne Bowes-Lyon",
+        "Anne Ferelith Fenella Anson",
+        "Anne Ferelith Fenella Anson, Viscountess Anson",
+        "Anne Ferelith Fenella Bowes-Lyon",
+        "Princess Anne Ferelith Fenella of Denmark" ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasSex data:female ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon .
+

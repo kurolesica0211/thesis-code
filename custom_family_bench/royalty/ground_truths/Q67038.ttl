@@ -1,0 +1,121 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "357:383",
+        "372:383",
+        "372:384" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Frederick Charles of Hesse" ;
+    data:posIndicesFull "238:271",
+        "245:271",
+        "531:557" ;
+    data:posIndicesPart "1131:1137",
+        "1366:1371",
+        "888:893",
+        "916:925",
+        "926:933" ;
+    data:wdtLink wdt:Q63679 ;
+    :alsoKnownAs "Frederick Charles Louis Constantine",
+        "Frederick Charles Louis Constantine of Hesse",
+        "Frederick Charles of Hesse",
+        "Prince Frederick Charles Louis Constantine of Hesse" ;
+    :hasChild data:Prince_Wolfgang_of_Hesse ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wolfgang_of_Hesse ;
+    :isFatherOf data:Prince_Wolfgang_of_Hesse ;
+    :isParentOf data:Prince_Wolfgang_of_Hesse .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "238:271",
+        "288:316",
+        "297:316" ;
+    data:posIndicesPart "1072:1080",
+        "1162:1170" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Wolfgang_of_Hesse ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Wolfgang_of_Hesse ;
+    :isMotherOf data:Prince_Wolfgang_of_Hesse ;
+    :isParentOf data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wolfgang of Hesse" ;
+    data:posIndicesFull "0:24" ;
+    data:posIndicesPart "1034:1042",
+        "1131:1137",
+        "1366:1371",
+        "161:169",
+        "401:409",
+        "513:521",
+        "767:775",
+        "888:893" ;
+    data:wdtLink wdt:Q67038 ;
+    :alsoKnownAs "Wolfgang Moritz von Hessen-Kassel" ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia .
+

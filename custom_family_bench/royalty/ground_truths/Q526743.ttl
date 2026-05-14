@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "659:670",
+        "659:679",
+        "848:860",
+        "908:920",
+        "908:929" ;
+    data:posIndicesPart "2771:2778",
+        "4325:4332" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "1094:1107",
+        "230:243",
+        "5687:5700",
+        "5687:5709" ;
+    data:posIndicesPart "1032:1037",
+        "1215:1221",
+        "1263:1267",
+        "1309:1313",
+        "1314:1320",
+        "1362:1366",
+        "1371:1376",
+        "1514:1519",
+        "1538:1544",
+        "1549:1553",
+        "1554:1560",
+        "1744:1748",
+        "1874:1880",
+        "1914:1920",
+        "2144:2148",
+        "2149:2155",
+        "2390:2396",
+        "2569:2575",
+        "2746:2752",
+        "3439:3444",
+        "3487:3493",
+        "3781:3787",
+        "4010:4016",
+        "4218:4224",
+        "4370:4376",
+        "4544:4549",
+        "4569:4575",
+        "4767:4773",
+        "4940:4946",
+        "503:508",
+        "5217:5222",
+        "5492:5497",
+        "5554:5559",
+        "5838:5844",
+        "6320:6326",
+        "970:976" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasSex data:male .
+
+data:Prince_Ranieri-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ranieri, Duke of Castro" ;
+    data:posIndicesFull "3028:3058" ;
+    data:posIndicesPart "3774:3780",
+        "3873:3877",
+        "4352:4356",
+        "4743:4747",
+        "4751:4757",
+        "4916:4920",
+        "4924:4930",
+        "5633:5639" ;
+    data:wdtLink wdt:Q1943652 ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
+    data:posIndicesFull "403:435" ;
+    data:posIndicesPart "2700:2708",
+        "3881:3889",
+        "4360:4368",
+        "6336:6343",
+        "6344:6350" ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
+        "Princess Alicia of Bourbon-Parma" ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:female ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isMotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Carlos, Duke of Calabria" ;
+    data:posIndicesFull "2843:2872",
+        "4705:4741",
+        "4712:4741",
+        "555:591",
+        "562:591" ;
+    data:posIndicesPart "1109:1115",
+        "1215:1221",
+        "1314:1320",
+        "1538:1544",
+        "1554:1560",
+        "1874:1880",
+        "1914:1920",
+        "2136:2143",
+        "2149:2155",
+        "2390:2396",
+        "2569:2575",
+        "2692:2696",
+        "2700:2708",
+        "3487:3493",
+        "3781:3787",
+        "3873:3877",
+        "3881:3889",
+        "4010:4016",
+        "4218:4224",
+        "4317:4324",
+        "4352:4356",
+        "4360:4368",
+        "4370:4376",
+        "4561:4568",
+        "4569:4575",
+        "4759:4766",
+        "4767:4773",
+        "4916:4920",
+        "4932:4939",
+        "4940:4946",
+        "5640:5646",
+        "5662:5669",
+        "5830:5837",
+        "5838:5844",
+        "6320:6326",
+        "945:952",
+        "962:969",
+        "970:976" ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria",
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma",
+        "Carlos of Bourbon-Two Sicilies",
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
+        "Prince Carlos of Bourbon-Two Sicilies" ;
+    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasSex data:male ;
+    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isSonOf data:Infanta_Alicia-_Duchess_of_Calabria .
+

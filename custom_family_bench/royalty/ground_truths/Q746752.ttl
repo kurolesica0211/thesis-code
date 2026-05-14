@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Bernhard-_Prince_of_Saxe-Meiningen a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Bernhard, Prince of Saxe-Meiningen" ;
+    data:posIndicesFull "0:34" ;
+    data:posIndicesPart "1073:1081",
+        "1294:1302",
+        "1638:1642",
+        "1643:1652",
+        "185:191",
+        "195:199",
+        "200:209",
+        "211:219",
+        "254:260",
+        "281:285",
+        "286:295",
+        "391:395",
+        "396:405",
+        "506:512",
+        "538:544",
+        "601:609",
+        "652:656",
+        "657:666",
+        "700:704",
+        "705:714",
+        "719:727",
+        "785:791",
+        "888:896" ;
+    data:wdtLink wdt:Q746752 ;
+    :alsoKnownAs "Bernhard Friedrich Julius Heinrich",
+        "Bernhard Prinz von Sachsen-Meiningen" ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSonOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "300:338" ;
+    data:posIndicesPart "450:455",
+        "456:467" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSon data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isMotherOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isParentOf data:Bernhard-_Prince_of_Saxe-Meiningen .
+

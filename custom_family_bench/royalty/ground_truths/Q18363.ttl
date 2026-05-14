@@ -1,0 +1,293 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XII of Spain" ;
+    data:posIndicesFull "2150:2161",
+        "2150:2170",
+        "438:449" ;
+    data:posIndicesPart "10033:10040",
+        "10453:10460",
+        "10695:10700",
+        "10719:10726",
+        "10785:10790",
+        "11189:11196",
+        "11319:11324",
+        "11731:11736",
+        "11746:11753",
+        "11783:11788",
+        "11891:11896",
+        "12679:12684",
+        "12972:12979",
+        "13061:13068",
+        "13174:13181",
+        "13267:13274",
+        "13561:13568",
+        "13625:13632",
+        "13840:13847",
+        "14011:14018",
+        "14375:14382",
+        "14601:14608",
+        "14657:14664",
+        "1772:1777",
+        "2355:2360",
+        "2495:2502",
+        "2560:2567",
+        "2689:2694",
+        "2696:2703",
+        "2877:2884",
+        "3069:3076",
+        "3467:3474",
+        "3866:3873",
+        "3969:3976",
+        "4258:4265",
+        "4443:4450",
+        "4476:4483",
+        "4682:4687",
+        "4706:4713",
+        "479:486",
+        "4884:4889",
+        "5024:5029",
+        "5085:5092",
+        "5142:5147",
+        "5384:5389",
+        "5537:5542",
+        "5750:5757",
+        "5787:5794",
+        "5901:5906",
+        "5995:6002",
+        "6188:6195",
+        "6435:6440",
+        "6458:6465",
+        "6606:6613",
+        "6723:6730",
+        "6772:6777",
+        "7004:7009",
+        "7435:7442",
+        "9292:9299",
+        "9590:9597" ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII" ;
+    :hasChild data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Maria Christina of Austria" ;
+    data:posIndicesFull "2247:2273",
+        "497:523" ;
+    data:posIndicesPart "11455:11460",
+        "11526:11531",
+        "3484:3489",
+        "3490:3499",
+        "3768:3773",
+        "3774:3783",
+        "3846:3851",
+        "3852:3861" ;
+    data:wdtLink wdt:Q538125 ;
+    :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria",
+        "Maria Cristina de Habsburgo",
+        "María Cristina de Borbón" ;
+    :hasChild data:Alfonso_XIII ;
+    :hasSex data:female ;
+    :hasSon data:Alfonso_XIII ;
+    :isMotherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "12993:13032",
+        "13002:13032",
+        "13034:13037",
+        "3126:3165",
+        "3135:3165",
+        "754:793",
+        "763:793" ;
+    data:posIndicesPart "3270:3278",
+        "3334:3342",
+        "3421:3429",
+        "3663:3671",
+        "3833:3841",
+        "3981:3989",
+        "4114:4122",
+        "4270:4278",
+        "4395:4403",
+        "4966:4974",
+        "4975:4982" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasSex data:female ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isMotherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias .
+
+data:Alfonso-_Prince_of_Asturias a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso, Prince of Asturias" ;
+    data:posIndicesFull "4356:4383" ;
+    data:posIndicesPart "10033:10040",
+        "10453:10460",
+        "10719:10726",
+        "11189:11196",
+        "11746:11753",
+        "12972:12979",
+        "13061:13068",
+        "13174:13181",
+        "13267:13274",
+        "13561:13568",
+        "13625:13632",
+        "13840:13847",
+        "14011:14018",
+        "14375:14382",
+        "14601:14608",
+        "14657:14664",
+        "4443:4450",
+        "4476:4483",
+        "4706:4713",
+        "5085:5092",
+        "5750:5757",
+        "5787:5794",
+        "5995:6002",
+        "6188:6195",
+        "6458:6465",
+        "6606:6613",
+        "6723:6730",
+        "7435:7442",
+        "9292:9299",
+        "9590:9597" ;
+    data:wdtLink wdt:Q518846 ;
+    :alsoKnownAs "Alfons de Borbo i de Battenberg",
+        "Alfons de Borbó i de Battenberg",
+        "Alfonso Pius de Borbón y Battenberg, Infante de España",
+        "Alfonso de Borbon y Battenberg",
+        "Alfonso de Borbón y Battenberg",
+        "Alfonso, Count of Covadonga",
+        "Alphonse de Bourbon",
+        "Infante Alfonso, Count of Covadonga" ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "0:12",
+        "11233:11245",
+        "11970:11982",
+        "12113:12125",
+        "12269:12281",
+        "12406:12418",
+        "12707:12719",
+        "1579:1591",
+        "2053:2065",
+        "2150:2161",
+        "2150:2170",
+        "253:264",
+        "438:449",
+        "5772:5783",
+        "606:618",
+        "7254:7266",
+        "7660:7672",
+        "7868:7880",
+        "7957:7969",
+        "8178:8190",
+        "8330:8342",
+        "973:985" ;
+    data:posIndicesPart "10033:10040",
+        "10453:10460",
+        "10719:10726",
+        "11189:11196",
+        "11746:11753",
+        "12972:12979",
+        "13061:13068",
+        "13174:13181",
+        "13267:13274",
+        "13561:13568",
+        "13625:13632",
+        "13840:13847",
+        "14011:14018",
+        "14375:14382",
+        "14601:14608",
+        "14657:14664",
+        "2495:2502",
+        "2560:2567",
+        "2696:2703",
+        "2877:2884",
+        "3069:3076",
+        "3467:3474",
+        "3866:3873",
+        "3969:3976",
+        "4258:4265",
+        "4443:4450",
+        "4476:4483",
+        "4706:4713",
+        "479:486",
+        "5085:5092",
+        "5787:5794",
+        "5995:6002",
+        "6188:6195",
+        "6458:6465",
+        "6606:6613",
+        "6723:6730",
+        "7435:7442",
+        "9292:9299",
+        "9590:9597" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isFatherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria .
+

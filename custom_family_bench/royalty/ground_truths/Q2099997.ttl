@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Claus Felix von Amsberg" ;
+    data:posIndicesFull "1204:1227" ;
+    data:posIndicesPart "1346:1351",
+        "1352:1357",
+        "1423:1428",
+        "1429:1434",
+        "1659:1664",
+        "1665:1670",
+        "1703:1708",
+        "1732:1737",
+        "1738:1743",
+        "1806:1811",
+        "1938:1943",
+        "2716:2721",
+        "2811:2816" ;
+    data:wdtLink wdt:Q2439092 ;
+    :alsoKnownAs "Klaus Felix von Amsberg" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Gabriele von dem Bussche-Ippenburg" ;
+    data:posIndicesFull "441:475" ;
+    data:posIndicesPart "1624:1631",
+        "2526:2529",
+        "2530:2537",
+        "2538:2547",
+        "516:523",
+        "551:558",
+        "598:605",
+        "606:615",
+        "679:682",
+        "683:690",
+        "980:983",
+        "984:991" ;
+    data:wdtLink wdt:Q13638711 ;
+    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:female ;
+    :isMotherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Georg von dem Bussche-Haddenhausen" ;
+    data:posIndicesFull "369:404" ;
+    data:posIndicesPart "1624:1631",
+        "2526:2529",
+        "2530:2537",
+        "516:523",
+        "524:536",
+        "551:558",
+        "598:605",
+        "679:682",
+        "683:690",
+        "980:983",
+        "984:991",
+        "992:1004" ;
+    data:wdtLink wdt:Q4329958 ;
+    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:male ;
+    :isFatherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
+
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen" ;
+    data:posIndicesFull "0:43",
+        "60:122",
+        "9:43" ;
+    data:posIndicesPart "1024:1029",
+        "1129:1134",
+        "1190:1195",
+        "1336:1341",
+        "1407:1412",
+        "1624:1631",
+        "1649:1654",
+        "1907:1912",
+        "2019:2024",
+        "2082:2087",
+        "2294:2299",
+        "2399:2404",
+        "248:253",
+        "2526:2529",
+        "2530:2537",
+        "2704:2709",
+        "2801:2806",
+        "2989:2997",
+        "3079:3087",
+        "432:440",
+        "516:523",
+        "524:536",
+        "551:558",
+        "598:605",
+        "632:637",
+        "679:682",
+        "683:690",
+        "704:709",
+        "856:861",
+        "947:952",
+        "980:983",
+        "984:991",
+        "992:1004" ;
+    data:wdtLink wdt:Q2099997 ;
+    :alsoKnownAs "Gösta Julie Adelheid Marion Marie von Amsberg",
+        "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen",
+        "Gösta von Amsberg",
+        "Gösta von dem Bussche-Haddenhausen" ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:female ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen .
+

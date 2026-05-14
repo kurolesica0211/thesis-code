@@ -1,0 +1,115 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "2811:2824",
+        "2811:2843",
+        "336:349" ;
+    data:posIndicesPart "1295:1301",
+        "1545:1551",
+        "1707:1713",
+        "2603:2609",
+        "377:383",
+        "741:747" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male ;
+    :isUncleOf data:Princess_Margarita_of_Baden .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Tomislav_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Tomislav of Yugoslavia" ;
+    data:posIndicesFull "0:29",
+        "7:29" ;
+    data:posIndicesPart "1119:1127",
+        "1206:1214",
+        "1253:1263",
+        "1295:1301",
+        "1302:1310",
+        "1423:1433",
+        "1545:1551",
+        "1560:1570",
+        "1707:1713",
+        "1890:1900",
+        "1973:1983",
+        "2040:2050",
+        "2260:2270",
+        "2396:2406",
+        "2441:2451",
+        "2551:2561",
+        "2603:2609",
+        "2610:2618",
+        "272:282",
+        "2845:2853",
+        "377:383",
+        "384:392",
+        "620:630",
+        "741:747",
+        "764:772" ;
+    data:wdtLink wdt:Q594386 ;
+    :alsoKnownAs "Tomislav of Yugoslavia" ;
+    :hasChild data:Prince_Nikola_of_Serbia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Nikola_of_Serbia ;
+    :isFatherOf data:Prince_Nikola_of_Serbia ;
+    :isParentOf data:Prince_Nikola_of_Serbia .
+
+data:Princess_Margarita_of_Baden a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margarita of Baden" ;
+    data:posIndicesFull "2773:2800" ;
+    data:posIndicesPart "2858:2867" ;
+    data:wdtLink wdt:Q3424937 ;
+    :alsoKnownAs "Margarita Prinzessin von Baden",
+        "Margarita von Baden" ;
+    :hasChild data:Prince_Nikola_of_Serbia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Nikola_of_Serbia ;
+    :isMotherOf data:Prince_Nikola_of_Serbia ;
+    :isParentOf data:Prince_Nikola_of_Serbia .
+
+data:Prince_Nikola_of_Serbia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Nikola of Serbia" ;
+    data:wdtLink wdt:Q4590782 ;
+    :alsoKnownAs "Nikolas Karageorgievich, Prince of Yugoslavia" ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMother data:Princess_Margarita_of_Baden ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isSonOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden .
+

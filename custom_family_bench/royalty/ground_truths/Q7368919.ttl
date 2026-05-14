@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Lady_Mary_Leveson-Gower a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Mary Leveson-Gower" ;
+    data:posIndicesFull "320:351",
+        "325:351" ;
+    data:posIndicesPart "424:431",
+        "432:437",
+        "525:532",
+        "533:538" ;
+    data:wdtLink wdt:Q75721792 ;
+    :alsoKnownAs "Lady Mary Cecilia Clayton",
+        "Lady Mary Cecilia Leveson-Gower",
+        "Lady Mary Clayton",
+        "Mary Cecilia Clayton",
+        "Mary Cecilia Leveson-Gower",
+        "Mary Cecilia, Lady Clayton",
+        "Mary Clayton",
+        "Mary Leveson-Gower",
+        "Mary, Lady Clayton" ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasSex data:female ;
+    :isMotherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer .
+
+data:Sir_Samuel_Clayton a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Sir Samuel Clayton" ;
+    data:posIndicesFull "368:386",
+        "372:386" ;
+    data:posIndicesPart "672:675",
+        "695:702" ;
+    data:wdtLink wdt:Q75721793 ;
+    :alsoKnownAs "Samuel Clayton",
+        "Samuel Wittewronge Clayton",
+        "Sir Samuel Wittewronge Clayton" ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasSex data:male ;
+    :isFatherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer .
+
+data:Rosie_Stancer a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Rosie Stancer" ;
+    data:posIndicesFull "198:211" ;
+    data:posIndicesPart "1144:1151",
+        "1345:1352",
+        "1535:1542",
+        "1661:1668",
+        "1692:1699",
+        "1789:1796",
+        "1923:1930",
+        "2060:2067",
+        "2244:2251",
+        "2337:2344",
+        "2383:2390",
+        "2444:2451",
+        "2622:2629",
+        "2834:2841",
+        "293:300",
+        "809:816",
+        "849:856",
+        "894:901",
+        "951:958" ;
+    data:wdtLink wdt:Q7368919 ;
+    :alsoKnownAs "Rose Cecilia Clayton",
+        "Rose Cecilia Stancer",
+        "Rose Clayton",
+        "Rose Stancer",
+        "Rosie Clayton" ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMother data:Lady_Mary_Leveson-Gower ;
+    :hasParent data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :hasSex data:female ;
+    :isChildOf data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :isDaughterOf data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton .
+

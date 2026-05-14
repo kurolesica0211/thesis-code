@@ -1,0 +1,154 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Felipe_VI_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "1071:1080",
+        "1071:1089" ;
+    data:posIndicesPart "1776:1781" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasSex data:male .
+
+data:Prince_Pedro-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Pedro, Duke of Calabria" ;
+    data:posIndicesFull "1091:1121" ;
+    data:posIndicesPart "2940:2946" ;
+    data:wdtLink wdt:Q3387469 ;
+    :alsoKnownAs "Pedro Juan Maria Alejo Saturnino y todos los Santos di Borbone, Duca di Noto" ;
+    :hasSex data:male .
+
+data:Princess_Louise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Louise of Orléans" ;
+    data:posIndicesFull "925:951" ;
+    data:posIndicesPart "1146:1153" ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans" ;
+    :hasSex data:female .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "369:418" ;
+    data:posIndicesPart "1338:1343",
+        "1354:1357",
+        "1358:1366",
+        "1444:1451",
+        "1452:1455",
+        "1456:1464",
+        "1592:1595",
+        "1596:1604",
+        "2378:2381",
+        "2382:2390",
+        "2611:2618" ;
+    data:wdtLink wdt:Q255400 ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infante_Ferdinand_of_Spain a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Ferdinand of Spain" ;
+    data:wdtLink wdt:Q4997826 ;
+    :hasSex data:male .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XII of Spain" ;
+    data:posIndicesFull "617:628",
+        "617:637" ;
+    data:posIndicesPart "1404:1411",
+        "1776:1781",
+        "1943:1950",
+        "2086:2093",
+        "2237:2244",
+        "2498:2505",
+        "2528:2535",
+        "2920:2927",
+        "882:887" ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII" ;
+    :hasChild data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Maria Christina of Austria" ;
+    data:posIndicesFull "666:692" ;
+    data:posIndicesPart "1338:1343" ;
+    data:wdtLink wdt:Q538125 ;
+    :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria",
+        "Maria Cristina de Habsburgo",
+        "María Cristina de Borbón" ;
+    :hasChild data:Alfonso_XIII ;
+    :hasSex data:female ;
+    :hasSon data:Alfonso_XIII ;
+    :isMotherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "617:628",
+        "617:637",
+        "753:765",
+        "753:774" ;
+    data:posIndicesPart "1404:1411",
+        "1943:1950",
+        "2086:2093",
+        "2237:2244",
+        "2498:2505",
+        "2528:2535",
+        "2920:2927" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:male ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isUncleOf data:Infante_Ferdinand_of_Spain .
+

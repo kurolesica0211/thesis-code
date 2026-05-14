@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Pieter van Vollenhoven" ;
+    data:posIndicesFull "1289:1311",
+        "214:236" ;
+    data:posIndicesPart "1145:1156",
+        "1196:1202",
+        "1226:1237",
+        "267:273",
+        "388:394",
+        "640:646",
+        "873:879",
+        "993:999" ;
+    data:wdtLink wdt:Q301365 ;
+    :hasChild data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :isFatherOf data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven .
+
+data:Princess_Margriet_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margriet of the Netherlands" ;
+    data:posIndicesFull "173:209",
+        "182:209" ;
+    data:posIndicesPart "1015:1023",
+        "1466:1477",
+        "1580:1588",
+        "605:616" ;
+    data:wdtLink wdt:Q268821 ;
+    :alsoKnownAs "Margriet Francisca  of the Netherlands",
+        "Margriet Francisca van Oranje-Nassau",
+        "Margriet of the Netherlands",
+        "Margriet van Oranje",
+        "Princess Margriet Francisca of the Netherlands" ;
+    :hasChild data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :isMotherOf data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven .
+
+data:Prince_Pieter-Christiaan_of_Orange-Nassau-Vollenhoven a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Pieter-Christiaan of Orange-Nassau-Vollenhoven" ;
+    data:wdtLink wdt:Q1999473 ;
+    :alsoKnownAs "Pieter-Christiaan Michiel van Vollenhoven, Prins van Oranje-Nassau",
+        "Pieter-Christiaan van Oranje-Nassau, van Vollenhoven",
+        "Z.H. prins Pieter Christiaan" ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet_of_the_Netherlands ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands .
+

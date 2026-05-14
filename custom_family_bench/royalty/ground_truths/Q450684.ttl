@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:posIndicesFull "0:47" ;
+    data:posIndicesPart "477:482",
+        "483:491",
+        "684:689",
+        "690:698",
+        "754:761",
+        "807:812",
+        "821:828",
+        "905:910",
+        "911:919",
+        "968:979",
+        "980:985" ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "613:662" ;
+    data:posIndicesPart "684:689",
+        "842:850",
+        "860:867",
+        "905:910",
+        "980:985" ;
+    data:wdtLink wdt:Q255400 ;
+    :hasChild data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasDaughter data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSex data:female ;
+    :isMotherOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isParentOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+

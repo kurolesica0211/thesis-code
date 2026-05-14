@@ -1,0 +1,267 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "165:178",
+        "171:197",
+        "6456:6469" ;
+    data:posIndicesPart "1237:1248",
+        "3165:3176",
+        "3769:3780",
+        "5064:5075",
+        "5379:5386",
+        "5571:5582",
+        "654:665",
+        "6734:6745",
+        "701:708",
+        "764:775",
+        "977:988" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isMotherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
+    data:posIndicesFull "202:219" ;
+    data:posIndicesPart "1041:1047",
+        "1137:1143",
+        "1237:1248",
+        "1282:1288",
+        "1443:1449",
+        "1562:1568",
+        "1683:1689",
+        "1872:1878",
+        "1879:1884",
+        "1973:1979",
+        "2017:2023",
+        "2175:2181",
+        "2338:2344",
+        "288:294",
+        "3066:3072",
+        "3165:3176",
+        "3200:3206",
+        "3624:3630",
+        "3769:3780",
+        "3872:3878",
+        "4163:4169",
+        "4238:4244",
+        "433:439",
+        "4366:4372",
+        "4432:4438",
+        "4590:4596",
+        "4688:4694",
+        "4850:4856",
+        "5011:5017",
+        "5064:5075",
+        "5137:5143",
+        "5528:5534",
+        "5557:5563",
+        "5571:5582",
+        "5675:5681",
+        "5951:5957",
+        "6371:6377",
+        "6474:6480",
+        "6481:6486",
+        "6514:6520",
+        "654:665",
+        "6627:6633",
+        "6720:6726",
+        "6734:6745",
+        "6773:6779",
+        "713:719",
+        "720:725",
+        "764:775",
+        "780:786",
+        "908:914",
+        "963:969",
+        "977:988",
+        "990:996" ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg",
+        "Claus von Amsberg",
+        "Claus, Prince Consort of the Netherlands",
+        "Klaus von Amsberg",
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isFatherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands .
+
+data:Countess_Luana_of_Orange-Nassau a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Luana of Orange-Nassau" ;
+    data:posIndicesFull "3315:3366",
+        "3315:3390" ;
+    data:posIndicesPart "5724:5730",
+        "5845:5851",
+        "5852:5858",
+        "5961:5967",
+        "5968:5974",
+        "6174:6180",
+        "6215:6223",
+        "6228:6234",
+        "6235:6241",
+        "6783:6789",
+        "6790:6796" ;
+    data:wdtLink wdt:Q862535 ;
+    :alsoKnownAs "Countess Emma Luana Ninette Sophie of Orange-Nassau",
+        "Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg",
+        "Countess Luana of Orange-Nassau, Jonkvrouwe van Amsberg",
+        "Emma Luana Ninette Sophie van Oranje-Nassau van Amsberg Gravin van Oranje-Nassau" ;
+    :hasMother data:Princess_Mabel_of_Orange-Nassau ;
+    :hasParent data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Zaria_of_Orange-Nassau ;
+    :isChildOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isDaughterOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isSiblingOf data:Countess_Zaria_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Zaria_of_Orange-Nassau .
+
+data:Countess_Zaria_of_Orange-Nassau a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Zaria of Orange-Nassau" ;
+    data:posIndicesFull "3452:3505",
+        "3461:3488" ;
+    data:posIndicesPart "5724:5730",
+        "5845:5851",
+        "5852:5858",
+        "5961:5967",
+        "5968:5974",
+        "6174:6180",
+        "6215:6223",
+        "6228:6234",
+        "6235:6241",
+        "6783:6789",
+        "6790:6796" ;
+    data:wdtLink wdt:Q4590996 ;
+    :alsoKnownAs "Countess Joanna Zaria Nicoline Milou of Orange-Nassau",
+        "Countess Zaria of Orange-Nassau, Jonkvrouwe van Amsberg",
+        "Joanna Zaria Nicoline Milou",
+        "Joanna Zaria Nicoline Milou van Oranje-Nassau van Amsberg Gravin van Oranje-Nassau",
+        "Zaria van Oranje-Nassau van Amsberg" ;
+    :hasMother data:Princess_Mabel_of_Orange-Nassau ;
+    :hasParent data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Luana_of_Orange-Nassau ;
+    :isChildOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isDaughterOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isSiblingOf data:Countess_Luana_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Luana_of_Orange-Nassau .
+
+data:Princess_Mabel_of_Orange-Nassau a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Mabel of Orange-Nassau" ;
+    data:posIndicesFull "2201:2217",
+        "2607:2623",
+        "2886:2902" ;
+    data:posIndicesPart "3226:3234",
+        "3235:3240",
+        "5370:5378",
+        "5724:5730",
+        "5845:5851",
+        "5852:5858",
+        "5961:5967",
+        "5968:5974",
+        "6174:6180",
+        "6228:6234",
+        "6235:6241",
+        "6783:6789",
+        "6790:6796",
+        "6848:6856" ;
+    data:wdtLink wdt:Q269679 ;
+    :alsoKnownAs "Mabel Martine Los",
+        "Mabel Martine Wisse Smit",
+        "Mabel Wisse Smit",
+        "Mabel van Oranje" ;
+    :hasChild data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :isMotherOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isParentOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "244:265",
+        "3023:3044",
+        "831:852",
+        "831:871" ;
+    data:posIndicesPart "1237:1248",
+        "2508:2517",
+        "3769:3780",
+        "5064:5075",
+        "5571:5582",
+        "654:665",
+        "6734:6745",
+        "764:775",
+        "977:988" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasFather data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isUncleOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+

@@ -1,0 +1,116 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Amélie_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Amélie of Orléans" ;
+    data:posIndicesFull "800:817" ;
+    data:posIndicesPart "1593:1600",
+        "1846:1853",
+        "3436:3443",
+        "3797:3804" ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans",
+        "Maria Amélia",
+        "Marie Amelie d'Orleans",
+        "Marie Amelie of Orleans",
+        "Marie Amélie d'Orléans",
+        "Marie Amélie of Orléans" ;
+    :hasBrother data:Prince_Philippe-_Duke_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Prince_Philippe-_Duke_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Prince_Philippe-_Duke_of_Orléans,
+        data:Princess_Isabelle_dOrléans .
+
+data:Prince_Philippe-_Duke_of_Orléans a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philippe, Duke of Orléans" ;
+    data:posIndicesFull "0:32" ;
+    data:posIndicesPart "1007:1015",
+        "1079:1087",
+        "1180:1188",
+        "1281:1289",
+        "1385:1393",
+        "1400:1406",
+        "1415:1419",
+        "1577:1583",
+        "1593:1600",
+        "1764:1772",
+        "1846:1853",
+        "1893:1901",
+        "198:206",
+        "2050:2058",
+        "2129:2137",
+        "2258:2266",
+        "2561:2569",
+        "2638:2646",
+        "267:275",
+        "2799:2807",
+        "2899:2907",
+        "2931:2939",
+        "3048:3056",
+        "3060:3068",
+        "3256:3264",
+        "3436:3443",
+        "3562:3570",
+        "3789:3793",
+        "3797:3804",
+        "3840:3848",
+        "392:400",
+        "3960:3968",
+        "4061:4069",
+        "4131:4139",
+        "424:432",
+        "4339:4343",
+        "4368:4376",
+        "4556:4560",
+        "4561:4569",
+        "539:547",
+        "782:790",
+        "827:833",
+        "910:918" ;
+    data:wdtLink wdt:Q708874 ;
+    :alsoKnownAs "Prince Louis Robert, Duke of Orleans" ;
+    :hasSex data:male ;
+    :hasSister data:Amélie_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :isBrotherOf data:Amélie_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Amélie_of_Orléans,
+        data:Princess_Isabelle_dOrléans .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "325:353" ;
+    data:posIndicesPart "1823:1831",
+        "3413:3421" ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasBrother data:Prince_Philippe-_Duke_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :isSiblingOf data:Amélie_of_Orléans,
+        data:Prince_Philippe-_Duke_of_Orléans ;
+    :isSisterOf data:Amélie_of_Orléans,
+        data:Prince_Philippe-_Duke_of_Orléans .
+

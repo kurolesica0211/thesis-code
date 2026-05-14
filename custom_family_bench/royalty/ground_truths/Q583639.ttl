@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene, Duchess of Aosta" ;
+    data:posIndicesFull "612:648" ;
+    data:posIndicesPart "1040:1048",
+        "968:976" ;
+    data:wdtLink wdt:Q236770 ;
+    :alsoKnownAs "Princess Irene of Greece and Denmark" ;
+    :hasSex data:female ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Queen_Sofía_of_Spain .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Nikolaos_of_Greece_and_Denmark a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Nikolaos of Greece and Denmark" ;
+    data:posIndicesFull "78:115" ;
+    data:posIndicesPart "1008:1014",
+        "1082:1088",
+        "1148:1156",
+        "1404:1410",
+        "1429:1437",
+        "1583:1591",
+        "337:345",
+        "534:541",
+        "735:741",
+        "931:937",
+        "939:947" ;
+    data:wdtLink wdt:Q583639 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasSex data:male ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Constantine_II_of_Greece .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of Greece and Denmark" ;
+    data:posIndicesFull "612:648" ;
+    data:posIndicesPart "1040:1048",
+        "1404:1410",
+        "931:937",
+        "968:976" ;
+    data:wdtLink wdt:Q242298 ;
+    :alsoKnownAs "Irene zu Schleswig-Holstein-Sonderburg-Glücksburg, Πριγκίπισσα της Ελλάδος",
+        "Ειρήνη της Ελλάδας και της Δανίας" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :isAuntOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Queen_Sofía_of_Spain .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "19:30",
+        "19:39",
+        "563:574" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "1287:1303",
+        "217:231",
+        "491:505",
+        "491:515" ;
+    data:posIndicesPart "1404:1410",
+        "931:937" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark,
+        data:Queen_Sofía_of_Spain ;
+    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Irene_of_Greece_and_Denmark,
+        data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark,
+        data:Queen_Sofía_of_Spain .
+

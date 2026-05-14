@@ -1,0 +1,201 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Robin_Medforth-Mills a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Robin Medforth-Mills" ;
+    data:posIndicesFull "1617:1637",
+        "3887:3907",
+        "5127:5147" ;
+    data:posIndicesPart "5573:5578" ;
+    data:wdtLink wdt:Q7352653 ;
+    :alsoKnownAs "Dr. Leslie Robin Medforth-Mills",
+        "Leslie Robin Medforth-Mills" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Helen of Greece and Denmark" ;
+    data:posIndicesFull "632:662" ;
+    data:posIndicesPart "1019:1026",
+        "5284:5290",
+        "5446:5452",
+        "5457:5464",
+        "957:962" ;
+    data:wdtLink wdt:Q162177 ;
+    :alsoKnownAs "Helen, Queen Mother of Romania",
+        "Helen, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania",
+        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen",
+        "Queen Helen, Queen Mother of Romania",
+        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
+        "Queen Helen, The Queen Mother of Romania",
+        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
+    :hasChild data:Michael_I_of_Romania ;
+    :hasSex data:female ;
+    :hasSon data:Michael_I_of_Romania ;
+    :isMotherOf data:Michael_I_of_Romania ;
+    :isParentOf data:Michael_I_of_Romania .
+
+data:Queen_Anne_of_Romania a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Anne of Romania" ;
+    data:posIndicesFull "204:214",
+        "204:225",
+        "4675:4685",
+        "5304:5314",
+        "535:545" ;
+    data:posIndicesPart "1972:1979",
+        "2101:2106",
+        "2216:2223",
+        "2494:2499",
+        "2699:2704",
+        "327:334",
+        "3374:3381",
+        "3441:3448",
+        "3527:3534",
+        "3777:3784",
+        "3863:3867",
+        "4164:4171",
+        "4265:4272",
+        "4492:4499",
+        "5040:5047",
+        "700:705",
+        "964:969" ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma",
+        "Queen Anne",
+        "Queen Anne, Queen Consort of Romania" ;
+    :hasChild data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Princess_Elena_of_Romania ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Elena_of_Romania ;
+    :isParentOf data:Princess_Elena_of_Romania .
+
+data:Michael_I_of_Romania a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Michael I of Romania" ;
+    data:posIndicesFull "185:199",
+        "190:199",
+        "2884:2898",
+        "2889:2898",
+        "3838:3852",
+        "3843:3852",
+        "516:530",
+        "521:530",
+        "5227:5241",
+        "5232:5241" ;
+    data:posIndicesPart "1972:1979",
+        "2216:2223",
+        "327:334",
+        "3374:3381",
+        "3441:3448",
+        "3527:3534",
+        "4164:4171",
+        "4265:4272",
+        "4423:4430",
+        "4492:4499",
+        "4644:4651",
+        "5040:5047" ;
+    data:wdtLink wdt:Q930013 ;
+    :alsoKnownAs "King Michael I",
+        "King Michael I of Romania",
+        "King Michael I of the Romanians",
+        "Michael I",
+        "Michael I of the Romanians" ;
+    :hasChild data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Princess_Elena_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark ;
+    :hasParent data:Helen_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Helen_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Elena_of_Romania ;
+    :isParentOf data:Princess_Elena_of_Romania ;
+    :isSonOf data:Helen_of_Greece_and_Denmark .
+
+data:Princess_Elena_of_Romania a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elena of Romania" ;
+    data:posIndicesFull "109:134" ;
+    data:posIndicesPart "1032:1040",
+        "1078:1083",
+        "1334:1339",
+        "1582:1587",
+        "1749:1754",
+        "1824:1829",
+        "1972:1979",
+        "2044:2049",
+        "2216:2223",
+        "227:232",
+        "2356:2361",
+        "2545:2550",
+        "2719:2724",
+        "2867:2872",
+        "2906:2914",
+        "3173:3178",
+        "327:334",
+        "3374:3381",
+        "3441:3448",
+        "3458:3463",
+        "3480:3488",
+        "3503:3511",
+        "3527:3534",
+        "3740:3745",
+        "3777:3784",
+        "3993:3998",
+        "404:409",
+        "4164:4171",
+        "4238:4243",
+        "4265:4272",
+        "4361:4369",
+        "4454:4459",
+        "4492:4499",
+        "4596:4601",
+        "4875:4880",
+        "5040:5047",
+        "5113:5118",
+        "5392:5400",
+        "5427:5435",
+        "5469:5477",
+        "5535:5543",
+        "5563:5568",
+        "5682:5687",
+        "5811:5816",
+        "745:750" ;
+    data:wdtLink wdt:Q2423576 ;
+    :alsoKnownAs "Elena de Roumanie",
+        "The Princess Elena",
+        "The Princess Elena of Romania" ;
+    :hasFather data:Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :isChildOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania .
+

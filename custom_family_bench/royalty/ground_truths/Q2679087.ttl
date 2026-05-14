@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:posIndicesFull "2115:2162" ;
+    data:posIndicesPart "2711:2716",
+        "2725:2732",
+        "2814:2819",
+        "2828:2835" ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
+    :hasChild data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:female ;
+    :hasSon data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isMotherOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany .
+
+data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Archduke Gottfried of Austria, Hereditary Grand Duke of Tuscany" ;
+    data:posIndicesFull "0:29" ;
+    data:posIndicesPart "1012:1017",
+        "1018:1022",
+        "1048:1055",
+        "1137:1142",
+        "1143:1147",
+        "1151:1158",
+        "1274:1279",
+        "1289:1296",
+        "1342:1347",
+        "1348:1352",
+        "1356:1363",
+        "1534:1539",
+        "1540:1544",
+        "1548:1555",
+        "1663:1668",
+        "1749:1754",
+        "1878:1885",
+        "1992:2001",
+        "2020:2027",
+        "2066:2074",
+        "2094:2101",
+        "2164:2173",
+        "2341:2350",
+        "2711:2716",
+        "2717:2721",
+        "2725:2732",
+        "2814:2819",
+        "2820:2824",
+        "2828:2835",
+        "2904:2913",
+        "432:437",
+        "438:442",
+        "446:453",
+        "525:532",
+        "748:755",
+        "793:800",
+        "806:811",
+        "917:922",
+        "923:927" ;
+    data:wdtLink wdt:Q2679087 ;
+    :alsoKnownAs "Archduke Gottfried of Austria",
+        "Archduke Gottfried of Austria-Tuscany" ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSex data:male ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSonOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+

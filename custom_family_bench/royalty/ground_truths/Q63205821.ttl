@@ -1,0 +1,225 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Marie_Bonaparte a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie Bonaparte" ;
+    data:posIndicesFull "1283:1307",
+        "1292:1307",
+        "1896:1920",
+        "1905:1920",
+        "5701:5725",
+        "5710:5725" ;
+    data:posIndicesPart "2252:2257",
+        "3588:3593",
+        "4081:4086",
+        "4647:4652",
+        "5362:5367",
+        "5601:5606" ;
+    data:wdtLink wdt:Q115472 ;
+    :alsoKnownAs "Princess Marie Bonaparte" ;
+    :hasChild data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Prince_Dominik_Rainer_Radziwiłł a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Dominik Rainer Radziwiłł" ;
+    data:posIndicesFull "185:216",
+        "192:216",
+        "770:801",
+        "777:801" ;
+    data:posIndicesPart "1074:1080",
+        "1098:1107",
+        "1352:1358",
+        "1406:1415",
+        "1572:1578",
+        "1631:1640",
+        "2053:2062",
+        "2347:2356",
+        "2463:2469",
+        "2859:2868",
+        "3021:3030",
+        "3396:3405",
+        "3907:3913",
+        "4136:4142",
+        "4380:4389",
+        "468:477",
+        "4807:4816",
+        "4950:4959",
+        "5065:5074",
+        "519:525",
+        "5378:5384",
+        "5420:5429",
+        "5731:5740" ;
+    data:wdtLink wdt:Q3035416 ;
+    :alsoKnownAs "Dominic Rainer Radziwill",
+        "Dominik Rainer Radziwiłł",
+        "Dominique Radziwill",
+        "Prince Dominic Rainer Radziwill" ;
+    :hasChild data:Tatiana_Radziwiłł ;
+    :hasDaughter data:Tatiana_Radziwiłł ;
+    :hasSex data:male ;
+    :isFatherOf data:Tatiana_Radziwiłł ;
+    :isParentOf data:Tatiana_Radziwiłł .
+
+data:Prince_George_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George of Greece and Denmark" ;
+    data:posIndicesFull "1174:1209",
+        "1856:1891" ;
+    data:posIndicesPart "1572:1578",
+        "2126:2132",
+        "2137:2144",
+        "2463:2469",
+        "2470:2476",
+        "2523:2529",
+        "2650:2656",
+        "3181:3187",
+        "3442:3448",
+        "3453:3460",
+        "3597:3604",
+        "3632:3639",
+        "3857:3863",
+        "3907:3913",
+        "3917:3923",
+        "4056:4062",
+        "4090:4097",
+        "4136:4142",
+        "4156:4162",
+        "4167:4174",
+        "4249:4255",
+        "4260:4267",
+        "4628:4634",
+        "4656:4662",
+        "4691:4697",
+        "4715:4722",
+        "4742:4748",
+        "4768:4774",
+        "4799:4805",
+        "5378:5384",
+        "5395:5401" ;
+    data:wdtLink wdt:Q170396 ;
+    :alsoKnownAs "Prince Georgios of Greece and Denmark" ;
+    :hasChild data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Tatiana_Radziwiłł a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Tatiana Radziwiłł" ;
+    data:posIndicesFull "3656:3673" ;
+    data:posIndicesPart "4380:4389",
+        "4807:4816",
+        "4950:4959",
+        "5065:5074",
+        "5420:5429",
+        "5731:5740" ;
+    data:wdtLink wdt:Q63205821 ;
+    :alsoKnownAs "Princess Tatania Marie Radziwill" ;
+    :hasFather data:Prince_Dominik_Rainer_Radziwiłł ;
+    :hasMother data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Dominik_Rainer_Radziwiłł,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Dominik_Rainer_Radziwiłł,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Dominik_Rainer_Radziwiłł,
+        data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Princess_Eugénie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Eugénie of Greece and Denmark" ;
+    data:posIndicesFull "221:259",
+        "230:259",
+        "838:876",
+        "847:876" ;
+    data:posIndicesPart "1237:1243",
+        "1990:1998",
+        "2107:2115",
+        "2126:2132",
+        "2137:2144",
+        "2243:2251",
+        "2523:2529",
+        "2650:2656",
+        "3181:3187",
+        "3328:3336",
+        "3424:3432",
+        "3442:3448",
+        "3453:3460",
+        "3462:3470",
+        "3497:3505",
+        "3525:3533",
+        "3574:3582",
+        "3597:3604",
+        "3610:3618",
+        "3632:3639",
+        "3857:3863",
+        "3917:3923",
+        "4056:4062",
+        "4067:4075",
+        "4090:4097",
+        "4156:4162",
+        "4167:4174",
+        "4228:4236",
+        "4249:4255",
+        "4260:4267",
+        "4628:4634",
+        "4656:4662",
+        "4691:4697",
+        "4715:4722",
+        "4724:4732",
+        "4742:4748",
+        "4750:4758",
+        "4768:4774",
+        "4780:4788",
+        "4799:4805",
+        "5395:5401",
+        "551:559",
+        "570:576",
+        "581:588",
+        "637:643",
+        "648:656",
+        "671:678" ;
+    data:wdtLink wdt:Q2379307 ;
+    :alsoKnownAs "Eugénie of Greece and Denmark",
+        "Princess Eugenie of Greece and Denmark" ;
+    :hasChild data:Tatiana_Radziwiłł ;
+    :hasDaughter data:Tatiana_Radziwiłł ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isMotherOf data:Tatiana_Radziwiłł ;
+    :isParentOf data:Tatiana_Radziwiłł .
+

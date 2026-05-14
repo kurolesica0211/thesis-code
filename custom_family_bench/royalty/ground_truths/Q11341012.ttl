@@ -1,0 +1,231 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "19:30",
+        "19:39" ;
+    data:posIndicesPart "507:512" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :isAuntOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSisterOf data:Constantine_II_of_Greece .
+
+data:Marie-Chantal-_Crown_Princess_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
+    data:posIndicesFull "376:396" ;
+    data:posIndicesPart "1462:1470",
+        "1768:1776",
+        "462:467",
+        "809:814",
+        "815:822",
+        "996:1002" ;
+    data:wdtLink wdt:Q243049 ;
+    :alsoKnownAs "Mari Santal",
+        "Mari Santal Miler",
+        "Maria of Greece",
+        "Marie Chantal",
+        "Marie-Chantal Miller",
+        "Marie-Chantel Miller" ;
+    :hasChild data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Maria-Olympia_of_Greece_and_Denmark .
+
+data:Princess_Maria-Olympia_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria-Olympia of Greece and Denmark" ;
+    data:posIndicesFull "167:189",
+        "621:665",
+        "630:665",
+        "636:665",
+        "78:122",
+        "87:122",
+        "93:122" ;
+    data:posIndicesPart "1007:1014",
+        "1167:1174",
+        "1193:1200",
+        "1289:1294",
+        "1295:1302",
+        "1389:1394",
+        "1395:1402",
+        "1462:1470",
+        "1571:1576",
+        "1577:1584",
+        "1639:1646",
+        "1732:1739",
+        "1768:1776",
+        "1866:1871",
+        "1872:1879",
+        "2239:2244",
+        "2245:2252",
+        "471:478",
+        "996:1002" ;
+    data:wdtLink wdt:Q11341012 ;
+    :alsoKnownAs "Maria Olympia zu Schleswig-Holstein-Sonderburg-Glücksburg",
+        "Maria-Olympia of Greece and Denmark",
+        "María-Olympía de Grèce",
+        "Olympia of Greece and Denmark",
+        "Princess Maria Olympia of Greece and Denmark",
+        "Princess Olympia of Greece and Denmark" ;
+    :hasFather data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasMother data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :hasParent data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasSex data:female ;
+    :isChildOf data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece ;
+    :isDaughterOf data:Marie-Chantal-_Crown_Princess_of_Greece,
+        data:Pavlos-_Crown_Prince_of_Greece .
+
+data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexia of Greece and Denmark" ;
+    data:posIndicesFull "861:898",
+        "870:898" ;
+    data:posIndicesPart "1462:1470",
+        "1768:1776" ;
+    data:wdtLink wdt:Q242348 ;
+    :alsoKnownAs "Alexia de Grecia",
+        "Alexia of Greece and Denmark",
+        "Alexia zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Princess of Greece",
+        "Princess Alexia, Mrs Morales",
+        "Princess Alexia, Mrs. Morales" ;
+    :hasBrother data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:posIndicesFull "2119:2158",
+        "2128:2158" ;
+    data:wdtLink wdt:Q292274 ;
+    :alsoKnownAs "Theodora Greece",
+        "Theodora of Greece and Denmark",
+        "Theodora zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece and Denmark" ;
+    :hasBrother data:Pavlos-_Crown_Prince_of_Greece ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSisterOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "428:442",
+        "428:452" ;
+    data:posIndicesPart "1050:1061",
+        "996:1002" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasChild data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Pavlos-_Crown_Prince_of_Greece ;
+    :isBrotherOf data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Pavlos-_Crown_Prince_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Sofía_of_Spain .
+
+data:Pavlos-_Crown_Prince_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Pavlos, Crown Prince of Greece" ;
+    data:posIndicesFull "330:360",
+        "763:793" ;
+    data:posIndicesPart "1043:1049",
+        "1071:1077",
+        "1096:1102",
+        "1123:1129",
+        "1961:1967",
+        "978:984",
+        "996:1002" ;
+    data:wdtLink wdt:Q381700 ;
+    :alsoKnownAs "Paul, Crown Prince of Greece",
+        "Pavlos de Grecia",
+        "Pavlos zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Prince of Greece" ;
+    :hasChild data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Maria-Olympia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alexia_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSonOf data:Constantine_II_of_Greece .
+

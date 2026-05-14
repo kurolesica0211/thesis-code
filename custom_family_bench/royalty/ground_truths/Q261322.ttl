@@ -1,0 +1,92 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Jean_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "807:833" ;
+    data:posIndicesPart "1124:1128",
+        "835:839",
+        "855:861" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philippe, Count of Paris" ;
+    data:posIndicesFull "317:348" ;
+    data:posIndicesPart "746:751",
+        "855:861",
+        "943:951" ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans",
+        "Louis-Philippe-Albert d' Orléans" ;
+    :hasChild data:Princess_Isabelle_dOrléans ;
+    :hasDaughter data:Princess_Isabelle_dOrléans ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Isabelle_dOrléans ;
+    :isParentOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess María Isabel of Orléans" ;
+    data:posIndicesFull "361:373" ;
+    data:posIndicesPart "1167:1175",
+        "955:962",
+        "972:979" ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans",
+        "Maria Isabella",
+        "Princess Maria Isabel of Orléans, Infanta of Spain",
+        "Princess Marie Isabelle of Orleans" ;
+    :hasChild data:Princess_Isabelle_dOrléans ;
+    :hasDaughter data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Isabelle_dOrléans ;
+    :isParentOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "0:28" ;
+    data:posIndicesPart "1167:1175",
+        "1176:1184",
+        "207:215",
+        "422:430",
+        "773:781" ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans .
+

@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:James_Lascelles a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "James Lascelles" ;
+    data:posIndicesFull "0:22" ;
+    data:posIndicesPart "143:152",
+        "212:221",
+        "389:398",
+        "524:533",
+        "717:726",
+        "911:920",
+        "981:990" ;
+    data:wdtLink wdt:Q2038298 ;
+    :alsoKnownAs "Hon. James Edward Lascelles",
+        "Hon. James Lascelles",
+        "James Edward Lascelles" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

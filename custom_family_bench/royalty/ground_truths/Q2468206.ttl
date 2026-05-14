@@ -1,0 +1,285 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia" ;
+    data:posIndicesFull "2034:2067" ;
+    data:posIndicesPart "2660:2665",
+        "2782:2788",
+        "2873:2879",
+        "3030:3036",
+        "3376:3381",
+        "3382:3389",
+        "3844:3851",
+        "4117:4124",
+        "4671:4676",
+        "4677:4684",
+        "4809:4814",
+        "4932:4937",
+        "4938:4945",
+        "5016:5022",
+        "5320:5326",
+        "5361:5366",
+        "5468:5472",
+        "5511:5515",
+        "5604:5608" ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova",
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia",
+        "Kira Kirillovna, Princess of Prussia",
+        "Princess Louis Ferdinand of Prussia" ;
+    :hasSex data:female ;
+    :isAuntOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Karl_Franz_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Karl Franz of Prussia" ;
+    data:posIndicesFull "1092:1120" ;
+    data:posIndicesPart "1347:1353",
+        "1617:1623",
+        "2327:2333",
+        "2344:2351",
+        "3153:3159",
+        "3758:3764",
+        "3865:3871",
+        "3892:3898",
+        "3918:3924",
+        "4049:4055",
+        "4135:4141",
+        "4557:4564",
+        "5096:5102",
+        "5135:5141",
+        "5185:5191",
+        "5626:5632",
+        "5662:5668",
+        "5688:5694" ;
+    data:wdtLink wdt:Q635489 ;
+    :alsoKnownAs "Karl Franz Joseph",
+        "Karl Franz Joseph Prinz von Preußen",
+        "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia" ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Princess_Henriette_of_Schönaich-Carolath a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Henriette of Schönaich-Carolath" ;
+    data:posIndicesFull "1125:1165" ;
+    data:posIndicesPart "3455:3463",
+        "3955:3963",
+        "4090:4098",
+        "4187:4195",
+        "4824:4832",
+        "5376:5384",
+        "5459:5467",
+        "5502:5510",
+        "5595:5603" ;
+    data:wdtLink wdt:Q2306331 ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isMotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Princess_Leonida_Bagration_of_Mukhrani a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Leonida Bagration of Mukhrani" ;
+    data:posIndicesFull "5473:5500" ;
+    data:posIndicesPart "5502:5510",
+        "5595:5603" ;
+    data:wdtLink wdt:Q788565 ;
+    :alsoKnownAs "Leonida Georgiievna Bagration-Moukhranskya, Princess Bagration-Moukhranskya",
+        "Leonida Georgiyevna Romanova",
+        "Leonida Kirby",
+        "Leonida Romanova" ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasSex data:female ;
+    :isMotherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia" ;
+    data:posIndicesFull "45:85" ;
+    data:posIndicesPart "1055:1060",
+        "1061:1065",
+        "1168:1174",
+        "1279:1285",
+        "1286:1298",
+        "1327:1332",
+        "1333:1337",
+        "1733:1738",
+        "1739:1743",
+        "1961:1966",
+        "1967:1971",
+        "2180:2186",
+        "2334:2340",
+        "2354:2360",
+        "2451:2457",
+        "2660:2665",
+        "2666:2670",
+        "2693:2699",
+        "2782:2788",
+        "2873:2879",
+        "3030:3036",
+        "3227:3233",
+        "3376:3381",
+        "350:356",
+        "3806:3810",
+        "4063:4067",
+        "4154:4158",
+        "445:451",
+        "4650:4656",
+        "4671:4676",
+        "4809:4814",
+        "4815:4819",
+        "4932:4937",
+        "5016:5022",
+        "5320:5326",
+        "532:537",
+        "5361:5366",
+        "5367:5371",
+        "538:542",
+        "844:850",
+        "977:982",
+        "983:987",
+        "991:997" ;
+    data:wdtLink wdt:Q2468206 ;
+    :alsoKnownAs "George Mikhailovich Romanov",
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia",
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia, Prince of Prussia",
+        "The Grand Duke George Mikhailovich",
+        "The Grand Duke George Mikhailovich of Russia" ;
+    :hasFather data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isChildOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSonOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia" ;
+    data:posIndicesFull "0:42",
+        "890:932" ;
+    data:posIndicesPart "1327:1332",
+        "1733:1738",
+        "1961:1966",
+        "2660:2665",
+        "268:273",
+        "274:286",
+        "2782:2788",
+        "2873:2879",
+        "3030:3036",
+        "3376:3381",
+        "3382:3389",
+        "3390:3395",
+        "350:356",
+        "382:387",
+        "3844:3851",
+        "4117:4124",
+        "4671:4676",
+        "4677:4684",
+        "4685:4690",
+        "4809:4814",
+        "4932:4937",
+        "4938:4945",
+        "4946:4951",
+        "4952:4964",
+        "5016:5022",
+        "5320:5326",
+        "532:537",
+        "5361:5366" ;
+    data:wdtLink wdt:Q538532 ;
+    :alsoKnownAs "Crown Princess Maria Vladimirovna",
+        "Crown Princess Maria Vladimirovna of Russia",
+        "Grand Duchess Maria Vladimirovna, Grand Duchess of Russia",
+        "Maria Vladimirovna, Crown Princess of Russia",
+        "Maria Vladimirovna, Grand Duchess of Russia",
+        "Mariya Vladimirovna Romanov, Grand Duchess of Russia" ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasParent data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:female ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isChildOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isDaughterOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isMotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Franz Wilhelm of Prussia" ;
+    data:posIndicesFull "1003:1034",
+        "1880:1911",
+        "412:443" ;
+    data:posIndicesPart "1347:1353",
+        "1617:1623",
+        "2327:2333",
+        "2344:2351",
+        "3153:3159",
+        "3758:3764",
+        "3865:3871",
+        "3892:3898",
+        "3918:3924",
+        "4049:4055",
+        "4135:4141",
+        "4557:4564",
+        "5096:5102",
+        "5135:5141",
+        "5185:5191",
+        "5626:5632",
+        "5662:5668",
+        "5688:5694",
+        "739:746",
+        "779:785",
+        "789:796" ;
+    data:wdtLink wdt:Q64217 ;
+    :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan",
+        "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen" ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasMother data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isChildOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :isFatherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSonOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath .
+

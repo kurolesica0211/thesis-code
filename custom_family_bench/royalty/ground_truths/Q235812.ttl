@@ -1,0 +1,404 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1846:1857",
+        "1846:1868" ;
+    data:posIndicesPart "11937:11944",
+        "2004:2011",
+        "3623:3630" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "24:53" ;
+    data:posIndicesPart "1037:1045",
+        "12182:12193",
+        "12194:12202",
+        "1228:1236",
+        "1439:1450",
+        "1948:1956",
+        "2385:2393",
+        "2424:2431",
+        "2852:2863",
+        "2864:2872",
+        "3052:3060",
+        "463:474",
+        "9233:9240" ;
+    data:wdtLink wdt:Q231463 ;
+    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia",
+        "Maria Pavlovna of Russia",
+        "Maria Pavlovna the Elder",
+        "Marie of Mecklenburg-Schwerin" ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasSex data:female ;
+    :isAuntOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSisterOf data:Frederick_Francis_III .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:posIndicesFull "1146:1191",
+        "1160:1191",
+        "324:369",
+        "338:369" ;
+    data:posIndicesPart "2116:2122",
+        "2225:2230",
+        "2259:2265",
+        "2424:2431",
+        "3521:3526",
+        "3557:3563",
+        "622:628",
+        "9227:9232",
+        "9233:9240",
+        "9260:9266",
+        "9317:9322" ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia",
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
+    :hasChild data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :hasDaughter data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSex data:female ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isMotherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isParentOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "12091:12111",
+        "167:195",
+        "2472:2500",
+        "2980:3000",
+        "665:685" ;
+    data:posIndicesPart "10074:10081",
+        "10331:10337",
+        "10837:10844",
+        "10889:10896",
+        "11075:11080",
+        "11081:11087",
+        "11465:11470",
+        "11976:11981",
+        "12204:12210",
+        "12211:12216",
+        "1816:1821",
+        "1822:1828",
+        "2509:2516",
+        "2690:2696",
+        "2697:2702",
+        "2703:2709",
+        "2711:2718",
+        "3101:3106",
+        "3224:3230",
+        "3350:3357",
+        "3705:3712",
+        "3875:3881",
+        "3882:3887",
+        "3901:3906",
+        "3963:3969",
+        "4000:4006",
+        "4007:4012",
+        "4026:4032",
+        "4033:4038",
+        "4111:4117",
+        "4215:4221",
+        "4276:4281",
+        "4450:4455",
+        "4456:4462",
+        "4594:4601",
+        "4620:4626",
+        "4703:4708",
+        "4709:4715",
+        "4788:4793",
+        "4794:4800",
+        "4958:4964",
+        "4965:4970",
+        "5498:5503",
+        "5504:5510",
+        "5753:5759",
+        "5804:5810",
+        "5945:5951",
+        "5973:5979",
+        "6019:6026",
+        "6061:6067",
+        "6190:6195",
+        "6196:6202",
+        "6278:6283",
+        "6326:6331",
+        "6332:6338",
+        "6527:6532",
+        "6642:6647",
+        "6934:6941",
+        "7083:7089",
+        "7130:7136",
+        "7173:7178",
+        "7268:7274",
+        "7319:7325",
+        "7340:7347",
+        "7685:7690",
+        "789:795",
+        "7939:7944",
+        "7945:7951",
+        "8083:8090",
+        "8445:8451",
+        "8546:8553",
+        "8659:8664",
+        "8665:8671",
+        "9540:9546",
+        "9662:9669",
+        "9777:9783",
+        "9899:9905",
+        "9920:9926" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasChild data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isFatherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis III" ;
+    data:posIndicesFull "1084:1105",
+        "1084:1141",
+        "262:283",
+        "262:319" ;
+    data:posIndicesPart "11722:11731" ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz III",
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasChild data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :hasDaughter data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isBrotherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isParentOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "2325:2345",
+        "2325:2381" ;
+    data:posIndicesPart "11722:11731" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isUncleOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
+    data:posIndicesFull "9196:9218" ;
+    data:posIndicesPart "11081:11087",
+        "11295:11300",
+        "11301:11310",
+        "11689:11696",
+        "9540:9546",
+        "9777:9783",
+        "9899:9905" ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen",
+        "Prince Louis Ferdinand",
+        "Prince Louis Ferdinand of Prussia" ;
+    :hasBrother data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Hubertus of Prussia" ;
+    data:posIndicesFull "10985:10993",
+        "11262:11270",
+        "9071:9079" ;
+    data:posIndicesPart "11081:11087",
+        "11689:11696",
+        "9540:9546",
+        "9777:9783",
+        "9899:9905" ;
+    data:wdtLink wdt:Q70760 ;
+    :alsoKnownAs "Hubertus",
+        "Prince Hubertus Karl Wilhelm of Prussia" ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "0:53",
+        "2925:2964",
+        "3792:3831" ;
+    data:posIndicesPart "10109:10116",
+        "10235:10242",
+        "10363:10370",
+        "1037:1045",
+        "1047:1054",
+        "10510:10517",
+        "10667:10674",
+        "10724:10731",
+        "11312:11319",
+        "11367:11374",
+        "11480:11487",
+        "11578:11585",
+        "11764:11771",
+        "11883:11890",
+        "12171:12178",
+        "12182:12193",
+        "12194:12202",
+        "1228:1236",
+        "1439:1450",
+        "1493:1500",
+        "1642:1649",
+        "1761:1768",
+        "1948:1956",
+        "1958:1965",
+        "2124:2131",
+        "236:243",
+        "2385:2393",
+        "2424:2431",
+        "2432:2439",
+        "2663:2670",
+        "2852:2863",
+        "2864:2872",
+        "3052:3060",
+        "4049:4056",
+        "4501:4508",
+        "463:474",
+        "4895:4902",
+        "4981:4988",
+        "5185:5192",
+        "5198:5205",
+        "5306:5313",
+        "5482:5489",
+        "5651:5658",
+        "5713:5720",
+        "6293:6300",
+        "6400:6407",
+        "6802:6809",
+        "687:694",
+        "7027:7034",
+        "7549:7556",
+        "7598:7605",
+        "7999:8006",
+        "8146:8153",
+        "8213:8220",
+        "833:840",
+        "8486:8493",
+        "8746:8753",
+        "8899:8906",
+        "9233:9240",
+        "925:932",
+        "9409:9416",
+        "9510:9517" ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany",
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin" ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasChild data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSon data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isDaughterOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isSisterOf data:Frederick_Francis_IV .
+

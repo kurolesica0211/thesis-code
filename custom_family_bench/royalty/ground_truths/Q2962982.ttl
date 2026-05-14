@@ -1,0 +1,182 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "244:262",
+        "250:262" ;
+    data:posIndicesPart "533:542",
+        "882:891",
+        "904:913" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasSex data:female .
+
+data:Henry_Lascelles-_6th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henry Lascelles, 6th Earl of Harewood" ;
+    data:posIndicesFull "103:118",
+        "103:140" ;
+    data:posIndicesPart "1032:1041",
+        "1129:1133",
+        "1165:1174",
+        "1260:1269",
+        "1420:1429",
+        "839:848" ;
+    data:wdtLink wdt:Q2653986 ;
+    :alsoKnownAs "Henry George Charles Lascelles",
+        "Henry George Charles Lascelles, 6th Earl of Harewood",
+        "Henry George Charles Lascelles, Viscount Lascelles",
+        "Henry Harewood",
+        "Henry Lascelles",
+        "Henry Lascelles, Viscount Lascelles",
+        "Lord Harewood" ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasSex data:male ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isFatherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles .
+
+data:Edward_VIII a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward VIII" ;
+    data:posIndicesFull "506:522",
+        "511:522",
+        "783:794",
+        "800:815" ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor",
+        "Duke of Windsor",
+        "Edward Albert Christian George Andrew Patrick David",
+        "Edward Albert Christian George Andrew Patrick David Windsor",
+        "Edward VIII Edward VIII of the United Kingdom",
+        "Edward VIII Edward VIII, King of the United Kingdom",
+        "Edward VIII of the United Kingdom",
+        "Edward Windsor",
+        "Edward, Duke of Windsor",
+        "Edward, Prince of Wales",
+        "King Edward VIII",
+        "Prince Edward",
+        "Prince Edward, Duke of Windsor" ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Elizabeth_II,
+        data:Gerald_David_Lascelles .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "189:202",
+        "194:202" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasChild data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII ;
+    :isFatherOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isParentOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Gerald David Lascelles" ;
+    data:posIndicesFull "0:22",
+        "293:309",
+        "317:339",
+        "757:773" ;
+    data:posIndicesPart "1032:1041",
+        "1165:1174",
+        "1260:1269",
+        "1420:1429",
+        "839:848" ;
+    data:wdtLink wdt:Q2962982 ;
+    :alsoKnownAs "Gerald Lascelles",
+        "Hon. Gerald David Lascelles",
+        "Hon. Gerald Lascelles" ;
+    :hasFather data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :hasMother data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :isChildOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSonOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
+    data:posIndicesFull "146:166" ;
+    data:posIndicesPart "631:635" ;
+    data:wdtLink wdt:Q233913 ;
+    :alsoKnownAs "Mary Harewood",
+        "Mary, Princess Royal",
+        "Princess Mary",
+        "Princess Mary of Wales",
+        "Princess Mary of York",
+        "Princess Mary of the United Kingdom",
+        "Princess Mary, Countess of Harewood",
+        "Princess Mary, Princess Royal of the United Kingdom",
+        "Princess Mary, Viscountess Lascelles",
+        "Princess Victoria Alexandra Alice Mary of Wales",
+        "Princess Victoria Alexandra Alice Mary of York",
+        "Princess Victoria Alexandra Alice Mary of the United Kingdom",
+        "Princess Victoria Alexandra Alice Mary, Countess of Harewood",
+        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
+        "Victoria Alexandra Alice Mary Windsor",
+        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
+    :hasBrother data:Edward_VIII ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:female ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isAuntOf data:Elizabeth_II ;
+    :isChildOf data:George_V ;
+    :isDaughterOf data:George_V ;
+    :isMotherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Edward_VIII ;
+    :isSisterOf data:Edward_VIII .
+

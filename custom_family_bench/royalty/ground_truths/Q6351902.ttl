@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Bernhard of Lippe" ;
+    data:posIndicesFull "947:971",
+        "954:983" ;
+    data:posIndicesPart "1088:1096",
+        "1304:1312",
+        "1352:1357",
+        "1384:1389",
+        "1753:1758",
+        "1912:1918",
+        "1919:1927",
+        "2217:2225",
+        "2375:2383",
+        "2491:2497",
+        "2498:2506",
+        "2922:2928",
+        "3005:3011" ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe",
+        "Prince Bernhard of Lippe (1872–1934)",
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
+    :hasSex data:male ;
+    :isUncleOf data:Princess_Feodora_of_Saxe-Meiningen .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Sophie_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Sophie of Saxe-Weimar-Eisenach" ;
+    data:posIndicesFull "0:46" ;
+    data:posIndicesPart "1064:1070",
+        "1330:1338",
+        "1362:1370",
+        "1411:1417",
+        "151:157",
+        "1668:1674",
+        "227:231",
+        "232:238",
+        "239:247",
+        "2601:2607",
+        "2721:2729",
+        "2730:2736",
+        "2888:2894",
+        "3120:3128",
+        "3145:3151",
+        "353:359",
+        "409:417",
+        "520:526",
+        "630:636",
+        "688:694",
+        "916:924" ;
+    data:wdtLink wdt:Q6351902 ;
+    :alsoKnownAs "Princess Sophie Louise of Saxe-Weimar-Eisenach",
+        "Sophie Luise Prinzessin von Sachsen-Weimar-Eisenach" ;
+    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasParent data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :isChildOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isDaughterOf data:Princess_Feodora_of_Saxe-Meiningen .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen" ;
+    data:posIndicesFull "269:285",
+        "269:303" ;
+    data:posIndicesPart "1330:1338",
+        "1362:1370",
+        "2721:2729",
+        "3120:3128",
+        "409:417",
+        "916:924" ;
+    data:wdtLink wdt:Q66639 ;
+    :alsoKnownAs "Princess Feodora" ;
+    :hasChild data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasDaughter data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isParentOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach .
+

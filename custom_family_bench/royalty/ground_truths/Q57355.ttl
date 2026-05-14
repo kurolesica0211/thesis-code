@@ -1,0 +1,106 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Georg_Friedrich-_Prince_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Georg Friedrich, Prince of Prussia" ;
+    data:posIndicesFull "58:101" ;
+    data:posIndicesPart "1006:1011",
+        "1012:1021",
+        "1159:1166",
+        "1298:1303",
+        "1304:1313",
+        "1433:1442",
+        "1444:1450",
+        "1552:1561",
+        "1587:1592",
+        "1593:1602",
+        "1713:1718",
+        "1719:1728",
+        "1961:1966",
+        "1967:1976",
+        "2051:2058",
+        "2210:2219",
+        "2554:2559",
+        "2560:2569",
+        "2687:2692",
+        "2693:2702",
+        "2829:2834",
+        "2835:2844",
+        "2928:2933",
+        "2934:2943",
+        "3230:3235",
+        "3236:3245",
+        "3303:3308",
+        "3309:3318",
+        "3375:3384",
+        "3446:3455",
+        "3575:3580",
+        "3628:3633",
+        "3634:3643",
+        "3886:3891",
+        "3892:3901",
+        "390:397",
+        "4339:4345",
+        "4386:4391",
+        "4392:4401",
+        "4613:4618",
+        "4619:4628",
+        "4736:4741",
+        "4742:4751",
+        "4753:4759",
+        "4763:4770",
+        "501:506",
+        "507:516",
+        "779:788",
+        "888:895",
+        "897:902",
+        "903:912" ;
+    data:wdtLink wdt:Q57355 ;
+    :alsoKnownAs "Georg Friedrich Ferdinand Prinz von Preußen" ;
+    :hasFather data:Prince_Louis_Ferdinand_of_Prussia ;
+    :hasParent data:Prince_Louis_Ferdinand_of_Prussia ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Louis_Ferdinand_of_Prussia ;
+    :isSonOf data:Prince_Louis_Ferdinand_of_Prussia .
+
+data:Prince_Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Louis Ferdinand of Prussia" ;
+    data:posIndicesFull "1869:1902" ;
+    data:posIndicesPart "2004:2009",
+        "2010:2019",
+        "2051:2058",
+        "2994:2999",
+        "3000:3009",
+        "3142:3147",
+        "3148:3157",
+        "3405:3410",
+        "3411:3420",
+        "4339:4345",
+        "4753:4759",
+        "4763:4770" ;
+    data:wdtLink wdt:Q63575 ;
+    :alsoKnownAs "Ludwig Ferdinand Oskar Christian Prinz von Preußen",
+        "Prince Ludwig Ferdinand Oskar Christian of Prussia" ;
+    :hasChild data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
+    :isFatherOf data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
+    :isParentOf data:Prince_Georg_Friedrich-_Prince_of_Prussia .
+

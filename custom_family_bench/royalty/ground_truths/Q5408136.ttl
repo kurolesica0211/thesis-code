@@ -1,0 +1,68 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "644:656",
+        "644:665",
+        "707:718" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Bagrat de Bagration y de Baviera" ;
+    data:posIndicesFull "86:118" ;
+    data:posIndicesPart "1154:1160",
+        "1316:1322",
+        "428:434",
+        "598:605",
+        "736:745",
+        "961:967" ;
+    data:wdtLink wdt:Q5408136 ;
+    :alsoKnownAs "Principe Bagrat de Bagration y de Baviera y Borbon" ;
+    :hasFather data:Irakli_Bagration_of_Mukhrani ;
+    :hasParent data:Irakli_Bagration_of_Mukhrani ;
+    :hasSex data:male ;
+    :isChildOf data:Irakli_Bagration_of_Mukhrani ;
+    :isSonOf data:Irakli_Bagration_of_Mukhrani .
+
+data:Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Irakli Bagration of Mukhrani" ;
+    data:posIndicesFull "503:528" ;
+    data:posIndicesPart "736:745" ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli",
+        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
+    :hasChild data:Bagrat_de_Bagration_y_de_Baviera ;
+    :hasSex data:male ;
+    :hasSon data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isFatherOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Bagrat_de_Bagration_y_de_Baviera .
+

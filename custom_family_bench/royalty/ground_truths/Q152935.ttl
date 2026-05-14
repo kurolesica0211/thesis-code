@@ -1,0 +1,987 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Aspasia Manos" ;
+    data:posIndicesFull "9444:9457" ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou",
+        "Princess Aspasia of Greece and Denmark" ;
+    :hasSex data:female .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Aimone, 4th Duke of Aosta" ;
+    data:posIndicesFull "25225:25253" ;
+    data:posIndicesPart "36036:36042" ;
+    data:wdtLink wdt:Q169902 ;
+    :alsoKnownAs "Aimoe di Savoia-Aoste, Principe di Savoia",
+        "Prince Aimone, Duke of Aosta" ;
+    :hasSex data:male .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
+    data:posIndicesFull "25225:25253" ;
+    data:posIndicesPart "36036:36042" ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste",
+        "Prince Aimone of Savoy-Aosta",
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta",
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta",
+        "Prince Aimone, Duke of Aosta",
+        "Prince Aimone, The 6th Duke of Aosta",
+        "Prince Aimone, The Duke of Aosta" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "12456:12469",
+        "12456:12488",
+        "14893:14906" ;
+    data:posIndicesPart "14524:14530",
+        "18588:18592",
+        "19861:19865",
+        "20582:20588",
+        "24882:24886",
+        "36036:36042" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "231:247",
+        "25544:25558",
+        "5244:5260" ;
+    data:posIndicesPart "1004:1010",
+        "10494:10505",
+        "10528:10539",
+        "10615:10621",
+        "10849:10860",
+        "11078:11089",
+        "11102:11108",
+        "11145:11151",
+        "11405:11416",
+        "11509:11515",
+        "11707:11718",
+        "11843:11854",
+        "1185:1196",
+        "11899:11910",
+        "1200:1206",
+        "12090:12096",
+        "12518:12524",
+        "13134:13140",
+        "13228:13234",
+        "13375:13386",
+        "13448:13459",
+        "13663:13669",
+        "13808:13814",
+        "13912:13923",
+        "14152:14158",
+        "14237:14248",
+        "14915:14921",
+        "14963:14974",
+        "16237:16243",
+        "18835:18841",
+        "19504:19510",
+        "19661:19667",
+        "20511:20517",
+        "20934:20940",
+        "21351:21357",
+        "22557:22563",
+        "23867:23873",
+        "23936:23942",
+        "24171:24182",
+        "24252:24258",
+        "25618:25624",
+        "25662:25668",
+        "25895:25901",
+        "26038:26044",
+        "26055:26061",
+        "26586:26592",
+        "2760:2766",
+        "27811:27817",
+        "27941:27947",
+        "28484:28490",
+        "30872:30878",
+        "3131:3137",
+        "31357:31363",
+        "31707:31713",
+        "31851:31857",
+        "32190:32196",
+        "3233:3244",
+        "32373:32379",
+        "32450:32456",
+        "32742:32748",
+        "33324:33330",
+        "33514:33520",
+        "33982:33988",
+        "34045:34051",
+        "34253:34259",
+        "34307:34313",
+        "35007:35013",
+        "36001:36012",
+        "36307:36313",
+        "37178:37184",
+        "3741:3747",
+        "4044:4050",
+        "4125:4131",
+        "4242:4248",
+        "428:439",
+        "4552:4558",
+        "4935:4941",
+        "5637:5643",
+        "5663:5669",
+        "586:592",
+        "5880:5886",
+        "6377:6388",
+        "6408:6414",
+        "6429:6440",
+        "6455:6461",
+        "6608:6619",
+        "6761:6767",
+        "6880:6886",
+        "7003:7014",
+        "7054:7065",
+        "7415:7426",
+        "7499:7510",
+        "7619:7625",
+        "7913:7924",
+        "8026:8037",
+        "8260:8266",
+        "8292:8303",
+        "8361:8372",
+        "863:869",
+        "8966:8972",
+        "9040:9051",
+        "9158:9164",
+        "9261:9267" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasSex data:male ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isSonOf data:Frederica_of_Hanover .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:posIndicesFull "20832:20838" ;
+    data:posIndicesPart "20934:20940",
+        "21351:21357",
+        "22557:22563",
+        "23867:23873",
+        "23936:23942",
+        "24252:24258",
+        "25618:25624",
+        "25662:25668",
+        "25895:25901",
+        "26038:26044",
+        "26055:26061",
+        "26586:26592",
+        "27811:27817",
+        "27941:27947",
+        "28484:28490",
+        "30872:30878",
+        "31357:31363",
+        "31707:31713",
+        "31851:31857",
+        "32190:32196",
+        "32373:32379",
+        "32450:32456",
+        "32742:32748",
+        "33324:33330",
+        "33514:33520",
+        "33982:33988",
+        "34045:34051",
+        "34253:34259",
+        "34307:34313",
+        "35007:35013",
+        "36036:36042",
+        "36307:36313",
+        "37178:37184" ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo",
+        "Prince Christophoros of Greece and Denmark" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:George_II_of_Greece,
+        data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1299:1322",
+        "1304:1312",
+        "1304:1322",
+        "17994:18001",
+        "25081:25088",
+        "2938:2946",
+        "3419:3427",
+        "5043:5051",
+        "6095:6102",
+        "6572:6579" ;
+    data:posIndicesPart "10071:10077",
+        "10136:10142",
+        "10234:10240",
+        "10340:10346",
+        "10484:10490",
+        "10615:10621",
+        "11012:11018",
+        "11102:11108",
+        "11126:11132",
+        "11145:11151",
+        "11246:11252",
+        "11302:11308",
+        "11509:11515",
+        "12024:12030",
+        "12090:12096",
+        "12341:12347",
+        "12518:12524",
+        "12687:12693",
+        "12867:12873",
+        "12978:12984",
+        "13059:13065",
+        "13134:13140",
+        "13228:13234",
+        "13568:13574",
+        "13591:13597",
+        "13663:13669",
+        "13685:13691",
+        "13729:13735",
+        "13808:13814",
+        "14009:14015",
+        "14104:14110",
+        "14152:14158",
+        "14367:14373",
+        "1446:1452",
+        "14637:14643",
+        "14915:14921",
+        "14955:14961",
+        "15061:15067",
+        "15165:15171",
+        "15382:15388",
+        "15527:15533",
+        "15838:15844",
+        "15864:15870",
+        "15917:15923",
+        "1598:1604",
+        "16017:16023",
+        "16237:16243",
+        "16258:16264",
+        "16364:16370",
+        "16551:16557",
+        "16766:16772",
+        "16944:16950",
+        "17125:17131",
+        "1715:1721",
+        "17181:17187",
+        "17341:17347",
+        "17469:17475",
+        "17611:17617",
+        "17800:17806",
+        "18017:18023",
+        "18071:18077",
+        "18246:18252",
+        "18321:18327",
+        "18525:18531",
+        "18580:18586",
+        "18671:18677",
+        "18796:18802",
+        "18835:18841",
+        "18966:18972",
+        "19164:19170",
+        "19229:19235",
+        "19269:19275",
+        "19462:19468",
+        "19504:19510",
+        "1951:1957",
+        "19661:19667",
+        "19753:19759",
+        "19853:19859",
+        "19934:19940",
+        "20162:20168",
+        "20191:20197",
+        "20392:20398",
+        "20511:20517",
+        "20571:20577",
+        "20676:20682",
+        "20934:20940",
+        "20959:20965",
+        "21051:21057",
+        "21102:21108",
+        "21173:21179",
+        "21244:21250",
+        "21351:21357",
+        "21456:21462",
+        "21535:21541",
+        "21683:21689",
+        "2178:2184",
+        "21917:21923",
+        "22060:22066",
+        "22199:22205",
+        "22363:22369",
+        "22437:22443",
+        "22557:22563",
+        "22607:22613",
+        "22858:22864",
+        "23047:23053",
+        "23153:23159",
+        "23299:23305",
+        "23538:23544",
+        "23632:23638",
+        "23867:23873",
+        "23936:23942",
+        "24004:24010",
+        "24252:24258",
+        "24448:24454",
+        "2447:2453",
+        "24585:24591",
+        "25093:25099",
+        "25193:25199",
+        "25332:25338",
+        "25618:25624",
+        "25637:25643",
+        "25662:25668",
+        "25895:25901",
+        "25927:25933",
+        "26038:26044",
+        "26055:26061",
+        "2606:2612",
+        "26104:26110",
+        "26339:26345",
+        "26359:26365",
+        "26531:26537",
+        "26586:26592",
+        "26773:26779",
+        "26882:26888",
+        "27013:27019",
+        "27048:27054",
+        "27215:27221",
+        "27345:27351",
+        "27600:27606",
+        "2760:2766",
+        "27616:27622",
+        "27811:27817",
+        "27941:27947",
+        "28240:28246",
+        "28334:28340",
+        "28439:28445",
+        "28484:28490",
+        "28496:28502",
+        "28638:28644",
+        "28811:28817",
+        "28982:28988",
+        "29235:29241",
+        "29414:29420",
+        "29467:29473",
+        "29645:29651",
+        "29778:29784",
+        "29859:29865",
+        "30093:30099",
+        "30535:30541",
+        "30628:30634",
+        "30790:30796",
+        "30872:30878",
+        "31126:31132",
+        "31204:31210",
+        "3131:3137",
+        "31357:31363",
+        "31660:31666",
+        "31707:31713",
+        "31761:31767",
+        "31851:31857",
+        "32029:32035",
+        "3203:3209",
+        "32190:32196",
+        "32302:32308",
+        "32373:32379",
+        "32450:32456",
+        "32535:32541",
+        "32742:32748",
+        "32891:32897",
+        "33016:33022",
+        "33145:33151",
+        "33324:33330",
+        "33428:33434",
+        "33514:33520",
+        "33552:33558",
+        "33728:33734",
+        "33849:33855",
+        "33982:33988",
+        "34045:34051",
+        "34121:34127",
+        "34235:34241",
+        "34253:34259",
+        "34278:34284",
+        "34307:34313",
+        "34498:34504",
+        "34681:34687",
+        "34731:34737",
+        "35007:35013",
+        "35133:35139",
+        "35259:35265",
+        "3525:3531",
+        "35499:35505",
+        "35586:35592",
+        "35734:35740",
+        "35888:35894",
+        "35984:35990",
+        "36131:36137",
+        "36307:36313",
+        "36376:36382",
+        "36650:36656",
+        "36791:36797",
+        "3694:3700",
+        "37021:37027",
+        "37136:37142",
+        "37178:37184",
+        "3741:3747",
+        "3902:3908",
+        "4044:4050",
+        "4125:4131",
+        "4193:4199",
+        "4242:4248",
+        "4408:4414",
+        "4533:4539",
+        "4552:4558",
+        "4596:4602",
+        "4673:4679",
+        "4827:4833",
+        "4935:4941",
+        "5175:5181",
+        "5264:5270",
+        "5303:5309",
+        "5363:5369",
+        "5421:5427",
+        "5637:5643",
+        "5663:5669",
+        "5792:5798",
+        "5880:5886",
+        "5930:5936",
+        "6148:6154",
+        "6408:6414",
+        "6761:6767",
+        "6880:6886",
+        "7140:7146",
+        "7398:7404",
+        "7619:7625",
+        "7661:7667",
+        "7823:7829",
+        "7846:7852",
+        "7938:7944",
+        "8147:8153",
+        "8260:8266",
+        "8308:8314",
+        "8445:8451",
+        "8691:8697",
+        "8752:8758",
+        "8966:8972",
+        "9158:9164",
+        "9261:9267",
+        "9560:9566",
+        "9657:9663",
+        "9736:9742",
+        "9832:9838",
+        "9851:9857",
+        "9992:9998" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "24794:24803",
+        "24794:24814",
+        "25509:25518",
+        "29514:29523",
+        "34337:34346" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasParent data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isChildOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isDaughterOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece .
+
+data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:posIndicesFull "24508:24512",
+        "28069:28073",
+        "31110:31114",
+        "35205:35209",
+        "804:808",
+        "9952:9956" ;
+    data:posIndicesPart "10084:10090",
+        "11165:11171",
+        "11369:11375",
+        "11776:11782",
+        "1178:1184",
+        "12243:12249",
+        "12416:12422",
+        "1392:1398",
+        "14524:14530",
+        "20582:20588",
+        "21670:21676",
+        "21744:21750",
+        "25734:25740",
+        "2863:2869",
+        "29203:29209",
+        "30499:30505",
+        "3226:3232",
+        "36036:36042",
+        "4960:4966",
+        "5121:5127",
+        "5293:5299",
+        "5355:5361",
+        "5473:5479",
+        "5917:5923",
+        "7839:7845" ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi" ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :isBrotherOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Frederica_of_Hanover .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "10161:10165",
+        "10923:10927",
+        "1523:1527",
+        "15503:15507",
+        "16144:16149",
+        "19722:19726",
+        "2053:2057",
+        "22321:22327",
+        "22755:22759",
+        "22915:22919",
+        "28009:28013",
+        "28154:28158",
+        "29293:29297",
+        "34825:34829",
+        "3540:3544" ;
+    data:posIndicesPart "11751:11759",
+        "35432:35440",
+        "7196:7204" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isAuntOf data:George_II_of_Greece,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "231:249",
+        "231:259",
+        "236:249",
+        "236:259" ;
+    data:posIndicesPart "1004:1010",
+        "10494:10505",
+        "10528:10539",
+        "10615:10621",
+        "10849:10860",
+        "11078:11089",
+        "11102:11108",
+        "11145:11151",
+        "11405:11416",
+        "11509:11515",
+        "11707:11718",
+        "11843:11854",
+        "1185:1196",
+        "11899:11910",
+        "1200:1206",
+        "12090:12096",
+        "12518:12524",
+        "13134:13140",
+        "13228:13234",
+        "13375:13386",
+        "13448:13459",
+        "13663:13669",
+        "13808:13814",
+        "13912:13923",
+        "14152:14158",
+        "14237:14248",
+        "14915:14921",
+        "14963:14974",
+        "16237:16243",
+        "18835:18841",
+        "19504:19510",
+        "19661:19667",
+        "20511:20517",
+        "20934:20940",
+        "21351:21357",
+        "22557:22563",
+        "23867:23873",
+        "23936:23942",
+        "24171:24182",
+        "24252:24258",
+        "25618:25624",
+        "25662:25668",
+        "25895:25901",
+        "26038:26044",
+        "26055:26061",
+        "26586:26592",
+        "2760:2766",
+        "27811:27817",
+        "27941:27947",
+        "28484:28490",
+        "30872:30878",
+        "3131:3137",
+        "31357:31363",
+        "31707:31713",
+        "31851:31857",
+        "32190:32196",
+        "3233:3244",
+        "32373:32379",
+        "32450:32456",
+        "32742:32748",
+        "33324:33330",
+        "33514:33520",
+        "33982:33988",
+        "34045:34051",
+        "34253:34259",
+        "34307:34313",
+        "35007:35013",
+        "36001:36012",
+        "36307:36313",
+        "37178:37184",
+        "3741:3747",
+        "4044:4050",
+        "4125:4131",
+        "4242:4248",
+        "428:439",
+        "4552:4558",
+        "4935:4941",
+        "5128:5139",
+        "5175:5181",
+        "5303:5309",
+        "5637:5643",
+        "5663:5669",
+        "586:592",
+        "5880:5886",
+        "6377:6388",
+        "6408:6414",
+        "6429:6440",
+        "6455:6461",
+        "6608:6619",
+        "6761:6767",
+        "6880:6886",
+        "7003:7014",
+        "7054:7065",
+        "7415:7426",
+        "7499:7510",
+        "7619:7625",
+        "7913:7924",
+        "8026:8037",
+        "8260:8266",
+        "8292:8303",
+        "8361:8372",
+        "863:869",
+        "8966:8972",
+        "9040:9051",
+        "9158:9164",
+        "9261:9267" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasChild data:George_II_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:George_II_of_Greece ;
+    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:George_II_of_Greece a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George II of Greece" ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece" ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:male ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSonOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "22461:22478" ;
+    data:posIndicesPart "22927:22932",
+        "23076:23081",
+        "24395:24400",
+        "24844:24852",
+        "28174:28179",
+        "29089:29094",
+        "29594:29599",
+        "34390:34395",
+        "35432:35440",
+        "35836:35841",
+        "36703:36708" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Wilhelm_II ;
+    :isMotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Viktoria Luise of Prussia" ;
+    data:posIndicesFull "22461:22496",
+        "22470:22496" ;
+    data:posIndicesPart "35432:35440" ;
+    data:wdtLink wdt:Q57529 ;
+    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
+        "Princess Victoria Louise of Prussia",
+        "Victoria Louise Adelaide Matilda",
+        "Viktoria Luise of Prussia",
+        "Viktoria Luise, Duchess Consort of Brunswick" ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasChild data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:female ;
+    :isChildOf data:Wilhelm_II ;
+    :isDaughterOf data:Wilhelm_II ;
+    :isMotherOf data:Frederica_of_Hanover ;
+    :isParentOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSisterOf data:Prince_August_Wilhelm_of_Prussia .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sophia of Prussia" ;
+    data:posIndicesFull "1231:1248",
+        "273:290" ;
+    data:posIndicesPart "11859:11865",
+        "13527:13533",
+        "17595:17601",
+        "9674:9680" ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece",
+        "Queen Sophia, Queen Consort of Greece" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:George_II_of_Greece ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:George_II_of_Greece ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "17994:18004",
+        "17994:18005",
+        "25081:25091",
+        "25081:25092",
+        "6095:6105",
+        "6572:6582",
+        "6572:6583" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasDaughter data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:George_II_of_Greece .
+

@@ -1,0 +1,345 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Howard Oxenberg" ;
+    data:posIndicesFull "2193:2208" ;
+    data:wdtLink wdt:Q75393300 ;
+    :hasSex data:male .
+
+data:Princess_Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Pia of Savoy" ;
+    data:posIndicesFull "650:677" ;
+    data:posIndicesPart "1674:1679",
+        "1680:1683",
+        "1687:1692",
+        "1971:1979",
+        "2158:2166",
+        "2354:2362",
+        "2667:2675",
+        "2838:2846",
+        "3416:3424",
+        "3847:3855",
+        "5397:5405",
+        "5465:5473",
+        "5623:5631" ;
+    data:wdtLink wdt:Q922418 ;
+    :alsoKnownAs "Maria Pia di Savoia",
+        "Maria Pia di Savoia-Carignano, Principessa d'Italia" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elizabeth of Greece and Denmark" ;
+    data:posIndicesFull "1210:1250",
+        "1219:1250" ;
+    data:posIndicesPart "1252:1261",
+        "1508:1514",
+        "1761:1770",
+        "1971:1979",
+        "2158:2166",
+        "2167:2176",
+        "2354:2362",
+        "2363:2372",
+        "2649:2658",
+        "2667:2675",
+        "2676:2685",
+        "2838:2846",
+        "2903:2912",
+        "3011:3020",
+        "3416:3424",
+        "3425:3434",
+        "3847:3855",
+        "3856:3865",
+        "5397:5405",
+        "5406:5415",
+        "5465:5473",
+        "5511:5520",
+        "5623:5631",
+        "5632:5641" ;
+    data:wdtLink wdt:Q19006 ;
+    :alsoKnownAs "Elizabeth Oldenburg",
+        "Elizabeth of Greece and Denmark",
+        "Princess Elizabeth, Countess of Toerring-Jettenbach" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Alexander_of_Serbia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "837:850",
+        "837:864",
+        "852:864" ;
+    data:posIndicesPart "1820:1826",
+        "1897:1903",
+        "4427:4433",
+        "4678:4684",
+        "4692:4698",
+        "4713:4719" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBrotherOf data:Prince_Michael_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSiblingOf data:Prince_Michael_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michael of Kent" ;
+    data:posIndicesFull "883:905" ;
+    data:posIndicesPart "1820:1826",
+        "1897:1903",
+        "4427:4433",
+        "4678:4684",
+        "4692:4698",
+        "4713:4719" ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin",
+        "Prince Michael George Charles Franklin of Kent" ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:posIndicesFull "445:470",
+        "452:470" ;
+    data:posIndicesPart "1500:1504",
+        "1820:1826",
+        "1897:1903",
+        "3110:3120",
+        "3370:3380",
+        "3622:3632",
+        "4427:4433",
+        "4434:4438",
+        "4678:4684",
+        "4692:4698",
+        "4713:4719",
+        "4863:4873",
+        "5051:5061",
+        "5149:5159",
+        "576:582" ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich",
+        "Paul Karageorgevich",
+        "Paul of Yugoslavia",
+        "Pavle Karađorđević",
+        "Prince of Yugoslavia Paul",
+        "Prince of Yugoslavia Pavle",
+        "Prince of Yugoslavia Pavle Karađorđević" ;
+    :hasChild data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isFatherOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia .
+
+data:Princess_Alexandra-_Lady_Ogilvy a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexandra, Lady Ogilvy" ;
+    data:posIndicesFull "1644:1657",
+        "910:956" ;
+    data:posIndicesPart "1971:1979",
+        "2158:2166",
+        "2354:2362",
+        "2667:2675",
+        "2838:2846",
+        "3416:3424",
+        "3847:3855",
+        "5397:5405",
+        "5465:5473",
+        "5623:5631" ;
+    data:wdtLink wdt:Q170191 ;
+    :alsoKnownAs "Alexandra Helen Elizabeth Olga Christabel",
+        "Alexandra Helen Elizabeth Olga Christabel Windsor",
+        "Alexandra Kent",
+        "Alexandra Windsor",
+        "HRH Princess Alexandra of Kent",
+        "Princess Alexandra Helen Elizabeth Olga Christabel of Kent",
+        "Princess Alexandra, The Hon. Lady Ogilvy",
+        "Princess Alexandra, The Honourable Lady Ogilvy" ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:female ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSisterOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Olga of Greece and Denmark" ;
+    data:posIndicesFull "445:470",
+        "515:550",
+        "524:550" ;
+    data:posIndicesPart "1508:1514",
+        "1971:1979",
+        "2158:2166",
+        "2354:2362",
+        "2667:2675",
+        "2838:2846",
+        "3416:3424",
+        "3847:3855",
+        "5397:5405",
+        "5465:5473",
+        "5474:5478",
+        "5623:5631",
+        "693:701" ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark",
+        "Princess Paul of Yugoslavia" ;
+    :hasChild data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isMotherOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Serbia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:posIndicesFull "596:626" ;
+    data:posIndicesPart "1004:1013",
+        "1408:1417",
+        "1820:1826",
+        "1897:1903",
+        "2478:2487",
+        "4177:4183",
+        "4246:4255",
+        "4365:4374",
+        "4427:4433",
+        "4644:4653",
+        "4678:4684",
+        "4692:4698",
+        "4713:4719" ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia" ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Elizabeth_of_Serbia ;
+    :isBrotherOf data:Princess_Elizabeth_of_Serbia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Serbia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Serbia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elizabeth of Serbia" ;
+    data:posIndicesFull "142:165",
+        "99:131" ;
+    data:posIndicesPart "1034:1043",
+        "1252:1261",
+        "1761:1770",
+        "1971:1979",
+        "2158:2166",
+        "2167:2176",
+        "2354:2362",
+        "2363:2372",
+        "2649:2658",
+        "2667:2675",
+        "2676:2685",
+        "2838:2846",
+        "2903:2912",
+        "3011:3020",
+        "3416:3424",
+        "3425:3434",
+        "343:351",
+        "352:361",
+        "3847:3855",
+        "3856:3865",
+        "4177:4183",
+        "5397:5405",
+        "5406:5415",
+        "5465:5473",
+        "5511:5520",
+        "5623:5631",
+        "5632:5641",
+        "693:701" ;
+    data:wdtLink wdt:Q257926 ;
+    :alsoKnownAs "Elizabeth Karageorgievich, Princess of Yugoslavia",
+        "Jelisaveta Karađorđević",
+        "Princess Elizabeth of Yugoslavia" ;
+    :hasBrother data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia ;
+    :isSisterOf data:Prince_Alexander_of_Serbia .
+

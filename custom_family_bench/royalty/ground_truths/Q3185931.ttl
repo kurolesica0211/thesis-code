@@ -1,0 +1,126 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "282:288",
+        "851:855" ;
+    data:posIndicesPart "1427:1434",
+        "1504:1510",
+        "316:322",
+        "414:420",
+        "482:488",
+        "982:989" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isFatherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "258:270",
+        "527:539" ;
+    data:posIndicesPart "1427:1434",
+        "982:989" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark .
+
+data:Princess_Josephine_of_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Josephine of Denmark" ;
+    data:posIndicesFull "0:29",
+        "0:51",
+        "1338:1369",
+        "2339:2368",
+        "2339:2390",
+        "56:87" ;
+    data:posIndicesPart "1002:1010",
+        "1011:1020",
+        "1409:1417",
+        "1427:1434",
+        "1576:1585",
+        "1696:1705",
+        "1835:1844",
+        "1942:1951",
+        "2115:2124",
+        "2204:2213",
+        "332:341",
+        "435:443",
+        "542:551",
+        "708:717",
+        "982:989" ;
+    data:wdtLink wdt:Q3185931 ;
+    :alsoKnownAs "Josephine Sophia Ivalo Mathilda",
+        "Josephine Sophia Ivalo Mathilda, Princess of Denmark",
+        "Princess Josephine Sophia Ivalo Mathilda of Denmark, Countess of Monpezat",
+        "Princess Josephine of Denmark, Countess of Monpezat" ;
+    :hasFather data:Frederik_X_of_Denmark ;
+    :hasParent data:Frederik_X_of_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Frederik_X_of_Denmark ;
+    :isDaughterOf data:Frederik_X_of_Denmark .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik X of Denmark" ;
+    data:posIndicesFull "195:205" ;
+    data:posIndicesPart "1427:1434",
+        "982:989" ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian",
+        "Frederik André Henrik Christian of Denmark",
+        "Frederik André Henrik Christian, Crown Prince of Denmark",
+        "Frederik Henriksen",
+        "Frederik X",
+        "Frederik of Denmark",
+        "Frederik of Denmark, Count of Monpezat" ;
+    :hasChild data:Princess_Josephine_of_Denmark ;
+    :hasDaughter data:Princess_Josephine_of_Denmark ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isFatherOf data:Princess_Josephine_of_Denmark ;
+    :isParentOf data:Princess_Josephine_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark .
+

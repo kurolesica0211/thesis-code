@@ -1,0 +1,480 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "2770:2776",
+        "4185:4193",
+        "980:988" ;
+    data:posIndicesPart "1099:1106",
+        "7152:7159",
+        "7495:7501" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "3709:3746",
+        "397:434" ;
+    data:posIndicesPart "1257:1264",
+        "1321:1328",
+        "1559:1567",
+        "1624:1632",
+        "7334:7340",
+        "926:934" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isMotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "15:27",
+        "357:369",
+        "3763:3775",
+        "7320:7332",
+        "8372:8388",
+        "8376:8388" ;
+    data:posIndicesPart "1005:1009",
+        "1031:1037",
+        "1238:1244",
+        "1381:1387",
+        "1865:1869",
+        "1919:1925",
+        "2147:2151",
+        "2668:2674",
+        "2998:3004",
+        "469:475",
+        "5355:5359",
+        "5564:5568",
+        "6118:6122",
+        "6614:6620",
+        "7900:7906",
+        "7987:7993",
+        "805:811",
+        "8614:8618",
+        "8943:8949",
+        "9338:9344" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Edward_VIII a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward VIII" ;
+    data:posIndicesFull "1194:1209",
+        "1199:1209",
+        "1942:1953",
+        "212:229",
+        "218:229",
+        "2975:2986",
+        "4601:4612",
+        "870:885",
+        "875:885",
+        "8966:8977" ;
+    data:posIndicesPart "1031:1037",
+        "2998:3004",
+        "469:475",
+        "7295:7301" ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor",
+        "Duke of Windsor",
+        "Edward Albert Christian George Andrew Patrick David",
+        "Edward Albert Christian George Andrew Patrick David Windsor",
+        "Edward VIII Edward VIII of the United Kingdom",
+        "Edward VIII Edward VIII, King of the United Kingdom",
+        "Edward VIII of the United Kingdom",
+        "Edward Windsor",
+        "Edward, Duke of Windsor",
+        "Edward, Prince of Wales",
+        "King Edward VIII",
+        "Prince Edward",
+        "Prince Edward, Duke of Windsor" ;
+    :hasBrother data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George VI" ;
+    data:posIndicesFull "1974:1983",
+        "234:243",
+        "3092:3101" ;
+    data:posIndicesPart "1713:1719",
+        "2634:2640",
+        "2893:2899",
+        "3326:3332",
+        "3862:3868",
+        "4218:4224",
+        "4355:4361",
+        "4584:4590",
+        "4858:4864",
+        "500:506",
+        "5715:5721",
+        "6467:6473",
+        "6737:6743",
+        "676:682",
+        "6887:6893",
+        "7073:7079",
+        "7135:7141",
+        "7423:7429",
+        "7593:7599",
+        "7816:7822",
+        "8827:8833",
+        "8908:8914",
+        "9165:9171",
+        "9345:9351" ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George",
+        "Albert Frederick Arthur George Windsor",
+        "Albert Windsor",
+        "Bertie",
+        "George Windsor",
+        "H.M. King George VI",
+        "Industrial Prince",
+        "King George VI",
+        "Prince Albert Frederick Arthur George of Cornwall and York",
+        "Prince Albert Frederick Arthur George of Wales",
+        "Prince Albert Frederick Arthur George of York",
+        "Prince Albert Frederick Arthur George, Duke of York",
+        "Prince Albert of Cornwall and York",
+        "Prince Albert of Wales",
+        "Prince Albert of York",
+        "Prince Albert, Duke of York",
+        "The Prince Albert Frederick Arthur George of the United Kingdom",
+        "The Prince Albert Frederick Arthur George, Duke of York",
+        "The Prince Albert of the United Kingdom",
+        "The Prince Albert, Duke of York" ;
+    :hasBrother data:Edward_VIII,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
+    data:posIndicesFull "1306:1317" ;
+    data:posIndicesPart "2098:2103",
+        "2404:2409",
+        "2565:2570",
+        "3204:3209",
+        "3273:3278",
+        "3494:3499",
+        "3569:3574",
+        "4166:4171",
+        "5139:5144",
+        "5803:5808",
+        "5897:5902",
+        "6020:6025",
+        "6296:6301",
+        "6388:6393",
+        "6437:6442",
+        "6650:6655",
+        "7032:7037",
+        "7117:7122",
+        "7192:7197",
+        "8145:8150",
+        "8315:8320",
+        "8559:8564",
+        "9379:9384" ;
+    data:wdtLink wdt:Q233913 ;
+    :alsoKnownAs "Mary Harewood",
+        "Mary, Princess Royal",
+        "Princess Mary",
+        "Princess Mary of Wales",
+        "Princess Mary of York",
+        "Princess Mary of the United Kingdom",
+        "Princess Mary, Countess of Harewood",
+        "Princess Mary, Princess Royal of the United Kingdom",
+        "Princess Mary, Viscountess Lascelles",
+        "Princess Victoria Alexandra Alice Mary of Wales",
+        "Princess Victoria Alexandra Alice Mary of York",
+        "Princess Victoria Alexandra Alice Mary of the United Kingdom",
+        "Princess Victoria Alexandra Alice Mary, Countess of Harewood",
+        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
+        "Victoria Alexandra Alice Mary Windsor",
+        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:female ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isDaughterOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSisterOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry, Duke of Gloucester" ;
+    data:posIndicesFull "9300:9312" ;
+    data:wdtLink wdt:Q117174 ;
+    :alsoKnownAs "Henry Gloucester",
+        "Henry William Frederick Albert",
+        "Henry Windsor",
+        "Prince Henry",
+        "Prince Henry William Frederick Albert, Duke of Gloucester",
+        "Prince Henry of Cornwall and York",
+        "Prince Henry of Wales",
+        "Prince Henry of York",
+        "The Prince Henry" ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "157:170",
+        "162:170",
+        "828:841",
+        "833:841" ;
+    data:posIndicesPart "1713:1719",
+        "2634:2640",
+        "2893:2899",
+        "3326:3332",
+        "3862:3868",
+        "4218:4224",
+        "4355:4361",
+        "4584:4590",
+        "4858:4864",
+        "500:506",
+        "5715:5721",
+        "6467:6473",
+        "6737:6743",
+        "676:682",
+        "6887:6893",
+        "7073:7079",
+        "7135:7141",
+        "7423:7429",
+        "7593:7599",
+        "7816:7822",
+        "8827:8833",
+        "8908:8914",
+        "9165:9171",
+        "9345:9351" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasChild data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George, Duke of Kent" ;
+    data:posIndicesFull "0:27",
+        "4260:4270",
+        "7:27" ;
+    data:posIndicesPart "1005:1009",
+        "1238:1244",
+        "1381:1387",
+        "1713:1719",
+        "1865:1869",
+        "1919:1925",
+        "2147:2151",
+        "2634:2640",
+        "2668:2674",
+        "2893:2899",
+        "3326:3332",
+        "3862:3868",
+        "4218:4224",
+        "4355:4361",
+        "4584:4590",
+        "4858:4864",
+        "500:506",
+        "5355:5359",
+        "5564:5568",
+        "5715:5721",
+        "6118:6122",
+        "6467:6473",
+        "6614:6620",
+        "6737:6743",
+        "676:682",
+        "6887:6893",
+        "7073:7079",
+        "7135:7141",
+        "7423:7429",
+        "7593:7599",
+        "7816:7822",
+        "7900:7906",
+        "7987:7993",
+        "805:811",
+        "8614:8618",
+        "8827:8833",
+        "8908:8914",
+        "8943:8949",
+        "9165:9171",
+        "9338:9344",
+        "9345:9351" ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales",
+        "George Edward Alexander Edmund, Duke of Kent",
+        "George Kent",
+        "George of Wales",
+        "George, Duke of Kent",
+        "Prince George Edward Alexander Edmund of Wales",
+        "Prince George Edward Alexander Edmund, Duke of Kent",
+        "Prince George of Wales",
+        "The Prince George Edward Alexander Edmund of the United Kingdom",
+        "The Prince George Edward Alexander Edmund, Duke of Kent",
+        "The Prince George of the United Kingdom",
+        "The Prince George, Duke of Kent" ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V .
+

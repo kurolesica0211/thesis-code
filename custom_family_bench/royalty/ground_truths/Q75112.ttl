@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis III" ;
+    data:posIndicesFull "285:306" ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz III",
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:posIndicesFull "335:380",
+        "349:380" ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia",
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "1333:1342",
+        "285:294",
+        "623:632" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "1075:1079" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasSex data:female ;
+    :isAuntOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
+    data:posIndicesFull "241:257",
+        "241:279" ;
+    data:posIndicesPart "482:490" ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria",
+        "Augusta Victoria, Empress of Germany",
+        "Augusta Viktoria",
+        "Augusta Viktoria of Schleswig-Holstein",
+        "Auguste Viktoria of Schleswig-Holstein" ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isMotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Hubertus of Prussia" ;
+    data:posIndicesFull "609:617" ;
+    data:wdtLink wdt:Q70760 ;
+    :alsoKnownAs "Hubertus",
+        "Prince Hubertus Karl Wilhelm of Prussia" ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasParent data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandrine_of_Prussia ;
+    :isBrotherOf data:Princess_Alexandrine_of_Prussia ;
+    :isChildOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Princess_Alexandrine_of_Prussia ;
+    :isSonOf data:Wilhelm-_German_Crown_Prince .
+
+data:Princess_Alexandrine_of_Prussia a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alexandrine of Prussia" ;
+    data:posIndicesFull "0:37",
+        "9:37" ;
+    data:posIndicesPart "1057:1068",
+        "1253:1264",
+        "382:393",
+        "498:509",
+        "634:645",
+        "718:729",
+        "804:815",
+        "852:863",
+        "970:981" ;
+    data:wdtLink wdt:Q75112 ;
+    :alsoKnownAs "Alexandrine Irene of Prussia",
+        "Princess Alexandrine Irene of Prussia" ;
+    :hasBrother data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasParent data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :isChildOf data:Wilhelm-_German_Crown_Prince ;
+    :isDaughterOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia ;
+    :isSisterOf data:Prince_Hubertus_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "201:211",
+        "201:227" ;
+    data:posIndicesPart "583:590" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm, German Crown Prince" ;
+    data:posIndicesFull "112:140" ;
+    data:posIndicesPart "583:590" ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm",
+        "Friedrich Wilhelm Victor August Ernst" ;
+    :hasChild data:Prince_Hubertus_of_Prussia,
+        data:Princess_Alexandrine_of_Prussia ;
+    :hasDaughter data:Princess_Alexandrine_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Hubertus_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isFatherOf data:Prince_Hubertus_of_Prussia,
+        data:Princess_Alexandrine_of_Prussia ;
+    :isParentOf data:Prince_Hubertus_of_Prussia,
+        data:Princess_Alexandrine_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Frederica_of_Hanover .
+

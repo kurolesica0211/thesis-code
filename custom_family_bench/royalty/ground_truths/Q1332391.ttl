@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "195:207",
+        "195:216" ;
+    data:posIndicesPart "1520:1527",
+        "447:454" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasChild data:Infante_Gonzalo_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Gonzalo_of_Spain ;
+    :isFatherOf data:Infante_Gonzalo_of_Spain ;
+    :isParentOf data:Infante_Gonzalo_of_Spain .
+
+data:Prince_Maurice_of_Battenberg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Maurice of Battenberg" ;
+    data:posIndicesFull "515:543" ;
+    data:wdtLink wdt:Q2351869 ;
+    :alsoKnownAs "Maurice Victor Donald Battenberg",
+        "Prince Maurice Victor Donald of Battenberg" ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isBrotherOf data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isUncleOf data:Infante_Gonzalo_of_Spain .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:posIndicesFull "303:320",
+        "303:342" ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore",
+        "Princess Beatrice",
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
+        "Princess Beatrice of Battenberg",
+        "Princess Henry of Battenberg",
+        "The Princess Beatrice" ;
+    :hasChild data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Maurice_of_Battenberg ;
+    :isMotherOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Infante_Gonzalo_of_Spain a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Gonzalo of Spain" ;
+    data:posIndicesFull "0:24" ;
+    data:posIndicesPart "1025:1032",
+        "1084:1091",
+        "1251:1258",
+        "1342:1349",
+        "1461:1468",
+        "1716:1723",
+        "350:357",
+        "409:416",
+        "590:597",
+        "613:620",
+        "751:756",
+        "863:870" ;
+    data:wdtLink wdt:Q1332391 ;
+    :alsoKnownAs "Gonzalo Manuel Maria Bernado de Borbón y Battenberg, Infante de España" ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "230:269",
+        "239:269" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasBrother data:Prince_Maurice_of_Battenberg ;
+    :hasChild data:Infante_Gonzalo_of_Spain ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:female ;
+    :hasSon data:Infante_Gonzalo_of_Spain ;
+    :isChildOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isDaughterOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Infante_Gonzalo_of_Spain ;
+    :isParentOf data:Infante_Gonzalo_of_Spain ;
+    :isSiblingOf data:Prince_Maurice_of_Battenberg ;
+    :isSisterOf data:Prince_Maurice_of_Battenberg .
+

@@ -1,0 +1,198 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "2433:2442",
+        "2547:2556",
+        "2763:2772",
+        "2931:2940" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia" ;
+    data:posIndicesFull "1105:1144" ;
+    data:posIndicesPart "1259:1263",
+        "1291:1296" ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova",
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia",
+        "Kira Kirillovna, Princess of Prussia",
+        "Princess Louis Ferdinand of Prussia" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "1929:1933" ;
+    data:posIndicesPart "2786:2793" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasSex data:female ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "175:192",
+        "182:192" ;
+    data:posIndicesPart "576:583" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
+    data:posIndicesFull "0:34",
+        "1410:1432",
+        "1552:1574",
+        "44:117" ;
+    data:posIndicesPart "1012:1017",
+        "1018:1027",
+        "1662:1667",
+        "1668:1677",
+        "1796:1802",
+        "2007:2012",
+        "2013:2022",
+        "2193:2198",
+        "2199:2208",
+        "2251:2257",
+        "2786:2793",
+        "2871:2877",
+        "2920:2926",
+        "3135:3140",
+        "3141:3150",
+        "3410:3415",
+        "3416:3425",
+        "342:347",
+        "348:357",
+        "3594:3600",
+        "3601:3610",
+        "472:478",
+        "537:542",
+        "543:552",
+        "569:575",
+        "758:763",
+        "764:773",
+        "889:895",
+        "897:902",
+        "903:912" ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen",
+        "Prince Louis Ferdinand",
+        "Prince Louis Ferdinand of Prussia" ;
+    :hasBrother data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Hubertus of Prussia" ;
+    data:posIndicesFull "91:99" ;
+    data:posIndicesPart "1526:1532",
+        "1536:1543",
+        "1796:1802",
+        "2251:2257",
+        "2786:2793",
+        "2871:2877",
+        "2920:2926",
+        "3594:3600",
+        "472:478",
+        "569:575",
+        "889:895" ;
+    data:wdtLink wdt:Q70760 ;
+    :alsoKnownAs "Hubertus",
+        "Prince Hubertus Karl Wilhelm of Prussia" ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Wilhelm of Prussia" ;
+    data:posIndicesFull "505:530" ;
+    data:posIndicesPart "1526:1532",
+        "1536:1543",
+        "1796:1802",
+        "2251:2257",
+        "2786:2793",
+        "2871:2877",
+        "2920:2926",
+        "3594:3600",
+        "569:575",
+        "576:583",
+        "889:895" ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia .
+

@@ -1,0 +1,176 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "625:636",
+        "625:647" ;
+    data:posIndicesPart "3023:3032",
+        "3316:3323",
+        "3580:3587",
+        "3694:3703",
+        "952:959" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark .
+
+data:Count_Ingolf_of_Rosenborg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Count Ingolf of Rosenborg" ;
+    data:posIndicesFull "0:25",
+        "102:119",
+        "530:554",
+        "537:554",
+        "6:25",
+        "95:119" ;
+    data:posIndicesPart "1005:1011",
+        "1307:1313",
+        "135:141",
+        "1493:1499",
+        "1738:1744",
+        "2137:2142",
+        "2354:2360",
+        "2381:2386",
+        "2390:2399",
+        "2598:2604",
+        "2768:2777",
+        "2833:2839",
+        "2922:2928",
+        "2983:2988",
+        "2992:3001",
+        "3065:3071",
+        "3541:3550",
+        "3589:3595",
+        "3648:3657",
+        "3718:3723",
+        "3724:3730",
+        "4465:4470",
+        "4471:4477",
+        "4592:4598",
+        "4725:4731",
+        "4749:4755",
+        "649:655",
+        "853:859" ;
+    data:wdtLink wdt:Q570902 ;
+    :alsoKnownAs "Count Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Rosenborg",
+        "Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Denmark",
+        "Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Rosenborg",
+        "Ingolf of Denmark",
+        "Ingolf of Rosenborg",
+        "Ingolf zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark",
+        "Prince Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Denmark",
+        "Prince Ingolf of Denmark" ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Elisabeth_of_Denmark ;
+    :isBrotherOf data:Princess_Elisabeth_of_Denmark ;
+    :isSiblingOf data:Princess_Elisabeth_of_Denmark .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elisabeth of Denmark" ;
+    data:posIndicesFull "4434:4463" ;
+    data:posIndicesPart "4864:4872",
+        "4873:4882" ;
+    data:wdtLink wdt:Q242691 ;
+    :alsoKnownAs "Elisabeth zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark" ;
+    :hasBrother data:Count_Ingolf_of_Rosenborg ;
+    :hasSex data:female ;
+    :isSiblingOf data:Count_Ingolf_of_Rosenborg ;
+    :isSisterOf data:Count_Ingolf_of_Rosenborg .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "1262:1274",
+        "2252:2264" ;
+    data:posIndicesPart "3316:3323",
+        "3580:3587" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "4688:4718" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "1788:1799",
+        "873:884" ;
+    data:posIndicesPart "3316:3323",
+        "3580:3587",
+        "3876:3884",
+        "952:959" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSonOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Count_Ingolf_of_Rosenborg,
+        data:Princess_Elisabeth_of_Denmark .
+

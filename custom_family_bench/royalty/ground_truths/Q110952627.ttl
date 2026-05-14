@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Carlos, Duke of Calabria" ;
+    data:posIndicesFull "605:642",
+        "612:642" ;
+    data:posIndicesPart "1033:1039",
+        "1772:1778",
+        "1894:1900" ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria",
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma",
+        "Carlos of Bourbon-Two Sicilies",
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
+        "Prince Carlos of Bourbon-Two Sicilies" ;
+    :hasSex data:male .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:posIndicesFull "964:996" ;
+    data:posIndicesPart "1767:1771",
+        "1889:1893" ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona" ;
+    :hasChild data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isFatherOf data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Juan_Carlos_I_of_Spain .
+
+data:Princess_Louise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Louise of Orléans" ;
+    data:posIndicesFull "792:818" ;
+    data:posIndicesPart "1290:1297",
+        "1384:1391",
+        "1529:1537",
+        "924:932" ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans" ;
+    :hasChild data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies .
+
+data:Princess_María_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess María de la Esperanza of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "0:21",
+        "1219:1240",
+        "47:68",
+        "496:517" ;
+    data:posIndicesPart "1529:1537",
+        "255:263",
+        "690:693",
+        "694:702",
+        "758:766",
+        "924:932",
+        "933:938" ;
+    data:wdtLink wdt:Q110952627 ;
+    :alsoKnownAs "Maria de la Esperanza",
+        "Princess Maria de la Esperanza of Bourbon-Two Sicilies" ;
+    :hasMother data:Princess_Louise_of_Orléans ;
+    :hasParent data:Princess_Louise_of_Orléans ;
+    :hasSex data:female ;
+    :isAuntOf data:Infante_Carlos-_Duke_of_Calabria,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Princess_Louise_of_Orléans ;
+    :isDaughterOf data:Princess_Louise_of_Orléans .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "451:464",
+        "451:473" ;
+    data:posIndicesPart "1028:1032",
+        "1033:1039",
+        "1320:1325",
+        "1734:1739",
+        "1767:1771",
+        "1772:1778",
+        "1889:1893",
+        "1894:1900",
+        "586:591",
+        "727:732" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasParent data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male ;
+    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSonOf data:Infante_Juan-_Count_of_Barcelona .
+

@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "245:283" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen" ;
+    data:posIndicesFull "0:16",
+        "0:34" ;
+    data:posIndicesPart "1037:1045",
+        "1361:1365",
+        "1366:1375",
+        "1569:1578",
+        "1580:1587",
+        "1658:1666",
+        "1770:1777",
+        "1908:1915",
+        "2042:2049",
+        "2194:2201",
+        "2243:2250",
+        "381:385",
+        "474:481",
+        "588:592",
+        "681:688",
+        "721:725",
+        "726:735" ;
+    data:wdtLink wdt:Q66639 ;
+    :alsoKnownAs "Princess Feodora" ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+

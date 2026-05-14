@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Henri_dOrléans a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henri d'Orléans" ;
+    data:posIndicesFull "2166:2181" ;
+    data:posIndicesPart "3526:3532" ;
+    data:wdtLink wdt:Q538411 ;
+    :alsoKnownAs "Henri Robert Ferdinand Marie d'Orléans",
+        "Henri d'Orléans",
+        "Prince Henri Robert Ferdinand Marie d'Orléans" ;
+    :hasChild data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henri_dOrléans_1 ;
+    :isFatherOf data:Prince_Henri_dOrléans_1 ;
+    :isParentOf data:Prince_Henri_dOrléans_1 .
+
+data:Prince_Jean_dOrléans a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Jean d'Orléans" ;
+    data:posIndicesFull "417:449",
+        "736:743",
+        "912:926" ;
+    data:posIndicesPart "1171:1175",
+        "1288:1292",
+        "1366:1372",
+        "1373:1377",
+        "1547:1551",
+        "1777:1781",
+        "1927:1931",
+        "2150:2154",
+        "2306:2310",
+        "2361:2365",
+        "2598:2602",
+        "2768:2772",
+        "2822:2826",
+        "2882:2886",
+        "3005:3009",
+        "3156:3160",
+        "3526:3532",
+        "3533:3537",
+        "3709:3713",
+        "3885:3889",
+        "745:749" ;
+    data:wdtLink wdt:Q592349 ;
+    :alsoKnownAs "Jean Carl Pierre Marie d'Orléans",
+        "Jean IV",
+        "Jean d'Orléans" ;
+    :hasFather data:Prince_Henri_dOrléans_1 ;
+    :hasParent data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isBrotherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isChildOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isSonOf data:Prince_Henri_dOrléans_1 .
+
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
+    data:posIndicesFull "434:449" ;
+    data:posIndicesPart "1142:1150",
+        "833:838" ;
+    data:wdtLink wdt:Q7244738 ;
+    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Marie d'Orléans",
+        "Princess Gundakar of Liechtenstein",
+        "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Princess Marie d'Orléans",
+        "Princess Marie of Liechtenstein" ;
+    :hasBrother data:Prince_Jean_dOrléans ;
+    :hasFather data:Prince_Henri_dOrléans_1 ;
+    :hasParent data:Prince_Henri_dOrléans_1 ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Henri_dOrléans_1 ;
+    :isDaughterOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Prince_Jean_dOrléans ;
+    :isSisterOf data:Prince_Jean_dOrléans .
+
+data:Prince_Henri_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henri d’Orléans" ;
+    data:posIndicesFull "2166:2181",
+        "2326:2334" ;
+    data:posIndicesPart "3526:3532" ;
+    data:wdtLink wdt:Q534961 ;
+    :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans",
+        "Henri VIII",
+        "Henri d’Orléans" ;
+    :hasChild data:Prince_Jean_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasFather data:Prince_Henri_dOrléans ;
+    :hasParent data:Prince_Henri_dOrléans ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Jean_dOrléans ;
+    :isChildOf data:Prince_Henri_dOrléans ;
+    :isFatherOf data:Prince_Jean_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isParentOf data:Prince_Jean_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isSonOf data:Prince_Henri_dOrléans .
+

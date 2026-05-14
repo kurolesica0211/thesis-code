@@ -1,0 +1,375 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Aimone, 4th Duke of Aosta" ;
+    data:posIndicesFull "1323:1355" ;
+    data:posIndicesPart "1621:1627",
+        "1628:1634",
+        "1650:1654",
+        "1658:1663",
+        "1932:1938",
+        "1939:1945",
+        "2043:2047",
+        "2051:2056",
+        "2378:2382",
+        "2398:2403",
+        "2607:2612" ;
+    data:wdtLink wdt:Q169902 ;
+    :alsoKnownAs "Aimoe di Savoia-Aoste, Principe di Savoia",
+        "Prince Aimone, Duke of Aosta" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "1446:1483" ;
+    data:posIndicesPart "2559:2567",
+        "2569:2577" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "265:282",
+        "272:282",
+        "272:293" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:male ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBrotherOf data:Sophia_of_Prussia ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Princess_Irene-_Duchess_of_Aosta .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "183:199" ;
+    data:posIndicesPart "338:344" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSonOf data:Frederica_of_Hanover .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "922:931" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isMotherOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "272:279",
+        "792:815",
+        "797:805",
+        "797:815" ;
+    data:posIndicesPart "338:344",
+        "505:511",
+        "612:618" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "845:874" ;
+    data:posIndicesPart "1574:1580" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of Greece and Denmark" ;
+    data:posIndicesFull "0:36",
+        "398:434" ;
+    data:posIndicesPart "1144:1152",
+        "1300:1308",
+        "1309:1314",
+        "1499:1504",
+        "1785:1790",
+        "2119:2124",
+        "2265:2270",
+        "2559:2567",
+        "2569:2577",
+        "338:344",
+        "713:720",
+        "748:756",
+        "757:762" ;
+    data:wdtLink wdt:Q242298 ;
+    :alsoKnownAs "Irene zu Schleswig-Holstein-Sonderburg-Glücksburg, Πριγκίπισσα της Ελλάδος",
+        "Ειρήνη της Ελλάδας και της Δανίας" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasSex data:female ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isDaughterOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSisterOf data:Constantine_II_of_Greece .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "962:986" ;
+    data:posIndicesPart "1072:1080",
+        "1144:1152",
+        "1300:1308",
+        "2559:2567",
+        "2569:2577",
+        "996:1004" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasChild data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Wilhelm_II ;
+    :isMotherOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene, Duchess of Aosta" ;
+    data:posIndicesFull "0:36",
+        "398:434" ;
+    data:posIndicesPart "1144:1152",
+        "1300:1308",
+        "1309:1314",
+        "1499:1504",
+        "1658:1663",
+        "1785:1790",
+        "2051:2056",
+        "2119:2124",
+        "2265:2270",
+        "2387:2394",
+        "2398:2403",
+        "2559:2567",
+        "2569:2577",
+        "2596:2603",
+        "2607:2612",
+        "748:756",
+        "757:762",
+        "837:844" ;
+    data:wdtLink wdt:Q236770 ;
+    :alsoKnownAs "Princess Irene of Greece and Denmark" ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria of Greece and Denmark" ;
+    data:posIndicesFull "1446:1483" ;
+    data:posIndicesPart "2559:2567",
+        "2569:2577" ;
+    data:wdtLink wdt:Q232732 ;
+    :alsoKnownAs "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia",
+        "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia",
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
+        "Laci Marie",
+        "The Princess Maria of Greece and Denmark" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Irene-_Duchess_of_Aosta,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSisterOf data:Constantine_I_of_Greece .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sophia of Prussia" ;
+    data:posIndicesFull "236:253" ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece",
+        "Queen Sophia, Queen Consort of Greece" ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isSisterOf data:Wilhelm_II .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "183:201",
+        "183:211",
+        "188:201",
+        "188:211" ;
+    data:posIndicesPart "338:344" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasChild data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isSiblingOf data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+

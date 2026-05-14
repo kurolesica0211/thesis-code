@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Luís_de_Orléans_e_Bragança a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Luís de Orléans e Bragança" ;
+    data:posIndicesFull "0:31",
+        "7:31" ;
+    data:posIndicesPart "1089:1096",
+        "244:251",
+        "523:530",
+        "891:898" ;
+    data:wdtLink wdt:Q2617325 ;
+    :alsoKnownAs "Luis of Orleans-Braganza",
+        "Prince Luís of Orléans-Braganza" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Luís_Gastão_de_Orléans_e_Bragança a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Luís Gastão de Orléans e Bragança" ;
+    data:wdtLink wdt:Q763206 ;
+    :alsoKnownAs "Don Louis of Orléans-Braganza",
+        "Louis Gaston of Orleans-Braganza" ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSonOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Elisabeth of Bavaria" ;
+    data:posIndicesFull "265:300" ;
+    data:posIndicesPart "1002:1009",
+        "1047:1054",
+        "592:600",
+        "780:785",
+        "983:988",
+        "989:998" ;
+    data:wdtLink wdt:Q285326 ;
+    :alsoKnownAs "Maria Elisabeth Franziska Josepha Therese von Bayern",
+        "Maria Isabel da Baviera" ;
+    :hasChild data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :hasSex data:female ;
+    :hasSon data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isMotherOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isParentOf data:Luís_Gastão_de_Orléans_e_Bragança .
+

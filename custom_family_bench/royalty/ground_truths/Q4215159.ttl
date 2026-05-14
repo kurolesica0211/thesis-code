@@ -1,0 +1,86 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Antônio_de_Orleans_e_Bragança a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Antônio de Orleans e Bragança" ;
+    data:posIndicesFull "535:564" ;
+    data:posIndicesPart "893:901" ;
+    data:wdtLink wdt:Q2414301 ;
+    :alsoKnownAs "Antônio João de Orléans e Bragança" ;
+    :hasChild data:Rafael_de_Orléans-Bragança ;
+    :hasSex data:male ;
+    :hasSon data:Rafael_de_Orléans-Bragança ;
+    :isFatherOf data:Rafael_de_Orléans-Bragança ;
+    :isParentOf data:Rafael_de_Orléans-Bragança .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Christine of Ligne" ;
+    data:posIndicesFull "569:596" ;
+    data:posIndicesPart "1064:1069",
+        "1075:1083",
+        "1138:1143",
+        "1235:1244",
+        "1663:1671",
+        "656:664",
+        "694:702",
+        "972:980" ;
+    data:wdtLink wdt:Q7244586 ;
+    :alsoKnownAs "Christine, Princess Imperial of Brazil",
+        "Princess Christine of Orleans-Braganza" ;
+    :hasChild data:Rafael_de_Orléans-Bragança ;
+    :hasSex data:female ;
+    :hasSon data:Rafael_de_Orléans-Bragança ;
+    :isMotherOf data:Rafael_de_Orléans-Bragança ;
+    :isParentOf data:Rafael_de_Orléans-Bragança .
+
+data:Rafael_de_Orléans-Bragança a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Rafael de Orléans-Bragança" ;
+    data:posIndicesFull "0:26",
+        "739:827" ;
+    data:posIndicesPart "1347:1353",
+        "1494:1500",
+        "1606:1612",
+        "1813:1819",
+        "1993:1999",
+        "2028:2035",
+        "2145:2151",
+        "2242:2249",
+        "260:267",
+        "335:341",
+        "885:892",
+        "893:901" ;
+    data:wdtLink wdt:Q4215159 ;
+    :alsoKnownAs "Rafael Antonio Maria José Francisco Miguel Gabriel Gonzaga de Orléans e Bragança e Ligne",
+        "Rafael de Orléans-Bragança e Ligne, Principe de Orléans-Bragança",
+        "Rafael of Orleans-Braganza",
+        "Rafael of Orléans-Braganza" ;
+    :hasFather data:Antônio_de_Orleans_e_Bragança ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasSex data:male ;
+    :isChildOf data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :isSonOf data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne .
+

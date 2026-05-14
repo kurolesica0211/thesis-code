@@ -1,0 +1,93 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Birgitte, Duchess of Gloucester" ;
+    data:posIndicesFull "455:486" ;
+    data:posIndicesPart "1071:1078",
+        "1082:1092" ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen",
+        "Birgitte Eva van Deurs Henriksen" ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Richard, Duke of Gloucester" ;
+    data:posIndicesFull "416:450" ;
+    data:posIndicesPart "1062:1066",
+        "1082:1092",
+        "1738:1744",
+        "534:538",
+        "931:937" ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
+        "Prince Richard Alexander Walter George, Duke of Gloucester",
+        "Prince Richard of Gloucester",
+        "Richard Alexander Walter George",
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
+        "Richard Gloucester",
+        "Richard Windsor" ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasSex data:male ;
+    :isFatherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor .
+
+data:Lady_Davina_Windsor a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Davina Windsor" ;
+    data:posIndicesFull "0:45",
+        "193:210",
+        "198:210",
+        "295:335",
+        "5:45" ;
+    data:posIndicesPart "1022:1028",
+        "1230:1236",
+        "1370:1376",
+        "1459:1465",
+        "1560:1566",
+        "564:568",
+        "651:655",
+        "656:662",
+        "733:739" ;
+    data:wdtLink wdt:Q268139 ;
+    :alsoKnownAs "Davina Elizabeth Alice Benedikte Windsor",
+        "Davina Lewis",
+        "Davina Windsor",
+        "Denny Lewis",
+        "Lady Davina Elizabeth Alice Benedikte Lewis",
+        "Lady Davina Elizabeth Alice Benedikte Windsor",
+        "Lady Davina Lewis" ;
+    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female ;
+    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isDaughterOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester .
+

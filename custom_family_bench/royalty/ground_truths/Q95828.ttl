@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "484:497",
+        "484:516" ;
+    data:posIndicesPart "626:632",
+        "823:829" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isBrotherOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isUncleOf data:Kraft-_Prince_of_Hohenlohe-Langenburg .
+
+data:Princess_Charlotte_of_Croÿ a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Charlotte of Croÿ" ;
+    data:posIndicesFull "351:377",
+        "360:377" ;
+    data:posIndicesPart "551:559" ;
+    data:wdtLink wdt:Q75383564 ;
+    :alsoKnownAs "Charlotte Alexandra Marie Clotilde Prinzessin von Croÿ",
+        "Charlotte Alexandra Marie Clotilde of Croÿ",
+        "Charlotte Prinzessin von Croÿ",
+        "Charlotte of Croÿ",
+        "Princess Charlotte Alexandra Marie Clotilde of Croÿ" ;
+    :hasChild data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :hasSex data:female ;
+    :hasSon data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Philipp-_Prince_of_Hohenlohe-Langenburg .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margarita of Greece and Denmark" ;
+    data:posIndicesFull "421:461",
+        "430:461" ;
+    data:posIndicesPart "551:559" ;
+    data:wdtLink wdt:Q240317 ;
+    :alsoKnownAs "Margarita of Greece and Denmark",
+        "Margarita of Hohenlohe-Langenburg" ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :hasSex data:female ;
+    :hasSon data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Philipp-_Prince_of_Hohenlohe-Langenburg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Philipp, Prince of Hohenlohe-Langenburg" ;
+    data:posIndicesFull "0:39" ;
+    data:posIndicesPart "1057:1067",
+        "1160:1170",
+        "1455:1465",
+        "626:632",
+        "823:829",
+        "993:1003" ;
+    data:wdtLink wdt:Q95828 ;
+    :alsoKnownAs "Philipp Gottfried Alexander Erbprinz zu Hohenlohe-Langenburg" ;
+    :hasFather data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Charlotte_of_Croÿ ;
+    :hasParent data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ ;
+    :hasSex data:male ;
+    :isChildOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ ;
+    :isSonOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ .
+
+data:Kraft-_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Kraft, Prince of Hohenlohe-Langenburg" ;
+    data:posIndicesFull "281:318" ;
+    data:posIndicesPart "1057:1067",
+        "1160:1170",
+        "1455:1465",
+        "626:632",
+        "823:829",
+        "993:1003" ;
+    data:wdtLink wdt:Q72937 ;
+    :hasChild data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isFatherOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Princess_Margarita_of_Greece_and_Denmark .
+

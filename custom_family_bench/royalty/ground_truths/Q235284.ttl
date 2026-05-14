@@ -1,0 +1,301 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:posIndicesFull "1689:1714",
+        "1696:1714",
+        "789:814",
+        "796:814" ;
+    data:posIndicesPart "1014:1020",
+        "1094:1100",
+        "1289:1295",
+        "1570:1574",
+        "1998:2004" ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich",
+        "Paul Karageorgevich",
+        "Paul of Yugoslavia",
+        "Pavle Karađorđević",
+        "Prince of Yugoslavia Paul",
+        "Prince of Yugoslavia Pavle",
+        "Prince of Yugoslavia Pavle Karađorđević" ;
+    :hasChild data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:male ;
+    :isFatherOf data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Princess_Elizabeth_of_Serbia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Olga of Greece and Denmark" ;
+    data:posIndicesFull "1689:1714",
+        "789:814",
+        "898:933",
+        "907:933" ;
+    data:posIndicesPart "1043:1051",
+        "1365:1372",
+        "1916:1924",
+        "1925:1929",
+        "2017:2023",
+        "2028:2035",
+        "2093:2097",
+        "2172:2178",
+        "2406:2414",
+        "2996:3004",
+        "3143:3151",
+        "4553:4561" ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark",
+        "Princess Paul of Yugoslavia" ;
+    :hasChild data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Princess_Elizabeth_of_Serbia .
+
+data:India_Oxenberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "India Oxenberg" ;
+    data:posIndicesFull "3879:3899" ;
+    data:posIndicesPart "4008:4016",
+        "4092:4100",
+        "4247:4255",
+        "4454:4462",
+        "4702:4710",
+        "4726:4734",
+        "4773:4778",
+        "4793:4801",
+        "4899:4907",
+        "5006:5014",
+        "5102:5110",
+        "5240:5245",
+        "5337:5345",
+        "5481:5486",
+        "5504:5512",
+        "5527:5532",
+        "5647:5655",
+        "5820:5828",
+        "5941:5949",
+        "5984:5989",
+        "5991:5999",
+        "6141:6146",
+        "6275:6283" ;
+    data:wdtLink wdt:Q75244337 ;
+    :alsoKnownAs "India Riven Oxenberg" ;
+    :hasMother data:Catherine_Oxenberg ;
+    :hasParent data:Catherine_Oxenberg ;
+    :hasSex data:female ;
+    :isChildOf data:Catherine_Oxenberg ;
+    :isDaughterOf data:Catherine_Oxenberg .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Howard Oxenberg" ;
+    data:posIndicesFull "153:168",
+        "596:611" ;
+    data:posIndicesPart "1118:1126",
+        "1481:1489",
+        "2271:2279",
+        "2434:2442",
+        "2559:2567",
+        "2704:2712",
+        "2828:2836",
+        "2976:2984",
+        "3302:3310",
+        "3511:3519",
+        "3854:3862",
+        "4008:4016",
+        "400:408",
+        "4092:4100",
+        "4247:4255",
+        "4454:4462",
+        "4702:4710",
+        "4726:4734",
+        "4793:4801",
+        "4899:4907",
+        "5006:5014",
+        "5102:5110",
+        "5337:5345",
+        "5504:5512",
+        "5647:5655",
+        "5820:5828",
+        "5941:5949",
+        "5991:5999",
+        "6275:6283" ;
+    data:wdtLink wdt:Q75393300 ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasSex data:male ;
+    :isFatherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:Christina_Oxenberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Christina Oxenberg" ;
+    data:posIndicesFull "726:744" ;
+    data:posIndicesPart "1118:1126",
+        "1481:1489",
+        "2271:2279",
+        "2434:2442",
+        "2559:2567",
+        "2704:2712",
+        "2828:2836",
+        "2976:2984",
+        "3302:3310",
+        "3511:3519",
+        "3854:3862",
+        "4008:4016",
+        "4092:4100",
+        "4247:4255",
+        "4454:4462",
+        "4702:4710",
+        "4726:4734",
+        "4793:4801",
+        "4899:4907",
+        "5006:5014",
+        "5102:5110",
+        "5337:5345",
+        "5504:5512",
+        "5647:5655",
+        "5820:5828",
+        "5941:5949",
+        "5991:5999",
+        "6275:6283" ;
+    data:wdtLink wdt:Q27107390 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :hasSister data:Catherine_Oxenberg ;
+    :isAuntOf data:India_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Catherine_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Catherine Oxenberg" ;
+    data:posIndicesFull "0:18",
+        "1745:1763",
+        "3685:3703" ;
+    data:posIndicesPart "1118:1126",
+        "1229:1238",
+        "1481:1489",
+        "2271:2279",
+        "2434:2442",
+        "2559:2567",
+        "2704:2712",
+        "2828:2836",
+        "2976:2984",
+        "3302:3310",
+        "3511:3519",
+        "3854:3862",
+        "4008:4016",
+        "400:408",
+        "4092:4100",
+        "4247:4255",
+        "4454:4462",
+        "4702:4710",
+        "4726:4734",
+        "4793:4801",
+        "4899:4907",
+        "5006:5014",
+        "5102:5110",
+        "5337:5345",
+        "5504:5512",
+        "5647:5655",
+        "5820:5828",
+        "5941:5949",
+        "5991:5999",
+        "6275:6283",
+        "69:77",
+        "969:978" ;
+    data:wdtLink wdt:Q235284 ;
+    :alsoKnownAs "Catherine van Dien" ;
+    :hasChild data:India_Oxenberg ;
+    :hasDaughter data:India_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:female ;
+    :hasSister data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isMotherOf data:India_Oxenberg ;
+    :isParentOf data:India_Oxenberg ;
+    :isSiblingOf data:Christina_Oxenberg ;
+    :isSisterOf data:Christina_Oxenberg .
+
+data:Princess_Elizabeth_of_Serbia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Elizabeth of Serbia" ;
+    data:posIndicesFull "489:521",
+        "97:129" ;
+    data:posIndicesPart "1043:1051",
+        "1916:1924",
+        "206:214",
+        "2406:2414",
+        "2996:3004",
+        "3143:3151",
+        "4553:4561",
+        "746:754",
+        "755:764" ;
+    data:wdtLink wdt:Q257926 ;
+    :alsoKnownAs "Elizabeth Karageorgievich, Princess of Yugoslavia",
+        "Jelisaveta Karađorđević",
+        "Princess Elizabeth of Yugoslavia" ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+

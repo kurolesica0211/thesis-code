@@ -1,0 +1,538 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "11364:11380" ;
+    data:posIndicesPart "11636:11642",
+        "11709:11720" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasSex data:male .
+
+data:Marie_Bonaparte a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie Bonaparte" ;
+    data:posIndicesFull "10169:10184",
+        "10513:10528",
+        "7830:7854",
+        "7839:7854",
+        "9615:9630",
+        "9919:9934" ;
+    data:posIndicesPart "10391:10396",
+        "10901:10906",
+        "11601:11606",
+        "11853:11858",
+        "12146:12151",
+        "12547:12552",
+        "7991:8000",
+        "8653:8658",
+        "8814:8819",
+        "9004:9009",
+        "9060:9069",
+        "9397:9402" ;
+    data:wdtLink wdt:Q115472 ;
+    :alsoKnownAs "Princess Marie Bonaparte" ;
+    :hasSex data:female .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "10937:10941",
+        "11932:11936",
+        "1282:1288",
+        "1821:1825",
+        "1840:1846",
+        "1976:1982",
+        "3088:3092",
+        "367:373",
+        "3780:3784",
+        "3925:3930",
+        "4014:4018",
+        "506:512",
+        "5363:5368",
+        "5422:5427",
+        "546:552",
+        "634:640",
+        "679:685",
+        "7359:7363",
+        "8188:8192" ;
+    data:posIndicesPart "11291:11299",
+        "12137:12145",
+        "12404:12412",
+        "12538:12546",
+        "3316:3324" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "8110:8114" ;
+    data:posIndicesPart "11291:11299",
+        "12137:12145",
+        "12404:12412",
+        "12413:12421",
+        "12538:12546" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasSex data:female ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sophia of Prussia" ;
+    data:posIndicesFull "3224:3241" ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece",
+        "Queen Sophia, Queen Consort of Greece" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "1158:1165",
+        "2851:2859",
+        "8748:8756" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasBrother data:Charles_III ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBrotherOf data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSiblingOf data:Anne-_Princess_Royal,
+        data:Charles_III .
+
+data:Anne-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Anne, Princess Royal" ;
+    data:posIndicesFull "10225:10236",
+        "11276:11290",
+        "11280:11290",
+        "9044:9059" ;
+    data:posIndicesPart "12137:12145",
+        "12404:12412",
+        "12538:12546",
+        "12764:12769" ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom",
+        "Anne Mountbatten-Windsor",
+        "Princess Anne",
+        "Princess Anne Elizabeth Alice Louise of Edinburgh",
+        "Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "Princess Anne of Edinburgh",
+        "Princess Anne, Princess Royal",
+        "Princess Anne, The Princess Royal",
+        "The Princess Anne",
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "The Princess Anne, Princess Royal" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasSex data:female ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Charles III" ;
+    data:posIndicesFull "12276:12290",
+        "12320:12332",
+        "12320:12336",
+        "12325:12336" ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III",
+        "Charles III of England",
+        "Charles III of the United Kingdom",
+        "Charles Mountbatten-Windsor",
+        "Charles Philip Arthur George",
+        "Charles Philip Arthur George Mountbatten-Windsor",
+        "Charles Philip Arthur George Windsor",
+        "Charles Philip Arthur George, Prince of Wales",
+        "Charles Wales",
+        "Charles Windsor",
+        "Charles the Third",
+        "HM King Charles III",
+        "His Majesty",
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+        "His Majesty The King",
+        "His Royal Highness Charles III of Great Britain",
+        "King Charles",
+        "King Charles III",
+        "King of England",
+        "Prince Charles",
+        "Prince Charles Philip Arthur George of Edinburgh",
+        "Prince Charles Philip Arthur George, Prince of Wales",
+        "Prince Charles of Edinburgh",
+        "Prince Charles, Duke of Rothesay",
+        "Prince Charles, Prince of Wales",
+        "The Prince Charles Philip Arthur George, Prince of Wales",
+        "The Prince Charles, Prince of Wales" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "140:148",
+        "140:158",
+        "1640:1648",
+        "828:836" ;
+    data:posIndicesPart "10297:10303",
+        "10373:10379",
+        "10755:10761",
+        "10949:10955",
+        "11000:11006",
+        "11034:11040",
+        "11386:11392",
+        "11442:11448",
+        "11636:11642",
+        "11729:11735",
+        "11840:11846",
+        "12050:12056",
+        "12126:12132",
+        "12206:12212",
+        "12354:12360",
+        "12621:12627",
+        "12908:12914",
+        "12949:12955",
+        "13056:13062",
+        "1328:1334",
+        "1482:1488",
+        "1701:1707",
+        "1793:1799",
+        "1875:1881",
+        "2106:2112",
+        "2218:2224",
+        "2346:2352",
+        "2433:2439",
+        "2464:2470",
+        "2644:2650",
+        "3094:3100",
+        "3305:3311",
+        "330:336",
+        "3378:3384",
+        "3504:3510",
+        "3610:3616",
+        "3771:3777",
+        "391:397",
+        "3945:3951",
+        "421:427",
+        "4251:4257",
+        "4366:4372",
+        "4475:4481",
+        "4666:4672",
+        "4788:4794",
+        "4954:4960",
+        "5134:5140",
+        "5260:5266",
+        "5506:5512",
+        "5602:5608",
+        "5734:5740",
+        "5935:5941",
+        "6146:6152",
+        "6227:6233",
+        "6420:6426",
+        "6501:6507",
+        "6624:6630",
+        "6632:6638",
+        "6765:6771",
+        "6968:6974",
+        "7084:7090",
+        "7183:7189",
+        "7207:7213",
+        "7288:7294",
+        "7380:7386",
+        "7462:7468",
+        "7664:7670",
+        "7800:7806",
+        "8437:8443",
+        "8570:8576",
+        "8803:8809",
+        "8914:8920",
+        "9187:9193",
+        "9281:9287",
+        "9489:9495",
+        "9710:9716",
+        "991:997" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "163:192" ;
+    data:posIndicesPart "12966:12970",
+        "3654:3660",
+        "4211:4217",
+        "6045:6051" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "11364:11382",
+        "11369:11382" ;
+    data:posIndicesPart "11636:11642",
+        "11709:11720" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasBrother data:Prince_George_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia .
+
+data:Prince_George_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince George of Greece and Denmark" ;
+    data:posIndicesFull "0:35" ;
+    data:posIndicesPart "10297:10303",
+        "10373:10379",
+        "10755:10761",
+        "10942:10948",
+        "10949:10955",
+        "11000:11006",
+        "11034:11040",
+        "11386:11392",
+        "11442:11448",
+        "11636:11642",
+        "11729:11735",
+        "11840:11846",
+        "12050:12056",
+        "12119:12125",
+        "12126:12132",
+        "12199:12205",
+        "12206:12212",
+        "12354:12360",
+        "12614:12620",
+        "12621:12627",
+        "12901:12907",
+        "12908:12914",
+        "12949:12955",
+        "13049:13055",
+        "13056:13062",
+        "1328:1334",
+        "1482:1488",
+        "1701:1707",
+        "1767:1773",
+        "1793:1799",
+        "1866:1873",
+        "1875:1881",
+        "2085:2092",
+        "2106:2112",
+        "2192:2198",
+        "2218:2224",
+        "2337:2344",
+        "2346:2352",
+        "2433:2439",
+        "2464:2470",
+        "2563:2569",
+        "2644:2650",
+        "2708:2715",
+        "3018:3024",
+        "3094:3100",
+        "3170:3176",
+        "3305:3311",
+        "330:336",
+        "3378:3384",
+        "3504:3510",
+        "3603:3609",
+        "3610:3616",
+        "3771:3777",
+        "384:390",
+        "3870:3876",
+        "391:397",
+        "3945:3951",
+        "4049:4055",
+        "421:427",
+        "4251:4257",
+        "4366:4372",
+        "4468:4474",
+        "4475:4481",
+        "4536:4542",
+        "4666:4672",
+        "4788:4794",
+        "4954:4960",
+        "5134:5140",
+        "5260:5266",
+        "5433:5439",
+        "5506:5512",
+        "5595:5601",
+        "5602:5608",
+        "5734:5740",
+        "5935:5941",
+        "6080:6086",
+        "6146:6152",
+        "6220:6226",
+        "6227:6233",
+        "6420:6426",
+        "6501:6507",
+        "6617:6623",
+        "6624:6630",
+        "6632:6638",
+        "6765:6771",
+        "6865:6871",
+        "6968:6974",
+        "7084:7090",
+        "7183:7189",
+        "7207:7213",
+        "7288:7294",
+        "7380:7386",
+        "7462:7468",
+        "7580:7586",
+        "7590:7597",
+        "7664:7670",
+        "7675:7681",
+        "7800:7806",
+        "8142:8148",
+        "8161:8168",
+        "8437:8443",
+        "8570:8576",
+        "8803:8809",
+        "8914:8920",
+        "9187:9193",
+        "9281:9287",
+        "9489:9495",
+        "9710:9716",
+        "984:990",
+        "991:997" ;
+    data:wdtLink wdt:Q170396 ;
+    :alsoKnownAs "Prince Georgios of Greece and Denmark" ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia .
+

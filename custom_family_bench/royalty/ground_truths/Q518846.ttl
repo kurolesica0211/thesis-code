@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "194:206",
+        "194:215",
+        "625:637" ;
+    data:posIndicesPart "1180:1187",
+        "1366:1373",
+        "1577:1584",
+        "1665:1672",
+        "1752:1759",
+        "1841:1848",
+        "1859:1866",
+        "2006:2013",
+        "2087:2094",
+        "2122:2129",
+        "2227:2234",
+        "2325:2332",
+        "252:259",
+        "2552:2559",
+        "2764:2771",
+        "808:815",
+        "935:942" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isFatherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "220:250",
+        "642:672" ;
+    data:posIndicesPart "516:524" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasSex data:female ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isMotherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias .
+
+data:Alfonso-_Prince_of_Asturias a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso, Prince of Asturias" ;
+    data:posIndicesFull "0:27" ;
+    data:posIndicesPart "1037:1043",
+        "1071:1077",
+        "1180:1187",
+        "1366:1373",
+        "1577:1584",
+        "159:166",
+        "1665:1672",
+        "1752:1759",
+        "1841:1848",
+        "1859:1866",
+        "2006:2013",
+        "2087:2094",
+        "2122:2129",
+        "2227:2234",
+        "2325:2332",
+        "252:259",
+        "2552:2559",
+        "2764:2771",
+        "570:577",
+        "808:815",
+        "935:942" ;
+    data:wdtLink wdt:Q518846 ;
+    :alsoKnownAs "Alfons de Borbo i de Battenberg",
+        "Alfons de Borbó i de Battenberg",
+        "Alfonso Pius de Borbón y Battenberg, Infante de España",
+        "Alfonso de Borbon y Battenberg",
+        "Alfonso de Borbón y Battenberg",
+        "Alfonso, Count of Covadonga",
+        "Alphonse de Bourbon",
+        "Infante Alfonso, Count of Covadonga" ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+

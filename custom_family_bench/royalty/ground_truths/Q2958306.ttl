@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Charles-Philippe_dOrléans a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Charles-Philippe d'Orléans" ;
+    data:wdtLink wdt:Q2958306 ;
+    :alsoKnownAs "Charles-Philippe Marie Louis d'Orléans",
+        "Charles-Philippe d'Orléans, duc d'Anjou" ;
+    :hasFather data:Prince_Michel_dOrléans ;
+    :hasParent data:Prince_Michel_dOrléans ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Michel_dOrléans ;
+    :isSonOf data:Prince_Michel_dOrléans .
+
+data:Prince_Michel_dOrléans a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Michel d'Orléans" ;
+    data:posIndicesFull "537:560",
+        "544:560" ;
+    data:posIndicesPart "1029:1038",
+        "1155:1161",
+        "1449:1455",
+        "1462:1471",
+        "1568:1574",
+        "642:648",
+        "655:664",
+        "755:764",
+        "923:929" ;
+    data:wdtLink wdt:Q3311149 ;
+    :alsoKnownAs "Michel Joseph Benoît Marie d'Orléans",
+        "Michel d'Orléans" ;
+    :hasChild data:Prince_Charles-Philippe_dOrléans ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Charles-Philippe_dOrléans ;
+    :isFatherOf data:Prince_Charles-Philippe_dOrléans ;
+    :isParentOf data:Prince_Charles-Philippe_dOrléans .
+

@@ -1,0 +1,389 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Allegra_Hicks a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Allegra Hicks" ;
+    data:posIndicesFull "3079:3092",
+        "4225:4263" ;
+    data:posIndicesPart "3183:3188",
+        "3354:3359",
+        "3688:3693",
+        "3750:3755",
+        "3868:3873",
+        "4528:4533",
+        "4576:4581",
+        "4684:4691",
+        "4805:4812",
+        "4933:4938",
+        "5113:5118",
+        "5201:5206",
+        "5223:5228" ;
+    data:wdtLink wdt:Q75328043 ;
+    :alsoKnownAs "Allegra Marina Tondato",
+        "Allegra Mottola di Amato",
+        "Allegra Tondato",
+        "Marina Allegra Federica Silvia Hicks",
+        "Marina Allegra Federica Silvia Mottola di Amato",
+        "Marina Allegra Federica Silvia Tondato" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Nicholas_Knatchbull_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Nicholas Knatchbull" ;
+    data:posIndicesFull "1874:1893" ;
+    data:wdtLink wdt:Q75383948 ;
+    :alsoKnownAs "Hon. Nicholas Knatchbull",
+        "Hon. Nicholas Timothy Charles Knatchbull",
+        "Nicholas Timothy Charles Knatchbull" ;
+    :hasSex data:male .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
+    data:posIndicesFull "1316:1336" ;
+    data:posIndicesPart "1456:1462",
+        "1463:1474",
+        "1691:1702" ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten",
+        "Dame Edwina Cynthia Annette Mountbatten",
+        "Edwina Cynthia Annette Ashley",
+        "Edwina Cynthia Annette Mountbatten",
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma",
+        "Lady Mountbatten of Burma" ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks .
+
+data:Louise_Mountbatten a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "1386:1403",
+        "365:382" ;
+    data:posIndicesPart "1463:1474",
+        "1691:1702",
+        "393:404" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "2163:2168",
+        "2513:2519",
+        "2574:2578",
+        "301:305",
+        "3517:3521",
+        "3602:3608",
+        "4167:4171",
+        "421:425",
+        "4459:4464" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten ;
+    :isAuntOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "David Nightingale Hicks" ;
+    data:posIndicesFull "13:24",
+        "172:195",
+        "2981:2992",
+        "451:462" ;
+    data:posIndicesPart "1033:1038",
+        "1119:1124",
+        "1274:1279",
+        "1405:1410",
+        "1628:1633",
+        "1819:1824",
+        "197:202",
+        "2115:2120",
+        "2292:2297",
+        "2470:2475",
+        "2661:2666",
+        "2746:2751",
+        "3047:3052",
+        "3183:3188",
+        "3354:3359",
+        "340:345",
+        "3688:3693",
+        "3750:3755",
+        "3868:3873",
+        "4193:4198",
+        "4528:4533",
+        "4576:4581",
+        "4933:4938",
+        "5113:5118",
+        "5201:5206",
+        "5223:5228",
+        "575:580",
+        "774:779",
+        "936:941" ;
+    data:wdtLink wdt:Q5238032 ;
+    :alsoKnownAs "David Hicks" ;
+    :hasChild data:Ashley_Hicks,
+        data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasSex data:male ;
+    :hasSon data:Ashley_Hicks ;
+    :isFatherOf data:Ashley_Hicks,
+        data:India_Hicks ;
+    :isParentOf data:Ashley_Hicks,
+        data:India_Hicks .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1381:1403",
+        "1386:1403",
+        "365:382" ;
+    data:posIndicesPart "1307:1311",
+        "1340:1345",
+        "1463:1474",
+        "1691:1702",
+        "388:392",
+        "393:404",
+        "408:413" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Ashley_Hicks a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ashley Hicks" ;
+    data:posIndicesFull "0:24",
+        "2996:3008",
+        "438:462" ;
+    data:posIndicesPart "1033:1038",
+        "1119:1124",
+        "1274:1279",
+        "1405:1410",
+        "1628:1633",
+        "1819:1824",
+        "197:202",
+        "2115:2120",
+        "2292:2297",
+        "2470:2475",
+        "2661:2666",
+        "2746:2751",
+        "3047:3052",
+        "3183:3188",
+        "3354:3359",
+        "340:345",
+        "3688:3693",
+        "3750:3755",
+        "3868:3873",
+        "4193:4198",
+        "4528:4533",
+        "4576:4581",
+        "4933:4938",
+        "5113:5118",
+        "5201:5206",
+        "5223:5228",
+        "774:779",
+        "936:941" ;
+    data:wdtLink wdt:Q16195113 ;
+    :alsoKnownAs "Ashley Louis David Hicks" ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:male ;
+    :hasSister data:India_Hicks ;
+    :isBrotherOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:India_Hicks ;
+    :isSonOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "India Hicks" ;
+    data:posIndicesFull "675:686" ;
+    data:posIndicesPart "1033:1038",
+        "1119:1124",
+        "1274:1279",
+        "1405:1410",
+        "1628:1633",
+        "1819:1824",
+        "2075:2080",
+        "2115:2120",
+        "2292:2297",
+        "2470:2475",
+        "2531:2536",
+        "2661:2666",
+        "2689:2694",
+        "2746:2751",
+        "2900:2905",
+        "3047:3052",
+        "3183:3188",
+        "3354:3359",
+        "3688:3693",
+        "3750:3755",
+        "3868:3873",
+        "4193:4198",
+        "4528:4533",
+        "4576:4581",
+        "4933:4938",
+        "5113:5118",
+        "5201:5206",
+        "5223:5228",
+        "774:779",
+        "936:941" ;
+    data:wdtLink wdt:Q1936171 ;
+    :alsoKnownAs "India Amanda Caroline Hicks" ;
+    :hasBrother data:Ashley_Hicks ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Ashley_Hicks ;
+    :isSisterOf data:Ashley_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Pamela Hicks" ;
+    data:posIndicesFull "132:149",
+        "585:602" ;
+    data:posIndicesPart "1033:1038",
+        "1119:1124",
+        "1274:1279",
+        "1405:1410",
+        "1451:1455",
+        "1628:1633",
+        "1819:1824",
+        "197:202",
+        "2115:2120",
+        "2292:2297",
+        "2470:2475",
+        "2661:2666",
+        "2746:2751",
+        "2900:2905",
+        "3047:3052",
+        "3183:3188",
+        "3354:3359",
+        "340:345",
+        "3688:3693",
+        "3750:3755",
+        "3868:3873",
+        "4193:4198",
+        "4528:4533",
+        "4576:4581",
+        "4933:4938",
+        "5113:5118",
+        "5201:5206",
+        "5223:5228",
+        "774:779",
+        "936:941" ;
+    data:wdtLink wdt:Q3268202 ;
+    :alsoKnownAs "Lady Pamela Carmen Louise Hicks",
+        "Lady Pamela Carmen Louise Mountbatten",
+        "Lady Pamela Mountbatten",
+        "Pamela Carmen Louise Hicks",
+        "Pamela Carmen Louise Mountbatten",
+        "Pamela Mountbatten" ;
+    :hasChild data:Ashley_Hicks,
+        data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSon data:Ashley_Hicks ;
+    :isAuntOf data:Nicholas_Knatchbull_1 ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isMotherOf data:Ashley_Hicks,
+        data:India_Hicks ;
+    :isParentOf data:Ashley_Hicks,
+        data:India_Hicks .
+

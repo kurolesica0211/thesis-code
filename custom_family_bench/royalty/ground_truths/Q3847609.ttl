@@ -1,0 +1,167 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Irakli Bagration of Mukhrani" ;
+    data:posIndicesFull "1331:1359",
+        "170:198" ;
+    data:posIndicesPart "1580:1586" ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli",
+        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ferdinand of Bavaria" ;
+    data:posIndicesFull "220:247",
+        "572:599" ;
+    data:posIndicesPart "1002:1008",
+        "1021:1028",
+        "1059:1065",
+        "1324:1330" ;
+    data:wdtLink wdt:Q2537215 ;
+    :alsoKnownAs "Ferdinand Maria Ludwig Franz von Assisi Isabellus Adalbert Ildefons Martin Bonifaz Joseph Isidro",
+        "Ferdinand von Bayern",
+        "Ferran Maria de Baviera",
+        "Infante Ferdinand of Bavaria and Bourbon, Prince of Bavaria",
+        "Infante don Fernando María de Baviera y de Borbón",
+        "Prince Ferdinand Maria of Bavaria" ;
+    :hasChild data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasDaughter data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasSex data:male ;
+    :isFatherOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isParentOf data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:posIndicesFull "1460:1492" ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona" ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :isChildOf data:Alfonso_XIII ;
+    :isSonOf data:Alfonso_XIII .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XII of Spain" ;
+    data:posIndicesFull "382:393" ;
+    data:posIndicesPart "1144:1151",
+        "487:492",
+        "628:633",
+        "704:709",
+        "851:856",
+        "965:970" ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII" ;
+    :hasChild data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :hasDaughter data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :isParentOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Maria de las Mercedes of Spain" ;
+    data:wdtLink wdt:Q3847609 ;
+    :alsoKnownAs "Dona Maria de las Mercedes de Baviera y de Borbon, Infanta d'España" ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria ;
+    :hasMother data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :hasParent data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :hasSex data:female ;
+    :isChildOf data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :isDaughterOf data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "382:393",
+        "407:419",
+        "747:759" ;
+    data:posIndicesPart "1144:1151" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasChild data:Infante_Juan-_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasParent data:Alfonso_XII_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :isChildOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Maria_Teresa_Isabel_of_Spain ;
+    :isSonOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Infanta_Maria_Teresa_Isabel_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
+    data:posIndicesFull "332:344",
+        "612:624" ;
+    data:posIndicesPart "1286:1293",
+        "704:709",
+        "851:856",
+        "899:905",
+        "938:945",
+        "965:970" ;
+    data:wdtLink wdt:Q255389 ;
+    :alsoKnownAs "Maria Teresa",
+        "Maria Teresa de Borbón y Habsburgo, Infanta de España" ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasDaughter data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasParent data:Alfonso_XII_of_Spain ;
+    :hasSex data:female ;
+    :isAuntOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XII_of_Spain ;
+    :isDaughterOf data:Alfonso_XII_of_Spain ;
+    :isMotherOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isParentOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isSisterOf data:Alfonso_XIII .
+

@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
+    data:posIndicesFull "160:209" ;
+    data:posIndicesPart "291:302",
+        "360:366",
+        "641:652" ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
+        "George Ivar Louis Mountbatten, Earl of Medina",
+        "George Mountbatten, Earl of Medina" ;
+    :hasChild data:Tatiana_Mountbatten ;
+    :hasDaughter data:Tatiana_Mountbatten ;
+    :hasSex data:male ;
+    :isFatherOf data:Tatiana_Mountbatten ;
+    :isParentOf data:Tatiana_Mountbatten .
+
+data:Tatiana_Mountbatten a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Tatiana Mountbatten" ;
+    data:posIndicesFull "111:130" ;
+    data:posIndicesPart "291:302",
+        "641:652",
+        "679:686",
+        "881:888",
+        "961:968" ;
+    data:wdtLink wdt:Q58301908 ;
+    :alsoKnownAs "Lady Tatiana Helen Georgia Mountbatten",
+        "Tatiana Helen Georgia Mountbatten" ;
+    :hasFather data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasParent data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasSex data:female ;
+    :isChildOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isDaughterOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven .
+

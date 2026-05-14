@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_III-_German_Emperor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick III, German Emperor" ;
+    data:posIndicesFull "253:282" ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany",
+        "Friedrich III",
+        "Friedrich III of Germany",
+        "Friedrich Wilhelm Nikolaus Karl",
+        "King Frederick III of Prussia",
+        "Kronprinz Friedrich Wilhelm" ;
+    :hasChild data:Prince_Henry_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia ;
+    :isFatherOf data:Prince_Henry_of_Prussia ;
+    :isParentOf data:Prince_Henry_of_Prussia .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of Hesse and by Rhine" ;
+    data:posIndicesFull "194:230" ;
+    data:posIndicesPart "1207:1215",
+        "1387:1395",
+        "986:994",
+        "995:1000" ;
+    data:wdtLink wdt:Q233990 ;
+    :alsoKnownAs "Princess Irene Luise Marie Anne of Hesse and by Rhine" ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isMotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:posIndicesFull "166:189" ;
+    data:posIndicesPart "1093:1099",
+        "1291:1297",
+        "1320:1326",
+        "1457:1463",
+        "1516:1522",
+        "349:355",
+        "497:503",
+        "533:539",
+        "571:577",
+        "581:588",
+        "661:667",
+        "707:713",
+        "769:775",
+        "907:912" ;
+    data:wdtLink wdt:Q57569 ;
+    :alsoKnownAs "Albert Wilhelm Heinrich",
+        "Heinrich Prinz von Preußen",
+        "Prince Albert William Henry of Prussia" ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasParent data:Frederick_III-_German_Emperor ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isChildOf data:Frederick_III-_German_Emperor ;
+    :isFatherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 ;
+    :isSonOf data:Frederick_III-_German_Emperor .
+
+data:Prince_Henry_of_Prussia_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:posIndicesFull "0:46",
+        "166:189" ;
+    data:posIndicesPart "1093:1099",
+        "1291:1297",
+        "1320:1326",
+        "1457:1463",
+        "1516:1522",
+        "349:355",
+        "497:503",
+        "533:539",
+        "571:577",
+        "581:588",
+        "661:667",
+        "707:713",
+        "769:775",
+        "907:912" ;
+    data:wdtLink wdt:Q7902792 ;
+    :alsoKnownAs "Heinrich Viktor Ludwig Friedrich Prinz von Preußen",
+        "Prince Heinrich of Prussia",
+        "Prince Henry Victor Louis Frederick of Prussia" ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+

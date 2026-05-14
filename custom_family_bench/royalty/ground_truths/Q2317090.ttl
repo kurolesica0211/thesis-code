@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Count_Henrik_of_Monpezat a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Count Henrik of Monpezat" ;
+    data:posIndicesFull "1164:1188",
+        "1164:1207",
+        "1399:1423",
+        "21:45",
+        "52:76",
+        "561:586" ;
+    data:posIndicesPart "852:857" ;
+    data:wdtLink wdt:Q2317090 ;
+    :alsoKnownAs "Count Henrik Carl Joachim Alain of Monpezat",
+        "Henrik Carl Joachim Alain",
+        "Henrik Carl Joachim Alain of Monpezat",
+        "Henrik Carl Joachim Alain, Prince of Denmark",
+        "Prince Henrik Carl Joachim Alain of Denmark",
+        "Prince Henrik Carl Joachim Alain of Denmark, Count of Monpezat",
+        "Prince Henrik of Denmark",
+        "Prince Henrik of Denmark, Count of Monpezat" ;
+    :hasSex data:male .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "1021:1027",
+        "1129:1135",
+        "1164:1188",
+        "1171:1177",
+        "1405:1411",
+        "27:33",
+        "284:290",
+        "324:330",
+        "400:406",
+        "52:76",
+        "561:567",
+        "59:65",
+        "858:864" ;
+    data:posIndicesPart "1300:1306",
+        "1433:1439",
+        "166:172",
+        "640:647" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasSex data:male .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "1256:1268",
+        "260:272",
+        "6:18" ;
+    data:posIndicesPart "428:435",
+        "640:647" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

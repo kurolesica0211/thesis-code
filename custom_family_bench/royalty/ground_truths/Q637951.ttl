@@ -1,0 +1,149 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Christina of the Netherlands" ;
+    data:posIndicesFull "540:554",
+        "760:774" ;
+    data:wdtLink wdt:Q435324 ;
+    :alsoKnownAs "Christina of the Netherlands",
+        "Christina van Lippe-Biesterfeld",
+        "Christina van Oranje",
+        "Maria Christina of the Netherlands",
+        "Maria Christina van Oranje-Nassau",
+        "Princess Maria Christina of the Netherlands",
+        "Princess Marijke" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "1173:1193",
+        "1173:1229" ;
+    data:posIndicesPart "1385:1394" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasSex data:male .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "290:310",
+        "290:346" ;
+    data:posIndicesPart "1287:1296",
+        "1385:1394",
+        "466:475",
+        "833:842" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Augusta Reuss of Köstritz" ;
+    data:posIndicesFull "366:400" ;
+    data:wdtLink wdt:Q63095 ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasSex data:female ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin .
+
+data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marie of Windisch-Graetz" ;
+    data:posIndicesFull "540:573" ;
+    data:wdtLink wdt:Q2071733 ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :hasSex data:female ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isMotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "0:34" ;
+    data:posIndicesPart "1022:1026",
+        "1027:1031",
+        "1277:1281",
+        "1282:1286",
+        "1375:1379",
+        "1380:1384",
+        "211:215",
+        "216:220",
+        "456:460",
+        "461:465",
+        "487:495",
+        "653:664",
+        "665:673",
+        "823:827",
+        "828:832",
+        "894:905",
+        "906:914" ;
+    data:wdtLink wdt:Q2754379 ;
+    :alsoKnownAs "Duke Paul Frederick of Mecklenburg" ;
+    :hasFather data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+    :hasParent data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:male ;
+    :isChildOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isSonOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin" ;
+    data:wdtLink wdt:Q637951 ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isFatherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isUncleOf data:Frederick_Francis_IV .
+

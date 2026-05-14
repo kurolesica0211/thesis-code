@@ -1,0 +1,1041 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Edward_Langtry a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Edward Langtry" ;
+    data:posIndicesFull "10788:10802",
+        "10962:10976",
+        "12741:12755",
+        "13146:13160",
+        "2126:2140",
+        "24754:24768" ;
+    data:posIndicesPart "10060:10067",
+        "10276:10283",
+        "10353:10360",
+        "11197:11204",
+        "11545:11552",
+        "11786:11793",
+        "13224:13230",
+        "14276:14283",
+        "14420:14427",
+        "15110:15116",
+        "15278:15284",
+        "15358:15365",
+        "15370:15376",
+        "15613:15619",
+        "15766:15772",
+        "16247:16253",
+        "16856:16863",
+        "16948:16955",
+        "17104:17111",
+        "17219:17226",
+        "17544:17551",
+        "17726:17733",
+        "17820:17827",
+        "18090:18097",
+        "18421:18428",
+        "18545:18552",
+        "18736:18743",
+        "18927:18934",
+        "18987:18994",
+        "19213:19220",
+        "19276:19283",
+        "19364:19371",
+        "19458:19465",
+        "19693:19700",
+        "19839:19846",
+        "19951:19958",
+        "20063:20070",
+        "20163:20170",
+        "20424:20431",
+        "20529:20536",
+        "20554:20560",
+        "20696:20703",
+        "20809:20816",
+        "20960:20967",
+        "21003:21010",
+        "21595:21602",
+        "2209:2216",
+        "2344:2350",
+        "24125:24132",
+        "24172:24179",
+        "2431:2438",
+        "24338:24345",
+        "24490:24497",
+        "24625:24632",
+        "24701:24707",
+        "24863:24869",
+        "25031:25038",
+        "25113:25120",
+        "25262:25269",
+        "25379:25386",
+        "25589:25596",
+        "25720:25727",
+        "25789:25796",
+        "25852:25859",
+        "25969:25976",
+        "26071:26078",
+        "26166:26173",
+        "26264:26271",
+        "27184:27191",
+        "28422:28429",
+        "28840:28846",
+        "2904:2911",
+        "29400:29407",
+        "29656:29663",
+        "29935:29942",
+        "30235:30242",
+        "30244:30251",
+        "30406:30413",
+        "30629:30636",
+        "30662:30668",
+        "30682:30689",
+        "30916:30923",
+        "31042:31049",
+        "31455:31462",
+        "31624:31631",
+        "31743:31750",
+        "31877:31884",
+        "32208:32214",
+        "32364:32371",
+        "32569:32576",
+        "3258:3265",
+        "32711:32718",
+        "32778:32785",
+        "3289:3296",
+        "33182:33189",
+        "33240:33247",
+        "33842:33849",
+        "33941:33948",
+        "34235:34242",
+        "34397:34404",
+        "34489:34496",
+        "34627:34634",
+        "34810:34817",
+        "34919:34926",
+        "34952:34959",
+        "35354:35361",
+        "35482:35489",
+        "35527:35534",
+        "3998:4005",
+        "4027:4034",
+        "4339:4345",
+        "4386:4392",
+        "4686:4693",
+        "4804:4811",
+        "5040:5047",
+        "6071:6077",
+        "6156:6163",
+        "7123:7130",
+        "7356:7363",
+        "7531:7538",
+        "7713:7720",
+        "7868:7875",
+        "8125:8132",
+        "8350:8356",
+        "8443:8449",
+        "8607:8614",
+        "8954:8960",
+        "8980:8987",
+        "9087:9094",
+        "9229:9236",
+        "9424:9431",
+        "9584:9591",
+        "9782:9789",
+        "9865:9872" ;
+    data:wdtLink wdt:Q63196804 ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasSex data:male ;
+    :isFatherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry .
+
+data:Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Ian Malcolm" ;
+    data:posIndicesFull "14819:14830" ;
+    data:posIndicesPart "15626:15633",
+        "15848:15855",
+        "16705:16712",
+        "16755:16762",
+        "29184:29187",
+        "29189:29196",
+        "29282:29285",
+        "29287:29294" ;
+    data:wdtLink wdt:Q3147302 ;
+    :alsoKnownAs "Ian Zachary Malcolm",
+        "Sir Ian Zachary Malcolm",
+        "Sir Ian Zachary Malcolm, 17th of Poltalloch" ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasSex data:male ;
+    :isFatherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lillie Langtry" ;
+    data:posIndicesFull "10492:10505",
+        "10596:10610",
+        "12277:12291",
+        "15259:15273",
+        "15691:15705",
+        "156:167",
+        "16614:16628",
+        "18238:18249",
+        "21335:21349",
+        "21425:21439",
+        "21743:21757",
+        "21819:21833",
+        "22320:22331",
+        "22727:22741",
+        "23114:23125",
+        "23225:23239",
+        "23393:23404",
+        "23426:23439",
+        "23564:23578",
+        "23850:23864",
+        "26340:26354",
+        "26419:26433",
+        "26596:26610",
+        "26726:26740",
+        "27340:27352",
+        "27428:27440",
+        "27572:27586",
+        "27670:27681",
+        "28031:28043",
+        "28158:28169",
+        "28681:28695",
+        "29033:29045",
+        "29053:29064",
+        "31271:31285",
+        "31294:31308",
+        "31836:31850",
+        "31957:31968",
+        "32128:32142",
+        "32219:32233",
+        "32982:32996",
+        "33112:33123",
+        "33451:33464",
+        "33580:33594",
+        "33695:33709",
+        "3379:3389",
+        "35003:35017",
+        "35210:35224",
+        "3868:3879",
+        "3890:3901",
+        "3983:3994",
+        "4565:4579",
+        "4904:4915",
+        "4922:4934",
+        "5988:6000",
+        "6425:6437",
+        "6746:6758",
+        "6880:6892",
+        "6997:7009",
+        "705:719",
+        "8454:8468",
+        "8882:8896" ;
+    data:posIndicesPart "10060:10067",
+        "10276:10283",
+        "11056:11062",
+        "11089:11095",
+        "11197:11204",
+        "11545:11552",
+        "1155:1162",
+        "11786:11793",
+        "11893:11899",
+        "12373:12379",
+        "12597:12603",
+        "12685:12691",
+        "1288:1294",
+        "13001:13007",
+        "13333:13339",
+        "13445:13451",
+        "13793:13799",
+        "13861:13867",
+        "14276:14283",
+        "1440:1446",
+        "14420:14427",
+        "15358:15365",
+        "1575:1581",
+        "1635:1641",
+        "16856:16863",
+        "16948:16955",
+        "17104:17111",
+        "1714:1720",
+        "17219:17226",
+        "17544:17551",
+        "17726:17733",
+        "17820:17827",
+        "18090:18097",
+        "18421:18428",
+        "18545:18552",
+        "18736:18743",
+        "18927:18934",
+        "18987:18994",
+        "19213:19220",
+        "19276:19283",
+        "1934:1940",
+        "19364:19371",
+        "19458:19465",
+        "19693:19700",
+        "19839:19846",
+        "19951:19958",
+        "20063:20070",
+        "2010:2016",
+        "20163:20170",
+        "20424:20431",
+        "20529:20536",
+        "20696:20703",
+        "20809:20816",
+        "20960:20967",
+        "2099:2105",
+        "21003:21010",
+        "21595:21602",
+        "21801:21807",
+        "2209:2216",
+        "22184:22190",
+        "22219:22225",
+        "22825:22831",
+        "2307:2313",
+        "232:239",
+        "2333:2339",
+        "23931:23937",
+        "24125:24132",
+        "24172:24179",
+        "2431:2438",
+        "24338:24345",
+        "24490:24497",
+        "24625:24632",
+        "2492:2498",
+        "25031:25038",
+        "25113:25120",
+        "25262:25269",
+        "25379:25386",
+        "25589:25596",
+        "25720:25727",
+        "25789:25796",
+        "25852:25859",
+        "25969:25976",
+        "26071:26078",
+        "26166:26173",
+        "26264:26271",
+        "2633:2639",
+        "27184:27191",
+        "28422:28429",
+        "2904:2911",
+        "29400:29407",
+        "29656:29663",
+        "29935:29942",
+        "30235:30242",
+        "30244:30251",
+        "30406:30413",
+        "30482:30488",
+        "30629:30636",
+        "30682:30689",
+        "30916:30923",
+        "31042:31049",
+        "31455:31462",
+        "31624:31631",
+        "31743:31750",
+        "32364:32371",
+        "32569:32576",
+        "3258:3265",
+        "32711:32718",
+        "32778:32785",
+        "33842:33849",
+        "33941:33948",
+        "34235:34242",
+        "34397:34404",
+        "34489:34496",
+        "34627:34634",
+        "34810:34817",
+        "35354:35361",
+        "35482:35489",
+        "35527:35534",
+        "3559:3565",
+        "3677:3683",
+        "4262:4268",
+        "4538:4544",
+        "4686:4693",
+        "4804:4811",
+        "5040:5047",
+        "5254:5260",
+        "5438:5444",
+        "5616:5622",
+        "6156:6163",
+        "638:645",
+        "7123:7130",
+        "7356:7363",
+        "7531:7538",
+        "7713:7720",
+        "7868:7875",
+        "810:817",
+        "8125:8132",
+        "8486:8492",
+        "8607:8614",
+        "8980:8987",
+        "9087:9094",
+        "9229:9236",
+        "940:947",
+        "9424:9431",
+        "9584:9591",
+        "9782:9789",
+        "9865:9872" ;
+    data:wdtLink wdt:Q297743 ;
+    :alsoKnownAs "Emilie Charlotte Langtry",
+        "Emilie Charlotte Le Breton",
+        "Emilie Charlotte Le Breton De Bathe",
+        "Emilie Charlotte Le Breton Langtry",
+        "Emily Charlotte le Breton",
+        "Jersey Lilly",
+        "Jersey Lily",
+        "Lilly Langtry",
+        "Lily Langtry",
+        "Mrs. Langtry" ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasSex data:female ;
+    :isMotherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "26542:26548",
+        "27088:27094",
+        "2868:2876",
+        "5707:5714",
+        "9514:9522" ;
+    data:posIndicesPart "14464:14475",
+        "16035:16046" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasBrother data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBrotherOf data:Anne-_Princess_Royal,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Anne-_Princess_Royal,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Anne-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Anne, Princess Royal" ;
+    data:posIndicesFull "10100:10114",
+        "10104:10114",
+        "10433:10447",
+        "10437:10447",
+        "14685:14695",
+        "27232:27246",
+        "27236:27246" ;
+    data:posIndicesPart "10337:10342",
+        "11714:11719",
+        "20126:20131",
+        "34709:34714",
+        "35096:35104" ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor",
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom",
+        "Anne Mountbatten-Windsor",
+        "Princess Anne",
+        "Princess Anne Elizabeth Alice Louise of Edinburgh",
+        "Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "Princess Anne of Edinburgh",
+        "Princess Anne, Princess Royal",
+        "Princess Anne, The Princess Royal",
+        "The Princess Anne",
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal",
+        "The Princess Anne, Princess Royal" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isDaughterOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor,
+        data:Prince_Edward-_Duke_of_Edinburgh .
+
+data:Prince_Edward-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Edward, Duke of Edinburgh" ;
+    data:posIndicesFull "9645:9658" ;
+    data:posIndicesPart "10619:10625",
+        "10681:10687",
+        "10734:10740",
+        "10884:10890",
+        "10990:10996",
+        "11115:11121",
+        "11436:11442",
+        "11474:11480",
+        "11943:11949",
+        "12113:12119",
+        "12144:12150",
+        "12898:12904",
+        "12915:12921",
+        "13012:13018",
+        "13094:13100",
+        "13224:13230",
+        "13408:13414",
+        "13579:13585",
+        "13615:13621",
+        "14440:14446",
+        "15110:15116",
+        "15278:15284",
+        "15370:15376",
+        "15613:15619",
+        "15743:15749",
+        "15766:15772",
+        "16247:16253",
+        "16264:16270",
+        "16528:16532",
+        "16536:16545",
+        "17400:17406",
+        "20554:20560",
+        "21201:21207",
+        "23672:23678",
+        "24701:24707",
+        "24863:24869",
+        "25305:25311",
+        "28840:28846",
+        "30662:30668",
+        "32057:32063",
+        "32208:32214",
+        "33602:33608",
+        "33984:33990",
+        "34296:34302" ;
+    data:wdtLink wdt:Q154920 ;
+    :alsoKnownAs "Edward Antony Richard Louis",
+        "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex",
+        "Edward Mountbatten-Windsor",
+        "Prince Edward",
+        "Prince Edward Antony Richard Louis of the United Kingdom",
+        "Prince Edward of the United Kingdom",
+        "The Prince Edward Antony Richard Louis of the United Kingdom",
+        "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar",
+        "The Prince Edward of the United Kingdom",
+        "The Prince Edward, Earl of Wessex and Forfar" ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal ;
+    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Mary_Malcolm a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Mary Malcolm" ;
+    data:posIndicesFull "14902:14914",
+        "15067:15079",
+        "15195:15207",
+        "16161:16173",
+        "29340:29352" ;
+    data:posIndicesPart "15626:15633",
+        "15848:15855",
+        "16705:16712",
+        "16755:16762",
+        "16798:16802",
+        "29189:29196",
+        "29287:29294" ;
+    data:wdtLink wdt:Q16018831 ;
+    :alsoKnownAs "Helen Mary Malcolm" ;
+    :hasFather data:Ian_Malcolm ;
+    :hasMother data:Jeanne_Marie_Langtry ;
+    :hasParent data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :hasSex data:female ;
+    :isChildOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isDaughterOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1127:1153",
+        "12316:12342",
+        "12817:12843",
+        "14110:14131",
+        "14114:14131",
+        "15443:15469",
+        "15956:15982",
+        "16125:16142",
+        "16357:16383" ;
+    data:posIndicesPart "12922:12927",
+        "13019:13024",
+        "13666:13671",
+        "13698:13703",
+        "14005:14010",
+        "14218:14223",
+        "14447:14452",
+        "14459:14463",
+        "14464:14475",
+        "14479:14484",
+        "29492:29497",
+        "6095:6099" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Louise_Mountbatten a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "1127:1153",
+        "1134:1153",
+        "12316:12342",
+        "12323:12342",
+        "12817:12843",
+        "12824:12843",
+        "14114:14131",
+        "15443:15469",
+        "15450:15469",
+        "15956:15982",
+        "15963:15982",
+        "16125:16142",
+        "16357:16383",
+        "16364:16383" ;
+    data:posIndicesPart "14464:14475" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice_of_Battenberg .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Louis of Battenberg" ;
+    data:posIndicesFull "1127:1153",
+        "1134:1153",
+        "12316:12342",
+        "12323:12342",
+        "12817:12843",
+        "12824:12843",
+        "15443:15469",
+        "15450:15469",
+        "15956:15982",
+        "15963:15982",
+        "16357:16383",
+        "16364:16383" ;
+    data:posIndicesPart "10619:10625",
+        "10681:10687",
+        "10734:10740",
+        "10884:10890",
+        "10990:10996",
+        "11115:11121",
+        "11436:11442",
+        "11474:11480",
+        "11943:11949",
+        "12113:12119",
+        "12144:12150",
+        "12898:12904",
+        "12915:12921",
+        "12922:12927",
+        "13012:13018",
+        "13019:13024",
+        "13094:13100",
+        "13408:13414",
+        "13579:13585",
+        "13615:13621",
+        "13666:13671",
+        "13672:13682",
+        "13698:13703",
+        "13882:13892",
+        "14005:14010",
+        "14218:14223",
+        "14224:14234",
+        "14440:14446",
+        "14447:14452",
+        "15743:15749",
+        "16264:16270",
+        "17400:17406",
+        "21201:21207",
+        "23672:23678",
+        "25305:25311",
+        "29492:29497",
+        "32057:32063",
+        "33602:33608",
+        "33984:33990",
+        "34296:34302",
+        "3657:3663",
+        "6048:6054",
+        "7225:7231",
+        "8174:8180",
+        "8358:8364",
+        "8646:8652",
+        "8699:8705",
+        "9456:9462" ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg",
+        "Count Louis of Battenberg",
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven",
+        "Louis Alexander of Battenberg",
+        "Louis Milford Haven",
+        "Louis Mountbatten, 1st Marquess of Milford Haven",
+        "Louis of Battenberg",
+        "Prince Louis Alexander of Battenberg",
+        "Sir Louis Alexander Mountbatten",
+        "Sir Louis Mountbatten" ;
+    :hasChild data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1256:1260",
+        "13922:13926",
+        "18019:18023",
+        "19785:19790",
+        "2054:2058",
+        "20767:20772",
+        "21980:21984",
+        "22135:22141",
+        "2249:2254",
+        "2284:2289",
+        "23041:23045",
+        "24934:24940",
+        "25405:25410",
+        "2598:2603",
+        "26115:26119",
+        "2666:2671",
+        "27829:27833",
+        "28395:28400",
+        "28629:28633",
+        "29472:29476",
+        "30356:30360",
+        "32338:32343",
+        "32538:32543",
+        "32651:32656",
+        "3309:3313",
+        "34852:34857",
+        "4764:4768",
+        "535:539",
+        "553:557",
+        "6516:6520",
+        "7561:7565" ;
+    data:posIndicesPart "10115:10123",
+        "13672:13682",
+        "13882:13892",
+        "14224:14234",
+        "27247:27255",
+        "35096:35104" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAuntOf data:Mary_Malcolm ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten ;
+    :isSisterOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "15486:15499",
+        "16455:16473" ;
+    data:posIndicesPart "15743:15749",
+        "16264:16270",
+        "17400:17406",
+        "21201:21207",
+        "23672:23678",
+        "25305:25311",
+        "32057:32063",
+        "32819:32825",
+        "33602:33608",
+        "33984:33990",
+        "34296:34302" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Princess_Alice_of_Battenberg .
+
+data:Jeanne_Marie_Langtry a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Jeanne Marie Langtry" ;
+    data:posIndicesFull "14762:14782",
+        "15545:15565",
+        "25478:25498" ;
+    data:posIndicesPart "14862:14868",
+        "14869:14874",
+        "15225:15231",
+        "15232:15237",
+        "15358:15365",
+        "15790:15796",
+        "15797:15802",
+        "16282:16288",
+        "16289:16294",
+        "16665:16671",
+        "16672:16677",
+        "16856:16863",
+        "16948:16955",
+        "17104:17111",
+        "17219:17226",
+        "17544:17551",
+        "17726:17733",
+        "17820:17827",
+        "18090:18097",
+        "18421:18428",
+        "18545:18552",
+        "18736:18743",
+        "18927:18934",
+        "18987:18994",
+        "19213:19220",
+        "19276:19283",
+        "19364:19371",
+        "19418:19423",
+        "19458:19465",
+        "19693:19700",
+        "19839:19846",
+        "19951:19958",
+        "20063:20070",
+        "20163:20170",
+        "20424:20431",
+        "20529:20536",
+        "20696:20703",
+        "20809:20816",
+        "20960:20967",
+        "21003:21010",
+        "21595:21602",
+        "24125:24132",
+        "24172:24179",
+        "24338:24345",
+        "24490:24497",
+        "24625:24632",
+        "25031:25038",
+        "25113:25120",
+        "25262:25269",
+        "25589:25596",
+        "25720:25727",
+        "25789:25796",
+        "25852:25859",
+        "25969:25976",
+        "26047:26052",
+        "26071:26078",
+        "26166:26173",
+        "26264:26271",
+        "27184:27191",
+        "28422:28429",
+        "29400:29407",
+        "29656:29663",
+        "29935:29942",
+        "30235:30242",
+        "30244:30251",
+        "30406:30413",
+        "30629:30636",
+        "30682:30689",
+        "30916:30923",
+        "31042:31049",
+        "31455:31462",
+        "31624:31631",
+        "31743:31750",
+        "31877:31884",
+        "32364:32371",
+        "32569:32576",
+        "32711:32718",
+        "32778:32785",
+        "33182:33189",
+        "33240:33247",
+        "33842:33849",
+        "33941:33948",
+        "34235:34242",
+        "34397:34404",
+        "34489:34496",
+        "34627:34634",
+        "34810:34817",
+        "34919:34926",
+        "34952:34959",
+        "35354:35361",
+        "35482:35489",
+        "35527:35534" ;
+    data:wdtLink wdt:Q84795732 ;
+    :alsoKnownAs "Jeanne Langtry",
+        "Jeanne Marie Malcolm" ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasFather data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Lillie_Langtry ;
+    :hasParent data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+

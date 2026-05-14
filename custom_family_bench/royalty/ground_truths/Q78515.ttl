@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Baroness_Francesca_Thyssen-Bornemisza a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Baroness Francesca Thyssen-Bornemisza" ;
+    data:posIndicesFull "4184:4221",
+        "4193:4221" ;
+    data:posIndicesPart "4604:4612",
+        "4814:4823" ;
+    data:wdtLink wdt:Q1276954 ;
+    :alsoKnownAs "Baroness Francesca von Thyssen-Bornemisza",
+        "Francesca Thyssen-Bornemisza",
+        "Francesca von Habsburg",
+        "Franziska Baronin von Thyssen-Bornemisza" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Karl von Habsburg" ;
+    data:posIndicesFull "0:17",
+        "4993:5010",
+        "5300:5317",
+        "6085:6102",
+        "6142:6159" ;
+    data:posIndicesPart "1144:1148",
+        "1304:1312",
+        "1610:1614",
+        "1615:1623",
+        "1804:1812",
+        "1932:1936",
+        "1937:1945",
+        "2103:2111",
+        "2154:2158",
+        "2184:2192",
+        "2203:2207",
+        "2275:2283",
+        "2546:2550",
+        "2551:2559",
+        "2774:2778",
+        "2779:2787",
+        "2913:2921",
+        "300:304",
+        "305:313",
+        "3187:3195",
+        "326:330",
+        "3308:3316",
+        "3505:3513",
+        "3913:3921",
+        "3991:3999",
+        "4479:4483",
+        "4518:4526",
+        "463:467",
+        "468:476",
+        "4805:4809",
+        "4882:4886",
+        "4961:4969",
+        "5102:5106",
+        "5107:5115",
+        "5552:5560",
+        "568:572",
+        "573:581",
+        "5770:5774",
+        "5775:5783",
+        "6034:6042",
+        "734:738",
+        "739:747",
+        "848:852",
+        "875:879",
+        "949:957",
+        "987:991" ;
+    data:wdtLink wdt:Q78515 ;
+    :alsoKnownAs "Karl Thomas Erzherzog von Österreich" ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "1002:1019",
+        "345:362" ;
+    data:posIndicesPart "1304:1312",
+        "1615:1623",
+        "1804:1812",
+        "1937:1945",
+        "2103:2111",
+        "2184:2192",
+        "2275:2283",
+        "2551:2559",
+        "2779:2787",
+        "2913:2921",
+        "3187:3195",
+        "3308:3316",
+        "3505:3513",
+        "3913:3921",
+        "3991:3999",
+        "4518:4526",
+        "468:476",
+        "4961:4969",
+        "5107:5115",
+        "5552:5560",
+        "573:581",
+        "5775:5783",
+        "6034:6042",
+        "739:747" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg .
+

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Hilmar_Bussche-Haddenhausen a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Hilmar Bussche-Haddenhausen" ;
+    data:posIndicesFull "0:44" ;
+    data:posIndicesPart "1179:1186",
+        "1187:1199",
+        "132:138",
+        "1354:1361",
+        "1362:1374",
+        "1573:1580",
+        "1581:1593",
+        "1671:1678",
+        "1679:1691",
+        "1946:1953",
+        "1954:1966",
+        "215:222",
+        "346:353",
+        "354:366",
+        "463:470",
+        "471:483",
+        "526:533",
+        "534:546",
+        "666:673",
+        "674:686",
+        "769:776",
+        "777:789",
+        "872:879",
+        "880:892" ;
+    data:wdtLink wdt:Q1618862 ;
+    :alsoKnownAs "Hilmar Freiherr von dem Bussche-Haddenhausen" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+

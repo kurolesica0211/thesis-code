@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "2001:2005",
+        "2591:2595",
+        "2928:2932",
+        "2996:3000",
+        "3568:3573",
+        "375:379",
+        "650:654" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female ;
+    :isAuntOf data:Lady_Pamela_Hicks .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "David Nightingale Hicks" ;
+    data:posIndicesFull "789:812" ;
+    data:posIndicesPart "1045:1050",
+        "1084:1089",
+        "1202:1207",
+        "1395:1400",
+        "1544:1549",
+        "1717:1722",
+        "1812:1817",
+        "1864:1869",
+        "2081:2086",
+        "2225:2230",
+        "2461:2466",
+        "2618:2623",
+        "2769:2774",
+        "2874:2879",
+        "3002:3007",
+        "3024:3029",
+        "3224:3229",
+        "3278:3283",
+        "3423:3428",
+        "3495:3500",
+        "3648:3653",
+        "3698:3703" ;
+    data:wdtLink wdt:Q5238032 ;
+    :alsoKnownAs "David Hicks" ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasSex data:male ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
+    data:posIndicesFull "961:981" ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten",
+        "Dame Edwina Cynthia Annette Mountbatten",
+        "Edwina Cynthia Annette Ashley",
+        "Edwina Cynthia Annette Mountbatten",
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma",
+        "Lady Mountbatten of Burma" ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "India Hicks" ;
+    data:posIndicesFull "0:27",
+        "2358:2369",
+        "2388:2399",
+        "2812:2823",
+        "2960:2971",
+        "3526:3537",
+        "656:683" ;
+    data:posIndicesPart "1045:1050",
+        "1084:1089",
+        "1202:1207",
+        "1395:1400",
+        "1537:1542",
+        "1544:1549",
+        "1717:1722",
+        "1812:1817",
+        "184:189",
+        "1864:1869",
+        "2081:2086",
+        "2225:2230",
+        "2461:2466",
+        "2618:2623",
+        "3002:3007",
+        "3268:3273",
+        "3423:3428",
+        "3648:3653",
+        "3698:3703",
+        "3907:3912",
+        "394:399",
+        "733:738" ;
+    data:wdtLink wdt:Q1936171 ;
+    :alsoKnownAs "India Amanda Caroline Hicks" ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Pamela Hicks" ;
+    data:posIndicesFull "524:541",
+        "761:784",
+        "766:784" ;
+    data:posIndicesPart "1045:1050",
+        "1084:1089",
+        "1202:1207",
+        "1342:1346",
+        "1395:1400",
+        "1544:1549",
+        "1717:1722",
+        "1812:1817",
+        "1864:1869",
+        "2081:2086",
+        "2225:2230",
+        "2461:2466",
+        "2618:2623",
+        "2769:2774",
+        "2874:2879",
+        "3002:3007",
+        "3106:3110",
+        "3423:3428",
+        "3495:3500",
+        "3648:3653",
+        "3698:3703",
+        "831:835" ;
+    data:wdtLink wdt:Q3268202 ;
+    :alsoKnownAs "Lady Pamela Carmen Louise Hicks",
+        "Lady Pamela Carmen Louise Mountbatten",
+        "Lady Pamela Mountbatten",
+        "Pamela Carmen Louise Hicks",
+        "Pamela Carmen Louise Mountbatten",
+        "Pamela Mountbatten" ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks .
+

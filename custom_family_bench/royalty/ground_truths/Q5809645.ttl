@@ -1,0 +1,336 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Hugo de Bourbon de Parme" ;
+    data:posIndicesFull "522:533" ;
+    data:posIndicesPart "1074:1080",
+        "1337:1344",
+        "1508:1514",
+        "1872:1878",
+        "2112:2118",
+        "2329:2335",
+        "2389:2396",
+        "2990:2996",
+        "3223:3230",
+        "3234:3239",
+        "3241:3247",
+        "3251:3258",
+        "3611:3617",
+        "3664:3670",
+        "581:588",
+        "978:984" ;
+    data:wdtLink wdt:Q75317573 ;
+    :alsoKnownAs "Carlos Hugo",
+        "Carlos Hugo Roderik Sybren",
+        "Carlos Hugo Roderik Sybren Klynstra",
+        "Carlos Hugo Roderik Sybren de Bourbon de Parme",
+        "Carlos Hugo de Bourbon de Parme",
+        "Hugo Klynstra",
+        "Hugo Klynstra de Bourbon de Parme",
+        "Hugo de Bourbon de Parme",
+        "Prince Carlos Hugo Roderik Sybren de Bourbon de Parme" ;
+    :hasFather data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :hasParent data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :hasSex data:male ;
+    :isChildOf data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :isSonOf data:Prince_Carlos-_Hereditary_Duke_of_Parma .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "2173:2194",
+        "3473:3494" ;
+    data:posIndicesPart "2281:2292",
+        "3625:3636" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Beatrix_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "1490:1503",
+        "1496:1503",
+        "3433:3446",
+        "3439:3446" ;
+    data:posIndicesPart "1615:1626",
+        "1677:1688",
+        "2083:2094",
+        "2281:2292",
+        "3625:3636" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:female ;
+    :isMotherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:posIndicesFull "1258:1294",
+        "1265:1294" ;
+    data:posIndicesPart "1508:1514",
+        "1515:1523",
+        "1872:1878",
+        "2112:2118",
+        "2329:2335",
+        "2990:2996",
+        "3241:3247",
+        "3611:3617",
+        "3664:3670" ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe-Biesterfeld",
+        "Bernhard, Prince Consort of the Netherlands",
+        "Prince Bernhard of the Netherlands",
+        "Prince Bernhard, Prince Consort of the Netherlands",
+        "Z.K.H. Prins Bernhard" ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isFatherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands .
+
+data:Prince_Carlos_Hugo-_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Carlos Hugo, Duke of Parma" ;
+    data:posIndicesFull "522:548" ;
+    data:posIndicesPart "1074:1080",
+        "1345:1350",
+        "1508:1514",
+        "1872:1878",
+        "2112:2118",
+        "2329:2335",
+        "2397:2402",
+        "2771:2775",
+        "2779:2784",
+        "2870:2876",
+        "2990:2996",
+        "3241:3247",
+        "3259:3264",
+        "3611:3617",
+        "3664:3670",
+        "589:594",
+        "978:984" ;
+    data:wdtLink wdt:Q537914 ;
+    :alsoKnownAs "Carlos Hugo, Duke of Parma",
+        "Carlos Hugo, Duke of Parma and Piacenza" ;
+    :hasChild data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isFatherOf data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isParentOf data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi .
+
+data:Prince_Jaime-_Count_of_Bardi a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Jaime, Count of Bardi" ;
+    data:wdtLink wdt:Q5809645 ;
+    :alsoKnownAs "H.R.H. Prince Jaime de Bourbon de Parme",
+        "Jaime Bernando Prins de Bourbon de Parme Principe di Parma",
+        "Jaime de Bourbon de Parme" ;
+    :hasBrother data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :hasFather data:Prince_Carlos_Hugo-_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :isChildOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Carlos-_Hereditary_Duke_of_Parma ;
+    :isSonOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isUncleOf data:Prince_Hugo_de_Bourbon_de_Parme .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "3170:3183" ;
+    data:posIndicesPart "3625:3636" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene_of_the_Netherlands ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isAuntOf data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isMotherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Princess_Irene_of_the_Netherlands ;
+    :isSisterOf data:Princess_Irene_of_the_Netherlands .
+
+data:Prince_Carlos-_Hereditary_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Carlos, Hereditary Duke of Parma" ;
+    data:posIndicesFull "1008:1029",
+        "2823:2844" ;
+    data:posIndicesPart "1074:1080",
+        "1345:1350",
+        "1508:1514",
+        "1872:1878",
+        "2112:2118",
+        "2329:2335",
+        "2397:2402",
+        "2990:2996",
+        "3241:3247",
+        "3259:3264",
+        "3611:3617",
+        "3664:3670" ;
+    data:wdtLink wdt:Q510259 ;
+    :alsoKnownAs "Carlos V, Duke of Parma and Piacenza",
+        "Carlos Xavier Prins de Bourbon de Parme",
+        "Carlos de Bourbon de Parme",
+        "Carlos, Duke of Parma",
+        "Prince Carlos de Bourbon de Parme, Duke of Parma and Piacenza" ;
+    :hasBrother data:Prince_Jaime-_Count_of_Bardi ;
+    :hasChild data:Prince_Hugo_de_Bourbon_de_Parme ;
+    :hasFather data:Prince_Carlos_Hugo-_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Hugo_de_Bourbon_de_Parme ;
+    :isBrotherOf data:Prince_Jaime-_Count_of_Bardi ;
+    :isChildOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isFatherOf data:Prince_Hugo_de_Bourbon_de_Parme ;
+    :isParentOf data:Prince_Hugo_de_Bourbon_de_Parme ;
+    :isSiblingOf data:Prince_Jaime-_Count_of_Bardi ;
+    :isSonOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of the Netherlands" ;
+    data:posIndicesFull "484:517",
+        "493:517" ;
+    data:posIndicesPart "1055:1063",
+        "1315:1323",
+        "1615:1626",
+        "1677:1688",
+        "2083:2094",
+        "2281:2292",
+        "2504:2509",
+        "2567:2575",
+        "3625:3636",
+        "3739:3747",
+        "3748:3753",
+        "808:819",
+        "861:872",
+        "896:904" ;
+    data:wdtLink wdt:Q263623 ;
+    :alsoKnownAs "Irene Emma Elisabeth of the Netherlands",
+        "Irene Emma Elisabeth van Oranje-Nassau",
+        "Irene of the Netherlands",
+        "Irene van Oranje",
+        "Princess Irene Emma Elisabeth of the Netherlands" ;
+    :hasChild data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :hasSon data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isAuntOf data:William_Alexander_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isParentOf data:Prince_Carlos-_Hereditary_Duke_of_Parma,
+        data:Prince_Jaime-_Count_of_Bardi ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+

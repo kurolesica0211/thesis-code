@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Philipp Albrecht, Duke of Württemberg" ;
+    data:posIndicesFull "436:473",
+        "757:794" ;
+    data:posIndicesPart "952:959",
+        "960:968" ;
+    data:wdtLink wdt:Q62965 ;
+    :alsoKnownAs "Duke Philipp Albrecht of Württemberg, Duke of Württemberg",
+        "Duke Philipp Albrecht, The Duke of Württemberg" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:posIndicesFull "675:722" ;
+    data:posIndicesPart "865:876" ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
+    :hasChild data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasDaughter data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasSex data:female ;
+    :isMotherOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isParentOf data:Duchess_Rosa-_Duchess_of_Württemberg .
+
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Rosa, Duchess of Württemberg" ;
+    data:wdtLink wdt:Q84971 ;
+    :alsoKnownAs "Archduchess Rosa of Austria",
+        "Archduchess Rosa of Austria, Princess of Tuscany",
+        "Duchess Rosa, The Duchess of Württemberg" ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSex data:female ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isDaughterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+

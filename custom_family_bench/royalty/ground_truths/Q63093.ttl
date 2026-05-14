@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Waldemar_of_Prussia_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Waldemar of Prussia" ;
+    data:posIndicesFull "1444:1470" ;
+    data:wdtLink wdt:Q3026877 ;
+    :alsoKnownAs "Joachim Friedrich Ernst Waldemar Prinz von Preußen",
+        "Prince Joachim Friedrich Ernst Waldemar of Prussia",
+        "Waldemar Prinz von Preßen" ;
+    :hasBrother data:Prince_Henry_of_Prussia ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Henry_of_Prussia ;
+    :isSiblingOf data:Prince_Henry_of_Prussia ;
+    :isUncleOf data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Irene of Hesse and by Rhine" ;
+    data:posIndicesFull "224:260" ;
+    data:posIndicesPart "300:308",
+        "536:541",
+        "549:554" ;
+    data:wdtLink wdt:Q233990 ;
+    :alsoKnownAs "Princess Irene Luise Marie Anne of Hesse and by Rhine" ;
+    :hasChild data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :isMotherOf data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :isParentOf data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:posIndicesFull "196:219" ;
+    data:posIndicesPart "1000:1006",
+        "516:522",
+        "577:582" ;
+    data:wdtLink wdt:Q57569 ;
+    :alsoKnownAs "Albert Wilhelm Heinrich",
+        "Heinrich Prinz von Preußen",
+        "Prince Albert William Henry of Prussia" ;
+    :hasBrother data:Prince_Waldemar_of_Prussia_1 ;
+    :hasChild data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :isBrotherOf data:Prince_Waldemar_of_Prussia_1 ;
+    :isFatherOf data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :isParentOf data:Prince_Henry_of_Prussia_1,
+        data:Prince_Waldemar_of_Prussia ;
+    :isSiblingOf data:Prince_Waldemar_of_Prussia_1 .
+
+data:Prince_Henry_of_Prussia_1 a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Henry of Prussia" ;
+    data:posIndicesFull "196:219" ;
+    data:posIndicesPart "1000:1006",
+        "516:522",
+        "577:582" ;
+    data:wdtLink wdt:Q7902792 ;
+    :alsoKnownAs "Heinrich Viktor Ludwig Friedrich Prinz von Preußen",
+        "Prince Heinrich of Prussia",
+        "Prince Henry Victor Louis Frederick of Prussia" ;
+    :hasBrother data:Prince_Waldemar_of_Prussia ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Waldemar_of_Prussia ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Waldemar_of_Prussia ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+
+data:Prince_Waldemar_of_Prussia a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Waldemar of Prussia" ;
+    data:posIndicesFull "0:57",
+        "1444:1470" ;
+    data:posIndicesPart "283:291",
+        "419:427",
+        "516:522",
+        "693:701",
+        "900:908",
+        "937:945" ;
+    data:wdtLink wdt:Q63093 ;
+    :alsoKnownAs "Prince Waldemar William Louis Frederick Victor of Prussia",
+        "Waldemar Prinz von Preußen",
+        "Waldemar Wilhelm Ludwig Friedrich Viktor Heinrich Prinz von Preußen" ;
+    :hasBrother data:Prince_Henry_of_Prussia_1 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :isBrotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Henry_of_Prussia_1 ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+

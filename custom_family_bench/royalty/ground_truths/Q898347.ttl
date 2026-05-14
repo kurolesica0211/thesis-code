@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1572:1595",
+        "1577:1585",
+        "1577:1595" ;
+    data:posIndicesPart "2046:2052",
+        "2829:2835" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Nina_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Nina Georgievna of Russia" ;
+    data:posIndicesFull "0:34",
+        "9:34" ;
+    data:posIndicesPart "1015:1019",
+        "1201:1207",
+        "1294:1304",
+        "1308:1314",
+        "1458:1464",
+        "1466:1470",
+        "1544:1548",
+        "1714:1718",
+        "1880:1884",
+        "2007:2011",
+        "2138:2148",
+        "2161:2167",
+        "2307:2313",
+        "2375:2379",
+        "244:250",
+        "2504:2508",
+        "2593:2597",
+        "2957:2963",
+        "3259:3263",
+        "3349:3353",
+        "3631:3637",
+        "3648:3652",
+        "568:572",
+        "986:992" ;
+    data:wdtLink wdt:Q898347 ;
+    :alsoKnownAs "Nina Chavchavadze",
+        "Nina Georgievna Chavchavadze",
+        "Princess Nina Georgievna of Russia" ;
+    :hasChild data:David_Chavchavadze ;
+    :hasSex data:female ;
+    :hasSon data:David_Chavchavadze ;
+    :isMotherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze .
+
+data:Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Paul Chavchavadze" ;
+    data:posIndicesFull "423:440" ;
+    data:posIndicesPart "2613:2617",
+        "2632:2644",
+        "2688:2692",
+        "2721:2733",
+        "3047:3051" ;
+    data:wdtLink wdt:Q16028068 ;
+    :alsoKnownAs "Paule Chavchavadze",
+        "Pavel Aleksandrovich Tchavchavadze, Prince Tchavchavadze" ;
+    :hasChild data:David_Chavchavadze ;
+    :hasSex data:male ;
+    :hasSon data:David_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "David Chavchavadze" ;
+    data:posIndicesFull "3190:3215",
+        "3197:3215",
+        "3464:3489",
+        "3471:3489",
+        "504:529",
+        "511:529",
+        "683:708",
+        "690:708" ;
+    data:posIndicesPart "2632:2644",
+        "2721:2733" ;
+    data:wdtLink wdt:Q2621015 ;
+    :alsoKnownAs "David Tchavchavadze, Prince Tchavchavadze",
+        "Prince David Chavchavadze" ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasMother data:Nina_Georgievna_of_Russia ;
+    :hasParent data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :isChildOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :isSonOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze .
+

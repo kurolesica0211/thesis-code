@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Sophie_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Sophie of Württemberg" ;
+    data:posIndicesFull "221:242" ;
+    data:posIndicesPart "1410:1416",
+        "347:353",
+        "565:571",
+        "767:773" ;
+    data:wdtLink wdt:Q168674 ;
+    :alsoKnownAs "Princess Sophie of Württemberg",
+        "Queen Sophie of the Netherlands",
+        "Queen Sophie, Queen Consort of the Netherlands",
+        "Sofia Federica di Württemberg",
+        "Sophie, Queen Consort of the Netherlands" ;
+    :hasChild data:Prince_Maurice_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Maurice_of_the_Netherlands ;
+    :isMotherOf data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Maurice_of_the_Netherlands .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William III of the Netherlands" ;
+    data:posIndicesFull "1549:1560",
+        "165:200",
+        "170:181",
+        "170:200",
+        "331:342",
+        "641:652",
+        "688:699",
+        "968:979" ;
+    data:posIndicesPart "1081:1088",
+        "1749:1760",
+        "455:462" ;
+    data:wdtLink wdt:Q125649 ;
+    :alsoKnownAs "King William III of the Netherlands",
+        "Prince William of Orange",
+        "Willem III",
+        "Willem III der Nederlanden",
+        "Willem III of the Netherlands",
+        "William III",
+        "Z.M. den Koning" ;
+    :hasChild data:Prince_Maurice_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Maurice_of_the_Netherlands ;
+    :isFatherOf data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Maurice_of_the_Netherlands .
+
+data:Prince_Maurice_of_the_Netherlands a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Maurice of the Netherlands" ;
+    data:posIndicesFull "0:33",
+        "7:33" ;
+    data:posIndicesPart "1115:1122",
+        "1198:1204",
+        "1205:1212",
+        "1497:1503",
+        "1504:1511",
+        "1607:1613",
+        "1735:1741",
+        "1749:1760",
+        "1788:1794",
+        "266:273",
+        "818:824",
+        "825:832" ;
+    data:wdtLink wdt:Q2735203 ;
+    :alsoKnownAs "Maurice of the Netherlands",
+        "Maurits of the Netherlands",
+        "Maurits van Oranje-Nassau",
+        "Prince Maurits of the Netherlands" ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_Württemberg ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isChildOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :isSonOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands .
+

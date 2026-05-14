@@ -1,0 +1,236 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Duchess_Diane-_Duchess_of_Württemberg a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Diane, Duchess of Württemberg" ;
+    data:posIndicesFull "4861:4876" ;
+    data:posIndicesPart "5428:5435",
+        "5685:5690",
+        "5692:5699" ;
+    data:wdtLink wdt:Q451724 ;
+    :alsoKnownAs "Crown Princess Diane of Württemberg",
+        "Diane Françoise Marie d'Orléans",
+        "Diane Françoise Marie d'Orléans von Württemberg",
+        "Diane Françoise Marie von Württemberg",
+        "Diane d'Orléans",
+        "Diane d'Orléans von Württemberg",
+        "Diane von Württemberg",
+        "Diane, Crown Princess of Württemberg",
+        "Duchess Diane, Dowager Duchess of Württemberg",
+        "Duchess Diane, The Dowager Duchess of Württemberg",
+        "Duchess Diane, The Duchess of Württemberg",
+        "Princess Diane Françoise Marie d'Orléans",
+        "Princess Diane d'Orléans" ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Françoise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Françoise of Orléans" ;
+    data:posIndicesFull "5943:5972",
+        "5952:5972" ;
+    data:posIndicesPart "6249:6257",
+        "6310:6318",
+        "6406:6414",
+        "6490:6498" ;
+    data:wdtLink wdt:Q577228 ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans",
+        "Françoise Isabelle Louise Marie of Orléans",
+        "Françoise of Guise",
+        "Françoise of Orléans",
+        "Princess Christopher of Greece and Denmark",
+        "Princess François d'Orléans",
+        "Princess Françoise Isabelle Louise Marie d'Orléans",
+        "Princess Françoise Isabelle Louise Marie of Orléans",
+        "Princess Françoise, Princess Christopher of Greece and Denmark" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans_1 ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSisterOf data:Princess_Isabelle_dOrléans_1 .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "1256:1274" ;
+    data:posIndicesPart "2036:2044",
+        "2374:2382",
+        "2636:2644",
+        "4562:4570",
+        "4672:4680",
+        "6249:6257",
+        "6310:6318",
+        "6406:6414",
+        "6421:6429",
+        "6490:6498" ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans",
+        "Isabelle d’Orléans",
+        "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Françoise_of_Orléans ;
+    :isSiblingOf data:Princess_Françoise_of_Orléans ;
+    :isSisterOf data:Princess_Françoise_of_Orléans .
+
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
+    data:posIndicesFull "2709:2741",
+        "474:505",
+        "774:806" ;
+    data:posIndicesPart "1296:1304",
+        "1305:1310",
+        "1538:1543",
+        "1736:1741",
+        "2036:2044",
+        "2045:2050",
+        "2144:2149",
+        "2374:2382",
+        "2794:2799",
+        "2804:2812",
+        "3032:3037",
+        "3294:3299",
+        "3310:3315",
+        "3489:3494",
+        "3684:3689",
+        "3912:3917",
+        "4083:4088",
+        "4562:4570",
+        "4672:4680",
+        "4681:4686",
+        "5126:5131",
+        "5188:5193",
+        "6006:6014",
+        "6067:6080",
+        "6146:6154",
+        "6179:6192",
+        "6231:6244",
+        "6249:6257",
+        "6310:6318",
+        "6406:6414",
+        "6415:6420",
+        "6490:6498",
+        "998:1006" ;
+    data:wdtLink wdt:Q7244738 ;
+    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Marie d'Orléans",
+        "Princess Gundakar of Liechtenstein",
+        "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Princess Marie d'Orléans",
+        "Princess Marie of Liechtenstein" ;
+    :hasMother data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :hasSex data:female ;
+    :isChildOf data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isDaughterOf data:Duchess_Marie_Thérèse_of_Württemberg .
+
+data:Duke_Carl-_Duke_of_Württemberg a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Duke Carl, Duke of Württemberg" ;
+    data:posIndicesFull "4804:4829" ;
+    data:posIndicesPart "5473:5477",
+        "5764:5768" ;
+    data:wdtLink wdt:Q62385 ;
+    :alsoKnownAs "Carl, Duke of Württemberg",
+        "Karl Maria Herzog von Württemberg" ;
+    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasParent data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isBrotherOf data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isChildOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isSiblingOf data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isSonOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isUncleOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Philipp Albrecht, Duke of Württemberg" ;
+    data:posIndicesFull "1214:1251" ;
+    data:posIndicesPart "3327:3338",
+        "5473:5477",
+        "5764:5768" ;
+    data:wdtLink wdt:Q62965 ;
+    :alsoKnownAs "Duke Philipp Albrecht of Württemberg, Duke of Württemberg",
+        "Duke Philipp Albrecht, The Duke of Württemberg" ;
+    :hasChild data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasDaughter data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Carl-_Duke_of_Württemberg ;
+    :isFatherOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isParentOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg .
+
+data:Duchess_Marie_Thérèse_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Duchess Marie Thérèse of Württemberg" ;
+    data:posIndicesFull "717:753" ;
+    data:posIndicesPart "1276:1283",
+        "1305:1310",
+        "1538:1543",
+        "1736:1741",
+        "2045:2050",
+        "2144:2149",
+        "2602:2607",
+        "2794:2799",
+        "2902:2909",
+        "3032:3037",
+        "3294:3299",
+        "3310:3315",
+        "3316:3323",
+        "3327:3338",
+        "3340:3347",
+        "3489:3494",
+        "3684:3689",
+        "3912:3917",
+        "3972:3979",
+        "4083:4088",
+        "4199:4206",
+        "4298:4305",
+        "4681:4686",
+        "5126:5131",
+        "5188:5193",
+        "5428:5435",
+        "5692:5699",
+        "6415:6420",
+        "6499:6506" ;
+    data:wdtLink wdt:Q3292297 ;
+    :alsoKnownAs "Maria Theresa Herzogin von Württemberg",
+        "Princess Maria Theresa of Wurttemberg" ;
+    :hasBrother data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasChild data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasParent data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:female ;
+    :isChildOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isDaughterOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isMotherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isParentOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Duke_Carl-_Duke_of_Württemberg ;
+    :isSisterOf data:Duke_Carl-_Duke_of_Württemberg .
+

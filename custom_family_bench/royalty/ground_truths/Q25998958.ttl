@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Granville_Leveson-Gower-_5th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Granville Leveson-Gower, 5th Earl Granville" ;
+    data:posIndicesFull "0:29" ;
+    data:posIndicesPart "1110:1114",
+        "1179:1188",
+        "1298:1307",
+        "351:355",
+        "441:448",
+        "653:660",
+        "742:746",
+        "747:756",
+        "782:791",
+        "810:817",
+        "885:894" ;
+    data:wdtLink wdt:Q25998958 ;
+    :alsoKnownAs "Granville James Leveson-Gower" ;
+    :hasFather data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasParent data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasSex data:male ;
+    :isChildOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isSonOf data:William_Leveson-Gower-_4th_Earl_Granville .
+
+data:William_Leveson-Gower-_4th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "William Leveson-Gower, 4th Earl Granville" ;
+    data:posIndicesFull "235:256",
+        "235:276" ;
+    data:posIndicesPart "1110:1114",
+        "1179:1188",
+        "1298:1307",
+        "351:355",
+        "441:448",
+        "653:660",
+        "742:746",
+        "747:756",
+        "782:791",
+        "810:817",
+        "885:894",
+        "990:997" ;
+    data:wdtLink wdt:Q1149075 ;
+    :alsoKnownAs "Hon. William Leveson-Gower",
+        "Hon. William Spencer Leveson-Gower",
+        "Vice-Adm. William Spencer Leveson-Gower",
+        "William Leveson-Gower",
+        "William Spencer Leveson-Gower" ;
+    :hasChild data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasSex data:male ;
+    :hasSon data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isFatherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isParentOf data:Granville_Leveson-Gower-_5th_Earl_Granville .
+

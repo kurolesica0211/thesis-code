@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Armin-_Prince_of_Lippe a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Armin, Prince of Lippe" ;
+    data:posIndicesFull "450:472" ;
+    data:posIndicesPart "505:511",
+        "663:668",
+        "723:729" ;
+    data:wdtLink wdt:Q73464 ;
+    :alsoKnownAs "Armin Prinz zur Lippe" ;
+    :hasChild data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :hasSex data:male ;
+    :hasSon data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isFatherOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isParentOf data:Stephan-_Hereditary_Prince_of_Lippe .
+
+data:Traute_Becker a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Traute Becker" ;
+    data:posIndicesFull "486:499" ;
+    data:wdtLink wdt:Q75374290 ;
+    :alsoKnownAs "Dr. Traute, Princess of Lippe",
+        "Traute Prinzessin zur Lippe",
+        "Traute, Princess of Lippe" ;
+    :hasChild data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :hasSex data:female ;
+    :hasSon data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isMotherOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isParentOf data:Stephan-_Hereditary_Prince_of_Lippe .
+
+data:Stephan-_Hereditary_Prince_of_Lippe a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Stephan, Hereditary Prince of Lippe" ;
+    data:posIndicesFull "26:72" ;
+    data:posIndicesPart "411:416",
+        "505:511",
+        "663:668",
+        "723:729",
+        "730:737" ;
+    data:wdtLink wdt:Q7608111 ;
+    :alsoKnownAs "Stephan Leopold Justus Richard Prinz zur Lippe" ;
+    :hasFather data:Armin-_Prince_of_Lippe ;
+    :hasMother data:Traute_Becker ;
+    :hasParent data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSex data:male ;
+    :isChildOf data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :isSonOf data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker .
+

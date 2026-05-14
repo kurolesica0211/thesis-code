@@ -1,0 +1,119 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Birgitte, Duchess of Gloucester" ;
+    data:posIndicesFull "219:250",
+        "433:464" ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen",
+        "Birgitte Eva van Deurs Henriksen" ;
+    :hasChild data:Lady_Rose_Windsor ;
+    :hasDaughter data:Lady_Rose_Windsor ;
+    :hasSex data:female ;
+    :isMotherOf data:Lady_Rose_Windsor ;
+    :isParentOf data:Lady_Rose_Windsor .
+
+data:George_Gilman a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "George Gilman" ;
+    data:posIndicesFull "1120:1133" ;
+    data:wdtLink wdt:Q75623574 ;
+    :alsoKnownAs "George Edward Gilman" ;
+    :hasChild data:Rufus_Gilman ;
+    :hasSex data:male ;
+    :hasSon data:Rufus_Gilman ;
+    :isFatherOf data:Rufus_Gilman ;
+    :isParentOf data:Rufus_Gilman .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Richard, Duke of Gloucester" ;
+    data:posIndicesFull "170:204",
+        "394:428" ;
+    data:posIndicesPart "490:496",
+        "706:712" ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
+        "Prince Richard Alexander Walter George, Duke of Gloucester",
+        "Prince Richard of Gloucester",
+        "Richard Alexander Walter George",
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
+        "Richard Gloucester",
+        "Richard Windsor" ;
+    :hasChild data:Lady_Rose_Windsor ;
+    :hasDaughter data:Lady_Rose_Windsor ;
+    :hasSex data:male ;
+    :isFatherOf data:Lady_Rose_Windsor ;
+    :isParentOf data:Lady_Rose_Windsor .
+
+data:Rufus_Gilman a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Rufus Gilman" ;
+    data:wdtLink wdt:Q76245057 ;
+    :alsoKnownAs "Rufus Frederick Montagu Gilman" ;
+    :hasFather data:George_Gilman ;
+    :hasMother data:Lady_Rose_Windsor ;
+    :hasParent data:George_Gilman,
+        data:Lady_Rose_Windsor ;
+    :hasSex data:male ;
+    :isChildOf data:George_Gilman,
+        data:Lady_Rose_Windsor ;
+    :isSonOf data:George_Gilman,
+        data:Lady_Rose_Windsor .
+
+data:Lady_Rose_Windsor a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Lady Rose Windsor" ;
+    data:posIndicesFull "0:41",
+        "278:315",
+        "5:41" ;
+    data:posIndicesPart "1055:1059",
+        "1181:1185",
+        "508:512",
+        "544:548",
+        "802:806" ;
+    data:wdtLink wdt:Q430785 ;
+    :alsoKnownAs "Lady Rose Gilman",
+        "Lady Rose Victoria Birgitte Louise Gilman",
+        "Lady Rose Victoria Birgitte Louise Windsor",
+        "Rose Gilman",
+        "Rose Victoria Birgitte Louise Gilman",
+        "Rose Victoria Birgitte Louise Windsor",
+        "Rose Windsor" ;
+    :hasChild data:Rufus_Gilman ;
+    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female ;
+    :hasSon data:Rufus_Gilman ;
+    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isDaughterOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isMotherOf data:Rufus_Gilman ;
+    :isParentOf data:Rufus_Gilman .
+

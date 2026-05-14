@@ -1,0 +1,188 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Maria-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria, Duchess of Calabria" ;
+    data:posIndicesFull "617:659" ;
+    data:posIndicesPart "1032:1040",
+        "1049:1054",
+        "1072:1080",
+        "1645:1650",
+        "2440:2448",
+        "2625:2633",
+        "2634:2639",
+        "2921:2929",
+        "3091:3096",
+        "3235:3240",
+        "3525:3533",
+        "907:915",
+        "916:921",
+        "946:954",
+        "955:960",
+        "999:1004" ;
+    data:wdtLink wdt:Q70768 ;
+    :alsoKnownAs "Princess Maria Ludwiga Theresia of Bavaria",
+        "Princess Maria Ludwiga Theresia, Duchess of Calabria",
+        "Princess Maria of Bavaria" ;
+    :hasChild data:Princess_Urraca_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Urraca_of_the_Two_Sicilies ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Urraca_of_the_Two_Sicilies ;
+    :isParentOf data:Princess_Urraca_of_the_Two_Sicilies .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "1232:1281" ;
+    data:posIndicesPart "1343:1346",
+        "1347:1355",
+        "1434:1437",
+        "1438:1446",
+        "1481:1488",
+        "1489:1492",
+        "1493:1501",
+        "1645:1650",
+        "1752:1759",
+        "1887:1894",
+        "1895:1898",
+        "1899:1907",
+        "2416:2423",
+        "2424:2427",
+        "2428:2436",
+        "2440:2448",
+        "2459:2466",
+        "2625:2633",
+        "2634:2639",
+        "2648:2655",
+        "2683:2690",
+        "2921:2929",
+        "3091:3096",
+        "3097:3107",
+        "3235:3240",
+        "3241:3251",
+        "3695:3698",
+        "3699:3707",
+        "3849:3852",
+        "3853:3861" ;
+    data:wdtLink wdt:Q255400 ;
+    :hasChild data:Prince_Ferdinand_Pius-_Duke_of_Calabria ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Ferdinand_Pius-_Duke_of_Calabria ;
+    :isMotherOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria ;
+    :isParentOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria .
+
+data:Prince_Ferdinand_Pius-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Ferdinand Pius, Duke of Calabria" ;
+    data:posIndicesFull "530:551" ;
+    data:posIndicesPart "1006:1010",
+        "1150:1156",
+        "1414:1423",
+        "1463:1469",
+        "2052:2058",
+        "2406:2412",
+        "2667:2673",
+        "2968:2974",
+        "3517:3521",
+        "3525:3533",
+        "673:682",
+        "683:687",
+        "983:989" ;
+    data:wdtLink wdt:Q2290508 ;
+    :alsoKnownAs "Ferdinand Prinz von Bourbon-Sizilien",
+        "Ferdinando Pio Maria",
+        "Prince Ferdinand Pius" ;
+    :hasChild data:Princess_Urraca_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Urraca_of_the_Two_Sicilies ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Princess_Urraca_of_the_Two_Sicilies ;
+    :isParentOf data:Princess_Urraca_of_the_Two_Sicilies ;
+    :isSonOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Urraca_of_the_Two_Sicilies a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Urraca of the Two Sicilies" ;
+    data:posIndicesFull "0:39",
+        "371:410" ;
+    data:posIndicesPart "1032:1040",
+        "1072:1080",
+        "1120:1126",
+        "1176:1179",
+        "1180:1188",
+        "1295:1301",
+        "1343:1346",
+        "1347:1355",
+        "1434:1437",
+        "1438:1446",
+        "1489:1492",
+        "1493:1501",
+        "1688:1694",
+        "1895:1898",
+        "1899:1907",
+        "1909:1915",
+        "2132:2138",
+        "2332:2338",
+        "2424:2427",
+        "2428:2436",
+        "2440:2448",
+        "2625:2633",
+        "2698:2704",
+        "2921:2929",
+        "295:298",
+        "299:307",
+        "3054:3060",
+        "314:322",
+        "3283:3289",
+        "3313:3319",
+        "334:337",
+        "338:346",
+        "3577:3583",
+        "3695:3698",
+        "3699:3707",
+        "3849:3852",
+        "3853:3861",
+        "3870:3876",
+        "563:566",
+        "567:575",
+        "725:728",
+        "729:737",
+        "796:799",
+        "800:808",
+        "845:851",
+        "907:915",
+        "946:954" ;
+    data:wdtLink wdt:Q4006506 ;
+    :alsoKnownAs "Princess Urraca of Bourbon-Two Sicilies" ;
+    :hasFather data:Prince_Ferdinand_Pius-_Duke_of_Calabria ;
+    :hasMother data:Princess_Maria-_Duchess_of_Calabria ;
+    :hasParent data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Princess_Maria-_Duchess_of_Calabria ;
+    :hasSex data:female ;
+    :isChildOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Princess_Maria-_Duchess_of_Calabria ;
+    :isDaughterOf data:Prince_Ferdinand_Pius-_Duke_of_Calabria,
+        data:Princess_Maria-_Duchess_of_Calabria .
+

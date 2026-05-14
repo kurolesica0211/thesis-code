@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "208:226" ;
+    data:posIndicesPart "485:493" ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans",
+        "Isabelle d’Orléans",
+        "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
+    :hasSex data:female .
+
+data:Princess_Louise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Louise of Orléans" ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans" ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Isabelle_dOrléans_1 ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess María Isabel of Orléans" ;
+    data:posIndicesFull "202:216" ;
+    data:posIndicesPart "462:467",
+        "485:493" ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans",
+        "Maria Isabella",
+        "Princess Maria Isabel of Orléans, Infanta of Spain",
+        "Princess Marie Isabelle of Orleans" ;
+    :hasChild data:Princess_Louise_of_Orléans ;
+    :hasDaughter data:Princess_Louise_of_Orléans ;
+    :hasSex data:female ;
+    :isMotherOf data:Princess_Louise_of_Orléans ;
+    :isParentOf data:Princess_Louise_of_Orléans .
+

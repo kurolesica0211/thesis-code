@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Eudes_de_Orléans_e_Bragança a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Eudes de Orléans e Bragança" ;
+    data:posIndicesFull "407:432" ;
+    data:posIndicesPart "516:523" ;
+    data:wdtLink wdt:Q7243973 ;
+    :alsoKnownAs "Dom Eudes de Orléans-Bragança e Wittelsbach",
+        "Eudes of Orleans-Braganza" ;
+    :hasChild data:Luiz_Philippe_of_Orléans-Braganza ;
+    :hasSex data:male ;
+    :hasSon data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isFatherOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isParentOf data:Luiz_Philippe_of_Orléans-Braganza .
+
+data:Luiz_Philippe_of_Orléans-Braganza a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Luiz Philippe of Orléans-Braganza" ;
+    data:posIndicesFull "0:33" ;
+    data:posIndicesPart "1069:1073",
+        "1074:1082",
+        "1154:1158",
+        "1159:1167",
+        "256:260",
+        "261:269",
+        "346:350",
+        "351:359",
+        "465:469",
+        "470:478",
+        "516:523",
+        "524:532",
+        "534:538",
+        "539:547",
+        "745:749",
+        "750:758",
+        "841:845",
+        "846:854",
+        "962:966",
+        "967:975" ;
+    data:wdtLink wdt:Q29474202 ;
+    :alsoKnownAs "Dom Luíz Felipe de Orléans-Bragança e de Moraes Barros",
+        "Prince Luiz Philippe of Orléans-Braganza" ;
+    :hasFather data:Eudes_de_Orléans_e_Bragança ;
+    :hasParent data:Eudes_de_Orléans_e_Bragança ;
+    :hasSex data:male ;
+    :isChildOf data:Eudes_de_Orléans_e_Bragança ;
+    :isSonOf data:Eudes_de_Orléans_e_Bragança .
+

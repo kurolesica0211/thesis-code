@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "19:30",
+        "19:39" ;
+    data:posIndicesPart "569:574" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSisterOf data:Constantine_II_of_Greece .
+
+data:Marie-Chantal-_Crown_Princess_of_Greece a :Ancestor,
+        :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
+    data:posIndicesFull "438:458" ;
+    data:posIndicesPart "524:529" ;
+    data:wdtLink wdt:Q243049 ;
+    :alsoKnownAs "Mari Santal",
+        "Mari Santal Miler",
+        "Maria of Greece",
+        "Marie Chantal",
+        "Marie-Chantal Miller",
+        "Marie-Chantel Miller" ;
+    :hasChild data:Prince_Achileas-Andreas_of_Denmark ;
+    :hasSex data:female ;
+    :hasSon data:Prince_Achileas-Andreas_of_Denmark ;
+    :isMotherOf data:Prince_Achileas-Andreas_of_Denmark ;
+    :isParentOf data:Prince_Achileas-Andreas_of_Denmark .
+
+data:Prince_Achileas-Andreas_of_Denmark a :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Prince Achileas-Andreas of Denmark" ;
+    data:posIndicesFull "1193:1204",
+        "245:256",
+        "78:123" ;
+    data:posIndicesPart "1045:1053",
+        "1054:1061",
+        "410:416",
+        "533:540",
+        "618:626",
+        "627:634",
+        "750:758",
+        "759:766",
+        "906:914",
+        "915:922" ;
+    data:wdtLink wdt:Q11282796 ;
+    :alsoKnownAs "Achi Miller",
+        "Achileas Andreas zu Schleswig-Holstein-Sonderburg-Glücksburg",
+        "Achileas-Andreas of Denmark",
+        "Prince Achileas Andreas of Denmark",
+        "Prince Achileas-Andreas of Greece and Denmark" ;
+    :hasMother data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :hasParent data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :hasSex data:male ;
+    :isChildOf data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :isSonOf data:Marie-Chantal-_Crown_Princess_of_Greece .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman,
+        owl:NamedIndividual ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:posIndicesFull "807:846",
+        "816:846" ;
+    data:wdtLink wdt:Q292274 ;
+    :alsoKnownAs "Theodora Greece",
+        "Theodora of Greece and Denmark",
+        "Theodora zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece and Denmark" ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasSex data:female ;
+    :isAuntOf data:Prince_Achileas-Andreas_of_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Constantine_II_of_Greece .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        owl:NamedIndividual ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "490:504",
+        "490:514" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasChild data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :isBrotherOf data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Sofía_of_Spain .
+
