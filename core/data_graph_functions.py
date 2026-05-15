@@ -69,7 +69,6 @@ def add_triple(data_graph: Graph, subject: str, relation: str, object: str) -> G
     subject = strip_ns(strip_uri(subject))
     subj_uri = create_safe_uri(data_graph, "data", subject)
     object = strip_ns(strip_uri(object))
-    #TODO: account for literals here
     obj_uri = create_safe_uri(data_graph, "data", object)
     rel_uri = create_safe_uri(data_graph, *relation.split(":"))
     

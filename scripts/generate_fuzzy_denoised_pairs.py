@@ -515,7 +515,7 @@ def process_text_row(
     nlp: spacy.language.Language,
     denoised_output_dir: Path,
     ground_truth_output_dir: Path,
-) -> tuple[Path, Path, int, int, int]:
+) -> tuple[Path | None, Path | None, int, int, int]:
     main_entity = entity_by_qid.get(text_row.item_qid)
     if main_entity is None:
         raise KeyError(f"Could not find ground-truth entity for {text_row.text_file.name} ({text_row.item_qid})")
@@ -591,6 +591,12 @@ def process_text_row(
 
         kept_sentence_records.append((sentence_text, spans, fallback_spans))
         selected_entities.update(sentence_entities)
+
+    if not selected_entities:
+        return None, None, 0, 0, total_original_sentence_count
+
+    selected_entities.add(main_entity)
+
     if first_sentence_text and (not kept_sentence_records or kept_sentence_records[0][0] != first_sentence_text):
         kept_sentence_records.insert(0, (first_sentence_text, [], []))
 
@@ -608,9 +614,6 @@ def process_text_row(
 
         for entity, start, end in fallback_spans:
             mentions_part[entity].add(f"{sentence_start + start}:{sentence_start + end}")
-
-    if selected_entities and main_entity not in selected_entities:
-        selected_entities.add(main_entity)
 
     output_text = "\n".join(sentence_text for sentence_text, _, _ in kept_sentence_records)
     output_text_path = denoised_output_dir / f"{text_row.item_qid}.txt"
