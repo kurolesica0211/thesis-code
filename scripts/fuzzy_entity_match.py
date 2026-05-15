@@ -308,7 +308,7 @@ def collect_candidate_entities(graph: Graph, start_entity: URIRef, max_depth: in
                 candidates[str(subj)] = depth
             frontier = next_frontier
 
-        return candidates
+    return candidates
 
 
 def tokenize_match_text(nlp: spacy.language.Language, text: str) -> list[str]:
@@ -559,6 +559,7 @@ def match_candidates(
 
     extracted_rows: list[dict[str, Any]] = []
     matched_count = 0
+    used_candidate_uris: set[str] = set()
 
     for extracted in extracted_entities:
         extracted_uri = str(extracted)
@@ -569,7 +570,7 @@ def match_candidates(
 
         best_row: dict[str, Any] | None = None
         best_score = -1.0
-
+        
         for match_id, _start, _end in matcher(extracted_doc):
             match_key = extracted_doc.vocab.strings[match_id]
             rows = candidate_rows.get(match_key)
@@ -577,6 +578,8 @@ def match_candidates(
                 continue
 
             for row in rows:
+                if row["uri"] in used_candidate_uris:
+                    continue
                 candidate_gender = row.get("gender")
                 if not gender_compatible(extracted_gender, candidate_gender):
                     continue
@@ -591,6 +594,8 @@ def match_candidates(
         if not hard_match:
             for rows in candidate_rows.values():
                 for row in rows:
+                    if row["uri"] in used_candidate_uris:
+                        continue
                     candidate_gender = row.get("gender")
                     if not gender_compatible(extracted_gender, candidate_gender):
                         continue
@@ -603,6 +608,14 @@ def match_candidates(
         soft_match = best_row is not None and best_score >= threshold
 
         matched = hard_match or soft_match
+        
+        if "Marriage" in extracted_text or "marriage" in extracted_text:
+            best_score = 0
+            matched = False
+
+        if matched and best_row is not None:
+            used_candidate_uris.add(best_row["uri"])
+            
         if matched:
             matched_count += 1
 
