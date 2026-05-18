@@ -290,11 +290,13 @@ def main() -> None:
 
     smis_values = [m["smis"] for m in per_run_metrics]
     avai_values = [m["avai"] for m in per_run_metrics]
+    inconsistent_abox_count = sum(1 for m in per_run_metrics if m["smis"] > 0)
 
     summary = {
         "num_runs_discovered": len(run_dirs),
         "num_runs_processed": len(per_run_metrics),
         "num_runs_failed": len(failed_runs),
+        "num_inconsistent_aboxes": inconsistent_abox_count,
         "smis": summarize(smis_values),
         "avai": summarize(avai_values),
         "failed_runs": failed_runs,
@@ -313,6 +315,7 @@ def main() -> None:
     plot_paths = write_plots(output_dir, per_run_metrics)
 
     print(f"Processed {len(per_run_metrics)} runs (failed: {len(failed_runs)}).")
+    print(f"Inconsistent ABoxes: {inconsistent_abox_count}/{len(per_run_metrics)}")
     print(f"Per-run metrics: {csv_path}")
     print(f"Summary: {summary_path}")
     if plot_paths:
