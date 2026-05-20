@@ -1,0 +1,161 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/168_168",
+  "text_file": "Q240580.txt",
+  "text_key": "Q240580",
+  "article": "https://en.wikipedia.org/wiki/Infanta_Pilar,_Duchess_of_Badajoz",
+  "article_key": "Infanta Pilar, Duchess of Badajoz",
+  "main_entity": {
+    "uri": "http://example.com/data#Infanta_Pilar-_Duchess_of_Badajoz",
+    "qid": "Q240580",
+    "label": "Infanta Pilar, Duchess of Badajoz"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Infanta_Pilar-_Duchess_of_Badajoz",
+      "qid": "Q240580",
+      "label": "Infanta Pilar, Duchess of Badajoz",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Felipe_VI_of_Spain",
+      "qid": "Q191045",
+      "label": "Felipe VI of Spain",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
+      "qid": "Q313857",
+      "label": "Infante Juan, Count of Barcelona",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "qid": "Q19943",
+      "label": "Juan Carlos I of Spain",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Sofía_of_Spain",
+      "qid": "Q847010",
+      "label": "Infanta Sofía of Spain",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Sofía_of_Spain",
+      "qid": "Q156548",
+      "label": "Queen Sofía of Spain",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
+      "extracted_local_name": "Juan_Carlos_I",
+      "embedding_text": "Juan Carlos I",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
+      "ground_truth_qid": "Q19943",
+      "ground_truth_label": "Juan Carlos I of Spain",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Bruno_Alejandro_Gomez_Acebo_Borbon",
+      "extracted_local_name": "Bruno_Alejandro_Gomez_Acebo_Borbon",
+      "embedding_text": "Bruno Alejandro Gomez Acebo Borbon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Don Alfonso de Borbon y Habsburgo",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.44776119402985076
+    },
+    {
+      "extracted_uri": "http://example.org/data/Infanta_Pilar",
+      "extracted_local_name": "Infanta_Pilar",
+      "embedding_text": "Infanta Pilar",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofía de Borbón y Ortiz, infanta de España",
+      "best_candidate_label": "Infanta Sofía of Spain",
+      "best_candidate_qid": "Q847010",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.36363636363636365
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_de_Borbon_y_Battenberg",
+      "extracted_local_name": "Juan_de_Borbon_y_Battenberg",
+      "embedding_text": "Juan de Borbon y Battenberg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Juan of Barcelona",
+      "best_candidate_label": "Infante Juan, Count of Barcelona",
+      "best_candidate_qid": "Q313857",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4230769230769231
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_de_las_Mercedes_de_Borbon_y_Orleans",
+      "extracted_local_name": "Maria_de_las_Mercedes_de_Borbon_y_Orleans",
+      "embedding_text": "Maria de las Mercedes de Borbon y Orleans",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Sofia",
+      "best_candidate_label": "Infanta Sofía of Spain",
+      "best_candidate_qid": "Q847010",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2909090909090909
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

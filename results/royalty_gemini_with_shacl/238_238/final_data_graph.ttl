@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,
+        :Woman ;
+    :hasAncestor data:King_Juan_Carlos_I ;
+    :hasBirthYear 2005 ;
+    :hasRelation data:Juan_Urquijo ;
+    :isChildOf data:Inaki_Urdangarin,
+        data:Infanta_Cristina .
+
+data:Inaki_Urdangarin a :Ancestor,
+        :Man,
+        :Person .
+
+data:Infanta_Cristina a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Juan_Urquijo a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Teresa_Duchess_of_Salerno .
+
+data:King_Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Teresa_Duchess_of_Salerno a :Ancestor,
+        :Person,
+        :Woman .
+

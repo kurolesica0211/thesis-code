@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LylaGilman a :Ancestor,\n        :Person,\n        :Woman ;\n    :isDaughterOf data:GeorgeGilman,\n        data:LadyRoseGilman .\n\ndata:RufusGilman a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:GeorgeGilman,\n        data:LadyRoseGilman .\n\ndata:BirgitteGloucester a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:PrinceRichard a :Ancestor,\n        :Man,\n        :Person .\n\ndata:GeorgeGilman a :Man,\n        :Person .\n\ndata:LadyRoseGilman a :Person,\n        :Woman ;\n    :hasBirthYear 1980 ;\n    :hasFather data:PrinceRichard ;\n    :hasMarriageYear 2007 ;\n    :hasMother data:BirgitteGloucester .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:LylaGilman a :Ancestor,\n        :Person,\n        :Woman ;\n    :isDaughterOf data:GeorgeGilman,\n        data:LadyRoseGilman .\n\ndata:RufusGilman a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:GeorgeGilman,\n        data:LadyRoseGilman .\n\ndata:BirgitteGloucester a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:PrinceRichard a :Ancestor,\n        :Man,\n        :Person .\n\ndata:GeorgeGilman a :Man,\n        :Person .\n\ndata:LadyRoseGilman a :Person,\n        :Woman ;\n    :hasBirthYear 1980 ;\n    :hasFather data:PrinceRichard ;\n    :hasMarriageYear 2007 ;\n    :hasMother data:BirgitteGloucester .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear 2003 ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Person,\n        :Woman ;\n    :hasBirthYear 1973 .\n\n"
+    }
+]

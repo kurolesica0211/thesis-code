@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianIXOfDenmark a :Man,
+        :Person ;
+    :isFatherOf data:ThyraOfDenmark .
+
+data:EdwinaOfMecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:ChristianLouisOfMecklenburgSchwerin ;
+    :hasMother data:BarbaraOfPrussia ;
+    :isSisterOf data:DonataOfMecklenburg .
+
+data:ErnestAugustusCrownPrinceOfHanover a :Man,
+        :Person ;
+    :isFatherOf data:AlexandraOfHanoverAndCumberland .
+
+data:ErnstIIOfSaxeAltenburg a :Man,
+        :Person ;
+    :isFatherOf data:CharlotteOfSaxeAltenburg .
+
+data:FrederickFrancisIVOfMecklenburgSchwerin a :Man,
+        :Person ;
+    :isFatherOf data:ChristianLouisOfMecklenburgSchwerin .
+
+data:LouisIVOfHesse a :Man,
+        :Person ;
+    :isFatherOf data:SigismundOfPrussia .
+
+data:LouiseOfHesseKassel a :Person,
+        :Woman ;
+    :isMotherOf data:ThyraOfDenmark .
+
+data:QueenVictoria a :Person,
+        :Woman ;
+    :isFatherOf data:AliceOfHesseAndByRhine .
+
+data:AliceOfHesseAndByRhine a :Person,
+        :Woman ;
+    :isMotherOf data:SigismundOfPrussia .
+
+data:CharlotteOfSaxeAltenburg a :Person,
+        :Woman ;
+    :isMotherOf data:BarbaraOfPrussia .
+
+data:DonataOfMecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :hasFather data:ChristianLouisOfMecklenburgSchwerin ;
+    :hasMother data:BarbaraOfPrussia .
+
+data:FriedrichFranzOfMecklenburgSchwerin a :Man,
+        :Person .
+
+data:AlexandraOfHanoverAndCumberland a :Person,
+        :Woman ;
+    :isMotherOf data:ChristianLouisOfMecklenburgSchwerin .
+
+data:SigismundOfPrussia a :Man,
+        :Person ;
+    :isFatherOf data:BarbaraOfPrussia .
+
+data:ThyraOfDenmark a :Person,
+        :Woman ;
+    :isMotherOf data:AlexandraOfHanoverAndCumberland .
+
+data:BarbaraOfPrussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 .
+
+data:ChristianLouisOfMecklenburgSchwerin a :Man,
+        :Person ;
+    :isBrotherOf data:FriedrichFranzOfMecklenburgSchwerin .
+

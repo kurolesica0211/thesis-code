@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Gilman a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Rose_Windsor a :Ancestor,
+        :Woman ;
+    :formerlyKnownAs "Rose Victoria Birgitte Louise Windsor"^^xsd:string ;
+    :hasBirthYear 1980 ;
+    :hasFather data:Prince_Richard ;
+    :hasMarriageYear 2007 ;
+    :hasMother data:Birgitte_Gloucester ;
+    :hasSex data:Female ;
+    :isMotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :knownAs "Lady Rose Victoria Birgitte Louise Gilman"^^xsd:string .
+
+data:Birgitte_Gloucester a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Prince_Richard a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Lyla_Gilman a :Woman ;
+    :hasBirthYear 2010 ;
+    :hasSex data:Female .
+
+data:Rufus_Gilman a :Man ;
+    :hasBirthYear 2012 ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

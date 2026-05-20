@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .
+
+data:Alfonso_brother_of_Gonzalo a :Man,
+        :Person .
+
+data:Emmanuelle_de_Dampierre a :Person,
+        :Woman .
+
+data:Jaime_Duke_of_Segovia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Gonzalo_de_Borbon_y_Dampierre a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Alfonso_brother_of_Gonzalo ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+

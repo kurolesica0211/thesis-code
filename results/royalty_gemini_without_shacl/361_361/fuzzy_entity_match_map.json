@@ -1,0 +1,190 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/361_361",
+  "text_file": "Q60697.txt",
+  "text_key": "Q60697",
+  "article": "https://en.wikipedia.org/wiki/Duke_Adolf_Friedrich_of_Mecklenburg",
+  "article_key": "Duke Adolf Friedrich of Mecklenburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin",
+    "qid": "Q60697",
+    "label": "Duke Adolf Friedrich of Mecklenburg-Schwerin"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin",
+      "qid": "Q60697",
+      "label": "Duke Adolf Friedrich of Mecklenburg-Schwerin",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_II",
+      "qid": "Q57976",
+      "label": "Frederick Francis II",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Marie_of_Schwarzburg-Rudolstadt",
+      "qid": "Q154388",
+      "label": "Princess Marie of Schwarzburg-Rudolstadt",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Christina_of_the_Netherlands",
+      "qid": "Q435324",
+      "label": "Princess Christina of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
+      "qid": "Q150747",
+      "label": "Wilhelmina of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Adolf_Friedrich_Mecklenburg_Schwerin",
+      "extracted_local_name": "Adolf_Friedrich_Mecklenburg_Schwerin",
+      "embedding_text": "Adolf Friedrich Mecklenburg Schwerin",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.875,
+      "ground_truth_uri": "http://example.com/data#Duke_Adolf_Friedrich_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q60697",
+      "ground_truth_label": "Duke Adolf Friedrich of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Duke Adolf Friedrich of Mecklenburg-Schwerin",
+      "best_candidate_label": "Duke Adolf Friedrich of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q60697",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.875
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marie_Schwarzburg_Rudolstadt",
+      "extracted_local_name": "Marie_Schwarzburg_Rudolstadt",
+      "embedding_text": "Marie Schwarzburg Rudolstadt",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7941176470588235,
+      "ground_truth_uri": "http://example.com/data#Princess_Marie_of_Schwarzburg-Rudolstadt",
+      "ground_truth_qid": "Q154388",
+      "ground_truth_label": "Princess Marie of Schwarzburg-Rudolstadt",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Marie of Schwarzburg-Rudolstadt",
+      "best_candidate_label": "Princess Marie of Schwarzburg-Rudolstadt",
+      "best_candidate_qid": "Q154388",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.7941176470588235
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_II_Mecklenburg_Schwerin",
+      "extracted_local_name": "Frederick_Francis_II_Mecklenburg_Schwerin",
+      "embedding_text": "Frederick Francis II Mecklenburg Schwerin",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.6557377049180327,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_II",
+      "ground_truth_qid": "Q57976",
+      "ground_truth_label": "Frederick Francis II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Frederick Francis II",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6557377049180327
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elise_Hohenlohe_Langenburg",
+      "extracted_local_name": "Elise_Hohenlohe_Langenburg",
+      "embedding_text": "Elise Hohenlohe Langenburg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juliana der Nederlanden",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4489795918367347
+    },
+    {
+      "extracted_uri": "http://example.org/data/Heinrich_XXVII_Reuss_Younger_Line",
+      "extracted_local_name": "Heinrich_XXVII_Reuss_Younger_Line",
+      "embedding_text": "Heinrich XXVII Reuss Younger Line",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Hendrik_Netherlands",
+      "extracted_local_name": "Hendrik_Netherlands",
+      "embedding_text": "Hendrik Netherlands",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Viktoria_Feodora_Reuss_Schleiz",
+      "extracted_local_name": "Viktoria_Feodora_Reuss_Schleiz",
+      "embedding_text": "Viktoria Feodora Reuss Schleiz",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christina van Oranje",
+      "best_candidate_label": "Princess Christina of the Netherlands",
+      "best_candidate_qid": "Q435324",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.32
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 3,
+    "entities_unmatched": 4
+  }
+}

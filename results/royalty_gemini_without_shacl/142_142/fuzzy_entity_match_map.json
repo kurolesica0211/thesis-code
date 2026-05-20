@@ -1,0 +1,133 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/142_142",
+  "text_file": "Q231463.txt",
+  "text_key": "Q231463",
+  "article": "https://en.wikipedia.org/wiki/Duchess_Marie_of_Mecklenburg-Schwerin",
+  "article_key": "Duchess Marie of Mecklenburg-Schwerin",
+  "main_entity": {
+    "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+    "qid": "Q231463",
+    "label": "Duchess Marie of Mecklenburg-Schwerin"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+      "qid": "Q231463",
+      "label": "Duchess Marie of Mecklenburg-Schwerin",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_II",
+      "qid": "Q57976",
+      "label": "Frederick Francis II",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "qid": "Q63095",
+      "label": "Princess Augusta Reuss of Köstritz",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Maria_Pavlovna_of_Russia",
+      "extracted_local_name": "Maria_Pavlovna_of_Russia",
+      "embedding_text": "Maria Pavlovna of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q231463",
+      "ground_truth_label": "Duchess Marie of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Maria Pavlovna of Russia",
+      "best_candidate_label": "Duchess Marie of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q231463",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_Franz_II_of_Mecklenburg-Schwerin",
+      "extracted_local_name": "Friedrich_Franz_II_of_Mecklenburg-Schwerin",
+      "embedding_text": "Friedrich Franz II of Mecklenburg-Schwerin",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.875,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_II",
+      "ground_truth_qid": "Q57976",
+      "ground_truth_label": "Frederick Francis II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.875
+    },
+    {
+      "extracted_uri": "http://example.org/data/Augusta_Reuss_of_K%C3%B6stritz",
+      "extracted_local_name": "Augusta_Reuss_of_K%C3%B6stritz",
+      "embedding_text": "Augusta Reuss of Köstritz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8714285714285714,
+      "ground_truth_uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "ground_truth_qid": "Q63095",
+      "ground_truth_label": "Princess Augusta Reuss of Köstritz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_label": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_qid": "Q63095",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexander_II_of_Russia",
+      "extracted_local_name": "Alexander_II_of_Russia",
+      "embedding_text": "Alexander II of Russia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederick Francis II",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Vladimir_Alexandrovich_of_Russia",
+      "extracted_local_name": "Vladimir_Alexandrovich_of_Russia",
+      "embedding_text": "Vladimir Alexandrovich of Russia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

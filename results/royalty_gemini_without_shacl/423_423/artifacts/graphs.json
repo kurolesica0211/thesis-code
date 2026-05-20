@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Maria_Chiara_of_Bourbon-Two_Sicilies ;\n    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon .\n\ndata:Prince_Laurent_of_Belgium a :Man,\n        :Person ;\n    :hasBrother data:King_Philippe_of_Belgium .\n\ndata:Prince_Leopold_of_Nassau a :Man,\n        :Person ;\n    :hasFather data:Prince_Guillaume_of_Luxembourg .\n\ndata:Jean-Christophe_Prince_Napoleon a :Person .\n\ndata:King_Philippe_of_Belgium a :Man,\n        :Person .\n\ndata:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani .\n\ndata:Prince_Ferdinand a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Guillaume_of_Luxembourg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand ;\n    :hasSister data:Princess_Beatrice_of_Bourbon-Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Maria_Chiara_of_Bourbon-Two_Sicilies ;\n    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon .\n\ndata:Prince_Laurent_of_Belgium a :Man,\n        :Person ;\n    :hasBrother data:King_Philippe_of_Belgium .\n\ndata:Prince_Leopold_of_Nassau a :Man,\n        :Person ;\n    :hasFather data:Prince_Guillaume_of_Luxembourg .\n\ndata:Jean-Christophe_Prince_Napoleon a :Person .\n\ndata:King_Philippe_of_Belgium a :Man,\n        :Person .\n\ndata:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani .\n\ndata:Prince_Ferdinand a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Guillaume_of_Luxembourg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand ;\n    :hasSister data:Princess_Beatrice_of_Bourbon-Two_Sicilies .\n\n"
+    }
+]

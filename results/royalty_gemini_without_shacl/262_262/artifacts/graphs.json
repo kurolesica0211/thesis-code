@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Bernhard a :Man,\n        :Person ;\n    :isFatherOf data:Queen_Beatrix .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasChild data:Countess_Emma_Luana_Ninette_Sophie,\n        data:Countess_Joanna_Zaria_Nicoline_Milou ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Queen_Beatrix ;\n    :isBrotherOf data:Prince_Constantijn,\n        data:Willem-Alexander ;\n    :knownAs \"Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg\"^^xsd:string .\n\ndata:Queen_Juliana a :Person,\n        :Woman ;\n    :isMotherOf data:Queen_Beatrix .\n\ndata:Countess_Emma_Luana_Ninette_Sophie a :Person,\n        :Woman ;\n    :hasMother data:Mabel_Wisse_Smit .\n\ndata:Countess_Joanna_Zaria_Nicoline_Milou a :Person,\n        :Woman ;\n    :hasMother data:Mabel_Wisse_Smit .\n\ndata:Prince_Constantijn a :Man,\n        :Person ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Queen_Beatrix .\n\ndata:Willem-Alexander a :Man,\n        :Person ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Queen_Beatrix .\n\ndata:Mabel_Wisse_Smit a :Person,\n        :Woman .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Bernhard a :Man,\n        :Person ;\n    :isFatherOf data:Queen_Beatrix .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :hasBirthYear 1968 ;\n    :hasChild data:Countess_Emma_Luana_Ninette_Sophie,\n        data:Countess_Joanna_Zaria_Nicoline_Milou ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Queen_Beatrix ;\n    :isBrotherOf data:Prince_Constantijn,\n        data:Willem-Alexander ;\n    :knownAs \"Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg\"^^xsd:string .\n\ndata:Queen_Juliana a :Person,\n        :Woman ;\n    :isMotherOf data:Queen_Beatrix .\n\ndata:Countess_Emma_Luana_Ninette_Sophie a :Person,\n        :Woman ;\n    :hasMother data:Mabel_Wisse_Smit .\n\ndata:Countess_Joanna_Zaria_Nicoline_Milou a :Person,\n        :Woman ;\n    :hasMother data:Mabel_Wisse_Smit .\n\ndata:Prince_Constantijn a :Man,\n        :Person ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Queen_Beatrix .\n\ndata:Willem-Alexander a :Man,\n        :Person ;\n    :hasFather data:Claus_von_Amsberg ;\n    :hasMother data:Queen_Beatrix .\n\ndata:Mabel_Wisse_Smit a :Person,\n        :Woman .\n\ndata:Claus_von_Amsberg a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\n"
+    }
+]

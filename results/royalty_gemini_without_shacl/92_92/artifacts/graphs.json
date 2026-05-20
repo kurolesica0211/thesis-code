@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Birgitte_van_Deurs_Henriksen a :Woman .\n\ndata:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Lady_Margaret_Bridgeman a :Woman .\n\ndata:Prince_Richard%2C_Duke_of_Gloucester a :Man ;\n    :alsoKnownAs \"Richard Alexander Walter George\"^^xsd:string ;\n    :hasBirthYear 1944 ;\n    :hasBrother data:Prince_William_of_Gloucester ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :hasRelation data:Birgitte_van_Deurs_Henriksen .\n\ndata:Prince_William_of_Gloucester a :Man ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :isBrotherOf data:Prince_Richard%2C_Duke_of_Gloucester .\n\ndata:Queen_Mary a :Woman .\n\ndata:Prince_Henry%2C_Duke_of_Gloucester a :Man ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Alice%2C_Duchess_of_Gloucester a :Woman ;\n    :hasFather data:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Birgitte_van_Deurs_Henriksen a :Woman .\n\ndata:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Lady_Margaret_Bridgeman a :Woman .\n\ndata:Prince_Richard%2C_Duke_of_Gloucester a :Man ;\n    :alsoKnownAs \"Richard Alexander Walter George\"^^xsd:string ;\n    :hasBirthYear 1944 ;\n    :hasBrother data:Prince_William_of_Gloucester ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :hasRelation data:Birgitte_van_Deurs_Henriksen .\n\ndata:Prince_William_of_Gloucester a :Man ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;\n    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;\n    :isBrotherOf data:Prince_Richard%2C_Duke_of_Gloucester .\n\ndata:Queen_Mary a :Woman .\n\ndata:Prince_Henry%2C_Duke_of_Gloucester a :Man ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Alice%2C_Duchess_of_Gloucester a :Woman ;\n    :hasFather data:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch ;\n    :hasMother data:Lady_Margaret_Bridgeman .\n\n"
+    }
+]

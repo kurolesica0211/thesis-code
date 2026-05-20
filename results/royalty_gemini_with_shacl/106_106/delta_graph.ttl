@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alphonse_twin a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Francisco a :Man,
+        :Person ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBrotherOf data:Louis_Alphonse_de_Bourbon .
+
+data:Francisco_Franco a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis_twin a :Man,
+        :Person ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+data:Carmen_Franco a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Infante_Jaime a :Ancestor,
+        :Man,
+        :Person .
+
+data:Victor_Vargas a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alfonso_de_Borbon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Carmen_Franco .
+
+data:Maria_Margarita_Vargas_Santaella a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Victor_Vargas .
+
+data:Louis_Alphonse_de_Bourbon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+

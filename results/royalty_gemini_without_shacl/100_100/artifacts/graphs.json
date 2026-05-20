@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceDimitriOfYugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Dimitri Karageorgevich\"^^xsd:string,\n        \"Dimitrije Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1958 ;\n    :isSiblingOf data:PrinceMichaelOfYugoslavia ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceDushanOfYugoslavia a :Man,\n        :Person ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessBarbaraOfLiechtenstein .\n\ndata:PrinceSergeOfYugoslavia a :Man,\n        :Person ;\n    :isSiblingOf data:PrincessHeleneOfYugoslavia ;\n    :isSonOf data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceMichaelOfYugoslavia a :Man,\n        :Person ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessMariaPiaOfSavoy .\n\ndata:PrincessBarbaraOfLiechtenstein a :Person,\n        :Woman .\n\ndata:PrincessHeleneOfYugoslavia a :Person,\n        :Woman ;\n    :isDaughterOf data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceAlexanderOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincessMariaPiaOfSavoy a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceDimitriOfYugoslavia a :Man,\n        :Person ;\n    :alsoKnownAs \"Dimitri Karageorgevich\"^^xsd:string,\n        \"Dimitrije Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1958 ;\n    :isSiblingOf data:PrinceMichaelOfYugoslavia ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceDushanOfYugoslavia a :Man,\n        :Person ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessBarbaraOfLiechtenstein .\n\ndata:PrinceSergeOfYugoslavia a :Man,\n        :Person ;\n    :isSiblingOf data:PrincessHeleneOfYugoslavia ;\n    :isSonOf data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceMichaelOfYugoslavia a :Man,\n        :Person ;\n    :isSonOf data:PrinceAlexanderOfYugoslavia,\n        data:PrincessMariaPiaOfSavoy .\n\ndata:PrincessBarbaraOfLiechtenstein a :Person,\n        :Woman .\n\ndata:PrincessHeleneOfYugoslavia a :Person,\n        :Woman ;\n    :isDaughterOf data:PrincessMariaPiaOfSavoy .\n\ndata:PrinceAlexanderOfYugoslavia a :Man,\n        :Person .\n\ndata:PrincessMariaPiaOfSavoy a :Person,\n        :Woman .\n\n"
+    }
+]

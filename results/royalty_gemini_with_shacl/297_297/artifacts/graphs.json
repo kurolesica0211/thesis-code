@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Peter_Ferdinand_of_Austria .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man .\n\ndata:Alice_of_Bourbon-Parma a :Ancestor,\n        :Woman .\n\ndata:Ferdinand_IV_of_Tuscany a :Ancestor,\n        :Man .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV_of_Tuscany ;\n    :hasMother data:Alice_of_Bourbon-Parma .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "62fd1a07-1ece-4b8d-bfd4-9a5703ad5423",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Peter_Ferdinand_of_Austria .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man .\n\ndata:Alice_of_Bourbon-Parma a :Ancestor,\n        :Woman .\n\ndata:Ferdinand_IV_of_Tuscany a :Ancestor,\n        :Man .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV_of_Tuscany ;\n    :hasMother data:Alice_of_Bourbon-Parma .\n\n"
+    }
+]

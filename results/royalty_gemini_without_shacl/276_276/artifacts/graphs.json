@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Lorenz_of_Belgium a :Man ;\n    :hasAncestor data:Charles_I_of_Austria ;\n    :hasBirthYear 1955 ;\n    :hasFather data:Robert_Archduke_of_Austria-Este ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Archduchess_Margaret ;\n    :hasRelation data:Princess_Astrid_of_Belgium .\n\ndata:Archduchess_Margaret a :Woman .\n\ndata:Charles_I_of_Austria a :Man .\n\ndata:King_Albert_II a :Man .\n\ndata:Princess_Astrid_of_Belgium a :Woman ;\n    :hasFather data:King_Albert_II ;\n    :hasMother data:Queen_Paola .\n\ndata:Queen_Paola a :Woman .\n\ndata:Robert_Archduke_of_Austria-Este a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Lorenz_of_Belgium a :Man ;\n    :hasAncestor data:Charles_I_of_Austria ;\n    :hasBirthYear 1955 ;\n    :hasFather data:Robert_Archduke_of_Austria-Este ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Archduchess_Margaret ;\n    :hasRelation data:Princess_Astrid_of_Belgium .\n\ndata:Archduchess_Margaret a :Woman .\n\ndata:Charles_I_of_Austria a :Man .\n\ndata:King_Albert_II a :Man .\n\ndata:Princess_Astrid_of_Belgium a :Woman ;\n    :hasFather data:King_Albert_II ;\n    :hasMother data:Queen_Paola .\n\ndata:Queen_Paola a :Woman .\n\ndata:Robert_Archduke_of_Austria-Este a :Man .\n\n"
+    }
+]

@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Zorreguieta a :Man,
+        :Person ;
+    :isUncleOf data:Princess_Alexia .
+
+data:Prince_Friso a :Man,
+        :Person ;
+    :isUncleOf data:Princess_Alexia .
+
+data:Maxima a :Person,
+        :Woman .
+
+data:Willem-Alexander a :Man,
+        :Person .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :alsoKnownAs "Alexia Juliana Marcela Laurentien"^^xsd:string ;
+    :hasBirthYear "2005-06-26"^^xsd:string ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:Maxima .
+

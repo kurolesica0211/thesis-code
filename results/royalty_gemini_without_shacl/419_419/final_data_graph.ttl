@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AndreaMessner a :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:G%C3%BCntherMessner ;
+    :hasMother data:LieselotteTrzoska .
+
+data:FriedrichWilhelmOfLippe a :Man ;
+    :hasBirthYear 1947 ;
+    :hasFather data:ErnstAugustOfLippe ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:ChristaVonArnim .
+
+data:ChristaVonArnim a :Woman ;
+    :hasBirthYear 1923 ;
+    :hasFather data:CurtDavidVonArnim ;
+    :hasMother data:StephanieVonStechow .
+
+data:CurtDavidVonArnim a :Man .
+
+data:ErnstAugustOfLippe a :Man ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:JuliusErnstOfLippe ;
+    :hasMother data:MarieOfMecklenburgStrelitz .
+
+data:G%C3%BCntherMessner a :Man .
+
+data:JuliusErnstOfLippe a :Man .
+
+data:LieselotteTrzoska a :Woman .
+
+data:MarieOfMecklenburgStrelitz a :Woman .
+
+data:StephanieVonStechow a :Woman .
+

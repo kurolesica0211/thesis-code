@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Claus_of_the_Netherlands a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Claus_Felix_von_Amsberg ;\n    :hasMarriageYear 1966 ;\n    :hasMother data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Queen_Beatrix .\n\ndata:Baroness_Gosta_von_dem_Bussche-Haddenhausen a :Woman .\n\ndata:Claus_Felix_von_Amsberg a :Man .\n\ndata:Queen_Beatrix a :Woman ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Claus_of_the_Netherlands a :Man ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Claus_Felix_von_Amsberg ;\n    :hasMarriageYear 1966 ;\n    :hasMother data:Baroness_Gosta_von_dem_Bussche-Haddenhausen ;\n    :hasRelation data:Queen_Beatrix .\n\ndata:Baroness_Gosta_von_dem_Bussche-Haddenhausen a :Woman .\n\ndata:Claus_Felix_von_Amsberg a :Man .\n\ndata:Queen_Beatrix a :Woman ;\n    :hasMother data:Queen_Juliana .\n\ndata:Queen_Juliana a :Woman .\n\n"
+    }
+]

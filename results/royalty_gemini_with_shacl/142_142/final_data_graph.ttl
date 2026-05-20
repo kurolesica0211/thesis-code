@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MariaPavlovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1854 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:FriedrichFranzIIOfMecklenburgSchwerin ;
+    :hasMarriageYear 1874 ;
+    :hasMother data:AugustaReussOfKostritz ;
+    :hasRelation data:VladimirAlexandrovichOfRussia ;
+    :hasSex data:Female .
+
+data:AugustaReussOfKostritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:FriedrichFranzIIOfMecklenburgSchwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:VladimirAlexandrovichOfRussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Topping a :Person,
+        :Woman ;
+    :hasFather data:Bernard_Topping ;
+    :hasMarriageYear 1997 ;
+    :hasSex data:Female .
+
+data:Florence_Pearson a :Person,
+        :Woman ;
+    :hasMarriageYear 2016 ;
+    :hasSex data:Female .
+
+data:Granville_George_Fergus_Leveson-Gower a :Man,
+        :Person ;
+    :formerlyKnownAs "Lord Leveson"^^xsd:string ;
+    :hasBirthYear 1959 ;
+    :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
+    :hasSex data:Male .
+
+data:Bernard_Topping a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
+    :hasSex data:Male .
+
+data:Rose_Leveson-Gower_Countess_Granville a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

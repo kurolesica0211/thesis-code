@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Bertrand a :Man,
+        :Person .
+
+data:Rafael_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Prince_Pedro_Luiz ;
+    :hasFather data:Prince_Ant%C3%B4nio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasSister data:Princess_Am%C3%A9lia,
+        data:Princess_Maria_Gabriela .
+
+data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Ant%C3%B4nio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Pedro_Luiz a :Man,
+        :Person .
+
+data:Princess_Alix_of_Luxembourg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Am%C3%A9lia a :Person,
+        :Woman .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Princess_Alix_of_Luxembourg .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Maria_Gabriela a :Person,
+        :Woman .
+

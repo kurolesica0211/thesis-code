@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dom_Lu%C3%ADs_Filipe a :Man ;\n    :hasBirthYear 1887 ;\n    :hasBrother data:Manuel_II ;\n    :hasDeathYear 1908 ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Manuel_II a :Man ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Woman .\n\ndata:Carlos_I a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dom_Lu%C3%ADs_Filipe a :Man ;\n    :hasBirthYear 1887 ;\n    :hasBrother data:Manuel_II ;\n    :hasDeathYear 1908 ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Manuel_II a :Man ;\n    :hasFather data:Carlos_I ;\n    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .\n\ndata:Am%C3%A9lie_dOrl%C3%A9ans a :Woman .\n\ndata:Carlos_I a :Man .\n\n"
+    }
+]

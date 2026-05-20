@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bagrat_de_Bagration a :Man,\n        :Person ;\n    :hasSister data:Princess_Mariam_de_Bagration .\n\ndata:Dr_Tomas_Ortiz_y_Valero a :Man,\n        :Person .\n\ndata:Jorge_de_Bagration a :Man,\n        :Person ;\n    :hasSister data:Princess_Mariam_de_Bagration .\n\ndata:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,\n        :Woman .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man,\n        :Person .\n\ndata:Princess_Mariam_de_Bagration a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bagrat_de_Bagration a :Man,\n        :Person ;\n    :hasSister data:Princess_Mariam_de_Bagration .\n\ndata:Dr_Tomas_Ortiz_y_Valero a :Man,\n        :Person .\n\ndata:Jorge_de_Bagration a :Man,\n        :Person ;\n    :hasSister data:Princess_Mariam_de_Bagration .\n\ndata:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,\n        :Woman .\n\ndata:Prince_Irakli_Bagration_of_Mukhrani a :Man,\n        :Person .\n\ndata:Princess_Mariam_de_Bagration a :Person,\n        :Woman ;\n    :hasBirthYear 1947 ;\n    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;\n    :hasMarriageYear 1982 ;\n    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon .\n\n"
+    }
+]

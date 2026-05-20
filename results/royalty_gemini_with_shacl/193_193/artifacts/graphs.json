@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Paul_Chavchavadze ;\n    :hasMother data:Nina_Georgievna_of_Russia .\n\ndata:Paul_George_Olkhovsky a :Man,\n        :Person .\n\ndata:Nina_Georgievna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 .\n\ndata:Paul_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "4909df17-c570-49b4-8ed4-fc52b3eb1892",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Nina_Georgievna_of_Russia> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Paul_Chavchavadze> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Paul_Chavchavadze> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Paul_Chavchavadze> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Nina_Georgievna_of_Russia> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Chavchavadze> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Nina_Georgievna_of_Russia> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "4046b9aa-8f20-4965-80cc-9c4b0f0f03a5",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Paul_Chavchavadze ;\n    :hasMother data:Nina_Georgievna_of_Russia .\n\ndata:Paul_George_Olkhovsky a :Man,\n        :Person .\n\ndata:Nina_Georgievna_of_Russia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 .\n\ndata:Paul_Chavchavadze a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "4046b9aa-8f20-4965-80cc-9c4b0f0f03a5",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man,\n        :Person ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Paul_Chavchavadze ;\n    :hasMother data:Nina_Georgievna_of_Russia .\n\ndata:Paul_George_Olkhovsky a :Man,\n        :Person .\n\ndata:Nina_Georgievna_of_Russia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 .\n\ndata:Paul_Chavchavadze a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    }
+]

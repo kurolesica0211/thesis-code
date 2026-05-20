@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_Pius a :Man ;
+    :alsoKnownAs "Ferdinando Pio Maria"^^xsd:string ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Gabriel_of_Bourbon-Two_Sicilies,
+        data:Philip_of_Bourbon-Two_Sicilies,
+        data:Ranieri_Duke_of_Castro ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:Maria_Antonietta ;
+    :hasSister data:Maria_Cristina,
+        data:Maria_Immaculata,
+        data:Maria_di_Grazia ;
+    :knownAs "Ferdinand Pius"^^xsd:string .
+
+data:Maria_Ludwiga_Theresia_of_Bavaria a :Woman ;
+    :hasFather data:Ludwig_III_of_Bavaria .
+
+data:Alfonso_Count_of_Caserta a :Man ;
+    :hasFather data:Ferdinand_II_of_the_Two_Sicilies .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Man .
+
+data:Gabriel_of_Bourbon-Two_Sicilies a :Man .
+
+data:Ludwig_III_of_Bavaria a :Man .
+
+data:Maria_Antonietta a :Woman .
+
+data:Maria_Cristina a :Woman .
+
+data:Maria_Immaculata a :Woman .
+
+data:Maria_di_Grazia a :Woman .
+
+data:Philip_of_Bourbon-Two_Sicilies a :Man .
+
+data:Ranieri_Duke_of_Castro a :Man .
+

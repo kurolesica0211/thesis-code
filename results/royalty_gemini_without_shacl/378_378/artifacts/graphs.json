@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archie_Harrison_Mountbatten-Windsor a :Male,\n        :Person ;\n    :hasBirthYear 2019 ;\n    :hasFather data:Prince_Harry%2C_Duke_of_Sussex ;\n    :hasMother data:Meghan%2C_Duchess_of_Sussex ;\n    :knownAs \"Prince Archie of Sussex\"^^xsd:string .\n\ndata:Prince_Philip a :Male,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:King_Charles_III a :Male,\n        :Person .\n\ndata:Meghan%2C_Duchess_of_Sussex a :Person,\n        :Woman .\n\ndata:Prince_Harry%2C_Duke_of_Sussex a :Male,\n        :Person ;\n    :hasFather data:King_Charles_III .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archie_Harrison_Mountbatten-Windsor a :Male,\n        :Person ;\n    :hasBirthYear 2019 ;\n    :hasFather data:Prince_Harry%2C_Duke_of_Sussex ;\n    :hasMother data:Meghan%2C_Duchess_of_Sussex ;\n    :knownAs \"Prince Archie of Sussex\"^^xsd:string .\n\ndata:Prince_Philip a :Male,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:King_Charles_III a :Male,\n        :Person .\n\ndata:Meghan%2C_Duchess_of_Sussex a :Person,\n        :Woman .\n\ndata:Prince_Harry%2C_Duke_of_Sussex a :Male,\n        :Person ;\n    :hasFather data:King_Charles_III .\n\n"
+    }
+]

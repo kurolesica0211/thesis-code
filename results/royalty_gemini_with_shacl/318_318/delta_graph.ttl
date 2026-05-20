@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francis_II a :Man,
+        :Person .
+
+data:Louise_of_Orleans a :Person,
+        :Woman ;
+    :hasFather data:Philippe_Count_of_Paris .
+
+data:Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alfonso_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Don_Carlos .
+
+data:Alfonso_son_of_Carlos a :Man,
+        :Person .
+
+data:Ferdinand_brother_of_Carlos a :Man,
+        :Person ;
+    :isBrotherOf data:Don_Carlos .
+
+data:Maria_Antonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Don_Carlos .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ranieri_brother_of_Carlos a :Man,
+        :Person ;
+    :isBrotherOf data:Don_Carlos .
+
+data:Don_Carlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Alfonso_of_the_Two_Sicilies ;
+    :hasMother data:Maria_Antonietta ;
+    :isBrotherOf data:Ferdinand_brother_of_Carlos,
+        data:Ranieri_brother_of_Carlos ;
+    :isFatherOf data:Alfonso_son_of_Carlos .
+

@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasDaughter data:Elena ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasSon data:Heinrich_XXVIII .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Susan_Doukht_Jalali a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "fed0c228-1f17-4cf8-bcd4-f1b0e13a09eb",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Heinrich_XXVIII> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elena> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elena> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Heinrich_XXVIII> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elena> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Heinrich_XXVIII> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Susan_Doukht_Jalali> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasDaughter data:Elena ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasSon data:Heinrich_XXVIII .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Susan_Doukht_Jalali a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "9e9ca56b-0f06-4b2d-8e15-6fcc094ea01f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasDaughter data:Elena ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasSon data:Heinrich_XXVIII .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elena a :Person,\n        :Woman ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :hasMother data:Susan_Doukht_Jalali .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Susan_Doukht_Jalali a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

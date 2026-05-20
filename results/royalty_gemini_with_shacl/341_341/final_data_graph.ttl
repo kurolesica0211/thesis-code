@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Prince_Ernest_Augustus_of_Brunswick_Jr a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSex data:Male .
+
+data:Prince_George_of_Hanover a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Ernest_Augustus_of_Brunswick .
+
+data:Princess_Frederica_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Princess_Victoria_Louise_of_Prussia ;
+    :hasRelation data:Prince_Paul_of_Greece ;
+    :hasSex data:Female .
+
+data:Crown_Prince_Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Prince_Paul_of_Greece a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Princess_Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Princess_Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Ernest_Augustus_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Crown_Prince_Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+

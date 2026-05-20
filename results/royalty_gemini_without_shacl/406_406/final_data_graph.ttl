@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margaret_Rhodes a :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Lord_Elphinstone_16th ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:Lady_Mary_Bowes-Lyon ;
+    :hasRelation data:Denys_Gravenor_Rhodes .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Denys_Gravenor_Rhodes a :Man,
+        :Person .
+
+data:Lady_Mary_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Lord_Elphinstone_16th a :Man,
+        :Person .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman .
+

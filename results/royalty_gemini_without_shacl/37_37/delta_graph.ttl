@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man ;
+    :hasFather data:Alfonso_XII ;
+    :hasMother data:Maria_Christina ;
+    :isBrotherOf data:Mercedes .
+
+data:Alfonso_son_of_Mercedes a :Ancestor,
+        :Man ;
+    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;
+    :hasMother data:Mercedes .
+
+data:Fernando_son_of_Mercedes a :Ancestor,
+        :Man ;
+    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;
+    :hasMother data:Mercedes .
+
+data:Isabella_Alfonsa a :Ancestor,
+        :Woman ;
+    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;
+    :hasMother data:Mercedes .
+
+data:Maria_Teresa a :Ancestor,
+        :Woman ;
+    :hasFather data:Alfonso_XII ;
+    :hasMother data:Maria_Christina ;
+    :isSisterOf data:Mercedes .
+
+data:Alfonso_XII a :Ancestor,
+        :Man .
+
+data:Maria_Christina a :Ancestor,
+        :Woman .
+
+data:Carlos_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Man .
+
+data:Mercedes a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Alfonso_XII ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Maria_Christina ;
+    :hasRelation data:Carlos_of_Bourbon_Two_Sicilies .
+

@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olga_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:King_George_I_of_Greece ;
+    :hasBirthYear 1903 ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Prince_Paul_of_Yugoslavia ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Woman .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man .
+
+data:Prince_Alexander_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Paul_of_Yugoslavia a :Man,
+        :Person .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman .
+

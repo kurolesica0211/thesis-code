@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felix a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:AthenaOfMonpezat .
+
+data:FrederikX a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string .
+
+data:HenrikJr a :Man,
+        :Person ;
+    :hasFather data:JoachimOfDenmark ;
+    :hasMother data:MarieOfDenmark ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:AthenaOfMonpezat .
+
+data:Nikolai a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:AthenaOfMonpezat .
+
+data:HenrikOfDenmark a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasSex "Female"^^xsd:string .
+
+data:JoachimOfDenmark a :Man,
+        :Person ;
+    :hasFather data:HenrikOfDenmark ;
+    :hasMother data:MargretheII ;
+    :hasSex "Male"^^xsd:string .
+
+data:MarieOfDenmark a :Person,
+        :Woman ;
+    :hasSex "Female"^^xsd:string .
+
+data:AthenaOfMonpezat a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:JoachimOfDenmark ;
+    :hasMother data:MarieOfDenmark ;
+    :hasSex "Female"^^xsd:string .
+

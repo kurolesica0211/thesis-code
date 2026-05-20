@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_Alphons_Ludgerus_Brenninkmeijer a :Man ;\n    :hasBirthYear 1974 .\n\ndata:Princess_Carolina_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasBrother data:Prince_Carlos,\n        data:Prince_Jaime ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :hasSister data:Princess_Margarita .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man .\n\ndata:Prince_Carlos a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman ;\n    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;\n    :hasMother data:Queen_Juliana_of_the_Netherlands .\n\ndata:Princess_Margarita a :Woman .\n\ndata:Queen_Juliana_of_the_Netherlands a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albert_Alphons_Ludgerus_Brenninkmeijer a :Man ;\n    :hasBirthYear 1974 .\n\ndata:Princess_Carolina_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear 1974 ;\n    :hasBrother data:Prince_Carlos,\n        data:Prince_Jaime ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :hasSister data:Princess_Margarita .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man .\n\ndata:Prince_Carlos a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman ;\n    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;\n    :hasMother data:Queen_Juliana_of_the_Netherlands .\n\ndata:Princess_Margarita a :Woman .\n\ndata:Queen_Juliana_of_the_Netherlands a :Woman .\n\n"
+    }
+]

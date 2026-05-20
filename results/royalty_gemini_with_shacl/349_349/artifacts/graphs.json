@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Agapi_Politi a :Woman ;\n    :isMotherOf data:Chrysi_Vardinogianni .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Anne-Marie a :Woman ;\n    :isMotherOf data:Nikolaos .\n\ndata:Constantine_II a :Man ;\n    :isFatherOf data:Nikolaos .\n\ndata:Giorgos_Vardinogiannis a :Man ;\n    :isFatherOf data:Chrysi_Vardinogianni .\n\ndata:Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrysi_Vardinogianni a :Woman .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "8d0b7f7e-772b-4134-a0c8-c372defbd6d5",
+        "graph": "@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Agapi_Politi> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Agapi_Politi> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Giorgos_Vardinogiannis> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Giorgos_Vardinogiannis> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Constantine_II> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Constantine_II> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Anne-Marie> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Anne-Marie> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Agapi_Politi a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Chrysi_Vardinogianni .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Anne-Marie a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Nikolaos .\n\ndata:Constantine_II a :Ancestor,\n        :Man ;\n    :isFatherOf data:Nikolaos .\n\ndata:Giorgos_Vardinogiannis a :Ancestor,\n        :Man ;\n    :isFatherOf data:Chrysi_Vardinogianni .\n\ndata:Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrysi_Vardinogianni a :Woman .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "45f4338d-e495-498f-9a58-dcd9ee22fe04",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Agapi_Politi a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Chrysi_Vardinogianni .\n\ndata:Alexander_of_Yugoslavia a :Man .\n\ndata:Alexia a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Anne-Marie a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Nikolaos .\n\ndata:Constantine_II a :Ancestor,\n        :Man ;\n    :isFatherOf data:Nikolaos .\n\ndata:Giorgos_Vardinogiannis a :Ancestor,\n        :Man ;\n    :isFatherOf data:Chrysi_Vardinogianni .\n\ndata:Irene_of_Greece_and_Denmark a :Woman .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Pavlos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Philippos a :Man ;\n    :isBrotherOf data:Nikolaos .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Woman .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Nikolaos .\n\ndata:Chrysi_Vardinogianni a :Woman .\n\ndata:Nikolaos a :Man ;\n    :hasBirthYear 1969 .\n\n"
+    }
+]

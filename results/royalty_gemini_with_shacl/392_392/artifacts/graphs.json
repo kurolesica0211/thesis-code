@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Karoline_von_Wartensleben a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Male_Sex a :Male,\n        :Sex .\n\ndata:Aschwin_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe .\n\ndata:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSon data:Aschwin_of_Lippe_Biesterfeld,\n        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .\n\ndata:Prince_Bernhard_of_Lippe_Biesterfeld_Junior a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe .\n\ndata:Prince_Bernhard_of_Lippe a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1872 ;\n    :hasBrother data:Leopold_IV_Prince_of_Lippe ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;\n    :hasMarriageYear 1909 ;\n    :hasMother data:Countess_Karoline_von_Wartensleben ;\n    :hasSex data:Male_Sex ;\n    :hasSon data:Aschwin_of_Lippe_Biesterfeld,\n        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "83abec07-4afb-4682-873b-663e21ac947d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Karoline_von_Wartensleben a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Leopold_IV_Prince_of_Lippe a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Bernhard_of_Lippe .\n\ndata:Male_Sex a :Male,\n        :Sex .\n\ndata:Aschwin_of_Lippe_Biesterfeld a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe .\n\ndata:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSon data:Aschwin_of_Lippe_Biesterfeld,\n        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .\n\ndata:Prince_Bernhard_of_Lippe_Biesterfeld_Junior a :Man,\n        :Person ;\n    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,\n        data:Prince_Bernhard_of_Lippe .\n\ndata:Prince_Bernhard_of_Lippe a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1872 ;\n    :hasBrother data:Leopold_IV_Prince_of_Lippe ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;\n    :hasMarriageYear 1909 ;\n    :hasMother data:Countess_Karoline_von_Wartensleben ;\n    :hasSex data:Male_Sex ;\n    :hasSon data:Aschwin_of_Lippe_Biesterfeld,\n        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .\n\n"
+    }
+]

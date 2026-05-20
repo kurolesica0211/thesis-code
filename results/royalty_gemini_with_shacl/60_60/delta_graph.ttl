@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasSex data:Female .
+
+data:Christina a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasSex data:Female .
+
+data:Duke_Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasSex data:Female .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana ;
+    :hasSex data:Female .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDaughter data:Beatrix,
+        data:Christina,
+        data:Irene,
+        data:Margriet ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Duke_Henry_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Wilhelmina ;
+    :hasRelation data:Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:Female .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+

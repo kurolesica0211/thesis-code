@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Zorreguieta a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexia .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexia .\n\ndata:Maxima a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\ndata:Princess_Alexia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Alexia Juliana Marcela Laurentien\"^^xsd:string ;\n    :hasBirthYear \"2005-06-26\"^^xsd:string ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:Maxima .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Zorreguieta a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexia .\n\ndata:Prince_Friso a :Man,\n        :Person ;\n    :isUncleOf data:Princess_Alexia .\n\ndata:Maxima a :Person,\n        :Woman .\n\ndata:Willem-Alexander a :Man,\n        :Person .\n\ndata:Princess_Alexia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Alexia Juliana Marcela Laurentien\"^^xsd:string ;\n    :hasBirthYear \"2005-06-26\"^^xsd:string ;\n    :hasFather data:Willem-Alexander ;\n    :hasMother data:Maxima .\n\n"
+    }
+]

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeta-Karina a :Woman ;
+    :isDaughterOf data:Alexander_Nixon,
+        data:Princess_Elena .
+
+data:Prince_Nicholas a :Man ;
+    :isSonOf data:Princess_Elena,
+        data:Robin_Medforth-Mills .
+
+data:Alexander_Nixon a :Man ;
+    :hasBirthYear 1964 .
+
+data:Crown_Princess_Margareta a :Woman .
+
+data:King_Michael_I a :Man .
+
+data:Princess_Irina a :Woman .
+
+data:Princess_Maria a :Woman .
+
+data:Princess_Sophie a :Woman .
+
+data:Queen_Anne a :Woman .
+
+data:Robin_Medforth-Mills a :Man ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 .
+
+data:Princess_Elena a :Woman ;
+    :hasBirthYear 1950 ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne ;
+    :isSisterOf data:Crown_Princess_Margareta,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
+

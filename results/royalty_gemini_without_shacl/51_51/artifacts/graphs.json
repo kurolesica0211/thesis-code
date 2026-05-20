@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasBrother data:CharlesIII ;\n    :hasChild data:PeterPhillips,\n        data:ZaraTindall ;\n    :hasFather data:Philip ;\n    :hasMarriageYear 1973,\n        1992 ;\n    :hasMother data:ElizabethII ;\n    :hasRelation data:MarkPhillips,\n        data:TimothyLaurence .\n\ndata:CharlesIII a :Man .\n\ndata:ElizabethII a :Woman .\n\ndata:MarkPhillips a :Man ;\n    :hasChild data:PeterPhillips,\n        data:ZaraTindall ;\n    :hasDeathYear 1992 .\n\ndata:Philip a :Man .\n\ndata:TimothyLaurence a :Man .\n\ndata:PeterPhillips a :Man .\n\ndata:ZaraTindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne a :Woman ;\n    :hasBirthYear 1950 ;\n    :hasBrother data:CharlesIII ;\n    :hasChild data:PeterPhillips,\n        data:ZaraTindall ;\n    :hasFather data:Philip ;\n    :hasMarriageYear 1973,\n        1992 ;\n    :hasMother data:ElizabethII ;\n    :hasRelation data:MarkPhillips,\n        data:TimothyLaurence .\n\ndata:CharlesIII a :Man .\n\ndata:ElizabethII a :Woman .\n\ndata:MarkPhillips a :Man ;\n    :hasChild data:PeterPhillips,\n        data:ZaraTindall ;\n    :hasDeathYear 1992 .\n\ndata:Philip a :Man .\n\ndata:TimothyLaurence a :Man .\n\ndata:PeterPhillips a :Man .\n\ndata:ZaraTindall a :Woman .\n\n"
+    }
+]

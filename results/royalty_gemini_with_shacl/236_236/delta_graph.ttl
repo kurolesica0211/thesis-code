@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Donata_of_Castell_Rudenhausen a :Person,
+        :Woman .
+
+data:Friedrich_August_of_Oldenburg a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :isUncleOf data:Christian_of_Oldenburg .
+
+data:Marie_Cecile_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia .
+
+data:Bathildis_of_Schaumburg_Lippe a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Christian_of_Oldenburg a :Man,
+        :Person .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg_Lippe .
+
+data:Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
+

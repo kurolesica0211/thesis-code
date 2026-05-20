@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :isDaughterOf data:Joachim,\n        data:MarieCavallier .\n\ndata:Henrik a :Man ;\n    :isSonOf data:Joachim,\n        data:MarieCavallier .\n\ndata:AlexandraManley a :Woman .\n\ndata:FrederikX a :Man .\n\ndata:MargretheII a :Woman .\n\ndata:Joachim a :Man ;\n    :hasBirthYear 1969 ;\n    :hasMarriageYear data:1995,\n        data:2007 ;\n    :hasRelation data:AlexandraManley,\n        data:MarieCavallier ;\n    :isBrotherOf data:FrederikX ;\n    :isSonOf data:MargretheII .\n\ndata:MarieCavallier a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :isDaughterOf data:Joachim,\n        data:MarieCavallier .\n\ndata:Henrik a :Man ;\n    :isSonOf data:Joachim,\n        data:MarieCavallier .\n\ndata:AlexandraManley a :Woman .\n\ndata:FrederikX a :Man .\n\ndata:MargretheII a :Woman .\n\ndata:Joachim a :Man ;\n    :hasBirthYear 1969 ;\n    :hasMarriageYear 1995,\n        2007 ;\n    :hasRelation data:AlexandraManley,\n        data:MarieCavallier ;\n    :isBrotherOf data:FrederikX ;\n    :isSonOf data:MargretheII .\n\ndata:MarieCavallier a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :isDaughterOf data:Joachim,\n        data:MarieCavallier .\n\ndata:Henrik a :Man ;\n    :isSonOf data:Joachim,\n        data:MarieCavallier .\n\ndata:AlexandraManley a :Woman .\n\ndata:FrederikX a :Man .\n\ndata:MargretheII a :Woman .\n\ndata:Joachim a :Man ;\n    :hasBirthYear 1969 ;\n    :hasMarriageYear 1995,\n        2007 ;\n    :hasRelation data:AlexandraManley,\n        data:MarieCavallier ;\n    :isBrotherOf data:FrederikX ;\n    :isSonOf data:MargretheII .\n\ndata:MarieCavallier a :Woman .\n\n"
+    }
+]

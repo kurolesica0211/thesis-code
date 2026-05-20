@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Charlotte_of_Wales a :Person,\n        :Woman ;\n    :hasBirthYear 2015 ;\n    :hasBrother data:Prince_George,\n        data:Prince_Louis ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :knownAs \"Charlotte Cambridge\"^^xsd:string .\n\ndata:Catherine_Princess_of_Wales a :Ancestor,\n        :Woman .\n\ndata:Diana_Princess_of_Wales a :Ancestor,\n        :Woman .\n\ndata:King_Charles_III a :Ancestor,\n        :Man .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Louis a :Man,\n        :Person .\n\ndata:William_Prince_of_Wales a :Ancestor,\n        :Man ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "dbfe395d-2ad4-46e3-9a21-ea8812608ccb",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Charlotte_of_Wales a :Person,\n        :Woman ;\n    :hasBirthYear 2015 ;\n    :hasBrother data:Prince_George,\n        data:Prince_Louis ;\n    :hasFather data:William_Prince_of_Wales ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :knownAs \"Charlotte Cambridge\"^^xsd:string .\n\ndata:Catherine_Princess_of_Wales a :Ancestor,\n        :Woman .\n\ndata:Diana_Princess_of_Wales a :Ancestor,\n        :Woman .\n\ndata:King_Charles_III a :Ancestor,\n        :Man .\n\ndata:Prince_George a :Man,\n        :Person .\n\ndata:Prince_Louis a :Man,\n        :Person .\n\ndata:William_Prince_of_Wales a :Ancestor,\n        :Man ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\n"
+    }
+]

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Oskar_Prince_of_Prussia a :Man ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_Adalbert,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear data:Ina-Marie_von_Bassewitz,
+        1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSister data:Princess_Viktoria_Luise ;
+    :hasSon data:Oskar_the_younger,
+        data:Wilhelm_Karl .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+
+data:Crown_Prince_Wilhelm a :Man .
+
+data:Ina-Marie_von_Bassewitz a :Woman .
+
+data:Oskar_the_younger a :Man .
+
+data:Prince_Adalbert a :Man .
+
+data:Prince_August_Wilhelm a :Man .
+
+data:Prince_Eitel_Friedrich a :Man .
+
+data:Prince_Joachim a :Man .
+
+data:Princess_Viktoria_Luise a :Woman .
+
+data:Wilhelm_II a :Man .
+
+data:Wilhelm_Karl a :Man .
+

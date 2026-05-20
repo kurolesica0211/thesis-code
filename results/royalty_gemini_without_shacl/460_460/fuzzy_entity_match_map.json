@@ -1,0 +1,165 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/460_460",
+  "text_file": "Q76245057.txt",
+  "text_key": "Q76245057",
+  "article": "https://en.wikipedia.org/wiki/Rufus_Gilman",
+  "article_key": "Rufus Gilman",
+  "main_entity": {
+    "uri": "http://example.com/data#Rufus_Gilman",
+    "qid": "Q76245057",
+    "label": "Rufus Gilman"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Rufus_Gilman",
+      "qid": "Q76245057",
+      "label": "Rufus Gilman",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_Gilman",
+      "qid": "Q75623574",
+      "label": "George Gilman",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Lady_Rose_Windsor",
+      "qid": "Q430785",
+      "label": "Lady Rose Windsor",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Birgitte-_Duchess_of_Gloucester",
+      "qid": "Q241584",
+      "label": "Birgitte, Duchess of Gloucester",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Richard-_Duke_of_Gloucester",
+      "qid": "Q170294",
+      "label": "Prince Richard, Duke of Gloucester",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/GeorgeGilman",
+      "extracted_local_name": "GeorgeGilman",
+      "embedding_text": "George Gilman",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_Gilman",
+      "ground_truth_qid": "Q75623574",
+      "ground_truth_label": "George Gilman",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "George Gilman",
+      "best_candidate_label": "George Gilman",
+      "best_candidate_qid": "Q75623574",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/LadyRoseGilman",
+      "extracted_local_name": "LadyRoseGilman",
+      "embedding_text": "Lady Rose Gilman",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Rose_Windsor",
+      "ground_truth_qid": "Q430785",
+      "ground_truth_label": "Lady Rose Windsor",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Lady Rose Gilman",
+      "best_candidate_label": "Lady Rose Windsor",
+      "best_candidate_qid": "Q430785",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/RufusGilman",
+      "extracted_local_name": "RufusGilman",
+      "embedding_text": "Rufus Gilman",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Rufus_Gilman",
+      "ground_truth_qid": "Q76245057",
+      "ground_truth_label": "Rufus Gilman",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Rufus Gilman",
+      "best_candidate_label": "Rufus Gilman",
+      "best_candidate_qid": "Q76245057",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/BirgitteGloucester",
+      "extracted_local_name": "BirgitteGloucester",
+      "embedding_text": "Birgitte Gloucester",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.76,
+      "ground_truth_uri": "http://example.com/data#Birgitte-_Duchess_of_Gloucester",
+      "ground_truth_qid": "Q241584",
+      "ground_truth_label": "Birgitte, Duchess of Gloucester",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Birgitte- Duchess of Gloucester",
+      "best_candidate_label": "Birgitte, Duchess of Gloucester",
+      "best_candidate_qid": "Q241584",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.76
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceRichard",
+      "extracted_local_name": "PrinceRichard",
+      "embedding_text": "Prince Richard",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Prince_Richard-_Duke_of_Gloucester",
+      "ground_truth_qid": "Q170294",
+      "ground_truth_label": "Prince Richard, Duke of Gloucester",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Richard of Gloucester",
+      "best_candidate_label": "Prince Richard, Duke of Gloucester",
+      "best_candidate_qid": "Q170294",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/LylaGilman",
+      "extracted_local_name": "LylaGilman",
+      "embedding_text": "Lyla Gilman",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

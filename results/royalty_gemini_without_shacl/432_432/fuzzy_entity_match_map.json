@@ -1,0 +1,154 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/432_432",
+  "text_file": "Q74913.txt",
+  "text_key": "Q74913",
+  "article": "https://en.wikipedia.org/wiki/Heinrich_Prinz_von_Hannover",
+  "article_key": "Heinrich Prinz von Hannover",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+    "qid": "Q74913",
+    "label": "Prince Heinrich of Hanover"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+      "qid": "Q74913",
+      "label": "Prince Heinrich of Hanover",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "qid": "Q61079",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover_1",
+      "qid": "Q58070",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ernst_August_of_Hanover",
+      "qid": "Q4383225",
+      "label": "Prince Ernst August of Hanover",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "qid": "Q2534736",
+      "label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "qid": "Q57672",
+      "label": "Ernst August, Duke of Brunswick",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Heinrich_Prinz_von_Hannover",
+      "extracted_local_name": "Heinrich_Prinz_von_Hannover",
+      "embedding_text": "Heinrich Prinz von Hannover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+      "ground_truth_qid": "Q74913",
+      "ground_truth_label": "Prince Heinrich of Hanover",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Heinrich Prinz von Hannover",
+      "best_candidate_label": "Prince Heinrich of Hanover",
+      "best_candidate_qid": "Q74913",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Ernest_Augustus_of_Hanover",
+      "extracted_local_name": "Prince_Ernest_Augustus_of_Hanover",
+      "embedding_text": "Prince Ernest Augustus of Hanover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "ground_truth_qid": "Q61079",
+      "ground_truth_label": "Ernst August, Prince of Hanover",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Ernest Augustus of Hanover",
+      "best_candidate_label": "Ernst August, Prince of Hanover",
+      "best_candidate_qid": "Q61079",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg",
+      "extracted_local_name": "Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg",
+      "embedding_text": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "ground_truth_qid": "Q2534736",
+      "ground_truth_label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_qid": "Q2534736",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ernest_Augustus_Hereditary_Prince_of_Brunswick",
+      "extracted_local_name": "Ernest_Augustus_Hereditary_Prince_of_Brunswick",
+      "embedding_text": "Ernest Augustus Hereditary Prince of Brunswick",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7978723404255319,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "ground_truth_qid": "Q57672",
+      "ground_truth_label": "Ernst August, Duke of Brunswick",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Ernst August I of Brunswick",
+      "best_candidate_label": "Ernst August, Duke of Brunswick",
+      "best_candidate_qid": "Q57672",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.7978723404255319
+    },
+    {
+      "extracted_uri": "http://example.org/data/D%C3%A9sir%C3%A9e_Nick",
+      "extracted_local_name": "D%C3%A9sir%C3%A9e_Nick",
+      "embedding_text": "Désirée Nick",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ortrud of Schleswig-Holstein-Sonderburg-Glucksburg",
+      "best_candidate_label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_qid": "Q2534736",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.1935483870967742
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 4,
+    "entities_unmatched": 1
+  }
+}

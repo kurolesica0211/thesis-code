@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_Emich_of_Leiningen a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikolai Kirillovich Romanov\"^^xsd:string ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Andreas_8th_Prince_of_Leiningen ;\n    :hasDaughter data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen,\n        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;\n    :hasFather data:Emich_7th_Prince_of_Leiningen ;\n    :hasMother data:Duchess_Eilika_of_Oldenburg ;\n    :hasSon data:Prince_Emich_Albrecht_Karl_of_Leiningen .\n\ndata:Andreas_8th_Prince_of_Leiningen a :Man,\n        :Person .\n\ndata:Duchess_Eilika_of_Oldenburg a :Person,\n        :Woman .\n\ndata:Emich_7th_Prince_of_Leiningen a :Man,\n        :Person .\n\ndata:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasMother data:Gabriele_Renate_Thyssen .\n\ndata:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Person,\n        :Woman .\n\ndata:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Person,\n        :Woman ;\n    :hasMother data:Gabriele_Renate_Thyssen .\n\ndata:Gabriele_Renate_Thyssen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_Emich_of_Leiningen a :Man,\n        :Person ;\n    :alsoKnownAs \"Nikolai Kirillovich Romanov\"^^xsd:string ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Andreas_8th_Prince_of_Leiningen ;\n    :hasDaughter data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen,\n        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;\n    :hasFather data:Emich_7th_Prince_of_Leiningen ;\n    :hasMother data:Duchess_Eilika_of_Oldenburg ;\n    :hasSon data:Prince_Emich_Albrecht_Karl_of_Leiningen .\n\ndata:Andreas_8th_Prince_of_Leiningen a :Man,\n        :Person .\n\ndata:Duchess_Eilika_of_Oldenburg a :Person,\n        :Woman .\n\ndata:Emich_7th_Prince_of_Leiningen a :Man,\n        :Person .\n\ndata:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasMother data:Gabriele_Renate_Thyssen .\n\ndata:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Person,\n        :Woman .\n\ndata:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Person,\n        :Woman ;\n    :hasMother data:Gabriele_Renate_Thyssen .\n\ndata:Gabriele_Renate_Thyssen a :Person,\n        :Woman .\n\n"
+    }
+]

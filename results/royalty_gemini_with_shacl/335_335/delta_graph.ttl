@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alicia a :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Beatrix_of_the_Netherlands a :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
+
+data:Christina_of_the_Netherlands a :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
+
+data:Irene_of_the_Netherlands a :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
+
+data:Jonathan_Aitken a :Man ;
+    :isSonOf data:Bernhard_of_Lippe-Biesterfeld .
+
+data:Margriet_of_the_Netherlands a :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
+
+data:Armgard_von_Sierstorpff-Cramm a :Ancestor,
+        :Woman .
+
+data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man .
+
+data:Leopold_IV_Prince_of_Lippe a :Man .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Woman .
+
+data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man ;
+    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Armgard_von_Sierstorpff-Cramm ;
+    :hasRelation data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe .
+

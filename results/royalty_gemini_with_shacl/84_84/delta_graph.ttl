@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+        :Person ;
+    :hasFather data:Peter_II_of_Yugoslavia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:Male .
+
+data:Alexander_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:Alexander_of_Greece ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Aspasia_Manos ;
+    :hasSex data:Female .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Maria_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Peter_II_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1970 ;
+    :hasMother data:Maria_of_Yugoslavia ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

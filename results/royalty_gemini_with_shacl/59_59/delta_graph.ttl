@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne a :Woman .
+
+data:James_Mountbatten-Windsor a :Man ;
+    :hasFather data:Edward ;
+    :hasMother data:Sophie_Rhys-Jones .
+
+data:Louise_Mountbatten-Windsor a :Woman ;
+    :hasFather data:Edward ;
+    :hasMother data:Sophie_Rhys-Jones .
+
+data:Andrew a :Man .
+
+data:Charles_III a :Man .
+
+data:Elizabeth_II a :Ancestor,
+        :Woman .
+
+data:Philip a :Ancestor,
+        :Man ;
+    :hasDeathYear 2021 .
+
+data:Edward a :Ancestor,
+        :Man ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Philip ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Elizabeth_II ;
+    :hasRelation data:Sophie_Rhys-Jones ;
+    :isBrotherOf data:Andrew,
+        data:Charles_III .
+
+data:Sophie_Rhys-Jones a :Ancestor,
+        :Woman .
+

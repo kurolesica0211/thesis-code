@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/404_404",
+  "text_file": "Q674343.txt",
+  "text_key": "Q674343",
+  "article": "https://en.wikipedia.org/wiki/Lady_Helen_Taylor",
+  "article_key": "Lady Helen Taylor",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Helen_Taylor",
+    "qid": "Q674343",
+    "label": "Lady Helen Taylor"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Helen_Taylor",
+      "qid": "Q674343",
+      "label": "Lady Helen Taylor",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Katharine-_Duchess_of_Kent",
+      "qid": "Q236678",
+      "label": "Katharine, Duchess of Kent",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Lady_Helen_Marina_Lucy_Taylor",
+      "extracted_local_name": "Lady_Helen_Marina_Lucy_Taylor",
+      "embedding_text": "Lady Helen Marina Lucy Taylor",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Helen_Taylor",
+      "ground_truth_qid": "Q674343",
+      "ground_truth_label": "Lady Helen Taylor",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Lady Helen Marina Lucy Taylor",
+      "best_candidate_label": "Lady Helen Taylor",
+      "best_candidate_qid": "Q674343",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Katharine_Duchess_of_Kent",
+      "extracted_local_name": "Katharine_Duchess_of_Kent",
+      "embedding_text": "Katharine Duchess of Kent",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9857142857142858,
+      "ground_truth_uri": "http://example.com/data#Katharine-_Duchess_of_Kent",
+      "ground_truth_qid": "Q236678",
+      "ground_truth_label": "Katharine, Duchess of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Katharine- Duchess of Kent",
+      "best_candidate_label": "Katharine, Duchess of Kent",
+      "best_candidate_qid": "Q236678",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9857142857142858
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_George_V",
+      "extracted_local_name": "King_George_V",
+      "embedding_text": "King George V",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Edward_Duke_of_Kent",
+      "extracted_local_name": "Prince_Edward_Duke_of_Kent",
+      "embedding_text": "Prince Edward Duke of Kent",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Timothy_Verner_Taylor",
+      "extracted_local_name": "Timothy_Verner_Taylor",
+      "embedding_text": "Timothy Verner Taylor",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

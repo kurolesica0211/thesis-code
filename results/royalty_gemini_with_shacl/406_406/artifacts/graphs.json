@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:16th_Lord_Elphinstone a :Man,\n        :Person ;\n    :isFatherOf data:Margaret_Rhodes .\n\ndata:Lady_Mary_Bowes-Lyon a :Person,\n        :Woman ;\n    :isMotherOf data:Margaret_Rhodes ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Denys_Gravenor_Rhodes a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Margaret_Rhodes a :Person,\n        :Woman ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2016 ;\n    :hasMarriageYear 1950 ;\n    :hasRelation data:Denys_Gravenor_Rhodes .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "5e151a80-36b6-4598-9361-23fb13e0fad0",
+        "graph": "@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/16th_Lord_Elphinstone> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/16th_Lord_Elphinstone> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Lady_Mary_Bowes-Lyon> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Lady_Mary_Bowes-Lyon> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:16th_Lord_Elphinstone a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Margaret_Rhodes .\n\ndata:Lady_Mary_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Margaret_Rhodes ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Denys_Gravenor_Rhodes a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Margaret_Rhodes a :Person,\n        :Woman ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2016 ;\n    :hasMarriageYear 1950 ;\n    :hasRelation data:Denys_Gravenor_Rhodes .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "6baec37a-8226-4e6c-80c6-8c263138d9c5",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:16th_Lord_Elphinstone a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Margaret_Rhodes .\n\ndata:Lady_Mary_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Margaret_Rhodes ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .\n\ndata:Denys_Gravenor_Rhodes a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Margaret_Rhodes a :Person,\n        :Woman ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2016 ;\n    :hasMarriageYear 1950 ;\n    :hasRelation data:Denys_Gravenor_Rhodes .\n\n"
+    }
+]

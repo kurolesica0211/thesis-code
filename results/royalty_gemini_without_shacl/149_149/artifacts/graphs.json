@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nina_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Maria_of_Greece_and_Denmark .\n\ndata:Pericles_Ioannides a :Man .\n\ndata:Xenia_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Maria_of_Greece_and_Denmark .\n\ndata:Constantine_I_of_Greece a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\ndata:George_I_of_Greece a :Man .\n\ndata:George_Mikhailovich_of_Russia a :Man .\n\ndata:Maria_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:Olga_Constantinovna_of_Russia ;\n    :isSisterOf data:Constantine_I_of_Greece .\n\ndata:Olga_Constantinovna_of_Russia a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nina_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Maria_of_Greece_and_Denmark .\n\ndata:Pericles_Ioannides a :Man .\n\ndata:Xenia_Georgievna a :Woman ;\n    :hasFather data:George_Mikhailovich_of_Russia ;\n    :hasMother data:Maria_of_Greece_and_Denmark .\n\ndata:Constantine_I_of_Greece a :Man ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMother data:Olga_Constantinovna_of_Russia .\n\ndata:George_I_of_Greece a :Man .\n\ndata:George_Mikhailovich_of_Russia a :Man .\n\ndata:Maria_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1940 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1900,\n        1922 ;\n    :hasMother data:Olga_Constantinovna_of_Russia ;\n    :isSisterOf data:Constantine_I_of_Greece .\n\ndata:Olga_Constantinovna_of_Russia a :Woman .\n\n"
+    }
+]

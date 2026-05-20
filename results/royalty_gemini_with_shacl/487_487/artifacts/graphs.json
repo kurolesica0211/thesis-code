@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1922 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:Prince_Oskar_of_Prussia ;\n    :hasMarriageYear 1952 ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Armgard_Else_Helene_von_Veltheim .\n\ndata:Armgard_Else_Helene_von_Veltheim a :Person,\n        :Woman ;\n    :hasFather data:Friedrich_von_Veltheim ;\n    :hasMother data:Ottonie_von_Alvensleben .\n\ndata:Friedrich_von_Veltheim a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ina_Marie_von_Bassewitz a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ottonie_von_Alvensleben a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Oskar_of_Prussia a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "8912495e-12bc-4366-95ff-12afa1a54e80",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1922 ;\n    :hasDeathYear 2007 ;\n    :hasFather data:Prince_Oskar_of_Prussia ;\n    :hasMarriageYear 1952 ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Armgard_Else_Helene_von_Veltheim .\n\ndata:Armgard_Else_Helene_von_Veltheim a :Person,\n        :Woman ;\n    :hasFather data:Friedrich_von_Veltheim ;\n    :hasMother data:Ottonie_von_Alvensleben .\n\ndata:Friedrich_von_Veltheim a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ina_Marie_von_Bassewitz a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ottonie_von_Alvensleben a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Oskar_of_Prussia a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

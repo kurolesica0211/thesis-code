@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1955 ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasRelation data:Charles_Wellesley .
+
+data:Charles_Wellesley a :Man,
+        :Person ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman .
+

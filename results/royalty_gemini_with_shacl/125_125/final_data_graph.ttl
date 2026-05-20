@@ -1,0 +1,23 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infante_Carlos_Duke_of_Calabria a :Man ;
+    :hasDeathYear 2015 ;
+    :hasMother data:Infanta_Alicia_Duchess_of_Calabria .
+
+data:Princess_Anne_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Ancestor,
+        :Woman ;
+    :hasDeathYear 2017 .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman .
+

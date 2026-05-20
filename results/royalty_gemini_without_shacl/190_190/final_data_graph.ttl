@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1871 ;
+    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1895,
+        1936 ;
+    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
+    :hasRelation data:Otto_Campini,
+        data:Prince_Emanuele_Filiberto_of_Savoy ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Isabelle_Duchess_of_Guise .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman .
+
+data:Infanta_Maria_Isabel_of_Spain a :Ancestor,
+        :Woman .
+
+data:Isabelle_Duchess_of_Guise a :Woman .
+
+data:Otto_Campini a :Man .
+
+data:Philippe_Duke_of_Orl%C3%A9ans a :Man .
+
+data:Prince_Emanuele_Filiberto_of_Savoy a :Man .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor,
+        :Man .
+

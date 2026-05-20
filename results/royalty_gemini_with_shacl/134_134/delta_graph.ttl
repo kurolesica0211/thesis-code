@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst-Johann_Biron a :Man ;
+    :hasFather data:Karl_Biron_von_Courland ;
+    :hasMother data:Herzeleide_of_Prussia .
+
+data:Burchard_of_Prussia a :Man .
+
+data:Francoise_Levisse_de_Montigny a :Ancestor,
+        :Woman .
+
+data:Gustav_Biron_of_Courland a :Ancestor,
+        :Man .
+
+data:Herzeleide_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:Burchard_of_Prussia,
+        data:Oscar_of_Prussia_brother,
+        data:Wilhelm-Karl_of_Prussia ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Oskar_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Ina_Marie_von_Bassewitz ;
+    :knownAs "Herzeleide Ina-Marie Sophie Charlotte Else of Prussia"^^xsd:string .
+
+data:Ina_Marie_von_Bassewitz a :Ancestor,
+        :Woman .
+
+data:Karl_Biron_von_Courland a :Ancestor,
+        :Man ;
+    :hasFather data:Gustav_Biron_of_Courland ;
+    :hasMother data:Francoise_Levisse_de_Montigny .
+
+data:Oscar_of_Prussia_brother a :Man .
+
+data:Oskar_of_Prussia a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II .
+
+data:Wilhelm-Karl_of_Prussia a :Man .
+
+data:Wilhelm_II a :Ancestor,
+        :Man .
+

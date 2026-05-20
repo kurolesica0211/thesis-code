@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Prince_John a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Edward_VII a :Ancestor,
+        :Man,
+        :Person .
+
+data:Francis_Duke_of_Teck a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Mary_Adelaide_of_Cambridge a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Alexandra a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Wallis_Simpson a :Person,
+        :Woman .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :alsoKnownAs "Duke of Windsor"^^xsd:string ;
+    :hasBirthYear 1894 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Wallis_Simpson .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Edward_VII ;
+    :hasMother data:Queen_Alexandra .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .
+

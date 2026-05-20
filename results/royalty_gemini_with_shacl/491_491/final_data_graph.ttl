@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Felipe_VI_of_Spain a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Louise_Francoise_Marie_Laure_of_Orleans .
+
+data:Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man,
+        :Person .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
+        :Person ;
+    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman .
+
+data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1958 ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Princess_Marie_Isabelle_dOrleans ;
+    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
+
+data:Princess_Marie_Isabelle_dOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+

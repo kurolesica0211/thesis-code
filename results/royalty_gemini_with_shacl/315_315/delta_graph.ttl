@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Adalbert_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig_Holstein ;
+    :hasRelation data:Princess_Adelheid_of_Saxe_Meiningen .
+
+data:Augusta_Victoria_of_Schleswig_Holstein a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Countess_Adelaide_of_Lippe_Biesterfeld a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Frederick_of_Saxe_Meiningen a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Adelheid_of_Saxe_Meiningen a :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Prince_Frederick_of_Saxe_Meiningen ;
+    :hasMother data:Countess_Adelaide_of_Lippe_Biesterfeld .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person .
+

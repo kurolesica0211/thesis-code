@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ines_Parent_Node a :Ancestor,
+        :Person ;
+    :hasChild data:Eugenia,
+        data:Isabel,
+        data:Manuel,
+        data:Mencia,
+        data:Sonia .
+
+data:Princess_Ines a :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Infante_Alfonso ;
+    :hasMother data:Infanta_Alicia ;
+    :hasSex data:Female .
+
+data:Eugenia a :Person,
+        :Woman .
+
+data:Infanta_Alicia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2017 ;
+    :hasSex data:Female .
+
+data:Infante_Alfonso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasSex data:Male .
+
+data:Isabel a :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:Manuel a :Man,
+        :Person .
+
+data:Mencia a :Person,
+        :Woman .
+
+data:Sonia a :Person,
+        :Woman ;
+    :hasBirthYear 1969 ;
+    :hasDeathYear 2022 .
+
+data:Female a :Sex .
+

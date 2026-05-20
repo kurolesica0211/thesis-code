@@ -1,0 +1,81 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hubertus_son_of_Cecilie a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Louis_Ferdinand_son_of_Cecilie a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Kira_Kirillovna_of_Russia .
+
+data:Victoria_Marina_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Frederick_son_of_Cecilie .
+
+data:Wilhelm_son_of_Cecilie a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Dorothea_von_Salviati .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasRelation data:Christian_X_of_Denmark .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasFather data:Michael_Nikolaevich_of_Russia .
+
+data:Christian_X_of_Denmark a :Man,
+        :Person .
+
+data:Cyril_Vladimirovich_of_Russia a :Ancestor,
+        :Man .
+
+data:Dorothea_von_Salviati a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_son_of_Cecilie a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Cyril_Vladimirovich_of_Russia .
+
+data:Michael_Nikolaevich_of_Russia a :Ancestor,
+        :Man .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II_German_Emperor .
+

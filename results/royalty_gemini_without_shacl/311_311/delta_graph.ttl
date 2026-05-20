@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ana_Luna_Medina_y_Orl%C3%A9ans-Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Marija_Kara%C4%91or%C4%91evi%C4%87 a :Person,
+        :Woman ;
+    :hasFather data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 .
+
+data:Sol_Mar%C3%ADa_de_la_Blanca_Medina_y_Orl%C3%A9ans-Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Stefan_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasFather data:Philip_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Danica_Marinkovi%C4%87 .
+
+data:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person .
+
+data:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Peter_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasRelation data:Danica_Marinkovi%C4%87 .
+
+data:Danica_Marinkovi%C4%87 a :Person,
+        :Woman .
+
+data:Maria_da_Gloria a :Person,
+        :Woman .
+

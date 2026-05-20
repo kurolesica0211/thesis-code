@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
+        :Woman ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten .
+
+data:Nicholas_Timothy_Charles_Knatchbull a :Man,
+        :Person ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten .
+
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten .
+
+data:Timothy_Knatchbull a :Man,
+        :Person ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten .
+
+data:Lady_Doreen_Browne a :Person,
+        :Woman .
+
+data:Louis_Mountbatten a :Man,
+        :Person .
+
+data:Michael_Knatchbull a :Man,
+        :Person .
+
+data:John_Ulick_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Michael_Knatchbull ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Lady_Doreen_Browne ;
+    :hasRelation data:Patricia_Mountbatten ;
+    :knownAs "John Brabourne"^^xsd:string .
+
+data:Patricia_Mountbatten a :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten .
+

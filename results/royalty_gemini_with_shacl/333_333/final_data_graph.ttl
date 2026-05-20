@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ingolf_of_Rosenborg a :Man ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Christian_of_Rosenborg ;
+    :hasFather data:Prince_Knud ;
+    :hasMarriageYear 1968 ;
+    :hasRelation data:Inge_Terney,
+        data:Sussie_Hjorhoy-Pedersen ;
+    :hasSister data:Princess_Elisabeth_of_Denmark .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man .
+
+data:Christian_of_Rosenborg a :Man .
+
+data:Frederick_Walter_Pedersen a :Ancestor,
+        :Man .
+
+data:Georg_Terney a :Ancestor,
+        :Man .
+
+data:Inge_Terney a :Woman ;
+    :hasFather data:Georg_Terney ;
+    :hasMother data:Jenny_Kamilla_Hansen .
+
+data:Jenny_Kamilla_Hansen a :Ancestor,
+        :Woman .
+
+data:Prince_Knud a :Ancestor,
+        :Man ;
+    :hasFather data:Christian_X_of_Denmark .
+
+data:Princess_Elisabeth_of_Denmark a :Woman .
+
+data:Ruth_Hjorhoy a :Ancestor,
+        :Woman .
+
+data:Sussie_Hjorhoy-Pedersen a :Woman ;
+    :hasFather data:Frederick_Walter_Pedersen ;
+    :hasMother data:Ruth_Hjorhoy .
+

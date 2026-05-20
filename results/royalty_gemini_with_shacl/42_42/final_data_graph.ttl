@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_George_of_Wales a :Man,
+        :Person ;
+    :hasBirthYear 2013 ;
+    :hasBrother data:Prince_Louis ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :hasSister data:Princess_Charlotte .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasDeathYear 2022 .
+
+data:Catherine_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Louis a :Man,
+        :Person .
+
+data:Princess_Charlotte a :Person,
+        :Woman .
+
+data:William_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
+

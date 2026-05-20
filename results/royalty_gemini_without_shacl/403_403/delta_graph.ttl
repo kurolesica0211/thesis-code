@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_Alexandra_of_Baden a :Woman ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Marie_Louise_of_Hanover .
+
+data:Marie_Louise_of_Hanover a :Woman .
+
+data:Maximilian_of_Baden a :Man .
+
+data:Philipp_of_Hesse a :Man ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMother data:Margaret_of_Prussia ;
+    :isBrotherOf data:Wolfgang_of_Hesse .
+
+data:Wolfgang_of_Hesse a :Man ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Marie_Alexandra_of_Baden ;
+    :isBrotherOf data:Philipp_of_Hesse .
+
+data:Frederick_Charles_of_Hesse a :Man .
+
+data:Margaret_of_Prussia a :Woman .
+

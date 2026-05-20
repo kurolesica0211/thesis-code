@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLucienMurat a :Man .\n\ndata:PrinceMichelDOrleans a :Man ;\n    :hasFather data:HenriCountOfParis .\n\ndata:PrincessIsabelleDOrleans a :Woman ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:HenriCountOfParis ;\n    :hasDeathYear 1983 ;\n    :hasFather data:PrinceJeanDukeOfGuise ;\n    :hasMarriageYear 1923,\n        1934 ;\n    :hasMother data:PrincessIsabelleOfOrleans ;\n    :hasRelation data:CountBrunoDHarcourt,\n        data:PrincePierreMurat ;\n    :hasSister data:PrincessFrancoiseOfGreece .\n\ndata:ArmandeDePierreDeBernis a :Woman .\n\ndata:CountBrunoDHarcourt a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1930 ;\n    :hasFather data:CountEugeneDHarcourt ;\n    :hasMother data:ArmandeDePierreDeBernis .\n\ndata:CountEugeneDHarcourt a :Man .\n\ndata:PrinceChristopherOfGreece a :Man .\n\ndata:PrinceJeanDukeOfGuise a :Man ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1940 .\n\ndata:PrincePierreMurat a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\ndata:PrincessFrancoiseOfGreece a :Woman ;\n    :hasRelation data:PrinceChristopherOfGreece .\n\ndata:PrincessIsabelleOfOrleans a :Woman .\n\ndata:HenriCountOfParis a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceLucienMurat a :Man .\n\ndata:PrinceMichelDOrleans a :Man ;\n    :hasFather data:HenriCountOfParis .\n\ndata:PrincessIsabelleDOrleans a :Woman ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:HenriCountOfParis ;\n    :hasDeathYear 1983 ;\n    :hasFather data:PrinceJeanDukeOfGuise ;\n    :hasMarriageYear 1923,\n        1934 ;\n    :hasMother data:PrincessIsabelleOfOrleans ;\n    :hasRelation data:CountBrunoDHarcourt,\n        data:PrincePierreMurat ;\n    :hasSister data:PrincessFrancoiseOfGreece .\n\ndata:ArmandeDePierreDeBernis a :Woman .\n\ndata:CountBrunoDHarcourt a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1930 ;\n    :hasFather data:CountEugeneDHarcourt ;\n    :hasMother data:ArmandeDePierreDeBernis .\n\ndata:CountEugeneDHarcourt a :Man .\n\ndata:PrinceChristopherOfGreece a :Man .\n\ndata:PrinceJeanDukeOfGuise a :Man ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1940 .\n\ndata:PrincePierreMurat a :Man ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 .\n\ndata:PrincessFrancoiseOfGreece a :Woman ;\n    :hasRelation data:PrinceChristopherOfGreece .\n\ndata:PrincessIsabelleOfOrleans a :Woman .\n\ndata:HenriCountOfParis a :Man .\n\n"
+    }
+]

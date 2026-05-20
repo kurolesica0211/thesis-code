@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Edward a :Man ;
+    :hasBirthYear 1964 ;
+    :hasChild data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor ;
+    :hasFather data:Prince_Philip ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :isBrotherOf data:Andrew,
+        data:King_Charles_III ;
+    :isSisterOf data:Anne .
+
+data:Sophie_Rhys-Jones a :Woman ;
+    :hasChild data:James_Mountbatten-Windsor,
+        data:Lady_Louise_Mountbatten-Windsor .
+
+data:Andrew a :Man .
+
+data:Anne a :Woman .
+
+data:King_Charles_III a :Man .
+
+data:Prince_Philip a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:James_Mountbatten-Windsor a :Man .
+
+data:Lady_Louise_Mountbatten-Windsor a :Woman .
+

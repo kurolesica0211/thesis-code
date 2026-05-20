@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SimonAlexanderBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1932 ;\n    :hasFather data:DavidBowesLyon ;\n    :hasMother data:RachelPaulineSpenderClay .\n\ndata:DavidBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1961 .\n\ndata:HerbertSpenderClay a :Man,\n        :Person .\n\ndata:PaulineAstor a :Person,\n        :Woman .\n\ndata:RachelPaulineSpenderClay a :Person,\n        :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:HerbertSpenderClay ;\n    :hasMother data:PaulineAstor .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SimonAlexanderBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1932 ;\n    :hasFather data:DavidBowesLyon ;\n    :hasMother data:RachelPaulineSpenderClay .\n\ndata:DavidBowesLyon a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1961 .\n\ndata:HerbertSpenderClay a :Man,\n        :Person .\n\ndata:PaulineAstor a :Person,\n        :Woman .\n\ndata:RachelPaulineSpenderClay a :Person,\n        :Woman ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:HerbertSpenderClay ;\n    :hasMother data:PaulineAstor .\n\n"
+    }
+]

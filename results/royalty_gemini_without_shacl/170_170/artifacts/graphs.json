@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_son_of_Alfonso_XIII a :Man ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isBrotherOf data:Maria_Cristina_of_Spain .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isSisterOf data:Maria_Cristina_of_Spain .\n\ndata:Gonzalo_son_of_Alfonso_XIII a :Man ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isBrotherOf data:Maria_Cristina_of_Spain .\n\ndata:Enrico_Eugenio a :Man ;\n    :hasRelation data:Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla a :Woman .\n\ndata:Maria_Cristina_of_Spain a :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Enrico_Eugenio ;\n    :isAuntOf data:Juan_Carlos_I .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_son_of_Alfonso_XIII a :Man ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isBrotherOf data:Maria_Cristina_of_Spain .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isSisterOf data:Maria_Cristina_of_Spain .\n\ndata:Gonzalo_son_of_Alfonso_XIII a :Man ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :isBrotherOf data:Maria_Cristina_of_Spain .\n\ndata:Enrico_Eugenio a :Man ;\n    :hasRelation data:Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla .\n\ndata:Juan_Carlos_I a :Man .\n\ndata:Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla a :Woman .\n\ndata:Maria_Cristina_of_Spain a :Woman ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :hasRelation data:Enrico_Eugenio ;\n    :isAuntOf data:Juan_Carlos_I .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\n"
+    }
+]

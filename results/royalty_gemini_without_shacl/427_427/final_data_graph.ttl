@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :isSisterOf data:Kraft_Prince_of_Hohenlohe-Langenburg .
+
+data:Princess_Charlotte_of_Croy a :Person,
+        :Woman .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965,
+        "1965"^^xsd:string ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+

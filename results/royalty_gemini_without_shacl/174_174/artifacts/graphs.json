@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man .\n\ndata:Ingrid a :Woman ;\n    :isSisterOf data:Anne-Marie .\n\ndata:Mafalda a :Woman ;\n    :isDaughterOf data:Kyril .\n\ndata:Maria-Olympia a :Woman .\n\ndata:Michael a :Man ;\n    :isFatherOf data:Marina .\n\ndata:Pavlos a :Man ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie ;\n    :isBrotherOf data:Alexia .\n\ndata:Sofia a :Woman ;\n    :isSisterOf data:Alexia,\n        data:Anne-Marie .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Alexia .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Kyril a :Man ;\n    :isSonOf data:Simeon .\n\ndata:Marina a :Woman .\n\ndata:Simeon a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana .\n\ndata:Anne-Marie a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man .\n\ndata:Ingrid a :Woman ;\n    :isSisterOf data:Anne-Marie .\n\ndata:Mafalda a :Woman ;\n    :isDaughterOf data:Kyril .\n\ndata:Maria-Olympia a :Woman .\n\ndata:Michael a :Man ;\n    :isFatherOf data:Marina .\n\ndata:Pavlos a :Man ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie ;\n    :isBrotherOf data:Alexia .\n\ndata:Sofia a :Woman ;\n    :isSisterOf data:Alexia,\n        data:Anne-Marie .\n\ndata:Theodora a :Woman ;\n    :isSisterOf data:Alexia .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Kyril a :Man ;\n    :isSonOf data:Simeon .\n\ndata:Marina a :Woman .\n\ndata:Simeon a :Man .\n\ndata:Constantine_II a :Man .\n\ndata:Alexia a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana .\n\ndata:Anne-Marie a :Woman .\n\n"
+    }
+]

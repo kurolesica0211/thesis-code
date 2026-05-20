@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philippe_of_Hesse a :Man,
+        :Person ;
+    :hasRelation data:Mafalda_of_Italy ;
+    :isBrotherOf data:Prince_Richard_of_Hesse .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Richard_of_Hesse .
+
+data:Emperor_Wilhelm_II a :Man,
+        :Person .
+
+data:Mafalda_of_Italy a :Person,
+        :Woman .
+
+data:Male a :Male .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Man,
+        :Person ;
+    :hasMarriageYear 1930 ;
+    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Richard_of_Hesse .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isSisterOf data:Emperor_Wilhelm_II .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Richard_of_Hesse a :Man,
+        :Person ;
+    :alsoKnownAs "Richard Wilhelm Leopold"^^xsd:string ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel ;
+    :knownAs "Ri"^^xsd:string .
+

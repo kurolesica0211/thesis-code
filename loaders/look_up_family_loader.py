@@ -8,7 +8,7 @@ def get_loader():
     bench_dir = Path("custom_family_bench")
     ontology = str(bench_dir.joinpath("family_TBOX.ttl"))
     shacl = str(bench_dir.joinpath("family_shacl_final.ttl"))
-    texts_dir = bench_dir.joinpath("royalty/denoised_texts")
+    texts_dir = bench_dir.joinpath("royalty/denoised_texts_fuzzy_match")
     last_run_dir = "AAA"
     
     results_dir = Path("results")
@@ -36,7 +36,7 @@ def get_loader():
     data_entries = []
     text_filepaths = [str(texts_dir) + "/" + task_id + ".txt" for task_id in final_ids]
     
-    '''step = 1
+    step = 1
     for i in range(0, len(text_filepaths), step):
         entry = DataEntry(
             entry_id=f"{i}_{i+step-1}",
@@ -45,10 +45,11 @@ def get_loader():
             shacl_filepath=shacl,
             data_graph_path=data_graph_path
         )
-        data_entries.append(entry)'''
+        data_entries.append(entry)
         
     # FAILURES
-    li = [229]
+    #38,45,54,56,60,65,90,91,104,205,212,220,244,342,390,393,469,492
+    '''li = [492]
     text_filepaths = [text_filepaths[l] for l in li]
     for i, id in enumerate(li):
         entry = DataEntry(
@@ -58,7 +59,7 @@ def get_loader():
             shacl_filepath=shacl,
             data_graph_path=data_graph_path
         )
-        data_entries.append(entry)
+        data_entries.append(entry)'''
     
     loader = Loader(data_entries)
     return loader

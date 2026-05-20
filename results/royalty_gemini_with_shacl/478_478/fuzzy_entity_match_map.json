@@ -1,0 +1,275 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/478_478",
+  "text_file": "Q84795732.txt",
+  "text_key": "Q84795732",
+  "article": "https://en.wikipedia.org/wiki/Jeanne_Marie_Langtry",
+  "article_key": "Jeanne Marie Langtry",
+  "main_entity": {
+    "uri": "http://example.com/data#Jeanne_Marie_Langtry",
+    "qid": "Q84795732",
+    "label": "Jeanne Marie Langtry"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Jeanne_Marie_Langtry",
+      "qid": "Q84795732",
+      "label": "Jeanne Marie Langtry",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Edward_Langtry",
+      "qid": "Q63196804",
+      "label": "Edward Langtry",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Lillie_Langtry",
+      "qid": "Q297743",
+      "label": "Lillie Langtry",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "qid": "Q157068",
+      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Louise_Mountbatten",
+      "qid": "Q115477",
+      "label": "Louise Mountbatten",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Mary_Malcolm",
+      "qid": "Q16018831",
+      "label": "Mary Malcolm",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Louis_of_Battenberg",
+      "qid": "Q57468",
+      "label": "Prince Louis of Battenberg",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Ian_Malcolm",
+      "qid": "Q3147302",
+      "label": "Ian Malcolm",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Edinburgh",
+      "qid": "Q154920",
+      "label": "Prince Edward, Duke of Edinburgh",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Edward_Langtry",
+      "extracted_local_name": "Edward_Langtry",
+      "embedding_text": "Edward Langtry",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Edward_Langtry",
+      "ground_truth_qid": "Q63196804",
+      "ground_truth_label": "Edward Langtry",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Edward Langtry",
+      "best_candidate_label": "Edward Langtry",
+      "best_candidate_qid": "Q63196804",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Emilie_Charlotte_Le_Breton",
+      "extracted_local_name": "Emilie_Charlotte_Le_Breton",
+      "embedding_text": "Emilie Charlotte Le Breton",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lillie_Langtry",
+      "ground_truth_qid": "Q297743",
+      "ground_truth_label": "Lillie Langtry",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Emilie Charlotte Le Breton",
+      "best_candidate_label": "Lillie Langtry",
+      "best_candidate_qid": "Q297743",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jeanne_Marie_Langtry",
+      "extracted_local_name": "Jeanne_Marie_Langtry",
+      "embedding_text": "Jeanne Marie Langtry",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Jeanne_Marie_Langtry",
+      "ground_truth_qid": "Q84795732",
+      "ground_truth_label": "Jeanne Marie Langtry",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Jeanne Marie Langtry",
+      "best_candidate_label": "Jeanne Marie Langtry",
+      "best_candidate_qid": "Q84795732",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Malcolm",
+      "extracted_local_name": "Mary_Malcolm",
+      "embedding_text": "Mary Malcolm",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Mary_Malcolm",
+      "ground_truth_qid": "Q16018831",
+      "ground_truth_label": "Mary Malcolm",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Mary Malcolm",
+      "best_candidate_label": "Mary Malcolm",
+      "best_candidate_qid": "Q16018831",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Louis_of_Battenberg",
+      "extracted_local_name": "Prince_Louis_of_Battenberg",
+      "embedding_text": "Prince Louis of Battenberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "ground_truth_qid": "Q157068",
+      "ground_truth_label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Louis of Battenberg",
+      "best_candidate_label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "best_candidate_qid": "Q157068",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sir_Ian_Malcolm",
+      "extracted_local_name": "Sir_Ian_Malcolm",
+      "embedding_text": "Sir Ian Malcolm",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8461538461538461,
+      "ground_truth_uri": "http://example.com/data#Ian_Malcolm",
+      "ground_truth_qid": "Q3147302",
+      "ground_truth_label": "Ian Malcolm",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Ian Malcolm",
+      "best_candidate_label": "Ian Malcolm",
+      "best_candidate_qid": "Q3147302",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8461538461538461
+    },
+    {
+      "extracted_uri": "http://example.org/data/Emilie_Davis_Martin",
+      "extracted_local_name": "Emilie_Davis_Martin",
+      "embedding_text": "Emilie Davis Martin",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Victoria Alice Elizabeth Julia Marie",
+      "best_candidate_label": "Princess Alice of Battenberg",
+      "best_candidate_qid": "Q116062",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.43636363636363634
+    },
+    {
+      "extracted_uri": "http://example.org/data/Victor_Neill_Malcolm",
+      "extracted_local_name": "Victor_Neill_Malcolm",
+      "embedding_text": "Victor Neill Malcolm",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sir Louis Mountbatten",
+      "best_candidate_label": "Prince Louis of Battenberg",
+      "best_candidate_qid": "Q57468",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.34146341463414637
+    },
+    {
+      "extracted_uri": "http://example.org/data/William_Corbet_Le_Breton",
+      "extracted_local_name": "William_Corbet_Le_Breton",
+      "embedding_text": "William Corbet Le Breton",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sir Louis Alexander Mountbatten",
+      "best_candidate_label": "Prince Louis of Battenberg",
+      "best_candidate_qid": "Q57468",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.32727272727272727
+    }
+  ],
+  "summary": {
+    "entities_total": 9,
+    "entities_matched": 6,
+    "entities_unmatched": 3
+  }
+}

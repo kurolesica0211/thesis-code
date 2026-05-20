@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Archie_Harrison_Mountbatten-Windsor a :Person ;
+    :hasBirthYear 2019 ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :knownAs data:Prince_Archie_of_Sussex .
+
+data:Prince_Philip a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:King_Charles_III a :Ancestor,
+        :Man .
+
+data:Meghan_Duchess_of_Sussex a :Ancestor,
+        :Woman .
+
+data:Prince_Archie_of_Sussex a :Person .
+
+data:Prince_Harry a :Ancestor,
+        :Man ;
+    :hasFather data:King_Charles_III .
+

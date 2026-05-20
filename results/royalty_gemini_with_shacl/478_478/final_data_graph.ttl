@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hugo_Gerald_de_Bathe a :Man,
+        :Person .
+
+data:Mary_Malcolm a :Person,
+        :Woman ;
+    :isDaughterOf data:Jeanne_Marie_Langtry,
+        data:Sir_Ian_Malcolm .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :isFatherOf data:Jeanne_Marie_Langtry .
+
+data:Victor_Neill_Malcolm a :Man,
+        :Person ;
+    :isSonOf data:Jeanne_Marie_Langtry,
+        data:Sir_Ian_Malcolm .
+
+data:Edward_Langtry a :Man,
+        :Person ;
+    :hasBirthYear 1847 ;
+    :hasDeathYear 1897 .
+
+data:Emilie_Charlotte_Le_Breton a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "The Jersey Lily"^^xsd:string ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:William_Corbet_Le_Breton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:Emilie_Davis_Martin ;
+    :isBloodrelationOf data:Edward_Langtry ;
+    :knownAs "Lillie Langtry"^^xsd:string .
+
+data:Emilie_Davis_Martin a :Ancestor,
+        :Woman .
+
+data:William_Corbet_Le_Breton a :Ancestor,
+        :Man .
+
+data:Jeanne_Marie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :isBloodrelationOf data:Sir_Ian_Malcolm ;
+    :isDaughterOf data:Emilie_Charlotte_Le_Breton .
+
+data:Sir_Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person .
+

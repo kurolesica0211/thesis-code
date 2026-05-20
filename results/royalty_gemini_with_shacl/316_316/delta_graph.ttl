@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Klynstra a :Man ;
+    :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza ;
+    :hasMother data:Brigitte_Klynstra .
+
+data:Prince_Carlos_Enrique a :Man ;
+    :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+
+data:Princess_Cecilia a :Woman ;
+    :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+
+data:Princess_Luisa a :Woman ;
+    :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+
+data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman .
+
+data:Brigitte_Klynstra a :Ancestor,
+        :Woman .
+
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Xavier_of_Bourbon-Parma .
+
+data:Prince_Jaime a :Man .
+
+data:Prince_Xavier_of_Bourbon-Parma a :Ancestor,
+        :Man .
+
+data:Princess_Carolina a :Woman .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Woman .
+
+data:Princess_Margarita a :Woman .
+
+data:Prince_Carlos_Duke_of_Parma_and_Piacenza a :Ancestor,
+        :Man ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Prince_Jaime ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
+    :hasSister data:Princess_Carolina,
+        data:Princess_Margarita .
+

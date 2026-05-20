@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CarloAlessandro a :Man,
+        :Person ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Raimundo ;
+    :hasMother data:EugenieOfGreeceAndDenmark ;
+    :hasSex data:Male .
+
+data:EugenieOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Raimundo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+

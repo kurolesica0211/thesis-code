@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DianaPrincessOfWales a :Person,
+        :Woman .
+
+data:LilibetDianaMountbattenWindsor a :Person,
+        :Woman ;
+    :hasBirthYear 2021 ;
+    :hasBrother data:PrinceArchie ;
+    :hasFather data:PrinceHarry ;
+    :hasMother data:MeghanDuchessOfSussex .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:KingCharlesIII a :Man,
+        :Person .
+
+data:MeghanDuchessOfSussex a :Person,
+        :Woman .
+
+data:PrinceArchie a :Man,
+        :Person .
+
+data:PrinceHarry a :Man,
+        :Person ;
+    :hasFather data:KingCharlesIII .
+

@@ -1,0 +1,55 @@
+{
+    "translation": [
+        {
+            "iteration": 2,
+            "shacl_tool_call_id": "29cb35dc-d40c-4a3e-9e8e-76775a92f8fe",
+            "metadata": {
+                "input_tokens": 27724,
+                "output_tokens": 1686,
+                "total_tokens": 29410,
+                "input_token_details": {
+                    "cache_read": 24334
+                }
+            }
+        }
+    ],
+    "final": [
+        {
+            "iteration": 4,
+            "metadata": [
+                {
+                    "input_tokens": 10051,
+                    "output_tokens": 1548,
+                    "total_tokens": 11599,
+                    "input_token_details": {
+                        "cache_read": 10046
+                    }
+                },
+                {
+                    "input_tokens": 13556,
+                    "output_tokens": 10,
+                    "total_tokens": 13566,
+                    "input_token_details": {
+                        "cache_read": 10046
+                    }
+                },
+                {
+                    "input_tokens": 16806,
+                    "output_tokens": 185,
+                    "total_tokens": 16991,
+                    "input_token_details": {
+                        "cache_read": 10046
+                    }
+                },
+                {
+                    "input_tokens": 17775,
+                    "output_tokens": 8,
+                    "total_tokens": 17783,
+                    "input_token_details": {
+                        "cache_read": 10046
+                    }
+                }
+            ]
+        }
+    ]
+}

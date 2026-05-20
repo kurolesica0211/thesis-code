@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Caroline-Mathilde a :Woman ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\ndata:Gustav a :Man .\n\ndata:Margrethe_II a :Woman .\n\ndata:Alexandrine a :Woman ;\n    :isMotherOf data:Frederik_IX,\n        data:Knud .\n\ndata:Christian_X a :Man ;\n    :hasFather data:Crown_Prince_Frederik,\n        data:Frederik_VIII .\n\ndata:Christian_son_of_Knud a :Man .\n\ndata:Crown_Prince_Frederik a :Man ;\n    :hasFather data:Christian_IX .\n\ndata:Elisabeth a :Woman .\n\ndata:Harald a :Man ;\n    :hasFather data:Frederik_VIII .\n\ndata:Helena a :Woman .\n\ndata:Ingolf a :Man .\n\ndata:Knud a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Frederik_IX ;\n    :hasDaughter data:Elisabeth ;\n    :hasDeathYear 1976 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasSon data:Christian_son_of_Knud,\n        data:Ingolf .\n\ndata:Christian_IX a :Man .\n\ndata:Frederik_IX a :Man .\n\ndata:Frederik_VIII a :Man ;\n    :hasFather data:Christian_IX .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Caroline-Mathilde a :Woman ;\n    :hasFather data:Harald ;\n    :hasMother data:Helena .\n\ndata:Gustav a :Man .\n\ndata:Margrethe_II a :Woman .\n\ndata:Alexandrine a :Woman ;\n    :isMotherOf data:Frederik_IX,\n        data:Knud .\n\ndata:Christian_X a :Man ;\n    :hasFather data:Crown_Prince_Frederik,\n        data:Frederik_VIII .\n\ndata:Christian_son_of_Knud a :Man .\n\ndata:Crown_Prince_Frederik a :Man ;\n    :hasFather data:Christian_IX .\n\ndata:Elisabeth a :Woman .\n\ndata:Harald a :Man ;\n    :hasFather data:Frederik_VIII .\n\ndata:Helena a :Woman .\n\ndata:Ingolf a :Man .\n\ndata:Knud a :Man ;\n    :hasBirthYear 1900 ;\n    :hasBrother data:Frederik_IX ;\n    :hasDaughter data:Elisabeth ;\n    :hasDeathYear 1976 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear 1933 ;\n    :hasMother data:Alexandrine ;\n    :hasSon data:Christian_son_of_Knud,\n        data:Ingolf .\n\ndata:Christian_IX a :Man .\n\ndata:Frederik_IX a :Man .\n\ndata:Frederik_VIII a :Man ;\n    :hasFather data:Christian_IX .\n\n"
+    }
+]

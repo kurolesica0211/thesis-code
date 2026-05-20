@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marie_Alix_of_Schaumburg-Lippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:Georg_Moritz_of_Schaumburg-Lippe ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Stefan_of_Schaumburg-Lippe ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Ingeborg_Alix ;
+    :hasRelation data:Peter_of_Schleswig-Holstein ;
+    :hasSex data:Female .
+
+data:Georg_Moritz_of_Schaumburg-Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Stefan_of_Schaumburg-Lippe ;
+    :hasMother data:Ingeborg_Alix ;
+    :hasSex data:Male .
+
+data:Marie_Melita_of_Hohenlohe-Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Peter_of_Schleswig-Holstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Wilhelm_Friedrich_of_Schleswig-Holstein ;
+    :hasMother data:Marie_Melita_of_Hohenlohe-Langenburg ;
+    :hasSex data:Male .
+
+data:Wilhelm_Friedrich_of_Schleswig-Holstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Ingeborg_Alix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Stefan_of_Schaumburg-Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

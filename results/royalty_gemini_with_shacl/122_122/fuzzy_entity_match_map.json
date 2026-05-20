@@ -1,0 +1,101 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/122_122",
+  "text_file": "Q2038298.txt",
+  "text_key": "Q2038298",
+  "article": "https://en.wikipedia.org/wiki/James_Lascelles",
+  "article_key": "James Lascelles",
+  "main_entity": {
+    "uri": "http://example.com/data#James_Lascelles",
+    "qid": "Q2038298",
+    "label": "James Lascelles"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#James_Lascelles",
+      "qid": "Q2038298",
+      "label": "James Lascelles",
+      "distance": 0,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/James_Edward_Lascelles",
+      "extracted_local_name": "James_Edward_Lascelles",
+      "embedding_text": "James Edward Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#James_Lascelles",
+      "ground_truth_qid": "Q2038298",
+      "ground_truth_label": "James Lascelles",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "James Edward Lascelles",
+      "best_candidate_label": "James Lascelles",
+      "best_candidate_qid": "Q2038298",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/7th_Earl_of_Harewood",
+      "extracted_local_name": "7th_Earl_of_Harewood",
+      "embedding_text": "7th Earl of Harewood",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. James Edward Lascelles",
+      "best_candidate_label": "James Lascelles",
+      "best_candidate_qid": "Q2038298",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3404255319148936
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Charles_III",
+      "extracted_local_name": "King_Charles_III",
+      "embedding_text": "King Charles III",
+      "extracted_gender": null,
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marion",
+      "extracted_local_name": "Marion",
+      "embedding_text": "Marion",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 1,
+    "entities_unmatched": 3
+  }
+}

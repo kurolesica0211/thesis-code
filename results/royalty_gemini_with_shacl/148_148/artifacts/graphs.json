@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Alexandra Georgievna\"^^xsd:string ;\n    :hasBirthYear 1870 ;\n    :hasChild data:Dmitri_Pavlovich_of_Russia,\n        data:Maria_Pavlovna_of_Russia ;\n    :hasDeathYear 1891 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga_Constantinovna_of_Russia ;\n    :knownAs \"Aline\"^^xsd:string .\n\ndata:Paul_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasChild data:Dmitri_Pavlovich_of_Russia,\n        data:Maria_Pavlovna_of_Russia .\n\ndata:George_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Olga_Constantinovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich_of_Russia a :Man,\n        :Person .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "87f67dd2-ceea-4d36-9a01-c2405394037f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Alexandra Georgievna\"^^xsd:string ;\n    :hasBirthYear 1870 ;\n    :hasChild data:Dmitri_Pavlovich_of_Russia,\n        data:Maria_Pavlovna_of_Russia ;\n    :hasDeathYear 1891 ;\n    :hasFather data:George_I_of_Greece ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga_Constantinovna_of_Russia ;\n    :knownAs \"Aline\"^^xsd:string .\n\ndata:Paul_Alexandrovich_of_Russia a :Man,\n        :Person ;\n    :hasChild data:Dmitri_Pavlovich_of_Russia,\n        data:Maria_Pavlovna_of_Russia .\n\ndata:George_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Olga_Constantinovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Dmitri_Pavlovich_of_Russia a :Man,\n        :Person .\n\ndata:Maria_Pavlovna_of_Russia a :Person,\n        :Woman .\n\n"
+    }
+]

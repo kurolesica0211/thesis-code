@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/434_434",
+  "text_file": "Q7518316.txt",
+  "text_key": "Q7518316",
+  "article": "https://en.wikipedia.org/wiki/Simon_Bowes-Lyon,_19th_Earl_of_Strathmore_and_Kinghorne",
+  "article_key": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne",
+  "main_entity": {
+    "uri": "http://example.com/data#Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne",
+    "qid": "Q7518316",
+    "label": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne",
+      "qid": "Q7518316",
+      "label": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Isobel_Weatherall",
+      "qid": "Q75248473",
+      "label": "Isobel Weatherall",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
+      "qid": "Q335615",
+      "label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+      "qid": "Q75248478",
+      "label": "Albemarle Bowes-Lyon",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Isobel_Weatherall",
+      "extracted_local_name": "Isobel_Weatherall",
+      "embedding_text": "Isobel Weatherall",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Isobel_Weatherall",
+      "ground_truth_qid": "Q75248473",
+      "ground_truth_label": "Isobel Weatherall",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Isobel Weatherall",
+      "best_candidate_label": "Isobel Weatherall",
+      "best_candidate_qid": "Q75248473",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Bowes-Lyon",
+      "extracted_local_name": "Michael_Bowes-Lyon",
+      "embedding_text": "Michael Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
+      "ground_truth_qid": "Q335615",
+      "ground_truth_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Michael Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "best_candidate_qid": "Q335615",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anthony_Edward_Weatherall",
+      "extracted_local_name": "Anthony_Edward_Weatherall",
+      "embedding_text": "Anthony Edward Weatherall",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Albemarle Bowes-Lyon",
+      "best_candidate_label": "Albemarle Bowes-Lyon",
+      "best_candidate_qid": "Q75248478",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.44
+    },
+    {
+      "extracted_uri": "http://example.org/data/Simon_Patrick_Bowes-Lyon",
+      "extracted_local_name": "Simon_Patrick_Bowes-Lyon",
+      "embedding_text": "Simon Patrick Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Michael Bowes-Lyon",
+      "best_candidate_label": "Albemarle Bowes-Lyon",
+      "best_candidate_qid": "Q75248478",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6808510638297872
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/336_336",
+  "text_file": "Q573263.txt",
+  "text_key": "Q573263",
+  "article": "https://en.wikipedia.org/wiki/Count_Christian_of_Rosenborg",
+  "article_key": "Count Christian of Rosenborg",
+  "main_entity": {
+    "uri": "http://example.com/data#Count_Christian_of_Rosenborg",
+    "qid": "Q573263",
+    "label": "Count Christian of Rosenborg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Count_Christian_of_Rosenborg",
+      "qid": "Q573263",
+      "label": "Count Christian of Rosenborg",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederik_IX_of_Denmark",
+      "qid": "Q151312",
+      "label": "Frederik IX of Denmark",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Caroline-Mathilde_of_Denmark",
+      "qid": "Q264675",
+      "label": "Princess Caroline-Mathilde of Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Margrethe_II_of_Denmark",
+      "qid": "Q102139",
+      "label": "Margrethe II of Denmark",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/ChristianOfRosenborg",
+      "extracted_local_name": "ChristianOfRosenborg",
+      "embedding_text": "Christian Of Rosenborg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Count_Christian_of_Rosenborg",
+      "ground_truth_qid": "Q573263",
+      "ground_truth_label": "Count Christian of Rosenborg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Christian of Rosenborg",
+      "best_candidate_label": "Count Christian of Rosenborg",
+      "best_candidate_qid": "Q573263",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/AnneDorteRosenborg",
+      "extracted_local_name": "AnneDorteRosenborg",
+      "embedding_text": "Anne Dorte Rosenborg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margrethe II of Denmark",
+      "best_candidate_label": "Margrethe II of Denmark",
+      "best_candidate_qid": "Q102139",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.32558139534883723
+    },
+    {
+      "extracted_uri": "http://example.org/data/CarolineMathildeDanish",
+      "extracted_local_name": "CarolineMathildeDanish",
+      "embedding_text": "Caroline Mathilde Danish",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Caroline-Mathilde of Denmark",
+      "best_candidate_label": "Princess Caroline-Mathilde of Denmark",
+      "best_candidate_qid": "Q264675",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6229508196721312
+    },
+    {
+      "extracted_uri": "http://example.org/data/IngolfDanish",
+      "extracted_local_name": "IngolfDanish",
+      "embedding_text": "Ingolf Danish",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Frederik IX of Denmark",
+      "best_candidate_label": "Frederik IX of Denmark",
+      "best_candidate_qid": "Q151312",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/KnudDanish",
+      "extracted_local_name": "KnudDanish",
+      "embedding_text": "Knud Danish",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Frederik IX of Denmark",
+      "best_candidate_label": "Frederik IX of Denmark",
+      "best_candidate_qid": "Q151312",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3157894736842105
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 1,
+    "entities_unmatched": 4
+  }
+}

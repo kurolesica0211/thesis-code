@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man ;\n    :hasBirthYear 1924 ;\n    :hasFather data:Paul_Chavchavadze ;\n    :hasMother data:Nina_Georgievna .\n\ndata:Xenia a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Maria_Georgievna ;\n    :hasSister data:Nina_Georgievna .\n\ndata:George_Mikhailovich a :Man .\n\ndata:Maria_Georgievna a :Woman .\n\ndata:Nina_Georgievna a :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Maria_Georgievna ;\n    :hasRelation data:Paul_Chavchavadze ;\n    :hasSister data:Xenia .\n\ndata:Paul_Chavchavadze a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Chavchavadze a :Man ;\n    :hasBirthYear 1924 ;\n    :hasFather data:Paul_Chavchavadze ;\n    :hasMother data:Nina_Georgievna .\n\ndata:Xenia a :Woman ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMother data:Maria_Georgievna ;\n    :hasSister data:Nina_Georgievna .\n\ndata:George_Mikhailovich a :Man .\n\ndata:Maria_Georgievna a :Woman .\n\ndata:Nina_Georgievna a :Woman ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:George_Mikhailovich ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Maria_Georgievna ;\n    :hasRelation data:Paul_Chavchavadze ;\n    :hasSister data:Xenia .\n\ndata:Paul_Chavchavadze a :Man ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1971 .\n\n"
+    }
+]

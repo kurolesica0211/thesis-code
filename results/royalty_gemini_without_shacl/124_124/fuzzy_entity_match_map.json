@@ -1,0 +1,90 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/124_124",
+  "text_file": "Q2071496.txt",
+  "text_key": "Q2071496",
+  "article": "https://en.wikipedia.org/wiki/Prince_Amedeo_of_Belgium",
+  "article_key": "Prince Amedeo of Belgium",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
+    "qid": "Q2071496",
+    "label": "Prince Amedeo, Hereditary Archduke of Austria-Este"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
+      "qid": "Q2071496",
+      "label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
+      "qid": "Q170194",
+      "label": "Princess Astrid, Archduchess of Austria-Este",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Princess_Astrid_of_Belgium",
+      "extracted_local_name": "Princess_Astrid_of_Belgium",
+      "embedding_text": "Princess Astrid of Belgium",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7857142857142857,
+      "ground_truth_uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
+      "ground_truth_qid": "Q170194",
+      "ground_truth_label": "Princess Astrid, Archduchess of Austria-Este",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Astrid of Belgium",
+      "best_candidate_label": "Princess Astrid, Archduchess of Austria-Este",
+      "best_candidate_qid": "Q170194",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.7857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/Amedeo_of_Austria-Este",
+      "extracted_local_name": "Amedeo_of_Austria-Este",
+      "embedding_text": "Amedeo of Austria-Este",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
+      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "best_candidate_qid": "Q2071496",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.36363636363636365
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lorenz_Archduke_of_Austria-Este",
+      "extracted_local_name": "Lorenz_Archduke_of_Austria-Este",
+      "embedding_text": "Lorenz Archduke of Austria-Este",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
+      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "best_candidate_qid": "Q2071496",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.32
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 1,
+    "entities_unmatched": 2
+  }
+}

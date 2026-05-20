@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen a :Person,\n        :Woman ;\n    :alsoKnownAs \"Princess Mafalda of Hesse\"^^xsd:string ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Moritz_Landgrave_of_Hesse a :Man,\n        :Person .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen a :Person,\n        :Woman ;\n    :alsoKnownAs \"Princess Mafalda of Hesse\"^^xsd:string ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\ndata:Moritz_Landgrave_of_Hesse a :Man,\n        :Person .\n\ndata:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman .\n\n"
+    }
+]

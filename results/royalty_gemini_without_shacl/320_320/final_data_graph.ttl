@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_de_Borbon-Dos_Sicilias a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :hasRelation data:Anne_of_Orleans ;
+    :hasSister data:Teresa_de_Borbon-Dos_Sicilias .
+
+data:Alfonso_de_Borbon-Dos_Sicilias a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Mercedes_Princess_of_Asturias .
+
+data:Alicia_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2017 .
+
+data:Anne_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 .
+
+data:Mercedes_Princess_of_Asturias a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1904 .
+
+data:Teresa_de_Borbon-Dos_Sicilias a :Person,
+        :Woman .
+

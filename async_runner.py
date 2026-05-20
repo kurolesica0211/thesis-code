@@ -13,6 +13,7 @@ from contextlib import nullcontext
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
 from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
+from loaders.bernhard_loader import get_loader as bernhard_loader
 from orchestration.tools import ToolClass
 from orchestration.tracing import (
     append_trace,
@@ -29,6 +30,8 @@ from orchestration.prompt_caching import google_cache, check_gemini
 def _build_loader(config: RunConfig):
     if config.dataset.source == "custom_family_bench":
         loader = look_up_family_get_loader()
+    elif config.dataset.source == "bernhard":
+        loader = bernhard_loader()
     return loader
 
 
@@ -88,7 +91,7 @@ def _process_task_entry(
     )
     main_user_msg = HumanMessage(main_user_prompt)
     
-    use_cache = config.runtime.prompt_caching_enabled and check_gemini(config.model.name)
+    use_cache = config.runtime.prompt_caching_enabled #and check_gemini(config.model.name)
     cm = google_cache(
         config.model.name,
         main_user_prompt,
@@ -96,12 +99,14 @@ def _process_task_entry(
         tool_obj.tools_schemas,
     ) if use_cache else nullcontext()
     with cm as value:
-        main_llm = init_chat_model(
-            model=config.model.name,
-            temperature=config.model.temperature,
-            max_retries=config.model.max_retries,
-            cached_content=value.name if value else None
-        )
+        init_kwargs = {
+            "model": config.model.name,
+            "temperature": config.model.temperature,
+            "max_retries": config.model.max_retries,
+        }
+        if use_cache:
+            init_kwargs["cached_content"] = value.name if value else None
+        main_llm = init_chat_model(**init_kwargs)
         if not use_cache:
             main_llm = main_llm.bind_tools(tool_obj.tools_schemas, tool_choice="any")
         

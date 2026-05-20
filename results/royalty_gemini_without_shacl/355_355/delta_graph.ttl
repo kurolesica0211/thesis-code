@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_of_Wurttemberg a :Man,
+        :Person ;
+    :isBrotherOf data:Marie-Therese_of_Wurttemberg .
+
+data:Charles_X a :Man,
+        :Person ;
+    :isAncestorOf data:Jean_dOrleans ;
+    :isBrotherOf data:Louis_XVI .
+
+data:Henri_VI_Count_of_Paris a :Man,
+        :Person ;
+    :isFatherOf data:Henri_Count_of_Paris .
+
+data:Philippe_I_Duke_of_Orleans a :Man,
+        :Person ;
+    :isAncestorOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_XIV .
+
+data:Princess_Chantal_of_Orleans a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_Count_of_Paris .
+
+data:Duchess_Tatjana_of_Oldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1974 .
+
+data:Louis_Philippe_I a :Man,
+        :Person ;
+    :isAncestorOf data:Jean_dOrleans .
+
+data:Louis_XIV a :Man,
+        :Person .
+
+data:Louis_XVI a :Man,
+        :Person .
+
+data:Philomena_de_Tornos_y_Steinhart a :Person,
+        :Woman ;
+    :hasBirthYear 1977 .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Marie-Therese_of_Wurttemberg ;
+    :hasRelation data:Duchess_Tatjana_of_Oldenburg,
+        data:Philomena_de_Tornos_y_Steinhart .
+
+data:Marie-Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 .
+

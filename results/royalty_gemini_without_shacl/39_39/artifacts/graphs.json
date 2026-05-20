@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alex_Mapelli-Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman ;\n    :isDaughterOf data:Edoardo_Mapelli_Mozzi,\n        data:Princess_Beatrice .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasRelation data:Princess_Beatrice .\n\ndata:Dara_Huang a :Person,\n        :Woman ;\n    :isMotherOf data:Christopher_Woolf .\n\ndata:Paolo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isAncestorOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Princess_Eugenie a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Beatrice .\n\ndata:Queen_Victoria a :Person,\n        :Woman ;\n    :isAncestorOf data:Princess_Beatrice .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman ;\n    :isDaughterOf data:Edoardo_Mapelli_Mozzi,\n        data:Princess_Beatrice .\n\ndata:Christopher_Woolf a :Man,\n        :Person ;\n    :isSonOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasMarriageYear 2020 ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :knownAs \"Beatrice York\"^^xsd:string .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alex_Mapelli-Mozzi a :Man,\n        :Person ;\n    :isFatherOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Athena_Elizabeth_Rose a :Person,\n        :Woman ;\n    :isDaughterOf data:Edoardo_Mapelli_Mozzi,\n        data:Princess_Beatrice .\n\ndata:Charles_III a :Man,\n        :Person ;\n    :hasRelation data:Princess_Beatrice .\n\ndata:Dara_Huang a :Person,\n        :Woman ;\n    :isMotherOf data:Christopher_Woolf .\n\ndata:Paolo_Mapelli_Mozzi a :Man,\n        :Person ;\n    :isAncestorOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Princess_Eugenie a :Person,\n        :Woman ;\n    :isSisterOf data:Princess_Beatrice .\n\ndata:Queen_Victoria a :Person,\n        :Woman ;\n    :isAncestorOf data:Princess_Beatrice .\n\ndata:Sienna_Elizabeth_Mapelli_Mozzi a :Person,\n        :Woman ;\n    :isDaughterOf data:Edoardo_Mapelli_Mozzi,\n        data:Princess_Beatrice .\n\ndata:Christopher_Woolf a :Man,\n        :Person ;\n    :isSonOf data:Edoardo_Mapelli_Mozzi .\n\ndata:Princess_Beatrice a :Person,\n        :Woman ;\n    :hasBirthYear 1988 ;\n    :hasMarriageYear 2020 ;\n    :hasRelation data:Edoardo_Mapelli_Mozzi ;\n    :knownAs \"Beatrice York\"^^xsd:string .\n\ndata:Edoardo_Mapelli_Mozzi a :Man,\n        :Person .\n\n"
+    }
+]

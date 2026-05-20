@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Casper_Van_Dien a :Man,
+        :Person .
+
+data:India_Riven_Oxenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1991 ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg .
+
+data:Patrick_D%27Ignazio a :Man,
+        :Person .
+
+data:Victoria_de_Silva a :Person,
+        :Woman ;
+    :hasFather data:Sir_Desmond_de_Silva ;
+    :hasMother data:Princess_Katarina .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasSister data:Christina_Oxenberg .
+
+data:Christina_Oxenberg a :Person,
+        :Woman .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Katarina a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sir_Desmond_de_Silva a :Ancestor,
+        :Man,
+        :Person .
+
+data:William_Weitz_Shaffer a :Ancestor,
+        :Man,
+        :Person .
+

@@ -1,0 +1,129 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/119_119",
+  "text_file": "Q2001499.txt",
+  "text_key": "Q2001499",
+  "article": "https://en.wikipedia.org/wiki/Princess_Sibilla_of_Luxembourg",
+  "article_key": "Princess Sibilla of Luxembourg",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Sibilla_of_Luxembourg",
+    "qid": "Q2001499",
+    "label": "Princess Sibilla of Luxembourg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Sibilla_of_Luxembourg",
+      "qid": "Q2001499",
+      "label": "Princess Sibilla of Luxembourg",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Olimpia_Torlonia",
+      "qid": "Q6049946",
+      "label": "Olimpia Torlonia",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Paul-Annick_Weiller",
+      "qid": "Q75393705",
+      "label": "Paul-Annick Weiller",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi",
+      "qid": "Q4716439",
+      "label": "Alessandro Torlonia, 5th Prince of Civitella-Cesi",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Beatriz_of_Spain",
+      "qid": "Q269493",
+      "label": "Infanta Beatriz of Spain",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/PrincessSibillaOfLuxembourg",
+      "extracted_local_name": "PrincessSibillaOfLuxembourg",
+      "embedding_text": "Princess Sibilla Of Luxembourg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Sibilla_of_Luxembourg",
+      "ground_truth_qid": "Q2001499",
+      "ground_truth_label": "Princess Sibilla of Luxembourg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Sibilla of Luxembourg",
+      "best_candidate_label": "Princess Sibilla of Luxembourg",
+      "best_candidate_qid": "Q2001499",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/GrandDuchessJosephineCharlotteOfLuxembourg",
+      "extracted_local_name": "GrandDuchessJosephineCharlotteOfLuxembourg",
+      "embedding_text": "Grand Duchess Josephine Charlotte Of Luxembourg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sibilla Sandra Weiller",
+      "best_candidate_label": "Princess Sibilla of Luxembourg",
+      "best_candidate_qid": "Q2001499",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2028985507246377
+    },
+    {
+      "extracted_uri": "http://example.org/data/GrandDukeJean",
+      "extracted_local_name": "GrandDukeJean",
+      "embedding_text": "Grand Duke Jean",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul-Annick Weiller",
+      "best_candidate_label": "Paul-Annick Weiller",
+      "best_candidate_qid": "Q75393705",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.29411764705882354
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceGuillaumeOfLuxembourg",
+      "extracted_local_name": "PrinceGuillaumeOfLuxembourg",
+      "embedding_text": "Prince Guillaume Of Luxembourg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul-Annick Weiller",
+      "best_candidate_label": "Paul-Annick Weiller",
+      "best_candidate_qid": "Q75393705",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3673469387755102
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 1,
+    "entities_unmatched": 3
+  }
+}

@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Edgar_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1980 ;
+    :hasDaughter data:Ivy_Lascelles ;
+    :hasFather data:David_Lascelles ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Margaret_Lascelles ;
+    :hasSon data:Kit_Lascelles,
+        data:Leo_Lascelles .
+
+data:David_Lascelles a :Man,
+        :Person .
+
+data:Ivy_Lascelles a :Person,
+        :Woman ;
+    :hasBirthYear 2018 ;
+    :hasMother data:Annika_Reed .
+
+data:Kit_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 2023 ;
+    :hasMother data:Annika_Reed .
+
+data:Laleh_Yeganegy a :Person,
+        :Woman .
+
+data:Leo_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 2008 ;
+    :hasMother data:Laleh_Yeganegy .
+
+data:Margaret_Lascelles a :Person,
+        :Woman .
+
+data:Annika_Reed a :Person,
+        :Woman .
+

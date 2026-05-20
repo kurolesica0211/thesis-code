@@ -103,13 +103,13 @@ def compute_metrics(ontology, explanations):
     }
 
 
-def compute_run_metrics(
+def compute_explanations(
     delta_graph_path: Path,
     tbox_graph: Graph,
     reasoner_factory,
-    entailment_limit: int,
+    explanation_limit: int,
     timeout: int,
-) -> dict[str, float]:
+):
     from org.semanticweb.owlapi.apibinding import OWLManager
     from org.semanticweb.owlapi.io import StringDocumentSource
     from org.semanticweb.owl.explanation.impl.blackbox.checker import (
@@ -117,6 +117,7 @@ def compute_run_metrics(
     )
 
     import time
+
     start_t = time.time()
     if globals().get("DEBUG"):
         print(f"[DEBUG] {delta_graph_path.name}: loading RDF...")
@@ -124,9 +125,14 @@ def compute_run_metrics(
     ontology_rdf = abox_graph + tbox_graph
 
     if globals().get("DEBUG"):
-        print(f"[DEBUG] {delta_graph_path.name}: serializing + loading into OWL (elapsed {time.time()-start_t:.3f}s)")
+        print(
+            f"[DEBUG] {delta_graph_path.name}: serializing + loading into OWL "
+            f"(elapsed {time.time() - start_t:.3f}s)"
+        )
 
-    string_source = StringDocumentSource(ontology_rdf.serialize(format="ttl"))
+    # Turtle serialization can emit prefixed names that OWLAPI's Turtle parser
+    # does not accept for some percent-encoded IRIs; RDF/XML avoids that path.
+    string_source = StringDocumentSource(ontology_rdf.serialize(format="xml"))
     manager = OWLManager.createOWLOntologyManager()
     ontology = manager.loadOntologyFromOntologyDocument(string_source)
 
@@ -137,23 +143,64 @@ def compute_run_metrics(
 
     if globals().get("DEBUG"):
         t1 = time.time()
-        print(f"[DEBUG] {delta_graph_path.name}: creating explanation generator (elapsed {t1-start_t:.3f}s)")
+        print(
+            f"[DEBUG] {delta_graph_path.name}: creating explanation generator "
+            f"(elapsed {t1 - start_t:.3f}s)"
+        )
 
-    inc_expl_fac = InconsistentOntologyExplanationGeneratorFactory(reasoner_factory, timeout)
+    inc_expl_fac = InconsistentOntologyExplanationGeneratorFactory(
+        reasoner_factory,
+        timeout,
+    )
     generator = inc_expl_fac.createExplanationGenerator(ontology)
 
     if globals().get("DEBUG"):
-        print(f"[DEBUG] {delta_graph_path.name}: requesting explanations (limit={entailment_limit})")
-        t2 = time.time()
-    explanations = generator.getExplanations(entailment, entailment_limit)
-    
+        print(
+            f"[DEBUG] {delta_graph_path.name}: requesting explanations "
+            f"(limit={explanation_limit})"
+        )
+    explanations = generator.getExplanations(entailment, explanation_limit)
+
     if globals().get("DEBUG"):
         t3 = time.time()
-        print(f"[DEBUG] {delta_graph_path.name}: got explanations (elapsed {t3-start_t:.3f}s) count={explanations.size()}")
+        print(
+            f"[DEBUG] {delta_graph_path.name}: got explanations "
+            f"(elapsed {t3 - start_t:.3f}s) count={explanations.size()}"
+        )
+
+    return ontology, explanations
+
+
+def compute_run_metrics(
+    delta_graph_path: Path,
+    tbox_graph: Graph,
+    reasoner_factory,
+    entailment_limit: int,
+    timeout: int,
+) -> dict[str, float]:
+    ontology, explanations = compute_explanations(
+        delta_graph_path,
+        tbox_graph,
+        reasoner_factory,
+        explanation_limit=entailment_limit,
+        timeout=timeout,
+    )
 
     metrics = compute_metrics(ontology, explanations)
 
     return metrics
+
+
+def format_justification(explanations) -> str:
+    if explanations.size() == 0:
+        return "No inconsistency detected."
+
+    explanation = explanations.iterator().next()
+    axioms = [str(axiom.toString()) for axiom in explanation.getAxioms()]
+    lines = ["One justification:"]
+    for axiom in axioms:
+        lines.append(f"- {axiom}")
+    return "\n".join(lines)
 
 
 def summarize(values: list[float]) -> dict[str, float]:
@@ -245,9 +292,6 @@ def main() -> None:
     if not args.tbox.exists():
         raise FileNotFoundError(f"TBOX file not found: {args.tbox}")
 
-    output_dir = args.output_dir or (results_dir / "ontology_conformance_metrics")
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     ensure_jvm(args.jar_classpath)
     suppress_java_stderr()
     from com.clarkparsia.pellet.owlapiv3 import PelletReasonerFactory
@@ -258,6 +302,23 @@ def main() -> None:
 
     reasoner_factory = PelletReasonerFactory.getInstance()
     tbox_graph = load_rdf(args.tbox)
+
+    single_task_delta_graph = results_dir / "delta_graph.ttl"
+    if single_task_delta_graph.exists():
+        ontology, explanations = compute_explanations(
+            single_task_delta_graph,
+            tbox_graph,
+            reasoner_factory,
+            explanation_limit=1,
+            timeout=args.timeout,
+        )
+        print(f"Task: {results_dir.name}")
+        print(format_justification(explanations))
+        return
+
+    output_dir = args.output_dir or (results_dir / "ontology_conformance_metrics")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
     run_dirs = discover_run_dirs(results_dir)
 
     if not run_dirs:

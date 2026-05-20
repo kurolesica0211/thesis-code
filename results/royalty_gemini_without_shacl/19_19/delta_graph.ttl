@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Eilika a :Person,
+        :Woman .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    :alsoKnownAs "Georg Habsburg-Lothringen"^^xsd:string,
+        "Habsburg György"^^xsd:string ;
+    :formerlyKnownAs "Paul Georg Maria Joseph Dominikus"^^xsd:string ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:Karl_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen .
+
+data:Karl_von_Habsburg a :Man,
+        :Person .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man .
+
+data:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :alsoKnownAs \"Richard Wilhelm Leopold\"^^xsd:string ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasSex data:Male ;\n    :isBrotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :knownAs \"Ri\"^^xsd:string .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1930 ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasRelation data:Sophie_of_Greece_and_Denmark ;\n    :hasSex data:Male .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Richard_of_Hesse a :Man,\n        :Person ;\n    :alsoKnownAs \"Richard Wilhelm Leopold\"^^xsd:string ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasSex data:Male ;\n    :isBrotherOf data:Christoph_of_Hesse-Kassel,\n        data:Philippe_of_Hesse,\n        data:Wolfgang_of_Hesse ;\n    :knownAs \"Ri\"^^xsd:string .\n\ndata:Christoph_of_Hesse-Kassel a :Man,\n        :Person ;\n    :hasFather data:Frederick_Charles_of_Hesse ;\n    :hasMarriageYear 1930 ;\n    :hasMother data:Margaret_of_Prussia ;\n    :hasRelation data:Sophie_of_Greece_and_Denmark ;\n    :hasSex data:Male .\n\ndata:Philippe_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Sophie_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Wolfgang_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Frederick_Charles_of_Hesse a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Margaret_of_Prussia a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\n"
+    }
+]

@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francoise_Cazaudehore a :Person,
+        :Woman .
+
+data:Prince_Juan_Jorge_de_Bagration_Mukhrani a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasMarriageYear 2014 ;
+    :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :hasRelation data:Kristine_Dzidziguri ;
+    :hasSex data:Male .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+
+data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Ancestor,
+        :Man,
+        :Person .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria .
+
+data:Kristine_Dzidziguri a :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person .
+

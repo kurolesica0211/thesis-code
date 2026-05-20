@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+        :Person ;
+    :isSonOf data:Alexandra_of_Greece_and_Denmark,
+        data:King_Peter_II_of_Yugoslavia .
+
+data:Queen_Dowager_Olga_of_Greece a :Ancestor,
+        :Woman .
+
+data:Alexandra_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:King_Alexander_of_Greece ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Aspasia_Manos ;
+    :hasRelation data:King_Peter_II_of_Yugoslavia ;
+    :isSisterOf data:King_George_II_of_Greece .
+
+data:Aspasia_Manos a :Ancestor,
+        :Woman .
+
+data:King_Alexander_of_Greece a :Ancestor,
+        :Man ;
+    :hasMother data:Queen_Sophia_of_Greece .
+
+data:King_Constantine_I_of_Greece a :Ancestor,
+        :Man .
+
+data:King_George_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Queen_Sophia_of_Greece .
+
+data:Queen_Maria_of_Yugoslavia a :Ancestor,
+        :Woman .
+
+data:King_Peter_II_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasMother data:Queen_Maria_of_Yugoslavia .
+
+data:Queen_Sophia_of_Greece a :Ancestor,
+        :Woman .
+

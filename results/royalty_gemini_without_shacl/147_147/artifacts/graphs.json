@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Karl_6th_Prince_of_Leiningen ;\n    :hasMother data:Maria_Kirillovna_of_Russia ;\n    :hasRelation data:Marie_Louise_of_Bulgaria .\n\ndata:Boris_III_of_Bulgaria a :Man,\n        :Person .\n\ndata:Giovanna_of_Italy a :Person,\n        :Woman .\n\ndata:Karl_6th_Prince_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Victoria_Melita_of_Edinburgh .\n\ndata:Marie_Louise_of_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_of_Bulgaria ;\n    :hasMother data:Giovanna_of_Italy .\n\ndata:Victoria_Melita_of_Edinburgh a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Karl_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1928 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Karl_6th_Prince_of_Leiningen ;\n    :hasMother data:Maria_Kirillovna_of_Russia ;\n    :hasRelation data:Marie_Louise_of_Bulgaria .\n\ndata:Boris_III_of_Bulgaria a :Man,\n        :Person .\n\ndata:Giovanna_of_Italy a :Person,\n        :Woman .\n\ndata:Karl_6th_Prince_of_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1946 .\n\ndata:Kirill_Vladimirovich_of_Russia a :Man,\n        :Person .\n\ndata:Maria_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMother data:Victoria_Melita_of_Edinburgh .\n\ndata:Marie_Louise_of_Bulgaria a :Person,\n        :Woman ;\n    :hasFather data:Boris_III_of_Bulgaria ;\n    :hasMother data:Giovanna_of_Italy .\n\ndata:Victoria_Melita_of_Edinburgh a :Person,\n        :Woman .\n\n"
+    }
+]

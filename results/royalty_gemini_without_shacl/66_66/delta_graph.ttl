@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman ;
+    :isDaughterOf data:Louis_Mountbatten .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman ;
+    :isDaughterOf data:Louis_Mountbatten .
+
+data:Edwina_Ashley a :Person,
+        :Woman .
+
+data:Julia_Princess_of_Battenberg a :Person,
+        :Woman .
+
+data:Louis_IV_Grand_Duke_of_Hesse a :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse a :Man,
+        :Person .
+
+data:Prince_George_of_Battenberg a :Man,
+        :Person .
+
+data:Prince_Louis_of_Battenberg_Sr a :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse ;
+    :hasMother data:Julia_Princess_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Princess_Alice_of_the_United_Kingdom a :Person,
+        :Woman .
+
+data:Princess_Louise_of_Battenberg a :Person,
+        :Woman .
+
+data:Princess_Victoria_of_Hesse a :Person,
+        :Woman ;
+    :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Alice_of_the_United_Kingdom .
+
+data:Louis_Mountbatten a :Man,
+        :Person ;
+    :formerlyKnownAs "Prince Louis of Battenberg"^^xsd:string ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_George_of_Battenberg ;
+    :hasDeathYear 1979 ;
+    :hasFather data:Prince_Louis_of_Battenberg_Sr ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Princess_Victoria_of_Hesse ;
+    :hasRelation data:Edwina_Ashley ;
+    :hasSister data:Princess_Alice_of_Battenberg,
+        data:Princess_Louise_of_Battenberg ;
+    :knownAs "Lord Mountbatten"^^xsd:string .
+

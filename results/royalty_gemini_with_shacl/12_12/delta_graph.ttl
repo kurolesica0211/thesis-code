@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 2005 ;
+    :hasFather data:King_Willem-Alexander ;
+    :hasMother data:Queen_Maxima ;
+    :hasSex data:Female .
+
+data:King_Willem-Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Queen_Maxima a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+

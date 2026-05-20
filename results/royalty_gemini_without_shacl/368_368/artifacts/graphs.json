@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Irene_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sophia_of_Greece a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Constantine_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Brunswick a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Viktoria_Luise_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Sophia_of_Prussia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Frederica_of_Hanover a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Ernest_Augustus_of_Brunswick ;\n    :hasMother data:Sophia_of_Prussia,\n        data:Viktoria_Luise_of_Prussia ;\n    :knownAs \"Friederike Luise\"^^xsd:string .\n\ndata:Paul_I_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Constantine_I_of_Greece ;\n    :hasMother data:Sophia_of_Prussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_II_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Irene_of_Greece a :Person,\n        :Woman ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Sophia_of_Greece a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Paul_I_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Constantine_I_of_Greece a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ernest_Augustus_of_Brunswick a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Viktoria_Luise_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Wilhelm_II .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Sophia_of_Prussia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Frederica_of_Hanover a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1981 ;\n    :hasFather data:Ernest_Augustus_of_Brunswick ;\n    :hasMother data:Sophia_of_Prussia,\n        data:Viktoria_Luise_of_Prussia ;\n    :knownAs \"Friederike Luise\"^^xsd:string .\n\ndata:Paul_I_of_Greece a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Constantine_I_of_Greece ;\n    :hasMother data:Sophia_of_Prussia .\n\n"
+    }
+]

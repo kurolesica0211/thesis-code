@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Amedeo .\n\ndata:Amadeo_I_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Emanuele_Filiberto a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Amadeo_I_of_Spain ;\n    :hasMother data:Princess_Maria_Vittoria .\n\ndata:Prince_Amedeo a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emanuele_Filiberto ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_Helene ;\n    :hasRelation data:Princess_Anne_of_Orleans .\n\ndata:Prince_Jean_Duke_of_Guise a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Philippe_of_Orleans a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Anne_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Prince_Jean_Duke_of_Guise ;\n    :hasMother data:Princess_Isabelle_of_Orleans .\n\ndata:Princess_Helene a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Philippe_of_Orleans ;\n    :hasMother data:Princess_Marie_Isabelle_of_Orleans .\n\ndata:Princess_Isabelle_of_Orleans a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Maria_Vittoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_of_Orleans a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aimone a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Amedeo .\n\ndata:Amadeo_I_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Emanuele_Filiberto a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Amadeo_I_of_Spain ;\n    :hasMother data:Princess_Maria_Vittoria .\n\ndata:Prince_Amedeo a :Man,\n        :Person ;\n    :hasBirthYear 1898 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emanuele_Filiberto ;\n    :hasMarriageYear 1927 ;\n    :hasMother data:Princess_Helene ;\n    :hasRelation data:Princess_Anne_of_Orleans .\n\ndata:Prince_Jean_Duke_of_Guise a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Philippe_of_Orleans a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Anne_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Prince_Jean_Duke_of_Guise ;\n    :hasMother data:Princess_Isabelle_of_Orleans .\n\ndata:Princess_Helene a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Philippe_of_Orleans ;\n    :hasMother data:Princess_Marie_Isabelle_of_Orleans .\n\ndata:Princess_Isabelle_of_Orleans a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Maria_Vittoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Marie_Isabelle_of_Orleans a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

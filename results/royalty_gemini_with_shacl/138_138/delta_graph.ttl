@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:Princess_Isabelle_of_Orleans ;
+    :hasRelation data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .
+
+data:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1942 .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+

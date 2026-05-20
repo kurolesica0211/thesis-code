@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alice_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria .
+
+data:Donata_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia ;
+    :hasSister data:Edwina_of_Mecklenburg-Schwerin .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person .
+
+data:Louis_IV_of_Hesse_and_by_Rhine a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse-Kassel .
+
+data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Ernst_II_of_Saxe-Altenburg .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Edwina_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia .
+
+data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Louise_of_Hesse-Kassel a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Barbara_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Sigismund_of_Prussia ;
+    :hasMother data:Charlotte_of_Saxe-Altenburg .
+
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasMother data:Alexandra_of_Hanover_and_Cumberland .
+

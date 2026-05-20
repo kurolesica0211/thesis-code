@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Howard_Oxenberg,
+        data:Manuel_Ulloa_Elias,
+        data:Neil_Balfour_of_Dawyck .
+
+data:Howard_Oxenberg a :Man ;
+    :hasMarriageYear 1960 .
+
+data:Manuel_Ulloa_Elias a :Man ;
+    :hasDeathYear 1992 ;
+    :hasMarriageYear 1987 .
+
+data:Neil_Balfour_of_Dawyck a :Man ;
+    :hasMarriageYear 1969 .
+
+data:Prince_Alexander_of_Yugoslavia a :Man ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Yugoslavia a :Man ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Paul_of_Yugoslavia a :Man .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+

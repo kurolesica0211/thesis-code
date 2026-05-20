@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adam_Jerzy_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Izabela_Czartoryska .\n\ndata:August_Aleksander_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1697 ;\n    :hasDeathYear 1782 ;\n    :hasRelation data:Zofia_von_D%C3%B6nhoff .\n\ndata:Tamara_Czartoryska a :Person,\n        :Woman ;\n    :isDaughterOf data:Adam_Karol_Czartoryski .\n\ndata:Izabela_Czartoryska a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:Adam_Karol_Czartoryski .\n\ndata:Ludwik_Piotr_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .\n\ndata:Zofia_von_D%C3%B6nhoff a :Person,\n        :Woman .\n\ndata:Adam_Karol_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Ludwik_Piotr_Czartoryski ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .\n\ndata:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1946 .\n\ndata:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1996 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adam_Jerzy_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Izabela_Czartoryska .\n\ndata:August_Aleksander_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1697 ;\n    :hasDeathYear 1782 ;\n    :hasRelation data:Zofia_von_D%C3%B6nhoff .\n\ndata:Tamara_Czartoryska a :Person,\n        :Woman ;\n    :isDaughterOf data:Adam_Karol_Czartoryski .\n\ndata:Izabela_Czartoryska a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:Adam_Karol_Czartoryski .\n\ndata:Ludwik_Piotr_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .\n\ndata:Zofia_von_D%C3%B6nhoff a :Person,\n        :Woman .\n\ndata:Adam_Karol_Czartoryski a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Ludwik_Piotr_Czartoryski ;\n    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;\n    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .\n\ndata:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1907 ;\n    :hasDeathYear 1946 .\n\ndata:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1996 .\n\n"
+    }
+]

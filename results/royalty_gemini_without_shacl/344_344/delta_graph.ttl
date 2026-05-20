@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anastasia_Mikhailovna_of_Russia a :Woman ;
+    :hasSex data:Female .
+
+data:Frederick_Francis_III a :Man ;
+    :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1897 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Augusta_Reuss_of_Kostritz ;
+    :hasSex data:Male ;
+    :isFatherOf data:Frederick_Francis_IV .
+
+data:Paul_I_of_Russia a :Man ;
+    :hasSex data:Male .
+
+data:Augusta_Reuss_of_Kostritz a :Woman ;
+    :hasSex data:Female .
+
+data:Frederick_Francis_II a :Man ;
+    :hasSex data:Male .
+
+data:Frederick_Francis_IV a :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

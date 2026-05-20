@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "3b63e17e-d93c-43b1-90de-54d0850054a7",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albrecht_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1954 ;\n    :isBrotherOf data:Karl_Friedrich_von_Hohenzollern .\n\ndata:Alexandra_von_Hohenzollern a :Person,\n        :Woman ;\n    :knownAs \"ex-wife\"^^xsd:string .\n\ndata:Friedrich_Wilhelm_von_Hohenzollern a :Man,\n        :Person .\n\ndata:Karl_Friedrich_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Albrecht_von_Hohenzollern ;\n    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;\n    :hasMother data:Margarita_of_Leiningen ;\n    :hasRelation data:Alexandra_von_Hohenzollern .\n\ndata:Margarita_of_Leiningen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "3b63e17e-d93c-43b1-90de-54d0850054a7",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Margarita_of_Leiningen> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Margarita_of_Leiningen> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Friedrich_Wilhelm_von_Hohenzollern> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Friedrich_Wilhelm_von_Hohenzollern> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Margarita_of_Leiningen> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Karl_Friedrich_von_Hohenzollern> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Friedrich_Wilhelm_von_Hohenzollern> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "pre_validation",
+        "tool_call_id": "6c1e6cd0-8949-4240-bc68-1f941f2c49cd",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albrecht_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1954 ;\n    :isBrotherOf data:Karl_Friedrich_von_Hohenzollern .\n\ndata:Alexandra_von_Hohenzollern a :Person,\n        :Woman ;\n    :knownAs \"ex-wife\"^^xsd:string .\n\ndata:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Karl_Friedrich_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Albrecht_von_Hohenzollern ;\n    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;\n    :hasMother data:Margarita_of_Leiningen ;\n    :hasRelation data:Alexandra_von_Hohenzollern .\n\ndata:Margarita_of_Leiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "6c1e6cd0-8949-4240-bc68-1f941f2c49cd",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albrecht_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1954 ;\n    :isBrotherOf data:Karl_Friedrich_von_Hohenzollern .\n\ndata:Alexandra_von_Hohenzollern a :Person,\n        :Woman ;\n    :knownAs \"ex-wife\"^^xsd:string .\n\ndata:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Karl_Friedrich_von_Hohenzollern a :Man,\n        :Person ;\n    :hasBirthYear 1952 ;\n    :hasBrother data:Albrecht_von_Hohenzollern ;\n    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;\n    :hasMother data:Margarita_of_Leiningen ;\n    :hasRelation data:Alexandra_von_Hohenzollern .\n\ndata:Margarita_of_Leiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

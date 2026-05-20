@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Alexander_Mowatt a :Man,
+        :Person ;
+    :hasFather data:Paul_Julian_Mowatt ;
+    :hasMother data:Marina_Ogilvy .
+
+data:Zenouska_May_Mowatt a :Person,
+        :Woman ;
+    :hasFather data:Paul_Julian_Mowatt ;
+    :hasMother data:Marina_Ogilvy .
+
+data:James_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Angus_Ogilvy ;
+    :hasMother data:Alexandra_of_Kent ;
+    :isBrotherOf data:Marina_Ogilvy .
+
+data:Alexandra_of_Kent a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Angus_Ogilvy a :Ancestor,
+        :Man,
+        :Person .
+
+data:Paul_Julian_Mowatt a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1962 .
+
+data:Marina_Ogilvy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:James_Ogilvy ;
+    :hasFather data:Angus_Ogilvy ;
+    :hasMother data:Alexandra_of_Kent .
+

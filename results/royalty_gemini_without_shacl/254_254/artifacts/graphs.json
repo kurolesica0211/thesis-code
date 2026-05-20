@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman ;\n    :isDaughterOf data:John_Knatchbull,\n        data:Patricia_Mountbatten .\n\ndata:Earl_Mountbatten_of_Burma a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Patricia_Mountbatten .\n\ndata:Edwina_Ashley a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Patricia_Mountbatten .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman ;\n    :isSisterOf data:Patricia_Mountbatten .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person ;\n    :isSonOf data:John_Knatchbull,\n        data:Patricia_Mountbatten .\n\ndata:John_Knatchbull a :Man,\n        :Person .\n\ndata:Patricia_Mountbatten a :Person,\n        :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2017 ;\n    :hasMarriageYear 1946 ;\n    :hasRelation data:John_Knatchbull .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Amanda_Knatchbull a :Person,\n        :Woman ;\n    :isDaughterOf data:John_Knatchbull,\n        data:Patricia_Mountbatten .\n\ndata:Earl_Mountbatten_of_Burma a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Patricia_Mountbatten .\n\ndata:Edwina_Ashley a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Patricia_Mountbatten .\n\ndata:Lady_Pamela_Hicks a :Person,\n        :Woman ;\n    :isSisterOf data:Patricia_Mountbatten .\n\ndata:Nicholas_Knatchbull a :Man,\n        :Person ;\n    :isSonOf data:John_Knatchbull,\n        data:Patricia_Mountbatten .\n\ndata:John_Knatchbull a :Man,\n        :Person .\n\ndata:Patricia_Mountbatten a :Person,\n        :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2017 ;\n    :hasMarriageYear 1946 ;\n    :hasRelation data:John_Knatchbull .\n\n"
+    }
+]

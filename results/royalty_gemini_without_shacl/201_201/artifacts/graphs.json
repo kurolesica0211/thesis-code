@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinando_IV_of_Tuscany a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Peter_Ferdinand_of_Austria .\n\ndata:Gottfried_of_Austria a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasFather data:Peter_Ferdinand_of_Austria ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Dorothea_of_Bavaria ;\n    :hasSex data:Male .\n\ndata:Dorothea_of_Bavaria a :Person,\n        :Woman ;\n    :hasFather data:Franz_of_Bavaria ;\n    :hasMother data:Isabella_Antonie_of_Croy ;\n    :hasSex data:Female .\n\ndata:Franz_of_Bavaria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Isabella_Antonie_of_Croy a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Peter_Ferdinand_of_Austria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinando_IV_of_Tuscany a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Peter_Ferdinand_of_Austria .\n\ndata:Gottfried_of_Austria a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasFather data:Peter_Ferdinand_of_Austria ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Dorothea_of_Bavaria ;\n    :hasSex data:Male .\n\ndata:Dorothea_of_Bavaria a :Person,\n        :Woman ;\n    :hasFather data:Franz_of_Bavaria ;\n    :hasMother data:Isabella_Antonie_of_Croy ;\n    :hasSex data:Female .\n\ndata:Franz_of_Bavaria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Isabella_Antonie_of_Croy a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Peter_Ferdinand_of_Austria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinando_IV_of_Tuscany a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Peter_Ferdinand_of_Austria .\n\ndata:Gottfried_of_Austria a :Man,\n        :Person ;\n    :hasBirthYear 1902 ;\n    :hasDeathYear 1984 ;\n    :hasFather data:Peter_Ferdinand_of_Austria ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Dorothea_of_Bavaria ;\n    :hasSex data:Male .\n\ndata:Dorothea_of_Bavaria a :Person,\n        :Woman ;\n    :hasFather data:Franz_of_Bavaria ;\n    :hasMother data:Isabella_Antonie_of_Croy ;\n    :hasSex data:Female .\n\ndata:Franz_of_Bavaria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Isabella_Antonie_of_Croy a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Peter_Ferdinand_of_Austria a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

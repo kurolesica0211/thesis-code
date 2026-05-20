@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasFather data:William_III ;\n    :hasMother data:Sophie_of_Wurttemberg .\n\ndata:Beatrix a :Person,\n        :Woman ;\n    :hasMother data:Juliana .\n\ndata:Frederick a :Man,\n        :Person .\n\ndata:Margriet a :Person,\n        :Woman ;\n    :hasMother data:Juliana .\n\ndata:Emma_of_Waldeck_and_Pyrmont a :Person,\n        :Woman .\n\ndata:Sophie_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1962 ;\n    :hasFather data:William_III ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Emma_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Henry_of_Mecklenburg-Schwerin .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMother data:Wilhelmina .\n\ndata:William_III a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasFather data:William_III ;\n    :hasMother data:Sophie_of_Wurttemberg .\n\ndata:Beatrix a :Person,\n        :Woman ;\n    :hasMother data:Juliana .\n\ndata:Frederick a :Man,\n        :Person .\n\ndata:Margriet a :Person,\n        :Woman ;\n    :hasMother data:Juliana .\n\ndata:Emma_of_Waldeck_and_Pyrmont a :Person,\n        :Woman .\n\ndata:Sophie_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1962 ;\n    :hasFather data:William_III ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Emma_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Henry_of_Mecklenburg-Schwerin .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man,\n        :Person .\n\ndata:Juliana a :Person,\n        :Woman ;\n    :hasFather data:Henry_of_Mecklenburg-Schwerin ;\n    :hasMother data:Wilhelmina .\n\ndata:William_III a :Man,\n        :Person .\n\n"
+    }
+]

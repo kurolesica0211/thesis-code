@@ -1,0 +1,165 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/461_461",
+  "text_file": "Q76249585.txt",
+  "text_key": "Q76249585",
+  "article": "https://en.wikipedia.org/wiki/Maud_Windsor",
+  "article_key": "Maud Windsor",
+  "main_entity": {
+    "uri": "http://example.com/data#Maud_Windsor",
+    "qid": "Q76249585",
+    "label": "Maud Windsor"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Maud_Windsor",
+      "qid": "Q76249585",
+      "label": "Maud Windsor",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Lord_Frederick_Windsor",
+      "qid": "Q3735133",
+      "label": "Lord Frederick Windsor",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Sophie_Winkleman",
+      "qid": "Q2631078",
+      "label": "Sophie Winkleman",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Marie_Christine-_Princess_Michael_of_Kent",
+      "qid": "Q93535",
+      "label": "Marie Christine, Princess Michael of Kent",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Michael_of_Kent",
+      "qid": "Q313752",
+      "label": "Prince Michael of Kent",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/FrederickWindsor",
+      "extracted_local_name": "FrederickWindsor",
+      "embedding_text": "Frederick Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lord_Frederick_Windsor",
+      "ground_truth_qid": "Q3735133",
+      "ground_truth_label": "Lord Frederick Windsor",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Frederick Windsor",
+      "best_candidate_label": "Lord Frederick Windsor",
+      "best_candidate_qid": "Q3735133",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceMichaelOfKent",
+      "extracted_local_name": "PrinceMichaelOfKent",
+      "embedding_text": "Prince Michael Of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Michael_of_Kent",
+      "ground_truth_qid": "Q313752",
+      "ground_truth_label": "Prince Michael of Kent",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Michael of Kent",
+      "best_candidate_label": "Prince Michael of Kent",
+      "best_candidate_qid": "Q313752",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMichaelOfKent",
+      "extracted_local_name": "PrincessMichaelOfKent",
+      "embedding_text": "Princess Michael Of Kent",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Marie_Christine-_Princess_Michael_of_Kent",
+      "ground_truth_qid": "Q93535",
+      "ground_truth_label": "Marie Christine, Princess Michael of Kent",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Michael of Kent",
+      "best_candidate_label": "Marie Christine, Princess Michael of Kent",
+      "best_candidate_qid": "Q93535",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/SophieWinkleman",
+      "extracted_local_name": "SophieWinkleman",
+      "embedding_text": "Sophie Winkleman",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Sophie_Winkleman",
+      "ground_truth_qid": "Q2631078",
+      "ground_truth_label": "Sophie Winkleman",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Sophie Winkleman",
+      "best_candidate_label": "Sophie Winkleman",
+      "best_candidate_qid": "Q2631078",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/IsabellaAlexandraMay",
+      "extracted_local_name": "IsabellaAlexandraMay",
+      "embedding_text": "Isabella Alexandra May",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sophie Winkleman",
+      "best_candidate_label": "Sophie Winkleman",
+      "best_candidate_qid": "Q2631078",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.3684210526315789
+    },
+    {
+      "extracted_uri": "http://example.org/data/LadyGabriella",
+      "extracted_local_name": "LadyGabriella",
+      "embedding_text": "Lady Gabriella",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sophie Lara Windsor",
+      "best_candidate_label": "Sophie Winkleman",
+      "best_candidate_qid": "Q2631078",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.24242424242424243
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 4,
+    "entities_unmatched": 2
+  }
+}

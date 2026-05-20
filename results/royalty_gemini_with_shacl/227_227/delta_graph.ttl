@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alice_of_Hesse a :Person,
+        :Woman ;
+    :isBloodrelationOf data:Waldemar_of_Prussia .
+
+data:Heinrich a :Man,
+        :Person ;
+    :isBrotherOf data:Waldemar_of_Prussia .
+
+data:Marie a :Person,
+        :Woman ;
+    :isBloodrelationOf data:Waldemar_of_Prussia .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person ;
+    :isBrotherOf data:Waldemar_of_Prussia .
+
+data:Wilhelm a :Man,
+        :Person ;
+    :isBrotherOf data:Waldemar_of_Prussia .
+
+data:Frederick_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Victoria_Empress a :Ancestor,
+        :Person,
+        :Woman .
+
+data:William_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Waldemar_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Queen_Victoria,
+        data:William_I ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1879 ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Empress .
+

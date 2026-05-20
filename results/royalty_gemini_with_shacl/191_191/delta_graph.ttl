@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabelle_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Maria_Isabel_of_Spain ;
+    :hasRelation data:Jean_Duke_of_Guise ;
+    :knownAs "Isabelle Marie Laure Mercédès Ferdinande"^^xsd:string .
+
+data:Leopold_II a :Man,
+        :Person ;
+    :isUncleOf data:Albert_I_of_Belgium .
+
+data:Albert_I_of_Belgium a :Man,
+        :Person .
+
+data:Fran%C3%A7oise_dOrl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :hasFather data:Robert_Duke_of_Chartres ;
+    :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans .
+
+data:Maria_Isabel_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man,
+        :Person .
+
+data:Robert_Duke_of_Chartres a :Ancestor,
+        :Man,
+        :Person .
+

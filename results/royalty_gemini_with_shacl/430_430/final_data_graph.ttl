@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PeterTroughton a :Man,
+        :Person ;
+    :hasBirthYear "1948"^^xsd:int ;
+    :hasFather data:CharlesTroughton .
+
+data:SarahRoseTroughton a :Person,
+        :Woman ;
+    :hasAncestor data:JeremiahColman ;
+    :hasBirthYear "1953"^^xsd:int ;
+    :hasFather data:TimothyColman ;
+    :hasMarriageYear "1977"^^xsd:int ;
+    :hasMother data:MaryCeciliaBowesLyon .
+
+data:CharlesTroughton a :Ancestor,
+        :Man,
+        :Person .
+
+data:ClaudeBowesLyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:JeremiahColman a :Ancestor,
+        :Man,
+        :Person .
+
+data:MaryCeciliaBowesLyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:ClaudeBowesLyon .
+
+data:TimothyColman a :Ancestor,
+        :Man,
+        :Person .
+

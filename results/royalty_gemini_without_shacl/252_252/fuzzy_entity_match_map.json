@@ -1,0 +1,104 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/252_252",
+  "text_file": "Q3358467.txt",
+  "text_key": "Q3358467",
+  "article": "https://en.wikipedia.org/wiki/Count_Claus-Casimir_of_Orange-Nassau",
+  "article_key": "Count Claus-Casimir of Orange-Nassau",
+  "main_entity": {
+    "uri": "http://example.com/data#Count_Claus-Casimir_of_Orange-Nassau",
+    "qid": "Q3358467",
+    "label": "Count Claus-Casimir of Orange-Nassau"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Count_Claus-Casimir_of_Orange-Nassau",
+      "qid": "Q3358467",
+      "label": "Count Claus-Casimir of Orange-Nassau",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Laurentien_of_the_Netherlands",
+      "qid": "Q267367",
+      "label": "Princess Laurentien of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#William_Alexander_of_the_Netherlands",
+      "qid": "Q154952",
+      "label": "William Alexander of the Netherlands",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/ClausCasimir",
+      "extracted_local_name": "ClausCasimir",
+      "embedding_text": "Claus Casimir",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Count Claus-Casimir of Orange-Nassau",
+      "best_candidate_label": "Count Claus-Casimir of Orange-Nassau",
+      "best_candidate_qid": "Q3358467",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4897959183673469
+    },
+    {
+      "extracted_uri": "http://example.org/data/Constantijn",
+      "extracted_local_name": "Constantijn",
+      "embedding_text": "Constantijn",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Count Claus-Casimir of Orange-Nassau",
+      "best_candidate_label": "Count Claus-Casimir of Orange-Nassau",
+      "best_candidate_qid": "Q3358467",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.2978723404255319
+    },
+    {
+      "extracted_uri": "http://example.org/data/Laurentien",
+      "extracted_local_name": "Laurentien",
+      "embedding_text": "Laurentien",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Laurentien Brinkhorst",
+      "best_candidate_label": "Princess Laurentien of the Netherlands",
+      "best_candidate_qid": "Q267367",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6451612903225806
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 0,
+    "entities_unmatched": 3
+  }
+}

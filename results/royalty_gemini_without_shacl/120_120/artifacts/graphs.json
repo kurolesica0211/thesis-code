@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sigismund a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Leopoldo_Franz ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Laetitia_d_Arenberg ;\n    :hasRelation data:Elyssa_Edmonstone .\n\ndata:Archibald_Bruce_Edmonstone a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elyssa_Edmonstone a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Archibald_Bruce_Edmonstone ;\n    :hasMother data:Julieta_Isabel_Deakin .\n\ndata:Ferdinand_IV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gottfried_of_Austria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Julieta_Isabel_Deakin a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Peter_Deakin .\n\ndata:Laetitia_d_Arenberg a :Person,\n        :Woman .\n\ndata:Leopoldo_Franz a :Ancestor,\n        :Man,\n        :Person ;\n    :hasAncestor data:Ferdinand_IV ;\n    :hasFather data:Gottfried_of_Austria .\n\ndata:Peter_Deakin a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Sigismund a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Leopoldo_Franz ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Laetitia_d_Arenberg ;\n    :hasRelation data:Elyssa_Edmonstone .\n\ndata:Archibald_Bruce_Edmonstone a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elyssa_Edmonstone a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Archibald_Bruce_Edmonstone ;\n    :hasMother data:Julieta_Isabel_Deakin .\n\ndata:Ferdinand_IV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gottfried_of_Austria a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Julieta_Isabel_Deakin a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Peter_Deakin .\n\ndata:Laetitia_d_Arenberg a :Person,\n        :Woman .\n\ndata:Leopoldo_Franz a :Ancestor,\n        :Man,\n        :Person ;\n    :hasAncestor data:Ferdinand_IV ;\n    :hasFather data:Gottfried_of_Austria .\n\ndata:Peter_Deakin a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

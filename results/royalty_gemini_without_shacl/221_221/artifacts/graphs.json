@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Frederik_IX_of_Denmark ;\n    :hasMother data:Ingrid_of_Sweden .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Crown_Prince_Pavlos a :Man,\n        :Person .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman .\n\ndata:Frederik_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman .\n\ndata:Matthew_Jeremiah_Kumar a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Philippos a :Man,\n        :Person .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Theodora de Gr\u00e8ce\"^^xsd:string ;\n    :hasBrother data:Crown_Prince_Pavlos,\n        data:Prince_Philippos ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 2024 ;\n    :hasMother data:Anne-Marie_of_Denmark ;\n    :hasRelation data:Matthew_Jeremiah_Kumar ;\n    :knownAs \"Theodora Greece\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Sofia_of_Spain a :Person,\n        :Woman ;\n    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .\n\ndata:Anne-Marie_of_Denmark a :Person,\n        :Woman ;\n    :hasFather data:Frederik_IX_of_Denmark ;\n    :hasMother data:Ingrid_of_Sweden .\n\ndata:Constantine_II_of_Greece a :Man,\n        :Person ;\n    :hasFather data:Paul_of_Greece ;\n    :hasMother data:Frederica_of_Hanover .\n\ndata:Crown_Prince_Pavlos a :Man,\n        :Person .\n\ndata:Frederica_of_Hanover a :Person,\n        :Woman .\n\ndata:Frederik_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Person,\n        :Woman .\n\ndata:Matthew_Jeremiah_Kumar a :Man,\n        :Person .\n\ndata:Paul_of_Greece a :Man,\n        :Person .\n\ndata:Prince_Philippos a :Man,\n        :Person .\n\ndata:Princess_Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :alsoKnownAs \"Theodora de Gr\u00e8ce\"^^xsd:string ;\n    :hasBrother data:Crown_Prince_Pavlos,\n        data:Prince_Philippos ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 2024 ;\n    :hasMother data:Anne-Marie_of_Denmark ;\n    :hasRelation data:Matthew_Jeremiah_Kumar ;\n    :knownAs \"Theodora Greece\"^^xsd:string .\n\n"
+    }
+]

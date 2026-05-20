@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hermann_Friedrich_Fernando_Roland_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasFather data:Prince_Karl_of_Leiningen ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasRelation data:Deborah_Cully ;
+    :knownAs "Hermann Leiningen"^^xsd:string .
+
+data:King_Nicholas_of_Montenegro a :Man,
+        :Person .
+
+data:King_Victor_Emmanuel_III_of_Italy a :Man,
+        :Person .
+
+data:Deborah_Cully a :Person,
+        :Woman .
+
+data:King_Boris_III_of_Bulgaria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Karl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Marie_Louise_of_Bulgaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:King_Boris_III_of_Bulgaria .
+

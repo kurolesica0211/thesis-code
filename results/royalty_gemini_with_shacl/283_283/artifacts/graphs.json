@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Lady_Dorothy_Osborne a :Person,\n        :Woman ;\n    :hasDeathYear 1946 .\n\ndata:Male a :Male .\n\ndata:Patrick_Lord_Glamis a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "f8bae493-f03e-450c-8d8e-a49d50babf44",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Lady_Dorothy_Osborne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Lady_Dorothy_Osborne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Patrick_Lord_Glamis> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Patrick_Lord_Glamis> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Lady_Dorothy_Osborne> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Timothy_Patrick_Bowes-Lyon> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Patrick_Lord_Glamis> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Lady_Dorothy_Osborne a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1946 .\n\ndata:Male a :Male .\n\ndata:Patrick_Lord_Glamis a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "001013ad-23cf-48a7-8bc2-852501878bc9",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_George_VI a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman ;\n    :isSisterOf data:Patrick_Lord_Glamis .\n\ndata:Timothy_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Patrick_Lord_Glamis ;\n    :hasMother data:Lady_Dorothy_Osborne ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .\n\ndata:Captain_Fergus_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Lady_Dorothy_Osborne a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1946 .\n\ndata:Male a :Male .\n\ndata:Patrick_Lord_Glamis a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

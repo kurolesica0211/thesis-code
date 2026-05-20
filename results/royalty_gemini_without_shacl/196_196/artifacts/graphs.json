@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Chias_Osorio a :Man .\n\ndata:Prince_Augustyn_Jozef_Czartoryski a :Man ;\n    :hasChild data:Prince_Adam_Karol_Czartoryski,\n        data:Prince_Ludwik_Piotr_Czartoryski ;\n    :hasDeathYear 1946 .\n\ndata:Princess_Dolores_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasChild data:Prince_Adam_Karol_Czartoryski,\n        data:Prince_Ludwik_Piotr_Czartoryski ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Louise_of_Orleans ;\n    :hasSister data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :knownAs \"Dola\"^^xsd:string .\n\ndata:Juan_Carlos_I_of_Spain a :Man .\n\ndata:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Louise_of_Orleans a :Woman .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasChild data:Juan_Carlos_I_of_Spain .\n\ndata:Prince_Adam_Karol_Czartoryski a :Man ;\n    :hasBirthYear 1940 .\n\ndata:Prince_Ludwik_Piotr_Czartoryski a :Man ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Chias_Osorio a :Man .\n\ndata:Prince_Augustyn_Jozef_Czartoryski a :Man ;\n    :hasChild data:Prince_Adam_Karol_Czartoryski,\n        data:Prince_Ludwik_Piotr_Czartoryski ;\n    :hasDeathYear 1946 .\n\ndata:Princess_Dolores_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasChild data:Prince_Adam_Karol_Czartoryski,\n        data:Prince_Ludwik_Piotr_Czartoryski ;\n    :hasDeathYear 1996 ;\n    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Princess_Louise_of_Orleans ;\n    :hasSister data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;\n    :knownAs \"Dola\"^^xsd:string .\n\ndata:Juan_Carlos_I_of_Spain a :Man .\n\ndata:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man .\n\ndata:Princess_Louise_of_Orleans a :Woman .\n\ndata:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman ;\n    :hasChild data:Juan_Carlos_I_of_Spain .\n\ndata:Prince_Adam_Karol_Czartoryski a :Man ;\n    :hasBirthYear 1940 .\n\ndata:Prince_Ludwik_Piotr_Czartoryski a :Man ;\n    :hasBirthYear 1945 ;\n    :hasDeathYear 1946 .\n\n"
+    }
+]

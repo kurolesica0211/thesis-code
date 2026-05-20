@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pedro_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Carlos_Duke_of_Calabria ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Sofia_Landaluce_y_Melgarejo .
+
+data:Anne_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Carlos_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 .
+
+data:Jose_Manuel_Landaluce_y_Dominguez a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sofia_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .
+

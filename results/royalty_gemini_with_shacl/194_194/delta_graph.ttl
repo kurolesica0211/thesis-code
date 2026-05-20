@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Elphinstone a :Man ;
+    :hasFather data:James_Alexander_Elphinstone ;
+    :hasMother data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Mary_Bowes-Lyon a :Woman .
+
+data:Sidney_Buller-Fullerton-Elphinstone a :Man .
+
+data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
+        :Man .
+
+data:George_David_Chetwode a :Ancestor,
+        :Man .
+
+data:James_Alexander_Elphinstone a :Ancestor,
+        :Man ;
+    :hasBirthYear "1953-04-22"^^xsd:string ;
+    :hasDeathYear "1994-12-19"^^xsd:string ;
+    :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+    :hasMarriageYear "1978-04-22"^^xsd:string ;
+    :hasMother data:Jean_Frances_Hambro .
+
+data:Jean_Frances_Hambro a :Ancestor,
+        :Woman .
+
+data:Marion_Cook a :Ancestor,
+        :Woman .
+
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man .
+
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+        :Woman ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+    :hasMother data:Marion_Cook .
+
+data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
+        :Woman ;
+    :hasFather data:George_David_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound .
+

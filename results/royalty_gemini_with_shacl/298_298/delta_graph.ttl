@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diane_of_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Henri_son_of_Henri ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMarriageYear data:Carl_Duke_of_Wurttemberg,
+        1960 ;
+    :hasMother data:Isabelle_of_Orleans_Braganza .
+
+data:Carl_Duke_of_Wurttemberg a :Man,
+        :Person ;
+    :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :hasMother data:Rosa_of_Austria ;
+    :hasSister data:Marie_Therese .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri_son_of_Henri a :Man,
+        :Person ;
+    :hasMarriageYear data:Marie_Therese .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Rosa_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marie_Therese a :Person,
+        :Woman .
+

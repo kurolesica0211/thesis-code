@@ -1,0 +1,204 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/334_334",
+  "text_file": "Q57264.txt",
+  "text_key": "Q57264",
+  "article": "https://en.wikipedia.org/wiki/Alexandrine_of_Mecklenburg-Schwerin",
+  "article_key": "Alexandrine of Mecklenburg-Schwerin",
+  "main_entity": {
+    "uri": "http://example.com/data#Alexandrine_of_Mecklenburg-Schwerin",
+    "qid": "Q57264",
+    "label": "Alexandrine of Mecklenburg-Schwerin"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Alexandrine_of_Mecklenburg-Schwerin",
+      "qid": "Q57264",
+      "label": "Alexandrine of Mecklenburg-Schwerin",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_III",
+      "qid": "Q57974",
+      "label": "Frederick Francis III",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "qid": "Q232159",
+      "label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
+      "qid": "Q77556",
+      "label": "Prince Wilhelm of Prussia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_II",
+      "qid": "Q57976",
+      "label": "Frederick Francis II",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+      "qid": "Q58777",
+      "label": "Prince August Wilhelm of Prussia",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
+      "qid": "Q57621",
+      "label": "Wilhelm, German Crown Prince",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin",
+      "extracted_local_name": "Alexandrine_of_Mecklenburg-Schwerin",
+      "embedding_text": "Alexandrine of Mecklenburg-Schwerin",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alexandrine_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q57264",
+      "ground_truth_label": "Alexandrine of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Alexandrine of Mecklenburg-Schwerin",
+      "best_candidate_label": "Alexandrine of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q57264",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_II",
+      "extracted_local_name": "Frederick_Francis_II",
+      "embedding_text": "Frederick Francis II",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_II",
+      "ground_truth_qid": "Q57976",
+      "ground_truth_label": "Frederick Francis II",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Frederick Francis II",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_III",
+      "extracted_local_name": "Frederick_Francis_III",
+      "embedding_text": "Frederick Francis III",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_III",
+      "ground_truth_qid": "Q57974",
+      "ground_truth_label": "Frederick Francis III",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Frederick Francis III",
+      "best_candidate_label": "Frederick Francis III",
+      "best_candidate_qid": "Q57974",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anastasia_Mikhailovna",
+      "extracted_local_name": "Anastasia_Mikhailovna",
+      "embedding_text": "Anastasia Mikhailovna",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8076923076923077,
+      "ground_truth_uri": "http://example.com/data#Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "ground_truth_qid": "Q232159",
+      "ground_truth_label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Anastasia Mikhailovna of Russia",
+      "best_candidate_label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "best_candidate_qid": "Q232159",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8076923076923077
+    },
+    {
+      "extracted_uri": "http://example.org/data/Cecilie_of_Mecklenburg-Schwerin",
+      "extracted_local_name": "Cecilie_of_Mecklenburg-Schwerin",
+      "embedding_text": "Cecilie of Mecklenburg-Schwerin",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juliana der Nederlanden",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2962962962962963
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_X",
+      "extracted_local_name": "Christian_X",
+      "embedding_text": "Christian X",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Franz III",
+      "best_candidate_label": "Frederick Francis III",
+      "best_candidate_qid": "Q57974",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_Mecklenburg-Schwerin",
+      "extracted_local_name": "Frederick_Francis_Mecklenburg-Schwerin",
+      "embedding_text": "Frederick Francis Mecklenburg-Schwerin",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Wilhelm Victor August Ernst",
+      "best_candidate_label": "Wilhelm, German Crown Prince",
+      "best_candidate_qid": "Q57621",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 4,
+    "entities_unmatched": 3
+  }
+}

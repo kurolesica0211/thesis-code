@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person ;\n    :alsoKnownAs \"Michael George Charles Franklin\"^^xsd:string ;\n    :hasBirthYear \"1942\"^^xsd:string ;\n    :hasBrother data:Prince_Edward_Duke_of_Kent ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMarriageYear \"1978\"^^xsd:string ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;\n    :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;\n    :hasSister data:Princess_Alexandra .\n\ndata:Baroness_Marie-Christine_von_Reibnitz a :Person,\n        :Woman .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_George_V a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Prince_George_Duke_of_Kent a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Alexandra a :Person,\n        :Woman .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\ndata:Queen_Mary a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "f927eb39-5aec-4048-80c6-ef41a19cb15f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael_of_Kent a :Man,\n        :Person ;\n    :alsoKnownAs \"Michael George Charles Franklin\"^^xsd:string ;\n    :hasBirthYear \"1942\"^^xsd:string ;\n    :hasBrother data:Prince_Edward_Duke_of_Kent ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMarriageYear \"1978\"^^xsd:string ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;\n    :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;\n    :hasSister data:Princess_Alexandra .\n\ndata:Baroness_Marie-Christine_von_Reibnitz a :Person,\n        :Woman .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:King_George_V a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Prince_George_Duke_of_Kent a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Alexandra a :Person,\n        :Woman .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\ndata:Queen_Mary a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

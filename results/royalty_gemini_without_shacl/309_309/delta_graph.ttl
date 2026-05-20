@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marilene_van_den_Broek a :Person,
+        :Woman ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Hans_van_den_Broek ;
+    :hasMother data:Josee_van_Schendel .
+
+data:Maurits_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Princess_Margriet .
+
+data:Prince_Bernhard a :Man,
+        :Person .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+
+data:Bernhard_van_Vollenhoven a :Man,
+        :Person .
+
+data:Floris_van_Vollenhoven a :Man,
+        :Person .
+
+data:Hans_van_den_Broek a :Man,
+        :Person .
+
+data:Josee_van_Schendel a :Person,
+        :Woman .
+
+data:Pieter-Christiaan_van_Vollenhoven a :Man,
+        :Person .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Princess_Margriet a :Person,
+        :Woman .
+

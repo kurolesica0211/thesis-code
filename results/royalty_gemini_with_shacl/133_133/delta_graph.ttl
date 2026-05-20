@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Friedrich_Franz_Mecklenburg_Schwerin a :Man ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:Christian_Louis ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMarriageYear 1941 ;
+    :hasMother data:Alexandra_Hanover ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper .
+
+data:Alexandra_Hanover a :Ancestor,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_Hanover ;
+    :hasMother data:Thyra_Denmark .
+
+data:Christian_IX_Denmark a :Ancestor,
+        :Man .
+
+data:Christian_Louis a :Man .
+
+data:Ernest_Augustus_Hanover a :Ancestor,
+        :Man .
+
+data:Frederick_Francis_IV a :Ancestor,
+        :Man .
+
+data:Karin_Elisabeth_von_Schaper a :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2012 ;
+    :hasFather data:Walter_von_Schaper ;
+    :hasMother data:Louise_von_Munchhausen .
+
+data:Louise_von_Munchhausen a :Ancestor,
+        :Woman .
+
+data:Thyra_Denmark a :Ancestor,
+        :Woman ;
+    :hasFather data:Christian_IX_Denmark .
+
+data:Walter_von_Schaper a :Ancestor,
+        :Man .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maurice a :Man,\n        :Person ;\n    :isBrotherOf data:Alexander .\n\ndata:PrinceWilliam a :Man,\n        :Person ;\n    :isBrotherOf data:Alexander .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :isSisterOf data:Alexander .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:WilliamIII a :Man,\n        :Person .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1851 ;\n    :hasDeathYear 1884 ;\n    :hasFather data:WilliamIII ;\n    :hasMother data:Sophie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maurice a :Man,\n        :Person ;\n    :isBrotherOf data:Alexander .\n\ndata:PrinceWilliam a :Man,\n        :Person ;\n    :isBrotherOf data:Alexander .\n\ndata:Wilhelmina a :Person,\n        :Woman ;\n    :isSisterOf data:Alexander .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:WilliamIII a :Man,\n        :Person .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1851 ;\n    :hasDeathYear 1884 ;\n    :hasFather data:WilliamIII ;\n    :hasMother data:Sophie .\n\n"
+    }
+]

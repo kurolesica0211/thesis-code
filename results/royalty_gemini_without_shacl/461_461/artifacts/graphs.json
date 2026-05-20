@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SophieWinkleman a :Person,\n        :Woman ;\n    :isMotherOf data:IsabellaAlexandraMay .\n\ndata:IsabellaAlexandraMay a :Person,\n        :Woman ;\n    :hasFather data:FrederickWindsor ;\n    :hasMother data:SophieWinkleman .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person ;\n    :isFatherOf data:FrederickWindsor,\n        data:LadyGabriella .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman ;\n    :isMotherOf data:FrederickWindsor,\n        data:LadyGabriella .\n\ndata:LadyGabriella a :Person,\n        :Woman ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :isSisterOf data:FrederickWindsor .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasSister data:LadyGabriella ;\n    :isFatherOf data:IsabellaAlexandraMay .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:SophieWinkleman a :Person,\n        :Woman ;\n    :isMotherOf data:IsabellaAlexandraMay .\n\ndata:IsabellaAlexandraMay a :Person,\n        :Woman ;\n    :hasFather data:FrederickWindsor ;\n    :hasMother data:SophieWinkleman .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person ;\n    :isFatherOf data:FrederickWindsor,\n        data:LadyGabriella .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman ;\n    :isMotherOf data:FrederickWindsor,\n        data:LadyGabriella .\n\ndata:LadyGabriella a :Person,\n        :Woman ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :isSisterOf data:FrederickWindsor .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasSister data:LadyGabriella ;\n    :isFatherOf data:IsabellaAlexandraMay .\n\n"
+    }
+]

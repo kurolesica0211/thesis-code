@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:MarcoAlfonsoTorlonia a :Man,\n        :Person ;\n    :hasFather data:AlessandroTorlonia ;\n    :hasMother data:BeatrizOfSpain ;\n    :hasSister data:OlimpiaTorlonia ;\n    :isUncleOf data:SibillaOfLuxembourg .\n\ndata:AlessandroTorlonia a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXIIIOfSpain .\n\ndata:OlimpiaTorlonia a :Person,\n        :Woman ;\n    :hasChild data:SibillaOfLuxembourg .\n\ndata:SibillaOfLuxembourg a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:MarcoAlfonsoTorlonia a :Man,\n        :Person ;\n    :hasFather data:AlessandroTorlonia ;\n    :hasMother data:BeatrizOfSpain ;\n    :hasSister data:OlimpiaTorlonia ;\n    :isUncleOf data:SibillaOfLuxembourg .\n\ndata:AlessandroTorlonia a :Man,\n        :Person .\n\ndata:AlfonsoXIIIOfSpain a :Man,\n        :Person .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman ;\n    :hasFather data:AlfonsoXIIIOfSpain .\n\ndata:OlimpiaTorlonia a :Person,\n        :Woman ;\n    :hasChild data:SibillaOfLuxembourg .\n\ndata:SibillaOfLuxembourg a :Person,\n        :Woman .\n\n"
+    }
+]

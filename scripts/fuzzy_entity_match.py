@@ -29,7 +29,7 @@ from spacy.matcher import Matcher
 
 
 DEFAULT_RESULTS_ROOT = Path("results")
-DEFAULT_TEXT_DIR = Path("custom_family_bench/royalty/denoised_texts_llama")
+DEFAULT_TEXT_DIR = Path("custom_family_bench/royalty/denoised_texts_fuzzy_match")
 DEFAULT_CSV = Path("custom_family_bench/royalty/ground_truth.csv")
 DEFAULT_GROUND_TRUTH_DIR = Path("custom_family_bench/royalty/ground_truths")
 DEFAULT_THRESHOLD = 0.74

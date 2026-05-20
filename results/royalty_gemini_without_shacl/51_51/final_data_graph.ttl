@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:CharlesIII ;
+    :hasChild data:PeterPhillips,
+        data:ZaraTindall ;
+    :hasFather data:Philip ;
+    :hasMarriageYear 1973,
+        1992 ;
+    :hasMother data:ElizabethII ;
+    :hasRelation data:MarkPhillips,
+        data:TimothyLaurence .
+
+data:CharlesIII a :Man .
+
+data:ElizabethII a :Woman .
+
+data:MarkPhillips a :Man ;
+    :hasChild data:PeterPhillips,
+        data:ZaraTindall ;
+    :hasDeathYear 1992 .
+
+data:Philip a :Man .
+
+data:TimothyLaurence a :Man .
+
+data:PeterPhillips a :Man .
+
+data:ZaraTindall a :Woman .
+

@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :isSisterOf data:Prince_Carlo_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Camilla_Crociani ;
+    :hasSister data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies .
+
+data:Camilla_Crociani a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .
+

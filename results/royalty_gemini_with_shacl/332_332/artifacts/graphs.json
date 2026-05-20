@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "163db889-b9c7-4542-b9a9-357de41b97f8",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Juliana a :Person,\n        :Woman ;\n    :hasBrother data:Albrecht_Willem_Lier .\n\ndata:Albrecht_Willem_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Prince_Henry ;\n    :hasMother data:Willemina_Martina_Wenneker ;\n    :isUncleOf data:Queen_Beatrix ;\n    :knownAs \"Pim\"^^xsd:string .\n\ndata:Prince_Henry a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1973 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "163db889-b9c7-4542-b9a9-357de41b97f8",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Willemina_Martina_Wenneker> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Henry> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Willemina_Martina_Wenneker> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Henry> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Henry> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Albrecht_Willem_Lier> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Willemina_Martina_Wenneker> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "pre_validation",
+        "tool_call_id": "cb67f586-c4ea-4942-89c9-fafa0d97ed4d",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Juliana a :Person,\n        :Woman ;\n    :hasBrother data:Albrecht_Willem_Lier .\n\ndata:Albrecht_Willem_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Prince_Henry ;\n    :hasMother data:Willemina_Martina_Wenneker ;\n    :isUncleOf data:Queen_Beatrix ;\n    :knownAs \"Pim\"^^xsd:string .\n\ndata:Prince_Henry a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1973 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "cb67f586-c4ea-4942-89c9-fafa0d97ed4d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Queen_Juliana a :Person,\n        :Woman ;\n    :hasBrother data:Albrecht_Willem_Lier .\n\ndata:Albrecht_Willem_Lier a :Man,\n        :Person ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Prince_Henry ;\n    :hasMother data:Willemina_Martina_Wenneker ;\n    :isUncleOf data:Queen_Beatrix ;\n    :knownAs \"Pim\"^^xsd:string .\n\ndata:Prince_Henry a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1973 .\n\n"
+    }
+]

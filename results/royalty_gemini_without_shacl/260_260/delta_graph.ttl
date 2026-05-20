@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Isla_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Savannah_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :isSisterOf data:Peter_Phillips .
+
+data:Anne_Princess_Royal a :Person,
+        :Woman .
+
+data:Harriet_Sperling a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lindsay_Wallace a :Person,
+        :Woman .
+
+data:Autumn_Kelly a :Person,
+        :Woman .
+
+data:Mark_Phillips a :Man,
+        :Person .
+
+data:Peter_Phillips a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:King_Charles_III,
+        data:Lindsay_Wallace .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lillie_Langtry a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:Mary_Malcolm .\n\ndata:Basil_Bartlett a :Man,\n        :Person .\n\ndata:Ian_Malcolm a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Jeanne_Langtry a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1964 .\n\ndata:Mary_Malcolm a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Ian_Malcolm ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Jeanne_Langtry ;\n    :hasRelation data:Basil_Bartlett ;\n    :knownAs \"Helen Mary Malcolm\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lillie_Langtry a :Ancestor,\n        :Person,\n        :Woman ;\n    :isAncestorOf data:Mary_Malcolm .\n\ndata:Basil_Bartlett a :Man,\n        :Person .\n\ndata:Ian_Malcolm a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Jeanne_Langtry a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1964 .\n\ndata:Mary_Malcolm a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Ian_Malcolm ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Jeanne_Langtry ;\n    :hasRelation data:Basil_Bartlett ;\n    :knownAs \"Helen Mary Malcolm\"^^xsd:string .\n\n"
+    }
+]

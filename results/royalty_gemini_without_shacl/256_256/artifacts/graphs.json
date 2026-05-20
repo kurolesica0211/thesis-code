@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Albert_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMarriageYear 1917 ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasRelation data:Lady_Irene_Denison ;\n    :hasSister data:Princess_Victoria_Eugenia ;\n    :knownAs \"Drino\"^^xsd:string .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Julie_Countess_of_Hauke a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Lady_Irene_Denison a :Person,\n        :Woman .\n\ndata:Prince_Albert a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Henry_of_Battenberg a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Countess_of_Hauke .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Princess_Victoria_Eugenia a :Person,\n        :Woman ;\n    :hasRelation data:Alfonso_XIII_of_Spain .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Albert_Mountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:Prince_Henry_of_Battenberg ;\n    :hasMarriageYear 1917 ;\n    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;\n    :hasRelation data:Lady_Irene_Denison ;\n    :hasSister data:Princess_Victoria_Eugenia ;\n    :knownAs \"Drino\"^^xsd:string .\n\ndata:Alfonso_XIII_of_Spain a :Man,\n        :Person .\n\ndata:Julie_Countess_of_Hauke a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Lady_Irene_Denison a :Person,\n        :Woman .\n\ndata:Prince_Albert a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Henry_of_Battenberg a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;\n    :hasMother data:Julie_Countess_of_Hauke .\n\ndata:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Prince_Albert ;\n    :hasMother data:Queen_Victoria .\n\ndata:Princess_Victoria_Eugenia a :Person,\n        :Woman ;\n    :hasRelation data:Alfonso_XIII_of_Spain .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

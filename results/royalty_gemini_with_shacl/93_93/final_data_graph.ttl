@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Aage a :Man,
+        :Person ;
+    :hasFather data:Prince_Valdemar_of_Denmark ;
+    :hasMother data:Marie_dOrleans .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Christian_IX a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marie_dOrleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Olga_Konstantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Constantine a :Man,
+        :Person .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:King_Christian_IX ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Prince_Constantine,
+        data:Prince_Nicholas ;
+    :hasDaughter data:Evgenia ;
+    :hasDeathYear 1957 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Olga_Konstantinovna_of_Russia ;
+    :hasRelation data:Princess_Marie_Bonaparte ;
+    :hasSon data:Petros .
+
+data:Prince_Nicholas a :Man,
+        :Person .
+
+data:Prince_Valdemar_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :isUncleOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Princess_Marie_Bonaparte a :Person,
+        :Woman ;
+    :hasDaughter data:Evgenia ;
+    :hasSon data:Petros .
+
+data:Evgenia a :Person,
+        :Woman .
+
+data:Petros a :Man,
+        :Person .
+

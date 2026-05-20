@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ashley_Hicks a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasBirthYear 1963 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMarriageYear 1990 ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasRelation data:Kathryn_Sharkey,
+        data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasSister data:Edwina_Brudenell,
+        data:India_Hicks .
+
+data:David_Nightingale_Hicks a :Man,
+        :Person .
+
+data:Edwina_Brudenell a :Person,
+        :Woman .
+
+data:India_Hicks a :Person,
+        :Woman .
+
+data:Kathryn_Sharkey a :Person,
+        :Woman .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman .
+
+data:Louis_Mountbatten a :Man,
+        :Person .
+
+data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
+        :Woman .
+

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasSex data:Female .
+
+data:Mark_Phillips a :Man ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasSex data:Male .
+
+data:Timothy_Laurence a :Man ;
+    :hasSex data:Male .
+
+data:King_Charles_III a :Man ;
+    :hasSex data:Male .
+
+data:Prince_Philip a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Peter_Phillips a :Man ;
+    :hasSex data:Male .
+
+data:Zara_Tindall a :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

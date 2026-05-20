@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Augustus_of_Saxe-Weimar-Eisenach a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein ;\n    :isFatherOf data:Michael_of_Saxe-Weimar-Eisenach .\n\ndata:Elisabeth_of_Wangenheim-Winterstein a :Woman ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Othmar_von_Wangenheim-Winterstein ;\n    :hasMother data:Maud_von_Tr%C3%BCtzschler .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman .\n\ndata:Maud_von_Tr%C3%BCtzschler a :Woman .\n\ndata:Michael_of_Saxe-Weimar-Eisenach a :Man .\n\ndata:Othmar_von_Wangenheim-Winterstein a :Man .\n\ndata:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_Augustus_of_Saxe-Weimar-Eisenach a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;\n    :hasMarriageYear 1944 ;\n    :hasMother data:Feodora_of_Saxe-Meiningen ;\n    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein ;\n    :isFatherOf data:Michael_of_Saxe-Weimar-Eisenach .\n\ndata:Elisabeth_of_Wangenheim-Winterstein a :Woman ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Othmar_von_Wangenheim-Winterstein ;\n    :hasMother data:Maud_von_Tr%C3%BCtzschler .\n\ndata:Feodora_of_Saxe-Meiningen a :Woman .\n\ndata:Maud_von_Tr%C3%BCtzschler a :Woman .\n\ndata:Michael_of_Saxe-Weimar-Eisenach a :Man .\n\ndata:Othmar_von_Wangenheim-Winterstein a :Man .\n\ndata:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man .\n\n"
+    }
+]

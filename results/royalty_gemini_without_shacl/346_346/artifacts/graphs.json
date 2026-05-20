@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Duke_of_Parma a :Man ;\n    :isBrotherOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma ;\n    :isFatherOf data:Carlos_Enrique .\n\ndata:Princess_Carolina a :Woman ;\n    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Princess_Margarita a :Woman ;\n    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Carlos_Enrique a :Man .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Gloria_Irene a :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :isFatherOf data:Gloria_Irene .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carlos_Duke_of_Parma a :Man ;\n    :isBrotherOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma ;\n    :isFatherOf data:Carlos_Enrique .\n\ndata:Princess_Carolina a :Woman ;\n    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Princess_Margarita a :Woman ;\n    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .\n\ndata:Carlos_Enrique a :Man .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Gloria_Irene a :Woman .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman .\n\ndata:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Carlos_Hugo_Duke_of_Parma ;\n    :hasMother data:Princess_Irene_of_the_Netherlands ;\n    :isFatherOf data:Gloria_Irene .\n\n"
+    }
+]

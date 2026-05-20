@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aschwin_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Bernhard_of_Lippe-Biesterfeld_Sr ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Armgard_of_Sierstorpff-Cramm ;\n    :hasRelation data:Simone_Arnoux .\n\ndata:Constantijn_of_the_Netherlands a :Man,\n        :Person .\n\ndata:Stephan_von_Watzdorf a :Man,\n        :Person ;\n    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,\n        data:Simone_Arnoux .\n\ndata:Thilo_von_Watzdorf a :Man,\n        :Person ;\n    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,\n        data:Simone_Arnoux .\n\ndata:Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Bernhard_of_Lippe-Biesterfeld_Sr a :Man,\n        :Person .\n\ndata:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,\n        :Person .\n\ndata:Simone_Arnoux a :Person,\n        :Woman ;\n    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Aschwin_of_Lippe-Biesterfeld a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Bernhard_of_Lippe-Biesterfeld_Sr ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Armgard_of_Sierstorpff-Cramm ;\n    :hasRelation data:Simone_Arnoux .\n\ndata:Constantijn_of_the_Netherlands a :Man,\n        :Person .\n\ndata:Stephan_von_Watzdorf a :Man,\n        :Person ;\n    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,\n        data:Simone_Arnoux .\n\ndata:Thilo_von_Watzdorf a :Man,\n        :Person ;\n    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,\n        data:Simone_Arnoux .\n\ndata:Armgard_of_Sierstorpff-Cramm a :Person,\n        :Woman .\n\ndata:Bernhard_of_Lippe-Biesterfeld a :Man,\n        :Person .\n\ndata:Bernhard_of_Lippe-Biesterfeld_Sr a :Man,\n        :Person .\n\ndata:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,\n        :Person .\n\ndata:Simone_Arnoux a :Person,\n        :Woman ;\n    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .\n\n"
+    }
+]

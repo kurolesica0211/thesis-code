@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;\n    :hasMother data:Alicia_of_Bourbon-Parma ;\n    :isMotherOf data:Eugenia,\n        data:Isabel,\n        data:Manuel,\n        data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias,\n        data:Sonia .\n\ndata:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:Alicia_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\ndata:Eugenia a :Person,\n        :Woman .\n\ndata:Isabel a :Person,\n        :Woman .\n\ndata:Manuel a :Man,\n        :Person .\n\ndata:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias a :Person,\n        :Woman .\n\ndata:Sonia a :Person,\n        :Woman ;\n    :hasBirthYear 1969 ;\n    :hasDeathYear 2022 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;\n    :hasMother data:Alicia_of_Bourbon-Parma ;\n    :isMotherOf data:Eugenia,\n        data:Isabel,\n        data:Manuel,\n        data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias,\n        data:Sonia .\n\ndata:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:Alicia_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\ndata:Eugenia a :Person,\n        :Woman .\n\ndata:Isabel a :Person,\n        :Woman .\n\ndata:Manuel a :Man,\n        :Person .\n\ndata:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias a :Person,\n        :Woman .\n\ndata:Sonia a :Person,\n        :Woman ;\n    :hasBirthYear 1969 ;\n    :hasDeathYear 2022 .\n\n"
+    }
+]

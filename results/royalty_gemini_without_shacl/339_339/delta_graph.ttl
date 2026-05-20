@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HeinrichJr a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSonOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIrene .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:EmpressVictoria .
+
+data:Waldemar a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSonOf data:PrinceHeinrichOfPrussia,
+        data:PrincessIrene .
+
+data:FrederickIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:WilhelmII a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:EmpressVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:PrinceHeinrichOfPrussia a :Man,
+        :Person ;
+    :hasBirthYear 1862 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:FrederickIII ;
+    :hasMarriageYear 1888 ;
+    :hasMother data:EmpressVictoria ;
+    :hasRelation data:PrincessIrene ;
+    :hasSex data:Male ;
+    :isBrotherOf data:WilhelmII .
+
+data:Female a :Sex .
+
+data:PrincessIrene a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Male .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra a :Woman ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Edward a :Man ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Michael a :Man ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMother data:Queen_Olga_of_Greece .\n\ndata:Queen_Mary a :Woman .\n\ndata:Queen_Olga_of_Greece a :Woman .\n\ndata:Prince_George_Duke_of_Kent a :Man ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1968 ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandra a :Woman ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Edward a :Man ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Michael a :Man ;\n    :hasFather data:Prince_George_Duke_of_Kent ;\n    :hasMother data:Princess_Marina_of_Greece_and_Denmark .\n\ndata:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .\n\ndata:King_George_I_of_Greece a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Prince_Nicholas_of_Greece_and_Denmark a :Man ;\n    :hasFather data:King_George_I_of_Greece ;\n    :hasMother data:Queen_Olga_of_Greece .\n\ndata:Queen_Mary a :Woman .\n\ndata:Queen_Olga_of_Greece a :Woman .\n\ndata:Prince_George_Duke_of_Kent a :Man ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Princess_Marina_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1968 ;\n    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;\n    :hasMarriageYear 1934 ;\n    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .\n\n"
+    }
+]

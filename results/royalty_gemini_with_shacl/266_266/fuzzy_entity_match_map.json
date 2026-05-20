@@ -1,0 +1,293 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/266_266",
+  "text_file": "Q372954.txt",
+  "text_key": "Q372954",
+  "article": "https://en.wikipedia.org/wiki/Grand_Duke_Dmitri_Pavlovich_of_Russia",
+  "article_key": "Grand Duke Dmitri Pavlovich of Russia",
+  "main_entity": {
+    "uri": "http://example.com/data#Grand_Duke_Dmitri_Pavlovich_of_Russia",
+    "qid": "Q372954",
+    "label": "Grand Duke Dmitri Pavlovich of Russia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Grand_Duke_Dmitri_Pavlovich_of_Russia",
+      "qid": "Q372954",
+      "label": "Grand Duke Dmitri Pavlovich of Russia",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Constantine_I_of_Greece",
+      "qid": "Q152099",
+      "label": "Constantine I of Greece",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duke_Paul_Alexandrovich_of_Russia",
+      "qid": "Q372964",
+      "label": "Grand Duke Paul Alexandrovich of Russia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Lennart_Bernadotte",
+      "qid": "Q564226",
+      "label": "Lennart Bernadotte",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alexandra_of_Greece_and_Denmark",
+      "qid": "Q232728",
+      "label": "Princess Alexandra of Greece and Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Alexander_of_Greece",
+      "qid": "Q151742",
+      "label": "Alexander of Greece",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_II_of_Greece",
+      "qid": "Q152935",
+      "label": "George II of Greece",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Helen_of_Greece_and_Denmark",
+      "qid": "Q162177",
+      "label": "Helen of Greece and Denmark",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "qid": "Q155178",
+      "label": "Olga Constantinovna of Russia",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Paul_of_Greece",
+      "qid": "Q155394",
+      "label": "Paul of Greece",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm-_Duke_of_Södermanland",
+      "qid": "Q435739",
+      "label": "Prince Wilhelm, Duke of Södermanland",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alexandra_Georgievna",
+      "extracted_local_name": "Alexandra_Georgievna",
+      "embedding_text": "Alexandra Georgievna",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8,
+      "ground_truth_uri": "http://example.com/data#Princess_Alexandra_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q232728",
+      "ground_truth_label": "Princess Alexandra of Greece and Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Alexandra Georgievna of Russia",
+      "best_candidate_label": "Princess Alexandra of Greece and Denmark",
+      "best_candidate_qid": "Q232728",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexander_II",
+      "extracted_local_name": "Alexander_II",
+      "embedding_text": "Alexander II",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexander I of Greece",
+      "best_candidate_label": "Alexander of Greece",
+      "best_candidate_qid": "Q151742",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6666666666666666
+    },
+    {
+      "extracted_uri": "http://example.org/data/Audrey_Emery",
+      "extracted_local_name": "Audrey_Emery",
+      "embedding_text": "Audrey Emery",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olga of Greece",
+      "best_candidate_label": "Olga Constantinovna of Russia",
+      "best_candidate_qid": "Q155178",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.38461538461538464
+    },
+    {
+      "extracted_uri": "http://example.org/data/Dmitri_Pavlovich",
+      "extracted_local_name": "Dmitri_Pavlovich",
+      "embedding_text": "Dmitri Pavlovich",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duke Dmitri Pavlovich of Russia",
+      "best_candidate_label": "Grand Duke Dmitri Pavlovich of Russia",
+      "best_candidate_qid": "Q372954",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6037735849056604
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Feodorovna",
+      "extracted_local_name": "Elizabeth_Feodorovna",
+      "embedding_text": "Elizabeth Feodorovna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Helen, Queen Mother of Romania",
+      "best_candidate_label": "Helen of Greece and Denmark",
+      "best_candidate_qid": "Q162177",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.44
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Alexandrovna",
+      "extracted_local_name": "Maria_Alexandrovna",
+      "embedding_text": "Maria Alexandrovna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olga Constantinovna of Russia",
+      "best_candidate_label": "Olga Constantinovna of Russia",
+      "best_candidate_qid": "Q155178",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.3404255319148936
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_Pavlovna",
+      "extracted_local_name": "Maria_Pavlovna",
+      "embedding_text": "Maria Pavlovna",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olga Constantinovna of Russia",
+      "best_candidate_label": "Olga Constantinovna of Russia",
+      "best_candidate_qid": "Q155178",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.32558139534883723
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_Alexandrovich",
+      "extracted_local_name": "Paul_Alexandrovich",
+      "embedding_text": "Paul Alexandrovich",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duke Paul Alexandrovich of Russia",
+      "best_candidate_label": "Grand Duke Paul Alexandrovich of Russia",
+      "best_candidate_qid": "Q372964",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.631578947368421
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_Romanovsky_Ilyinsky",
+      "extracted_local_name": "Paul_Romanovsky_Ilyinsky",
+      "embedding_text": "Paul Romanovsky Ilyinsky",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Dimitrii Pavlovich Romanov, Grand Duke of Russia",
+      "best_candidate_label": "Grand Duke Dmitri Pavlovich of Russia",
+      "best_candidate_qid": "Q372954",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3611111111111111
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sergei_Alexandrovich",
+      "extracted_local_name": "Sergei_Alexandrovich",
+      "embedding_text": "Sergei Alexandrovich",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Alexander of Greece",
+      "best_candidate_label": "Alexander of Greece",
+      "best_candidate_qid": "Q151742",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.5454545454545454
+    }
+  ],
+  "summary": {
+    "entities_total": 10,
+    "entities_matched": 1,
+    "entities_unmatched": 9
+  }
+}

@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Ancestor,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:Willem-Alexander .
+
+data:Catharina-Amalia a :Woman ;
+    :hasBirthYear "2003"^^xsd:int ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :hasSex data:Female ;
+    :hasSister data:Alexia,
+        data:Ariane .
+
+data:Alexia a :Woman ;
+    :hasSex data:Female .
+
+data:Ariane a :Woman ;
+    :hasSex data:Female .
+
+data:M%C3%A1xima a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Willem-Alexander a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+

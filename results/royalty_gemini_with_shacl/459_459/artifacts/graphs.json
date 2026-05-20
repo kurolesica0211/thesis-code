@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "f454e329-69cc-4362-84f9-5169dff487f3",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Man ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria ;\n    :isFatherOf data:Child_1,\n        data:Child_2,\n        data:Child_3,\n        data:Child_4,\n        data:Child_5 .\n\ndata:Armin_Prince_of_Lippe a :Man .\n\ndata:Child_1 a :Man .\n\ndata:Child_2 a :Man .\n\ndata:Child_3 a :Man .\n\ndata:Child_4 a :Woman .\n\ndata:Child_5 a :Woman .\n\ndata:Princess_Maria a :Woman .\n\ndata:Traute_Becker a :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "f454e329-69cc-4362-84f9-5169dff487f3",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Armin_Prince_of_Lippe> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Stephan_Prince_of_Lippe> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Traute_Becker> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Traute_Becker> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Armin_Prince_of_Lippe> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Traute_Becker> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Stephan_Prince_of_Lippe> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Armin_Prince_of_Lippe> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "pre_validation",
+        "tool_call_id": "285c95e4-726c-456e-b535-67f6cac358a9",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Ancestor,\n        :Man ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria ;\n    :isFatherOf data:Child_1,\n        data:Child_2,\n        data:Child_3,\n        data:Child_4,\n        data:Child_5 .\n\ndata:Armin_Prince_of_Lippe a :Ancestor,\n        :Man .\n\ndata:Child_1 a :Man .\n\ndata:Child_2 a :Man .\n\ndata:Child_3 a :Man .\n\ndata:Child_4 a :Woman .\n\ndata:Child_5 a :Woman .\n\ndata:Princess_Maria a :Woman .\n\ndata:Traute_Becker a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "285c95e4-726c-456e-b535-67f6cac358a9",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "3a4f647d-245f-4be0-96f8-12447b568d8e",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Stephan_Prince_of_Lippe a :Ancestor,\n        :Man ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Armin_Prince_of_Lippe ;\n    :hasMother data:Traute_Becker ;\n    :hasRelation data:Princess_Maria ;\n    :isFatherOf data:Child_1,\n        data:Child_2,\n        data:Child_3,\n        data:Child_4,\n        data:Child_5 .\n\ndata:Armin_Prince_of_Lippe a :Ancestor,\n        :Man .\n\ndata:Child_1 a :Man .\n\ndata:Child_2 a :Man .\n\ndata:Child_3 a :Man .\n\ndata:Child_4 a :Woman .\n\ndata:Child_5 a :Woman .\n\ndata:Princess_Maria a :Woman .\n\ndata:Traute_Becker a :Ancestor,\n        :Woman .\n\n"
+    }
+]

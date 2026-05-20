@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:Alexia a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Pavlos a :Man,\n        :Person .\n\ndata:Theodora a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "2dbcb6fc-61f7-4a37-b5a3-e2b95379ea5b",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne-Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Constantine_II> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne-Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Constantine_II> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne-Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Constantine_II> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "fb5fb641-508b-4e03-a995-f935f97a9c94",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:Alexia a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Pavlos a :Man,\n        :Person .\n\ndata:Theodora a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "fb5fb641-508b-4e03-a995-f935f97a9c94",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felipe_VI a :Man,\n        :Person .\n\ndata:Sofia a :Person,\n        :Woman ;\n    :isAuntOf data:Alexia .\n\ndata:Alexia a :Person,\n        :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos ;\n    :hasFather data:Constantine_II ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora .\n\ndata:Anne-Marie a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man,\n        :Person .\n\ndata:Constantine_II a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Pavlos a :Man,\n        :Person .\n\ndata:Theodora a :Person,\n        :Woman .\n\n"
+    }
+]

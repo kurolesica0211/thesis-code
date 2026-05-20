@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+        :Person ;
+    :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Female a :Sex .
+
+data:John_Herbert_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear "1886"^^xsd:string ;
+    :hasDeathYear "1930"^^xsd:string ;
+    :hasMarriageYear "1914"^^xsd:string ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasSex data:Male ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon .
+
+data:Male a :Sex .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+        :Woman .
+

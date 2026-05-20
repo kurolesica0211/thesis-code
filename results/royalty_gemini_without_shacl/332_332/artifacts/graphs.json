@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albrecht_Willem_Lier a :Man,\n        :Person ;\n    :alsoKnownAs \"Pim\"^^xsd:string ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Prince_Henry ;\n    :hasMother data:Willemina_Martina_Wenneker ;\n    :isBrotherOf data:Queen_Juliana ;\n    :isUncleOf data:Queen_Beatrix .\n\ndata:Prince_Henry a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1973 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Albrecht_Willem_Lier a :Man,\n        :Person ;\n    :alsoKnownAs \"Pim\"^^xsd:string ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2015 ;\n    :hasFather data:Prince_Henry ;\n    :hasMother data:Willemina_Martina_Wenneker ;\n    :isBrotherOf data:Queen_Juliana ;\n    :isUncleOf data:Queen_Beatrix .\n\ndata:Prince_Henry a :Man,\n        :Person .\n\ndata:Queen_Beatrix a :Person,\n        :Woman .\n\ndata:Queen_Juliana a :Person,\n        :Woman .\n\ndata:Willemina_Martina_Wenneker a :Person,\n        :Woman ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1973 .\n\n"
+    }
+]

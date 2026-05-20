@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/251_251",
+  "text_file": "Q335615.txt",
+  "text_key": "Q335615",
+  "article": "https://en.wikipedia.org/wiki/Michael_Bowes-Lyon,_18th_Earl_of_Strathmore_and_Kinghorne",
+  "article_key": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+  "main_entity": {
+    "uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
+    "qid": "Q335615",
+    "label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
+      "qid": "Q335615",
+      "label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+      "qid": "Q75248478",
+      "label": "Albemarle Bowes-Lyon",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Mary_McCorquodale",
+      "qid": "Q75240080",
+      "label": "Mary McCorquodale",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Fergus_Bowes-Lyon",
+      "qid": "Q5444165",
+      "label": "Fergus Bowes-Lyon",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Michael_Bowes-Lyon",
+      "qid": "Q63806478",
+      "label": "Michael Bowes-Lyon",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Fergus_Bowes-Lyon",
+      "extracted_local_name": "Fergus_Bowes-Lyon",
+      "embedding_text": "Fergus Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Fergus_Bowes-Lyon",
+      "ground_truth_qid": "Q5444165",
+      "ground_truth_label": "Fergus Bowes-Lyon",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Fergus Bowes-Lyon",
+      "best_candidate_label": "Fergus Bowes-Lyon",
+      "best_candidate_qid": "Q5444165",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Pamela_McCorquodale",
+      "extracted_local_name": "Mary_Pamela_McCorquodale",
+      "embedding_text": "Mary Pamela Mc Corquodale",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9795918367346939,
+      "ground_truth_uri": "http://example.com/data#Mary_McCorquodale",
+      "ground_truth_qid": "Q75240080",
+      "ground_truth_label": "Mary McCorquodale",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Mary Pamela McCorquodale",
+      "best_candidate_label": "Mary McCorquodale",
+      "best_candidate_qid": "Q75240080",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9795918367346939
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Bowes-Lyon_Sister",
+      "extracted_local_name": "Elizabeth_Bowes-Lyon_Sister",
+      "embedding_text": "Elizabeth Bowes-Lyon Sister",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.851063829787234,
+      "ground_truth_uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "ground_truth_qid": "Q10633",
+      "ground_truth_label": "Queen Elizabeth, The Queen Mother",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Elizabeth Bowes-Lyon",
+      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
+      "best_candidate_qid": "Q10633",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.851063829787234
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Fergus_Bowes-Lyon",
+      "extracted_local_name": "Michael_Fergus_Bowes-Lyon",
+      "embedding_text": "Michael Fergus Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8372093023255814,
+      "ground_truth_uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+      "ground_truth_qid": "Q75248478",
+      "ground_truth_label": "Albemarle Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Michael Bowes-Lyon",
+      "best_candidate_label": "Albemarle Bowes-Lyon",
+      "best_candidate_qid": "Q75248478",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8372093023255814
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Bowes-Lyon_Grandfather",
+      "extracted_local_name": "Michael_Bowes-Lyon_Grandfather",
+      "embedding_text": "Michael Bowes-Lyon Grandfather",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
+      "ground_truth_qid": "Q335615",
+      "ground_truth_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Michael Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "best_candidate_qid": "Q335615",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/Diana_Bowes-Lyon",
+      "extracted_local_name": "Diana_Bowes-Lyon",
+      "embedding_text": "Diana Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Mary Pamela Bowes-Lyon",
+      "best_candidate_label": "Mary McCorquodale",
+      "best_candidate_qid": "Q75240080",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6842105263157895
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

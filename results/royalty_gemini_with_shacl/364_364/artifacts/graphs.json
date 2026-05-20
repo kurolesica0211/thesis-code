@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dr_Oskar_Hohenzollern a :Man .\n\ndata:Oskar_Prince_of_Prussia a :Man ;\n    :hasBirthYear 1888 ;\n    :hasBrother data:Adalbert,\n        data:August_Wilhelm,\n        data:Crown_Prince_Wilhelm,\n        data:Eitel_Friedrich,\n        data:Joachim ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ina-Marie_von_Bassewitz ;\n    :hasSister data:Viktoria_Luise ;\n    :hasSon data:Oskar_son_of_Oskar,\n        data:Wilhelm_Karl .\n\ndata:Adalbert a :Man .\n\ndata:August_Wilhelm a :Man .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Crown_Prince_Wilhelm a :Man .\n\ndata:Eitel_Friedrich a :Man .\n\ndata:Ina-Marie_von_Bassewitz a :Woman .\n\ndata:Joachim a :Man .\n\ndata:Oskar_son_of_Oskar a :Man .\n\ndata:Viktoria_Luise a :Woman .\n\ndata:Wilhelm_II a :Man .\n\ndata:Wilhelm_Karl a :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "d0d59d46-dc18-4e43-b4ce-ca7acfcf91ba",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Oskar_Prince_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "8c7c9b2b-b3a0-4354-9050-e14923d40a1f",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dr_Oskar_Hohenzollern a :Man .\n\ndata:Oskar_Prince_of_Prussia a :Man ;\n    :hasBirthYear 1888 ;\n    :hasBrother data:Adalbert,\n        data:August_Wilhelm,\n        data:Crown_Prince_Wilhelm,\n        data:Eitel_Friedrich,\n        data:Joachim ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ina-Marie_von_Bassewitz ;\n    :hasSister data:Viktoria_Luise ;\n    :hasSon data:Oskar_son_of_Oskar,\n        data:Wilhelm_Karl .\n\ndata:Adalbert a :Man .\n\ndata:August_Wilhelm a :Man .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Crown_Prince_Wilhelm a :Man .\n\ndata:Eitel_Friedrich a :Man .\n\ndata:Ina-Marie_von_Bassewitz a :Woman .\n\ndata:Joachim a :Man .\n\ndata:Oskar_son_of_Oskar a :Man .\n\ndata:Viktoria_Luise a :Woman .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man .\n\ndata:Wilhelm_Karl a :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "8c7c9b2b-b3a0-4354-9050-e14923d40a1f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Dr_Oskar_Hohenzollern a :Man .\n\ndata:Oskar_Prince_of_Prussia a :Man ;\n    :hasBirthYear 1888 ;\n    :hasBrother data:Adalbert,\n        data:August_Wilhelm,\n        data:Crown_Prince_Wilhelm,\n        data:Eitel_Friedrich,\n        data:Joachim ;\n    :hasDeathYear 1958 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1914 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ina-Marie_von_Bassewitz ;\n    :hasSister data:Viktoria_Luise ;\n    :hasSon data:Oskar_son_of_Oskar,\n        data:Wilhelm_Karl .\n\ndata:Adalbert a :Man .\n\ndata:August_Wilhelm a :Man .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Crown_Prince_Wilhelm a :Man .\n\ndata:Eitel_Friedrich a :Man .\n\ndata:Ina-Marie_von_Bassewitz a :Woman .\n\ndata:Joachim a :Man .\n\ndata:Oskar_son_of_Oskar a :Man .\n\ndata:Viktoria_Luise a :Woman .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man .\n\ndata:Wilhelm_Karl a :Man .\n\n"
+    }
+]

@@ -411,7 +411,8 @@ def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]
     
     # Get all subrun directories
     subrun_dirs = [d for d in os.listdir(run_path) 
-                if os.path.isdir(os.path.join(run_path, d)) and '_' in d]
+                if os.path.isdir(os.path.join(run_path, d)) and '_' in d and
+                d != "ontology_conformance_metrics"]
     
     for subrun_dir in sorted(subrun_dirs, key=lambda x: int(x.split('_')[0])):
         try:

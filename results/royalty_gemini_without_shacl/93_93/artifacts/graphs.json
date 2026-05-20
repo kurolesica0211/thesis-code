@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Valdemar_of_Denmark a :Man,\n        :Person ;\n    :isUncleOf data:George_of_Greece_and_Denmark .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Evgenia_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Constantine_I_of_Greece,\n        data:Nicholas_of_Greece_and_Denmark ;\n    :hasDaughter data:Evgenia_of_Greece_and_Denmark ;\n    :hasDeathYear 1957 ;\n    :hasFather data:Christian_IX_of_Denmark,\n        data:George_I_of_Greece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Olga_Konstantinovna_of_Russia ;\n    :hasRelation data:Marie_Bonaparte ;\n    :hasSon data:Petros_of_Greece_and_Denmark .\n\ndata:Marie_Bonaparte a :Person,\n        :Woman .\n\ndata:Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Olga_Konstantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Petros_of_Greece_and_Denmark a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Valdemar_of_Denmark a :Man,\n        :Person ;\n    :isUncleOf data:George_of_Greece_and_Denmark .\n\ndata:Christian_IX_of_Denmark a :Man,\n        :Person .\n\ndata:Constantine_I_of_Greece a :Man,\n        :Person .\n\ndata:Evgenia_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:George_I_of_Greece a :Man,\n        :Person .\n\ndata:George_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasBrother data:Constantine_I_of_Greece,\n        data:Nicholas_of_Greece_and_Denmark ;\n    :hasDaughter data:Evgenia_of_Greece_and_Denmark ;\n    :hasDeathYear 1957 ;\n    :hasFather data:Christian_IX_of_Denmark,\n        data:George_I_of_Greece ;\n    :hasMarriageYear 1907 ;\n    :hasMother data:Olga_Konstantinovna_of_Russia ;\n    :hasRelation data:Marie_Bonaparte ;\n    :hasSon data:Petros_of_Greece_and_Denmark .\n\ndata:Marie_Bonaparte a :Person,\n        :Woman .\n\ndata:Nicholas_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Olga_Konstantinovna_of_Russia a :Person,\n        :Woman .\n\ndata:Petros_of_Greece_and_Denmark a :Man,\n        :Person .\n\n"
+    }
+]

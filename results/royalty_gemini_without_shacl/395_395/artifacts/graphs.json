@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anton-G%C3%BCnther a :Man ;\n    :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,\n        data:Friedrich_of_Waldeck_and_Pyrmont ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Nikolaus_of_Oldenburg ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;\n    :knownAs \"Anton-G\u00fcnther, Duke of Oldenburg\"^^xsd:string .\n\ndata:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Nikolaus_of_Oldenburg a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anton-G%C3%BCnther a :Man ;\n    :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,\n        data:Friedrich_of_Waldeck_and_Pyrmont ;\n    :hasBirthYear 1923 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Nikolaus_of_Oldenburg ;\n    :hasMarriageYear 1951 ;\n    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;\n    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;\n    :knownAs \"Anton-G\u00fcnther, Duke of Oldenburg\"^^xsd:string .\n\ndata:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Nikolaus_of_Oldenburg a :Man .\n\n"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man,\n        :Person ;\n    :isBrotherOf data:John_Alexander_Elphinstone .\n\ndata:Margaret_Elphinstone a :Person,\n        :Woman ;\n    :hasRelation data:Denys_Rhodes ;\n    :isSisterOf data:John_Alexander_Elphinstone .\n\ndata:Alexander_Murray a :Ancestor,\n        :Man .\n\ndata:Constance_Euphemia_Woronzow_Murray a :Ancestor,\n        :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Denys_Rhodes a :Man,\n        :Person .\n\ndata:Mary_Bowes-Lyon a :Ancestor,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Ancestor,\n        :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Ancestor,\n        :Man .\n\ndata:John_Alexander_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "1a8f4dd4-5487-4a7b-bac1-c798babed330",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man,\n        :Person ;\n    :isBrotherOf data:John_Alexander_Elphinstone .\n\ndata:Margaret_Elphinstone a :Person,\n        :Woman ;\n    :hasRelation data:Denys_Rhodes ;\n    :isSisterOf data:John_Alexander_Elphinstone .\n\ndata:Alexander_Murray a :Ancestor,\n        :Man .\n\ndata:Constance_Euphemia_Woronzow_Murray a :Ancestor,\n        :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Denys_Rhodes a :Man,\n        :Person .\n\ndata:Mary_Bowes-Lyon a :Ancestor,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Ancestor,\n        :Man ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Ancestor,\n        :Man .\n\ndata:John_Alexander_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Mary_Bowes-Lyon .\n\n"
+    }
+]

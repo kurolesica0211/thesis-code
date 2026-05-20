@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francesca_Sofia a :Person,
+        :Woman ;
+    :hasFather data:Prince_Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Ines a :Person,
+        :Woman ;
+    :hasFather data:Prince_Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Diana_Mary_Chamberlayne-Macdonald a :Person,
+        :Woman .
+
+data:Infante_Carlos_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 .
+
+data:James_Lindesay-Bethune_16th_Earl_of_Lindsay a :Man,
+        :Person .
+
+data:Prince_Pedro_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Infante_Carlos_Duke_of_Calabria ;
+    :hasMother data:Princess_Anne_of_Orleans .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman .
+
+data:Sofia_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 .
+
+data:Prince_Jaime_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1993 ;
+    :hasFather data:Prince_Pedro_Duke_of_Calabria ;
+    :hasMarriageYear 2021 ;
+    :hasMother data:Sofia_Landaluce_y_Melgarejo ;
+    :hasRelation data:Lady_Charlotte_Lindesay-Bethune .
+
+data:Lady_Charlotte_Lindesay-Bethune a :Person,
+        :Woman ;
+    :hasFather data:James_Lindesay-Bethune_16th_Earl_of_Lindsay ;
+    :hasMother data:Diana_Mary_Chamberlayne-Macdonald .
+

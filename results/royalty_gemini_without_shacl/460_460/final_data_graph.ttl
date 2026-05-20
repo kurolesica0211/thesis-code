@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LylaGilman a :Ancestor,
+        :Person,
+        :Woman ;
+    :isDaughterOf data:GeorgeGilman,
+        data:LadyRoseGilman .
+
+data:RufusGilman a :Ancestor,
+        :Man,
+        :Person ;
+    :isSonOf data:GeorgeGilman,
+        data:LadyRoseGilman .
+
+data:BirgitteGloucester a :Ancestor,
+        :Person,
+        :Woman .
+
+data:PrinceRichard a :Ancestor,
+        :Man,
+        :Person .
+
+data:GeorgeGilman a :Man,
+        :Person .
+
+data:LadyRoseGilman a :Person,
+        :Woman ;
+    :hasBirthYear 1980 ;
+    :hasFather data:PrinceRichard ;
+    :hasMarriageYear 2007 ;
+    :hasMother data:BirgitteGloucester .
+

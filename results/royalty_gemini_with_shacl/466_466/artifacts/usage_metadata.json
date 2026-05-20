@@ -1,0 +1,34 @@
+{
+    "translation": [],
+    "final": [
+        {
+            "iteration": 3,
+            "metadata": [
+                {
+                    "input_tokens": 8205,
+                    "output_tokens": 557,
+                    "total_tokens": 8762,
+                    "input_token_details": {
+                        "cache_read": 8200
+                    }
+                },
+                {
+                    "input_tokens": 9263,
+                    "output_tokens": 10,
+                    "total_tokens": 9273,
+                    "input_token_details": {
+                        "cache_read": 8200
+                    }
+                },
+                {
+                    "input_tokens": 9295,
+                    "output_tokens": 8,
+                    "total_tokens": 9303,
+                    "input_token_details": {
+                        "cache_read": 8200
+                    }
+                }
+            ]
+        }
+    ]
+}

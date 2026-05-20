@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infanta_Sofia a :Person,
+        :Woman ;
+    :hasFather data:Felipe_VI ;
+    :hasMother data:Letizia ;
+    :isSisterOf data:Leonor .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Leonor a :Person,
+        :Woman ;
+    :hasBirthYear 2005 ;
+    :hasFather data:Felipe_VI ;
+    :hasMother data:Letizia ;
+    :isSisterOf data:Infanta_Sofia .
+
+data:Sofia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Felipe_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia .
+
+data:Letizia a :Ancestor,
+        :Person,
+        :Woman .
+

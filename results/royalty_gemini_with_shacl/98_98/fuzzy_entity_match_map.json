@@ -1,0 +1,90 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/98_98",
+  "text_file": "Q1772615.txt",
+  "text_key": "Q1772615",
+  "article": "https://en.wikipedia.org/wiki/Countess_Eloise_of_Orange-Nassau",
+  "article_key": "Countess Eloise of Orange-Nassau",
+  "main_entity": {
+    "uri": "http://example.com/data#Countess_Eloise_of_Orange-Nassau",
+    "qid": "Q1772615",
+    "label": "Countess Eloise of Orange-Nassau"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Countess_Eloise_of_Orange-Nassau",
+      "qid": "Q1772615",
+      "label": "Countess Eloise of Orange-Nassau",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Laurentien_of_the_Netherlands",
+      "qid": "Q267367",
+      "label": "Princess Laurentien of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Constantijn",
+      "extracted_local_name": "Constantijn",
+      "embedding_text": "Constantijn",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Eloise_van_Oranje",
+      "extracted_local_name": "Eloise_van_Oranje",
+      "embedding_text": "Eloise van Oranje",
+      "extracted_gender": null,
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Eloise van Oranje-Nassau van Amsberg",
+      "best_candidate_label": "Countess Eloise of Orange-Nassau",
+      "best_candidate_qid": "Q1772615",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6415094339622641
+    },
+    {
+      "extracted_uri": "http://example.org/data/Laurentien",
+      "extracted_local_name": "Laurentien",
+      "embedding_text": "Laurentien",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Laurentien Brinkhorst",
+      "best_candidate_label": "Princess Laurentien of the Netherlands",
+      "best_candidate_qid": "Q267367",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6451612903225806
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 0,
+    "entities_unmatched": 3
+  }
+}

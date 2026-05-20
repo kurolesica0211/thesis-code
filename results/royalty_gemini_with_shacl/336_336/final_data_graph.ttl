@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ChristianOfRosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:IngolfDanish ;
+    :hasDeathYear 2013 ;
+    :hasFather data:KnudDanish ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:CarolineMathildeDanish ;
+    :hasRelation data:AnneDorteRosenborg .
+
+data:AnneDorteRosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 .
+
+data:CarolineMathildeDanish a :Ancestor,
+        :Person,
+        :Woman .
+
+data:IngolfDanish a :Man,
+        :Person .
+
+data:KnudDanish a :Ancestor,
+        :Man,
+        :Person .
+

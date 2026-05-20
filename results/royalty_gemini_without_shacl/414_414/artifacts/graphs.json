@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Hubertus_of_Prussia a :Man ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Prince_Wilhelm_of_Prussia ;\n    :hasDeathYear 1950 ;\n    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;\n    :hasMarriageYear data:1943 ;\n    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .\n\ndata:Crown_Prince_Wilhelm_of_Germany a :Man .\n\ndata:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Prince_Wilhelm_of_Prussia a :Man .\n\ndata:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2009 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Hubertus_of_Prussia a :Man ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Prince_Wilhelm_of_Prussia ;\n    :hasDeathYear 1950 ;\n    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;\n    :hasMarriageYear 1943 ;\n    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .\n\ndata:Crown_Prince_Wilhelm_of_Germany a :Man .\n\ndata:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Prince_Wilhelm_of_Prussia a :Man .\n\ndata:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2009 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Hubertus_of_Prussia a :Man ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Prince_Wilhelm_of_Prussia ;\n    :hasDeathYear 1950 ;\n    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;\n    :hasMarriageYear 1943 ;\n    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .\n\ndata:Crown_Prince_Wilhelm_of_Germany a :Man .\n\ndata:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Prince_Wilhelm_of_Prussia a :Man .\n\ndata:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Woman ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 2009 .\n\n"
+    }
+]

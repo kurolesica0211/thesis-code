@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2008 ;\n    :hasFather data:Ranieri_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1949 ;\n    :hasMother data:Maria_Carolina_Zamoyska ;\n    :hasRelation data:Chantal_de_Chevron-Villette .\n\ndata:Chantal_de_Chevron-Villette a :Person,\n        :Woman ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2005 .\n\ndata:Maria_Carolina_Zamoyska a :Person,\n        :Woman .\n\ndata:Ranieri_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_of_Bourbon-Two_Sicilies a :Man,\n        :Person ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2008 ;\n    :hasFather data:Ranieri_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1949 ;\n    :hasMother data:Maria_Carolina_Zamoyska ;\n    :hasRelation data:Chantal_de_Chevron-Villette .\n\ndata:Chantal_de_Chevron-Villette a :Person,\n        :Woman ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2005 .\n\ndata:Maria_Carolina_Zamoyska a :Person,\n        :Woman .\n\ndata:Ranieri_of_Bourbon-Two_Sicilies a :Man,\n        :Person .\n\n"
+    }
+]

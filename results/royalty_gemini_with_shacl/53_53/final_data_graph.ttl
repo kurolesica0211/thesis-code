@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasSister data:Sophia_of_Prussia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Konstantin_Romanov a :Ancestor,
+        :Man,
+        :Person .
+
+data:Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Konstantin_Romanov .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1923 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_of_Greece ;
+    :hasRelation data:Sophia_of_Prussia .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:JackBrooksbank a :Man,\n        :Person ;\n    :hasSon data:AugustBrooksbank,\n        data:ErnestBrooksbank .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMother data:SarahFerguson ;\n    :isSisterOf data:PrincessEugenie .\n\ndata:PrincessEugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear data:JackBrooksbank,\n        2018 ;\n    :hasMother data:SarahFerguson ;\n    :hasSister data:PrincessBeatrice ;\n    :hasSon data:AugustBrooksbank,\n        data:ErnestBrooksbank .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:AugustBrooksbank a :Man,\n        :Person .\n\ndata:ErnestBrooksbank a :Man,\n        :Person .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:KingCharlesIII a :Man,\n        :Person .\n\ndata:JackBrooksbank a :Man,\n        :Person ;\n    :hasSon data:AugustBrooksbank,\n        data:ErnestBrooksbank .\n\ndata:PrincessBeatrice a :Person,\n        :Woman ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMother data:SarahFerguson ;\n    :isSisterOf data:PrincessEugenie .\n\ndata:PrincessEugenie a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasFather data:AndrewMountbattenWindsor ;\n    :hasMarriageYear data:JackBrooksbank,\n        2018 ;\n    :hasMother data:SarahFerguson ;\n    :hasSister data:PrincessBeatrice ;\n    :hasSon data:AugustBrooksbank,\n        data:ErnestBrooksbank .\n\ndata:AndrewMountbattenWindsor a :Man,\n        :Person .\n\ndata:AugustBrooksbank a :Man,\n        :Person .\n\ndata:ErnestBrooksbank a :Man,\n        :Person .\n\ndata:SarahFerguson a :Person,\n        :Woman .\n\n"
+    }
+]

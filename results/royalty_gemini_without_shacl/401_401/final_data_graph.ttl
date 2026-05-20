@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :alsoKnownAs "Feodora Karola Charlotte Marie Adelheid Auguste Mathilde"^^xsd:string,
+        "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1910 ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach .
+
+data:Prince_Frederick_William_of_Prussia a :Man,
+        :Person ;
+    :hasRelation data:Princess_Agatha_of_Hohenlohe-Schillingsf%C3%BCrst .
+
+data:Wilhelm_II_Emperor a :Man,
+        :Person .
+
+data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
+
+data:Caroline_Reuss_Elder_Line a :Person,
+        :Woman .
+
+data:Ellen_Franz a :Person,
+        :Woman .
+
+data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasRelation data:Ellen_Franz .
+
+data:Princess_Agatha_of_Hohenlohe-Schillingsf%C3%BCrst a :Person,
+        :Woman .
+
+data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+        :Person ;
+    :hasRelation data:Caroline_Reuss_Elder_Line .
+

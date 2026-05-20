@@ -1,0 +1,115 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/142_142",
+  "text_file": "Q231463.txt",
+  "text_key": "Q231463",
+  "article": "https://en.wikipedia.org/wiki/Duchess_Marie_of_Mecklenburg-Schwerin",
+  "article_key": "Duchess Marie of Mecklenburg-Schwerin",
+  "main_entity": {
+    "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+    "qid": "Q231463",
+    "label": "Duchess Marie of Mecklenburg-Schwerin"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+      "qid": "Q231463",
+      "label": "Duchess Marie of Mecklenburg-Schwerin",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_II",
+      "qid": "Q57976",
+      "label": "Frederick Francis II",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "qid": "Q63095",
+      "label": "Princess Augusta Reuss of Köstritz",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/MariaPavlovnaOfRussia",
+      "extracted_local_name": "MariaPavlovnaOfRussia",
+      "embedding_text": "Maria Pavlovna Of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q231463",
+      "ground_truth_label": "Duchess Marie of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Maria Pavlovna of Russia",
+      "best_candidate_label": "Duchess Marie of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q231463",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/FriedrichFranzIIOfMecklenburgSchwerin",
+      "extracted_local_name": "FriedrichFranzIIOfMecklenburgSchwerin",
+      "embedding_text": "Friedrich Franz IIOf Mecklenburg Schwerin",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8421052631578947,
+      "ground_truth_uri": "http://example.com/data#Frederick_Francis_II",
+      "ground_truth_qid": "Q57976",
+      "ground_truth_label": "Frederick Francis II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+      "best_candidate_label": "Frederick Francis II",
+      "best_candidate_qid": "Q57976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8421052631578947
+    },
+    {
+      "extracted_uri": "http://example.org/data/AugustaReussOfKostritz",
+      "extracted_local_name": "AugustaReussOfKostritz",
+      "embedding_text": "Augusta Reuss Of Kostritz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8089285714285714,
+      "ground_truth_uri": "http://example.com/data#Princess_Augusta_Reuss_of_Köstritz",
+      "ground_truth_qid": "Q63095",
+      "ground_truth_label": "Princess Augusta Reuss of Köstritz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_label": "Princess Augusta Reuss of Köstritz",
+      "best_candidate_qid": "Q63095",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8089285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/VladimirAlexandrovichOfRussia",
+      "extracted_local_name": "VladimirAlexandrovichOfRussia",
+      "embedding_text": "Vladimir Alexandrovich Of Russia",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

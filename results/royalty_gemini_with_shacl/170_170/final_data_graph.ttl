@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Enrico_Eugenio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Juan_Carlos_I_of_Spain a :Person .
+
+data:Maria_Cristina_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Countess Marone-Cinzano"^^xsd:string ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:Female ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isSisterOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII .
+
+data:Alfonso_son_of_Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasSex data:Male .
+
+data:Beatriz_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasSex data:Female .
+
+data:Gonzalo_son_of_Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasSex data:Male .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+

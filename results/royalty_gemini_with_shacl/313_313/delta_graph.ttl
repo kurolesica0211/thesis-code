@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    :isSonOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Willemina_Martina_Wenneker .
+
+data:Princess_Juliana a :Person,
+        :Woman ;
+    :isDaughterOf data:Henry_of_Mecklenburg-Schwerin,
+        data:Queen_Wilhelmina .
+
+data:1901 a :DomainEntity .
+
+data:Female a :Sex .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Willemina_Martina_Wenneker a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear data:1901 ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Queen_Wilhelmina ;
+    :hasSex data:Male .
+
+data:Queen_Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+

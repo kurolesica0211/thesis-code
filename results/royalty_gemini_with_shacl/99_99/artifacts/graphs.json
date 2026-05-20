@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "5f6d670e-cebd-4912-bbc7-b982956adb18",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Bernhard_III_Duke_of_Saxe-Meiningen ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasRelation data:Prince_Heinrich_XXX_Reuss_of_Kostritz ;\n    :knownAs \"Feodora Viktoria Auguste Marie Marianne\"^^xsd:string .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:William_I_German_Emperor a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Bernhard_III_Duke_of_Saxe-Meiningen a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charlotte_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Friedrich_III_of_Germany ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Friedrich_III_of_Germany a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Heinrich_XXX_Reuss_of_Kostritz a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "5f6d670e-cebd-4912-bbc7-b982956adb18",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "8e2c273f-f348-4227-a342-b9b28cd98044",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe-Meiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1945 ;\n    :hasFather data:Bernhard_III_Duke_of_Saxe-Meiningen ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasRelation data:Prince_Heinrich_XXX_Reuss_of_Kostritz ;\n    :knownAs \"Feodora Viktoria Auguste Marie Marianne\"^^xsd:string .\n\ndata:Queen_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:William_I_German_Emperor a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Bernhard_III_Duke_of_Saxe-Meiningen a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Charlotte_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:Friedrich_III_of_Germany ;\n    :hasMother data:Empress_Victoria .\n\ndata:Empress_Victoria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Friedrich_III_of_Germany a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Heinrich_XXX_Reuss_of_Kostritz a :Man,\n        :Person .\n\n"
+    }
+]

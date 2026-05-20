@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Jelisaveta Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:Prince_Alexander_of_Yugoslavia,\n        data:Prince_Nicholas_of_Yugoslavia ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMarriageYear 1960,\n        1969,\n        1987 ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;\n    :hasRelation data:Howard_Oxenberg,\n        data:Manuel_Ulloa_El%C3%ADas,\n        data:Neil_Balfour_of_Dawyck .\n\ndata:Howard_Oxenberg a :Man,\n        :Person .\n\ndata:Manuel_Ulloa_El%C3%ADas a :Man,\n        :Person ;\n    :hasDeathYear 1992 .\n\ndata:Neil_Balfour_of_Dawyck a :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Nicholas_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Paul_of_Yugoslavia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "6eaabb9b-0ea6-4176-8fa9-3d32a24e7958",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Elizabeth_of_Yugoslavia a :Person,\n        :Woman ;\n    :alsoKnownAs \"Jelisaveta Kara\u0111or\u0111evi\u0107\"^^xsd:string ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:Prince_Alexander_of_Yugoslavia,\n        data:Prince_Nicholas_of_Yugoslavia ;\n    :hasFather data:Prince_Paul_of_Yugoslavia ;\n    :hasMarriageYear 1960,\n        1969,\n        1987 ;\n    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;\n    :hasRelation data:Howard_Oxenberg,\n        data:Manuel_Ulloa_El%C3%ADas,\n        data:Neil_Balfour_of_Dawyck .\n\ndata:Howard_Oxenberg a :Man,\n        :Person .\n\ndata:Manuel_Ulloa_El%C3%ADas a :Man,\n        :Person ;\n    :hasDeathYear 1992 .\n\ndata:Neil_Balfour_of_Dawyck a :Man,\n        :Person .\n\ndata:Prince_Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Nicholas_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Prince_Paul_of_Yugoslavia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Olga_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

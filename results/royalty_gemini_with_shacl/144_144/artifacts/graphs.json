@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Henrik_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs \"Prince Henrik of Denmark\"^^xsd:string ;\n    :hasBirthYear \"2009\"^^xsd:int ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie ;\n    :hasSex data:Male ;\n    :knownAs \"Count Henrik of Monpezat\"^^xsd:string .\n\ndata:King_Frederik_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Henrik a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Marie a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "3fb42cea-a833-4e3b-9a03-013c76db07dd",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Joachim> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Joachim> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Marie> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Count_Henrik_of_Monpezat> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Joachim> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "74e87a3b-f358-4048-a906-27b8423b56df",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Henrik_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs \"Prince Henrik of Denmark\"^^xsd:string ;\n    :hasBirthYear \"2009\"^^xsd:int ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie ;\n    :hasSex data:Male ;\n    :knownAs \"Count Henrik of Monpezat\"^^xsd:string .\n\ndata:King_Frederik_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Henrik a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Joachim a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Marie a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "74e87a3b-f358-4048-a906-27b8423b56df",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Henrik_of_Monpezat a :Man,\n        :Person ;\n    :formerlyKnownAs \"Prince Henrik of Denmark\"^^xsd:string ;\n    :hasBirthYear \"2009\"^^xsd:int ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie ;\n    :hasSex data:Male ;\n    :knownAs \"Count Henrik of Monpezat\"^^xsd:string .\n\ndata:King_Frederik_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Henrik a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Joachim a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Marie a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

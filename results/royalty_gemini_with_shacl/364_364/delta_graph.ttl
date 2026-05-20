@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dr_Oskar_Hohenzollern a :Man .
+
+data:Oskar_Prince_of_Prussia a :Man ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:Adalbert,
+        data:August_Wilhelm,
+        data:Crown_Prince_Wilhelm,
+        data:Eitel_Friedrich,
+        data:Joachim ;
+    :hasDeathYear 1958 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Ina-Marie_von_Bassewitz ;
+    :hasSister data:Viktoria_Luise ;
+    :hasSon data:Oskar_son_of_Oskar,
+        data:Wilhelm_Karl .
+
+data:Adalbert a :Man .
+
+data:August_Wilhelm a :Man .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Woman .
+
+data:Crown_Prince_Wilhelm a :Man .
+
+data:Eitel_Friedrich a :Man .
+
+data:Ina-Marie_von_Bassewitz a :Woman .
+
+data:Joachim a :Man .
+
+data:Oskar_son_of_Oskar a :Man .
+
+data:Viktoria_Luise a :Woman .
+
+data:Wilhelm_II a :Ancestor,
+        :Man .
+
+data:Wilhelm_Karl a :Man .
+

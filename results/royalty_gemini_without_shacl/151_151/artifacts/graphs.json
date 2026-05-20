@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mary_Princess_Royal a :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:George_V ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Henry_Lascelles ;\n    :hasSon data:George_Lascelles,\n        data:Gerald_David_Lascelles ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isMotherOf data:George_Lascelles,\n        data:Gerald_David_Lascelles ;\n    :isSisterOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Edward_VIII a :Man .\n\ndata:George_V a :Man .\n\ndata:George_VI a :Man .\n\ndata:Henry_Lascelles a :Man .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Queen_Mary a :Woman .\n\ndata:George_Lascelles a :Man .\n\ndata:Gerald_David_Lascelles a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mary_Princess_Royal a :Woman ;\n    :hasBirthYear 1897 ;\n    :hasDeathYear 1965 ;\n    :hasFather data:George_V ;\n    :hasMarriageYear 1922 ;\n    :hasMother data:Queen_Mary ;\n    :hasRelation data:Henry_Lascelles ;\n    :hasSon data:George_Lascelles,\n        data:Gerald_David_Lascelles ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isMotherOf data:George_Lascelles,\n        data:Gerald_David_Lascelles ;\n    :isSisterOf data:Edward_VIII,\n        data:George_VI .\n\ndata:Edward_VIII a :Man .\n\ndata:George_V a :Man .\n\ndata:George_VI a :Man .\n\ndata:Henry_Lascelles a :Man .\n\ndata:Queen_Elizabeth_II a :Woman .\n\ndata:Queen_Mary a :Woman .\n\ndata:George_Lascelles a :Man .\n\ndata:Gerald_David_Lascelles a :Man .\n\n"
+    }
+]

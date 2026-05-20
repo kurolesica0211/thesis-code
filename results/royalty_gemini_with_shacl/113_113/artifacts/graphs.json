@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infante_Alfonso_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Prince_Ranieri_Maria_Gaetano a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Countess_Maria_Carolina_Zamoyska .\n\ndata:Countess_Maria_Carolina_Zamoyska a :Person,\n        :Woman .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasDeathYear 1938 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "f97670d4-ba67-4a75-9ddd-c0daca4e1532",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Alfonso_Count_of_Caserta> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Alfonso_Count_of_Caserta> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_Ranieri_Maria_Gaetano> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Alfonso_Count_of_Caserta> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infante_Alfonso_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Prince_Ranieri_Maria_Gaetano a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Countess_Maria_Carolina_Zamoyska .\n\ndata:Countess_Maria_Carolina_Zamoyska a :Person,\n        :Woman .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1938 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "7bfee8bd-b142-49f5-a164-cffc9b753885",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Infante_Alfonso_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Prince_Ranieri_Maria_Gaetano a :Man,\n        :Person ;\n    :hasBirthYear 1883 ;\n    :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria ;\n    :hasDeathYear 1973 ;\n    :hasFather data:Prince_Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1923 ;\n    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Countess_Maria_Carolina_Zamoyska .\n\ndata:Countess_Maria_Carolina_Zamoyska a :Person,\n        :Woman .\n\ndata:Prince_Alfonso_Count_of_Caserta a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Ferdinand_Pius_Duke_of_Calabria a :Man,\n        :Person .\n\ndata:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasDeathYear 1938 .\n\n"
+    }
+]

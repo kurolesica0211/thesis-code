@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary_Frances_Elphinstone a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1961 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1910 ;
+    :hasRelation data:Sidney_Elphinstone ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAuntOf data:Queen_Elizabeth_II .
+
+data:Philip_Mountbatten a :Man,
+        :Person .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Sidney_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 .
+

@@ -1,0 +1,18 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear 1959 ;
+    :isSonOf data:Wilhelm-Karl_of_Prussia .
+
+data:Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Wilhelm-Karl_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :isSonOf data:Oskar_of_Prussia .
+

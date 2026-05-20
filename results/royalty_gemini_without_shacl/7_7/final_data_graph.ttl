@@ -1,0 +1,49 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FinnianAnson a :Man,
+        :Person ;
+    :hasBirthYear 2014 ;
+    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;
+    :hasMother data:LadyHenriettaConyngham .
+
+data:ThomasAnson_1stViscountAnson a :Man,
+        :Person ;
+    :isFatherOf data:ThomasAnson_2ndViscountAnson .
+
+data:ThomasOssianPatrickWolfeAnson_ViscountAnson a :Man,
+        :Person ;
+    :hasBirthYear 2011 ;
+    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;
+    :hasMother data:LadyHenriettaConyngham .
+
+data:LadyLeonoraMaryGrosvenor a :Person,
+        :Woman .
+
+data:PatrickAnson_5thEarlOfLichfield a :Man,
+        :Person ;
+    :hasDeathYear 2005 ;
+    :hasFather data:ThomasWilliamArnoldAnson_ViscountAnson ;
+    :knownAs "Patrick Lichfield"^^xsd:string .
+
+data:ThomasAnson_2ndViscountAnson a :Man,
+        :Person ;
+    :hasBirthYear 1795 ;
+    :hasDeathYear 1854 ;
+    :knownAs "1st Earl of Lichfield"^^xsd:string .
+
+data:ThomasWilliamArnoldAnson_ViscountAnson a :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958 .
+
+data:LadyHenriettaConyngham a :Person,
+        :Woman .
+
+data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield a :Man,
+        :Person ;
+    :hasBirthYear 1978 ;
+    :hasFather data:PatrickAnson_5thEarlOfLichfield ;
+    :hasMother data:LadyLeonoraMaryGrosvenor .
+

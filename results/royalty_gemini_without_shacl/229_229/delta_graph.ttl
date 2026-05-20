@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felicity_Wade a :Woman ;
+    :hasBirthYear "1985"^^xsd:string ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Heather_Tonkin .
+
+data:Isla_Elizabeth a :Woman ;
+    :hasFather data:Peter_Mark_Andrew_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:King_Charles_III a :Man .
+
+data:Prince_Philip a :Man .
+
+data:Queen_Elizabeth_II a :Woman .
+
+data:Savannah_Anne_Kathleen a :Woman ;
+    :hasFather data:Peter_Mark_Andrew_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Woman ;
+    :hasBirthYear "1997"^^xsd:string ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Sandy_Pflueger .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear "1981"^^xsd:string ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Harriet_Sperling a :Woman .
+
+data:Heather_Tonkin a :Woman .
+
+data:Lindsay_Wallace a :Woman .
+
+data:Sandy_Pflueger a :Woman .
+
+data:Anne_Princess_Royal a :Woman .
+
+data:Peter_Mark_Andrew_Phillips a :Man ;
+    :hasBirthYear "1977"^^xsd:string ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear "2008"^^xsd:string ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:Lindsay_Wallace .
+
+data:Autumn_Kelly a :Woman .
+
+data:Mark_Phillips a :Man .
+

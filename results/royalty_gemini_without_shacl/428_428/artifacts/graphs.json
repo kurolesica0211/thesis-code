@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear \"1890\"^^xsd:string ;\n    :hasDeathYear \"1967\"^^xsd:string ;\n    :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;\n    :hasMarriageYear \"1916\"^^xsd:string ;\n    :hasMother data:Cecilia_Cavendish-Bentinck ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Princess_Margaret_Rose_of_York,\n        data:Queen_Elizabeth_II ;\n    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;\n    :knownAs \"Rose Constance Leveson-Gower, Countess Granville\"^^xsd:string .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear \"1953\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rose_Constance_Leveson-Gower a :Person,\n        :Woman ;\n    :hasBirthYear \"1890\"^^xsd:string ;\n    :hasDeathYear \"1967\"^^xsd:string ;\n    :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;\n    :hasMarriageYear \"1916\"^^xsd:string ;\n    :hasMother data:Cecilia_Cavendish-Bentinck ;\n    :hasRelation data:William_Leveson-Gower ;\n    :isAuntOf data:Princess_Margaret_Rose_of_York,\n        data:Queen_Elizabeth_II ;\n    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;\n    :knownAs \"Rose Constance Leveson-Gower, Countess Granville\"^^xsd:string .\n\ndata:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Cecilia_Cavendish-Bentinck a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Margaret_Rose_of_York a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:William_Leveson-Gower a :Man,\n        :Person ;\n    :hasDeathYear \"1953\"^^xsd:string .\n\n"
+    }
+]

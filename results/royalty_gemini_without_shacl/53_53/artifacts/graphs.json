@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man,\n        :Person ;\n    :hasBirthYear 1868 ;\n    :hasDaughter data:Helen,\n        data:Katherine ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I,\n        data:Konstantin_Romanov ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasSon data:Alexander,\n        data:George_II .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasSister data:Sophia_of_Prussia .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:George_I a :Man,\n        :Person .\n\ndata:George_II a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:Katherine a :Person,\n        :Woman .\n\ndata:Konstantin_Romanov a :Man,\n        :Person .\n\ndata:Olga a :Person,\n        :Woman .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man,\n        :Person ;\n    :hasBirthYear 1868 ;\n    :hasDaughter data:Helen,\n        data:Katherine ;\n    :hasDeathYear 1923 ;\n    :hasFather data:George_I,\n        data:Konstantin_Romanov ;\n    :hasMarriageYear 1889 ;\n    :hasMother data:Olga ;\n    :hasSon data:Alexander,\n        data:George_II .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasSister data:Sophia_of_Prussia .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:George_I a :Man,\n        :Person .\n\ndata:George_II a :Man,\n        :Person .\n\ndata:Helen a :Person,\n        :Woman .\n\ndata:Katherine a :Person,\n        :Woman .\n\ndata:Konstantin_Romanov a :Man,\n        :Person .\n\ndata:Olga a :Person,\n        :Woman .\n\ndata:Sophia_of_Prussia a :Person,\n        :Woman .\n\n"
+    }
+]

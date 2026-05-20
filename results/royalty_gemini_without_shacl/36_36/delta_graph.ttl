@@ -1,0 +1,22 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1940 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :knownAs "Wilhelm Heinrich Michael Louis Ferdinand Friedrich Franz Wladimir Prinz von Preussen"^^xsd:string .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person .
+
+data:Wilhelm_II a :Man,
+        :Person .
+

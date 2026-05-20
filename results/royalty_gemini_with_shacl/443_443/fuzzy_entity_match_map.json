@@ -1,0 +1,161 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/443_443",
+  "text_file": "Q75332807.txt",
+  "text_key": "Q75332807",
+  "article": "https://en.wikipedia.org/wiki/Lady_Elizabeth_Shakerley",
+  "article_key": "Lady Elizabeth Shakerley",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Elizabeth_Shakerley",
+    "qid": "Q75332807",
+    "label": "Lady Elizabeth Shakerley"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Elizabeth_Shakerley",
+      "qid": "Q75332807",
+      "label": "Lady Elizabeth Shakerley",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Katherine_Bowes-Lyon",
+      "qid": "Q75248488",
+      "label": "Katherine Bowes-Lyon",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Patrick_Anson-_5th_Earl_of_Lichfield",
+      "qid": "Q246026",
+      "label": "Patrick Anson, 5th Earl of Lichfield",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Anne_of_Denmark",
+      "qid": "Q2871729",
+      "label": "Princess Anne of Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Thomas_Anson-_6th_Earl_of_Lichfield",
+      "qid": "Q10382174",
+      "label": "Thomas Anson, 6th Earl of Lichfield",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Thomas_Anson-_Viscount_Anson",
+      "qid": "Q75390868",
+      "label": "Thomas Anson, Viscount Anson",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Anne_Bowes-Lyon",
+      "extracted_local_name": "Anne_Bowes-Lyon",
+      "embedding_text": "Anne Bowes-Lyon",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Anne_of_Denmark",
+      "ground_truth_qid": "Q2871729",
+      "ground_truth_label": "Princess Anne of Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Anne Bowes-Lyon",
+      "best_candidate_label": "Princess Anne of Denmark",
+      "best_candidate_qid": "Q2871729",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Georgiana_Shakerley",
+      "extracted_local_name": "Elizabeth_Georgiana_Shakerley",
+      "embedding_text": "Elizabeth Georgiana Shakerley",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Elizabeth_Shakerley",
+      "ground_truth_qid": "Q75332807",
+      "ground_truth_label": "Lady Elizabeth Shakerley",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Elizabeth Georgiana Shakerley",
+      "best_candidate_label": "Lady Elizabeth Shakerley",
+      "best_candidate_qid": "Q75332807",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Patrick_Anson",
+      "extracted_local_name": "Patrick_Anson",
+      "embedding_text": "Patrick Anson",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Patrick_Anson-_5th_Earl_of_Lichfield",
+      "ground_truth_qid": "Q246026",
+      "ground_truth_label": "Patrick Anson, 5th Earl of Lichfield",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Patrick Anson",
+      "best_candidate_label": "Patrick Anson, 5th Earl of Lichfield",
+      "best_candidate_qid": "Q246026",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Thomas_Anson",
+      "extracted_local_name": "Thomas_Anson",
+      "embedding_text": "Thomas Anson",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Thomas_Anson-_6th_Earl_of_Lichfield",
+      "ground_truth_qid": "Q10382174",
+      "ground_truth_label": "Thomas Anson, 6th Earl of Lichfield",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Thomas Anson",
+      "best_candidate_label": "Thomas Anson, 6th Earl of Lichfield",
+      "best_candidate_qid": "Q10382174",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Geoffrey_Shakerley",
+      "extracted_local_name": "Geoffrey_Shakerley",
+      "embedding_text": "Geoffrey Shakerley",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Thomas Anson- 6th Earl of Lichfield",
+      "best_candidate_label": "Thomas Anson, 6th Earl of Lichfield",
+      "best_candidate_qid": "Q10382174",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.22641509433962265
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 4,
+    "entities_unmatched": 1
+  }
+}

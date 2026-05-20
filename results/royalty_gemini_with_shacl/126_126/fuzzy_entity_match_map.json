@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/126_126",
+  "text_file": "Q2085981.txt",
+  "text_key": "Q2085981",
+  "article": "https://en.wikipedia.org/wiki/Countess_Adelaide_of_Lippe-Biesterfeld",
+  "article_key": "Countess Adelaide of Lippe-Biesterfeld",
+  "main_entity": {
+    "uri": "http://example.com/data#Countess_Adelaide_of_Lippe-Biesterfeld",
+    "qid": "Q2085981",
+    "label": "Countess Adelaide of Lippe-Biesterfeld"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Countess_Adelaide_of_Lippe-Biesterfeld",
+      "qid": "Q2085981",
+      "label": "Countess Adelaide of Lippe-Biesterfeld",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Ernest_II-_Count_of_Lippe-Biesterfeld",
+      "qid": "Q66592",
+      "label": "Ernest II, Count of Lippe-Biesterfeld",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Ernest_II_of_Lippe-Biesterfeld",
+      "extracted_local_name": "Ernest_II_of_Lippe-Biesterfeld",
+      "embedding_text": "Ernest II of Lippe-Biesterfeld",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.86,
+      "ground_truth_uri": "http://example.com/data#Ernest_II-_Count_of_Lippe-Biesterfeld",
+      "ground_truth_qid": "Q66592",
+      "ground_truth_label": "Ernest II, Count of Lippe-Biesterfeld",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Ernest II- Count of Lippe-Biesterfeld",
+      "best_candidate_label": "Ernest II, Count of Lippe-Biesterfeld",
+      "best_candidate_qid": "Q66592",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.86
+    },
+    {
+      "extracted_uri": "http://example.org/data/Adelaide_of_Lippe-Biesterfeld",
+      "extracted_local_name": "Adelaide_of_Lippe-Biesterfeld",
+      "embedding_text": "Adelaide of Lippe-Biesterfeld",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8200000000000001,
+      "ground_truth_uri": "http://example.com/data#Countess_Adelaide_of_Lippe-Biesterfeld",
+      "ground_truth_qid": "Q2085981",
+      "ground_truth_label": "Countess Adelaide of Lippe-Biesterfeld",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Countess Adelaide of Lippe-Biesterfeld",
+      "best_candidate_label": "Countess Adelaide of Lippe-Biesterfeld",
+      "best_candidate_qid": "Q2085981",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8200000000000001
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_Johann_of_Saxe-Meiningen",
+      "extracted_local_name": "Friedrich_Johann_of_Saxe-Meiningen",
+      "embedding_text": "Friedrich Johann of Saxe-Meiningen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Georg_II_of_Saxe-Meiningen",
+      "extracted_local_name": "Georg_II_of_Saxe-Meiningen",
+      "embedding_text": "Georg II of Saxe-Meiningen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Karoline_von_Wartensleben",
+      "extracted_local_name": "Karoline_von_Wartensleben",
+      "embedding_text": "Karoline von Wartensleben",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

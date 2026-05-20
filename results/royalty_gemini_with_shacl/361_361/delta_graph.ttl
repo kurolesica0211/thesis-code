@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_Friedrich a :Man ;
+    :hasBirthYear 1873 ;
+    :hasBrother data:Hendrik_of_the_Netherlands ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1917,
+        1924 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Elisabeth_of_Stolberg-Rossla,
+        data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isSiblingOf data:John_Albert .
+
+data:Elise_of_Hohenlohe-Langenburg a :Ancestor,
+        :Woman .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man .
+
+data:Heinrich_XXVII a :Ancestor,
+        :Man .
+
+data:Hendrik_of_the_Netherlands a :Man .
+
+data:John_Albert a :Man ;
+    :hasRelation data:Elisabeth_of_Stolberg-Rossla .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman .
+
+data:Viktoria_Feodora_of_Reuss-Schleiz a :Woman ;
+    :hasFather data:Heinrich_XXVII ;
+    :hasMother data:Elise_of_Hohenlohe-Langenburg .
+
+data:Elisabeth_of_Stolberg-Rossla a :Woman .
+

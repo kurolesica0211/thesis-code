@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Athena a :Woman ;
+    :hasFather data:Joachim ;
+    :hasMother data:MarieCavallier .
+
+data:Felix a :Man ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra .
+
+data:FrederikX a :Man .
+
+data:Henrik a :Man .
+
+data:HenrikJunior a :Man ;
+    :hasFather data:Joachim ;
+    :hasMother data:MarieCavallier .
+
+data:MargretheII a :Woman .
+
+data:Nikolai a :Man ;
+    :formerlyKnownAs data:PrinceNikolaiOfDenmark ;
+    :hasBirthYear 1999 ;
+    :hasFather data:Joachim ;
+    :hasMother data:Alexandra ;
+    :knownAs data:CountNikolaiOfMonpezat .
+
+data:CountNikolaiOfMonpezat a :DomainEntity .
+
+data:PrinceNikolaiOfDenmark a :DomainEntity .
+
+data:Alexandra a :Woman .
+
+data:MarieCavallier a :Woman .
+
+data:Joachim a :Man .
+

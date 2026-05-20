@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Albert_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1857 ;\n    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,\n        data:Frederick_Francis_III_of_Mecklenburg,\n        data:Paul_Frederick_of_Mecklenburg ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;\n    :hasMarriageYear 1886,\n        1909 ;\n    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach,\n        data:Elisabeth_of_Stolberg-Rossla .\n\ndata:Adolf_Friedrich_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman .\n\ndata:Charles_Alexander_of_Saxe-Weimar-Eisenach a :Man,\n        :Person .\n\ndata:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,\n        :Woman ;\n    :hasFather data:Charles_Alexander_of_Saxe-Weimar-Eisenach .\n\ndata:Elisabeth_of_Stolberg-Rossla a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_of_Mecklenburg a :Man,\n        :Person ;\n    :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .\n\ndata:Frederick_Francis_II_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Paul_Frederick_of_Mecklenburg a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:John_Albert_of_Mecklenburg a :Man,\n        :Person ;\n    :hasBirthYear 1857 ;\n    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,\n        data:Frederick_Francis_III_of_Mecklenburg,\n        data:Paul_Frederick_of_Mecklenburg ;\n    :hasDeathYear 1920 ;\n    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;\n    :hasMarriageYear 1886,\n        1909 ;\n    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;\n    :hasRelation data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach,\n        data:Elisabeth_of_Stolberg-Rossla .\n\ndata:Adolf_Friedrich_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Augusta_Reuss_of_K%C3%B6stritz a :Person,\n        :Woman .\n\ndata:Charles_Alexander_of_Saxe-Weimar-Eisenach a :Man,\n        :Person .\n\ndata:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,\n        :Woman ;\n    :hasFather data:Charles_Alexander_of_Saxe-Weimar-Eisenach .\n\ndata:Elisabeth_of_Stolberg-Rossla a :Person,\n        :Woman .\n\ndata:Frederick_Francis_III_of_Mecklenburg a :Man,\n        :Person ;\n    :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .\n\ndata:Frederick_Francis_II_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Frederick_Francis_IV_of_Mecklenburg a :Man,\n        :Person .\n\ndata:Paul_Frederick_of_Mecklenburg a :Man,\n        :Person .\n\n"
+    }
+]

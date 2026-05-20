@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMikhailovich a :Man ;\n    :hasBirthYear 1981 ;\n    :hasChild data:AlexanderGeorgievichRomanov,\n        data:KiraLeonidaGeorgievnaRomanova ;\n    :hasFather data:FranzWilhelm ;\n    :hasMother data:MariaVladimirovna .\n\ndata:Leonida a :Woman .\n\ndata:VictoriaRomanovnaBettarini a :Woman ;\n    :hasBirthYear 1982 ;\n    :hasChild data:AlexanderGeorgievichRomanov,\n        data:KiraLeonidaGeorgievnaRomanova .\n\ndata:FranzWilhelm a :Man ;\n    :hasFather data:KarlFranz ;\n    :hasMother data:HenrietteSchonaichCarolath .\n\ndata:HenrietteSchonaichCarolath a :Woman .\n\ndata:KarlFranz a :Man .\n\ndata:MariaVladimirovna a :Woman ;\n    :hasFather data:VladimirCyrillovich .\n\ndata:VladimirCyrillovich a :Man .\n\ndata:AlexanderGeorgievichRomanov a :Man .\n\ndata:KiraLeonidaGeorgievnaRomanova a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgeMikhailovich a :Man ;\n    :hasBirthYear 1981 ;\n    :hasChild data:AlexanderGeorgievichRomanov,\n        data:KiraLeonidaGeorgievnaRomanova ;\n    :hasFather data:FranzWilhelm ;\n    :hasMother data:MariaVladimirovna .\n\ndata:Leonida a :Woman .\n\ndata:VictoriaRomanovnaBettarini a :Woman ;\n    :hasBirthYear 1982 ;\n    :hasChild data:AlexanderGeorgievichRomanov,\n        data:KiraLeonidaGeorgievnaRomanova .\n\ndata:FranzWilhelm a :Man ;\n    :hasFather data:KarlFranz ;\n    :hasMother data:HenrietteSchonaichCarolath .\n\ndata:HenrietteSchonaichCarolath a :Woman .\n\ndata:KarlFranz a :Man .\n\ndata:MariaVladimirovna a :Woman ;\n    :hasFather data:VladimirCyrillovich .\n\ndata:VladimirCyrillovich a :Man .\n\ndata:AlexanderGeorgievichRomanov a :Man .\n\ndata:KiraLeonidaGeorgievnaRomanova a :Woman .\n\n"
+    }
+]

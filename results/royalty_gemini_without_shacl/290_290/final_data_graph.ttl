@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Mihailovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Nicholas_Mikhailovich .
+
+data:Herman_Jud a :Man,
+        :Person .
+
+data:Maria_Georgievna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Nancy_Helen_Marie_Leeds a :Person,
+        :Woman ;
+    :hasFather data:William_Bateman_Leeds_Jr .
+
+data:Nicholas_Mikhailovich a :Man,
+        :Person .
+
+data:Nina_Georgievna a :Person,
+        :Woman ;
+    :hasSister data:Xenia_Georgievna .
+
+data:Xenia_Georgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
+    :hasDeathYear 1965 ;
+    :hasFather data:George_Mihailovich ;
+    :hasMarriageYear 1921,
+        1946 ;
+    :hasMother data:Maria_Georgievna ;
+    :hasRelation data:Herman_Jud,
+        data:William_Bateman_Leeds_Jr ;
+    :hasSister data:Nina_Georgievna .
+
+data:William_Bateman_Leeds_Jr a :Man,
+        :Person .
+

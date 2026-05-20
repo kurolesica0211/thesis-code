@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabelle_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;\n    :hasDeathYear 1962 ;\n    :hasFather data:Philippe_Count_of_Paris ;\n    :hasMarriageYear 1899 ;\n    :hasMother data:Maria_Isabel_of_Spain ;\n    :hasRelation data:Prince_Jean_Duke_of_Guise ;\n    :knownAs \"Isabelle Marie Laure Merc\u00e9d\u00e8s Ferdinande\"^^xsd:string .\n\ndata:Francoise_dOrleans a :Person,\n        :Woman .\n\ndata:Maria_Isabel_of_Spain a :Person,\n        :Woman .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philippe_of_Orleans_Duke_of_Orleans a :Man,\n        :Person .\n\ndata:Prince_Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasFather data:Robert_Duke_of_Chartres ;\n    :hasMother data:Francoise_dOrleans .\n\ndata:Robert_Duke_of_Chartres a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabelle_of_Orleans a :Person,\n        :Woman ;\n    :hasBirthYear 1878 ;\n    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;\n    :hasDeathYear 1962 ;\n    :hasFather data:Philippe_Count_of_Paris ;\n    :hasMarriageYear 1899 ;\n    :hasMother data:Maria_Isabel_of_Spain ;\n    :hasRelation data:Prince_Jean_Duke_of_Guise ;\n    :knownAs \"Isabelle Marie Laure Merc\u00e9d\u00e8s Ferdinande\"^^xsd:string .\n\ndata:Francoise_dOrleans a :Person,\n        :Woman .\n\ndata:Maria_Isabel_of_Spain a :Person,\n        :Woman .\n\ndata:Philippe_Count_of_Paris a :Man,\n        :Person .\n\ndata:Philippe_of_Orleans_Duke_of_Orleans a :Man,\n        :Person .\n\ndata:Prince_Jean_Duke_of_Guise a :Man,\n        :Person ;\n    :hasFather data:Robert_Duke_of_Chartres ;\n    :hasMother data:Francoise_dOrleans .\n\ndata:Robert_Duke_of_Chartres a :Man,\n        :Person .\n\n"
+    }
+]

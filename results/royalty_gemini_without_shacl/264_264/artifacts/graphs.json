@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_III a :Man .\n\ndata:Charlotte a :Woman ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Diana a :Woman .\n\ndata:Elizabeth_II a :Woman .\n\ndata:George a :Man ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Harry a :Man .\n\ndata:Louis a :Man ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Catherine_Middleton a :Woman .\n\ndata:William a :Man ;\n    :alsoKnownAs \"Wills\"^^xsd:string,\n        \"Willy\"^^xsd:string,\n        \"Wombat\"^^xsd:string ;\n    :hasAncestor data:Elizabeth_II ;\n    :hasBirthYear 1982 ;\n    :hasBrother data:Harry ;\n    :hasChild data:Charlotte,\n        data:George,\n        data:Louis ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Charles_III a :Man .\n\ndata:Charlotte a :Woman ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Diana a :Woman .\n\ndata:Elizabeth_II a :Woman .\n\ndata:George a :Man ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Harry a :Man .\n\ndata:Louis a :Man ;\n    :hasFather data:William ;\n    :hasMother data:Catherine_Middleton .\n\ndata:Catherine_Middleton a :Woman .\n\ndata:William a :Man ;\n    :alsoKnownAs \"Wills\"^^xsd:string,\n        \"Willy\"^^xsd:string,\n        \"Wombat\"^^xsd:string ;\n    :hasAncestor data:Elizabeth_II ;\n    :hasBirthYear 1982 ;\n    :hasBrother data:Harry ;\n    :hasChild data:Charlotte,\n        data:George,\n        data:Louis ;\n    :hasFather data:Charles_III ;\n    :hasMother data:Diana .\n\n"
+    }
+]

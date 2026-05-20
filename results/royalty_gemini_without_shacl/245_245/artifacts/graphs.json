@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Patrick_Gregers_Richard_Windsor a :Man,\n        :Person ;\n    :alsoKnownAs \"Alex Ulster\"^^xsd:string ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2002 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Charles_III,\n        data:Claire_Booth .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Claire_Booth a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Patrick_Gregers_Richard_Windsor a :Man,\n        :Person ;\n    :alsoKnownAs \"Alex Ulster\"^^xsd:string ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2002 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Charles_III,\n        data:Claire_Booth .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Charles_III a :Man,\n        :Person .\n\ndata:Claire_Booth a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\n"
+    }
+]

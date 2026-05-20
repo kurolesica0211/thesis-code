@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ludwig_von_W%C3%BCrttemberg a :Man ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .
+
+data:Archduchess_Rosa_of_Austria a :Ancestor,
+        :Woman .
+
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:Archduchess_Rosa_of_Austria ;
+    :hasRelation data:Princess_Diane_dOrl%C3%A9ans .
+
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man .
+
+data:Prince_Henri_Count_of_Paris a :Ancestor,
+        :Man .
+
+data:Princess_Diane_dOrl%C3%A9ans a :Woman ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman .
+

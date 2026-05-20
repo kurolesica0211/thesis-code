@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Stephan_Prince_of_Lippe a :Ancestor,
+        :Man ;
+    :hasBirthYear 1959 ;
+    :hasFather data:Armin_Prince_of_Lippe ;
+    :hasMother data:Traute_Becker ;
+    :hasRelation data:Princess_Maria ;
+    :isFatherOf data:Child_1,
+        data:Child_2,
+        data:Child_3,
+        data:Child_4,
+        data:Child_5 .
+
+data:Armin_Prince_of_Lippe a :Ancestor,
+        :Man .
+
+data:Child_1 a :Man .
+
+data:Child_2 a :Man .
+
+data:Child_3 a :Man .
+
+data:Child_4 a :Woman .
+
+data:Child_5 a :Woman .
+
+data:Princess_Maria a :Woman .
+
+data:Traute_Becker a :Ancestor,
+        :Woman .
+

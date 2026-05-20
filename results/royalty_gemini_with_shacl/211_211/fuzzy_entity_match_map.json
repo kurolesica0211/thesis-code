@@ -1,0 +1,108 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/211_211",
+  "text_file": "Q2754379.txt",
+  "text_key": "Q2754379",
+  "article": "https://en.wikipedia.org/wiki/Duke_Paul_Frederick_of_Mecklenburg_(1882%E2%80%931904)",
+  "article_key": "Duke Paul Frederick of Mecklenburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+    "qid": "Q2754379",
+    "label": "Duke Paul Friedrich of Mecklenburg-Schwerin"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+      "qid": "Q2754379",
+      "label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Marie_of_Windisch-Graetz",
+      "qid": "Q2071733",
+      "label": "Princess Marie of Windisch-Graetz",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Duke_Paul_Frederick_of_Mecklenburg",
+      "extracted_local_name": "Duke_Paul_Frederick_of_Mecklenburg",
+      "embedding_text": "Duke Paul Frederick of Mecklenburg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+      "ground_truth_qid": "Q2754379",
+      "ground_truth_label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Duke Paul Frederick of Mecklenburg",
+      "best_candidate_label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q2754379",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Marie_of_Windisch-Graetz",
+      "extracted_local_name": "Princess_Marie_of_Windisch-Graetz",
+      "embedding_text": "Princess Marie of Windisch-Graetz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Marie_of_Windisch-Graetz",
+      "ground_truth_qid": "Q2071733",
+      "ground_truth_label": "Princess Marie of Windisch-Graetz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Marie of Windisch-Graetz",
+      "best_candidate_label": "Princess Marie of Windisch-Graetz",
+      "best_candidate_qid": "Q2071733",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Duke_Paul_Frederick_of_Mecklenburg_Senior",
+      "extracted_local_name": "Duke_Paul_Frederick_of_Mecklenburg_Senior",
+      "embedding_text": "Duke Paul Frederick of Mecklenburg Senior",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_Francis_II_Grand_Duke_of_Mecklenburg",
+      "extracted_local_name": "Frederick_Francis_II_Grand_Duke_of_Mecklenburg",
+      "embedding_text": "Frederick Francis II Grand Duke of Mecklenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 2,
+    "entities_unmatched": 2
+  }
+}

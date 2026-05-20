@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:VictoriaMarieEsmeMargarita a :Person,
+        :Woman ;
+    :hasBirthYear 1991 ;
+    :isDaughterOf data:DesmondDeSilva,
+        data:Katarina .
+
+data:DesmondDeSilva a :Ancestor,
+        :Man,
+        :Person .
+
+data:George a :Man,
+        :Person .
+
+data:Katarina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:George,
+        data:Michael,
+        data:NikolaOfYugoslavia ;
+    :hasFather data:TomislavOfYugoslavia ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:MargaritaOfBaden .
+
+data:MargaritaOfBaden a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Michael a :Man,
+        :Person .
+
+data:NikolaOfYugoslavia a :Man,
+        :Person .
+
+data:TomislavOfYugoslavia a :Ancestor,
+        :Man,
+        :Person .
+

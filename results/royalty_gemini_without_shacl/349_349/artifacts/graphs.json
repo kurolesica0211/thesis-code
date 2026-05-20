@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Agapi_Politi a :Person,\n        :Woman .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:Chrysi_Vardinogianni a :Person,\n        :Woman .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Giorgos_Vardinogiannis a :Man,\n        :Person .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Margareta_of_Greece_and_Denmark a :Person .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Nikolaos_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Pavlos_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Philippos_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Person,\n        :Woman .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Chrysi_Vardinogianni a :Person,\n        :Woman ;\n    :hasFather data:Giorgos_Vardinogiannis ;\n    :hasMother data:Agapi_Politi .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Margareta_of_Greece_and_Denmark a :Person .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Pavlos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Philippos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Person,\n        :Woman .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Agapi_Politi a :Person,\n        :Woman .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Giorgos_Vardinogiannis a :Man,\n        :Person .\n\ndata:Nikolaos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Alexia_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Chrysi_Vardinogianni a :Person,\n        :Woman ;\n    :hasFather data:Giorgos_Vardinogiannis ;\n    :hasMother data:Agapi_Politi .\n\ndata:Irene_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Margareta_of_Greece_and_Denmark a :Person .\n\ndata:Margareta_of_Romania a :Woman .\n\ndata:Pavlos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Philippos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Sofia_of_Spain a :Person,\n        :Woman .\n\ndata:Tatiana_Ellinka_Blatnik a :Person,\n        :Woman .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .\n\ndata:Agapi_Politi a :Person,\n        :Woman .\n\ndata:Anne-Marie a :Person,\n        :Woman .\n\ndata:Constantine_II a :Man,\n        :Person .\n\ndata:Giorgos_Vardinogiannis a :Man,\n        :Person .\n\ndata:Nikolaos_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1969 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\n"
+    }
+]

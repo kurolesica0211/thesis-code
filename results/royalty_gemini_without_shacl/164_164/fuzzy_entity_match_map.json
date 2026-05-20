@@ -1,0 +1,104 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/164_164",
+  "text_file": "Q2377795.txt",
+  "text_key": "Q2377795",
+  "article": "https://en.wikipedia.org/wiki/Countess_Leonore_of_Orange-Nassau",
+  "article_key": "Countess Leonore of Orange-Nassau",
+  "main_entity": {
+    "uri": "http://example.com/data#Countess_Leonore_of_Orange-Nassau",
+    "qid": "Q2377795",
+    "label": "Countess Leonore of Orange-Nassau"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Countess_Leonore_of_Orange-Nassau",
+      "qid": "Q2377795",
+      "label": "Countess Leonore of Orange-Nassau",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Constantijn_of_the_Netherlands",
+      "qid": "Q355254",
+      "label": "Prince Constantijn of the Netherlands",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Laurentien_of_the_Netherlands",
+      "qid": "Q267367",
+      "label": "Princess Laurentien of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Countess_Leonore_of_Orange-Nassau",
+      "extracted_local_name": "Countess_Leonore_of_Orange-Nassau",
+      "embedding_text": "Countess Leonore of Orange-Nassau",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Countess_Leonore_of_Orange-Nassau",
+      "ground_truth_qid": "Q2377795",
+      "ground_truth_label": "Countess Leonore of Orange-Nassau",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Countess Leonore of Orange-Nassau",
+      "best_candidate_label": "Countess Leonore of Orange-Nassau",
+      "best_candidate_qid": "Q2377795",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Constantijn_of_the_Netherlands",
+      "extracted_local_name": "Prince_Constantijn_of_the_Netherlands",
+      "embedding_text": "Prince Constantijn of the Netherlands",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Constantijn_of_the_Netherlands",
+      "ground_truth_qid": "Q355254",
+      "ground_truth_label": "Prince Constantijn of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Constantijn of the Netherlands",
+      "best_candidate_label": "Prince Constantijn of the Netherlands",
+      "best_candidate_qid": "Q355254",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Laurentien_of_the_Netherlands",
+      "extracted_local_name": "Princess_Laurentien_of_the_Netherlands",
+      "embedding_text": "Princess Laurentien of the Netherlands",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Laurentien_of_the_Netherlands",
+      "ground_truth_qid": "Q267367",
+      "ground_truth_label": "Princess Laurentien of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Laurentien of the Netherlands",
+      "best_candidate_label": "Princess Laurentien of the Netherlands",
+      "best_candidate_qid": "Q267367",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 3,
+    "entities_unmatched": 0
+  }
+}

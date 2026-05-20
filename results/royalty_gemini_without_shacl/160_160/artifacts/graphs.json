@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1904 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Sophie_of_Prussia ;\n    :hasRelation data:Prince_Aimone ;\n    :hasSex data:Female .\n\ndata:King_Constantine_I_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Aimone a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasSex data:Male .\n\ndata:Princess_Sophie_of_Prussia a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1904 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Sophie_of_Prussia ;\n    :hasRelation data:Prince_Aimone ;\n    :hasSex data:Female .\n\ndata:King_Constantine_I_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Aimone a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasSex data:Male .\n\ndata:Princess_Sophie_of_Prussia a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Irene_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1904 ;\n    :hasDeathYear 1974 ;\n    :hasFather data:King_Constantine_I_of_Greece ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Princess_Sophie_of_Prussia ;\n    :hasRelation data:Prince_Aimone ;\n    :hasSex data:Female .\n\ndata:King_Constantine_I_of_Greece a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Aimone a :Man,\n        :Person ;\n    :hasBirthYear 1900 ;\n    :hasDeathYear 1948 ;\n    :hasSex data:Male .\n\ndata:Princess_Sophie_of_Prussia a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

@@ -1,0 +1,54 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Hesse a :Man,
+        :Person ;
+    :isSonOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus_of_Hesse .
+
+data:Johanna_of_Hesse a :Person,
+        :Woman ;
+    :isDaughterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus_of_Hesse .
+
+data:Ludwig_of_Hesse a :Man,
+        :Person ;
+    :isSonOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus_of_Hesse .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+
+data:Philip_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man .
+
+data:Georg_Donatus_of_Hesse a :Ancestor,
+        :Man .
+
+data:Cecilie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1911-06-22"^^xsd:date ;
+    :hasDeathYear "1937-11-16"^^xsd:date ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear "1931-01-01"^^xsd:date ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:Georg_Donatus_of_Hesse .
+

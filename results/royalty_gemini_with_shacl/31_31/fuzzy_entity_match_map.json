@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/31_31",
+  "text_file": "Q1210791.txt",
+  "text_key": "Q1210791",
+  "article": "https://en.wikipedia.org/wiki/Christoph_of_Schleswig-Holstein",
+  "article_key": "Christoph of Schleswig-Holstein",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Christoph_of_Schleswig-Holstein",
+    "qid": "Q1210791",
+    "label": "Prince Christoph of Schleswig-Holstein"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Christoph_of_Schleswig-Holstein",
+      "qid": "Q1210791",
+      "label": "Prince Christoph of Schleswig-Holstein",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Marie_Alix-_Duchess_of_Schleswig-Holstein",
+      "qid": "Q6490795",
+      "label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Peter-_Duke_of_Schleswig-Holstein",
+      "qid": "Q739253",
+      "label": "Peter, Duke of Schleswig-Holstein",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Christoph_of_Schleswig-Holstein",
+      "extracted_local_name": "Christoph_of_Schleswig-Holstein",
+      "embedding_text": "Christoph of Schleswig-Holstein",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Christoph_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q1210791",
+      "ground_truth_label": "Prince Christoph of Schleswig-Holstein",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Christoph of Schleswig-Holstein",
+      "best_candidate_label": "Prince Christoph of Schleswig-Holstein",
+      "best_candidate_qid": "Q1210791",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marie_Alix_of_Schaumburg-Lippe",
+      "extracted_local_name": "Marie_Alix_of_Schaumburg-Lippe",
+      "embedding_text": "Marie Alix of Schaumburg-Lippe",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8448275862068966,
+      "ground_truth_uri": "http://example.com/data#Marie_Alix-_Duchess_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q6490795",
+      "ground_truth_label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Marie Alix of Schaumburg-Lippe",
+      "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "best_candidate_qid": "Q6490795",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8448275862068966
+    },
+    {
+      "extracted_uri": "http://example.org/data/Peter_of_Schleswig-Holstein",
+      "extracted_local_name": "Peter_of_Schleswig-Holstein",
+      "embedding_text": "Peter of Schleswig-Holstein",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8125,
+      "ground_truth_uri": "http://example.com/data#Peter-_Duke_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q739253",
+      "ground_truth_label": "Peter, Duke of Schleswig-Holstein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Peter- Duke of Schleswig-Holstein",
+      "best_candidate_label": "Peter, Duke of Schleswig-Holstein",
+      "best_candidate_qid": "Q739253",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8125
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld",
+      "extracted_local_name": "Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld",
+      "embedding_text": "Alfred Karl Friedrich Georg Franz of Lippe-Weissenfeld",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christoph Prinz zu Schleswig-Holstein",
+      "best_candidate_label": "Prince Christoph of Schleswig-Holstein",
+      "best_candidate_qid": "Q1210791",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.26373626373626374
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elisabeth_of_Lippe-Weissenfeld",
+      "extracted_local_name": "Elisabeth_of_Lippe-Weissenfeld",
+      "embedding_text": "Elisabeth of Lippe-Weissenfeld",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marie-Alix Prinzessin zu Schaumburg-Lippe",
+      "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "best_candidate_qid": "Q6490795",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.30985915492957744
+    },
+    {
+      "extracted_uri": "http://example.org/data/Irmgard_Julinka_Wagner_von_Wehrborn",
+      "extracted_local_name": "Irmgard_Julinka_Wagner_von_Wehrborn",
+      "embedding_text": "Irmgard Julinka Wagner von Wehrborn",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Marie Alix of Schaumburg-Lippe",
+      "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "best_candidate_qid": "Q6490795",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2702702702702703
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

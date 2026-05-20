@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Charlotte_Anne_Santo_Domingo a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:Arthur_Wellesley_Earl_of_Mornington ;\n    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:Princess_Antonia_of_Prussia ;\n    :hasRelation data:Alejandro_Santo_Domingo ;\n    :hasSister data:Lady_Mary_Wellesley .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Alejandro_Santo_Domingo a :Man,\n        :Person .\n\ndata:Arthur_Wellesley_Earl_of_Mornington a :Man,\n        :Person .\n\ndata:Charles_Wellesley_Marquess_of_Douro a :Man,\n        :Person ;\n    :hasFather data:Valerian_Wellesley_8th_Duke_of_Wellington .\n\ndata:Lady_Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Lady_Mary_Wellesley a :Person,\n        :Woman .\n\ndata:Prince_Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Antonia_of_Prussia a :Person,\n        :Woman ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Lady_Brigid_Guinness .\n\ndata:Valerian_Wellesley_8th_Duke_of_Wellington a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Charlotte_Anne_Santo_Domingo a :Person,\n        :Woman ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:Arthur_Wellesley_Earl_of_Mornington ;\n    :hasFather data:Charles_Wellesley_Marquess_of_Douro ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:Princess_Antonia_of_Prussia ;\n    :hasRelation data:Alejandro_Santo_Domingo ;\n    :hasSister data:Lady_Mary_Wellesley .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\ndata:Alejandro_Santo_Domingo a :Man,\n        :Person .\n\ndata:Arthur_Wellesley_Earl_of_Mornington a :Man,\n        :Person .\n\ndata:Charles_Wellesley_Marquess_of_Douro a :Man,\n        :Person ;\n    :hasFather data:Valerian_Wellesley_8th_Duke_of_Wellington .\n\ndata:Lady_Brigid_Guinness a :Person,\n        :Woman .\n\ndata:Lady_Mary_Wellesley a :Person,\n        :Woman .\n\ndata:Prince_Frederick_of_Prussia a :Man,\n        :Person .\n\ndata:Princess_Antonia_of_Prussia a :Person,\n        :Woman ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Lady_Brigid_Guinness .\n\ndata:Valerian_Wellesley_8th_Duke_of_Wellington a :Man,\n        :Person .\n\n"
+    }
+]

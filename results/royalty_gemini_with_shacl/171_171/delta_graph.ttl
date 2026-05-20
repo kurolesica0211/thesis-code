@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex ;
+    :isFatherOf data:David_Armstrong-Jones .
+
+data:Charles_Stanhope a :Man,
+        :Person ;
+    :hasSex data:Male_Sex .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :hasSex data:Female_Sex ;
+    :isSisterOf data:David_Armstrong-Jones .
+
+data:Princess_Margaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female_Sex ;
+    :isMotherOf data:David_Armstrong-Jones .
+
+data:Viscount_Linley a :Man,
+        :Person ;
+    :hasSex data:Male_Sex ;
+    :isBrotherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSonOf data:David_Armstrong-Jones,
+        data:Serena_Stanhope .
+
+data:Serena_Stanhope a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female_Sex ;
+    :isMotherOf data:Lady_Margarita_Armstrong-Jones .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasBirthYear 2002 ;
+    :hasSex data:Female_Sex .
+
+data:David_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex ;
+    :isFatherOf data:Lady_Margarita_Armstrong-Jones .
+
+data:Female_Sex a :Female .
+
+data:Male_Sex a :Male .
+

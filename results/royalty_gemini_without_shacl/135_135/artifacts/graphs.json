@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1985 ;\n    :hasFather data:August_Wilhelm_of_Prussia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Armgard_Weygand a :Person,\n        :Woman ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Friedrich_Weygand ;\n    :hasMother data:Karla_Franziska_Oheim .\n\ndata:Werner_Rosendorff a :Man,\n        :Person .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,\n        :Woman .\n\ndata:August_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Friedrich_Weygand a :Man,\n        :Person .\n\ndata:Karla_Franziska_Oheim a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 1985 ;\n    :hasFather data:August_Wilhelm_of_Prussia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Armgard_Weygand a :Person,\n        :Woman ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2001 ;\n    :hasFather data:Friedrich_Weygand ;\n    :hasMother data:Karla_Franziska_Oheim .\n\ndata:Werner_Rosendorff a :Man,\n        :Person .\n\ndata:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,\n        :Woman .\n\ndata:August_Wilhelm_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II .\n\ndata:Friedrich_Weygand a :Man,\n        :Person .\n\ndata:Karla_Franziska_Oheim a :Person,\n        :Woman .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    }
+]

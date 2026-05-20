@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Astrid_of_Sweden a :Woman ;\n    :hasDeathYear 1935 ;\n    :hasFather data:King_Leopold_III .\n\ndata:Prince_Lorenz_of_Belgium a :Man ;\n    :hasFather data:Robert_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Margherita_of_Savoy-Aosta .\n\ndata:King_Albert_II a :Man .\n\ndata:King_Leopold_III a :Man .\n\ndata:King_Philippe a :Man ;\n    :hasSister data:Princess_Astrid_of_Belgium .\n\ndata:Princess_Astrid_of_Belgium a :Woman ;\n    :hasBirthYear 1962 ;\n    :hasBrother data:King_Philippe ;\n    :hasFather data:King_Albert_II ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Queen_Paola .\n\ndata:Princess_Margherita_of_Savoy-Aosta a :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2022 .\n\ndata:Queen_Paola a :Woman .\n\ndata:Robert_Archduke_of_Austria-Este a :Man ;\n    :hasBirthYear 1915 ;\n    :hasDeathYear 1996 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Astrid_of_Sweden a :Woman ;\n    :hasDeathYear 1935 ;\n    :hasFather data:King_Leopold_III .\n\ndata:Prince_Lorenz_of_Belgium a :Man ;\n    :hasFather data:Robert_Archduke_of_Austria-Este ;\n    :hasMother data:Princess_Margherita_of_Savoy-Aosta .\n\ndata:King_Albert_II a :Man .\n\ndata:King_Leopold_III a :Man .\n\ndata:King_Philippe a :Man ;\n    :hasSister data:Princess_Astrid_of_Belgium .\n\ndata:Princess_Astrid_of_Belgium a :Woman ;\n    :hasBirthYear 1962 ;\n    :hasBrother data:King_Philippe ;\n    :hasFather data:King_Albert_II ;\n    :hasMarriageYear 1984 ;\n    :hasMother data:Queen_Paola .\n\ndata:Princess_Margherita_of_Savoy-Aosta a :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2022 .\n\ndata:Queen_Paola a :Woman .\n\ndata:Robert_Archduke_of_Austria-Este a :Man ;\n    :hasBirthYear 1915 ;\n    :hasDeathYear 1996 .\n\n"
+    }
+]

@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Elizabeth_Georgiana_Shakerley a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Thomas_Anson_Viscount_Anson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Anne_Bowes-Lyon ;
+    :knownAs "Lady Elizabeth Anson"^^xsd:string .
+
+data:Sir_Geoffrey_Shakerley_6th_Bt a :Man,
+        :Person .
+
+data:Anne_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+        :Person .
+
+data:Thomas_Anson_Viscount_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958 .
+

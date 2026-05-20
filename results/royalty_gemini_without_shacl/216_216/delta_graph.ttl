@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Prince_Henry ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Elizabeth_Bowes_Lyon ;
+    :knownAs "Bertie"^^xsd:string .
+
+data:Duke_of_Kent a :Man,
+        :Person .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:Elizabeth_Bowes_Lyon a :Person,
+        :Woman .
+
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:Francis_Duke_of_Teck a :Man,
+        :Person .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Edward_VII ;
+    :hasMother data:Queen_Alexandra .
+
+data:King_Edward_VII a :Man,
+        :Person ;
+    :hasFather data:Prince_Albert_Prince_Consort ;
+    :hasMother data:Queen_Victoria .
+
+data:Margaret a :Person,
+        :Woman .
+
+data:Prince_Albert_Prince_Consort a :Man,
+        :Person .
+
+data:Prince_Henry a :Man,
+        :Person .
+
+data:Princess_Mary_Adelaide_Duchess_of_Teck a :Person,
+        :Woman .
+
+data:Queen_Alexandra a :Person,
+        :Woman .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Princess_Mary_Adelaide_Duchess_of_Teck .
+
+data:Queen_Victoria a :Person,
+        :Woman .
+

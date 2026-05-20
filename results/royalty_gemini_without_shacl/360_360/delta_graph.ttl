@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia a :Man ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Marino_Torlonia ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Mary_Elsie_Moore ;
+    :hasRelation data:Beatriz_of_Spain ;
+    :hasSister data:Marina_Torlonia .
+
+data:Alessandro_Torlonia_Cousin a :Man ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2017 .
+
+data:Alfonso_XIII_of_Spain a :Man .
+
+data:Beatriz_of_Spain a :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Brooke_Shields a :Woman .
+
+data:Marina_Torlonia a :Woman ;
+    :isMotherOf data:Brooke_Shields .
+
+data:Marino_Torlonia a :Man .
+
+data:Mary_Elsie_Moore a :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Woman .
+

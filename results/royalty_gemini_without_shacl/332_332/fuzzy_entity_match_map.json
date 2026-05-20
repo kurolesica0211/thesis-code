@@ -1,0 +1,140 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/332_332",
+  "text_file": "Q56641.txt",
+  "text_key": "Q56641",
+  "article": "https://en.wikipedia.org/wiki/Pim_Lier",
+  "article_key": "Pim Lier",
+  "main_entity": {
+    "uri": "http://example.com/data#Pim_Lier",
+    "qid": "Q56641",
+    "label": "Pim Lier"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Pim_Lier",
+      "qid": "Q56641",
+      "label": "Pim Lier",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
+      "qid": "Q150747",
+      "label": "Wilhelmina of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Queen_Beatrix",
+      "extracted_local_name": "Queen_Beatrix",
+      "embedding_text": "Queen Beatrix",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "ground_truth_qid": "Q29574",
+      "ground_truth_label": "Beatrix of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Queen Beatrix",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Juliana",
+      "extracted_local_name": "Queen_Juliana",
+      "embedding_text": "Queen Juliana",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "ground_truth_qid": "Q154946",
+      "ground_truth_label": "Juliana of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Queen Juliana",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Albrecht_Willem_Lier",
+      "extracted_local_name": "Albrecht_Willem_Lier",
+      "embedding_text": "Albrecht Willem Lier",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.95,
+      "ground_truth_uri": "http://example.com/data#Pim_Lier",
+      "ground_truth_qid": "Q56641",
+      "ground_truth_label": "Pim Lier",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Albrecht-Willem Lier",
+      "best_candidate_label": "Pim Lier",
+      "best_candidate_qid": "Q56641",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.95
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Henry",
+      "extracted_local_name": "Prince_Henry",
+      "embedding_text": "Prince Henry",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Willemina_Martina_Wenneker",
+      "extracted_local_name": "Willemina_Martina_Wenneker",
+      "embedding_text": "Willemina Martina Wenneker",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelmina of the Netherlands",
+      "best_candidate_label": "Wilhelmina of the Netherlands",
+      "best_candidate_qid": "Q150747",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.5454545454545454
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

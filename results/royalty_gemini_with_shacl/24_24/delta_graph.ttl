@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickFrancisIV a :Man,
+        :Person .
+
+data:MarieAntoinetteOfMecklenburgSchwerin a :Person,
+        :Woman ;
+    :alsoKnownAs "Manette"^^xsd:string ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:DukePaulFrederickOfMecklenburg ;
+    :hasMother data:PrincessMarieOfWindischGraetz ;
+    :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,
+        data:DukeHeinrichBorwinOfMecklenburgSchwerin,
+        data:DukeJosephOfMecklenburgSchwerin,
+        data:DukePaulFriedrichOfMecklenburg .
+
+data:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,
+        :Woman .
+
+data:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,
+        :Person .
+
+data:DukeJosephOfMecklenburgSchwerin a :Man,
+        :Person .
+
+data:DukePaulFrederickOfMecklenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:DukePaulFriedrichOfMecklenburg a :Man,
+        :Person .
+
+data:PrincessMarieOfWindischGraetz a :Ancestor,
+        :Person,
+        :Woman .
+

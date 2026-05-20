@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmVictorOfPrussia a :Man,
+        :Person ;
+    :hasBirthYear "1919"^^xsd:int ;
+    :hasDeathYear "1989"^^xsd:int ;
+    :hasFather data:AdalbertOfPrussia ;
+    :hasMarriageYear "1944"^^xsd:int ;
+    :hasMother data:AdelheidOfSaxeMeiningen ;
+    :hasRelation data:MarieAntoinetteOfHoyosStichsenstein ;
+    :hasSex data:Male ;
+    :hasSister data:ViktoriaMarina .
+
+data:AdalbertOfPrussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:AdelheidOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman .
+
+data:FriedrichCountOfHoyosStichsenstein a :Ancestor,
+        :Man,
+        :Person .
+
+data:Male a :Male .
+
+data:MarieAntoinetteOfHoyosStichsenstein a :Person,
+        :Woman ;
+    :hasFather data:FriedrichCountOfHoyosStichsenstein ;
+    :hasMother data:WilhelmineVonWuthenauHohenthurm .
+
+data:ViktoriaMarina a :Person,
+        :Woman .
+
+data:WilhelmineVonWuthenauHohenthurm a :Ancestor,
+        :Person,
+        :Woman .
+

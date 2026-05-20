@@ -1,0 +1,183 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/102_102",
+  "text_file": "Q1797989.txt",
+  "text_key": "Q1797989",
+  "article": "https://en.wikipedia.org/wiki/Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
+  "article_key": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
+    "qid": "Q1797989",
+    "label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
+      "qid": "Q1797989",
+      "label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Margrethe_II_of_Denmark",
+      "qid": "Q102139",
+      "label": "Margrethe II of Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Benedikte_of_Denmark",
+      "qid": "Q817052",
+      "label": "Princess Benedikte of Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederik_IX_of_Denmark",
+      "qid": "Q151312",
+      "label": "Frederik IX of Denmark",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederik_X_of_Denmark",
+      "qid": "Q1004037",
+      "label": "Frederik X of Denmark",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/PrincessBenedikte",
+      "extracted_local_name": "PrincessBenedikte",
+      "embedding_text": "Princess Benedikte",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8103448275862069,
+      "ground_truth_uri": "http://example.com/data#Princess_Benedikte_of_Denmark",
+      "ground_truth_qid": "Q817052",
+      "ground_truth_label": "Princess Benedikte of Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Benedikte of Denmark",
+      "best_candidate_label": "Princess Benedikte of Denmark",
+      "best_candidate_qid": "Q817052",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8103448275862069
+    },
+    {
+      "extracted_uri": "http://example.org/data/CountJefferson",
+      "extracted_local_name": "CountJefferson",
+      "embedding_text": "Count Jefferson",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik of Denmark, Count of Monpezat",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.33962264150943394
+    },
+    {
+      "extracted_uri": "http://example.org/data/CountMichael",
+      "extracted_local_name": "CountMichael",
+      "embedding_text": "Count Michael",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik of Denmark, Count of Monpezat",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3137254901960784
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceGustav",
+      "extracted_local_name": "PrinceGustav",
+      "embedding_text": "Prince Gustav",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik André Henrik Christian",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3181818181818182
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceRichard",
+      "extracted_local_name": "PrinceRichard",
+      "embedding_text": "Prince Richard",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik André Henrik Christian",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessAlexandra",
+      "extracted_local_name": "PrincessAlexandra",
+      "embedding_text": "Princess Alexandra",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexandra of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q1797989",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.3103448275862069
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessNathalie",
+      "extracted_local_name": "PrincessNathalie",
+      "embedding_text": "Princess Nathalie",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alexandra Rosemarie Ingrid Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q1797989",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.25263157894736843
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 1,
+    "entities_unmatched": 6
+  }
+}

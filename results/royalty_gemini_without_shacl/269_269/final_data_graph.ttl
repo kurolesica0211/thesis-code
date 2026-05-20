@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Daniel_Chatto a :Man,
+        :Person ;
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto .
+
+data:Frances_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Jasper_Cable-Alexander a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Polly_Fry a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Sarah_Chatto a :Person,
+        :Woman ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :isSiblingOf data:David_Armstrong-Jones .
+
+data:David_Armstrong-Jones a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:Ros_Chatto a :Person,
+        :Woman ;
+    :hasDeathYear 2012 .
+
+data:Tom_Chatto a :Man,
+        :Person ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1982 .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Antony_Armstrong-Jones a :Man,
+        :Person .
+

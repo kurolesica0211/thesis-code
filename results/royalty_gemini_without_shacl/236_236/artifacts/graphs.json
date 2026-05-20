@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donata_of_Castell-Rudenhausen a :Woman .\n\ndata:Friedrich_August_of_Oldenburg a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Frederick_Augustus_II_of_Oldenburg,\n        data:Friedrich_of_Waldeck_and_Pyrmont,\n        data:Nikolaus_of_Oldenburg ;\n    :hasMother data:Bathildis_of_Schaumburg-Lippe,\n        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,\n        data:Helena_of_Waldeck_and_Pyrmont ;\n    :isUncleOf data:Christian_of_Oldenburg .\n\ndata:Marie_Cecile_of_Prussia a :Woman ;\n    :hasFather data:Louis_Ferdinand_of_Prussia ;\n    :hasMother data:Kira_Kirillovna_of_Russia .\n\ndata:Bathildis_of_Schaumburg-Lippe a :Woman .\n\ndata:Christian_of_Oldenburg a :Man .\n\ndata:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Kira_Kirillovna_of_Russia a :Woman .\n\ndata:Louis_Ferdinand_of_Prussia a :Man ;\n    :hasFather data:William_German_Crown_Prince .\n\ndata:Nikolaus_of_Oldenburg a :Man .\n\ndata:William_German_Crown_Prince a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Donata_of_Castell-Rudenhausen a :Woman .\n\ndata:Friedrich_August_of_Oldenburg a :Man ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Frederick_Augustus_II_of_Oldenburg,\n        data:Friedrich_of_Waldeck_and_Pyrmont,\n        data:Nikolaus_of_Oldenburg ;\n    :hasMother data:Bathildis_of_Schaumburg-Lippe,\n        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,\n        data:Helena_of_Waldeck_and_Pyrmont ;\n    :isUncleOf data:Christian_of_Oldenburg .\n\ndata:Marie_Cecile_of_Prussia a :Woman ;\n    :hasFather data:Louis_Ferdinand_of_Prussia ;\n    :hasMother data:Kira_Kirillovna_of_Russia .\n\ndata:Bathildis_of_Schaumburg-Lippe a :Woman .\n\ndata:Christian_of_Oldenburg a :Man .\n\ndata:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Woman .\n\ndata:Frederick_Augustus_II_of_Oldenburg a :Man .\n\ndata:Friedrich_of_Waldeck_and_Pyrmont a :Man .\n\ndata:Helena_of_Waldeck_and_Pyrmont a :Woman .\n\ndata:Kira_Kirillovna_of_Russia a :Woman .\n\ndata:Louis_Ferdinand_of_Prussia a :Man ;\n    :hasFather data:William_German_Crown_Prince .\n\ndata:Nikolaus_of_Oldenburg a :Man .\n\ndata:William_German_Crown_Prince a :Man .\n\n"
+    }
+]

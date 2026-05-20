@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Louise_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ernest_Augustus_of_Hanover ;\n    :knownAs \"Sissy\"^^xsd:string .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "0a34ee5e-3426-4984-9426-bd7af9182f37",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Victoria_Louise_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1892 ;\n    :hasDeathYear 1980 ;\n    :hasFather data:Wilhelm_II ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :hasRelation data:Ernest_Augustus_of_Hanover ;\n    :knownAs \"Sissy\"^^xsd:string .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ernest_Augustus_of_Hanover a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

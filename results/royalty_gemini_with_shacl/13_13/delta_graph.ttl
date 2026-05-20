@@ -1,0 +1,53 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :isBrotherOf data:George_VI .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :knownAs "Queen Elizabeth II"^^xsd:string .
+
+data:Margaret a :Person,
+        :Woman ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :knownAs "Princess Margaret"^^xsd:string .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Elizabeth_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasRelation data:George_VI ;
+    :knownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :knownAs "George VI"^^xsd:string .
+

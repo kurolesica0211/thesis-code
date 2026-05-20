@@ -1,0 +1,122 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/413_413",
+  "text_file": "Q70632.txt",
+  "text_key": "Q70632",
+  "article": "https://en.wikipedia.org/wiki/Prince_Frederick_of_Prussia_(1911%E2%80%931966)",
+  "article_key": "Prince Frederick of Prussia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Frederick_of_Prussia",
+    "qid": "Q70632",
+    "label": "Prince Frederick of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Frederick_of_Prussia",
+      "qid": "Q70632",
+      "label": "Prince Frederick of Prussia",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Duchess_Cecilie_of_Mecklenburg-Schwerin",
+      "qid": "Q235812",
+      "label": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
+      "qid": "Q57621",
+      "label": "Wilhelm, German Crown Prince",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederica_of_Hanover",
+      "qid": "Q61351",
+      "label": "Frederica of Hanover",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Duchess_Cecilie_of_Mecklenburg-Schwerin",
+      "extracted_local_name": "Duchess_Cecilie_of_Mecklenburg-Schwerin",
+      "embedding_text": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Duchess_Cecilie_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q235812",
+      "ground_truth_label": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "best_candidate_label": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q235812",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Frederick_of_Prussia",
+      "extracted_local_name": "Prince_Frederick_of_Prussia",
+      "embedding_text": "Prince Frederick of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Frederick_of_Prussia",
+      "ground_truth_qid": "Q70632",
+      "ground_truth_label": "Prince Frederick of Prussia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Frederick of Prussia",
+      "best_candidate_label": "Prince Frederick of Prussia",
+      "best_candidate_qid": "Q70632",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Crown_Prince_Wilhelm_of_Germany",
+      "extracted_local_name": "Crown_Prince_Wilhelm_of_Germany",
+      "embedding_text": "Crown Prince Wilhelm of Germany",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.7843137254901961,
+      "ground_truth_uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
+      "ground_truth_qid": "Q57621",
+      "ground_truth_label": "Wilhelm, German Crown Prince",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Crown Prince Wilhelm",
+      "best_candidate_label": "Wilhelm, German Crown Prince",
+      "best_candidate_qid": "Q57621",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.7843137254901961
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lady_Brigid_Guinness",
+      "extracted_local_name": "Lady_Brigid_Guinness",
+      "embedding_text": "Lady Brigid Guinness",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederica of Hanover",
+      "best_candidate_label": "Frederica of Hanover",
+      "best_candidate_qid": "Q61351",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.3
+    }
+  ],
+  "summary": {
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
+  }
+}

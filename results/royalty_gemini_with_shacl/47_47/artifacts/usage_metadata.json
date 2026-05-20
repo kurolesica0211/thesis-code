@@ -1,0 +1,66 @@
+{
+    "translation": [],
+    "final": [
+        {
+            "iteration": 7,
+            "metadata": [
+                {
+                    "input_tokens": 9107,
+                    "output_tokens": 662,
+                    "total_tokens": 9769,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 10481,
+                    "output_tokens": 10,
+                    "total_tokens": 10491,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 10513,
+                    "output_tokens": 8,
+                    "total_tokens": 10521,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 10702,
+                    "output_tokens": 41,
+                    "total_tokens": 10743,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 11020,
+                    "output_tokens": 54,
+                    "total_tokens": 11074,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 11370,
+                    "output_tokens": 10,
+                    "total_tokens": 11380,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                },
+                {
+                    "input_tokens": 11402,
+                    "output_tokens": 8,
+                    "total_tokens": 11410,
+                    "input_token_details": {
+                        "cache_read": 9102
+                    }
+                }
+            ]
+        }
+    ]
+}

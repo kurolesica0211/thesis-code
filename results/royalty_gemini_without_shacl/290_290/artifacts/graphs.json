@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Mihailovich a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBrother data:Nicholas_Mikhailovich .\n\ndata:Herman_Jud a :Man,\n        :Person .\n\ndata:Maria_Georgievna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Nancy_Helen_Marie_Leeds a :Person,\n        :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr .\n\ndata:Nicholas_Mikhailovich a :Man,\n        :Person .\n\ndata:Nina_Georgievna a :Person,\n        :Woman ;\n    :hasSister data:Xenia_Georgievna .\n\ndata:Xenia_Georgievna a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDaughter data:Nancy_Helen_Marie_Leeds ;\n    :hasDeathYear 1965 ;\n    :hasFather data:George_Mihailovich ;\n    :hasMarriageYear 1921,\n        1946 ;\n    :hasMother data:Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Nina_Georgievna .\n\ndata:William_Bateman_Leeds_Jr a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Mihailovich a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBrother data:Nicholas_Mikhailovich .\n\ndata:Herman_Jud a :Man,\n        :Person .\n\ndata:Maria_Georgievna a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Nancy_Helen_Marie_Leeds a :Person,\n        :Woman ;\n    :hasFather data:William_Bateman_Leeds_Jr .\n\ndata:Nicholas_Mikhailovich a :Man,\n        :Person .\n\ndata:Nina_Georgievna a :Person,\n        :Woman ;\n    :hasSister data:Xenia_Georgievna .\n\ndata:Xenia_Georgievna a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDaughter data:Nancy_Helen_Marie_Leeds ;\n    :hasDeathYear 1965 ;\n    :hasFather data:George_Mihailovich ;\n    :hasMarriageYear 1921,\n        1946 ;\n    :hasMother data:Maria_Georgievna ;\n    :hasRelation data:Herman_Jud,\n        data:William_Bateman_Leeds_Jr ;\n    :hasSister data:Nina_Georgievna .\n\ndata:William_Bateman_Leeds_Jr a :Man,\n        :Person .\n\n"
+    }
+]

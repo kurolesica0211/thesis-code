@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1857 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Duke_Adolf_Friedrich,
+        data:Duke_Paul_Frederick,
+        data:Frederick_Francis_III .
+
+data:Frederick_Francis_IV a :Man,
+        :Person .
+
+data:Princess_Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman .
+
+data:Princess_Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
+
+data:Duke_Adolf_Friedrich a :Man,
+        :Person .
+
+data:Duke_Paul_Frederick a :Man,
+        :Person .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman .
+

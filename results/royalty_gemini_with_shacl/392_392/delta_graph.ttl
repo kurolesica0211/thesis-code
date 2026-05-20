@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Karoline_von_Wartensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Bernhard_of_Lippe .
+
+data:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe .
+
+data:Male_Sex a :Male,
+        :Sex .
+
+data:Aschwin_of_Lippe_Biesterfeld a :Man,
+        :Person ;
+    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Prince_Bernhard_of_Lippe .
+
+data:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSon data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+
+data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior a :Man,
+        :Person ;
+    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
+        data:Prince_Bernhard_of_Lippe .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Leopold_IV_Prince_of_Lippe ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;
+    :hasMarriageYear 1909 ;
+    :hasMother data:Countess_Karoline_von_Wartensleben ;
+    :hasSex data:Male_Sex ;
+    :hasSon data:Aschwin_of_Lippe_Biesterfeld,
+        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+

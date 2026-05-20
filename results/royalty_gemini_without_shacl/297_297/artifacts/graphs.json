@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Peter_Ferdinand_of_Austria .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alice_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ferdinand_IV_of_Tuscany a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV_of_Tuscany ;\n    :hasMother data:Alice_of_Bourbon-Parma .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1877 ;\n    :hasDeathYear 1947 ;\n    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;\n    :hasMarriageYear 1900 ;\n    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Peter_Ferdinand_of_Austria .\n\ndata:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alice_of_Bourbon-Parma a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Ferdinand_IV_of_Tuscany a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Austria a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Ferdinand_IV_of_Tuscany ;\n    :hasMother data:Alice_of_Bourbon-Parma .\n\n"
+    }
+]

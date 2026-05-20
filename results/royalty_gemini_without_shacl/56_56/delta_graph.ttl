@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man .
+
+data:Elizabeth_II a :Woman .
+
+data:Philip_Duke_of_Edinburgh a :Man .
+
+data:Princess_Beatrice a :Woman ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson .
+
+data:Princess_Eugenie a :Woman ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson .
+
+data:Andrew_Mountbatten-Windsor a :Man ;
+    :formerlyKnownAs "Duke of York"^^xsd:string,
+        "Prince Andrew"^^xsd:string ;
+    :hasBirthYear 1960 ;
+    :hasBrother data:Charles_III ;
+    :hasDaughter data:Princess_Beatrice,
+        data:Princess_Eugenie ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1986 ;
+    :hasMother data:Elizabeth_II ;
+    :knownAs "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string .
+
+data:Sarah_Ferguson a :Woman .
+

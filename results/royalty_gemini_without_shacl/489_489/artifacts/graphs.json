@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .\n\ndata:Alfonso_brother_of_Gonzalo a :Man,\n        :Person .\n\ndata:Emmanuelle_de_Dampierre a :Person,\n        :Woman .\n\ndata:Jaime_Duke_of_Segovia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gonzalo_de_Borbon_y_Dampierre a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasBrother data:Alfonso_brother_of_Gonzalo ;\n    :hasDeathYear 2000 ;\n    :hasFather data:Jaime_Duke_of_Segovia ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .\n\ndata:Victoria_Eugenie_of_Battenberg a :Person,\n        :Woman ;\n    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .\n\ndata:Alfonso_brother_of_Gonzalo a :Man,\n        :Person .\n\ndata:Emmanuelle_de_Dampierre a :Person,\n        :Woman .\n\ndata:Jaime_Duke_of_Segovia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Gonzalo_de_Borbon_y_Dampierre a :Man,\n        :Person ;\n    :hasBirthYear 1937 ;\n    :hasBrother data:Alfonso_brother_of_Gonzalo ;\n    :hasDeathYear 2000 ;\n    :hasFather data:Jaime_Duke_of_Segovia ;\n    :hasMother data:Emmanuelle_de_Dampierre .\n\n"
+    }
+]

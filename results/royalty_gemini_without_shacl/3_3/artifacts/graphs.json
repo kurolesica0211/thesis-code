@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgePhilipNicholasWindsor a :Man ;\n    :hasBirthYear 1962 ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent ;\n    :hasRelation data:SylvanaTomaselli ;\n    :hasSex data:Male .\n\ndata:KatharineDuchessOfKent a :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceEdwardDukeOfKent a :Man ;\n    :hasSex data:Male .\n\ndata:SylvanaTomaselli a :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgePhilipNicholasWindsor a :Man ;\n    :hasBirthYear 1962 ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent ;\n    :hasRelation data:SylvanaTomaselli ;\n    :hasSex data:Male .\n\ndata:KatharineDuchessOfKent a :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceEdwardDukeOfKent a :Man ;\n    :hasSex data:Male .\n\ndata:SylvanaTomaselli a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GeorgePhilipNicholasWindsor a :Man ;\n    :hasBirthYear 1962 ;\n    :hasFather data:PrinceEdwardDukeOfKent ;\n    :hasMother data:KatharineDuchessOfKent ;\n    :hasRelation data:SylvanaTomaselli ;\n    :hasSex data:Male .\n\ndata:KatharineDuchessOfKent a :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceEdwardDukeOfKent a :Man ;\n    :hasSex data:Male .\n\ndata:SylvanaTomaselli a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

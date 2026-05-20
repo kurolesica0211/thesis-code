@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Henry_George_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear \"1950\"^^xsd:nonNegativeInteger ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMarriageYear \"1979\"^^xsd:nonNegativeInteger,\n        \"1990\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marion_Stein ;\n    :hasRelation data:Diane_Howse,\n        data:Margaret_Rosalind_Messenger ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:7th_Earl_of_Harewood a :Ancestor,\n        :Man .\n\ndata:Diane_Howse a :Person,\n        :Woman .\n\ndata:Edgar_Frank_Messenger a :Ancestor,\n        :Man .\n\ndata:Margaret_Rosalind_Messenger a :Person,\n        :Woman ;\n    :hasFather data:Edgar_Frank_Messenger .\n\ndata:Marion_Stein a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "5bf5079a-6e38-49d0-be02-7a593391761e",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasSex ;\n            sh:value \"Male\"^^xsd:string ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/David_Henry_George_Lascelles> ;\n            sh:resultMessage \"Value does not have class :Sex\" ;\n            sh:resultPath :hasSex ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-hasSex ;\n            sh:value \"Male\"^^xsd:string ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "0e8e419b-36a0-4b6c-86c9-7eb1a14bedd9",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Henry_George_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear \"1950\"^^xsd:nonNegativeInteger ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMarriageYear \"1979\"^^xsd:nonNegativeInteger,\n        \"1990\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marion_Stein ;\n    :hasRelation data:Diane_Howse,\n        data:Margaret_Rosalind_Messenger ;\n    :hasSex data:Male_Sex_Node .\n\ndata:7th_Earl_of_Harewood a :Ancestor,\n        :Man .\n\ndata:Diane_Howse a :Person,\n        :Woman .\n\ndata:Edgar_Frank_Messenger a :Ancestor,\n        :Man .\n\ndata:Male_Sex_Node a :Male,\n        :Sex .\n\ndata:Margaret_Rosalind_Messenger a :Person,\n        :Woman ;\n    :hasFather data:Edgar_Frank_Messenger .\n\ndata:Marion_Stein a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "0e8e419b-36a0-4b6c-86c9-7eb1a14bedd9",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Henry_George_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear \"1950\"^^xsd:nonNegativeInteger ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMarriageYear \"1979\"^^xsd:nonNegativeInteger,\n        \"1990\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Marion_Stein ;\n    :hasRelation data:Diane_Howse,\n        data:Margaret_Rosalind_Messenger ;\n    :hasSex data:Male_Sex_Node .\n\ndata:7th_Earl_of_Harewood a :Ancestor,\n        :Man .\n\ndata:Diane_Howse a :Person,\n        :Woman .\n\ndata:Edgar_Frank_Messenger a :Ancestor,\n        :Man .\n\ndata:Male_Sex_Node a :Male,\n        :Sex .\n\ndata:Margaret_Rosalind_Messenger a :Person,\n        :Woman ;\n    :hasFather data:Edgar_Frank_Messenger .\n\ndata:Marion_Stein a :Ancestor,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,58 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felix_of_Denmark a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:Athena_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark .
+
+data:Female a :Sex .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string .
+
+data:Henrik_Prince_Consort a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:Athena_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark .
+
+data:Male a :Sex .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :hasSex "Female"^^xsd:string .
+
+data:Nikolai_of_Denmark a :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string ;
+    :isBrotherOf data:Athena_of_Monpezat ;
+    :isChildOf data:Joachim_of_Denmark .
+
+data:Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex "Female"^^xsd:string .
+
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
+    :hasBirthYear "2012"^^xsd:string ;
+    :hasSex "Female"^^xsd:string ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_of_Denmark ;
+    :knownAs "Countess Athena of Monpezat"^^xsd:string .
+
+data:Joachim_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex "Male"^^xsd:string .
+

@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexanderGeorgKarlHeinrich a :Man ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie .
+
+data:JohannaMarinaEleonore a :Woman ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie .
+
+data:LudwigErnstAndreas a :Man ;
+    :hasFather data:GeorgDonatus ;
+    :hasMother data:Cecilie .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Woman .
+
+data:Andrew a :Ancestor,
+        :Man .
+
+data:Eleonore a :Ancestor,
+        :Woman .
+
+data:ErnestLouis a :Ancestor,
+        :Man .
+
+data:Louis a :Man .
+
+data:GeorgDonatus a :Ancestor,
+        :Man ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Louis ;
+    :hasDeathYear 1937 ;
+    :hasFather data:ErnestLouis ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Eleonore ;
+    :hasRelation data:Cecilie ;
+    :knownAs "Georg Donatus, Hereditary Grand Duke of Hesse"^^xsd:string .
+
+data:Cecilie a :Ancestor,
+        :Woman ;
+    :hasFather data:Andrew ;
+    :hasMother data:AliceOfBattenberg .
+

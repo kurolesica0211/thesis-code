@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora_of_Greece .\n\ndata:Felipe_VI_of_Spain a :Man .\n\ndata:Ingrid_of_Denmark a :Woman .\n\ndata:Mafalda_of_Preslav a :Woman ;\n    :hasFather data:Kyril_of_Preslav .\n\ndata:Maria-Olympia_of_Greece a :Woman .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Kyril_of_Preslav a :Man ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Pavlos_of_Greece a :Man ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMother data:Anne-Marie_of_Greece .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora_of_Greece a :Woman ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMother data:Anne-Marie_of_Greece .\n\ndata:Anne-Marie_of_Greece a :Woman .\n\ndata:Constantine_II_of_Greece a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexia_of_Greece_and_Denmark a :Woman ;\n    :hasBirthYear 1965 ;\n    :hasBrother data:Pavlos_of_Greece ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMarriageYear 1999 ;\n    :hasMother data:Anne-Marie_of_Greece ;\n    :hasRelation data:Carlos_Javier_Morales_Quintana ;\n    :hasSister data:Theodora_of_Greece .\n\ndata:Felipe_VI_of_Spain a :Man .\n\ndata:Ingrid_of_Denmark a :Woman .\n\ndata:Mafalda_of_Preslav a :Woman ;\n    :hasFather data:Kyril_of_Preslav .\n\ndata:Maria-Olympia_of_Greece a :Woman .\n\ndata:Sofia_of_Spain a :Woman .\n\ndata:Carlos_Javier_Morales_Quintana a :Man .\n\ndata:Kyril_of_Preslav a :Man ;\n    :hasFather data:Simeon_of_Bulgaria .\n\ndata:Pavlos_of_Greece a :Man ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMother data:Anne-Marie_of_Greece .\n\ndata:Simeon_of_Bulgaria a :Man .\n\ndata:Theodora_of_Greece a :Woman ;\n    :hasFather data:Constantine_II_of_Greece ;\n    :hasMother data:Anne-Marie_of_Greece .\n\ndata:Anne-Marie_of_Greece a :Woman .\n\ndata:Constantine_II_of_Greece a :Man .\n\n"
+    }
+]

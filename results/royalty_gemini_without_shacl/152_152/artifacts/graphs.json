@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlessandroTorlonia a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person ;\n    :isFatherOf data:BeatrizOfSpain,\n        data:JuanCountOfBarcelona .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:CarlosOfBourbonTwoSicilies .\n\ndata:MariaDeLasMercedes a :Person,\n        :Woman ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 2000 ;\n    :hasFather data:CarlosOfBourbonTwoSicilies ;\n    :hasMother data:LouiseOfOrleans ;\n    :isMotherOf data:Elena,\n        data:JuanCarlosI .\n\ndata:PhilippeCountOfParis a :Man,\n        :Person ;\n    :isFatherOf data:LouiseOfOrleans .\n\ndata:VictoriaEugenie a :Person,\n        :Woman ;\n    :isMotherOf data:JuanCountOfBarcelona .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman ;\n    :isSisterOf data:JuanCountOfBarcelona .\n\ndata:Elena a :Person,\n        :Woman .\n\ndata:CarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:LouiseOfOrleans a :Person,\n        :Woman .\n\ndata:JuanCountOfBarcelona a :Man,\n        :Person ;\n    :isFatherOf data:JuanCarlosI .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AlessandroTorlonia a :Man,\n        :Person .\n\ndata:AlfonsoXIII a :Man,\n        :Person ;\n    :isFatherOf data:BeatrizOfSpain,\n        data:JuanCountOfBarcelona .\n\ndata:FerdinandII a :Man,\n        :Person ;\n    :isFatherOf data:CarlosOfBourbonTwoSicilies .\n\ndata:MariaDeLasMercedes a :Person,\n        :Woman ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 2000 ;\n    :hasFather data:CarlosOfBourbonTwoSicilies ;\n    :hasMother data:LouiseOfOrleans ;\n    :isMotherOf data:Elena,\n        data:JuanCarlosI .\n\ndata:PhilippeCountOfParis a :Man,\n        :Person ;\n    :isFatherOf data:LouiseOfOrleans .\n\ndata:VictoriaEugenie a :Person,\n        :Woman ;\n    :isMotherOf data:JuanCountOfBarcelona .\n\ndata:BeatrizOfSpain a :Person,\n        :Woman ;\n    :isSisterOf data:JuanCountOfBarcelona .\n\ndata:Elena a :Person,\n        :Woman .\n\ndata:CarlosOfBourbonTwoSicilies a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:LouiseOfOrleans a :Person,\n        :Woman .\n\ndata:JuanCountOfBarcelona a :Man,\n        :Person ;\n    :isFatherOf data:JuanCarlosI .\n\n"
+    }
+]

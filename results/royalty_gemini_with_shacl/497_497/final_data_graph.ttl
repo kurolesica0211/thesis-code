@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pedro_Luiz_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1983 ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Antonio_of_Orleans-Braganza ;
+    :hasMother data:Christine_of_Ligne .
+
+data:Alix_of_Luxembourg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+        :Man,
+        :Person .
+
+data:Antonio_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Maria_Elisabeth_of_Bavaria ;
+    :isBrotherOf data:Bertrand_of_Orleans-Braganza,
+        data:Luiz_of_Orleans-Braganza .
+
+data:Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Alix_of_Luxembourg .
+
+data:Luiz_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :isBrotherOf data:Bertrand_of_Orleans-Braganza .
+
+data:Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person .
+
+data:Bertrand_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person .
+

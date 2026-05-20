@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AntonyArmstrongJones a :Man,\n        :Person .\n\ndata:CeciliaBowesLyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrincessMargaret a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasChild data:David,\n        data:Sarah ;\n    :hasDeathYear 2002 ;\n    :hasFather data:KingGeorgeVI ;\n    :hasMarriageYear 1960 ;\n    :hasMother data:QueenElizabethTheQueenMother ;\n    :isSisterOf data:QueenElizabethII ;\n    :knownAs \"Margaret Rose\"^^xsd:string .\n\ndata:QueenElizabethII a :Person,\n        :Woman ;\n    :isSisterOf data:PrincessMargaret .\n\ndata:QueenElizabethTheQueenMother a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:QueenMary a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sarah a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:AntonyArmstrongJones a :Man,\n        :Person .\n\ndata:CeciliaBowesLyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:ClaudeBowesLyon a :Ancestor,\n        :Man,\n        :Person .\n\ndata:David a :Man,\n        :Person .\n\ndata:KingGeorgeV a :Ancestor,\n        :Man,\n        :Person .\n\ndata:KingGeorgeVI a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrincessMargaret a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasChild data:David,\n        data:Sarah ;\n    :hasDeathYear 2002 ;\n    :hasFather data:KingGeorgeVI ;\n    :hasMarriageYear 1960 ;\n    :hasMother data:QueenElizabethTheQueenMother ;\n    :isSisterOf data:QueenElizabethII ;\n    :knownAs \"Margaret Rose\"^^xsd:string .\n\ndata:QueenElizabethII a :Person,\n        :Woman ;\n    :isSisterOf data:PrincessMargaret .\n\ndata:QueenElizabethTheQueenMother a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasFather data:ClaudeBowesLyon ;\n    :hasMother data:CeciliaBowesLyon .\n\ndata:QueenMary a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Sarah a :Person,\n        :Woman .\n\n"
+    }
+]

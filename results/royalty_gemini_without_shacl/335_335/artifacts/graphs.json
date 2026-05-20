@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alicia a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld .\n\ndata:Christina a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Irene a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Jonathan_Aitken a :Man ;\n    :isSonOf data:Prince_Bernhard_of_Lippe-Biesterfeld .\n\ndata:Margriet a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Queen_Beatrix a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Baroness_Armgard_von_Sierstorpff-Cramm a :Woman .\n\ndata:Prince_Bernhard_of_Lippe a :Man .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Prince_Bernhard_of_Lippe ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;\n    :hasRelation data:Queen_Juliana .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alicia a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld .\n\ndata:Christina a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Irene a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Jonathan_Aitken a :Man ;\n    :isSonOf data:Prince_Bernhard_of_Lippe-Biesterfeld .\n\ndata:Margriet a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Queen_Beatrix a :Woman ;\n    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,\n        data:Queen_Juliana .\n\ndata:Baroness_Armgard_von_Sierstorpff-Cramm a :Woman .\n\ndata:Prince_Bernhard_of_Lippe a :Man .\n\ndata:Queen_Juliana a :Woman .\n\ndata:Prince_Bernhard_of_Lippe-Biesterfeld a :Man ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 2004 ;\n    :hasFather data:Prince_Bernhard_of_Lippe ;\n    :hasMarriageYear 1937 ;\n    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;\n    :hasRelation data:Queen_Juliana .\n\n"
+    }
+]

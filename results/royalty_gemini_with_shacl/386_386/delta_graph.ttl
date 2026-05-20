@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Paul_Frederick_of_Mecklenburg .
+
+data:Henry_LXIII_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Hugo_of_Windisch-Graetz a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Marie_of_Windisch-Graetz .
+
+data:Louise_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Marie_of_Windisch-Graetz .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Paul_Frederick_of_Mecklenburg .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Male a :Sex .
+
+data:Paul_Frederick_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear "1852"^^xsd:string ;
+    :hasDeathYear "1923"^^xsd:string ;
+    :hasMarriageYear "1881"^^xsd:string ;
+    :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_of_Windisch-Graetz ;
+    :hasSex data:Male .
+
+data:Marie_of_Windisch-Graetz a :Person,
+        :Woman .
+

@@ -1,0 +1,72 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/466_466",
+  "text_file": "Q7740003.txt",
+  "text_key": "Q7740003",
+  "article": "https://en.wikipedia.org/wiki/Leo_L%C3%B6wenstein",
+  "article_key": "Leo Löwenstein",
+  "main_entity": {
+    "uri": "http://example.com/data#Leo_Löwenstein",
+    "qid": "Q7740003",
+    "label": "Leo Löwenstein"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Leo_Löwenstein",
+      "qid": "Q7740003",
+      "label": "Leo Löwenstein",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg",
+      "qid": "Q104235",
+      "label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "extracted_local_name": "Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "embedding_text": "Alois-Konstantin Prince of Löwenstein-Wertheim-Rosenberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9893617021276595,
+      "ground_truth_uri": "http://example.com/data#Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg",
+      "ground_truth_qid": "Q104235",
+      "ground_truth_label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_qid": "Q104235",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9893617021276595
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria",
+      "extracted_local_name": "Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria",
+      "embedding_text": "Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Leo Löwenstein",
+      "best_candidate_label": "Leo Löwenstein",
+      "best_candidate_qid": "Q7740003",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.15384615384615385
+    }
+  ],
+  "summary": {
+    "entities_total": 2,
+    "entities_matched": 1,
+    "entities_unmatched": 1
+  }
+}

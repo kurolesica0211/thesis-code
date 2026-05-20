@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_Alphons_Ludgerus_Brenninkmeijer a :Man ;
+    :hasBirthYear 1974 .
+
+data:Princess_Carolina_of_Bourbon-Parma a :Woman ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :hasSister data:Princess_Margarita .
+
+data:Carlos_Hugo_Duke_of_Parma a :Man .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man .
+
+data:Prince_Carlos a :Man .
+
+data:Prince_Jaime a :Man .
+
+data:Princess_Irene_of_the_Netherlands a :Woman ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands .
+
+data:Princess_Margarita a :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Woman .
+

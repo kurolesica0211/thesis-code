@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/258_258",
+  "text_file": "Q3387469.txt",
+  "text_key": "Q3387469",
+  "article": "https://en.wikipedia.org/wiki/Prince_Pedro,_Duke_of_Calabria",
+  "article_key": "Prince Pedro, Duke of Calabria",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Pedro-_Duke_of_Calabria",
+    "qid": "Q3387469",
+    "label": "Prince Pedro, Duke of Calabria"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Pedro-_Duke_of_Calabria",
+      "qid": "Q3387469",
+      "label": "Prince Pedro, Duke of Calabria",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "qid": "Q526743",
+      "label": "Infante Carlos, Duke of Calabria",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo",
+      "qid": "Q75317760",
+      "label": "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Sofía_Landaluce_y_Melgarejo",
+      "qid": "Q65031050",
+      "label": "Sofía Landaluce y Melgarejo",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Sofia_Landaluce_y_Melgarejo",
+      "extracted_local_name": "Sofia_Landaluce_y_Melgarejo",
+      "embedding_text": "Sofia Landaluce y Melgarejo",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9629629629629629,
+      "ground_truth_uri": "http://example.com/data#Sofía_Landaluce_y_Melgarejo",
+      "ground_truth_qid": "Q65031050",
+      "ground_truth_label": "Sofía Landaluce y Melgarejo",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Sofía Landaluce y Melgarejo",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9629629629629629
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carlos_Duke_of_Calabria",
+      "extracted_local_name": "Carlos_Duke_of_Calabria",
+      "embedding_text": "Carlos Duke of Calabria",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8548387096774194,
+      "ground_truth_uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "ground_truth_qid": "Q526743",
+      "ground_truth_label": "Infante Carlos, Duke of Calabria",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Infante Carlos- Duke of Calabria",
+      "best_candidate_label": "Infante Carlos, Duke of Calabria",
+      "best_candidate_qid": "Q526743",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8548387096774194
+    },
+    {
+      "extracted_uri": "http://example.org/data/Anne_of_Orl%C3%A9ans",
+      "extracted_local_name": "Anne_of_Orl%C3%A9ans",
+      "embedding_text": "Anne of Orléans",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofia Landaluce y Melgareja",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.3333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jose_Manuel_Landaluce_y_Dominguez",
+      "extracted_local_name": "Jose_Manuel_Landaluce_y_Dominguez",
+      "embedding_text": "Jose Manuel Landaluce y Dominguez",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Jaime de Borbón y Landaluce",
+      "best_candidate_label": "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo",
+      "best_candidate_qid": "Q75317760",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4666666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez",
+      "extracted_local_name": "Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez",
+      "embedding_text": "Maria de las Nieves Blanca Melgarejo y Gonzalez",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofia Landaluce y Melgareja",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4594594594594595
+    },
+    {
+      "extracted_uri": "http://example.org/data/Pedro_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Pedro_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Pedro of Bourbon-Two Sicilies",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Jaime di Borbone-Due Sicilie",
+      "best_candidate_label": "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo",
+      "best_candidate_qid": "Q75317760",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.631578947368421
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

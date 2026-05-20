@@ -1,0 +1,97 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/15_15",
+  "text_file": "Q1076063.txt",
+  "text_key": "Q1076063",
+  "article": "https://en.wikipedia.org/wiki/Princess_Ariane_of_the_Netherlands",
+  "article_key": "Princess Ariane of the Netherlands",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Ariane_of_the_Netherlands",
+    "qid": "Q1076063",
+    "label": "Princess Ariane of the Netherlands"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Ariane_of_the_Netherlands",
+      "qid": "Q1076063",
+      "label": "Princess Ariane of the Netherlands",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Máxima_of_the_Netherlands",
+      "qid": "Q460960",
+      "label": "Queen Máxima of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#William_Alexander_of_the_Netherlands",
+      "qid": "Q154952",
+      "label": "William Alexander of the Netherlands",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/King_Willem-Alexander",
+      "extracted_local_name": "King_Willem-Alexander",
+      "embedding_text": "King Willem-Alexander",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#William_Alexander_of_the_Netherlands",
+      "ground_truth_qid": "Q154952",
+      "ground_truth_label": "William Alexander of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "King Willem-Alexander",
+      "best_candidate_label": "William Alexander of the Netherlands",
+      "best_candidate_qid": "Q154952",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_M%C3%A1xima",
+      "extracted_local_name": "Queen_M%C3%A1xima",
+      "embedding_text": "Queen Máxima",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.6666666666666666,
+      "ground_truth_uri": "http://example.com/data#Queen_Máxima_of_the_Netherlands",
+      "ground_truth_qid": "Q460960",
+      "ground_truth_label": "Queen Máxima of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Máxima",
+      "best_candidate_label": "Queen Máxima of the Netherlands",
+      "best_candidate_qid": "Q460960",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6666666666666666
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Ariane",
+      "extracted_local_name": "Princess_Ariane",
+      "embedding_text": "Princess Ariane",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ariane van Amsberg",
+      "best_candidate_label": "Princess Ariane of the Netherlands",
+      "best_candidate_qid": "Q1076063",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.36363636363636365
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

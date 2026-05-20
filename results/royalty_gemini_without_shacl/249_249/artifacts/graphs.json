@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Otto_Heinrich a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Rudolf_of_Hanover ;\n    :hasMother data:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli .\n\ndata:Ariprand_von_Thurn_und_Valsassina_Como_Vercelli a :Man,\n        :Person .\n\ndata:Ernst_August_Brother a :Man,\n        :Person .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Ludwig_Rudolf_of_Hanover a :Man,\n        :Person ;\n    :hasBirthYear 1955 ;\n    :hasBrother data:Ernst_August_Brother ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg ;\n    :hasRelation data:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli .\n\ndata:Maria_Perpetua_Euphemia_von_Auersperg a :Person,\n        :Woman .\n\ndata:Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg a :Person,\n        :Woman .\n\ndata:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli a :Person,\n        :Woman ;\n    :hasBirthYear 1962 ;\n    :hasFather data:Ariprand_von_Thurn_und_Valsassina_Como_Vercelli ;\n    :hasMother data:Maria_Perpetua_Euphemia_von_Auersperg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Otto_Heinrich a :Man,\n        :Person ;\n    :hasFather data:Ludwig_Rudolf_of_Hanover ;\n    :hasMother data:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli .\n\ndata:Ariprand_von_Thurn_und_Valsassina_Como_Vercelli a :Man,\n        :Person .\n\ndata:Ernst_August_Brother a :Man,\n        :Person .\n\ndata:Ernst_August_Prince_of_Hanover a :Man,\n        :Person .\n\ndata:Ludwig_Rudolf_of_Hanover a :Man,\n        :Person ;\n    :hasBirthYear 1955 ;\n    :hasBrother data:Ernst_August_Brother ;\n    :hasDeathYear 1988 ;\n    :hasFather data:Ernst_August_Prince_of_Hanover ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg ;\n    :hasRelation data:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli .\n\ndata:Maria_Perpetua_Euphemia_von_Auersperg a :Person,\n        :Woman .\n\ndata:Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg a :Person,\n        :Woman .\n\ndata:Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli a :Person,\n        :Woman ;\n    :hasBirthYear 1962 ;\n    :hasFather data:Ariprand_von_Thurn_und_Valsassina_Como_Vercelli ;\n    :hasMother data:Maria_Perpetua_Euphemia_von_Auersperg .\n\n"
+    }
+]

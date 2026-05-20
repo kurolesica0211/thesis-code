@@ -1,0 +1,45 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_BrotherOfErnestAugustus a :Man,
+        :Person ;
+    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .
+
+data:ErnestAugustus_SonOfDukeOfBrunswick a :Man,
+        :Person ;
+    :hasFather data:ErnestAugustus_DukeOfBrunswick ;
+    :hasMother data:VictoriaLouise_PrincessOfPrussia .
+
+data:Frederica_Princess a :Person,
+        :Woman ;
+    :hasFather data:ErnestAugustus_DukeOfBrunswick ;
+    :hasMother data:VictoriaLouise_PrincessOfPrussia ;
+    :hasRelation data:Paul_PrinceOfGreece .
+
+data:George_BrotherOfErnestAugustus a :Man,
+        :Person ;
+    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .
+
+data:ErnestAugustus_CrownPrinceOfHanover a :Man,
+        :Person .
+
+data:Paul_PrinceOfGreece a :Man,
+        :Person .
+
+data:Thyra_PrincessOfDenmark a :Person,
+        :Woman .
+
+data:VictoriaLouise_PrincessOfPrussia a :Person,
+        :Woman .
+
+data:ErnestAugustus_DukeOfBrunswick a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ErnestAugustus_CrownPrinceOfHanover ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Thyra_PrincessOfDenmark ;
+    :hasRelation data:VictoriaLouise_PrincessOfPrussia ;
+    :knownAs "Ernest Augustus Christian George"^^xsd:string .
+

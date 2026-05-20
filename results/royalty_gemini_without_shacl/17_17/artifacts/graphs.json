@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Albert_Charles_Armstrong-Jones a :Man ;\n    :hasBirthYear 1961 ;\n    :hasChild data:Lady_Margarita_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasSister data:Lady_Sarah_Chatto .\n\ndata:Serena_Alleyne_Stanhope a :Woman ;\n    :hasBirthYear 1970 .\n\ndata:Antony_Armstrong-Jones a :Man ;\n    :isFatherOf data:Lady_Frances_von_Hofmannsthal,\n        data:Polly_Fry .\n\ndata:Lady_Frances_von_Hofmannsthal a :Woman .\n\ndata:Lady_Margarita_Armstrong-Jones a :Woman .\n\ndata:Lady_Sarah_Chatto a :Woman .\n\ndata:Polly_Fry a :Woman .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Albert_Charles_Armstrong-Jones a :Man ;\n    :hasBirthYear 1961 ;\n    :hasChild data:Lady_Margarita_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret ;\n    :hasSister data:Lady_Sarah_Chatto .\n\ndata:Serena_Alleyne_Stanhope a :Woman ;\n    :hasBirthYear 1970 .\n\ndata:Antony_Armstrong-Jones a :Man ;\n    :isFatherOf data:Lady_Frances_von_Hofmannsthal,\n        data:Polly_Fry .\n\ndata:Lady_Frances_von_Hofmannsthal a :Woman .\n\ndata:Lady_Margarita_Armstrong-Jones a :Woman .\n\ndata:Lady_Sarah_Chatto a :Woman .\n\ndata:Polly_Fry a :Woman .\n\ndata:Princess_Margaret a :Woman .\n\n"
+    }
+]

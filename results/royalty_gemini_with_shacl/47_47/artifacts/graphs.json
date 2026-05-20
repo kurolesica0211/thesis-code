@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear data:2010 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "73b9bd78-1152-41d4-974f-b53efd8cbde6",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear \"2010\"^^xsd:nonNegativeInteger .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 6,
+        "source": "validate_shacl",
+        "tool_call_id": "5be5c3ca-d858-4e7d-9d54-abcaa0112812",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear \"2010\"^^xsd:nonNegativeInteger .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+    }
+]

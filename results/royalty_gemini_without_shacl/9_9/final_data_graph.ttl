@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingCharlesIII a :Man,
+        :Person .
+
+data:JackBrooksbank a :Man,
+        :Person ;
+    :hasSon data:AugustBrooksbank,
+        data:ErnestBrooksbank .
+
+data:PrincessBeatrice a :Person,
+        :Woman ;
+    :hasFather data:AndrewMountbattenWindsor ;
+    :hasMother data:SarahFerguson ;
+    :isSisterOf data:PrincessEugenie .
+
+data:PrincessEugenie a :Person,
+        :Woman ;
+    :hasBirthYear 1990 ;
+    :hasFather data:AndrewMountbattenWindsor ;
+    :hasMarriageYear data:JackBrooksbank,
+        2018 ;
+    :hasMother data:SarahFerguson ;
+    :hasSister data:PrincessBeatrice ;
+    :hasSon data:AugustBrooksbank,
+        data:ErnestBrooksbank .
+
+data:AndrewMountbattenWindsor a :Man,
+        :Person .
+
+data:AugustBrooksbank a :Man,
+        :Person .
+
+data:ErnestBrooksbank a :Man,
+        :Person .
+
+data:SarahFerguson a :Person,
+        :Woman .
+

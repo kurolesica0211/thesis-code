@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Catherine_Princess_of_Wales a :Person,\n        :Woman .\n\ndata:Diana_Princess_of_Wales a :Person,\n        :Woman .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_George a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Louis_of_Wales .\n\ndata:Prince_William a :Man,\n        :Person ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\ndata:Princess_Charlotte a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Louis_of_Wales .\n\ndata:Prince_Louis_of_Wales a :Man,\n        :Person ;\n    :hasBirthYear 2018 ;\n    :hasBrother data:Prince_George ;\n    :hasFather data:Prince_William ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :hasSister data:Princess_Charlotte .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Catherine_Princess_of_Wales a :Person,\n        :Woman .\n\ndata:Diana_Princess_of_Wales a :Person,\n        :Woman .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Prince_George a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Louis_of_Wales .\n\ndata:Prince_William a :Man,\n        :Person ;\n    :hasFather data:King_Charles_III ;\n    :hasMother data:Diana_Princess_of_Wales .\n\ndata:Princess_Charlotte a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Louis_of_Wales .\n\ndata:Prince_Louis_of_Wales a :Man,\n        :Person ;\n    :hasBirthYear 2018 ;\n    :hasBrother data:Prince_George ;\n    :hasFather data:Prince_William ;\n    :hasMother data:Catherine_Princess_of_Wales ;\n    :hasSister data:Princess_Charlotte .\n\n"
+    }
+]

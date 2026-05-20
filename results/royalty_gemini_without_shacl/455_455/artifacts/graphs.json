@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Ferdinand_of_Windisch-Graetz a :Man,\n        :Person ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :hasMother data:Sophie_Habsburg .\n\ndata:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,\n        :Person .\n\ndata:Countess_Helene_of_Torring-Jettenbach a :Person,\n        :Woman ;\n    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .\n\ndata:Princess_Elizabeth_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Sophie_Habsburg a :Person,\n        :Woman ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;\n    :hasMother data:Countess_Helene_of_Torring-Jettenbach ;\n    :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :knownAs data:Archduchess_Sophie_of_Austria .\n\ndata:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Ferdinand_of_Windisch-Graetz a :Man,\n        :Person ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :hasMother data:Sophie_Habsburg .\n\ndata:Archduchess_Sophie_of_Austria a :Person .\n\ndata:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,\n        :Person .\n\ndata:Countess_Helene_of_Torring-Jettenbach a :Person,\n        :Woman ;\n    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .\n\ndata:Princess_Elizabeth_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Sophie_Habsburg a :Person,\n        :Woman ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;\n    :hasMother data:Countess_Helene_of_Torring-Jettenbach ;\n    :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :knownAs data:Archduchess_Sophie_of_Austria .\n\ndata:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexis_Ferdinand_of_Windisch-Graetz a :Man,\n        :Person ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :hasMother data:Sophie_Habsburg .\n\ndata:Archduchess_Sophie_of_Austria a :Person .\n\ndata:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,\n        :Person .\n\ndata:Countess_Helene_of_Torring-Jettenbach a :Person,\n        :Woman ;\n    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .\n\ndata:Princess_Elizabeth_of_Greece_and_Denmark a :Person,\n        :Woman .\n\ndata:Sophie_Habsburg a :Person,\n        :Woman ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;\n    :hasMother data:Countess_Helene_of_Torring-Jettenbach ;\n    :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;\n    :knownAs data:Archduchess_Sophie_of_Austria .\n\ndata:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,\n        :Person .\n\n"
+    }
+]

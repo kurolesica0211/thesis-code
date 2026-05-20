@@ -1,0 +1,20 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Tatiana_Mountbatten a :Person,
+        :Woman ;
+    :hasBirthYear 1990 ;
+    :hasBrother data:Henry_Mountbatten ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Sarah_Georgina_Walker .
+
+data:George_Mountbatten a :Man,
+        :Person .
+
+data:Henry_Mountbatten a :Man,
+        :Person .
+
+data:Sarah_Georgina_Walker a :Person,
+        :Woman .
+

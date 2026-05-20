@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne_Duchess_of_Calabria a :Person,\n        :Woman ;\n    :isSisterOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Diane_Duchess_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :isSisterOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Henri_Count_of_Paris_II a :Man,\n        :Person ;\n    :isBrotherOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Aimone_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Amedeo_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Aimone_Duke_of_Aosta .\n\ndata:Enrico_Gandolfi a :Man,\n        :Person .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman .\n\ndata:Luigi_Arnaldo_La_Cagnina a :Man,\n        :Person .\n\ndata:Claude_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1964,\n        1982,\n        2006 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Amedeo_Duke_of_Aosta,\n        data:Enrico_Gandolfi,\n        data:Luigi_Arnaldo_La_Cagnina .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne_Duchess_of_Calabria a :Person,\n        :Woman ;\n    :isSisterOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Diane_Duchess_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :isSisterOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Henri_Count_of_Paris_II a :Man,\n        :Person ;\n    :isBrotherOf data:Claude_of_Orl%C3%A9ans .\n\ndata:Aimone_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Amedeo_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Aimone_Duke_of_Aosta .\n\ndata:Enrico_Gandolfi a :Man,\n        :Person .\n\ndata:Henri_Count_of_Paris a :Man,\n        :Person .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Person,\n        :Woman .\n\ndata:Luigi_Arnaldo_La_Cagnina a :Man,\n        :Person .\n\ndata:Claude_of_Orl%C3%A9ans a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1964,\n        1982,\n        2006 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Amedeo_Duke_of_Aosta,\n        data:Enrico_Gandolfi,\n        data:Luigi_Arnaldo_La_Cagnina .\n\n"
+    }
+]

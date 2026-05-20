@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Peter_Ferdinand_of_Austria ;
+    :hasMarriageYear 1928 ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .
+
+data:Albrecht_of_W%C3%BCrttemberg a :Man,
+        :Person .
+
+data:Margarete_Sophie_of_Austria a :Person,
+        :Woman .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Peter_Ferdinand_of_Austria a :Man,
+        :Person .
+
+data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria .
+

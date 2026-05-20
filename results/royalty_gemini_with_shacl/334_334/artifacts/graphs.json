@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Duke_Frederick_Francis ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Christian_X ;\n    :hasSex data:Female ;\n    :hasSister data:Duchess_Cecilie .\n\ndata:Anastasia_Mikhailovna a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Christian_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Duchess_Cecilie a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Duke_Frederick_Francis a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_III a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "b3ea9e67-60de-474d-ad25-a302f40d2f0e",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anastasia_Mikhailovna> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anastasia_Mikhailovna> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anastasia_Mikhailovna> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Frederick_Francis_III> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Frederick_Francis_III> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Frederick_Francis_III> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "8af789e4-c10f-4ea3-a694-4c05d1f16e63",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Duke_Frederick_Francis ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Christian_X ;\n    :hasSex data:Female ;\n    :hasSister data:Duchess_Cecilie .\n\ndata:Anastasia_Mikhailovna a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Christian_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Duchess_Cecilie a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Duke_Frederick_Francis a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_III a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "8af789e4-c10f-4ea3-a694-4c05d1f16e63",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Person,\n        :Woman ;\n    :hasBirthYear 1879 ;\n    :hasBrother data:Duke_Frederick_Francis ;\n    :hasDeathYear 1952 ;\n    :hasFather data:Frederick_Francis_III ;\n    :hasMarriageYear 1898 ;\n    :hasMother data:Anastasia_Mikhailovna ;\n    :hasRelation data:Christian_X ;\n    :hasSex data:Female ;\n    :hasSister data:Duchess_Cecilie .\n\ndata:Anastasia_Mikhailovna a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Christian_X a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Duchess_Cecilie a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Duke_Frederick_Francis a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Frederick_Francis_III a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

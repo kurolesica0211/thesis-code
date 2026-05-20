@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_Murat a :Woman ;
+    :hasMother data:Pierre_Murat .
+
+data:Louis_Philippe_I a :Man .
+
+data:Aimone_of_Savoy-Aosta a :Man .
+
+data:Alexandra_of_Greece a :Woman .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man ;
+    :isFatherOf data:George_I_of_Greece .
+
+data:Marina_Karella a :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Christopher_of_Greece .
+
+data:Olga_of_Greece a :Woman ;
+    :hasRelation data:Aimone_of_Savoy-Aosta .
+
+data:Pierre_Murat a :Ancestor,
+        :Woman .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Christopher_of_Greece .
+
+data:Isabelle_dOrleans a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Francoise_dOrleans,
+        data:Henri_dOrleans .
+
+data:Jean_dOrleans a :Ancestor,
+        :Man ;
+    :isFatherOf data:Francoise_dOrleans,
+        data:Henri_dOrleans .
+
+data:Michael_of_Greece a :Man ;
+    :hasFather data:Christopher_of_Greece ;
+    :hasMother data:Francoise_dOrleans ;
+    :hasRelation data:Marina_Karella .
+
+data:Francoise_dOrleans a :Ancestor,
+        :Woman ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie"^^xsd:string ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Henri_dOrleans ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Jean_dOrleans ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Isabelle_dOrleans ;
+    :hasRelation data:Christopher_of_Greece ;
+    :isMotherOf data:Alexandra_of_Greece,
+        data:Michael_of_Greece,
+        data:Olga_of_Greece .
+
+data:Henri_dOrleans a :Man ;
+    :hasFather data:Jean_dOrleans ;
+    :hasMother data:Isabelle_dOrleans .
+
+data:Christopher_of_Greece a :Ancestor,
+        :Man ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1940 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Michael_of_Greece .
+

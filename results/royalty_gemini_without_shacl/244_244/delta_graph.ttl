@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Baron_Mount_Temple a :Man,
+        :Person ;
+    :isFatherOf data:Edwina_Ashley .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:Prince_Louis_of_Battenberg a :Man,
+        :Person ;
+    :isFatherOf data:Louis_Mountbatten .
+
+data:Princess_Victoria_of_Hesse a :Person,
+        :Woman ;
+    :isMotherOf data:Louis_Mountbatten .
+
+data:David_Nightingale_Hicks a :Man,
+        :Person ;
+    :hasBirthYear 1929 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten .
+
+data:Herbert_Hicks a :Man,
+        :Person .
+
+data:Iris_Elsie_Platten a :Person,
+        :Woman .
+
+data:Edwina_Ashley a :Person,
+        :Woman .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman ;
+    :hasBirthYear 1929 ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley .
+
+data:Louis_Mountbatten a :Man,
+        :Person .
+

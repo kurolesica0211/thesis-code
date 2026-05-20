@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear "1942"^^xsd:int ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasDeathYear "2026"^^xsd:int ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasSister data:Sofia_of_Spain .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Sofia_of_Spain a :Person,
+        :Woman .
+

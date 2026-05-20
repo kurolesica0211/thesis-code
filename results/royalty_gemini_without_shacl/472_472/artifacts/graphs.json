@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Nicolau_de_Almeida_Reid a :Person,\n        :Woman .\n\ndata:Francesca_Thyssen-Bornemisza a :Person,\n        :Woman ;\n    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;\n    :hasMother data:Fiona_Frances_Elaine_Campbell-Walter .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasAncestor data:Charles_I ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear 1993,\n        2022 ;\n    :hasMother data:Regina_von_Sachsen-Meiningen .\n\ndata:Charles_I a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_von_Sachsen-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_Nicolau_de_Almeida_Reid a :Person,\n        :Woman .\n\ndata:Francesca_Thyssen-Bornemisza a :Person,\n        :Woman ;\n    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;\n    :hasMother data:Fiona_Frances_Elaine_Campbell-Walter .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasAncestor data:Charles_I ;\n    :hasBirthYear 1961 ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear 1993,\n        2022 ;\n    :hasMother data:Regina_von_Sachsen-Meiningen .\n\ndata:Charles_I a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_von_Sachsen-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AriprandVonThurnUndValsassinaComoVercelli a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+
+data:ErnstAugustElderBrother a :Man,
+        :Person ;
+    :isBrotherOf data:LudwigRudolfOfHanover .
+
+data:ErnstAugustPrinceOfHanover a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:LudwigRudolfOfHanover .
+
+data:MariaPerpetuaEuphemiaVonAuersperg a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+
+data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:LudwigRudolfOfHanover .
+
+data:OttoHeinrich a :Man,
+        :Person ;
+    :isSonOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli,
+        data:LudwigRudolfOfHanover .
+
+data:Female a :Sex .
+
+data:Male a :Male .
+
+data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:LudwigRudolfOfHanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasDeathYear 1988 ;
+    :hasMarriageYear 1987 ;
+    :hasRelation data:IsabellaMariaVonThurnUndValsassinaComoVercelli ;
+    :hasSex data:Male .
+

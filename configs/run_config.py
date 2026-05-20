@@ -49,7 +49,7 @@ class OutputConfig(BaseModel):
 
 
 class DatasetConfig(BaseModel):
-    source: Literal["custom_family_bench"] = "custom_family_bench"
+    source: Literal["custom_family_bench", "bernhard"] = "custom_family_bench"
 
 
 class RunConfig(BaseModel):

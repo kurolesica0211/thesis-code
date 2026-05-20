@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Victoria_Eugenie_of_Battenberg a :Woman ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Prince_Maurice_of_Battenberg .
+
+data:Albert_Prince_Consort a :Man .
+
+data:Julie_Therese_Countess_of_Hauke a :Woman .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man .
+
+data:Prince_Maurice_of_Battenberg a :Man ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Queen_Victoria a :Woman .
+
+data:Prince_Henry_of_Battenberg a :Man ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Therese_Countess_of_Hauke .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Woman ;
+    :hasFather data:Albert_Prince_Consort ;
+    :hasMother data:Queen_Victoria .
+

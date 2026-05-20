@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_BrotherOfErnestAugustus a :Man,\n        :Person ;\n    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .\n\ndata:ErnestAugustus_SonOfDukeOfBrunswick a :Man,\n        :Person ;\n    :hasFather data:ErnestAugustus_DukeOfBrunswick ;\n    :hasMother data:VictoriaLouise_PrincessOfPrussia .\n\ndata:Frederica_Princess a :Person,\n        :Woman ;\n    :hasFather data:ErnestAugustus_DukeOfBrunswick ;\n    :hasMother data:VictoriaLouise_PrincessOfPrussia ;\n    :hasRelation data:Paul_PrinceOfGreece .\n\ndata:George_BrotherOfErnestAugustus a :Man,\n        :Person ;\n    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .\n\ndata:ErnestAugustus_CrownPrinceOfHanover a :Man,\n        :Person .\n\ndata:Paul_PrinceOfGreece a :Man,\n        :Person .\n\ndata:Thyra_PrincessOfDenmark a :Person,\n        :Woman .\n\ndata:VictoriaLouise_PrincessOfPrussia a :Person,\n        :Woman .\n\ndata:ErnestAugustus_DukeOfBrunswick a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ErnestAugustus_CrownPrinceOfHanover ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_PrincessOfDenmark ;\n    :hasRelation data:VictoriaLouise_PrincessOfPrussia ;\n    :knownAs \"Ernest Augustus Christian George\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian_BrotherOfErnestAugustus a :Man,\n        :Person ;\n    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .\n\ndata:ErnestAugustus_SonOfDukeOfBrunswick a :Man,\n        :Person ;\n    :hasFather data:ErnestAugustus_DukeOfBrunswick ;\n    :hasMother data:VictoriaLouise_PrincessOfPrussia .\n\ndata:Frederica_Princess a :Person,\n        :Woman ;\n    :hasFather data:ErnestAugustus_DukeOfBrunswick ;\n    :hasMother data:VictoriaLouise_PrincessOfPrussia ;\n    :hasRelation data:Paul_PrinceOfGreece .\n\ndata:George_BrotherOfErnestAugustus a :Man,\n        :Person ;\n    :isBrotherOf data:ErnestAugustus_DukeOfBrunswick .\n\ndata:ErnestAugustus_CrownPrinceOfHanover a :Man,\n        :Person .\n\ndata:Paul_PrinceOfGreece a :Man,\n        :Person .\n\ndata:Thyra_PrincessOfDenmark a :Person,\n        :Woman .\n\ndata:VictoriaLouise_PrincessOfPrussia a :Person,\n        :Woman .\n\ndata:ErnestAugustus_DukeOfBrunswick a :Man,\n        :Person ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1953 ;\n    :hasFather data:ErnestAugustus_CrownPrinceOfHanover ;\n    :hasMarriageYear 1913 ;\n    :hasMother data:Thyra_PrincessOfDenmark ;\n    :hasRelation data:VictoriaLouise_PrincessOfPrussia ;\n    :knownAs \"Ernest Augustus Christian George\"^^xsd:string .\n\n"
+    }
+]

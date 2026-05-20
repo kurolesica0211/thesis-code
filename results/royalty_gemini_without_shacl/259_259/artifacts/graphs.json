@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia ;\n    :hasSex \"Female\"^^xsd:string .\n\ndata:Berthold_Margrave_of_Baden a :Man,\n        :Person ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasSex \"Female\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margarita_of_Baden a :Person,\n        :Woman ;\n    :hasBirthYear 1932 ;\n    :hasBrother data:Prince_Maximilian ;\n    :hasDeathYear 2013 ;\n    :hasFather data:Berthold_Margrave_of_Baden ;\n    :hasMarriageYear 1957 ;\n    :hasMother data:Theodora_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Tomislav_of_Yugoslavia ;\n    :hasSex \"Female\"^^xsd:string .\n\ndata:Berthold_Margrave_of_Baden a :Man,\n        :Person ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Prince_Maximilian a :Man,\n        :Person .\n\ndata:Prince_Tomislav_of_Yugoslavia a :Man,\n        :Person .\n\ndata:Theodora_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :hasSex \"Female\"^^xsd:string .\n\n"
+    }
+]

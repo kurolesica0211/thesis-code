@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Friedrich_Wilhelm a :Man ;\n    :isSonOf data:Prince_Ernst_August_of_Lippe .\n\ndata:Christa_von_Arnim a :Woman .\n\ndata:Duchess_Marie_of_Mecklenburg_Strelitz a :Woman .\n\ndata:Prince_Ernst_August_of_Lippe a :Man ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Prince_Julius_Ernst_of_Lippe ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Duchess_Marie_of_Mecklenburg_Strelitz ;\n    :hasRelation data:Christa_von_Arnim .\n\ndata:Prince_Julius_Ernst_of_Lippe a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Friedrich_Wilhelm a :Man ;\n    :isSonOf data:Prince_Ernst_August_of_Lippe .\n\ndata:Christa_von_Arnim a :Woman .\n\ndata:Duchess_Marie_of_Mecklenburg_Strelitz a :Woman .\n\ndata:Prince_Ernst_August_of_Lippe a :Man ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1990 ;\n    :hasFather data:Prince_Julius_Ernst_of_Lippe ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Duchess_Marie_of_Mecklenburg_Strelitz ;\n    :hasRelation data:Christa_von_Arnim .\n\ndata:Prince_Julius_Ernst_of_Lippe a :Man .\n\n"
+    }
+]

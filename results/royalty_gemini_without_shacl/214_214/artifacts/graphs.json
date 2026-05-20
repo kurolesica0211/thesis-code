@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Charlotte_of_Prussia a :Woman ;\n    :hasBirthYear 1860 ;\n    :hasDeathYear 1919 ;\n    :isDaughterOf data:Prince_Frederick_Wilhelm_of_Prussia,\n        data:Princess_Victoria_Princess_Royal .\n\ndata:Wilhelm_II a :Man ;\n    :hasBirthYear 1859 ;\n    :hasDeathYear 1941 ;\n    :isSonOf data:Prince_Frederick_Wilhelm_of_Prussia,\n        data:Princess_Victoria_Princess_Royal .\n\ndata:Queen_Victoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Prince_Albert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_Princess_Royal a :Woman ;\n    :hasBirthYear 1840 ;\n    :hasDeathYear 1901 ;\n    :hasRelation data:Prince_Frederick_Wilhelm_of_Prussia ;\n    :isDaughterOf data:Prince_Albert,\n        data:Queen_Victoria ;\n    :knownAs \"Vicky\"^^xsd:string .\n\ndata:Prince_Frederick_Wilhelm_of_Prussia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Charlotte_of_Prussia a :Woman ;\n    :hasBirthYear 1860 ;\n    :hasDeathYear 1919 ;\n    :isDaughterOf data:Prince_Frederick_Wilhelm_of_Prussia,\n        data:Princess_Victoria_Princess_Royal .\n\ndata:Wilhelm_II a :Man ;\n    :hasBirthYear 1859 ;\n    :hasDeathYear 1941 ;\n    :isSonOf data:Prince_Frederick_Wilhelm_of_Prussia,\n        data:Princess_Victoria_Princess_Royal .\n\ndata:Queen_Victoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Prince_Albert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_Princess_Royal a :Woman ;\n    :hasBirthYear 1840 ;\n    :hasDeathYear 1901 ;\n    :hasRelation data:Prince_Frederick_Wilhelm_of_Prussia ;\n    :isDaughterOf data:Prince_Albert,\n        data:Queen_Victoria ;\n    :knownAs \"Vicky\"^^xsd:string .\n\ndata:Prince_Frederick_Wilhelm_of_Prussia a :Man .\n\n"
+    }
+]

@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
+        :Woman .
+
+data:Prince_Jorge_de_Bagration a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Bagrat_Bagration_y_de_Baviera .
+
+data:Princess_Mariam a :Person,
+        :Woman ;
+    :isSisterOf data:Prince_Bagrat_Bagration_y_de_Baviera .
+
+data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Irakli_Bagration_Mukhrani a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Bagrat_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Bagrat Bagration-Moukhransky"^^xsd:string,
+        "Prince Bagrat Bagrationi-Mukhraneli"^^xsd:string ;
+    :hasBirthYear 1949 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Irakli_Bagration_Mukhrani ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon .
+

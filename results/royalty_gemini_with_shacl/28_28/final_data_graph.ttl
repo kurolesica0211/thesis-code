@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ElizabethII a :Person,
+        :Woman .
+
+data:QueenElizabethTheQueenMother a :Person,
+        :Woman ;
+    :isAuntOf data:SimonBowesLyon .
+
+data:DavidBowesLyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1961 .
+
+data:HerbertSpenderClay a :Ancestor,
+        :Man,
+        :Person .
+
+data:PaulineAstor a :Ancestor,
+        :Person,
+        :Woman .
+
+data:RachelPaulineSpenderClay a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:HerbertSpenderClay ;
+    :hasMother data:PaulineAstor .
+
+data:SimonBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear 1932 ;
+    :hasFather data:DavidBowesLyon ;
+    :hasMother data:RachelPaulineSpenderClay .
+

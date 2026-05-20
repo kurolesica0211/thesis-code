@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_Paul_Frederick_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear "1852"^^xsd:string ;
+    :hasDeathYear "1923"^^xsd:string ;
+    :hasFather data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
+    :hasMarriageYear "1881"^^xsd:string ;
+    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin,
+        data:Princess_Marie_of_Windisch_Graetz .
+
+data:Duchess_Louise_of_Mecklenburg_Schwerin a :Person,
+        :Woman .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
+        :Person .
+
+data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz a :Man,
+        :Person .
+
+data:Prince_Hugo_of_Windisch_Graetz a :Man,
+        :Person .
+
+data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasFather data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz .
+
+data:Princess_Marie_of_Windisch_Graetz a :Person,
+        :Woman ;
+    :hasFather data:Prince_Hugo_of_Windisch_Graetz ;
+    :hasMother data:Duchess_Louise_of_Mecklenburg_Schwerin .
+

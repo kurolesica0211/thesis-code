@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Vladimir_of_Russia ;\n    :hasDeathYear 1967 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;\n    :hasRelation data:Louis_Ferdinand_of_Prussia ;\n    :hasSister data:Maria_of_Russia ;\n    :hasSon data:Friedrich_Wilhelm_of_Prussia .\n\ndata:Friedrich_Wilhelm_of_Prussia a :Man .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man .\n\ndata:Louis_Ferdinand_of_Prussia a :Man .\n\ndata:Maria_of_Russia a :Woman .\n\ndata:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,\n        :Woman .\n\ndata:Vladimir_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Kira_Kirillovna_of_Russia a :Person,\n        :Woman ;\n    :hasBirthYear 1909 ;\n    :hasBrother data:Vladimir_of_Russia ;\n    :hasDeathYear 1967 ;\n    :hasFather data:Kirill_Vladimirovich_of_Russia ;\n    :hasMarriageYear 1938 ;\n    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;\n    :hasRelation data:Louis_Ferdinand_of_Prussia ;\n    :hasSister data:Maria_of_Russia ;\n    :hasSon data:Friedrich_Wilhelm_of_Prussia .\n\ndata:Friedrich_Wilhelm_of_Prussia a :Man .\n\ndata:Kirill_Vladimirovich_of_Russia a :Ancestor,\n        :Man .\n\ndata:Louis_Ferdinand_of_Prussia a :Man .\n\ndata:Maria_of_Russia a :Woman .\n\ndata:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,\n        :Woman .\n\ndata:Vladimir_of_Russia a :Man .\n\n"
+    }
+]

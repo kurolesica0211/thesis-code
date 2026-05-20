@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:Crown_Prince_Pavlos_of_Greece ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasSex data:Male ;
+    :knownAs "Achi Miller"^^xsd:string .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Isabella_Massenet a :Person,
+        :Woman ;
+    :hasMother data:Natalie_Massenet ;
+    :hasSex data:Female .
+
+data:Marina_consort_of_Prince_Michael a :Person,
+        :Woman .
+
+data:Matthew_Kumar a :Man,
+        :Person .
+
+data:Prince_Michael a :Man,
+        :Person .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Sofia_of_Spain a :Person,
+        :Woman .
+
+data:Crown_Prince_Pavlos_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Marie-Chantal_Miller a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Natalie_Massenet a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

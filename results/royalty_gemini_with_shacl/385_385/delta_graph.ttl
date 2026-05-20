@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Zara_Tindall a :Woman ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Mia_Grace_Tindall ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Anne%2C_Princess_Royal ;
+    :hasRelation data:Mike_Tindall .
+
+data:Anne%2C_Princess_Royal a :Ancestor,
+        :Woman .
+
+data:Mark_Phillips a :Ancestor,
+        :Man .
+
+data:Mike_Tindall a :Man ;
+    :hasChild data:Mia_Grace_Tindall .
+
+data:Peter_Phillips a :Man .
+
+data:Mia_Grace_Tindall a :Woman .
+

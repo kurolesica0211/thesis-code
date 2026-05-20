@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Carolina_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear \"1974-06-23\"^^xsd:date ;\n    :hasBrother data:Prince_Carlos,\n        data:Prince_Jaime ;\n    :hasSister data:Princess_Margarita ;\n    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Man .\n\ndata:Prince_Carlos a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Woman .\n\ndata:Princess_Margarita a :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "48e9a264-1fdf-42e7-99e1-08510f23960e",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Princess_Irene_of_the_Netherlands> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Carlos_Hugo_Duke_of_Parma> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Princess_Irene_of_the_Netherlands> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Carlos_Hugo_Duke_of_Parma> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Carlos_Hugo_Duke_of_Parma> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Carolina_of_Bourbon-Parma> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isDaughterOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Woman-isDaughterOf ;\n            sh:value <http://example.org/data/Princess_Irene_of_the_Netherlands> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Carolina_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear \"1974-06-23\"^^xsd:date ;\n    :hasBrother data:Prince_Carlos,\n        data:Prince_Jaime ;\n    :hasSister data:Princess_Margarita ;\n    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Ancestor,\n        :Man .\n\ndata:Prince_Carlos a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Ancestor,\n        :Woman .\n\ndata:Princess_Margarita a :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "a4a34165-1e3b-4d1a-b946-de4f12392d4d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Carolina_of_Bourbon-Parma a :Woman ;\n    :hasBirthYear \"1974-06-23\"^^xsd:date ;\n    :hasBrother data:Prince_Carlos,\n        data:Prince_Jaime ;\n    :hasSister data:Princess_Margarita ;\n    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,\n        data:Princess_Irene_of_the_Netherlands .\n\ndata:Carlos_Hugo_Duke_of_Parma a :Ancestor,\n        :Man .\n\ndata:Prince_Carlos a :Man .\n\ndata:Prince_Jaime a :Man .\n\ndata:Princess_Irene_of_the_Netherlands a :Ancestor,\n        :Woman .\n\ndata:Princess_Margarita a :Woman .\n\n"
+    }
+]

@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceDimitriOfYugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Dimitri Karageorgevich"^^xsd:string,
+        "Dimitrije Karađorđević"^^xsd:string ;
+    :hasBirthYear 1958 ;
+    :isSiblingOf data:PrinceMichaelOfYugoslavia ;
+    :isSonOf data:PrinceAlexanderOfYugoslavia,
+        data:PrincessMariaPiaOfSavoy .
+
+data:PrinceDushanOfYugoslavia a :Man,
+        :Person ;
+    :isSonOf data:PrinceAlexanderOfYugoslavia,
+        data:PrincessBarbaraOfLiechtenstein .
+
+data:PrinceSergeOfYugoslavia a :Man,
+        :Person ;
+    :isSiblingOf data:PrincessHeleneOfYugoslavia ;
+    :isSonOf data:PrincessMariaPiaOfSavoy .
+
+data:PrinceMichaelOfYugoslavia a :Man,
+        :Person ;
+    :isSonOf data:PrinceAlexanderOfYugoslavia,
+        data:PrincessMariaPiaOfSavoy .
+
+data:PrincessBarbaraOfLiechtenstein a :Person,
+        :Woman .
+
+data:PrincessHeleneOfYugoslavia a :Person,
+        :Woman ;
+    :isDaughterOf data:PrincessMariaPiaOfSavoy .
+
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person .
+
+data:PrincessMariaPiaOfSavoy a :Person,
+        :Woman .
+

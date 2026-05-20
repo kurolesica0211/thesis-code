@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasFather data:William_III ;
+    :hasMother data:Sophie_of_Wurttemberg .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasMother data:Juliana .
+
+data:Frederick a :Man,
+        :Person .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasMother data:Juliana .
+
+data:Emma_of_Waldeck_and_Pyrmont a :Person,
+        :Woman .
+
+data:Sophie_of_Wurttemberg a :Person,
+        :Woman .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1962 ;
+    :hasFather data:William_III ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Emma_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Henry_of_Mecklenburg-Schwerin .
+
+data:Henry_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Juliana a :Person,
+        :Woman ;
+    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasMother data:Wilhelmina .
+
+data:William_III a :Man,
+        :Person .
+

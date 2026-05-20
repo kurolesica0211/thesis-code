@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Anton a :Man,\n        :Person ;\n    :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;\n    :hasMother data:Cecilia_von_Goess-Saurau .\n\ndata:Altburg_Marie_Mathilde_von_Oldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 2001 .\n\ndata:Josias_Georg_Wilhelm_Adolf a :Man,\n        :Person ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1967 .\n\ndata:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Josias_Georg_Wilhelm_Adolf ;\n    :hasMarriageYear 1988 ;\n    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;\n    :hasRelation data:Cecilia_von_Goess-Saurau .\n\ndata:Cecilia_von_Goess-Saurau a :Person,\n        :Woman ;\n    :hasBirthYear 1956 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Anton a :Man,\n        :Person ;\n    :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;\n    :hasMother data:Cecilia_von_Goess-Saurau .\n\ndata:Altburg_Marie_Mathilde_von_Oldenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1903 ;\n    :hasDeathYear 2001 .\n\ndata:Josias_Georg_Wilhelm_Adolf a :Man,\n        :Person ;\n    :hasBirthYear 1896 ;\n    :hasDeathYear 1967 .\n\ndata:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man,\n        :Person ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Josias_Georg_Wilhelm_Adolf ;\n    :hasMarriageYear 1988 ;\n    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;\n    :hasRelation data:Cecilia_von_Goess-Saurau .\n\ndata:Cecilia_von_Goess-Saurau a :Person,\n        :Woman ;\n    :hasBirthYear 1956 .\n\n"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alejandro_Santo_Domingo a :Man,\n        :Person .\n\ndata:Brigid_Guinness a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Antonia_of_Prussia .\n\ndata:Charlotte_Anne_Santo_Domingo a :Person,\n        :Woman ;\n    :alsoKnownAs data:Charlotte_Wellesley ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:Arthur_Wellesley ;\n    :hasFather data:Charles_Wellesley ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:Antonia_of_Prussia ;\n    :hasSister data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Ancestor,\n        :Man ;\n    :isFatherOf data:Antonia_of_Prussia .\n\ndata:Queen_Victoria a :Ancestor,\n        :Woman .\n\ndata:Valerian_Wellesley a :Ancestor,\n        :Man ;\n    :isFatherOf data:Charles_Wellesley .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man .\n\ndata:Arthur_Wellesley a :Man,\n        :Person .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Ancestor,\n        :Man .\n\ndata:Antonia_of_Prussia a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "af05846e-686f-4d52-a774-77b495547e25",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alejandro_Santo_Domingo a :Man,\n        :Person .\n\ndata:Brigid_Guinness a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Antonia_of_Prussia .\n\ndata:Charlotte_Anne_Santo_Domingo a :Person,\n        :Woman ;\n    :alsoKnownAs data:Charlotte_Wellesley ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:Arthur_Wellesley ;\n    :hasFather data:Charles_Wellesley ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:Antonia_of_Prussia ;\n    :hasSister data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Ancestor,\n        :Man ;\n    :isFatherOf data:Antonia_of_Prussia .\n\ndata:Queen_Victoria a :Ancestor,\n        :Woman .\n\ndata:Valerian_Wellesley a :Ancestor,\n        :Man ;\n    :isFatherOf data:Charles_Wellesley .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man .\n\ndata:Arthur_Wellesley a :Man,\n        :Person .\n\ndata:Charlotte_Wellesley a :Person .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Ancestor,\n        :Man .\n\ndata:Antonia_of_Prussia a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alejandro_Santo_Domingo a :Man,\n        :Person .\n\ndata:Brigid_Guinness a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Antonia_of_Prussia .\n\ndata:Charlotte_Anne_Santo_Domingo a :Person,\n        :Woman ;\n    :alsoKnownAs data:Charlotte_Wellesley ;\n    :hasBirthYear 1990 ;\n    :hasBrother data:Arthur_Wellesley ;\n    :hasFather data:Charles_Wellesley ;\n    :hasMarriageYear 2016 ;\n    :hasMother data:Antonia_of_Prussia ;\n    :hasSister data:Mary_Wellesley .\n\ndata:Frederick_of_Prussia a :Ancestor,\n        :Man ;\n    :isFatherOf data:Antonia_of_Prussia .\n\ndata:Queen_Victoria a :Ancestor,\n        :Woman .\n\ndata:Valerian_Wellesley a :Ancestor,\n        :Man ;\n    :isFatherOf data:Charles_Wellesley .\n\ndata:Wilhelm_II a :Ancestor,\n        :Man .\n\ndata:Arthur_Wellesley a :Man,\n        :Person .\n\ndata:Charlotte_Wellesley a :Person .\n\ndata:Mary_Wellesley a :Person,\n        :Woman .\n\ndata:Charles_Wellesley a :Ancestor,\n        :Man .\n\ndata:Antonia_of_Prussia a :Ancestor,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,42 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :isUncleOf data:Heinrich_of_Hesse-Kassel .
+
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman ;
+    :isAuntOf data:Heinrich_of_Hesse-Kassel .
+
+data:Elisabeth_of_Hesse a :Person,
+        :Woman .
+
+data:Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy .
+
+data:Moritz_of_Hesse a :Man,
+        :Person .
+
+data:Otto_of_Hesse a :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Man,
+        :Person .
+
+data:Victor_Emmanuel_III_of_Italy a :Man,
+        :Person .
+
+data:Heinrich_of_Hesse-Kassel a :Man,
+        :Person ;
+    :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
+    :hasBirthYear 1927 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Philipp_of_Hesse ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+

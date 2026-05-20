@@ -1,0 +1,151 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/383_383",
+  "text_file": "Q6351902.txt",
+  "text_key": "Q6351902",
+  "article": "https://en.wikipedia.org/wiki/Princess_Sophie_of_Saxe-Weimar-Eisenach_(1911%E2%80%931988)",
+  "article_key": "Princess Sophie of Saxe-Weimar-Eisenach",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Sophie_of_Saxe-Weimar-Eisenach",
+    "qid": "Q6351902",
+    "label": "Princess Sophie of Saxe-Weimar-Eisenach"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Sophie_of_Saxe-Weimar-Eisenach",
+      "qid": "Q6351902",
+      "label": "Princess Sophie of Saxe-Weimar-Eisenach",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Feodora_of_Saxe-Meiningen",
+      "qid": "Q66639",
+      "label": "Princess Feodora of Saxe-Meiningen",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Bernhard_of_Lippe",
+      "qid": "Q649601",
+      "label": "Prince Bernhard of Lippe",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Sophie_Louise_of_Saxe-Weimar-Eisenach",
+      "extracted_local_name": "Sophie_Louise_of_Saxe-Weimar-Eisenach",
+      "embedding_text": "Sophie Louise of Saxe-Weimar-Eisenach",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8714285714285714,
+      "ground_truth_uri": "http://example.com/data#Princess_Sophie_of_Saxe-Weimar-Eisenach",
+      "ground_truth_qid": "Q6351902",
+      "ground_truth_label": "Princess Sophie of Saxe-Weimar-Eisenach",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Sophie Louise of Saxe-Weimar-Eisenach",
+      "best_candidate_label": "Princess Sophie of Saxe-Weimar-Eisenach",
+      "best_candidate_qid": "Q6351902",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/Feodora_of_Saxe-Meiningen",
+      "extracted_local_name": "Feodora_of_Saxe-Meiningen",
+      "embedding_text": "Feodora of Saxe-Meiningen",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8043478260869565,
+      "ground_truth_uri": "http://example.com/data#Princess_Feodora_of_Saxe-Meiningen",
+      "ground_truth_qid": "Q66639",
+      "ground_truth_label": "Princess Feodora of Saxe-Meiningen",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Feodora of Saxe-Meiningen",
+      "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
+      "best_candidate_qid": "Q66639",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8043478260869565
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_Gunther_of_Schwarzburg",
+      "extracted_local_name": "Friedrich_Gunther_of_Schwarzburg",
+      "embedding_text": "Friedrich Gunther of Schwarzburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bernhard zur Lippe",
+      "best_candidate_label": "Prince Bernhard of Lippe",
+      "best_candidate_qid": "Q649601",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.32
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marie_Antoinette_of_Schwarzburg",
+      "extracted_local_name": "Marie_Antoinette_of_Schwarzburg",
+      "embedding_text": "Marie Antoinette of Schwarzburg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sophie Luise Prinzessin von Sachsen-Weimar-Eisenach",
+      "best_candidate_label": "Princess Sophie of Saxe-Weimar-Eisenach",
+      "best_candidate_qid": "Q6351902",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.1951219512195122
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sizzo_of_Schwarzburg",
+      "extracted_local_name": "Sizzo_of_Schwarzburg",
+      "embedding_text": "Sizzo of Schwarzburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bernhard zur Lippe",
+      "best_candidate_label": "Prince Bernhard of Lippe",
+      "best_candidate_qid": "Q649601",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3157894736842105
+    },
+    {
+      "extracted_uri": "http://example.org/data/William_Ernest_of_Saxe-Weimar-Eisenach",
+      "extracted_local_name": "William_Ernest_of_Saxe-Weimar-Eisenach",
+      "embedding_text": "William Ernest of Saxe-Weimar-Eisenach",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bernhard zur Lippe",
+      "best_candidate_label": "Prince Bernhard of Lippe",
+      "best_candidate_qid": "Q649601",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.21428571428571427
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 2,
+    "entities_unmatched": 4
+  }
+}

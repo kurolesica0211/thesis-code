@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeth_Victoire_Jeanne_Marie_d_Orleans a :Woman ;\n    :hasBirthYear 2026 ;\n    :hasFather data:Charles_Philippe_d_Orleans ;\n    :hasMother data:Naomi-Valeska .\n\ndata:Isabelle_d_Orleans a :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Charles_Philippe_d_Orleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\ndata:Henri_d_Orleans a :Man .\n\ndata:Michel_d_Orleans a :Man .\n\ndata:Naomi-Valeska a :Woman .\n\ndata:Beatrice_Pasquier_de_Franclieu a :Woman .\n\ndata:Charles_Philippe_d_Orleans a :Man ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Henri_d_Orleans,\n        data:Michel_d_Orleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elisabeth_Victoire_Jeanne_Marie_d_Orleans a :Woman ;\n    :hasBirthYear 2026 ;\n    :hasFather data:Charles_Philippe_d_Orleans ;\n    :hasMother data:Naomi-Valeska .\n\ndata:Isabelle_d_Orleans a :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Charles_Philippe_d_Orleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\ndata:Henri_d_Orleans a :Man .\n\ndata:Michel_d_Orleans a :Man .\n\ndata:Naomi-Valeska a :Woman .\n\ndata:Beatrice_Pasquier_de_Franclieu a :Woman .\n\ndata:Charles_Philippe_d_Orleans a :Man ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Henri_d_Orleans,\n        data:Michel_d_Orleans ;\n    :hasMother data:Beatrice_Pasquier_de_Franclieu .\n\n"
+    }
+]

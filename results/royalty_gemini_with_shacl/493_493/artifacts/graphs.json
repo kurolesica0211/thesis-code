@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1850 ;\n    :hasDeathYear 1922 .\n\ndata:Woizlawa_Feodora_Princess_Reuss a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2019 ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;\n    :hasRelation data:Heinrich_I_Prinz_Reuss .\n\ndata:Heinrich_I_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;\n    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .\n\ndata:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,\n        :Man .\n\ndata:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,\n        :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1956 .\n\ndata:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,\n        :Woman .\n\ndata:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1968 .\n\ndata:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1918 ;\n    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;\n    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "5ad5d0dd-a982-4097-8454-bcb405e39123",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,\n        :Man ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1850 ;\n    :hasDeathYear 1922 .\n\ndata:Woizlawa_Feodora_Princess_Reuss a :Person,\n        :Woman ;\n    :hasBirthYear 1918 ;\n    :hasDeathYear 2019 ;\n    :hasMarriageYear 1939 ;\n    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;\n    :hasRelation data:Heinrich_I_Prinz_Reuss .\n\ndata:Heinrich_I_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1910 ;\n    :hasDeathYear 1982 ;\n    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;\n    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .\n\ndata:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,\n        :Man .\n\ndata:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,\n        :Man ;\n    :hasBirthYear 1887 ;\n    :hasDeathYear 1956 .\n\ndata:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,\n        :Woman .\n\ndata:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1884 ;\n    :hasDeathYear 1968 .\n\ndata:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1918 ;\n    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;\n    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .\n\n"
+    }
+]

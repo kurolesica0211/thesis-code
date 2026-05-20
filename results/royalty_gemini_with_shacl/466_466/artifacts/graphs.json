@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria a :Man,\n        :Person ;\n    :hasBirthYear \"1966\"^^xsd:string ;\n    :hasDeathYear \"2010\"^^xsd:string ;\n    :hasFather data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "b35a497d-950b-4daa-8193-9912dacd74ed",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria a :Man,\n        :Person ;\n    :hasBirthYear \"1966\"^^xsd:string ;\n    :hasDeathYear \"2010\"^^xsd:string ;\n    :hasFather data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

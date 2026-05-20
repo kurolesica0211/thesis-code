@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Shakerley a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Geoffrey_Shakerley .\n\ndata:Anne_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Geoffrey_Shakerley a :Man,\n        :Person .\n\ndata:Patrick_Anson a :Man,\n        :Person .\n\ndata:Thomas_Anson a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "0450f30c-83be-414b-89e0-0a04b0c082e3",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Thomas_Anson> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Thomas_Anson> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne_Bowes-Lyon> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Thomas_Anson> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne_Bowes-Lyon> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Elizabeth_Georgiana_Shakerley> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Anne_Bowes-Lyon> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "25fb8f0d-e917-420d-a469-78df043618b0",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Shakerley a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Geoffrey_Shakerley .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Geoffrey_Shakerley a :Man,\n        :Person .\n\ndata:Patrick_Anson a :Man,\n        :Person .\n\ndata:Thomas_Anson a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "25fb8f0d-e917-420d-a469-78df043618b0",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elizabeth_Georgiana_Shakerley a :Person,\n        :Woman ;\n    :hasBirthYear 1941 ;\n    :hasBrother data:Patrick_Anson ;\n    :hasDeathYear 2020 ;\n    :hasFather data:Thomas_Anson ;\n    :hasMarriageYear 1972 ;\n    :hasMother data:Anne_Bowes-Lyon ;\n    :hasRelation data:Geoffrey_Shakerley .\n\ndata:Anne_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Geoffrey_Shakerley a :Man,\n        :Person .\n\ndata:Patrick_Anson a :Man,\n        :Person .\n\ndata:Thomas_Anson a :Ancestor,\n        :Man,\n        :Person .\n\n"
+    }
+]

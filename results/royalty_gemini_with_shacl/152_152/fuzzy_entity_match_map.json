@@ -1,0 +1,140 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/152_152",
+  "text_file": "Q235128.txt",
+  "text_key": "Q235128",
+  "article": "https://en.wikipedia.org/wiki/Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies",
+  "article_key": "Princess María de las Mercedes of Bourbon-Two Sicilies",
+  "main_entity": {
+    "uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+    "qid": "Q235128",
+    "label": "Infanta María de las Mercedes, Countess of Barcelona"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+      "qid": "Q235128",
+      "label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "qid": "Q526743",
+      "label": "Infante Carlos, Duke of Calabria",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Louise_of_Orléans",
+      "qid": "Q962762",
+      "label": "Princess Louise of Orléans",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philippe-_Count_of_Paris",
+      "qid": "Q354477",
+      "label": "Prince Philippe, Count of Paris",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Prince_Carlos_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Prince_Carlos_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Prince Carlos of Bourbon-Two Sicilies",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "ground_truth_qid": "Q526743",
+      "ground_truth_label": "Infante Carlos, Duke of Calabria",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Carlos of Bourbon-Two Sicilies",
+      "best_candidate_label": "Infante Carlos, Duke of Calabria",
+      "best_candidate_qid": "Q526743",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Louise_of_Orl%C3%A9ans",
+      "extracted_local_name": "Princess_Louise_of_Orl%C3%A9ans",
+      "embedding_text": "Princess Louise of Orléans",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Louise_of_Orléans",
+      "ground_truth_qid": "Q962762",
+      "ground_truth_label": "Princess Louise of Orléans",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Louise of Orléans",
+      "best_candidate_label": "Princess Louise of Orléans",
+      "best_candidate_qid": "Q962762",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies",
+      "embedding_text": "María de las Mercedes of Bourbon-Two Sicilies",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.892156862745098,
+      "ground_truth_uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+      "ground_truth_qid": "Q235128",
+      "ground_truth_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Maria de las Mercedes of Bourbon-Two Sicilies",
+      "best_candidate_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "best_candidate_qid": "Q235128",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.892156862745098
+    },
+    {
+      "extracted_uri": "http://example.org/data/Infante_Juan_Count_of_Barcelona",
+      "extracted_local_name": "Infante_Juan_Count_of_Barcelona",
+      "embedding_text": "Infante Juan Count of Barcelona",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Carlos de Borbón-Dos Sicilias y de Borbón-Parma",
+      "best_candidate_label": "Infante Carlos, Duke of Calabria",
+      "best_candidate_qid": "Q526743",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.28205128205128205
+    },
+    {
+      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
+      "extracted_local_name": "Juan_Carlos_I",
+      "embedding_text": "Juan Carlos I",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Carlos- Duke of Calabria",
+      "best_candidate_label": "Infante Carlos, Duke of Calabria",
+      "best_candidate_qid": "Q526743",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4888888888888889
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
+  }
+}

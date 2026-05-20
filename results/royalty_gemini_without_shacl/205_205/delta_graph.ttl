@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ashley_Harcourt a :Woman ;
+    :hasFather data:Howard_Oxenberg .
+
+data:Christina_Oxenberg a :Woman ;
+    :hasBirthYear 1962 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasSister data:Catherine_Oxenberg .
+
+data:Neil_Balfour a :Man ;
+    :hasBirthYear 1970 ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Robert_Oxenberg a :Man ;
+    :hasFather data:Howard_Oxenberg .
+
+data:Starr_Oxenberg a :Woman ;
+    :hasFather data:Howard_Oxenberg .
+
+data:Catherine_Oxenberg a :Woman .
+
+data:Prince_Paul_of_Yugoslavia a :Man .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+    :hasBirthYear 1936 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Howard_Oxenberg a :Man ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 2010 .
+

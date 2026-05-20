@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_Pius a :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:Maria_Antonietta ;
+    :hasRelation data:Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Alfonso_Count_of_Caserta a :Man,
+        :Person .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person .
+
+data:Ludwig_III_of_Bavaria a :Man,
+        :Person .
+
+data:Maria_Antonietta a :Person,
+        :Woman .
+
+data:Maria_Ludwiga_Theresia_of_Bavaria a :Person,
+        :Woman ;
+    :hasFather data:Ludwig_III_of_Bavaria .
+

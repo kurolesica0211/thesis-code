@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
+    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;
+    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:Male ;
+    :knownAs "Paul Frederick Charles Alexander Michael Hugh"^^xsd:string .
+
+data:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

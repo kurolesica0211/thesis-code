@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:Armin a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:BernhardOfBiesterfeld a :Man,\n        :Person ;\n    :hasFather data:BernhardBrotherOfLeopold .\n\ndata:Chlodwig a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:Ernst a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:Bertha a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1919 .\n\ndata:Ernest a :Man,\n        :Person .\n\ndata:Julius a :Man,\n        :Person .\n\ndata:Karoline a :Person,\n        :Woman .\n\ndata:BernhardBrotherOfLeopold a :Man,\n        :Person .\n\ndata:LeopoldIV a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:BernhardBrotherOfLeopold,\n        data:Julius ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline ;\n    :hasRelation data:Bertha .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:Armin a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:BernhardOfBiesterfeld a :Man,\n        :Person ;\n    :hasFather data:BernhardBrotherOfLeopold .\n\ndata:Chlodwig a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:Ernst a :Man,\n        :Person ;\n    :hasFather data:LeopoldIV .\n\ndata:Bertha a :Person,\n        :Woman ;\n    :hasBirthYear 1874 ;\n    :hasDeathYear 1919 .\n\ndata:Ernest a :Man,\n        :Person .\n\ndata:Julius a :Man,\n        :Person .\n\ndata:Karoline a :Person,\n        :Woman .\n\ndata:BernhardBrotherOfLeopold a :Man,\n        :Person .\n\ndata:LeopoldIV a :Man,\n        :Person ;\n    :hasBirthYear 1871 ;\n    :hasBrother data:BernhardBrotherOfLeopold,\n        data:Julius ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Ernest ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Karoline ;\n    :hasRelation data:Bertha .\n\n"
+    }
+]

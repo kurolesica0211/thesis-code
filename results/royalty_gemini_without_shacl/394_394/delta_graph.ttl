@@ -1,0 +1,35 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christina_Margarethe_of_Hesse a :Person,
+        :Woman ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia,
+        data:Robert_van_Eyck ;
+    :knownAs "Krista"^^xsd:string .
+
+data:Prince_Andrew_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 .
+
+data:Robert_van_Eyck a :Man,
+        :Person .
+

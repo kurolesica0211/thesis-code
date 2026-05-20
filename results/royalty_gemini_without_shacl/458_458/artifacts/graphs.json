@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Floria_Franziska_von_Faber-Castell a :Woman ;\n    :hasBirthYear 1974 .\n\ndata:Moritz_Landgrave_of_Hesse a :Man ;\n    :isFatherOf data:Donatus_Prince_of_Hesse .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1940 ;\n    :isMotherOf data:Donatus_Prince_of_Hesse .\n\ndata:Donatus_Prince_of_Hesse a :Man ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMarriageYear data:Floria_Franziska_von_Faber-Castell,\n        2003 ;\n    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Floria_Franziska_von_Faber-Castell a :Woman ;\n    :hasBirthYear 1974 .\n\ndata:Moritz_Landgrave_of_Hesse a :Man ;\n    :isFatherOf data:Donatus_Prince_of_Hesse .\n\ndata:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Woman ;\n    :hasBirthYear 1940 ;\n    :isMotherOf data:Donatus_Prince_of_Hesse .\n\ndata:Donatus_Prince_of_Hesse a :Man ;\n    :hasBirthYear 1966 ;\n    :hasFather data:Moritz_Landgrave_of_Hesse ;\n    :hasMarriageYear data:Floria_Franziska_von_Faber-Castell,\n        2003 ;\n    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg .\n\n"
+    }
+]

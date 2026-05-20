@@ -1,0 +1,97 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/193_193",
+  "text_file": "Q2621015.txt",
+  "text_key": "Q2621015",
+  "article": "https://en.wikipedia.org/wiki/David_Chavchavadze",
+  "article_key": "David Chavchavadze",
+  "main_entity": {
+    "uri": "http://example.com/data#David_Chavchavadze",
+    "qid": "Q2621015",
+    "label": "David Chavchavadze"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#David_Chavchavadze",
+      "qid": "Q2621015",
+      "label": "David Chavchavadze",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Nina_Georgievna_of_Russia",
+      "qid": "Q898347",
+      "label": "Nina Georgievna of Russia",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Paul_Chavchavadze",
+      "qid": "Q16028068",
+      "label": "Paul Chavchavadze",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/David_Chavchavadze",
+      "extracted_local_name": "David_Chavchavadze",
+      "embedding_text": "David Chavchavadze",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#David_Chavchavadze",
+      "ground_truth_qid": "Q2621015",
+      "ground_truth_label": "David Chavchavadze",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "David Chavchavadze",
+      "best_candidate_label": "David Chavchavadze",
+      "best_candidate_qid": "Q2621015",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Nina_Georgievna_of_Russia",
+      "extracted_local_name": "Nina_Georgievna_of_Russia",
+      "embedding_text": "Nina Georgievna of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Nina_Georgievna_of_Russia",
+      "ground_truth_qid": "Q898347",
+      "ground_truth_label": "Nina Georgievna of Russia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Nina Georgievna of Russia",
+      "best_candidate_label": "Nina Georgievna of Russia",
+      "best_candidate_qid": "Q898347",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paul_Chavchavadze",
+      "extracted_local_name": "Paul_Chavchavadze",
+      "embedding_text": "Paul Chavchavadze",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Paul_Chavchavadze",
+      "ground_truth_qid": "Q16028068",
+      "ground_truth_label": "Paul Chavchavadze",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Paul Chavchavadze",
+      "best_candidate_label": "Paul Chavchavadze",
+      "best_candidate_qid": "Q16028068",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 3,
+    "entities_unmatched": 0
+  }
+}

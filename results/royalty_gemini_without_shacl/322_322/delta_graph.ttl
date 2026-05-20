@@ -1,0 +1,62 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Louis_dOrleans a :Man ;
+    :hasFather data:Jacques_Duke_of_Orleans .
+
+data:Foulques_dOrleans a :Man ;
+    :hasFather data:Jacques_Duke_of_Orleans .
+
+data:Francois_son_of_Henri a :Man ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Gundakar_of_Liechtenstein a :Man .
+
+data:Jean_Duke_of_Vendome a :Man ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+
+data:Jean_Robert_Boeuf a :Man .
+
+data:Louis_Alphonse_Duke_of_Anjou a :Man .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Woman ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Woman .
+
+data:Diane_sister_of_Henri a :Woman .
+
+data:Francois_brother_of_Henri a :Man .
+
+data:Henri_Count_of_Paris a :Man .
+
+data:Isabelle_of_Orleans_Braganza a :Woman .
+
+data:Luis_Cousino_y_Sebire a :Man .
+
+data:Marie_Therese_of_Wurttemberg a :Woman .
+
+data:Marie_daughter_of_Henri a :Woman ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Marie_Therese_of_Wurttemberg .
+
+data:Michel_Count_of_Evreux a :Man .
+
+data:Thibaut_Count_of_La_Marche a :Man .
+
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Man ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Francois_brother_of_Henri,
+        data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasDaughter data:Marie_daughter_of_Henri ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasSister data:Diane_sister_of_Henri .
+
+data:Jacques_Duke_of_Orleans a :Man .
+

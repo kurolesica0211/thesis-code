@@ -1,0 +1,749 @@
+================================ System Message ================================
+
+### Role
+You are an expert Knowledge Graph Engineer. Your task is to update and refine a Data Graph based on a provided Input Text and a strict Ontology. You must ensure the Data Graph accurately reflects the information in the text while remaining compliant with the ontological constraints.
+
+### Inputs
+1. **Ontology**: Allowed classes and properties.
+2. **Input Text**: The ONLY source of truth.
+3. **Current Data Graph**: The starting state.
+
+### Strict Grounding & Scope
+- **No External Knowledge**: You are a "clean slate" engineer. Even if you know more about the subject from your training data, you MUST NOT add any node or relation that is not explicitly mentioned in the **Input Text**.
+- **No Hypothetical Nodes**: Do not create placeholder nodes or sequences (e.g., Marriage1, Marriage2) to represent "patterns" mentioned in the text. Only create nodes for specific instances described.
+- **Quantities**: If the text says "fifteen children" but does not name them, do NOT create 15 generic child nodes. Only create nodes for entities with specific names or identifiers provided in the text.
+
+### Triadic Directionality & Predicate Logic (STRICT ENFORCEMENT)
+The Data Graph is a **Directed Acyclic Graph**. Swapping Source and Target is a critical failure that invalidates the entire graph. You MUST follow the **Flow of Action**.
+
+#### 1. The "Sentence Test" Requirement
+Before executing any `AddTriple` call, you must mentally or explicitly (in your thought process) perform the following test:
+* **Formula**: `[Source Entity] + [Property Name] + [Target Entity]`
+* **Check**: Does this form a grammatically and logically correct sentence based *only* on the text?
+* **Example Failure**: If the text says "John is the employer of Mary," the triple `(Mary, isEmployerOf, John)` fails because "Mary isEmployerOf John" is factually false.
+
+#### 2. Identifying the Anchor (Domain vs. Range)
+* **The Source**: The "Origin" or "Owner." If the property is a verb, the Source is the one performing it. Source is always to the left of a relation.
+* **The Target**: The "Destination" or "Attribute." If the property is a verb, the Target is the one being acted upon. Target is always to the right of a relation.
+
+#### 3. Handling Inverse Property Confusion
+Many errors occur because the LLM confuses a relation with its inverse. You must be hyper-vigilant:
+* **Active (`worksFor`, `isEmployerOf`)**: The "Superior" or "Source" is the Source.
+* **Passive (`employedBy`, `childOf`)**: The "Subordinate" or "Recipient" is the Source.
+* **Partitive (`hasPart`, `contains`)**: The "Container/Whole" is the Source.
+* **Membership (`isPartOf`, `memberOf`)**: The "Component/Part" is the Source.
+
+#### 4. Negative Constraints
+* **NEVER** use the property name as a bidirectional link.
+* **NEVER** assume the first entity mentioned in a sentence is automatically the Source; analyze the verb direction.
+
+#### 5. Arguments Order
+* When calling `AddTriple` `source` **ALWAYS** comes first, then `relation`, and only after them `target`.
+
+> **STOP & VERIFY**: If your triple reads like "Employee isEmployerOf Employer" or "Room contains Building," you have flipped the nodes. **STOP and swap them before calling the tool.**
+
+
+### Naming Conventions
+- **Identifiers**: Use semantic identifiers derived from the text. 
+- **Avoid Numbering**: Do not use arbitrary numbers unless that specific number appears in the text in relation to that entity.
+- **Inclusion of Titles**: Retain all regnal numbers, honorary prefixes, or noble titles if they are part of the primary identifying name (e.g., "Crown Prince [Name]" or "[Name] II").
+- **Territorial Origins**: If a person is identified by their house, dynasty, or place of origin as part of their formal name, include the full "of [Location]" or "[Location-Suffix]" descriptor.
+- **Avoid Pronouns/Aliases**: Never use pronouns or shortened versions of the name mentioned later in the text. Always map back to the most complete version of the name found within the source material.
+
+### Instructions & Workflow
+1. **Analyze**: Identify specific entities and relations in the text.
+2. **Edit**: Use tools to modify the graph.
+   - Every node MUST have a class assignment (`AssignClass`).
+   - Ground every edit in text evidence.
+3. **Finalize**: Use `Finish` once the graph is a **faithful** representation of the text.
+
+### Tool Usage Constraints
+- **AssignClass / UnassignClass**: For `rdf:type` only.
+- **AddTriple / RemoveTriple**: For properties only.
+- **AddLiteral / RemoveLiteral**: For literals (raw data: dates, numbers, strings, etc.) only.
+- **Finish**: Once you are finished, use this tool.
+- **Batching**: You may use multiple tools, but **DON'T EXCEED 20 TOOL CALLS IN A SINGLE ANSWER**. Focus on quality and grounding over quantity.
+
+================================ Human Message =================================
+
+Please update the Knowledge Graph based on the provided data.
+
+### Input Text:
+William, Prince of Wales (William Arthur Philip Louis; born 21 June 1982), is the heir apparent to the British throne.
+He is the elder son of King Charles III and Diana, Princess of Wales.
+William was born during the reign of his paternal grandmother, Queen Elizabeth II.
+He earned a Master of Arts degree in geography at the University of St Andrews, where he met his future wife, Catherine Middleton.
+After university, William trained at the Royal Military Academy Sandhurst before serving with the Blues and Royals.
+William performs official duties and engagements on behalf of the monarch.
+He is patron of multiple charitable and military organisations, including the Tusk Trust, Centrepoint, The Passage, Wales Air Ambulance, and London's Air Ambulance Charity.
+William was made Duke of Cambridge immediately before his wedding in April 2011.
+The following day, he was made Prince of Wales.
+Early life
+
+William was born at 9:03 pm on 21 June 1982 at St Mary's Hospital, London, during the reign of his paternal grandmother, Queen Elizabeth II.
+He was the first child of Charles, Prince of Wales (later King Charles III), and his first wife, Diana, Princess of Wales.
+Buckingham Palace announced his name – William Arthur Philip Louis – on 28 June.
+He was christened in the Music Room at Buckingham Palace by the then Archbishop of Canterbury, Robert Runcie, on 4 August, which also marked the 82nd birthday of his paternal great-grandmother, Queen Elizabeth the Queen Mother.
+William was the first child born to a Prince and Princess of Wales since Prince John was born to Prince George and Princess Mary (later King George V and Queen Mary) in July 1905.
+When he was nine months old, William accompanied his parents on their 1983 tour of Australia and New Zealand, marking his first trip overseas.
+It was also the first time that a royal baby had been taken on an overseas tour.
+Family photographs of William and his parents on the grounds of Government House in Auckland received significant global coverage.
+They have been credited as a major reason for the Buzzy Bee toy, which William had been playing with, becoming a New Zealand cultural icon.
+His younger brother, Prince Harry, was born in September 1984.
+Known informally as "Wills" within his family, William was nicknamed "Willy" by his brother and "Wombat" by his mother.
+Diana sought to give her sons broader and more typical life experiences beyond a royal upbringing, taking them to Walt Disney World, McDonald's, AIDS clinics, and shelters for the homeless.
+According to the biographer, Robert Lacey, William –  described as a "rambunctious" and "bratty" child – became "more reflective", with a "noticeably quiet character", after he began boarding school.
+Diana was reported to have described him as "my little wise old man", and by his early teens she had begun to rely on him as a confidant.
+William carried out his first public engagement while accompanying his parents on a visit to Llandaff on Saint David's Day in 1991.
+He and Harry travelled to Canada on an official visit with their parents in 1991, and again with Charles in 1998.
+William's parents divorced in 1996.
+Diana died in a car accident in the early hours of 31 August 1997.
+William, then aged 15, was staying at Balmoral Castle with his 12-year-old brother, his father, and his grandparents at the time.
+The following morning, Charles informed William and Harry of their mother's death.
+William was reportedly uncertain about whether he should walk behind his mother's coffin during the funeral procession.
+His grandfather, Prince Philip, Duke of Edinburgh, told him: "If you don't walk, I think you'll regret it later.
+At the funeral, William and Harry walked alongside their father, grandfather, and maternal uncle, Charles Spencer, 9th Earl Spencer, behind the funeral cortège from Kensington Palace to Westminster Abbey.
+After his mother's death, William stated that he had been "in a state of shock for many years".
+He and Harry inherited the majority of the £12.9 million left by their mother on their respective 30th birthdays, a figure that had grown to £10 million each by 2014.
+They also received the original lyrics and score of "Candle in the Wind" by Bernie Taupin and Elton John, as performed by the latter at Diana's funeral.
+In 2002, The Times reported that William and Harry would also share £4.9 million from trust funds established by their great-grandmother, the Queen Mother on their respective 21st birthdays, as well as £8 million upon their respective 40th birthdays.
+Education
+
+William was educated at private schools.
+The decision to send William to Eton broke with royal tradition, as his father and grandfather had both attended Gordonstoun.
+The royal family and the press agreed that William would be allowed to study free from media intrusion in exchange for periodic official updates.
+In June 1991, he was admitted to the Royal Berkshire Hospital after being accidentally hit on the forehead by a fellow pupil wielding a golf club.
+After leaving Eton, William took a gap year.
+In 2001, William enrolled at the University of St Andrews in Scotland.
+Early appointments and duties
+
+At the age of 21, William became a Counsellor of State.
+In 2009, the Queen established a private office for William and Harry, with David Manning as their adviser.
+Manning accompanied William on his first official tour in January 2010, during which he visited Auckland and Wellington.
+In March 2011, William visited Christchurch shortly after the earthquake, speaking at the memorial service in Hagley Park on behalf of his grandmother.
+Before attending Sandhurst, William did a three-week internship at several institutions, including the Bank of England, the London Stock Exchange, and Lloyd's of London.
+In April 2019, Kensington Palace announced that William had completed a three-week internship at MI5, MI6, and GCHQ, during which he monitored extreme Islamist terror cells, identified potential threats abroad, and observed code‐breaking technology.
+Military and air ambulance service
+
+Having decided on a military career, William was admitted to the Royal Military Academy Sandhurst in January 2006.
+As "Lieutenant Wales" – a name derived from his father's then title, Prince of Wales – he followed his brother into the Blues and Royals in December that year as a second lieutenant, after which he spent five months training for the post at Bovington Camp in Dorset.
+Although the Queen approved William serving on the frontline, his position as second‐in‐line to the throne at the time raised doubts about whether he could be deployed to combat.
+William instead trained with the Royal Navy and the Royal Air Force, obtaining his commission as a sub-lieutenant in the former and a flying officer in the latter, both broadly equivalent to the army rank of lieutenant.
+After completing his training, he undertook an attachment with the Royal Air Force at RAF Cranwell.
+During this secondment, William flew to Afghanistan in a C-17 Globemaster that repatriated the body of Trooper Robert Pearson.
+He was then seconded to train with the Royal Navy, completing an accelerated Naval Officer training course at the Britannia Royal Naval College.
+Whilst serving on HMS Iron Duke in July 2008, William participated in a £40m drug seizure in the Atlantic, north-east of Barbados.
+As part of his training across all branches of the military in 2008 and 2009, William spent up to six weeks with the Special Air Service, the Special Boat Service, and the Special Reconnaissance Regiment.
+This made him the first member of the British royal family since Henry VII to live in Wales.
+William's first rescue mission as co-pilot of an RAF Sea King came in October 2010, responding to an emergency call from Liverpool Coastguard.
+In July 2015, William began working full-time as a pilot with the East Anglian Air Ambulance (EAAA), based at Cambridge Airport, which he described as a natural progression from his previous search‐and‐rescue role.
+William spoke about working irregular shifts and dealing largely with critical-care cases, and later discussed the impact of witnessing trauma and bereavement on his mental health and personal life.
+The BBC wrote that he had been "exposed to the National Health Service in a way that no other senior royal has been or possibly ever will be.
+"
+
+
+William left his position with EAAA in July 2017 to assume full-time royal duties.
+In February 2023, he became patron of the Wales Air Ambulance charity.
+Personal life
+
+Relationship with Catherine Middleton
+
+In 2001, William met Catherine Middleton, while they were students in residence at St Salvator's Hall at the University of St Andrews, and they became close friends.
+She reportedly caught William's attention at a charity fashion show at the university in 2002.
+During their second year, William shared a flat with Middleton and two other friends.
+They also began staying at a cottage on the Balmoral estate known as Tam-Na-Ghar, which had been given to William by the Queen Mother shortly before her death.
+Media attention became so intense that William asked the press to keep their distance from Middleton.
+In December 2006, Middleton and her family attended William's passing-out parade at the Royal Military Academy Sandhurst.
+In April 2007, William and Middleton were reported to have separated.
+Middleton and her family attended the Concert for Diana three months later; the couple were subsequently reported to have "rekindled their relationship".
+She also attended the Order of the Garter procession at Windsor Castle in June 2008, where William was made a Royal Knight of the Garter.
+In June 2010, the couple moved into a cottage on the Bodorgan Estate in Anglesey, Wales, where they lived until 2014.
+Marriage and children
+
+The couple became engaged in October 2010 at a remote alpine cabin on Mount Kenya during a 10-day trip to the Lewa Wildlife Conservancy to celebrate William's completion of the RAF helicopter search-and-rescue course.
+William gave his fiancée his mother's engagement ring.
+William and Catherine have three children: Prince George, born in July 2013; Princess Charlotte, born in May 2015; and Prince Louis, born in April 2018; all three were born at St Mary's Hospital in London.
+William and Catherine used Nottingham Cottage as their London residence until 2013, when £4.5 million renovations completed at Apartment 1A at Kensington Palace, which remains their official residence in the capital.
+Duke of Cambridge
+
+William was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus on the day of his wedding in April 2011.
+He and Catherine toured Canada that summer.
+In September 2013, William and Catherine visited Singapore, Malaysia, Tuvalu, and the Solomon Islands as part of the Queen's Diamond Jubilee celebrations.
+William hosted his first investiture ceremony at Buckingham Palace in October that year.
+In April 2014, he and Catherine undertook a royal tour of New Zealand and Australia, accompanied by their son George.
+In August that year, the couple, along with Harry, represented the royal family at World War I commemorations in Belgium.
+In December, the couple visited New York and Washington DC, where William delivered a speech at the World Bank condemning the illegal wildlife trade.
+In 2015 and 2016, William embarked on visits to several Asian countries, including Japan, China, Bhutan, and India; he was the first royal to visit mainland China in almost three decades, with the press describing his diplomacy as "deft" and "polished".
+Countries visited by William and Catherine in 2017 included France, Poland, Germany, and Belgium.
+In June 2018, William toured Jordan, Israel, and Palestine.
+William and Catherine toured Pakistan in October 2019, marking the royal family's first visit to the country in 13 years.
+In November 2020, it was reported that William had tested positive for COVID‐19 in April but had chosen not to alert the media to "avoid alarming the nation".
+In December that year, the couple embarked on a tour of England, Scotland, and Wales via the British Royal Train "to pay tribute to the inspiring work" of communities and charities in 2020.
+In his capacity as Lord High Commissioner to the General Assembly of the Church of Scotland, William toured the country with Catherine in May 2021.
+At the unveiling of the National Windrush Monument in London, William described the tour as "an opportunity to reflect" and condemned the racism experienced by members of the Windrush generation and British minorities in 2022.
+In May 2022, he attended the State Opening of Parliament for the first time as a counsellor of state, where his father delivered the Queen's Speech on behalf of Elizabeth II.
+Prince of Wales
+
+Queen Elizabeth II died on 8 September 2022, and William's father succeeded as King Charles III.
+William, now heir apparent, was created Prince of Wales by his father on 9 September.
+Controversy surrounding the title became a topic of public debate in Wales.
+As the eldest son of the British monarch, William inherited the Duchy of Cornwall, a £1.3 billion private estate established in 1337 to provide an income for the monarch's eldest son.
+The duchy paid him £23.6 million in his first full year as Duke of Cornwall.
+William and Catherine visited Anglesey and Swansea on 27 September 2022, marking their first visit to Wales since becoming Prince and Princess of Wales.
+In February 2023, they visited Falmouth, their first visit to the region since becoming Duke and Duchess of Cornwall.
+In October 2023, William and Catherine condemned the October 7 attacks on Israel.
+In February 2024, William visited the British Red Cross headquarters, met aid workers assisting civilians in the Gaza–Israel conflict, and issued a government-approved call to end the fighting.
+In December 2024, William attended the official reopening of the Notre-Dame cathedral in Paris, where he greeted the president-elect of the United States, Donald Trump, and later held a private meeting with him to discuss UK-US relations.
+In April 2025, William attended the funeral of Pope Francis on behalf of his father.
+On 6 November that year, William attended the 2025 United Nations Climate Change Conference in Belém in place of Charles III; The Daily Telegraph described his address as "his highest-profile speech to date".
+Charity work
+
+William became aware of HIV/AIDS in the mid-1990s when he accompanied his mother and brother on visits to shelters and clinics for patients.
+In January 2005, he and Harry volunteered at a British Red Cross aid distribution centre to pack emergency supplies for countries affected by the 2004 Boxing Day tsunami.
+That December, William spent two weeks in North Wales with Mountain Rescue England and Wales (MREW).
+In May 2007, he became patron of MREW and president of the Royal Marsden Hospital, the latter a role previously held by his mother.
+In January 2025, William was announced as the hospital's joint royal patron alongside Catherine.
+In July 2007, William and Harry organised the Concert for Diana in memory of their mother, benefitting the charities and patronages of Diana, William, and Harry.
+In 2010, William became a patron of 100 Women in Hedge Funds' philanthropic initiatives for the following three years.
+BAFTA has since established the Prince William BAFTA Bursary to support junior creatives in the UK with costs needed to progress in film, television, or games.
+In March 2011, he and Catherine set up a gift fund through The Foundation of Prince William and Prince Harry to allow well‐wishers to donate to charities supporting the armed forces, children, the elderly, art, sport, and conservation in lieu of wedding gifts.
+The foundation was renamed The Royal Foundation of The Prince and Princess of Wales in September 2022.
+In 2011 and 2015, William served as patron of British Army officer Henry Worsley's second and third expeditions to the South Pole, the latter raising money for the Endeavour Fund.
+Humanitarian causes
+
+In March 2020, William appeared in a video for the National Emergencies Trust, launching a fundraising appeal to support charities during the COVID‐19 pandemic.
+In December 2020, William and Catherine became joint patrons of NHS Charities Together.
+In March 2022, amid the Russian invasion of Ukraine, William and Catherine made a donation to support refugees.
+In July 2023, William became patron of the appeal to launch The Fleming Centre, aimed at driving a global movement to tackle antimicrobial resistance.
+In July 2024, he and Catherine made donations to support victims of Hurricane Beryl.
+In January 2025, William was announced as patron of the College of Paramedics.
+Conservation
+
+William became patron of the Tusk Trust in December 2005, a charity that works to conserve wildlife and support community development across Africa.
+In 2013, he succeeded his grandfather, the Duke of Edinburgh, as president of Fields in Trust and transitioned into the role of patron in 2024.
+In 2014, Jane Goodall stated that William had expressed the view that all ivory in the royal collection should be destroyed.
+William has occasionally commented on the effects of overpopulation on African wildlife, though his remarks have been criticised for not addressing resource consumption and population density.
+After two years of research, William launched the Earthshot Prize in October 2020, designed to provide funding and incentives for environmental solutions over the following decade.
+He also appeared in an ITV documentary, Prince William: A Planet For Us All, discussing environmental issues.
+In 2021, William made a private donation to the Thin Green Line Foundation, which provides grants to the families of conservation rangers killed while protecting wildlife.
+William has advocated stricter penalties for poachers and wildlife traffickers, having spoken at the Illegal Wildlife Trade Conference in 2018 and supported a 2022 US court sentencing of a man responsible for trafficking rhinoceros horns and elephant ivory.
+LGBT rights
+
+William has spoken in support LGBT rights as part of his work against cyberbullying, emphasising the importance of being "proud of the person you are" and highlighting the effects of online abuse and discrimination.
+In 2016, he appeared in the July issue of Attitude, becoming the first member of the royal family to feature on the cover of a gay magazine.
+In June 2023, William hosted a Pride Month discussion with mental‐health charity volunteers at Royal Vauxhall Tavern.
+Mental health
+
+Since 2009, William has been patron of Child Bereavement UK, which supports children and families who have lost a loved one.
+In 2016, the Royal Foundation launched several mental‐health initiatives, including Heads Together, a campaign led by William, Catherine, and Harry to de‐stigmatise mental health.
+Later that month, William and Catherine, together with Harry and his wife  Meghan, launched Shout, the United Kingdom's first 24/7 text-messaging service for people experiencing mental‐health crises.
+William later volunteered on the crisis helpline during the COVID-19 lockdowns.
+He attributes his interest in mental health to his experiences as an air‐ambulance pilot, his work with the homeless, veterans' welfare, and Catherine's anti‐addiction advocacy.
+In March 2020, William and Catherine began supporting a new mental‐health initiative by Public Health England during the COVID‐19 pandemic.
+In September 2020, William established the Emergency Responders Senior Leaders Board, commissioned by the Royal Foundation to research the mental health and wellbeing of emergency responders, in partnership with King's College London and the Open University.
+In May 2021 and 2022, William and Catherine voiced the Mental Health Minute message, broadcast on every UK radio station, encouraging people to support those experiencing loneliness.
+In September 2023, William unveiled two organisations partnering with the Duchy of Cornwall to improve mental wellbeing and provide mental‐health services for its tenants.
+In October 2023, to mark World Mental Health Day, he and Catherine took part in a youth forum in Birmingham, Exploring our Emotional Worlds, alongside BBC Radio 1 and the charity The Mix.
+In December 2024, he and Catherine jointly funded a pilot scheme with Norfolk and Waveney Mind to support rural and farming communities on the Sandringham estate.
+In March 2025, William was announced as patron of We Are Farming Minds.
+Homelessness
+
+In September 2005, William became patron of Centrepoint, a charity assisting homeless young people.
+William has been patron of The Passage since 2019, having first visited the centre in 1993 with his mother.
+In June 2023, William launched Homewards after two years of development, aiming to end homelessness in the United Kingdom.
+The five‐year initiative focuses on six pilot locations, each receiving initial seed funding from the Royal Foundation and working with private‐sector and grassroots charity partners.
+In February 2024, William, in partnership with the Cornish charity St Petrocs, announced plans to build 24 homes on Duchy of Cornwall land in Nansledan to provide temporary accommodation for people experiencing homelessness.
+Sport
+
+William often plays polo to raise money for charity.
+He became president of England's Football Association (FA) in May 2006 and vice-royal patron of the Welsh Rugby Union (WRU) in February 2007, supporting the Queen as patron.
+That same year, the WRU's decision to name the Prince William Cup drew criticism from those who believed it would have been more appropriate to name it after Ray Gravell.
+William became patron of the WRU and the FA in 2016 and 2024, respectively.
+In December 2010, William, alongside David Cameron, attended a meeting with FIFA vice-president Chung Mong-joon, during which Chung suggested a vote‐trading deal for England's 2018 World Cup bid.
+In 2011, William, as president of the FA, voted against Australia's 2022 FIFA bid and instead supported South Korea, despite being Australia's future heir.
+In February 2021, following an investigation into racist abuse directed at Marcus Rashford, William released a statement as FA president denouncing "racist abuse... whether on the pitch, in the stands, or on social media" as "despicable" adding that "we all have a responsibility" to create an environment of tolerance and accountability.
+In May 2007, William became patron of the English Schools' Swimming Association.
+In 2012, alongside Catherine and Harry, he launched Coach Core, a programme established after the 2012 Olympics to provide apprenticeship opportunities for aspiring professional coaches.
+In May 2020, he appeared in the BBC One Documentary Football, Prince William and Our Mental Health, part of a campaign encouraging men to discuss mental‐health issues using football as a shared medium.
+Both William and Harry are enthusiastic motorcyclists; William has owned a Ducati 1198 S Corse.
+In May 2014, William, like his father and grandfather, became president of the British Sub-Aqua Club (BSAC).
+In November 2022, William was criticised by Welsh football supporters and Welsh actor Michael Sheen for holding the Prince of Wales title while maintaining affiliations with the England national football team, particularly after he presented jerseys to the squad ahead of the 2022 FIFA World Cup, in which both Wales and England were placed in the same Group B. William commented that he had supported the England football team from a very young age but happily supported Welsh rugby union – of which he is patron – over England.
+Public image
+
+William has been one of the most popular members of the British royal family since his birth.
+Ruth La Ferla of The New York Times contrasted William's "refined" and "polite" appeal with Leonardo DiCaprio's "bad-boy" popularity.
+Following his marriage, William's public image assumed a more "staid" and fatherly demeanour, having "settled into a stable domestic order".
+Anne McElvoy has described William's public personality as a "genial presence" with a "tougher side", combined with elements of his mother's "inimitable style".
+Much of his royal work focuses on "big bet" projects, rather than "plaques and patronages".
+In a 2016 interview, William said his aim was to keep the royal family relevant over the next 20 years.
+William and Catherine's close partnership has been described by The Times as a "good double act", with both valuing normality, privacy, and control.
+In 2011, Time magazine listed him as one of the most influential people in the world alongside his then-newlywed wife Catherine.
+He was found to be the most popular member of the royal family by YouGov in December 2022 and September 2023, and as the second most popular in April 2024.
+In December 2024, The Daily Telegraph included William in its annual list of best-dressed celebrities.
+In 2025, he was listed alongside Catherine on the inaugural Time 100 Philanthropy list; that year, the couple also topped Tatler's social power index.
+Privacy and the media
+
+The death of Diana, Princess of Wales, while being chased by the paparazzi in 1997, has shaped William and Catherine's cautious approach to the media.
+In 2005, William spoke with ITV reporter Tom Bradby and concluded that it was likely their voicemails were being accessed.
+An investigation led by Deputy Assistant Commissioner Peter Clarke found that the compromised voicemail accounts belonged to William's aides, including Jamie Lowther-Pinkerton, rather than the prince himself.
+However, Clive Goodman later stated that he had hacked William's phone on 35 occasions.
+Andy Coulson, editor of News of the World from 2003 to 2007, apologised to William and his brother for invading their privacy, accepting "ultimate responsibility" for Goodman's actions.
+William later sued News Group Newspapers, publisher of News of the World and The Sun, resulting in an out-of-court settlement in 2020.
+He and Harry initially brought a private claim through mutual solicitors, though Harry later pursued his case separately with new representation.
+At the time of Middleton's 25th birthday in January 2007, William issued a statement saying that the level of media intrusion had become intolerable.
+In April 2009, William's lawyers secured an apology from the Daily Star over a false claim that he had "wrecked" a $2 million training aircraft.
+In September 2012, the French edition of Closer and the Italian magazine Chi published topless photos of Catherine sunbathing at Château d'Autet.
+William and Catherine filed both a criminal complaint and a civil suit in Nanterre.
+In October 2014, Catherine and William issued a legal warning to a freelance photographer for "harassing and following" their son George and his nanny.
+In August 2015, Kensington Palace released a letter describing the media's "dangerous" attempts to photograph George and Charlotte.
+In November 2016, William issued a statement supporting Harry and his girlfriend, Meghan Markle, following their complaints about press intrusion.
+During a visit to the BBC studios in central London in November 2018, William criticised social‐media companies for failing to address misinformation and for their role in fuelling social problems.
+In June 2022, a three‐minute video of William confronting paparazzi photographer Terry Harris was posted on Harris's YouTube channel.
+Recorded in January 2021, it shows William objecting as Harris attempted to film his family during a bike ride near Anmer Hall.
+In October 2025, Harry named William and Catherine in his court case against Associated Newspapers, alleging that private investigators had been employed to gather information about them, including a payment for details of William's 21st-birthday party in 2003.
+Later that month, William and Catherine won a privacy case in France against Paris Match over unauthorised photos during a family ski trip in the Alps.
+
+
+Titles, styles, and honours
+
+Titles and styles
+
+William has been a British prince since birth and was known as "His Royal Highness Prince William of Wales" until April 2011.
+He was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus by Elizabeth II on the day of his wedding.
+As the eldest son of the monarch, William automatically became Duke of Cornwall, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles, and Prince and Great Steward of Scotland upon his father's accession on 8 September 2022.
+From 8 to 9 September, he was styled "His Royal Highness the Duke of Cornwall and Cambridge".
+On 9 September, Charles announced William's creation as Prince of Wales, the traditional title for the male heir apparent to the British monarch.
+William has since been known as "His Royal Highness the Prince of Wales", except in Scotland, where he is styled "His Royal Highness the Duke of Rothesay" instead.
+Honours
+
+William is a Royal Knight Companion of the Most Noble Order of the Garter (KG), an Extra Knight of the Most Ancient and Most Noble Order of the Thistle (KT), Great Master of the Most Honourable Order of the Bath (GCB), a member of the Privy Council of the United Kingdom (PC), and a Personal Aide-de-Camp (ADC) to the sovereign.
+Ancestry
+
+William descends through his father from both the House of Windsor and the House of Oldenburg, one of Europe's oldest royal dynasties.
+Through his mother, William descends from the Earls Spencer – a cadet branch of the Spencer family descended from the earls of Sunderland (the senior branch are now also dukes of Marlborough); from the Barons Fermoy; and, more distantly from Henry FitzRoy, 1st Duke of Grafton, and Charles Lennox, 1st Duke of Richmond – two illegitimate sons of King Charles II.
+As king, William would be the first monarch since the death of Anne in 1714 to descend undisputedly from Charles I, and the first to descend from Charles II.
+William's matrilineal line traces back to Eliza Kewark, a housekeeper to his 18th‐century ancestor Theodore Forbes, a Scottish merchant working for the East India Company Surat.
+Genealogist William Addams Reitwiesner assumed Kewark was Armenian.
+In June 2013, genealogical DNA tests on two of William's distant matrilineal cousins confirmed that Kewark was matrilineally of Indian descent.
+
+
+
+### Ontology Definition:
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dcterms:source <http://www.co-ode.org/roberts/family-tree.owl> .
+
+:alsoKnownAs a owl:AnnotationProperty .
+
+:formerlyKnownAs a owl:AnnotationProperty .
+
+:hasBirthYear a rdfs:Datatype,
+        owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
+
+:hasDeathYear a owl:AnnotationProperty .
+
+:hasMarriageYear a owl:AnnotationProperty .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
+
+:isAuntOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isSisterOf :isParentOf ) .
+
+:isUncleOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    owl:propertyChainAxiom ( :isBrotherOf :isParentOf ) .
+
+:knownAs a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+:hasFather a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Man ;
+    rdfs:subPropertyOf :hasParent ;
+    owl:inverseOf :isFatherOf .
+
+:hasMother a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Woman ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf ;
+    owl:inverseOf :isMotherOf .
+
+:isBloodrelationOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty .
+
+:isDaughterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:isFatherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isMotherOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor,
+        :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf .
+
+:isSonOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasParent,
+        :isChildOf .
+
+:DomainEntity a owl:Class .
+
+:Female a owl:Class ;
+    rdfs:subClassOf :Sex ;
+    owl:disjointWith :Male .
+
+:hasAncestor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasRelation,
+        owl:topObjectProperty ;
+    owl:inverseOf :isAncestorOf .
+
+:isBrotherOf a owl:ObjectProperty ;
+    rdfs:domain :Man ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:Male a owl:Class ;
+    rdfs:subClassOf :Sex .
+
+:hasRelation a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person .
+
+:hasSex a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Sex .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
+
+:isAncestorOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :hasRelation .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
+
+:isSisterOf a owl:ObjectProperty ;
+    rdfs:domain :Woman ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isSiblingOf .
+
+:hasParent a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor,
+        :Person ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:equivalentProperty :isChildOf ;
+    owl:inverseOf :isParentOf .
+
+:Sex a owl:Class ;
+    rdfs:subClassOf :DomainEntity ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Female :Male ) ] .
+
+:isChildOf a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Ancestor ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:Man a owl:Class ;
+    owl:disjointWith :Sex,
+        :Woman ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Male ] ) ] .
+
+:Woman a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :hasSex ;
+                        owl:someValuesFrom :Female ] ) ] .
+
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
+:Ancestor a owl:Class ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :Person [ a owl:Restriction ;
+                        owl:onProperty :isAncestorOf ;
+                        owl:someValuesFrom :Person ] ) ] .
+
+:Person a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFather ;
+            owl:someValuesFrom :Man ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasMother ;
+            owl:someValuesFrom :Woman ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasSex ;
+            owl:someValuesFrom :Sex ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass :Person ;
+            owl:onProperty :hasParent ],
+        :DomainEntity ;
+    owl:disjointWith :Sex ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Man :Woman ) ] .
+
+
+
+### Current Data Graph State:
+
+
+
+---
+**Requirement**: Process the text and use the available tools to make the Data Graph a **faithful and evidence-based** representation of the facts presented in the text. 
+
+**Strict Instruction**: Do not add any information or entities (like extra marriages or family members) that are not specifically named or described in the Input Text, even if you know they exist historically. Start by analyzing the text and then proceed with tool calls.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (29d83a66-83bf-4caf-857d-59af47ef70bd)
+ Call ID: 29d83a66-83bf-4caf-857d-59af47ef70bd
+  Args:
+    type: :Man
+    source: William
+  AssignClass (83ffbfc2-77bb-4ca9-b2a3-b4eb61a0d2e7)
+ Call ID: 83ffbfc2-77bb-4ca9-b2a3-b4eb61a0d2e7
+  Args:
+    source: Charles_III
+    type: :Man
+  AssignClass (ef4a8b4c-0b06-4edb-a56c-257004b1c126)
+ Call ID: ef4a8b4c-0b06-4edb-a56c-257004b1c126
+  Args:
+    type: :Woman
+    source: Diana
+  AssignClass (94dcdca6-bb5c-460e-8e39-ad9ad008c133)
+ Call ID: 94dcdca6-bb5c-460e-8e39-ad9ad008c133
+  Args:
+    type: :Man
+    source: Harry
+  AssignClass (7f4071d1-2a1d-41fe-918f-c914099600d8)
+ Call ID: 7f4071d1-2a1d-41fe-918f-c914099600d8
+  Args:
+    source: Catherine_Middleton
+    type: :Woman
+  AssignClass (be89caf9-b014-48ba-86f8-5d2cfa07bf01)
+ Call ID: be89caf9-b014-48ba-86f8-5d2cfa07bf01
+  Args:
+    type: :Man
+    source: George
+  AssignClass (aac6d538-cd5c-4d52-92b0-1d4108372e7d)
+ Call ID: aac6d538-cd5c-4d52-92b0-1d4108372e7d
+  Args:
+    source: Charlotte
+    type: :Woman
+  AssignClass (ed46a22a-1a22-4005-9949-d7cf1402cf96)
+ Call ID: ed46a22a-1a22-4005-9949-d7cf1402cf96
+  Args:
+    type: :Man
+    source: Louis
+  AssignClass (08497fa7-280a-4a57-ad54-0aa3c4352988)
+ Call ID: 08497fa7-280a-4a57-ad54-0aa3c4352988
+  Args:
+    type: :Woman
+    source: Elizabeth_II
+  AddLiteral (c93f96f2-962c-4a40-864d-6e76eabedbcc)
+ Call ID: c93f96f2-962c-4a40-864d-6e76eabedbcc
+  Args:
+    literal_value: 1982
+    source: William
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (6b7607c4-826f-4623-8ff9-aac52ff80f3b)
+ Call ID: 6b7607c4-826f-4623-8ff9-aac52ff80f3b
+  Args:
+    target: Charles_III
+    relation: :hasFather
+    source: William
+  AddTriple (e4a4f1ad-367e-4dbc-ba70-e73937495167)
+ Call ID: e4a4f1ad-367e-4dbc-ba70-e73937495167
+  Args:
+    relation: :hasMother
+    target: Diana
+    source: William
+  AddTriple (ca7ea6cc-4026-469a-8af1-30a8bcc5f876)
+ Call ID: ca7ea6cc-4026-469a-8af1-30a8bcc5f876
+  Args:
+    source: William
+    relation: :hasBrother
+    target: Harry
+  AddTriple (2a236c34-96d2-48f4-9a4e-312066c2a26b)
+ Call ID: 2a236c34-96d2-48f4-9a4e-312066c2a26b
+  Args:
+    source: William
+    target: George
+    relation: :hasChild
+  AddTriple (8779d014-7ca2-4da7-8caa-0d61d0c1d303)
+ Call ID: 8779d014-7ca2-4da7-8caa-0d61d0c1d303
+  Args:
+    relation: :hasChild
+    target: Charlotte
+    source: William
+  AddTriple (38fc7977-b211-46bd-94d1-2954aa961976)
+ Call ID: 38fc7977-b211-46bd-94d1-2954aa961976
+  Args:
+    target: Louis
+    relation: :hasChild
+    source: William
+  AddTriple (86c1f787-365e-4c4d-9210-f51df502a554)
+ Call ID: 86c1f787-365e-4c4d-9210-f51df502a554
+  Args:
+    relation: :hasMother
+    target: Catherine_Middleton
+    source: George
+  AddTriple (3a07ef21-d381-4f96-924a-648d592e2607)
+ Call ID: 3a07ef21-d381-4f96-924a-648d592e2607
+  Args:
+    target: Catherine_Middleton
+    relation: :hasMother
+    source: Charlotte
+  AddTriple (d63321c7-3371-43ba-9dc4-7b828e3d4f12)
+ Call ID: d63321c7-3371-43ba-9dc4-7b828e3d4f12
+  Args:
+    source: Louis
+    relation: :hasMother
+    target: Catherine_Middleton
+  AddTriple (68357506-0dfa-4ad0-b25e-4bf9df8be307)
+ Call ID: 68357506-0dfa-4ad0-b25e-4bf9df8be307
+  Args:
+    source: George
+    target: William
+    relation: :hasFather
+  AddTriple (113dc0a6-9b31-48a9-9cf2-04a6ce8dd4ca)
+ Call ID: 113dc0a6-9b31-48a9-9cf2-04a6ce8dd4ca
+  Args:
+    target: William
+    relation: :hasFather
+    source: Charlotte
+  AddTriple (468ff574-c131-4bef-8558-da8222b41428)
+ Call ID: 468ff574-c131-4bef-8558-da8222b41428
+  Args:
+    relation: :hasFather
+    target: William
+    source: Louis
+  AddTriple (05a6e15f-c052-4c60-befb-6f76dadca38d)
+ Call ID: 05a6e15f-c052-4c60-befb-6f76dadca38d
+  Args:
+    source: William
+    target: Elizabeth_II
+    relation: :hasMother
+  RemoveTriple (e73247e5-ef9c-4e4b-9495-cb0141da8c83)
+ Call ID: e73247e5-ef9c-4e4b-9495-cb0141da8c83
+  Args:
+    source: William
+    relation: :hasMother
+    target: Elizabeth_II
+  AddTriple (7bb793f2-1d90-4cee-8c06-51c6824979d3)
+ Call ID: 7bb793f2-1d90-4cee-8c06-51c6824979d3
+  Args:
+    relation: :hasAncestor
+    target: Elizabeth_II
+    source: William
+  AddLiteral (e829a72b-3aae-49c0-9b79-6909001985f3)
+ Call ID: e829a72b-3aae-49c0-9b79-6909001985f3
+  Args:
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: Wills
+    source: William
+  AddLiteral (5c101197-4f24-4b95-88bf-900ce1fbb718)
+ Call ID: 5c101197-4f24-4b95-88bf-900ce1fbb718
+  Args:
+    source: William
+    literal_value: Willy
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AddLiteral (e3724009-806b-4406-a923-b2c62a4d75b8)
+ Call ID: e3724009-806b-4406-a923-b2c62a4d75b8
+  Args:
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: William
+    literal_value: Wombat
+  Finish (d4f51052-1694-46ed-95f9-fd7503ec7732)
+ Call ID: d4f51052-1694-46ed-95f9-fd7503ec7732
+  Args:

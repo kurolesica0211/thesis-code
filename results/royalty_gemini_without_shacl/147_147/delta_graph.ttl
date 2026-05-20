@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Karl_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Marie_Louise_of_Bulgaria .
+
+data:Boris_III_of_Bulgaria a :Man,
+        :Person .
+
+data:Giovanna_of_Italy a :Person,
+        :Woman .
+
+data:Karl_6th_Prince_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 .
+
+data:Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Maria_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Melita_of_Edinburgh .
+
+data:Marie_Louise_of_Bulgaria a :Person,
+        :Woman ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Giovanna_of_Italy .
+
+data:Victoria_Melita_of_Edinburgh a :Person,
+        :Woman .
+

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_Habsburg-Lothringen a :Man,\n        :Person ;\n    :hasBirthYear 1997 ;\n    :hasFather data:Karl_von_Habsburg ;\n    :hasMother data:Francesca_von_Thyssen-Bornemisza ;\n    :hasSex data:Male ;\n    :hasSister data:Eleonore_von_Habsburg,\n        data:Gloria_von_Habsburg .\n\ndata:Eleonore_von_Habsburg a :Person,\n        :Woman .\n\ndata:Fiona_Campbell-Walter a :Person,\n        :Woman .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Person,\n        :Woman ;\n    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;\n    :hasMother data:Fiona_Campbell-Walter .\n\ndata:Gloria_von_Habsburg a :Person,\n        :Woman .\n\ndata:Hans_Heinrich_Thyssen-Bornemisza a :Man,\n        :Person .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMother data:Regina_of_Saxe-Meiningen .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person .\n\ndata:Regina_of_Saxe-Meiningen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_Habsburg-Lothringen a :Man,\n        :Person ;\n    :hasBirthYear 1997 ;\n    :hasFather data:Karl_von_Habsburg ;\n    :hasMother data:Francesca_von_Thyssen-Bornemisza ;\n    :hasSex data:Male ;\n    :hasSister data:Eleonore_von_Habsburg,\n        data:Gloria_von_Habsburg .\n\ndata:Eleonore_von_Habsburg a :Person,\n        :Woman .\n\ndata:Fiona_Campbell-Walter a :Person,\n        :Woman .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Person,\n        :Woman ;\n    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;\n    :hasMother data:Fiona_Campbell-Walter .\n\ndata:Gloria_von_Habsburg a :Person,\n        :Woman .\n\ndata:Hans_Heinrich_Thyssen-Bornemisza a :Man,\n        :Person .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMother data:Regina_of_Saxe-Meiningen .\n\ndata:Male a :Sex .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person .\n\ndata:Regina_of_Saxe-Meiningen a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_Habsburg-Lothringen a :Man,\n        :Person ;\n    :hasBirthYear 1997 ;\n    :hasFather data:Karl_von_Habsburg ;\n    :hasMother data:Francesca_von_Thyssen-Bornemisza ;\n    :hasSex data:Male ;\n    :hasSister data:Eleonore_von_Habsburg,\n        data:Gloria_von_Habsburg .\n\ndata:Eleonore_von_Habsburg a :Person,\n        :Woman .\n\ndata:Fiona_Campbell-Walter a :Person,\n        :Woman .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Person,\n        :Woman ;\n    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;\n    :hasMother data:Fiona_Campbell-Walter .\n\ndata:Gloria_von_Habsburg a :Person,\n        :Woman .\n\ndata:Hans_Heinrich_Thyssen-Bornemisza a :Man,\n        :Person .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMother data:Regina_of_Saxe-Meiningen .\n\ndata:Male a :Sex .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person .\n\ndata:Regina_of_Saxe-Meiningen a :Person,\n        :Woman .\n\n"
+    }
+]

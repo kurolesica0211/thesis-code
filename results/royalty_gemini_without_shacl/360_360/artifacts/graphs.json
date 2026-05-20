@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia a :Man ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Marino_Torlonia ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Beatriz_of_Spain ;\n    :hasSister data:Marina_Torlonia .\n\ndata:Alessandro_Torlonia_Cousin a :Man ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2017 .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg .\n\ndata:Brooke_Shields a :Woman .\n\ndata:Marina_Torlonia a :Woman ;\n    :isMotherOf data:Brooke_Shields .\n\ndata:Marino_Torlonia a :Man .\n\ndata:Mary_Elsie_Moore a :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alessandro_Torlonia a :Man ;\n    :hasBirthYear 1911 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:Marino_Torlonia ;\n    :hasMarriageYear 1935 ;\n    :hasMother data:Mary_Elsie_Moore ;\n    :hasRelation data:Beatriz_of_Spain ;\n    :hasSister data:Marina_Torlonia .\n\ndata:Alessandro_Torlonia_Cousin a :Man ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2017 .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasBirthYear 1909 ;\n    :hasDeathYear 2002 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg .\n\ndata:Brooke_Shields a :Woman .\n\ndata:Marina_Torlonia a :Woman ;\n    :isMotherOf data:Brooke_Shields .\n\ndata:Marino_Torlonia a :Man .\n\ndata:Mary_Elsie_Moore a :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Woman .\n\n"
+    }
+]

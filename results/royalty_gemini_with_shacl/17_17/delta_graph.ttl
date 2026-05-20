@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DavidArmstrongJones a :Ancestor,
+        :Man ;
+    :formerlyKnownAs "Viscount Linley"^^xsd:string ;
+    :hasBirthYear 1961 ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret ;
+    :hasRelation data:SerenaAlleyneStanhope ;
+    :hasSister data:LadySarahChatto ;
+    :isFatherOf data:LadyMargaritaArmstrongJones ;
+    :knownAs "David Linley"^^xsd:string .
+
+data:AntonyArmstrongJones a :Ancestor,
+        :Man ;
+    :isFatherOf data:LadyFrancesVonHofmannsthal,
+        data:PollyFry .
+
+data:LadyFrancesVonHofmannsthal a :Woman .
+
+data:LadyMargaritaArmstrongJones a :Woman .
+
+data:LadySarahChatto a :Woman .
+
+data:PollyFry a :Woman .
+
+data:PrincessMargaret a :Ancestor,
+        :Woman .
+
+data:SerenaAlleyneStanhope a :Woman .
+

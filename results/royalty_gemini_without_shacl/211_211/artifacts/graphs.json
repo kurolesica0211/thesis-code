@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man ;\n    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;\n    :hasMother data:Princess_Marie_of_Windisch-Graetz ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Man ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Princess_Marie_of_Windisch-Graetz a :Woman ;\n    :hasSex \"Female\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg a :Man ;\n    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;\n    :hasMother data:Princess_Marie_of_Windisch-Graetz ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Man ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Princess_Marie_of_Windisch-Graetz a :Woman ;\n    :hasSex \"Female\"^^xsd:string .\n\n"
+    }
+]

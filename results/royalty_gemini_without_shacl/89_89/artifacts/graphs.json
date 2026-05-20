@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1957 ;\n    :hasFather data:GrandDukeVladimirAlexandrovichOfRussia ;\n    :hasMother data:MarieOfMecklenburgSchwerin ;\n    :isSisterOf data:GrandDukeKirillVladimirovich .\n\ndata:KostasSimitis a :Man,\n        :Person ;\n    :hasFather data:GeorgeSimitis .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person ;\n    :alsoKnownAs \"Nicolas Leprince\"^^xsd:string ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:KingGeorgeIOfGreece ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:QueenOlga ;\n    :hasSex \"male\"^^xsd:string ;\n    :isBrotherOf data:Constantine,\n        data:George ;\n    :knownAs \"Greek Nicky\"^^xsd:string .\n\ndata:Constantine a :Man,\n        :Person .\n\ndata:George a :Man,\n        :Person .\n\ndata:GeorgeSimitis a :Man,\n        :Person .\n\ndata:GrandDukeKirillVladimirovich a :Man,\n        :Person .\n\ndata:GrandDukeVladimirAlexandrovichOfRussia a :Man,\n        :Person .\n\ndata:KingGeorgeIOfGreece a :Man,\n        :Person .\n\ndata:MarieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:QueenOlga a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman ;\n    :hasBirthYear 1882 ;\n    :hasDeathYear 1957 ;\n    :hasFather data:GrandDukeVladimirAlexandrovichOfRussia ;\n    :hasMother data:MarieOfMecklenburgSchwerin ;\n    :isSisterOf data:GrandDukeKirillVladimirovich .\n\ndata:KostasSimitis a :Man,\n        :Person ;\n    :hasFather data:GeorgeSimitis .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person ;\n    :alsoKnownAs \"Nicolas Leprince\"^^xsd:string ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1938 ;\n    :hasFather data:KingGeorgeIOfGreece ;\n    :hasMarriageYear 1902 ;\n    :hasMother data:QueenOlga ;\n    :hasSex \"male\"^^xsd:string ;\n    :isBrotherOf data:Constantine,\n        data:George ;\n    :knownAs \"Greek Nicky\"^^xsd:string .\n\ndata:Constantine a :Man,\n        :Person .\n\ndata:George a :Man,\n        :Person .\n\ndata:GeorgeSimitis a :Man,\n        :Person .\n\ndata:GrandDukeKirillVladimirovich a :Man,\n        :Person .\n\ndata:GrandDukeVladimirAlexandrovichOfRussia a :Man,\n        :Person .\n\ndata:KingGeorgeIOfGreece a :Man,\n        :Person .\n\ndata:MarieOfMecklenburgSchwerin a :Person,\n        :Woman .\n\ndata:QueenOlga a :Person,\n        :Woman .\n\n"
+    }
+]

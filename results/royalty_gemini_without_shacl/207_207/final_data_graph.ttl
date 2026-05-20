@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceLucienMurat a :Man .
+
+data:PrinceMichelDOrleans a :Man ;
+    :hasFather data:HenriCountOfParis .
+
+data:PrincessIsabelleDOrleans a :Woman ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:HenriCountOfParis ;
+    :hasDeathYear 1983 ;
+    :hasFather data:PrinceJeanDukeOfGuise ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasMother data:PrincessIsabelleOfOrleans ;
+    :hasRelation data:CountBrunoDHarcourt,
+        data:PrincePierreMurat ;
+    :hasSister data:PrincessFrancoiseOfGreece .
+
+data:ArmandeDePierreDeBernis a :Woman .
+
+data:CountBrunoDHarcourt a :Man ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1930 ;
+    :hasFather data:CountEugeneDHarcourt ;
+    :hasMother data:ArmandeDePierreDeBernis .
+
+data:CountEugeneDHarcourt a :Man .
+
+data:PrinceChristopherOfGreece a :Man .
+
+data:PrinceJeanDukeOfGuise a :Man ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1940 .
+
+data:PrincePierreMurat a :Man ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 .
+
+data:PrincessFrancoiseOfGreece a :Woman ;
+    :hasRelation data:PrinceChristopherOfGreece .
+
+data:PrincessIsabelleOfOrleans a :Woman .
+
+data:HenriCountOfParis a :Man .
+

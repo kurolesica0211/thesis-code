@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Robert_Bruce_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasMarriageYear 1988 ;
+    :hasRelation data:Julia_Caroline_Rawlinson ;
+    :hasSex data:Male ;
+    :hasSister data:Marina_Ogilvy .
+
+data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Julia_Caroline_Rawlinson a :Person,
+        :Woman ;
+    :hasFather data:Charles_Frederick_Melville_Rawlinson ;
+    :hasSex data:Female .
+
+data:Marina_Ogilvy a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

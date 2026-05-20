@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Diane_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Henri_brother_of_Diane ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1960 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Rosa_of_Austria ;\n    :hasSister data:Marie-Th%C3%A9r%C3%A8se .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Henri_brother_of_Diane a :Man ;\n    :hasMarriageYear 1957 ;\n    :hasRelation data:Marie-Th%C3%A9r%C3%A8se .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .\n\ndata:Rosa_of_Austria a :Woman .\n\ndata:Marie-Th%C3%A9r%C3%A8se a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Diane_of_Orl%C3%A9ans a :Woman ;\n    :hasBirthYear 1940 ;\n    :hasBrother data:Henri_brother_of_Diane ;\n    :hasFather data:Henri_Count_of_Paris ;\n    :hasMarriageYear 1960 ;\n    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;\n    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Rosa_of_Austria ;\n    :hasSister data:Marie-Th%C3%A9r%C3%A8se .\n\ndata:Henri_Count_of_Paris a :Man .\n\ndata:Henri_brother_of_Diane a :Man ;\n    :hasMarriageYear 1957 ;\n    :hasRelation data:Marie-Th%C3%A9r%C3%A8se .\n\ndata:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .\n\ndata:Rosa_of_Austria a :Woman .\n\ndata:Marie-Th%C3%A9r%C3%A8se a :Woman .\n\n"
+    }
+]

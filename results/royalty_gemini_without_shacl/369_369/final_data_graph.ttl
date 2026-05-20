@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1857 ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach,
+        data:Elisabeth_of_Stolberg-Rossla .
+
+data:Adolf_Friedrich_of_Mecklenburg a :Man,
+        :Person .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman .
+
+data:Charles_Alexander_of_Saxe-Weimar-Eisenach a :Man,
+        :Person .
+
+data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasFather data:Charles_Alexander_of_Saxe-Weimar-Eisenach .
+
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg a :Man,
+        :Person ;
+    :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+data:Frederick_Francis_II_of_Mecklenburg a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_of_Mecklenburg a :Man,
+        :Person .
+
+data:Paul_Frederick_of_Mecklenburg a :Man,
+        :Person .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :alsoKnownAs \"Margarethe Beatrice Feodora\"^^xsd:string ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasParent data:Queen_Victoria ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSisterOf data:Wilhelm_II ;\n    :knownAs \"Mossy\"^^xsd:string .\n\ndata:Frederick_Charles_of_Hesse a :Man .\n\ndata:Frederick_III a :Man .\n\ndata:Victoria_Princess_Royal a :Woman ;\n    :hasParent data:Queen_Victoria .\n\ndata:Wilhelm_II a :Man .\n\ndata:Queen_Victoria a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Margaret_of_Prussia a :Woman ;\n    :alsoKnownAs \"Margarethe Beatrice Feodora\"^^xsd:string ;\n    :hasBirthYear 1872 ;\n    :hasDeathYear 1954 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasParent data:Queen_Victoria ;\n    :hasRelation data:Frederick_Charles_of_Hesse ;\n    :isSisterOf data:Wilhelm_II ;\n    :knownAs \"Mossy\"^^xsd:string .\n\ndata:Frederick_Charles_of_Hesse a :Man .\n\ndata:Frederick_III a :Man .\n\ndata:Victoria_Princess_Royal a :Woman ;\n    :hasParent data:Queen_Victoria .\n\ndata:Wilhelm_II a :Man .\n\ndata:Queen_Victoria a :Woman .\n\n"
+    }
+]

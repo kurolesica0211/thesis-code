@@ -1,0 +1,65 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/465_465",
+  "text_file": "Q77335.txt",
+  "text_key": "Q77335",
+  "article": "https://en.wikipedia.org/wiki/Regina_von_Habsburg",
+  "article_key": "Regina von Habsburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Regina-_Crown_Princess_of_Austria",
+    "qid": "Q77335",
+    "label": "Regina, Crown Princess of Austria"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Regina-_Crown_Princess_of_Austria",
+      "qid": "Q77335",
+      "label": "Regina, Crown Princess of Austria",
+      "distance": 0,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Regina_von_Habsburg",
+      "extracted_local_name": "Regina_von_Habsburg",
+      "embedding_text": "Regina von Habsburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Regina-_Crown_Princess_of_Austria",
+      "ground_truth_qid": "Q77335",
+      "ground_truth_label": "Regina, Crown Princess of Austria",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Regina von Habsburg",
+      "best_candidate_label": "Regina, Crown Princess of Austria",
+      "best_candidate_qid": "Q77335",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Otto_von_Habsburg",
+      "extracted_local_name": "Otto_von_Habsburg",
+      "embedding_text": "Otto von Habsburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 2,
+    "entities_matched": 1,
+    "entities_unmatched": 1
+  }
+}

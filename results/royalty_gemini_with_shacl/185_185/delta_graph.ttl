@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear "1869-08-10"^^xsd:date ;
+    :hasDeathYear "1955-09-03"^^xsd:date ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasMarriageYear "1896-10-24"^^xsd:date ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Augustus_II_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Hendrik_Prince_Consort_of_the_Netherlands .
+
+data:Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :isDaughterOf data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II_of_Oldenburg .
+
+data:Adolph_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Man .
+
+data:Alexandrine_of_Prussia a :Ancestor,
+        :Woman .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
+        :Man ;
+    :hasFather data:Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Alexandrine_of_Prussia .
+
+data:Hendrik_Prince_Consort_of_the_Netherlands a :Man,
+        :Person .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasFather data:Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Mathilde_of_Sch%C3%B6nburg-Waldenburg .
+
+data:Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Ancestor,
+        :Woman .
+
+data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man .
+
+data:Elisabeth_Anna_of_Oldenburg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasRelation data:Elisabeth_Anna_of_Oldenburg .
+

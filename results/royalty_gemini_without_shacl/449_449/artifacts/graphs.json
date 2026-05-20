@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elena a :Person,\n        :Woman ;\n    :isDaughterOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :isSonOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man .\n\ndata:Susan_Doukht_Jalali a :Person,\n        :Woman .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasRelation data:Susan_Doukht_Jalali ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elena a :Person,\n        :Woman ;\n    :isDaughterOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :isSonOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man .\n\ndata:Male a :Sex .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man .\n\ndata:Susan_Doukht_Jalali a :Person,\n        :Woman .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasRelation data:Susan_Doukht_Jalali ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Elena a :Person,\n        :Woman ;\n    :isDaughterOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Heinrich_XXVIII a :Man,\n        :Person ;\n    :isSonOf data:Heinrich_XIII_Prinz_Reuss .\n\ndata:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,\n        :Woman ;\n    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .\n\ndata:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,\n        :Man .\n\ndata:Male a :Sex .\n\ndata:Prince_Heinrich_I_Reuss a :Ancestor,\n        :Man .\n\ndata:Susan_Doukht_Jalali a :Person,\n        :Woman .\n\ndata:Heinrich_XIII_Prinz_Reuss a :Man,\n        :Person ;\n    :hasBirthYear 1951 ;\n    :hasFather data:Prince_Heinrich_I_Reuss ;\n    :hasMarriageYear 1989 ;\n    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;\n    :hasRelation data:Susan_Doukht_Jalali ;\n    :hasSex data:Male .\n\n"
+    }
+]

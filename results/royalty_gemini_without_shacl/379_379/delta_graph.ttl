@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1930,
+        1946 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_George_William_of_Hanover ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person .
+
+data:Prince_George_William_of_Hanover a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasRelation data:Queen_Elizabeth_II .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
+

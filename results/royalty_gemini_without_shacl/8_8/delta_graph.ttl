@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DanielChatto a :Man ;
+    :hasFather data:TomChatto ;
+    :hasMother data:RosChatto .
+
+data:FrancesArmstrongJones a :Woman ;
+    :hasBirthYear 1979 ;
+    :hasFather data:AntonyArmstrongJones .
+
+data:JasperCableAlexander a :Man ;
+    :hasBirthYear 1998 ;
+    :hasFather data:AntonyArmstrongJones .
+
+data:KingCharlesIII a :Man .
+
+data:PollyFry a :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:AntonyArmstrongJones .
+
+data:SarahChatto a :Woman ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:DavidArmstrongJones ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret .
+
+data:DavidArmstrongJones a :Man ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret .
+
+data:RosChatto a :Woman .
+
+data:TomChatto a :Man .
+
+data:PrincessMargaret a :Woman .
+
+data:AntonyArmstrongJones a :Man .
+

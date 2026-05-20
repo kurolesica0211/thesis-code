@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
+        :Woman ;
+    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Gaston_Count_of_Eu a :Ancestor,
+        :Man,
+        :Person .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+    :knownAs "the Perfect Prince"^^xsd:string .
+
+data:Maria_Pia_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+

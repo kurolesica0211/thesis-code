@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Person,
+        :Woman ;
+    :hasBirthYear 1980 ;
+    :hasDaughter data:Lyla_Gilman ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2007 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasRelation data:George_Gilman ;
+    :hasSon data:Rufus_Gilman .
+
+data:Birgitte_Duchess_of_Gloucester a :Person,
+        :Woman .
+
+data:George_Gilman a :Man,
+        :Person ;
+    :hasDaughter data:Lyla_Gilman ;
+    :hasSon data:Rufus_Gilman .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person .
+
+data:Lyla_Gilman a :Person,
+        :Woman .
+
+data:Rufus_Gilman a :Man,
+        :Person .
+

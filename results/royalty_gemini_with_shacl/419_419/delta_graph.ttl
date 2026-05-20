@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernst_of_Lippe a :Man,
+        :Person .
+
+data:Julius_Ernst_of_Lippe a :Man,
+        :Person ;
+    :hasSon data:Ernst_August_of_Lippe .
+
+data:Leopold_IV_of_Lippe a :Man,
+        :Person ;
+    :hasSon data:Armin_of_Lippe .
+
+data:Leopold_of_Lippe a :Man,
+        :Person .
+
+data:Simon_Casimir_of_Lippe a :Man,
+        :Person .
+
+data:Stephan_of_Lippe a :Man,
+        :Person ;
+    :hasFather data:Armin_of_Lippe .
+
+data:Andrea_Messner a :Person,
+        :Woman ;
+    :hasFather data:G%C3%BCnther_Messner ;
+    :hasMother data:Lieselotte_Trzoska .
+
+data:Christa_von_Arnim a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Curt_David_von_Arnim ;
+    :hasMother data:Stephanie_von_Stechow .
+
+data:Curt_David_von_Arnim a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ernst_August_of_Lippe a :Man,
+        :Person ;
+    :hasMother data:Marie_of_Mecklenburg_Strelitz ;
+    :hasSon data:Friedrich_Wilhelm_of_Lippe .
+
+data:Friedrich_Wilhelm_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear "1947"^^xsd:positiveInteger ;
+    :hasMarriageYear "1991"^^xsd:positiveInteger ;
+    :hasMother data:Christa_von_Arnim ;
+    :hasRelation data:Andrea_Messner ;
+    :hasSex data:Male_Entity .
+
+data:G%C3%BCnther_Messner a :Ancestor,
+        :Man,
+        :Person .
+
+data:Lieselotte_Trzoska a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Male_Entity a :Male,
+        :Sex .
+
+data:Marie_of_Mecklenburg_Strelitz a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Stephanie_von_Stechow a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Armin_of_Lippe a :Ancestor,
+        :Man,
+        :Person .
+

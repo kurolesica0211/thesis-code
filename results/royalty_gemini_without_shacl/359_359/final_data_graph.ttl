@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adolf_of_Schaumburg-Lippe a :Man .
+
+data:Alexander_Zoubkoff a :Man .
+
+data:Charlotte_of_Prussia a :Woman ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Henry_of_Prussia a :Man ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Margaret_of_Prussia a :Woman ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Sigismund_of_Prussia a :Man ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Sophie_of_Prussia a :Woman ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Viktoria_of_Prussia a :Woman ;
+    :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria"^^xsd:string ;
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1890,
+        1927 ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Waldemar_of_Prussia a :Man ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Wilhelm_II_German_Emperor a :Man ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMother data:Victoria_Princess_Royal .
+
+data:Augusta_of_Saxe-Weimar a :Woman .
+
+data:Prince_Albert a :Man .
+
+data:Queen_Victoria a :Woman .
+
+data:Wilhelm_I_German_Emperor a :Man .
+
+data:Frederick_III_German_Emperor a :Man ;
+    :hasFather data:Wilhelm_I_German_Emperor ;
+    :hasMother data:Augusta_of_Saxe-Weimar .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+

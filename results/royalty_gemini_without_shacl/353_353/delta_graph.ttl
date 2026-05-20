@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_VIII a :Man ;
+    :hasBirthYear 1894 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Wallis_Simpson ;
+    :isBrotherOf data:George_VI,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_John ;
+    :knownAs "Edward Albert Christian George Andrew Patrick David"^^xsd:string .
+
+data:King_Christian_IX_of_Denmark a :Man .
+
+data:Prince_Albert_Prince_Consort a :Man .
+
+data:Prince_Albert_Victor_Duke_of_Clarence_and_Avondale a :Man .
+
+data:Queen_Victoria a :Woman .
+
+data:Edward_VII a :Man .
+
+data:Francis_Duke_of_Teck a :Man .
+
+data:George_VI a :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isFatherOf data:Princess_Elizabeth_II .
+
+data:Prince_George_Duke_of_Kent a :Man .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man .
+
+data:Prince_John a :Man .
+
+data:Princess_Elizabeth_II a :Woman .
+
+data:Princess_Mary_Adelaide_of_Cambridge a :Woman .
+
+data:Queen_Alexandra a :Woman .
+
+data:Wallis_Simpson a :Woman .
+
+data:George_V a :Man ;
+    :hasFather data:Edward_VII ;
+    :hasMother data:Queen_Alexandra .
+
+data:Queen_Mary a :Woman ;
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .
+

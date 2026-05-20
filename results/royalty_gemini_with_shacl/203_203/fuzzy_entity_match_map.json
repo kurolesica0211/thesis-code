@@ -1,0 +1,125 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/203_203",
+  "text_file": "Q268821.txt",
+  "text_key": "Q268821",
+  "article": "https://en.wikipedia.org/wiki/Princess_Margriet_of_the_Netherlands",
+  "article_key": "Princess Margriet of the Netherlands",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Margriet_of_the_Netherlands",
+    "qid": "Q268821",
+    "label": "Princess Margriet of the Netherlands"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Margriet_of_the_Netherlands",
+      "qid": "Q268821",
+      "label": "Princess Margriet of the Netherlands",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Bernhard_of_Lippe-Biesterfeld",
+      "qid": "Q57304",
+      "label": "Prince Bernhard of Lippe-Biesterfeld",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#William_Alexander_of_the_Netherlands",
+      "qid": "Q154952",
+      "label": "William Alexander of the Netherlands",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Armgard_of_Sierstorpff-Cramm",
+      "qid": "Q2802589",
+      "label": "Armgard of Sierstorpff-Cramm",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Bernhard_of_Lippe",
+      "qid": "Q649601",
+      "label": "Prince Bernhard of Lippe",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
+      "qid": "Q150747",
+      "label": "Wilhelmina of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/QueenJuliana",
+      "extracted_local_name": "QueenJuliana",
+      "embedding_text": "Queen Juliana",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "ground_truth_qid": "Q154946",
+      "ground_truth_label": "Juliana of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Queen Juliana",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceBernhard",
+      "extracted_local_name": "PrinceBernhard",
+      "embedding_text": "Prince Bernhard",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8200000000000001,
+      "ground_truth_uri": "http://example.com/data#Prince_Bernhard_of_Lippe",
+      "ground_truth_qid": "Q649601",
+      "ground_truth_label": "Prince Bernhard of Lippe",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Bernhard of Lippe",
+      "best_candidate_label": "Prince Bernhard of Lippe",
+      "best_candidate_qid": "Q649601",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8200000000000001
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMargriet",
+      "extracted_local_name": "PrincessMargriet",
+      "embedding_text": "Princess Margriet",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margriet van Oranje",
+      "best_candidate_label": "Princess Margriet of the Netherlands",
+      "best_candidate_qid": "Q268821",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4444444444444444
+    }
+  ],
+  "summary": {
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
+  }
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear data:1928,\n        1928 ;\n    :hasSex data:Male ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "49d3909e-9a08-4551-b34a-454716df7987",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Claude_Bowes-Lyon> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Claude_Bowes-Lyon> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fergus_Bowes-Lyon> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Michael_Claude_Hamilton_Bowes-Lyon> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fergus_Bowes-Lyon> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Michael_Claude_Hamilton_Bowes-Lyon> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/John_Cator> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/John_Cator> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fergus_Bowes-Lyon> ;\n            sh:resultMessage \"Value does not have class :Ancestor\" ;\n            sh:resultPath :isSonOf ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Man-isSonOf ;\n            sh:value <http://example.org/data/Michael_Claude_Hamilton_Bowes-Lyon> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear data:1928,\n        1928 ;\n    :hasSex data:Male ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "cbaf42a2-9043-4398-a1de-ea38a8325e3d",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear data:1928,\n        1928 ;\n    :hasSex data:Male ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear 1928 ;\n    :hasSex data:Male ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Elizabeth_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:Fergus_Bowes-Lyon a :Man,\n        :Person ;\n    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .\n\ndata:John_Cator a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Elizabeth_Margaret_Cator .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman .\n\ndata:Male a :Male .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 ;\n    :hasMarriageYear 1928 ;\n    :hasSex data:Male ;\n    :isUncleOf data:Queen_Elizabeth_II ;\n    :knownAs \"Mickie Bowes-Lyon\"^^xsd:string .\n\n"
+    }
+]

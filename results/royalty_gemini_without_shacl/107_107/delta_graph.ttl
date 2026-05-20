@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Benjamin_Pieter_Floris a :Man ;
+    :hasBirthYear 2008 ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve .
+
+data:Isabella_Lily_Juliana a :Woman ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve .
+
+data:Samuel_Bernhard_Louis a :Man ;
+    :hasBirthYear 2004 ;
+    :hasFather data:Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Princess_Margriet a :Woman .
+
+data:Annette_Sekreve a :Woman ;
+    :hasBirthYear 1972 .
+
+data:Bernhard_van_Vollenhoven a :Man ;
+    :hasBirthYear 1969 ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+

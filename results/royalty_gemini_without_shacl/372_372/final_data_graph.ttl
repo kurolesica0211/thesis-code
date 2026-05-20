@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Jean-Christophe_Napol%C3%A9on_Bonaparte ;
+    :hasMother data:Olympia .
+
+data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasFather data:Ferdinand_of_Bourbon .
+
+data:Charles_Napol%C3%A9on a :Man ;
+    :hasFather data:Louis_Napol%C3%A9on .
+
+data:Ferdinand_of_Bourbon a :Man .
+
+data:Jean-Christophe_Napol%C3%A9on_Bonaparte a :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Napol%C3%A9on ;
+    :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Louis_Napol%C3%A9on a :Man ;
+    :hasDeathYear 1997 .
+
+data:Olympia a :Woman .
+

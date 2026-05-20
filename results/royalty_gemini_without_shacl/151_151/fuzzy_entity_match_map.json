@@ -1,0 +1,268 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/151_151",
+  "text_file": "Q233913.txt",
+  "text_key": "Q233913",
+  "article": "https://en.wikipedia.org/wiki/Mary,_Princess_Royal_and_Countess_of_Harewood",
+  "article_key": "Mary, Princess Royal and Countess of Harewood",
+  "main_entity": {
+    "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+    "qid": "Q233913",
+    "label": "Mary, Princess Royal and Countess of Harewood"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "qid": "Q233913",
+      "label": "Mary, Princess Royal and Countess of Harewood",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "qid": "Q336609",
+      "label": "George Lascelles, 7th Earl of Harewood",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_V",
+      "qid": "Q269412",
+      "label": "George V",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_VI",
+      "qid": "Q280856",
+      "label": "George VI",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Gerald_David_Lascelles",
+      "qid": "Q2962982",
+      "label": "Gerald David Lascelles",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Henry_Lascelles-_6th_Earl_of_Harewood",
+      "qid": "Q2653986",
+      "label": "Henry Lascelles, 6th Earl of Harewood",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Edward_VIII",
+      "extracted_local_name": "Edward_VIII",
+      "embedding_text": "Edward VIII",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Edward_VIII",
+      "ground_truth_qid": "Q590227",
+      "ground_truth_label": "Edward VIII",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Edward VIII",
+      "best_candidate_label": "Edward VIII",
+      "best_candidate_qid": "Q590227",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_Lascelles",
+      "extracted_local_name": "George_Lascelles",
+      "embedding_text": "George Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "ground_truth_qid": "Q336609",
+      "ground_truth_label": "George Lascelles, 7th Earl of Harewood",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "George Lascelles",
+      "best_candidate_label": "George Lascelles, 7th Earl of Harewood",
+      "best_candidate_qid": "Q336609",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_V",
+      "extracted_local_name": "George_V",
+      "embedding_text": "George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_VI",
+      "extracted_local_name": "George_VI",
+      "embedding_text": "George VI",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_VI",
+      "ground_truth_qid": "Q280856",
+      "ground_truth_label": "George VI",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "George VI",
+      "best_candidate_label": "George VI",
+      "best_candidate_qid": "Q280856",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Gerald_David_Lascelles",
+      "extracted_local_name": "Gerald_David_Lascelles",
+      "embedding_text": "Gerald David Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Gerald_David_Lascelles",
+      "ground_truth_qid": "Q2962982",
+      "ground_truth_label": "Gerald David Lascelles",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Gerald David Lascelles",
+      "best_candidate_label": "Gerald David Lascelles",
+      "best_candidate_qid": "Q2962982",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Henry_Lascelles",
+      "extracted_local_name": "Henry_Lascelles",
+      "embedding_text": "Henry Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Henry_Lascelles-_6th_Earl_of_Harewood",
+      "ground_truth_qid": "Q2653986",
+      "ground_truth_label": "Henry Lascelles, 6th Earl of Harewood",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Henry Lascelles",
+      "best_candidate_label": "Henry Lascelles, 6th Earl of Harewood",
+      "best_candidate_qid": "Q2653986",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Elizabeth_II",
+      "extracted_local_name": "Queen_Elizabeth_II",
+      "embedding_text": "Queen Elizabeth II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Elizabeth_II",
+      "ground_truth_qid": "Q9682",
+      "ground_truth_label": "Elizabeth II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Queen Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary_Princess_Royal",
+      "extracted_local_name": "Mary_Princess_Royal",
+      "embedding_text": "Mary Princess Royal",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9743589743589743,
+      "ground_truth_uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "ground_truth_qid": "Q233913",
+      "ground_truth_label": "Mary, Princess Royal and Countess of Harewood",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Mary, Princess Royal",
+      "best_candidate_label": "Mary, Princess Royal and Countess of Harewood",
+      "best_candidate_qid": "Q233913",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9743589743589743
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Mary",
+      "extracted_local_name": "Queen_Mary",
+      "embedding_text": "Queen Mary",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Queen Mother",
+      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
+      "best_candidate_qid": "Q10633",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6153846153846154
+    }
+  ],
+  "summary": {
+    "entities_total": 9,
+    "entities_matched": 8,
+    "entities_unmatched": 1
+  }
+}

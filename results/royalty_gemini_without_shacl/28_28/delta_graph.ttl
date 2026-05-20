@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:SimonAlexanderBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear 1932 ;
+    :hasFather data:DavidBowesLyon ;
+    :hasMother data:RachelPaulineSpenderClay .
+
+data:DavidBowesLyon a :Man,
+        :Person ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1961 .
+
+data:HerbertSpenderClay a :Man,
+        :Person .
+
+data:PaulineAstor a :Person,
+        :Woman .
+
+data:RachelPaulineSpenderClay a :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:HerbertSpenderClay ;
+    :hasMother data:PaulineAstor .
+

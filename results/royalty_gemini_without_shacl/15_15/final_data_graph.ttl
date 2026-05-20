@@ -1,0 +1,27 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ariane a :Person,
+        :Woman ;
+    :hasBirthYear 2007 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:Maxima .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:Margriet a :Person,
+        :Woman .
+
+data:PieterVanVollenhoven a :Man,
+        :Person .
+
+data:Maxima a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Willem-Alexander a :Ancestor,
+        :Man,
+        :Person .
+

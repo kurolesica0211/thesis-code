@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Max a :Man,\n        :Person ;\n    :isSonOf data:Berthold .\n\ndata:Philip a :Man,\n        :Person ;\n    :isBrotherOf data:Theodora .\n\ndata:Alice a :Person,\n        :Woman .\n\ndata:Andrew a :Man,\n        :Person .\n\ndata:Berthold a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:MarieLouise ;\n    :hasRelation data:Theodora .\n\ndata:MarieLouise a :Person,\n        :Woman .\n\ndata:Maximilian a :Man,\n        :Person .\n\ndata:Theodora a :Person,\n        :Woman ;\n    :hasFather data:Andrew ;\n    :hasMother data:Alice .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Max a :Man,\n        :Person ;\n    :isSonOf data:Berthold .\n\ndata:Philip a :Man,\n        :Person ;\n    :isBrotherOf data:Theodora .\n\ndata:Alice a :Person,\n        :Woman .\n\ndata:Andrew a :Man,\n        :Person .\n\ndata:Berthold a :Man,\n        :Person ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1963 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:MarieLouise ;\n    :hasRelation data:Theodora .\n\ndata:MarieLouise a :Person,\n        :Woman .\n\ndata:Maximilian a :Man,\n        :Person .\n\ndata:Theodora a :Person,\n        :Woman ;\n    :hasFather data:Andrew ;\n    :hasMother data:Alice .\n\n"
+    }
+]

@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen a :Person,
+        :Woman ;
+    :alsoKnownAs "Princess Mafalda of Hesse"^^xsd:string ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Moritz_Landgrave_of_Hesse ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Moritz_Landgrave_of_Hesse a :Man,
+        :Person .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman .
+

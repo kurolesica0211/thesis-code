@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alphonse a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Eug%C3%A9nie a :Woman ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Francisco a :Man ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .\n\ndata:Henri a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Louis a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Alfonso_de_Borb%C3%B3n a :Man .\n\ndata:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco a :Woman .\n\ndata:Louis_Alphonse_de_Bourbon a :Man ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .\n\ndata:Mar%C3%ADa_Margarita_Vargas_Santaella a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alphonse a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Eug%C3%A9nie a :Woman ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Francisco a :Man ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .\n\ndata:Henri a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Louis a :Man ;\n    :hasFather data:Louis_Alphonse_de_Bourbon ;\n    :hasMother data:Mar%C3%ADa_Margarita_Vargas_Santaella .\n\ndata:Alfonso_de_Borb%C3%B3n a :Man .\n\ndata:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco a :Woman .\n\ndata:Louis_Alphonse_de_Bourbon a :Man ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Alfonso_de_Borb%C3%B3n ;\n    :hasMother data:Mar%C3%ADa_del_Carmen_Mart%C3%ADnez-Bordi%C3%BA_y_Franco .\n\ndata:Mar%C3%ADa_Margarita_Vargas_Santaella a :Woman .\n\n"
+    }
+]

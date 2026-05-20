@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carlos_Duke_of_Parma a :Ancestor,
+        :Man ;
+    :isBrotherOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma ;
+    :isFatherOf data:Carlos_Enrique .
+
+data:Princess_Carolina a :Woman ;
+    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
+
+data:Princess_Margarita a :Woman ;
+    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
+
+data:Carlos_Enrique a :Man .
+
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+        :Man .
+
+data:Gloria_Irene a :Woman .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Woman .
+
+data:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Ancestor,
+        :Man ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :isFatherOf data:Gloria_Irene .
+

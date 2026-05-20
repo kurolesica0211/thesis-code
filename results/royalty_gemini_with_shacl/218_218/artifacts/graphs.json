@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasAncestor data:Isabelle_d%27Orl%C3%A9ans ;\n    :hasBirthYear \"1976\"^^xsd:string .\n\ndata:Isabelle_d%27Orl%C3%A9ans a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "9dfac103-3a75-4b4e-b3b5-f61920014666",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasAncestor data:Isabelle_d%27Orl%C3%A9ans ;\n    :hasBirthYear \"1976\"^^xsd:string .\n\ndata:Isabelle_d%27Orl%C3%A9ans a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

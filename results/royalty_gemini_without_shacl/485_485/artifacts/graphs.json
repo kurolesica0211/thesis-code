@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Otto_d%27Ambrosio a :Man,\n        :Person ;\n    :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;\n    :hasMother data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Charles_I_of_Austria a :Man,\n        :Person .\n\ndata:Eleonore_von_Habsburg-Lothringen a :Person,\n        :Woman ;\n    :hasBirthYear 1994 ;\n    :hasBrother data:Ferdinand_Habsburg ;\n    :hasFather data:Karl_von_Habsburg ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:Francesca_von_Thyssen-Bornemisza ;\n    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio .\n\ndata:Ferdinand_Habsburg a :Man,\n        :Person .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Person,\n        :Woman .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMother data:Regina_von_Saxe-Meiningen .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Charles_I_of_Austria ;\n    :hasMother data:Zita_of_Bourbon-Parma .\n\ndata:Regina_von_Saxe-Meiningen a :Person,\n        :Woman .\n\ndata:Zita_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Otto_d%27Ambrosio a :Man,\n        :Person ;\n    :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;\n    :hasMother data:Eleonore_von_Habsburg-Lothringen .\n\ndata:Charles_I_of_Austria a :Man,\n        :Person .\n\ndata:Eleonore_von_Habsburg-Lothringen a :Person,\n        :Woman ;\n    :hasBirthYear 1994 ;\n    :hasBrother data:Ferdinand_Habsburg ;\n    :hasFather data:Karl_von_Habsburg ;\n    :hasMarriageYear 2020 ;\n    :hasMother data:Francesca_von_Thyssen-Bornemisza ;\n    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio .\n\ndata:Ferdinand_Habsburg a :Man,\n        :Person .\n\ndata:Francesca_von_Thyssen-Bornemisza a :Person,\n        :Woman .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMother data:Regina_von_Saxe-Meiningen .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person ;\n    :hasFather data:Charles_I_of_Austria ;\n    :hasMother data:Zita_of_Bourbon-Parma .\n\ndata:Regina_von_Saxe-Meiningen a :Person,\n        :Woman .\n\ndata:Zita_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,\n        :Person .\n\n"
+    }
+]

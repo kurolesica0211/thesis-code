@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FerdinandPius a :Ancestor,\n        :Man ;\n    :alsoKnownAs \"Ferdinando Pio Maria\"^^xsd:string ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\ndata:AlfonsoCountOfCaserta a :Ancestor,\n        :Man ;\n    :hasFather data:FerdinandII .\n\ndata:FerdinandII a :Ancestor,\n        :Man .\n\ndata:LudwigIII a :Ancestor,\n        :Man .\n\ndata:MariaAntonietta a :Ancestor,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Woman ;\n    :hasFather data:LudwigIII .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "1f032c3c-61fd-46c5-aa7e-867f24130a61",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FerdinandPius a :Ancestor,\n        :Man ;\n    :alsoKnownAs \"Ferdinando Pio Maria\"^^xsd:string ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:AlfonsoCountOfCaserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:MariaAntonietta ;\n    :hasRelation data:MariaLudwigaTheresia .\n\ndata:AlfonsoCountOfCaserta a :Ancestor,\n        :Man ;\n    :hasFather data:FerdinandII .\n\ndata:FerdinandII a :Ancestor,\n        :Man .\n\ndata:LudwigIII a :Ancestor,\n        :Man .\n\ndata:MariaAntonietta a :Ancestor,\n        :Woman .\n\ndata:MariaLudwigaTheresia a :Woman ;\n    :hasFather data:LudwigIII .\n\n"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"1904\"^^xsd:string ;\n    :hasDeathYear \"1985\"^^xsd:string ;\n    :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMarriageYear \"1929\"^^xsd:string ;\n    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;\n    :hasRelation data:Count_Jan_Kanty_Zamoyski .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Count_Andrzej_Zamoyski a :Man,\n        :Person .\n\ndata:Count_Jan_Kanty_Zamoyski a :Man,\n        :Person ;\n    :hasFather data:Count_Andrzej_Zamoyski ;\n    :hasMother data:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Maria_Christina_of_Austria .\n\ndata:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man,\n        :Person .\n\ndata:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear \"1904\"^^xsd:string ;\n    :hasDeathYear \"1985\"^^xsd:string ;\n    :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMarriageYear \"1929\"^^xsd:string ;\n    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;\n    :hasRelation data:Count_Jan_Kanty_Zamoyski .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Count_Andrzej_Zamoyski a :Man,\n        :Person .\n\ndata:Count_Jan_Kanty_Zamoyski a :Man,\n        :Person ;\n    :hasFather data:Count_Andrzej_Zamoyski ;\n    :hasMother data:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies .\n\ndata:Maria_Christina_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,\n        :Woman ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Maria_Christina_of_Austria .\n\ndata:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man,\n        :Person .\n\ndata:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\n"
+    }
+]

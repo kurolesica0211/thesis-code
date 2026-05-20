@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Diane_dOrl%C3%A9ans a :Woman ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Ludwig_W%C3%BCrttemberg a :Man ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .
+
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:Rosa_of_Austria .
+
+data:Henri_Count_of_Paris a :Man .
+
+data:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .
+
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .
+
+data:Rosa_of_Austria a :Woman .
+

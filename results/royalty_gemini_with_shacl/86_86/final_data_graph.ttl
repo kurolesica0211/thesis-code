@@ -1,0 +1,39 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_4th_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Emanuele_Filiberto_Duke_of_Aosta ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Helene_of_Orleans ;
+    :hasSex data:Male_Sex_Node ;
+    :hasSon data:Prince_Amedeo_4th_Duke_of_Aosta_son .
+
+data:Emanuele_Filiberto_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Male_Sex_Node a :Male,
+        :Sex .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Prince_Amedeo_4th_Duke_of_Aosta_son a :Man,
+        :Person ;
+    :hasFather data:Aimone_4th_Duke_of_Aosta ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Princess_Helene_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+

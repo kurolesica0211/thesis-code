@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sigismund a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Leopoldo_Franz ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Laetitia_d_Arenberg ;
+    :hasRelation data:Elyssa_Edmonstone .
+
+data:Archibald_Bruce_Edmonstone a :Ancestor,
+        :Man,
+        :Person .
+
+data:Elyssa_Edmonstone a :Person,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Archibald_Bruce_Edmonstone ;
+    :hasMother data:Julieta_Isabel_Deakin .
+
+data:Ferdinand_IV a :Ancestor,
+        :Man,
+        :Person .
+
+data:Gottfried_of_Austria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Julieta_Isabel_Deakin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Peter_Deakin .
+
+data:Laetitia_d_Arenberg a :Person,
+        :Woman .
+
+data:Leopoldo_Franz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_IV ;
+    :hasFather data:Gottfried_of_Austria .
+
+data:Peter_Deakin a :Ancestor,
+        :Man,
+        :Person .
+

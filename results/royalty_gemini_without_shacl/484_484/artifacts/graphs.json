@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_of_Hesse_and_by_Rhine a :Man,\n        :Person ;\n    :isUncleOf data:Heinrich_of_Hesse-Kassel .\n\ndata:Margaret_Campbell_Geddes a :Person,\n        :Woman ;\n    :isAuntOf data:Heinrich_of_Hesse-Kassel .\n\ndata:Elisabeth_of_Hesse a :Person,\n        :Woman .\n\ndata:Mafalda_of_Savoy a :Person,\n        :Woman ;\n    :hasFather data:Victor_Emmanuel_III_of_Italy .\n\ndata:Moritz_of_Hesse a :Man,\n        :Person .\n\ndata:Otto_of_Hesse a :Man,\n        :Person .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person .\n\ndata:Victor_Emmanuel_III_of_Italy a :Man,\n        :Person .\n\ndata:Heinrich_of_Hesse-Kassel a :Man,\n        :Person ;\n    :alsoKnownAs \"Enrico d'Assia\"^^xsd:string ;\n    :hasBirthYear 1927 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Philipp_of_Hesse ;\n    :hasMother data:Mafalda_of_Savoy ;\n    :isSiblingOf data:Elisabeth_of_Hesse,\n        data:Moritz_of_Hesse,\n        data:Otto_of_Hesse .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Louis_of_Hesse_and_by_Rhine a :Man,\n        :Person ;\n    :isUncleOf data:Heinrich_of_Hesse-Kassel .\n\ndata:Margaret_Campbell_Geddes a :Person,\n        :Woman ;\n    :isAuntOf data:Heinrich_of_Hesse-Kassel .\n\ndata:Elisabeth_of_Hesse a :Person,\n        :Woman .\n\ndata:Mafalda_of_Savoy a :Person,\n        :Woman ;\n    :hasFather data:Victor_Emmanuel_III_of_Italy .\n\ndata:Moritz_of_Hesse a :Man,\n        :Person .\n\ndata:Otto_of_Hesse a :Man,\n        :Person .\n\ndata:Philipp_of_Hesse a :Man,\n        :Person .\n\ndata:Victor_Emmanuel_III_of_Italy a :Man,\n        :Person .\n\ndata:Heinrich_of_Hesse-Kassel a :Man,\n        :Person ;\n    :alsoKnownAs \"Enrico d'Assia\"^^xsd:string ;\n    :hasBirthYear 1927 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Philipp_of_Hesse ;\n    :hasMother data:Mafalda_of_Savoy ;\n    :isSiblingOf data:Elisabeth_of_Hesse,\n        data:Moritz_of_Hesse,\n        data:Otto_of_Hesse .\n\n"
+    }
+]

@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III .
+
+data:Olga_of_Greece a :Person,
+        :Woman ;
+    :isAncestorOf data:Carlo_Alessandro_della_Torre_e_Tasso,
+        data:Charles_III .
+
+data:Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Raimundo_della_Torre_e_Tasso a :Man,
+        :Person .
+
+data:Carlo_Alessandro_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Raimundo_della_Torre_e_Tasso ;
+    :hasMother data:Eugenie_of_Greece_and_Denmark .
+
+data:Charles_III a :Man,
+        :Person .
+

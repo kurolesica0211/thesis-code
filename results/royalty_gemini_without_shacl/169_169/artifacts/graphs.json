@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:Felix a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra .\n\ndata:FrederikX a :Man .\n\ndata:Henrik a :Man .\n\ndata:HenrikJunior a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:MargretheII a :Woman .\n\ndata:Nikolai a :Man ;\n    :formerlyKnownAs data:PrinceNikolaiOfDenmark ;\n    :hasBirthYear 1999 ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra ;\n    :knownAs data:CountNikolaiOfMonpezat .\n\ndata:Alexandra a :Woman .\n\ndata:MarieCavallier a :Woman .\n\ndata:Joachim a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:Felix a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra .\n\ndata:FrederikX a :Man .\n\ndata:Henrik a :Man .\n\ndata:HenrikJunior a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:MargretheII a :Woman .\n\ndata:Nikolai a :Man ;\n    :formerlyKnownAs data:PrinceNikolaiOfDenmark ;\n    :hasBirthYear 1999 ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra ;\n    :knownAs data:CountNikolaiOfMonpezat .\n\ndata:CountNikolaiOfMonpezat a :DomainEntity .\n\ndata:PrinceNikolaiOfDenmark a :DomainEntity .\n\ndata:Alexandra a :Woman .\n\ndata:MarieCavallier a :Woman .\n\ndata:Joachim a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena a :Woman ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:Felix a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra .\n\ndata:FrederikX a :Man .\n\ndata:Henrik a :Man .\n\ndata:HenrikJunior a :Man ;\n    :hasFather data:Joachim ;\n    :hasMother data:MarieCavallier .\n\ndata:MargretheII a :Woman .\n\ndata:Nikolai a :Man ;\n    :formerlyKnownAs data:PrinceNikolaiOfDenmark ;\n    :hasBirthYear 1999 ;\n    :hasFather data:Joachim ;\n    :hasMother data:Alexandra ;\n    :knownAs data:CountNikolaiOfMonpezat .\n\ndata:CountNikolaiOfMonpezat a :DomainEntity .\n\ndata:PrinceNikolaiOfDenmark a :DomainEntity .\n\ndata:Alexandra a :Woman .\n\ndata:MarieCavallier a :Woman .\n\ndata:Joachim a :Man .\n\n"
+    }
+]

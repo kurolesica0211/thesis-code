@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "6f3f37cd-d56b-43ad-b391-a33a7e15b08e",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Ancestor,\n        :Man,\n        :Person ;\n    :alsoKnownAs \"El Africano\"^^xsd:string,\n        \"the African\"^^xsd:string ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1941 ;\n    :hasFather data:Alfonso_XII ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Victoria_Eugenie_of_Battenberg ;\n    :hasSon data:Alfonso_Prince_of_Asturias,\n        data:Gonzalo,\n        data:Jaime,\n        data:Juan .\n\ndata:Alfonso_XII a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Christina_of_Austria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSon data:Alfonso_Prince_of_Asturias,\n        data:Gonzalo,\n        data:Jaime,\n        data:Juan .\n\ndata:Alfonso_Prince_of_Asturias a :Man,\n        :Person .\n\ndata:Gonzalo a :Man,\n        :Person .\n\ndata:Jaime a :Man,\n        :Person .\n\ndata:Juan a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "6f3f37cd-d56b-43ad-b391-a33a7e15b08e",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Ancestor,\n        :Man,\n        :Person ;\n    :alsoKnownAs \"El Africano\"^^xsd:string,\n        \"the African\"^^xsd:string ;\n    :hasBirthYear 1886 ;\n    :hasDeathYear 1941 ;\n    :hasFather data:Alfonso_XII ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Maria_Christina_of_Austria ;\n    :hasRelation data:Victoria_Eugenie_of_Battenberg ;\n    :hasSon data:Alfonso_Prince_of_Asturias,\n        data:Gonzalo,\n        data:Jaime,\n        data:Juan .\n\ndata:Alfonso_XII a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Maria_Christina_of_Austria a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSon data:Alfonso_Prince_of_Asturias,\n        data:Gonzalo,\n        data:Jaime,\n        data:Juan .\n\ndata:Alfonso_Prince_of_Asturias a :Man,\n        :Person .\n\ndata:Gonzalo a :Man,\n        :Person .\n\ndata:Jaime a :Man,\n        :Person .\n\ndata:Juan a :Man,\n        :Person .\n\n"
+    }
+]

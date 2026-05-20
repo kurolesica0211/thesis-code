@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;\n    :hasFather data:George_Windsor_Earl_of_St_Andrews,\n        data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent,\n        data:Sylvana_Tomaselli ;\n    :hasSister data:Lady_Amelia_Windsor .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person .\n\ndata:George_Windsor_Earl_of_St_Andrews a :Man,\n        :Person .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:Sir_William_Worsley_4th_Baronet .\n\ndata:Lady_Amelia_Windsor a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Sir_William_Worsley_4th_Baronet a :Man,\n        :Person .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor a :Person,\n        :Woman ;\n    :hasBirthYear 1992 ;\n    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;\n    :hasFather data:George_Windsor_Earl_of_St_Andrews,\n        data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent,\n        data:Sylvana_Tomaselli ;\n    :hasSister data:Lady_Amelia_Windsor .\n\ndata:Edward_Windsor_Lord_Downpatrick a :Man,\n        :Person .\n\ndata:George_Windsor_Earl_of_St_Andrews a :Man,\n        :Person .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman ;\n    :hasFather data:Sir_William_Worsley_4th_Baronet .\n\ndata:Lady_Amelia_Windsor a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\ndata:Sir_William_Worsley_4th_Baronet a :Man,\n        :Person .\n\ndata:Sylvana_Tomaselli a :Person,\n        :Woman .\n\n"
+    }
+]

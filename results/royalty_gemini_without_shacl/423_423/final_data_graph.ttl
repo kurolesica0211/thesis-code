@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Camilla_Crociani ;
+    :hasSister data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon .
+
+data:Prince_Laurent_of_Belgium a :Man,
+        :Person ;
+    :hasBrother data:King_Philippe_of_Belgium .
+
+data:Prince_Leopold_of_Nassau a :Man,
+        :Person ;
+    :hasFather data:Prince_Guillaume_of_Luxembourg .
+
+data:Jean-Christophe_Prince_Napoleon a :Person .
+
+data:King_Philippe_of_Belgium a :Man,
+        :Person .
+
+data:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Camilla_Crociani .
+
+data:Prince_Ferdinand a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Guillaume_of_Luxembourg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Camilla_Crociani a :Person,
+        :Woman .
+
+data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Ferdinand ;
+    :hasSister data:Princess_Beatrice_of_Bourbon-Two_Sicilies .
+

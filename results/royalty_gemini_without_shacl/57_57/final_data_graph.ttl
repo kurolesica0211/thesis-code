@@ -1,0 +1,57 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AntonyArmstrongJones a :Man,
+        :Person .
+
+data:CeciliaBowesLyon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:ClaudeBowesLyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:David a :Man,
+        :Person .
+
+data:KingGeorgeV a :Ancestor,
+        :Man,
+        :Person .
+
+data:KingGeorgeVI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:KingGeorgeV ;
+    :hasMother data:QueenMary .
+
+data:PrincessMargaret a :Person,
+        :Woman ;
+    :hasBirthYear 1930 ;
+    :hasChild data:David,
+        data:Sarah ;
+    :hasDeathYear 2002 ;
+    :hasFather data:KingGeorgeVI ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:QueenElizabethTheQueenMother ;
+    :isSisterOf data:QueenElizabethII ;
+    :knownAs "Margaret Rose"^^xsd:string .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :isSisterOf data:PrincessMargaret .
+
+data:QueenElizabethTheQueenMother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMother data:CeciliaBowesLyon .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sarah a :Person,
+        :Woman .
+

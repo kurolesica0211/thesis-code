@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeVI a :Man,\n        :Person .\n\ndata:InfantaSofia a :Person,\n        :Woman .\n\ndata:LeonorPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:VictoriaFedericaDeMarichalarYBorb%C3%B3n a :Person,\n        :Woman ;\n    :hasBirthYear \"2000-09-09\"^^xsd:string ;\n    :hasBrother data:FelipeDeMarichalar ;\n    :hasFather data:JaimeDeMarichalar ;\n    :hasMother data:InfantaElenaDuchessOfLugo .\n\ndata:FelipeDeMarichalar a :Man,\n        :Person .\n\ndata:InfantaElenaDuchessOfLugo a :Person,\n        :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:SofiaOfSpain .\n\ndata:JaimeDeMarichalar a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:SofiaOfSpain a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FelipeVI a :Man,\n        :Person .\n\ndata:InfantaSofia a :Person,\n        :Woman .\n\ndata:LeonorPrincessOfAsturias a :Person,\n        :Woman .\n\ndata:VictoriaFedericaDeMarichalarYBorb%C3%B3n a :Person,\n        :Woman ;\n    :hasBirthYear \"2000-09-09\"^^xsd:string ;\n    :hasBrother data:FelipeDeMarichalar ;\n    :hasFather data:JaimeDeMarichalar ;\n    :hasMother data:InfantaElenaDuchessOfLugo .\n\ndata:FelipeDeMarichalar a :Man,\n        :Person .\n\ndata:InfantaElenaDuchessOfLugo a :Person,\n        :Woman ;\n    :hasFather data:JuanCarlosI ;\n    :hasMother data:SofiaOfSpain .\n\ndata:JaimeDeMarichalar a :Man,\n        :Person .\n\ndata:JuanCarlosI a :Man,\n        :Person .\n\ndata:SofiaOfSpain a :Person,\n        :Woman .\n\n"
+    }
+]

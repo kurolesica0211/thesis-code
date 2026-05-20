@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male .\n\ndata:Leonor a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Sofia_infanta .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female .\n\ndata:Sofia_infanta a :Woman ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Leonor .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia ;\n    :hasSex data:Male .\n\ndata:Letizia a :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male .\n\ndata:Leonor a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Sofia_infanta .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female .\n\ndata:Sofia_infanta a :Woman ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Leonor .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia ;\n    :hasSex data:Male .\n\ndata:Letizia a :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\ndata:Female a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I a :Man ;\n    :hasSex data:Male .\n\ndata:Leonor a :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Sofia_infanta .\n\ndata:Sofia a :Woman ;\n    :hasSex data:Female .\n\ndata:Sofia_infanta a :Woman ;\n    :hasFather data:Felipe_VI ;\n    :hasMother data:Letizia ;\n    :hasSex data:Female ;\n    :isSisterOf data:Leonor .\n\ndata:Felipe_VI a :Man ;\n    :hasFather data:Juan_Carlos_I ;\n    :hasMother data:Sofia ;\n    :hasSex data:Male .\n\ndata:Letizia a :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Sex .\n\ndata:Female a :Sex .\n\n"
+    }
+]

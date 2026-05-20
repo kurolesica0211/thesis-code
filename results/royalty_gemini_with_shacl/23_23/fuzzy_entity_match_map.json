@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/23_23",
+  "text_file": "Q113733.txt",
+  "text_key": "Q113733",
+  "article": "https://en.wikipedia.org/wiki/Gabriela_von_Habsburg",
+  "article_key": "Gabriela von Habsburg",
+  "main_entity": {
+    "uri": "http://example.com/data#Archduchess_Gabriela_of_Austria",
+    "qid": "Q113733",
+    "label": "Archduchess Gabriela of Austria"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Archduchess_Gabriela_of_Austria",
+      "qid": "Q113733",
+      "label": "Archduchess Gabriela of Austria",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Otto_von_Habsburg",
+      "qid": "Q76343",
+      "label": "Otto von Habsburg",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Gabriela_von_Habsburg",
+      "extracted_local_name": "Gabriela_von_Habsburg",
+      "embedding_text": "Gabriela von Habsburg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Archduchess_Gabriela_of_Austria",
+      "ground_truth_qid": "Q113733",
+      "ground_truth_label": "Archduchess Gabriela of Austria",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Gabriela von Habsburg",
+      "best_candidate_label": "Archduchess Gabriela of Austria",
+      "best_candidate_qid": "Q113733",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Otto_von_Habsburg",
+      "extracted_local_name": "Otto_von_Habsburg",
+      "embedding_text": "Otto von Habsburg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Otto_von_Habsburg",
+      "ground_truth_qid": "Q76343",
+      "ground_truth_label": "Otto von Habsburg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Otto von Habsburg",
+      "best_candidate_label": "Otto von Habsburg",
+      "best_candidate_qid": "Q76343",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_I",
+      "extracted_local_name": "Charles_I",
+      "embedding_text": "Charles I",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Otto von Habsburg",
+      "best_candidate_label": "Otto von Habsburg",
+      "best_candidate_qid": "Q76343",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.23076923076923078
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_Meister",
+      "extracted_local_name": "Christian_Meister",
+      "embedding_text": "Christian Meister",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Crown Prince Otto of Austria",
+      "best_candidate_label": "Otto von Habsburg",
+      "best_candidate_qid": "Q76343",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.3111111111111111
+    },
+    {
+      "extracted_uri": "http://example.org/data/Regina_von_Habsburg",
+      "extracted_local_name": "Regina_von_Habsburg",
+      "embedding_text": "Regina von Habsburg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

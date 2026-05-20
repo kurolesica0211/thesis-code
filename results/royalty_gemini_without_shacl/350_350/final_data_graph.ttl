@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Feodora_of_Saxe_Meiningen a :Person,
+        :Woman ;
+    :hasFather data:Bernhard_III_of_Saxe_Meiningen ;
+    :hasMother data:Charlotte_of_Prussia ;
+    :hasSex data:Female .
+
+data:Charlotte_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1860 ;
+    :hasBrother data:Wilhelm_II ;
+    :hasDeathYear 1919 ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1878 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;
+    :hasSex data:Female .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasSex data:Male .
+
+data:Bernhard_III_of_Saxe_Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

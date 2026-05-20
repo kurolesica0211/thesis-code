@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_IX a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasBrother data:Knud ;\n    :hasDaughter data:Margrethe_II ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear data:1935 ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Ingrid_of_Sweden ;\n    :knownAs \"Christian Frederik Franz Michael Carl Valdemar Georg\"^^xsd:string .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Christian_X a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Knud a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_IX a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasBrother data:Knud ;\n    :hasDaughter data:Margrethe_II ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear data:1935 ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Ingrid_of_Sweden ;\n    :knownAs \"Christian Frederik Franz Michael Carl Valdemar Georg\"^^xsd:string .\n\ndata:1935 a :DomainEntity .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Christian_X a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Knud a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Frederik_IX a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1899 ;\n    :hasBrother data:Knud ;\n    :hasDaughter data:Margrethe_II ;\n    :hasDeathYear 1972 ;\n    :hasFather data:Christian_X ;\n    :hasMarriageYear data:1935 ;\n    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;\n    :hasRelation data:Ingrid_of_Sweden ;\n    :knownAs \"Christian Frederik Franz Michael Carl Valdemar Georg\"^^xsd:string .\n\ndata:1935 a :DomainEntity .\n\ndata:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Christian_X a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Ingrid_of_Sweden a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Knud a :Man,\n        :Person .\n\ndata:Margrethe_II a :Person,\n        :Woman .\n\n"
+    }
+]

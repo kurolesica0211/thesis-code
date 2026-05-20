@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amelie_of_Orleans a :Person,
+        :Woman ;
+    :isSisterOf data:Philippe_Duke_of_Orleans .
+
+data:Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person .
+
+data:Maria_Dorothea_of_Austria a :Person,
+        :Woman .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philippe_Debien a :Man,
+        :Person .
+
+data:Philippe_Duke_of_Orleans a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Louis Philippe Robert"^^xsd:string,
+        "Philippe VIII"^^xsd:string ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1926 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Isabelle_of_Orleans ;
+    :hasRelation data:Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Jean_Duke_of_Guise ;
+    :isFatherOf data:Philippe_Debien ;
+    :knownAs "Philippe"^^xsd:string .
+

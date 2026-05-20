@@ -1,0 +1,26 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1985 ;
+    :hasFather data:Ernst_August_Prinz_von_Hannover ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasRelation data:Alessandra_de_Osma .
+
+data:Alessandra_de_Osma a :Person,
+        :Woman .
+
+data:Chantal_Hochuli a :Person,
+        :Woman .
+
+data:Ernst_August_Prinz_von_Hannover a :Man,
+        :Person ;
+    :hasMarriageYear 1999 ;
+    :hasRelation data:Princess_Caroline_of_Monaco .
+
+data:Princess_Caroline_of_Monaco a :Person,
+        :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ari a :Man,\n        :Person ;\n    :isSonOf data:Gary_Lewis .\n\ndata:Senna_Kowhai a :Person,\n        :Woman ;\n    :isDaughterOf data:Davina_Windsor,\n        data:Gary_Lewis .\n\ndata:Tane_Mahuta a :Man,\n        :Person ;\n    :isSonOf data:Davina_Windsor,\n        data:Gary_Lewis .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Davina_Windsor a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Lady Davina Lewis\"^^xsd:string ;\n    :hasBirthYear \"1977-11-19\"^^xsd:string ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear \"2004\"^^xsd:string ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Gary_Lewis .\n\ndata:Gary_Lewis a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ari a :Man,\n        :Person ;\n    :isSonOf data:Gary_Lewis .\n\ndata:Senna_Kowhai a :Person,\n        :Woman ;\n    :isDaughterOf data:Davina_Windsor,\n        data:Gary_Lewis .\n\ndata:Tane_Mahuta a :Man,\n        :Person ;\n    :isSonOf data:Davina_Windsor,\n        data:Gary_Lewis .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Davina_Windsor a :Person,\n        :Woman ;\n    :formerlyKnownAs \"Lady Davina Lewis\"^^xsd:string ;\n    :hasBirthYear \"1977-11-19\"^^xsd:string ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear \"2004\"^^xsd:string ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Gary_Lewis .\n\ndata:Gary_Lewis a :Man,\n        :Person .\n\n"
+    }
+]

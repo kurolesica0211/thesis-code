@@ -1,0 +1,31 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Chavchavadze a :Man ;
+    :hasBirthYear 1924 ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasMother data:Nina_Georgievna .
+
+data:Xenia a :Woman ;
+    :hasFather data:George_Mikhailovich ;
+    :hasMother data:Maria_Georgievna ;
+    :hasSister data:Nina_Georgievna .
+
+data:George_Mikhailovich a :Man .
+
+data:Maria_Georgievna a :Woman .
+
+data:Nina_Georgievna a :Woman ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:George_Mikhailovich ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Maria_Georgievna ;
+    :hasRelation data:Paul_Chavchavadze ;
+    :hasSister data:Xenia .
+
+data:Paul_Chavchavadze a :Man ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1971 .
+

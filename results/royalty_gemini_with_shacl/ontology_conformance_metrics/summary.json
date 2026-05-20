@@ -1,0 +1,17 @@
+{
+  "num_runs_discovered": 498,
+  "num_runs_processed": 498,
+  "num_runs_failed": 0,
+  "num_inconsistent_aboxes": 0,
+  "smis": {
+    "avg": 0.0,
+    "min": 0.0,
+    "max": 0.0
+  },
+  "avai": {
+    "avg": 0.9950350833711302,
+    "min": 0.9943502824858758,
+    "max": 0.9962406015037594
+  },
+  "failed_runs": []
+}

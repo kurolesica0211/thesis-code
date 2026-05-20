@@ -1,0 +1,207 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/49_49",
+  "text_file": "Q151312.txt",
+  "text_key": "Q151312",
+  "article": "https://en.wikipedia.org/wiki/Frederik_IX",
+  "article_key": "Frederik IX",
+  "main_entity": {
+    "uri": "http://example.com/data#Frederik_IX_of_Denmark",
+    "qid": "Q151312",
+    "label": "Frederik IX of Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Frederik_IX_of_Denmark",
+      "qid": "Q151312",
+      "label": "Frederik IX of Denmark",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Alexandrine_of_Mecklenburg-Schwerin",
+      "qid": "Q57264",
+      "label": "Alexandrine of Mecklenburg-Schwerin",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Christian_X_of_Denmark",
+      "qid": "Q156617",
+      "label": "Christian X of Denmark",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Count_Christian_of_Rosenborg",
+      "qid": "Q573263",
+      "label": "Count Christian of Rosenborg",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_IV",
+      "qid": "Q57930",
+      "label": "Frederick Francis IV",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Margrethe_II_of_Denmark",
+      "qid": "Q102139",
+      "label": "Margrethe II of Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
+      "qid": "Q231463",
+      "label": "Duchess Marie of Mecklenburg-Schwerin",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederick_Francis_III",
+      "qid": "Q57974",
+      "label": "Frederick Francis III",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Frederik_X_of_Denmark",
+      "qid": "Q1004037",
+      "label": "Frederik X of Denmark",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Grand_Duchess_Anastasia_Mikhailovna_of_Russia",
+      "qid": "Q232159",
+      "label": "Grand Duchess Anastasia Mikhailovna of Russia",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Ingrid_of_Sweden",
+      "qid": "Q163010",
+      "label": "Ingrid of Sweden",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alexandrine_of_Mecklenburg-Schwerin",
+      "extracted_local_name": "Alexandrine_of_Mecklenburg-Schwerin",
+      "embedding_text": "Alexandrine of Mecklenburg-Schwerin",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alexandrine_of_Mecklenburg-Schwerin",
+      "ground_truth_qid": "Q57264",
+      "ground_truth_label": "Alexandrine of Mecklenburg-Schwerin",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Alexandrine of Mecklenburg-Schwerin",
+      "best_candidate_label": "Alexandrine of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q57264",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_X",
+      "extracted_local_name": "Christian_X",
+      "embedding_text": "Christian X",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Christian_X_of_Denmark",
+      "ground_truth_qid": "Q156617",
+      "ground_truth_label": "Christian X of Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Christian X",
+      "best_candidate_label": "Christian X of Denmark",
+      "best_candidate_qid": "Q156617",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederik_IX",
+      "extracted_local_name": "Frederik_IX",
+      "embedding_text": "Frederik IX",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Frederik_IX_of_Denmark",
+      "ground_truth_qid": "Q151312",
+      "ground_truth_label": "Frederik IX of Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Frederik IX",
+      "best_candidate_label": "Frederik IX of Denmark",
+      "best_candidate_qid": "Q151312",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ingrid_of_Sweden",
+      "extracted_local_name": "Ingrid_of_Sweden",
+      "embedding_text": "Ingrid of Sweden",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Ingrid_of_Sweden",
+      "ground_truth_qid": "Q163010",
+      "ground_truth_label": "Ingrid of Sweden",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Ingrid of Sweden",
+      "best_candidate_label": "Ingrid of Sweden",
+      "best_candidate_qid": "Q163010",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margrethe_II",
+      "extracted_local_name": "Margrethe_II",
+      "embedding_text": "Margrethe II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Margrethe_II_of_Denmark",
+      "ground_truth_qid": "Q102139",
+      "ground_truth_label": "Margrethe II of Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Margrethe II",
+      "best_candidate_label": "Margrethe II of Denmark",
+      "best_candidate_qid": "Q102139",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Knud",
+      "extracted_local_name": "Knud",
+      "embedding_text": "Knud",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik Henriksen",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.18181818181818182
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 5,
+    "entities_unmatched": 1
+  }
+}

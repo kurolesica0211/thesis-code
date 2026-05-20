@@ -1,0 +1,126 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/140_140",
+  "text_file": "Q2295856.txt",
+  "text_key": "Q2295856",
+  "article": "https://en.wikipedia.org/wiki/Prince_Ernst_August_of_Lippe",
+  "article_key": "Prince Ernst August of Lippe",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Ernst_August_of_Lippe",
+    "qid": "Q2295856",
+    "label": "Prince Ernst August of Lippe"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Ernst_August_of_Lippe",
+      "qid": "Q2295856",
+      "label": "Prince Ernst August of Lippe",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Strelitz",
+      "qid": "Q69425",
+      "label": "Duchess Marie of Mecklenburg-Strelitz",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Ernst_August_of_Lippe",
+      "extracted_local_name": "Ernst_August_of_Lippe",
+      "embedding_text": "Ernst August of Lippe",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8870967741935484,
+      "ground_truth_uri": "http://example.com/data#Prince_Ernst_August_of_Lippe",
+      "ground_truth_qid": "Q2295856",
+      "ground_truth_label": "Prince Ernst August of Lippe",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Ernst August of Lippe",
+      "best_candidate_label": "Prince Ernst August of Lippe",
+      "best_candidate_qid": "Q2295856",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8870967741935484
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marie_of_Mecklenburg-Strelitz",
+      "extracted_local_name": "Marie_of_Mecklenburg-Strelitz",
+      "embedding_text": "Marie of Mecklenburg-Strelitz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7777777777777778,
+      "ground_truth_uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Strelitz",
+      "ground_truth_qid": "Q69425",
+      "ground_truth_label": "Duchess Marie of Mecklenburg-Strelitz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Duchess Marie of Mecklenburg-Strelitz",
+      "best_candidate_label": "Duchess Marie of Mecklenburg-Strelitz",
+      "best_candidate_qid": "Q69425",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.7777777777777778
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christa_von_Arnim",
+      "extracted_local_name": "Christa_von_Arnim",
+      "embedding_text": "Christa von Arnim",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Marie Herzogin zu Mecklenburg",
+      "best_candidate_label": "Duchess Marie of Mecklenburg-Strelitz",
+      "best_candidate_qid": "Q69425",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.30434782608695654
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_Wilhelm_of_Lippe",
+      "extracted_local_name": "Friedrich_Wilhelm_of_Lippe",
+      "embedding_text": "Friedrich Wilhelm of Lippe",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Julius_Ernst_of_Lippe",
+      "extracted_local_name": "Julius_Ernst_of_Lippe",
+      "embedding_text": "Julius Ernst of Lippe",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 2,
+    "entities_unmatched": 3
+  }
+}

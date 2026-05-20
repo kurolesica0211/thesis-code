@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+
+data:FerdinandHabsburg a :Man,
+        :Person ;
+    :hasFather data:KarlVonHabsburg ;
+    :hasMother data:FrancescaVonThyssenBornemisza ;
+    :hasSex data:Male ;
+    :hasSister data:EleonoreVonHabsburg,
+        data:GloriaVonHabsburg .
+
+data:BaronHansHeinrichThyssenBornemisza a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:EleonoreVonHabsburg a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:FionaCampbellWalter a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:FrancescaVonThyssenBornemisza a :Ancestor,
+        :Woman ;
+    :hasFather data:BaronHansHeinrichThyssenBornemisza ;
+    :hasMother data:FionaCampbellWalter ;
+    :hasSex data:Female .
+
+data:GloriaVonHabsburg a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:KarlVonHabsburg a :Ancestor,
+        :Man ;
+    :hasFather data:OttoVonHabsburg ;
+    :hasMother data:PrincessReginaOfSaxeMeiningen ;
+    :hasSex data:Male .
+
+data:OttoVonHabsburg a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:PrincessReginaOfSaxeMeiningen a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_Mecklenburg_Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1873 ;\n    :hasBrother data:Hendrik_Netherlands ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_Mecklenburg_Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_Schwarzburg_Rudolstadt .\n\ndata:Elisabeth_Stolberg_Rossla a :Person,\n        :Woman .\n\ndata:Viktoria_Feodora_Reuss_Schleiz a :Person,\n        :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1918 ;\n    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;\n    :hasMother data:Elise_Hohenlohe_Langenburg .\n\ndata:Elise_Hohenlohe_Langenburg a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Frederick_Francis_II_Mecklenburg_Schwerin a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:Heinrich_XXVII_Reuss_Younger_Line a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Hendrik_Netherlands a :Man,\n        :Person .\n\ndata:Marie_Schwarzburg_Rudolstadt a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Adolf_Friedrich_Mecklenburg_Schwerin a :Man,\n        :Person ;\n    :hasBirthYear 1873 ;\n    :hasBrother data:Hendrik_Netherlands ;\n    :hasDeathYear 1969 ;\n    :hasFather data:Frederick_Francis_II_Mecklenburg_Schwerin ;\n    :hasMarriageYear 1917,\n        1924 ;\n    :hasMother data:Marie_Schwarzburg_Rudolstadt .\n\ndata:Elisabeth_Stolberg_Rossla a :Person,\n        :Woman .\n\ndata:Viktoria_Feodora_Reuss_Schleiz a :Person,\n        :Woman ;\n    :hasBirthYear 1889 ;\n    :hasDeathYear 1918 ;\n    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;\n    :hasMother data:Elise_Hohenlohe_Langenburg .\n\ndata:Elise_Hohenlohe_Langenburg a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Frederick_Francis_II_Mecklenburg_Schwerin a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1823 ;\n    :hasDeathYear 1883 .\n\ndata:Heinrich_XXVII_Reuss_Younger_Line a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Hendrik_Netherlands a :Man,\n        :Person .\n\ndata:Marie_Schwarzburg_Rudolstadt a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

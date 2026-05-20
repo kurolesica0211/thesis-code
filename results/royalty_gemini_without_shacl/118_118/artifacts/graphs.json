@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Pieter-Christiaan ;\n    :hasMother data:Princess_Anita .\n\ndata:Pieter_van_Vollenhoven_Sr a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Pieter_van_Vollenhoven_Sr ;\n    :hasMother data:Princess_Margriet .\n\ndata:Princess_Anita a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;\n    :hasFather data:Prince_Pieter-Christiaan ;\n    :hasMother data:Princess_Anita .\n\ndata:Pieter_van_Vollenhoven_Sr a :Man .\n\ndata:Prince_Pieter-Christiaan a :Man ;\n    :hasBirthYear 1972 ;\n    :hasFather data:Pieter_van_Vollenhoven_Sr ;\n    :hasMother data:Princess_Margriet .\n\ndata:Princess_Anita a :Woman .\n\ndata:Princess_Margriet a :Woman .\n\n"
+    }
+]

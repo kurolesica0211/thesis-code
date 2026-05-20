@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Albert_Charles_Armstrong-Jones a :Man ;
+    :hasBirthYear 1961 ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasSister data:Lady_Sarah_Chatto .
+
+data:Serena_Alleyne_Stanhope a :Woman ;
+    :hasBirthYear 1970 .
+
+data:Antony_Armstrong-Jones a :Man ;
+    :isFatherOf data:Lady_Frances_von_Hofmannsthal,
+        data:Polly_Fry .
+
+data:Lady_Frances_von_Hofmannsthal a :Woman .
+
+data:Lady_Margarita_Armstrong-Jones a :Woman .
+
+data:Lady_Sarah_Chatto a :Woman .
+
+data:Polly_Fry a :Woman .
+
+data:Princess_Margaret a :Woman .
+

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Leonore_of_Orange-Nassau a :Person,\n        :Woman ;\n    :hasBirthYear 2006 ;\n    :hasFather data:Prince_Constantijn_of_the_Netherlands ;\n    :hasMother data:Princess_Laurentien_of_the_Netherlands .\n\ndata:Prince_Constantijn_of_the_Netherlands a :Man,\n        :Person .\n\ndata:Princess_Laurentien_of_the_Netherlands a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Leonore_of_Orange-Nassau a :Person,\n        :Woman ;\n    :hasBirthYear 2006 ;\n    :hasFather data:Prince_Constantijn_of_the_Netherlands ;\n    :hasMother data:Princess_Laurentien_of_the_Netherlands .\n\ndata:Prince_Constantijn_of_the_Netherlands a :Man,\n        :Person .\n\ndata:Princess_Laurentien_of_the_Netherlands a :Person,\n        :Woman .\n\n"
+    }
+]

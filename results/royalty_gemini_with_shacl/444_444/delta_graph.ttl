@@ -1,0 +1,25 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Mary_Luise_Wellesley a :Person,
+        :Woman ;
+    :hasBirthYear "1986"^^xsd:int ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMother data:Princess_Antonia_of_Prussia ;
+    :hasSex data:Female .
+
+data:Charles_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Princess_Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+

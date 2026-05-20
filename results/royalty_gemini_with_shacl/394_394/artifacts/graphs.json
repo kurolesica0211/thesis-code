@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margarethe_of_Hesse a :Person,\n        :Woman ;\n    :alsoKnownAs \"Krista\"^^xsd:string ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Prince_Christoph_of_Hesse ;\n    :hasMarriageYear 1956,\n        1962 ;\n    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Andrew_of_Yugoslavia,\n        data:Robert_van_Eyck .\n\ndata:Alexander_I_of_Yugoslavia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Alexander_I_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_of_Romania ;\n    :hasRelation data:Princess_Kira_Melita_zu_Leiningen .\n\ndata:Prince_Christoph_of_Hesse a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 .\n\ndata:Princess_Kira_Melita_zu_Leiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2006 .\n\ndata:Princess_Maria_of_Romania a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2001 .\n\ndata:Robert_van_Eyck a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "f97c8b98-8eae-4430-ae0e-c1df53ace455",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christina_Margarethe_of_Hesse a :Person,\n        :Woman ;\n    :alsoKnownAs \"Krista\"^^xsd:string ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2011 ;\n    :hasFather data:Prince_Christoph_of_Hesse ;\n    :hasMarriageYear 1956,\n        1962 ;\n    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;\n    :hasRelation data:Prince_Andrew_of_Yugoslavia,\n        data:Robert_van_Eyck .\n\ndata:Alexander_I_of_Yugoslavia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Andrew_of_Yugoslavia a :Man,\n        :Person ;\n    :hasFather data:Alexander_I_of_Yugoslavia ;\n    :hasMother data:Princess_Maria_of_Romania ;\n    :hasRelation data:Princess_Kira_Melita_zu_Leiningen .\n\ndata:Prince_Christoph_of_Hesse a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1943 .\n\ndata:Princess_Kira_Melita_zu_Leiningen a :Person,\n        :Woman ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2006 .\n\ndata:Princess_Maria_of_Romania a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1914 ;\n    :hasDeathYear 2001 .\n\ndata:Robert_van_Eyck a :Man,\n        :Person .\n\n"
+    }
+]

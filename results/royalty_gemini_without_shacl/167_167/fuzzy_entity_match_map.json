@@ -1,0 +1,410 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/167_167",
+  "text_file": "Q240317.txt",
+  "text_key": "Q240317",
+  "article": "https://en.wikipedia.org/wiki/Princess_Margarita_of_Greece_and_Denmark",
+  "article_key": "Princess Margarita of Greece and Denmark",
+  "main_entity": {
+    "uri": "http://example.com/data#Princess_Margarita_of_Greece_and_Denmark",
+    "qid": "Q240317",
+    "label": "Princess Margarita of Greece and Denmark"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Princess_Margarita_of_Greece_and_Denmark",
+      "qid": "Q240317",
+      "label": "Princess Margarita of Greece and Denmark",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Constantine_I_of_Greece",
+      "qid": "Q152099",
+      "label": "Constantine I of Greece",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "qid": "Q157068",
+      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Louise_Mountbatten",
+      "qid": "Q115477",
+      "label": "Louise Mountbatten",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Andrew_of_Greece_and_Denmark",
+      "qid": "Q156531",
+      "label": "Prince Andrew of Greece and Denmark",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Christopher_of_Greece_and_Denmark",
+      "qid": "Q447757",
+      "label": "Prince Christopher of Greece and Denmark",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Edinburgh",
+      "qid": "Q154920",
+      "label": "Prince Edward, Duke of Edinburgh",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_George_of_Greece_and_Denmark",
+      "qid": "Q170396",
+      "label": "Prince George of Greece and Denmark",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Sophie_of_Greece_and_Denmark",
+      "qid": "Q630371",
+      "label": "Princess Sophie of Greece and Denmark",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#James-_Earl_of_Wessex",
+      "qid": "Q550183",
+      "label": "James, Earl of Wessex",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Harry-_Duke_of_Sussex",
+      "qid": "Q152316",
+      "label": "Prince Harry, Duke of Sussex",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Louis_of_Battenberg",
+      "qid": "Q57468",
+      "label": "Prince Louis of Battenberg",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Beatrice_of_York",
+      "qid": "Q165657",
+      "label": "Princess Beatrice of York",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Elizabeth_of_Greece_and_Denmark",
+      "qid": "Q19006",
+      "label": "Princess Elizabeth of Greece and Denmark",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret-_Countess_of_Snowdon",
+      "qid": "Q153815",
+      "label": "Princess Margaret, Countess of Snowdon",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Alice_of_Battenberg",
+      "extracted_local_name": "Alice_of_Battenberg",
+      "embedding_text": "Alice of Battenberg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "ground_truth_qid": "Q116062",
+      "ground_truth_label": "Princess Alice of Battenberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Alice of Battenberg",
+      "best_candidate_label": "Princess Alice of Battenberg",
+      "best_candidate_qid": "Q116062",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Andrew_of_Greece_and_Denmark",
+      "extracted_local_name": "Andrew_of_Greece_and_Denmark",
+      "embedding_text": "Andrew of Greece and Denmark",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Andrew_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q156531",
+      "ground_truth_label": "Prince Andrew of Greece and Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Andrew of Greece and Denmark",
+      "best_candidate_label": "Prince Andrew of Greece and Denmark",
+      "best_candidate_qid": "Q156531",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margarita_of_Greece_and_Denmark",
+      "extracted_local_name": "Margarita_of_Greece_and_Denmark",
+      "embedding_text": "Margarita of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Margarita_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q240317",
+      "ground_truth_label": "Princess Margarita of Greece and Denmark",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Margarita of Greece and Denmark",
+      "best_candidate_label": "Princess Margarita of Greece and Denmark",
+      "best_candidate_qid": "Q240317",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Philip",
+      "extracted_local_name": "Prince_Philip",
+      "embedding_text": "Prince Philip",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "ground_truth_qid": "Q80976",
+      "ground_truth_label": "Prince Philip, Duke of Edinburgh",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Philip",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sophie_of_Greece_and_Denmark",
+      "extracted_local_name": "Sophie_of_Greece_and_Denmark",
+      "embedding_text": "Sophie of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.7857142857142857,
+      "ground_truth_uri": "http://example.com/data#Princess_Sophie_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q630371",
+      "ground_truth_label": "Princess Sophie of Greece and Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Sophie of Greece and Denmark",
+      "best_candidate_label": "Princess Sophie of Greece and Denmark",
+      "best_candidate_qid": "Q630371",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.7857142857142857
+    },
+    {
+      "extracted_uri": "http://example.org/data/Cecilie_of_Greece_and_Denmark",
+      "extracted_local_name": "Cecilie_of_Greece_and_Denmark",
+      "embedding_text": "Cecilie of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Princess_Elizabeth_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q19006",
+      "ground_truth_label": "Princess Elizabeth of Greece and Denmark",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Elizabeth of Greece and Denmark",
+      "best_candidate_label": "Princess Elizabeth of Greece and Denmark",
+      "best_candidate_qid": "Q19006",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/Albrecht_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Albrecht_of_Hohenlohe-Langenburg",
+      "embedding_text": "Albrecht of Hohenlohe-Langenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine Oldenburg I",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Beatrix_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Beatrix_of_Hohenlohe-Langenburg",
+      "embedding_text": "Beatrix of Hohenlohe-Langenburg",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Oldenburg",
+      "best_candidate_label": "Princess Elizabeth of Greece and Denmark",
+      "best_candidate_qid": "Q19006",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.48
+    },
+    {
+      "extracted_uri": "http://example.org/data/Georg_Andreas_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Georg_Andreas_of_Hohenlohe-Langenburg",
+      "embedding_text": "Georg Andreas of Hohenlohe-Langenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine Oldenburg I",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.43333333333333335
+    },
+    {
+      "extracted_uri": "http://example.org/data/Gottfried_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Gottfried_of_Hohenlohe-Langenburg",
+      "embedding_text": "Gottfried of Hohenlohe-Langenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine Oldenburg I",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.5
+    },
+    {
+      "extracted_uri": "http://example.org/data/Kraft_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Kraft_of_Hohenlohe-Langenburg",
+      "embedding_text": "Kraft of Hohenlohe-Langenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Constantine Oldenburg I",
+      "best_candidate_label": "Constantine I of Greece",
+      "best_candidate_qid": "Q152099",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4230769230769231
+    },
+    {
+      "extracted_uri": "http://example.org/data/Rupprecht_of_Hohenlohe-Langenburg",
+      "extracted_local_name": "Rupprecht_of_Hohenlohe-Langenburg",
+      "embedding_text": "Rupprecht of Hohenlohe-Langenburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Henry Charles Albert",
+      "best_candidate_label": "Prince Harry, Duke of Sussex",
+      "best_candidate_qid": "Q152316",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Theodora_of_Greece_and_Denmark",
+      "extracted_local_name": "Theodora_of_Greece_and_Denmark",
+      "embedding_text": "Theodora of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Princess Anne",
+      "best_candidate_label": "Anne, Princess Royal",
+      "best_candidate_qid": "Q151754",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.425531914893617
+    }
+  ],
+  "summary": {
+    "entities_total": 13,
+    "entities_matched": 6,
+    "entities_unmatched": 7
+  }
+}

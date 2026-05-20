@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:DanielChatto a :Man ;\n    :hasFather data:TomChatto ;\n    :hasMother data:RosChatto .\n\ndata:FrancesArmstrongJones a :Woman ;\n    :hasBirthYear 1979 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:JasperCableAlexander a :Man ;\n    :hasBirthYear 1998 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:KingCharlesIII a :Man .\n\ndata:PollyFry a :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:SarahChatto a :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:DavidArmstrongJones ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:DavidArmstrongJones a :Man ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:RosChatto a :Woman .\n\ndata:TomChatto a :Man .\n\ndata:PrincessMargaret a :Woman .\n\ndata:AntonyArmstrongJones a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:DanielChatto a :Man ;\n    :hasFather data:TomChatto ;\n    :hasMother data:RosChatto .\n\ndata:FrancesArmstrongJones a :Woman ;\n    :hasBirthYear 1979 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:JasperCableAlexander a :Man ;\n    :hasBirthYear 1998 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:KingCharlesIII a :Man .\n\ndata:PollyFry a :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:AntonyArmstrongJones .\n\ndata:SarahChatto a :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:DavidArmstrongJones ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:DavidArmstrongJones a :Man ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:RosChatto a :Woman .\n\ndata:TomChatto a :Man .\n\ndata:PrincessMargaret a :Woman .\n\ndata:AntonyArmstrongJones a :Man .\n\n"
+    }
+]

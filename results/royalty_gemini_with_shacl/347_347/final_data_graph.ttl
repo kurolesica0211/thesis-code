@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Tatiana_Mountbatten a :Person,
+        :Woman ;
+    :hasBirthYear "1990"^^xsd:string ;
+    :hasBrother data:Henry_Mountbatten_Earl_of_Medina ;
+    :hasFather data:George_Mountbatten_4th_Marquess_of_Milford_Haven ;
+    :hasMother data:Sarah_Georgina_Walker ;
+    :hasSex data:Female_Sex .
+
+data:Henry_Mountbatten_Earl_of_Medina a :Man,
+        :Person ;
+    :hasParent data:George_Mountbatten_4th_Marquess_of_Milford_Haven,
+        data:Sarah_Georgina_Walker ;
+    :hasSex data:Male_Sex .
+
+data:Female_Sex a :Female .
+
+data:George_Mountbatten_4th_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex .
+
+data:Male_Sex a :Male .
+
+data:Sarah_Georgina_Walker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female_Sex .
+

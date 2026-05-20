@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:King_Peter_II_of_Yugoslavia ;
+    :hasDeathYear 2000 ;
+    :hasFather data:King_Alexander_I ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Queen_Maria_of_Yugoslavia ;
+    :hasRelation data:Princess_Margarita_of_Baden .
+
+data:King_Ferdinand_of_Romania a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Peter_II_of_Yugoslavia a :Man,
+        :Person ;
+    :hasFather data:King_Alexander_I ;
+    :hasMother data:Queen_Maria_of_Yugoslavia .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Queen_Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Alexander_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Maria_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:King_Ferdinand_of_Romania ;
+    :hasMother data:Queen_Marie_of_Romania .
+

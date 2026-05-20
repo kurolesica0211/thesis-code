@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie .\n\ndata:StephanieAnneKaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ChristianKaul ;\n    :hasMother data:HanneloreScheel .\n\ndata:Berthold a :Man .\n\ndata:ChristianKaul a :Man .\n\ndata:HanneloreScheel a :Woman .\n\ndata:HubertSalvator a :Man .\n\ndata:Maximilian a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold ;\n    :hasMother data:Theodora .\n\ndata:Rosemary a :Woman .\n\ndata:Theodora a :Woman .\n\ndata:Valerie a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:HubertSalvator ;\n    :hasMother data:Rosemary .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie .\n\ndata:StephanieAnneKaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ChristianKaul ;\n    :hasMother data:HanneloreScheel .\n\ndata:Berthold a :Man .\n\ndata:ChristianKaul a :Man .\n\ndata:HanneloreScheel a :Woman .\n\ndata:HubertSalvator a :Man .\n\ndata:Maximilian a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold ;\n    :hasMother data:Theodora .\n\ndata:Rosemary a :Woman .\n\ndata:Theodora a :Woman .\n\ndata:Valerie a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:HubertSalvator ;\n    :hasMother data:Rosemary .\n\n"
+    }
+]

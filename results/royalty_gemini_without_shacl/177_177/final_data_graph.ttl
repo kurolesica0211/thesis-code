@@ -1,0 +1,51 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Klaus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg"^^xsd:string ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Elise_von_Vieregg ;
+    :hasRelation data:Gosta_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Prince_Claus_of_the_Netherlands .
+
+data:Elise_von_Vieregg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1951 .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
+
+data:Gosta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1856 ;
+    :hasDeathYear 1929 .
+

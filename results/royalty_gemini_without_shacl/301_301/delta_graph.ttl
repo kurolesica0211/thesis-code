@@ -1,0 +1,50 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Nikola Karađorđević"^^xsd:string,
+        "Prince Nicholas"^^xsd:string ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:Prince_Alexander ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth ;
+    :knownAs "Nicky"^^xsd:string .
+
+data:Princess_Elizabeth_Countess_of_Toerring_Jettenbach a :Person,
+        :Woman .
+
+data:Princess_Marina_Duchess_of_Kent a :Person,
+        :Woman .
+
+data:Arsen_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+        :Person .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+        :Woman .
+
+data:Prince_Alexander a :Man,
+        :Person .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Prince_Paul_of_Yugoslavia a :Man,
+        :Person ;
+    :hasFather data:Arsen_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato .
+
+data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato a :Person,
+        :Woman .
+
+data:Princess_Elizabeth a :Person,
+        :Woman .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+

@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:IvarMountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:GeorgeMountbatten ;
+    :hasFather data:DavidMountbatten ;
+    :hasMarriageYear data:PenelopeAnneVereThompson,
+        1994 ;
+    :hasMother data:JanetMercedesBryce ;
+    :hasSex data:Male .
+
+data:DavidMountbatten a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:GeorgeMountbatten a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:JanetMercedesBryce a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:PenelopeAnneVereThompson a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

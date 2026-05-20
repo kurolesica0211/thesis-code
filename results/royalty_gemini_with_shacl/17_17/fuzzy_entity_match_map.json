@@ -1,0 +1,236 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/17_17",
+  "text_file": "Q1091237.txt",
+  "text_key": "Q1091237",
+  "article": "https://en.wikipedia.org/wiki/David_Armstrong-Jones,_2nd_Earl_of_Snowdon",
+  "article_key": "David Armstrong-Jones, 2nd Earl of Snowdon",
+  "main_entity": {
+    "uri": "http://example.com/data#David_Armstrong-Jones-_2nd_Earl_of_Snowdon",
+    "qid": "Q1091237",
+    "label": "David Armstrong-Jones, 2nd Earl of Snowdon"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#David_Armstrong-Jones-_2nd_Earl_of_Snowdon",
+      "qid": "Q1091237",
+      "label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "qid": "Q335260",
+      "label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Lady_Margarita_Armstrong-Jones",
+      "qid": "Q2414886",
+      "label": "Lady Margarita Armstrong-Jones",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "qid": "Q1040807",
+      "label": "Lady Sarah Chatto",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_VI",
+      "qid": "Q280856",
+      "label": "George VI",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Serena_Armstrong-Jones-_Countess_of_Snowdon",
+      "qid": "Q4493736",
+      "label": "Serena Armstrong-Jones, Countess of Snowdon",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/LadySarahChatto",
+      "extracted_local_name": "LadySarahChatto",
+      "embedding_text": "Lady Sarah Chatto",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "ground_truth_qid": "Q1040807",
+      "ground_truth_label": "Lady Sarah Chatto",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/SerenaAlleyneStanhope",
+      "extracted_local_name": "SerenaAlleyneStanhope",
+      "embedding_text": "Serena Alleyne Stanhope",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Serena_Armstrong-Jones-_Countess_of_Snowdon",
+      "ground_truth_qid": "Q4493736",
+      "ground_truth_label": "Serena Armstrong-Jones, Countess of Snowdon",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Serena Alleyne Stanhope",
+      "best_candidate_label": "Serena Armstrong-Jones, Countess of Snowdon",
+      "best_candidate_qid": "Q4493736",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/LadyMargaritaArmstrongJones",
+      "extracted_local_name": "LadyMargaritaArmstrongJones",
+      "embedding_text": "Lady Margarita Armstrong Jones",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.98,
+      "ground_truth_uri": "http://example.com/data#Lady_Margarita_Armstrong-Jones",
+      "ground_truth_qid": "Q2414886",
+      "ground_truth_label": "Lady Margarita Armstrong-Jones",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Lady Margarita Armstrong-Jones",
+      "best_candidate_label": "Lady Margarita Armstrong-Jones",
+      "best_candidate_qid": "Q2414886",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.98
+    },
+    {
+      "extracted_uri": "http://example.org/data/AntonyArmstrongJones",
+      "extracted_local_name": "AntonyArmstrongJones",
+      "embedding_text": "Antony Armstrong Jones",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9047619047619048,
+      "ground_truth_uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "ground_truth_qid": "Q335260",
+      "ground_truth_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Tony Armstrong-Jones",
+      "best_candidate_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "best_candidate_qid": "Q335260",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9047619047619048
+    },
+    {
+      "extracted_uri": "http://example.org/data/DavidArmstrongJones",
+      "extracted_local_name": "DavidArmstrongJones",
+      "embedding_text": "David Armstrong Jones",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "David Armstrong-Jones, Viscount Linley",
+      "best_candidate_label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "best_candidate_qid": "Q1091237",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6779661016949152
+    },
+    {
+      "extracted_uri": "http://example.org/data/LadyFrancesVonHofmannsthal",
+      "extracted_local_name": "LadyFrancesVonHofmannsthal",
+      "embedding_text": "Lady Frances Von Hofmannsthal",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sarah Frances Elizabeth Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4745762711864407
+    },
+    {
+      "extracted_uri": "http://example.org/data/PollyFry",
+      "extracted_local_name": "PollyFry",
+      "embedding_text": "Polly Fry",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Alexandra Mary",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.30303030303030304
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMargaret",
+      "extracted_local_name": "PrincessMargaret",
+      "embedding_text": "Princess Margaret",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Angela Marguerite Bowes-Lyon",
+      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
+      "best_candidate_qid": "Q10633",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.36363636363636365
+    }
+  ],
+  "summary": {
+    "entities_total": 8,
+    "entities_matched": 4,
+    "entities_unmatched": 4
+  }
+}

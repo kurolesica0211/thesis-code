@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FranzUlrichKinsky a :Man,
+        :Person ;
+    :hasBirthYear "1936"^^xsd:int ;
+    :hasDeathYear "2009"^^xsd:int ;
+    :hasFather data:UlrichKinsky ;
+    :hasMarriageYear data:1965 ;
+    :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
+    :hasRelation data:HelenaVictoriaHuttenCzapska,
+        data:RobertaCavanagh ;
+    :hasSex data:Male .
+
+data:1965 a :DomainEntity .
+
+data:AnneRowell a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:HelenaVictoriaHuttenCzapska a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:HilmarVonDemBusscheHaddenhausen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1900"^^xsd:int ;
+    :hasDeathYear "1974"^^xsd:int ;
+    :hasFather data:HilmarVonDemBusscheHaddenhausen ;
+    :hasSex data:Female .
+
+data:RobertaCavanagh a :Person,
+        :Woman ;
+    :hasBirthYear "1942"^^xsd:int ;
+    :hasDeathYear "2002"^^xsd:int ;
+    :hasFather data:RobertoCavanagh ;
+    :hasMother data:AnneRowell ;
+    :hasSex data:Female .
+
+data:RobertoCavanagh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:UlrichKinsky a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

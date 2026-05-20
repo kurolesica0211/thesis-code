@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granville_George_Fergus_Leveson-Gower a :Man,\n        :Person ;\n    :formerlyKnownAs \"Lord Leveson\"^^xsd:string ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;\n    :hasMarriageYear 1997,\n        2016 ;\n    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;\n    :hasRelation data:Anne_Topping,\n        data:Florence_Pearson .\n\ndata:Anne_Topping a :Person,\n        :Woman ;\n    :hasFather data:Bernard_Topping .\n\ndata:Bernard_Topping a :Man,\n        :Person .\n\ndata:Florence_Pearson a :Person,\n        :Woman .\n\ndata:Granville_Leveson-Gower_5th_Earl_Granville a :Man,\n        :Person .\n\ndata:Rose_Leveson-Gower_Countess_Granville a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Granville_George_Fergus_Leveson-Gower a :Man,\n        :Person ;\n    :formerlyKnownAs \"Lord Leveson\"^^xsd:string ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;\n    :hasMarriageYear 1997,\n        2016 ;\n    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;\n    :hasRelation data:Anne_Topping,\n        data:Florence_Pearson .\n\ndata:Anne_Topping a :Person,\n        :Woman ;\n    :hasFather data:Bernard_Topping .\n\ndata:Bernard_Topping a :Man,\n        :Person .\n\ndata:Florence_Pearson a :Person,\n        :Woman .\n\ndata:Granville_Leveson-Gower_5th_Earl_Granville a :Man,\n        :Person .\n\ndata:Rose_Leveson-Gower_Countess_Granville a :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,17 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceGuillaumeOfLuxembourg a :Man ;
+    :hasBirthYear 1963 ;
+    :hasFather data:GrandDukeJean ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephineCharlotteOfLuxembourg ;
+    :hasRelation data:PrincessSibillaOfLuxembourg .
+
+data:GrandDuchessJosephineCharlotteOfLuxembourg a :Woman .
+
+data:GrandDukeJean a :Man .
+
+data:PrincessSibillaOfLuxembourg a :Woman .
+

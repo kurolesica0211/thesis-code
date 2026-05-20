@@ -1,0 +1,140 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/296_296",
+  "text_file": "Q4494086.txt",
+  "text_key": "Q4494086",
+  "article": "https://en.wikipedia.org/wiki/Jeremy_Lascelles",
+  "article_key": "Jeremy Lascelles",
+  "main_entity": {
+    "uri": "http://example.com/data#Jeremy_Lascelles",
+    "qid": "Q4494086",
+    "label": "Jeremy Lascelles"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Jeremy_Lascelles",
+      "qid": "Q4494086",
+      "label": "Jeremy Lascelles",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "qid": "Q336609",
+      "label": "George Lascelles, 7th Earl of Harewood",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#James_Lascelles",
+      "qid": "Q2038298",
+      "label": "James Lascelles",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Marion_Stein",
+      "qid": "Q2010206",
+      "label": "Marion Stein",
+      "distance": 1,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/James_Lascelles",
+      "extracted_local_name": "James_Lascelles",
+      "embedding_text": "James Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#James_Lascelles",
+      "ground_truth_qid": "Q2038298",
+      "ground_truth_label": "James Lascelles",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "James Lascelles",
+      "best_candidate_label": "James Lascelles",
+      "best_candidate_qid": "Q2038298",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marion_Stein",
+      "extracted_local_name": "Marion_Stein",
+      "embedding_text": "Marion Stein",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Marion_Stein",
+      "ground_truth_qid": "Q2010206",
+      "ground_truth_label": "Marion Stein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Marion Stein",
+      "best_candidate_label": "Marion Stein",
+      "best_candidate_qid": "Q2010206",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Robert_Jeremy_Hugh_Lascelles",
+      "extracted_local_name": "Robert_Jeremy_Hugh_Lascelles",
+      "embedding_text": "Robert Jeremy Hugh Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Jeremy_Lascelles",
+      "ground_truth_qid": "Q4494086",
+      "ground_truth_label": "Jeremy Lascelles",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Robert Jeremy Hugh Lascelles",
+      "best_candidate_label": "Jeremy Lascelles",
+      "best_candidate_qid": "Q4494086",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_Lascelles_7th_Earl_of_Harewood",
+      "extracted_local_name": "George_Lascelles_7th_Earl_of_Harewood",
+      "embedding_text": "George Lascelles 7th Earl of Harewood",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9901960784313726,
+      "ground_truth_uri": "http://example.com/data#George_Lascelles-_7th_Earl_of_Harewood",
+      "ground_truth_qid": "Q336609",
+      "ground_truth_label": "George Lascelles, 7th Earl of Harewood",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "George Lascelles- 7th Earl of Harewood",
+      "best_candidate_label": "George Lascelles, 7th Earl of Harewood",
+      "best_candidate_qid": "Q336609",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9901960784313726
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_George_V",
+      "extracted_local_name": "King_George_V",
+      "embedding_text": "King George V",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Hon. Jeremy Lascelles",
+      "best_candidate_label": "Jeremy Lascelles",
+      "best_candidate_qid": "Q4494086",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.35294117647058826
+    }
+  ],
+  "summary": {
+    "entities_total": 5,
+    "entities_matched": 4,
+    "entities_unmatched": 1
+  }
+}

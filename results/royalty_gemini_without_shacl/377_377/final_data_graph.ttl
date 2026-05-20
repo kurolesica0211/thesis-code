@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Max a :Man,
+        :Person ;
+    :isSonOf data:Berthold .
+
+data:Philip a :Man,
+        :Person ;
+    :isBrotherOf data:Theodora .
+
+data:Alice a :Person,
+        :Woman .
+
+data:Andrew a :Man,
+        :Person .
+
+data:Berthold a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:MarieLouise ;
+    :hasRelation data:Theodora .
+
+data:MarieLouise a :Person,
+        :Woman .
+
+data:Maximilian a :Man,
+        :Person .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasFather data:Andrew ;
+    :hasMother data:Alice .
+

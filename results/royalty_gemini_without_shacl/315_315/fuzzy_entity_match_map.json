@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/315_315",
+  "text_file": "Q50998.txt",
+  "text_key": "Q50998",
+  "article": "https://en.wikipedia.org/wiki/Prince_Adalbert_of_Prussia_(1884%E2%80%931948)",
+  "article_key": "Prince Adalbert of Prussia",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
+    "qid": "Q50998",
+    "label": "Prince Adalbert of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
+      "qid": "Q50998",
+      "label": "Prince Adalbert of Prussia",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "qid": "Q161247",
+      "label": "Augusta Victoria of Schleswig-Holstein",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Frederica_of_Hanover",
+      "qid": "Q61351",
+      "label": "Frederica of Hanover",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
+      "qid": "Q58777",
+      "label": "Prince August Wilhelm of Prussia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
+      "qid": "Q77556",
+      "label": "Prince Wilhelm of Prussia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein",
+      "extracted_local_name": "Augusta_Victoria_of_Schleswig-Holstein",
+      "embedding_text": "Augusta Victoria of Schleswig-Holstein",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
+      "ground_truth_qid": "Q161247",
+      "ground_truth_label": "Augusta Victoria of Schleswig-Holstein",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_label": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_qid": "Q161247",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Adalbert_of_Prussia",
+      "extracted_local_name": "Adalbert_of_Prussia",
+      "embedding_text": "Adalbert of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8478260869565217,
+      "ground_truth_uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
+      "ground_truth_qid": "Q50998",
+      "ground_truth_label": "Prince Adalbert of Prussia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Adalbert of Prussia",
+      "best_candidate_label": "Prince Adalbert of Prussia",
+      "best_candidate_qid": "Q50998",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.8478260869565217
+    },
+    {
+      "extracted_uri": "http://example.org/data/Wilhelm_II_of_Prussia",
+      "extracted_local_name": "Wilhelm_II_of_Prussia",
+      "embedding_text": "Wilhelm II of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.6451612903225806,
+      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
+      "ground_truth_qid": "Q2677",
+      "ground_truth_label": "Wilhelm II",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6451612903225806
+    },
+    {
+      "extracted_uri": "http://example.org/data/Adelaide_of_Lippe-Biesterfeld",
+      "extracted_local_name": "Adelaide_of_Lippe-Biesterfeld",
+      "embedding_text": "Adelaide of Lippe-Biesterfeld",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Augusta Victoria",
+      "best_candidate_label": "Augusta Victoria of Schleswig-Holstein",
+      "best_candidate_qid": "Q161247",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.17777777777777778
+    },
+    {
+      "extracted_uri": "http://example.org/data/Adelheid_of_Saxe-Meiningen",
+      "extracted_local_name": "Adelheid_of_Saxe-Meiningen",
+      "embedding_text": "Adelheid of Saxe-Meiningen",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Fredericka",
+      "best_candidate_label": "Frederica of Hanover",
+      "best_candidate_qid": "Q61351",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2222222222222222
+    },
+    {
+      "extracted_uri": "http://example.org/data/Frederick_of_Saxe-Meiningen",
+      "extracted_local_name": "Frederick_of_Saxe-Meiningen",
+      "embedding_text": "Frederick of Saxe-Meiningen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Wilhelm Emperor William II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.4444444444444444
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm-Karl_von_Preussen a :Man ;\n    :hasBirthYear \"1922\"^^xsd:string ;\n    :hasDeathYear \"2007\"^^xsd:string ;\n    :hasFather data:Prince_Oskar_of_Prussia ;\n    :hasMarriageYear \"1952\"^^xsd:string ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Armgard_Else_Helene_von_Veltheim .\n\ndata:Armgard_Else_Helene_von_Veltheim a :Woman ;\n    :hasBirthYear \"1926\"^^xsd:string ;\n    :hasDeathYear \"2019\"^^xsd:string ;\n    :hasFather data:Friedrich_von_Veltheim ;\n    :hasMother data:Ottonie_von_Alvensleben .\n\ndata:Friedrich_von_Veltheim a :Man ;\n    :hasBirthYear \"1881\"^^xsd:string ;\n    :hasDeathYear \"1955\"^^xsd:string .\n\ndata:Ina_Marie_von_Bassewitz a :Woman .\n\ndata:Ottonie_von_Alvensleben a :Woman ;\n    :hasBirthYear \"1883\"^^xsd:string ;\n    :hasDeathYear \"1960\"^^xsd:string .\n\ndata:Prince_Oskar_of_Prussia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Wilhelm-Karl_von_Preussen a :Man ;\n    :hasBirthYear \"1922\"^^xsd:string ;\n    :hasDeathYear \"2007\"^^xsd:string ;\n    :hasFather data:Prince_Oskar_of_Prussia ;\n    :hasMarriageYear \"1952\"^^xsd:string ;\n    :hasMother data:Ina_Marie_von_Bassewitz ;\n    :hasRelation data:Armgard_Else_Helene_von_Veltheim .\n\ndata:Armgard_Else_Helene_von_Veltheim a :Woman ;\n    :hasBirthYear \"1926\"^^xsd:string ;\n    :hasDeathYear \"2019\"^^xsd:string ;\n    :hasFather data:Friedrich_von_Veltheim ;\n    :hasMother data:Ottonie_von_Alvensleben .\n\ndata:Friedrich_von_Veltheim a :Man ;\n    :hasBirthYear \"1881\"^^xsd:string ;\n    :hasDeathYear \"1955\"^^xsd:string .\n\ndata:Ina_Marie_von_Bassewitz a :Woman .\n\ndata:Ottonie_von_Alvensleben a :Woman ;\n    :hasBirthYear \"1883\"^^xsd:string ;\n    :hasDeathYear \"1960\"^^xsd:string .\n\ndata:Prince_Oskar_of_Prussia a :Man .\n\n"
+    }
+]

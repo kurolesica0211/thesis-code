@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mathilde_van_Limburg-Stirum a :Woman .
+
+data:Wilhelmina a :Woman ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg .
+
+data:William_Prince_of_Orange a :Man ;
+    :hasBirthYear 1840 ;
+    :hasBrother data:Alexander ;
+    :hasDeathYear 1879 ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :knownAs "Prince Lemon"^^xsd:string .
+
+data:Alexander a :Man .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man ;
+    :hasFather data:William_II_of_the_Netherlands .
+
+data:William_II_of_the_Netherlands a :Ancestor,
+        :Man ;
+    :hasFather data:William_I_of_the_Netherlands .
+
+data:William_I_of_the_Netherlands a :Ancestor,
+        :Man .
+
+data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Woman .
+

@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear "1874"^^xsd:int ;
+    :hasDeathYear "1947"^^xsd:int ;
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear "1906"^^xsd:int ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Frederick_Augustus_III_of_Saxony,
+        data:Johann_Georg_of_Saxony .
+
+data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ferdinand_II_of_Portugal a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Augustus_III_of_Saxony a :Man,
+        :Person .
+
+data:George_of_Saxony a :Ancestor,
+        :Man,
+        :Person .
+
+data:Johann_Georg_of_Saxony a :Man,
+        :Person ;
+    :hasFather data:George_of_Saxony ;
+    :hasMother data:Maria_Anna_of_Portugal .
+
+data:Maria_Anna_of_Portugal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_II_of_Portugal ;
+    :hasMother data:Maria_II_of_Portugal .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_II_of_Portugal a :Ancestor,
+        :Person,
+        :Woman .
+

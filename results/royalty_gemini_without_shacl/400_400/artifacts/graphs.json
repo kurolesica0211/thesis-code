@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Michael_I a :Man,\n        :Person ;\n    :hasBirthYear 1921 ;\n    :hasDaughter data:Elena_of_Romania,\n        data:Irina_of_Romania,\n        data:Margareta_of_Romania,\n        data:Maria_of_Romania,\n        data:Sophie_of_Romania ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Carol_II ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Queen_Elena ;\n    :hasRelation data:Anne_of_Bourbon-Parma .\n\ndata:Anne_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Carol_II a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_I .\n\ndata:Elena_of_Romania a :Person,\n        :Woman .\n\ndata:Ferdinand_I a :Man,\n        :Person .\n\ndata:Irina_of_Romania a :Person,\n        :Woman .\n\ndata:Margareta_of_Romania a :Person,\n        :Woman .\n\ndata:Maria_of_Romania a :Person,\n        :Woman .\n\ndata:Queen_Elena a :Person,\n        :Woman .\n\ndata:Sophie_of_Romania a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Constantine_I a :Man,\n        :Person .\n\ndata:Michael_I a :Man,\n        :Person ;\n    :hasBirthYear 1921 ;\n    :hasDaughter data:Elena_of_Romania,\n        data:Irina_of_Romania,\n        data:Margareta_of_Romania,\n        data:Maria_of_Romania,\n        data:Sophie_of_Romania ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Carol_II ;\n    :hasMarriageYear 1948 ;\n    :hasMother data:Queen_Elena ;\n    :hasRelation data:Anne_of_Bourbon-Parma .\n\ndata:Anne_of_Bourbon-Parma a :Person,\n        :Woman .\n\ndata:Carol_II a :Man,\n        :Person ;\n    :hasFather data:Ferdinand_I .\n\ndata:Elena_of_Romania a :Person,\n        :Woman .\n\ndata:Ferdinand_I a :Man,\n        :Person .\n\ndata:Irina_of_Romania a :Person,\n        :Woman .\n\ndata:Margareta_of_Romania a :Person,\n        :Woman .\n\ndata:Maria_of_Romania a :Person,\n        :Woman .\n\ndata:Queen_Elena a :Person,\n        :Woman .\n\ndata:Sophie_of_Romania a :Person,\n        :Woman .\n\n"
+    }
+]

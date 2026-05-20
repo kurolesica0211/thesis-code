@@ -1,0 +1,19 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dom_Lu%C3%ADs_Filipe a :Man ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Manuel_II ;
+    :hasDeathYear 1908 ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+
+data:Manuel_II a :Man ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+
+data:Am%C3%A9lie_dOrl%C3%A9ans a :Woman .
+
+data:Carlos_I a :Man .
+

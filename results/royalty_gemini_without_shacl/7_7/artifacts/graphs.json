@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FinnianAnson a :Man,\n        :Person ;\n    :hasBirthYear 2014 ;\n    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;\n    :hasMother data:LadyHenriettaConyngham .\n\ndata:ThomasAnson_1stViscountAnson a :Man,\n        :Person ;\n    :isFatherOf data:ThomasAnson_2ndViscountAnson .\n\ndata:ThomasOssianPatrickWolfeAnson_ViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 2011 ;\n    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;\n    :hasMother data:LadyHenriettaConyngham .\n\ndata:LadyLeonoraMaryGrosvenor a :Person,\n        :Woman .\n\ndata:PatrickAnson_5thEarlOfLichfield a :Man,\n        :Person ;\n    :hasDeathYear 2005 ;\n    :hasFather data:ThomasWilliamArnoldAnson_ViscountAnson ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:ThomasAnson_2ndViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 1795 ;\n    :hasDeathYear 1854 ;\n    :knownAs \"1st Earl of Lichfield\"^^xsd:string .\n\ndata:ThomasWilliamArnoldAnson_ViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\ndata:LadyHenriettaConyngham a :Person,\n        :Woman .\n\ndata:ThomasWilliamRobertHughAnson_6thEarlOfLichfield a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasFather data:PatrickAnson_5thEarlOfLichfield ;\n    :hasMother data:LadyLeonoraMaryGrosvenor .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:FinnianAnson a :Man,\n        :Person ;\n    :hasBirthYear 2014 ;\n    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;\n    :hasMother data:LadyHenriettaConyngham .\n\ndata:ThomasAnson_1stViscountAnson a :Man,\n        :Person ;\n    :isFatherOf data:ThomasAnson_2ndViscountAnson .\n\ndata:ThomasOssianPatrickWolfeAnson_ViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 2011 ;\n    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;\n    :hasMother data:LadyHenriettaConyngham .\n\ndata:LadyLeonoraMaryGrosvenor a :Person,\n        :Woman .\n\ndata:PatrickAnson_5thEarlOfLichfield a :Man,\n        :Person ;\n    :hasDeathYear 2005 ;\n    :hasFather data:ThomasWilliamArnoldAnson_ViscountAnson ;\n    :knownAs \"Patrick Lichfield\"^^xsd:string .\n\ndata:ThomasAnson_2ndViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 1795 ;\n    :hasDeathYear 1854 ;\n    :knownAs \"1st Earl of Lichfield\"^^xsd:string .\n\ndata:ThomasWilliamArnoldAnson_ViscountAnson a :Man,\n        :Person ;\n    :hasBirthYear 1913 ;\n    :hasDeathYear 1958 .\n\ndata:LadyHenriettaConyngham a :Person,\n        :Woman .\n\ndata:ThomasWilliamRobertHughAnson_6thEarlOfLichfield a :Man,\n        :Person ;\n    :hasBirthYear 1978 ;\n    :hasFather data:PatrickAnson_5thEarlOfLichfield ;\n    :hasMother data:LadyLeonoraMaryGrosvenor .\n\n"
+    }
+]

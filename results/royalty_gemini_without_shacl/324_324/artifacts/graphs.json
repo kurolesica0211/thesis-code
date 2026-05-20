@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eudes_Duke_of_Angouleme a :Man,\n        :Person .\n\ndata:Henri_of_Orleans_son a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Michel a :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Philippe_Duke_of_Orleans_maternal_uncle a :Ancestor,\n        :Man .\n\ndata:Thibaut a :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Francoise_Marie_de_Bourbon a :Ancestor,\n        :Woman ;\n    :hasFather data:Louis_XIV .\n\ndata:Isabelle_of_Orleans_Braganza a :Person,\n        :Woman .\n\ndata:Jean_Duke_of_Guise a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Louis_Philippe_I a :Ancestor,\n        :Man .\n\ndata:Louis_XIII a :Ancestor,\n        :Man .\n\ndata:Louis_XIV a :Ancestor,\n        :Man .\n\ndata:Philippe_I_Duke_of_Orleans a :Ancestor,\n        :Man ;\n    :hasFather data:Louis_XIII .\n\ndata:Henri_d_Orleans a :Ancestor,\n        :Man,\n        :Person ;\n    :hasAncestor data:Francoise_Marie_de_Bourbon,\n        data:Louis_Philippe_I,\n        data:Philippe_I_Duke_of_Orleans ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Jean_Duke_of_Guise ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Isabelle_of_Orleans_Braganza .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Eudes_Duke_of_Angouleme a :Man,\n        :Person .\n\ndata:Henri_of_Orleans_son a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Michel a :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Philippe_Duke_of_Orleans_maternal_uncle a :Ancestor,\n        :Man .\n\ndata:Thibaut a :Man,\n        :Person ;\n    :hasFather data:Henri_d_Orleans .\n\ndata:Francoise_Marie_de_Bourbon a :Ancestor,\n        :Woman ;\n    :hasFather data:Louis_XIV .\n\ndata:Isabelle_of_Orleans_Braganza a :Person,\n        :Woman .\n\ndata:Jean_Duke_of_Guise a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Louis_Philippe_I a :Ancestor,\n        :Man .\n\ndata:Louis_XIII a :Ancestor,\n        :Man .\n\ndata:Louis_XIV a :Ancestor,\n        :Man .\n\ndata:Philippe_I_Duke_of_Orleans a :Ancestor,\n        :Man ;\n    :hasFather data:Louis_XIII .\n\ndata:Henri_d_Orleans a :Ancestor,\n        :Man,\n        :Person ;\n    :hasAncestor data:Francoise_Marie_de_Bourbon,\n        data:Louis_Philippe_I,\n        data:Philippe_I_Duke_of_Orleans ;\n    :hasBirthYear 1908 ;\n    :hasDeathYear 1999 ;\n    :hasFather data:Jean_Duke_of_Guise ;\n    :hasMarriageYear 1931 ;\n    :hasMother data:Isabelle_of_Orleans_Braganza .\n\n"
+    }
+]

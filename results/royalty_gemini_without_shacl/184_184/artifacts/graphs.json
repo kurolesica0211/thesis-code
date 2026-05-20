@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabella_Vita_Marina a :Person,\n        :Woman ;\n    :hasFather data:Prince_Aimone_Duke_of_Aosta ;\n    :hasMother data:Princess_Olga_of_Greece .\n\ndata:Amedeo_5th_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Marina_Karella a :Person,\n        :Woman ;\n    :hasFather data:Theodoros_Karellas .\n\ndata:Prince_Aimone_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Amedeo_5th_Duke_of_Aosta .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Alexandra a :Person,\n        :Woman .\n\ndata:Princess_Olga_of_Greece a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;\n    :hasMother data:Marina_Karella ;\n    :hasSister data:Princess_Alexandra .\n\ndata:Theodoros_Karellas a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Isabella_Vita_Marina a :Person,\n        :Woman ;\n    :hasFather data:Prince_Aimone_Duke_of_Aosta ;\n    :hasMother data:Princess_Olga_of_Greece .\n\ndata:Amedeo_5th_Duke_of_Aosta a :Man,\n        :Person .\n\ndata:Marina_Karella a :Person,\n        :Woman ;\n    :hasFather data:Theodoros_Karellas .\n\ndata:Prince_Aimone_Duke_of_Aosta a :Man,\n        :Person ;\n    :hasFather data:Amedeo_5th_Duke_of_Aosta .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person .\n\ndata:Princess_Alexandra a :Person,\n        :Woman .\n\ndata:Princess_Olga_of_Greece a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;\n    :hasMother data:Marina_Karella ;\n    :hasSister data:Princess_Alexandra .\n\ndata:Theodoros_Karellas a :Man,\n        :Person .\n\n"
+    }
+]

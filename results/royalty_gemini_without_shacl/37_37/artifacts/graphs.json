@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Ancestor,\n        :Man ;\n    :hasFather data:Alfonso_XII ;\n    :hasMother data:Maria_Christina ;\n    :isBrotherOf data:Mercedes .\n\ndata:Alfonso_son_of_Mercedes a :Ancestor,\n        :Man ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Fernando_son_of_Mercedes a :Ancestor,\n        :Man ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Isabella_Alfonsa a :Ancestor,\n        :Woman ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Maria_Teresa a :Ancestor,\n        :Woman ;\n    :hasFather data:Alfonso_XII ;\n    :hasMother data:Maria_Christina ;\n    :isSisterOf data:Mercedes .\n\ndata:Alfonso_XII a :Ancestor,\n        :Man .\n\ndata:Maria_Christina a :Ancestor,\n        :Woman .\n\ndata:Carlos_of_Bourbon_Two_Sicilies a :Ancestor,\n        :Man .\n\ndata:Mercedes a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Alfonso_XII ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Maria_Christina ;\n    :hasRelation data:Carlos_of_Bourbon_Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso_XIII a :Ancestor,\n        :Man ;\n    :hasFather data:Alfonso_XII ;\n    :hasMother data:Maria_Christina ;\n    :isBrotherOf data:Mercedes .\n\ndata:Alfonso_son_of_Mercedes a :Ancestor,\n        :Man ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Fernando_son_of_Mercedes a :Ancestor,\n        :Man ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Isabella_Alfonsa a :Ancestor,\n        :Woman ;\n    :hasFather data:Carlos_of_Bourbon_Two_Sicilies ;\n    :hasMother data:Mercedes .\n\ndata:Maria_Teresa a :Ancestor,\n        :Woman ;\n    :hasFather data:Alfonso_XII ;\n    :hasMother data:Maria_Christina ;\n    :isSisterOf data:Mercedes .\n\ndata:Alfonso_XII a :Ancestor,\n        :Man .\n\ndata:Maria_Christina a :Ancestor,\n        :Woman .\n\ndata:Carlos_of_Bourbon_Two_Sicilies a :Ancestor,\n        :Man .\n\ndata:Mercedes a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1880 ;\n    :hasDeathYear 1904 ;\n    :hasFather data:Alfonso_XII ;\n    :hasMarriageYear 1901 ;\n    :hasMother data:Maria_Christina ;\n    :hasRelation data:Carlos_of_Bourbon_Two_Sicilies .\n\n"
+    }
+]

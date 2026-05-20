@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Augusta_Reuss a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+
+data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,
+        :Man ;
+    :isFatherOf data:Duke_Ernest_I,
+        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+
+data:Queen_Victoria a :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasMarriageYear 1840 ;
+    :hasRelation data:Prince_Albert .
+
+data:Duke_Ernest_I a :Ancestor,
+        :Man ;
+    :isFatherOf data:Prince_Albert .
+
+data:Prince_Albert a :Man ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1861 .
+
+data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Queen_Victoria .
+

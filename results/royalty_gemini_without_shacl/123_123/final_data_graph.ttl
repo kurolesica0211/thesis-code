@@ -1,0 +1,36 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Astrid_of_Sweden a :Woman ;
+    :hasDeathYear 1935 ;
+    :hasFather data:King_Leopold_III .
+
+data:Prince_Lorenz_of_Belgium a :Man ;
+    :hasFather data:Robert_Archduke_of_Austria-Este ;
+    :hasMother data:Princess_Margherita_of_Savoy-Aosta .
+
+data:King_Albert_II a :Man .
+
+data:King_Leopold_III a :Man .
+
+data:King_Philippe a :Man ;
+    :hasSister data:Princess_Astrid_of_Belgium .
+
+data:Princess_Astrid_of_Belgium a :Woman ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:King_Philippe ;
+    :hasFather data:King_Albert_II ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Queen_Paola .
+
+data:Princess_Margherita_of_Savoy-Aosta a :Woman ;
+    :hasBirthYear 1930 ;
+    :hasDeathYear 2022 .
+
+data:Queen_Paola a :Woman .
+
+data:Robert_Archduke_of_Austria-Este a :Man ;
+    :hasBirthYear 1915 ;
+    :hasDeathYear 1996 .
+

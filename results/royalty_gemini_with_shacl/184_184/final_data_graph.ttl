@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabella_Vita_Marina a :Person,
+        :Woman ;
+    :isDaughterOf data:Prince_Aimone_Duke_of_Aosta,
+        data:Princess_Olga_Isabelle_of_Savoy-Aosta .
+
+data:Princess_Alexandra a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Olga_Isabelle_of_Savoy-Aosta .
+
+data:Princess_Irene_Duchess_of_Aosta a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Theodoros_Karellas a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Marina_Karella .
+
+data:Amedeo_5th_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Prince_Aimone_Duke_of_Aosta .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marina_Karella a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Olga_Isabelle_of_Savoy-Aosta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1971"^^xsd:positiveInteger ;
+    :hasRelation data:Prince_Aimone_Duke_of_Aosta ;
+    :isDaughterOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Prince_Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person .
+

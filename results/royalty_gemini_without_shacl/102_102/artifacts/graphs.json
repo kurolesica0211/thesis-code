@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man,\n        :Person .\n\ndata:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear 1998,\n        2019 ;\n    :hasMother data:Princess_Benedikte_of_Denmark ;\n    :isSiblingOf data:Prince_Gustav,\n        data:Princess_Nathalie .\n\ndata:Prince_Gustav a :Man,\n        :Person .\n\ndata:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Princess_Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Nathalie a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man,\n        :Person .\n\ndata:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man,\n        :Person .\n\ndata:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,\n        :Woman ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;\n    :hasMarriageYear 1998,\n        2019 ;\n    :hasMother data:Princess_Benedikte_of_Denmark ;\n    :isSiblingOf data:Prince_Gustav,\n        data:Princess_Nathalie .\n\ndata:Prince_Gustav a :Man,\n        :Person .\n\ndata:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man,\n        :Person .\n\ndata:Princess_Benedikte_of_Denmark a :Person,\n        :Woman .\n\ndata:Princess_Nathalie a :Person,\n        :Woman .\n\n"
+    }
+]

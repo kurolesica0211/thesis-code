@@ -1,0 +1,44 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "cb3087ff-572d-482f-81dd-3a9a244b289c",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Lyla_Gilman,\n        data:Rufus_Gilman .\n\ndata:Rose_Windsor a :Woman ;\n    :formerlyKnownAs \"Rose Victoria Birgitte Louise Windsor\"^^xsd:string ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMarriageYear 2007 ;\n    :hasMother data:Birgitte_Gloucester ;\n    :hasSex data:Female ;\n    :isMotherOf data:Lyla_Gilman,\n        data:Rufus_Gilman ;\n    :knownAs \"Lady Rose Victoria Birgitte Louise Gilman\"^^xsd:string .\n\ndata:Birgitte_Gloucester a :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Richard a :Man ;\n    :hasSex data:Male .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear 2010 ;\n    :hasSex data:Female .\n\ndata:Rufus_Gilman a :Man ;\n    :hasBirthYear 2012 ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "cb3087ff-572d-482f-81dd-3a9a244b289c",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Richard> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Richard> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Prince_Richard> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Birgitte_Gloucester> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/George_Gilman> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/George_Gilman> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Birgitte_Gloucester> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Rose_Windsor> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Rose_Windsor> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Birgitte_Gloucester> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "pre_validation",
+        "tool_call_id": "505087a5-cf7a-44a1-84dc-8410ed35bcd9",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Ancestor,\n        :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Lyla_Gilman,\n        data:Rufus_Gilman .\n\ndata:Rose_Windsor a :Ancestor,\n        :Woman ;\n    :formerlyKnownAs \"Rose Victoria Birgitte Louise Windsor\"^^xsd:string ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMarriageYear 2007 ;\n    :hasMother data:Birgitte_Gloucester ;\n    :hasSex data:Female ;\n    :isMotherOf data:Lyla_Gilman,\n        data:Rufus_Gilman ;\n    :knownAs \"Lady Rose Victoria Birgitte Louise Gilman\"^^xsd:string .\n\ndata:Birgitte_Gloucester a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Richard a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear 2010 ;\n    :hasSex data:Female .\n\ndata:Rufus_Gilman a :Man ;\n    :hasBirthYear 2012 ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "505087a5-cf7a-44a1-84dc-8410ed35bcd9",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "59447e00-623e-46e1-beb6-0126ec749c42",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:George_Gilman a :Ancestor,\n        :Man ;\n    :hasSex data:Male ;\n    :isFatherOf data:Lyla_Gilman,\n        data:Rufus_Gilman .\n\ndata:Rose_Windsor a :Ancestor,\n        :Woman ;\n    :formerlyKnownAs \"Rose Victoria Birgitte Louise Windsor\"^^xsd:string ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMarriageYear 2007 ;\n    :hasMother data:Birgitte_Gloucester ;\n    :hasSex data:Female ;\n    :isMotherOf data:Lyla_Gilman,\n        data:Rufus_Gilman ;\n    :knownAs \"Lady Rose Victoria Birgitte Louise Gilman\"^^xsd:string .\n\ndata:Birgitte_Gloucester a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Prince_Richard a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Lyla_Gilman a :Woman ;\n    :hasBirthYear 2010 ;\n    :hasSex data:Female .\n\ndata:Rufus_Gilman a :Man ;\n    :hasBirthYear 2012 ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

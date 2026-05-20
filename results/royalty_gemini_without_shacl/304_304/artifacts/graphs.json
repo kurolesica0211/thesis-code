@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Mountstuart_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear \"15 April 1980\"^^xsd:string ;\n    :hasFather data:James_Elphinstone,\n        data:Rev._Hon._Andrew_Elphinstone ;\n    :hasMother data:Willa_Mary_Gabrielle_Chetwode .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:James_Elphinstone a :Man,\n        :Person .\n\ndata:Lady_Mary_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Lady_Willa_Elliot-Murray-Kynynmound a :Person,\n        :Woman ;\n    :hasFather data:Victor_Elliot-Murray-Kynynmound .\n\ndata:Major_George_Chetwode a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Rev._Hon._Andrew_Elphinstone a :Man,\n        :Person ;\n    :hasMother data:Lady_Mary_Bowes-Lyon .\n\ndata:Victor_Elliot-Murray-Kynynmound a :Man,\n        :Person .\n\ndata:Willa_Mary_Gabrielle_Chetwode a :Person,\n        :Woman ;\n    :hasFather data:Major_George_Chetwode ;\n    :hasMother data:Lady_Willa_Elliot-Murray-Kynynmound .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Mountstuart_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear \"15 April 1980\"^^xsd:string ;\n    :hasFather data:James_Elphinstone,\n        data:Rev._Hon._Andrew_Elphinstone ;\n    :hasMother data:Willa_Mary_Gabrielle_Chetwode .\n\ndata:Elizabeth_II a :Person,\n        :Woman .\n\ndata:James_Elphinstone a :Man,\n        :Person .\n\ndata:Lady_Mary_Bowes-Lyon a :Person,\n        :Woman ;\n    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .\n\ndata:Lady_Willa_Elliot-Murray-Kynynmound a :Person,\n        :Woman ;\n    :hasFather data:Victor_Elliot-Murray-Kynynmound .\n\ndata:Major_George_Chetwode a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Rev._Hon._Andrew_Elphinstone a :Man,\n        :Person ;\n    :hasMother data:Lady_Mary_Bowes-Lyon .\n\ndata:Victor_Elliot-Murray-Kynynmound a :Man,\n        :Person .\n\ndata:Willa_Mary_Gabrielle_Chetwode a :Person,\n        :Woman ;\n    :hasFather data:Major_George_Chetwode ;\n    :hasMother data:Lady_Willa_Elliot-Murray-Kynynmound .\n\n"
+    }
+]

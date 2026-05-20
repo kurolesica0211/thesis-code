@@ -1,0 +1,197 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/223_223",
+  "text_file": "Q29574.txt",
+  "text_key": "Q29574",
+  "article": "https://en.wikipedia.org/wiki/Beatrix_of_the_Netherlands",
+  "article_key": "Beatrix of the Netherlands",
+  "main_entity": {
+    "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+    "qid": "Q29574",
+    "label": "Beatrix of the Netherlands"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "qid": "Q154946",
+      "label": "Juliana of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Bernhard_of_Lippe-Biesterfeld",
+      "qid": "Q57304",
+      "label": "Prince Bernhard of Lippe-Biesterfeld",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Christina_of_the_Netherlands",
+      "qid": "Q435324",
+      "label": "Princess Christina of the Netherlands",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Armgard_of_Sierstorpff-Cramm",
+      "qid": "Q2802589",
+      "label": "Armgard of Sierstorpff-Cramm",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Bernhard_of_Lippe",
+      "qid": "Q649601",
+      "label": "Prince Bernhard of Lippe",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
+      "qid": "Q150747",
+      "label": "Wilhelmina of the Netherlands",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Juliana",
+      "extracted_local_name": "Juliana",
+      "embedding_text": "Juliana",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9333333333333333,
+      "ground_truth_uri": "http://example.com/data#Juliana_of_the_Netherlands",
+      "ground_truth_qid": "Q154946",
+      "ground_truth_label": "Juliana of the Netherlands",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Julijana",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9333333333333333
+    },
+    {
+      "extracted_uri": "http://example.org/data/Beatrix",
+      "extracted_local_name": "Beatrix",
+      "embedding_text": "Beatrix",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Beatrix",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.7
+    },
+    {
+      "extracted_uri": "http://example.org/data/Bernhard",
+      "extracted_local_name": "Bernhard",
+      "embedding_text": "Bernhard",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Bernhard zur Lippe",
+      "best_candidate_label": "Prince Bernhard of Lippe",
+      "best_candidate_qid": "Q649601",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6153846153846154
+    },
+    {
+      "extracted_uri": "http://example.org/data/Claus",
+      "extracted_local_name": "Claus",
+      "embedding_text": "Claus",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Bernhard of the Netherlands",
+      "best_candidate_label": "Prince Bernhard of Lippe-Biesterfeld",
+      "best_candidate_qid": "Q57304",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.20512820512820512
+    },
+    {
+      "extracted_uri": "http://example.org/data/Irene",
+      "extracted_local_name": "Irene",
+      "embedding_text": "Irene",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelmina",
+      "best_candidate_label": "Wilhelmina of the Netherlands",
+      "best_candidate_qid": "Q150747",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margriet",
+      "extracted_local_name": "Margriet",
+      "embedding_text": "Margriet",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Marijke",
+      "best_candidate_label": "Princess Christina of the Netherlands",
+      "best_candidate_qid": "Q435324",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.4166666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/Willem-Alexander",
+      "extracted_local_name": "Willem-Alexander",
+      "embedding_text": "Willem-Alexander",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Z.K.H. Prins Bernhard",
+      "best_candidate_label": "Prince Bernhard of Lippe-Biesterfeld",
+      "best_candidate_qid": "Q57304",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.21621621621621623
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 1,
+    "entities_unmatched": 6
+  }
+}

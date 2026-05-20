@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:William_Prince_of_Orange a :Man,\n        :Person ;\n    :hasBirthYear 1840 ;\n    :hasBrother data:Alexander ;\n    :hasDeathYear 1879 ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg ;\n    :hasSex data:Male_Sex ;\n    :hasSister data:Wilhelmina ;\n    :knownAs \"Prince Lemon\"^^xsd:string .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:King_William_III a :Man,\n        :Person .\n\ndata:Male_Sex a :Male,\n        :Sex .\n\ndata:Princess_Sophie_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:William_Prince_of_Orange a :Man,\n        :Person ;\n    :hasBirthYear 1840 ;\n    :hasBrother data:Alexander ;\n    :hasDeathYear 1879 ;\n    :hasFather data:King_William_III ;\n    :hasMother data:Princess_Sophie_of_Wurttemberg ;\n    :hasSex data:Male_Sex ;\n    :hasSister data:Wilhelmina ;\n    :knownAs \"Prince Lemon\"^^xsd:string .\n\ndata:Alexander a :Man,\n        :Person .\n\ndata:King_William_III a :Man,\n        :Person .\n\ndata:Male_Sex a :Male,\n        :Sex .\n\ndata:Princess_Sophie_of_Wurttemberg a :Person,\n        :Woman .\n\ndata:Wilhelmina a :Person,\n        :Woman .\n\n"
+    }
+]

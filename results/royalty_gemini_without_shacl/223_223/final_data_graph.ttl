@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Bernhard ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Juliana ;
+    :hasRelation data:Claus ;
+    :isSisterOf data:Irene,
+        data:Margriet .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasFather data:Bernhard ;
+    :hasMother data:Juliana .
+
+data:Claus a :Man,
+        :Person .
+
+data:Bernhard a :Man,
+        :Person .
+
+data:Juliana a :Person,
+        :Woman .
+

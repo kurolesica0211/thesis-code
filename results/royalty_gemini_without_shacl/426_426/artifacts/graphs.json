@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Francoise_dOrleans ;\n    :hasRelation data:Marina_Karella .\n\ndata:Elli_Chalikiopoulos a :Person,\n        :Woman .\n\ndata:Jean_dOrleans_Duke_of_Guise a :Man,\n        :Person .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Marina_Karella a :Person,\n        :Woman ;\n    :hasFather data:Theodoros_Karellas ;\n    :hasMother data:Elli_Chalikiopoulos .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasFather data:King_George_I_of_Greece .\n\ndata:Princess_Francoise_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Jean_dOrleans_Duke_of_Guise .\n\ndata:Theodoros_Karellas a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasBirthYear 1939 ;\n    :hasDeathYear 2024 ;\n    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;\n    :hasMarriageYear 1965 ;\n    :hasMother data:Princess_Francoise_dOrleans ;\n    :hasRelation data:Marina_Karella .\n\ndata:Elli_Chalikiopoulos a :Person,\n        :Woman .\n\ndata:Jean_dOrleans_Duke_of_Guise a :Man,\n        :Person .\n\ndata:King_George_I_of_Greece a :Man,\n        :Person .\n\ndata:Marina_Karella a :Person,\n        :Woman ;\n    :hasFather data:Theodoros_Karellas ;\n    :hasMother data:Elli_Chalikiopoulos .\n\ndata:Prince_Christopher_of_Greece_and_Denmark a :Man,\n        :Person ;\n    :hasFather data:King_George_I_of_Greece .\n\ndata:Princess_Francoise_dOrleans a :Person,\n        :Woman ;\n    :hasFather data:Jean_dOrleans_Duke_of_Guise .\n\ndata:Theodoros_Karellas a :Man,\n        :Person .\n\n"
+    }
+]

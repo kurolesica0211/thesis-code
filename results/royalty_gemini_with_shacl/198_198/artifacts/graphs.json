@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fernando_Sanz_y_Martinez_de_Arizala a :Man,\n        :Person ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1925 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Elena_Sanz ;\n    :knownAs \"Fernand\"^^xsd:string .\n\ndata:Alfonso_XII_of_Spain a :Man,\n        :Person .\n\ndata:Elena_Sanz a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "60be7187-2e69-488e-a67e-b00ebc1aeee9",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Elena_Sanz> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Alfonso_XII_of_Spain> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Alfonso_XII_of_Spain> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Alfonso_XII_of_Spain> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Elena_Sanz> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Fernando_Sanz_y_Martinez_de_Arizala> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Elena_Sanz> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fernando_Sanz_y_Martinez_de_Arizala a :Man,\n        :Person ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1925 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Elena_Sanz ;\n    :knownAs \"Fernand\"^^xsd:string .\n\ndata:Alfonso_XII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elena_Sanz a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "5ae36376-3077-4791-ae76-e3310674e53f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Fernando_Sanz_y_Martinez_de_Arizala a :Man,\n        :Person ;\n    :hasBirthYear 1881 ;\n    :hasDeathYear 1925 ;\n    :hasFather data:Alfonso_XII_of_Spain ;\n    :hasMother data:Elena_Sanz ;\n    :knownAs \"Fernand\"^^xsd:string .\n\ndata:Alfonso_XII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Elena_Sanz a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

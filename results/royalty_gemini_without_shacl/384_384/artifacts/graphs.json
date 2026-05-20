@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Eitel_Friedrich_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Joachim_of_Prussia .\n\ndata:Prince_Karl_Franz_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1916 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Prince_Joachim_of_Prussia,\n        data:Wilhelm_II_German_Emperor ;\n    :hasMarriageYear 1940,\n        1946,\n        1959 ;\n    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;\n    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,\n        data:Luise_Dora_Hartmann,\n        data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath .\n\ndata:Eva_Maria_Herrera_y_Valdeavellano a :Person,\n        :Woman .\n\ndata:Luise_Dora_Hartmann a :Person,\n        :Woman .\n\ndata:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath a :Person,\n        :Woman ;\n    :hasMother data:Princess_Hermine_Reuss_of_Greiz .\n\ndata:Princess_Hermine_Reuss_of_Greiz a :Person,\n        :Woman .\n\ndata:Princess_Marie_Auguste_of_Anhalt a :Person,\n        :Woman .\n\ndata:Prince_Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Eitel_Friedrich_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Joachim_of_Prussia .\n\ndata:Prince_Karl_Franz_of_Prussia a :Man,\n        :Person ;\n    :hasBirthYear 1916 ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Prince_Joachim_of_Prussia,\n        data:Wilhelm_II_German_Emperor ;\n    :hasMarriageYear 1940,\n        1946,\n        1959 ;\n    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;\n    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,\n        data:Luise_Dora_Hartmann,\n        data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath .\n\ndata:Eva_Maria_Herrera_y_Valdeavellano a :Person,\n        :Woman .\n\ndata:Luise_Dora_Hartmann a :Person,\n        :Woman .\n\ndata:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath a :Person,\n        :Woman ;\n    :hasMother data:Princess_Hermine_Reuss_of_Greiz .\n\ndata:Princess_Hermine_Reuss_of_Greiz a :Person,\n        :Woman .\n\ndata:Princess_Marie_Auguste_of_Anhalt a :Person,\n        :Woman .\n\ndata:Prince_Joachim_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Wilhelm_II_German_Emperor .\n\ndata:Wilhelm_II_German_Emperor a :Man,\n        :Person .\n\n"
+    }
+]

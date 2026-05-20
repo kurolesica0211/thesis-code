@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix a :Woman .\n\ndata:ClausCasimir a :Man ;\n    :hasBirthYear 2004 ;\n    :hasFather data:Constantijn ;\n    :hasMother data:Laurentien .\n\ndata:Margriet a :Woman .\n\ndata:PieterVanVollenhoven a :Man .\n\ndata:Constantijn a :Man .\n\ndata:Laurentien a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix a :Woman .\n\ndata:ClausCasimir a :Man ;\n    :hasBirthYear 2004 ;\n    :hasFather data:Constantijn ;\n    :hasMother data:Laurentien .\n\ndata:Margriet a :Woman .\n\ndata:PieterVanVollenhoven a :Man .\n\ndata:Constantijn a :Man .\n\ndata:Laurentien a :Woman .\n\n"
+    }
+]

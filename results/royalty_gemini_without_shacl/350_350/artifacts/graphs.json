@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe_Meiningen a :Person,\n        :Woman ;\n    :hasFather data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasSex data:Female .\n\ndata:Charlotte_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Wilhelm_II ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasSex data:Female .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasSex data:Male .\n\ndata:Bernhard_III_of_Saxe_Meiningen a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Frederick_of_Prussia a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe_Meiningen a :Person,\n        :Woman ;\n    :hasFather data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasSex data:Female .\n\ndata:Charlotte_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Wilhelm_II ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasSex data:Female .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasSex data:Male .\n\ndata:Bernhard_III_of_Saxe_Meiningen a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Frederick_of_Prussia a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Feodora_of_Saxe_Meiningen a :Person,\n        :Woman ;\n    :hasFather data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasMother data:Charlotte_of_Prussia ;\n    :hasSex data:Female .\n\ndata:Charlotte_of_Prussia a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1860 ;\n    :hasBrother data:Wilhelm_II ;\n    :hasDeathYear 1919 ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMarriageYear 1878 ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;\n    :hasSex data:Female .\n\ndata:Wilhelm_II a :Man,\n        :Person ;\n    :hasFather data:Prince_Frederick_of_Prussia ;\n    :hasMother data:Victoria_Princess_Royal ;\n    :hasSex data:Male .\n\ndata:Bernhard_III_of_Saxe_Meiningen a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Prince_Frederick_of_Prussia a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Victoria_Princess_Royal a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

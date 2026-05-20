@@ -1,0 +1,30 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_von_Habsburg a :Man,\n        :Person ;\n    :alsoKnownAs data:Paul_Georg_Maria_Joseph_Dominikus ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:Karl_von_Habsburg ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear data:1993,\n        1993 ;\n    :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen ;\n    :hasRelation data:Eilika ;\n    :knownAs data:Georg_Habsburg-Lothringen,\n        data:Habsburg_Gy%C3%B6rgy .\n\ndata:Eilika a :Person,\n        :Woman .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "30c96b43-56b8-4055-9d13-76b420e869c6",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_von_Habsburg a :Man,\n        :Person ;\n    :alsoKnownAs data:Paul_Georg_Maria_Joseph_Dominikus ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:Karl_von_Habsburg ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear data:1993,\n        1993 ;\n    :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen ;\n    :hasRelation data:Eilika ;\n    :knownAs data:Georg_Habsburg-Lothringen,\n        data:Habsburg_Gy%C3%B6rgy .\n\ndata:1993 a :DomainEntity .\n\ndata:Eilika a :Person,\n        :Woman .\n\ndata:Georg_Habsburg-Lothringen a :DomainEntity .\n\ndata:Habsburg_Gy%C3%B6rgy a :DomainEntity .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Paul_Georg_Maria_Joseph_Dominikus a :DomainEntity .\n\ndata:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Georg_von_Habsburg a :Man,\n        :Person ;\n    :alsoKnownAs data:Paul_Georg_Maria_Joseph_Dominikus ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:Karl_von_Habsburg ;\n    :hasFather data:Otto_von_Habsburg ;\n    :hasMarriageYear data:1993,\n        1993 ;\n    :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen ;\n    :hasRelation data:Eilika ;\n    :knownAs data:Georg_Habsburg-Lothringen,\n        data:Habsburg_Gy%C3%B6rgy .\n\ndata:1993 a :DomainEntity .\n\ndata:Eilika a :Person,\n        :Woman .\n\ndata:Georg_Habsburg-Lothringen a :DomainEntity .\n\ndata:Habsburg_Gy%C3%B6rgy a :DomainEntity .\n\ndata:Karl_von_Habsburg a :Man,\n        :Person .\n\ndata:Otto_von_Habsburg a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Paul_Georg_Maria_Joseph_Dominikus a :DomainEntity .\n\ndata:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

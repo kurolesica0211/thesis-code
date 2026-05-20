@@ -1,0 +1,44 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Doreen_Knatchbull a :Ancestor,
+        :Woman ;
+    :isMotherOf data:John_Knatchbull .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man ;
+    :isFatherOf data:Patricia_Knatchbull .
+
+data:Nicholas_Knatchbull a :Man ;
+    :isBrotherOf data:Norton_Louis_Philip_Knatchbull ;
+    :isSonOf data:John_Knatchbull,
+        data:Patricia_Knatchbull .
+
+data:Penelope_Meredith_Eastwood a :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth .
+
+data:Marian_Elizabeth a :Ancestor,
+        :Woman .
+
+data:Norton_Louis_Philip_Knatchbull a :Man ;
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Patricia_Knatchbull ;
+    :isSonOf data:John_Knatchbull,
+        data:Patricia_Knatchbull .
+
+data:Reginald_Wray_Frank_Eastwood a :Ancestor,
+        :Man .
+
+data:John_Knatchbull a :Ancestor,
+        :Man .
+
+data:Patricia_Knatchbull a :Ancestor,
+        :Woman .
+

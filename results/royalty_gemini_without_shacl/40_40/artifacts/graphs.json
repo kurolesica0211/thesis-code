@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Gonzalo_of_Spain .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Gonzalo_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Beatrice_of_the_United_Kingdom ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Alfonso_of_Spain ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :knownAs \"Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borb\u00f3n y Battenberg\"^^xsd:string .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatriz_of_Spain a :Person,\n        :Woman ;\n    :isSisterOf data:Gonzalo_of_Spain .\n\ndata:Maurice_of_Battenberg a :Man,\n        :Person .\n\ndata:Alfonso_XIII_of_Spain a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Alfonso_of_Spain a :Man,\n        :Person .\n\ndata:Beatrice_of_the_United_Kingdom a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Gonzalo_of_Spain a :Man,\n        :Person ;\n    :hasAncestor data:Beatrice_of_the_United_Kingdom ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Alfonso_of_Spain ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Alfonso_XIII_of_Spain ;\n    :hasMother data:Victoria_Eugenie_of_Battenberg ;\n    :knownAs \"Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borb\u00f3n y Battenberg\"^^xsd:string .\n\ndata:Victoria_Eugenie_of_Battenberg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bagrat_de_Bagration a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :hasSister data:Princess_Mariam_de_Bagration .
+
+data:Dr_Tom%C3%A1s_Ortiz_y_Valero a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Jorge_de_Bagration a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :hasSister data:Princess_Mariam_de_Bagration .
+
+data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Princess_Mariam_de_Bagration a :Person,
+        :Woman ;
+    :hasBirthYear "1947"^^xsd:string ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMarriageYear "1982"^^xsd:string ;
+    :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+

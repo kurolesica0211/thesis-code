@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/225_225",
+  "text_file": "Q2962982.txt",
+  "text_key": "Q2962982",
+  "article": "https://en.wikipedia.org/wiki/Gerald_David_Lascelles",
+  "article_key": "Gerald David Lascelles",
+  "main_entity": {
+    "uri": "http://example.com/data#Gerald_David_Lascelles",
+    "qid": "Q2962982",
+    "label": "Gerald David Lascelles"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Gerald_David_Lascelles",
+      "qid": "Q2962982",
+      "label": "Gerald David Lascelles",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Henry_Lascelles-_6th_Earl_of_Harewood",
+      "qid": "Q2653986",
+      "label": "Henry Lascelles, 6th Earl of Harewood",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "qid": "Q233913",
+      "label": "Mary, Princess Royal and Countess of Harewood",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#George_V",
+      "qid": "Q269412",
+      "label": "George V",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Gerald_David_Lascelles",
+      "extracted_local_name": "Gerald_David_Lascelles",
+      "embedding_text": "Gerald David Lascelles",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Gerald_David_Lascelles",
+      "ground_truth_qid": "Q2962982",
+      "ground_truth_label": "Gerald David Lascelles",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Gerald David Lascelles",
+      "best_candidate_label": "Gerald David Lascelles",
+      "best_candidate_qid": "Q2962982",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Henry_Lascelles%2C_6th_Earl_of_Harewood",
+      "extracted_local_name": "Henry_Lascelles%2C_6th_Earl_of_Harewood",
+      "embedding_text": "Henry Lascelles, 6th Earl of Harewood",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Henry_Lascelles-_6th_Earl_of_Harewood",
+      "ground_truth_qid": "Q2653986",
+      "ground_truth_label": "Henry Lascelles, 6th Earl of Harewood",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Henry Lascelles, 6th Earl of Harewood",
+      "best_candidate_label": "Henry Lascelles, 6th Earl of Harewood",
+      "best_candidate_qid": "Q2653986",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_George_V",
+      "extracted_local_name": "King_George_V",
+      "embedding_text": "King George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "King George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Mary%2C_Princess_Royal",
+      "extracted_local_name": "Mary%2C_Princess_Royal",
+      "embedding_text": "Mary, Princess Royal",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "ground_truth_qid": "Q233913",
+      "ground_truth_label": "Mary, Princess Royal and Countess of Harewood",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Mary, Princess Royal",
+      "best_candidate_label": "Mary, Princess Royal and Countess of Harewood",
+      "best_candidate_qid": "Q233913",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Elizabeth_Colvin",
+      "extracted_local_name": "Elizabeth_Colvin",
+      "embedding_text": "Elizabeth Colvin",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.6470588235294118
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Mary",
+      "extracted_local_name": "Queen_Mary",
+      "embedding_text": "Queen Mary",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth Alexandra Mary",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.47058823529411764
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 4,
+    "entities_unmatched": 2
+  }
+}

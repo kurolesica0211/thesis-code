@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasFather data:Philip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria ;
+    :isBrotherOf data:Philip_Karadjordjevic .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :hasFather data:Philip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Philip_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMarriageYear data:Danica_Marinkovic,
+        2017 ;
+    :hasMother data:Maria_da_Gloria .
+

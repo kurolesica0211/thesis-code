@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Cristina a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman .
+
+data:Irene a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Sof%C3%ADa a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Constantine_II ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasSister data:Irene .
+

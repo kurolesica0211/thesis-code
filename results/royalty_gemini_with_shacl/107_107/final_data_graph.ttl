@@ -1,0 +1,52 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Annette_Sekreve a :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Bernhard_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Floris a :Man,
+        :Person .
+
+data:Prince_Maurits a :Man,
+        :Person .
+
+data:Prince_Pieter-Christiaan a :Man,
+        :Person .
+
+data:Princess_Margriet a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBirthYear 2008 .
+
+data:Isabella_Lily_Juliana_van_Vollenhoven a :Person,
+        :Woman ;
+    :hasBirthYear 2002 .
+
+data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBirthYear 2004 .
+

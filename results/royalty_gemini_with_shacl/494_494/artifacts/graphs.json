@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Anne a :Ancestor,\n        :Woman ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Charles a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Edward a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man .\n\ndata:Edward_VIII a :Man .\n\ndata:George_V a :Ancestor,\n        :Man .\n\ndata:Margaret a :Woman ;\n    :hasParent data:Elizabeth_the_Queen_Mother,\n        data:George_VI .\n\ndata:Queen_Mary a :Ancestor,\n        :Woman .\n\ndata:Elizabeth_the_Queen_Mother a :Ancestor,\n        :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:George_VI a :Ancestor,\n        :Man ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary ;\n    :isBrotherOf data:Edward_VIII .\n\ndata:Elizabeth_II a :Ancestor,\n        :Woman ;\n    :hasBirthYear \"1926\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2022\"^^xsd:nonNegativeInteger ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear \"1947\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Elizabeth_the_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :isSiblingOf data:Margaret .\n\ndata:Philip_Mountbatten a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "ca90e23d-b4a2-49d2-af15-73fc70a8b10b",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Andrew a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Anne a :Ancestor,\n        :Woman ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Charles a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Edward a :Ancestor,\n        :Man ;\n    :hasFather data:Philip_Mountbatten ;\n    :hasMother data:Elizabeth_II .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man .\n\ndata:Edward_VIII a :Man .\n\ndata:George_V a :Ancestor,\n        :Man .\n\ndata:Margaret a :Woman ;\n    :hasParent data:Elizabeth_the_Queen_Mother,\n        data:George_VI .\n\ndata:Queen_Mary a :Ancestor,\n        :Woman .\n\ndata:Elizabeth_the_Queen_Mother a :Ancestor,\n        :Woman ;\n    :hasFather data:Claude_Bowes-Lyon .\n\ndata:George_VI a :Ancestor,\n        :Man ;\n    :hasFather data:George_V ;\n    :hasMother data:Queen_Mary ;\n    :isBrotherOf data:Edward_VIII .\n\ndata:Elizabeth_II a :Ancestor,\n        :Woman ;\n    :hasBirthYear \"1926\"^^xsd:nonNegativeInteger ;\n    :hasDeathYear \"2022\"^^xsd:nonNegativeInteger ;\n    :hasFather data:George_VI ;\n    :hasMarriageYear \"1947\"^^xsd:nonNegativeInteger ;\n    :hasMother data:Elizabeth_the_Queen_Mother ;\n    :hasRelation data:Philip_Mountbatten ;\n    :isSiblingOf data:Margaret .\n\ndata:Philip_Mountbatten a :Ancestor,\n        :Man .\n\n"
+    }
+]

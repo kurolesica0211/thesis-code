@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HeinrichJr a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:EmpressVictoria .\n\ndata:Waldemar a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:FrederickIII a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:WilhelmII a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:EmpressVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceHeinrichOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1862 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:FrederickIII ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:EmpressVictoria ;\n    :hasRelation data:PrincessIrene ;\n    :hasSex data:Male ;\n    :isBrotherOf data:WilhelmII .\n\ndata:PrincessIrene a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HeinrichJr a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:EmpressVictoria .\n\ndata:Waldemar a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:FrederickIII a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:WilhelmII a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:EmpressVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceHeinrichOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1862 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:FrederickIII ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:EmpressVictoria ;\n    :hasRelation data:PrincessIrene ;\n    :hasSex data:Male ;\n    :isBrotherOf data:WilhelmII .\n\ndata:Female a :Sex .\n\ndata:PrincessIrene a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:HeinrichJr a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:QueenVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:EmpressVictoria .\n\ndata:Waldemar a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isSonOf data:PrinceHeinrichOfPrussia,\n        data:PrincessIrene .\n\ndata:FrederickIII a :Ancestor,\n        :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:WilhelmII a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:EmpressVictoria a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:PrinceHeinrichOfPrussia a :Man,\n        :Person ;\n    :hasBirthYear 1862 ;\n    :hasDeathYear 1929 ;\n    :hasFather data:FrederickIII ;\n    :hasMarriageYear 1888 ;\n    :hasMother data:EmpressVictoria ;\n    :hasRelation data:PrincessIrene ;\n    :hasSex data:Male ;\n    :isBrotherOf data:WilhelmII .\n\ndata:Female a :Sex .\n\ndata:PrincessIrene a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Male a :Male .\n\n"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Therese_of_Wurttemberg .\n\ndata:Jean_d_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :knownAs \"Prince Jean Carl Pierre Marie d'Orl\u00e9ans, Count of Paris\"^^xsd:string .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :knownAs \"Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart\"^^xsd:string .\n\ndata:Princess_Chantal_of_Orleans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri_Count_of_Paris_1933 .\n\ndata:Henri_VI_Count_of_Paris a :Ancestor,\n        :Man,\n        :Person ;\n    :knownAs \"Henri VI, Count of Paris\"^^xsd:string .\n\ndata:Henri_Count_of_Paris_1933 a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Henri_VI_Count_of_Paris ;\n    :knownAs \"Henri, Count of Paris\"^^xsd:string .\n\ndata:Marie_Therese_of_Wurttemberg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1934 ;\n    :knownAs \"Duchess Marie-Th\u00e9r\u00e8se of W\u00fcrttemberg\"^^xsd:string .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "2d62c8a8-54fd-4119-8a25-f7d4f902ed5c",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_of_Wurttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Therese_of_Wurttemberg .\n\ndata:Jean_d_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1965 ;\n    :hasFather data:Henri_Count_of_Paris_1933 ;\n    :hasMother data:Marie_Therese_of_Wurttemberg ;\n    :knownAs \"Prince Jean Carl Pierre Marie d'Orl\u00e9ans, Count of Paris\"^^xsd:string .\n\ndata:Philomena_de_Tornos_y_Steinhart a :Person,\n        :Woman ;\n    :hasBirthYear 1977 ;\n    :knownAs \"Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart\"^^xsd:string .\n\ndata:Princess_Chantal_of_Orleans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri_Count_of_Paris_1933 .\n\ndata:Henri_VI_Count_of_Paris a :Ancestor,\n        :Man,\n        :Person ;\n    :knownAs \"Henri VI, Count of Paris\"^^xsd:string .\n\ndata:Henri_Count_of_Paris_1933 a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1933 ;\n    :hasDeathYear 2019 ;\n    :hasFather data:Henri_VI_Count_of_Paris ;\n    :knownAs \"Henri, Count of Paris\"^^xsd:string .\n\ndata:Marie_Therese_of_Wurttemberg a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1934 ;\n    :knownAs \"Duchess Marie-Th\u00e9r\u00e8se of W\u00fcrttemberg\"^^xsd:string .\n\n"
+    }
+]

@@ -1,0 +1,46 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Nicolau_de_Almeida_Reid a :Woman ;
+    :hasSex data:Female .
+
+data:Francesca_Thyssen-Bornemisza a :Woman ;
+    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;
+    :hasMother data:Fiona_Frances_Elaine_Campbell-Walter ;
+    :hasSex data:Female .
+
+data:Karl_Habsburg-Lothringen a :Man ;
+    :alsoKnownAs "Archduke Karl of Austria"^^xsd:string,
+        "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Charles_I ;
+    :hasMarriageYear 1993,
+        2022 ;
+    :hasMother data:Regina_von_Sachsen-Meiningen ;
+    :hasSex data:Male .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Charles_I a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Regina_von_Sachsen-Meiningen a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

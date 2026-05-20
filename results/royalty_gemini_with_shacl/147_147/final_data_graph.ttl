@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Karl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Princess_Marie_Louise_of_Bulgaria ;
+    :hasSex data:Male ;
+    :knownAs "Karl Vladimir Ernst Heinrich"^^xsd:string .
+
+data:Boris_III_of_Bulgaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Edinburgh ;
+    :hasSex data:Female .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 ;
+    :hasSex data:Male .
+
+data:Princess_Giovanna_of_Italy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Marie_Louise_of_Bulgaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Princess_Giovanna_of_Italy ;
+    :hasSex data:Female .
+
+data:Princess_Victoria_Melita_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
+

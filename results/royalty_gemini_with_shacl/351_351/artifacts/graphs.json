@@ -1,0 +1,79 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "pre_validation",
+        "tool_call_id": "afbe3e51-2d01-4b48-9b26-b318ba1144e7",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMarriageYear data:1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 1,
+        "source": "validate_shacl",
+        "tool_call_id": "afbe3e51-2d01-4b48-9b26-b318ba1144e7",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II_of_Prussia> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II_of_Prussia> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Augusta_Victoria_of_Schleswig-Holstein> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Prince_August_Wilhelm_of_Prussia> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Wilhelm_II_of_Prussia> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "pre_validation",
+        "tool_call_id": "5e6e2e2c-1098-4e5f-ba69-0ff171681bc4",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMarriageYear data:1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "5e6e2e2c-1098-4e5f-ba69-0ff171681bc4",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "pre_validation",
+        "tool_call_id": "74164408-b972-44b3-bfb9-de730fefded8",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMarriageYear data:1908,\n        1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "74164408-b972-44b3-bfb9-de730fefded8",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "pre_validation",
+        "tool_call_id": "1acd262d-a67a-451f-bafb-f8e599eb2128",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMarriageYear data:1908 ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 6,
+        "source": "validate_shacl",
+        "tool_call_id": "1acd262d-a67a-451f-bafb-f8e599eb2128",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "pre_validation",
+        "tool_call_id": "9ad7e287-3279-4afc-937e-019e2fb923ef",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 8,
+        "source": "validate_shacl",
+        "tool_call_id": "9ad7e287-3279-4afc-937e-019e2fb923ef",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_August_Wilhelm_of_Prussia a :Man ;\n    :hasBirthYear 1887 ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;\n    :hasDeathYear 1949 ;\n    :hasFather data:Wilhelm_II_of_Prussia ;\n    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;\n    :knownAs \"Auwi\"^^xsd:string .\n\ndata:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;\n    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .\n\ndata:Princess_Margaret_of_Prussia a :Woman ;\n    :isSisterOf data:Wilhelm_II_of_Prussia .\n\ndata:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,\n        :Woman .\n\ndata:Prince_Alexander_Ferdinand_of_Prussia a :Man .\n\ndata:Wilhelm_II_of_Prussia a :Ancestor,\n        :Man .\n\n"
+    }
+]

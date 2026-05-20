@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man,\n        :Person ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:Jasper_Cable-Alexander :hasBirthYear 1998 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Frances_Armstrong-Jones :hasBirthYear 1979 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:David_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Polly_Fry :hasBirthYear 1960 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Ancestor,\n        :Woman .\n\ndata:Ros_Chatto a :Ancestor,\n        :Woman .\n\ndata:Tom_Chatto a :Ancestor,\n        :Man .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "dfd9394b-29e7-49e7-bbd9-e4c5bbfe60f2",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man,\n        :Person ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:Jasper_Cable-Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Frances_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 1979 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:David_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Polly_Fry a :Person,\n        :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Ancestor,\n        :Woman .\n\ndata:Ros_Chatto a :Ancestor,\n        :Woman .\n\ndata:Tom_Chatto a :Ancestor,\n        :Man .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 5,
+        "source": "validate_shacl",
+        "tool_call_id": "07eefc3d-ae70-4fd4-b6f6-19431492951e",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Daniel_Chatto a :Man,\n        :Person ;\n    :hasFather data:Tom_Chatto ;\n    :hasMother data:Ros_Chatto .\n\ndata:Jasper_Cable-Alexander a :Man,\n        :Person ;\n    :hasBirthYear 1998 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Frances_Armstrong-Jones a :Person,\n        :Woman ;\n    :hasBirthYear 1979 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:Lady_Sarah_Chatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:David_Armstrong-Jones ;\n    :hasFather data:Antony_Armstrong-Jones ;\n    :hasMother data:Princess_Margaret .\n\ndata:Polly_Fry a :Person,\n        :Woman ;\n    :hasBirthYear 1960 ;\n    :hasFather data:Antony_Armstrong-Jones .\n\ndata:David_Armstrong-Jones a :Man,\n        :Person .\n\ndata:Princess_Margaret a :Ancestor,\n        :Woman .\n\ndata:Ros_Chatto a :Ancestor,\n        :Woman .\n\ndata:Tom_Chatto a :Ancestor,\n        :Man .\n\ndata:Antony_Armstrong-Jones a :Ancestor,\n        :Man .\n\n"
+    }
+]

@@ -1,0 +1,29 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceMaximilianOfBaden a :Man,
+        :Person ;
+    :isBrotherOf data:MargaritaOfBaden .
+
+data:BertholdMargraveOfBaden a :Ancestor,
+        :Man,
+        :Person .
+
+data:MargaritaOfBaden a :Person,
+        :Woman ;
+    :alsoKnownAs "Margarete Alice Thyra Viktoria Marie Louise Scholastica"^^xsd:string ;
+    :hasBirthYear 1932 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:BertholdMargraveOfBaden ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:TheodoraOfGreeceAndDenmark ;
+    :hasRelation data:PrinceTomislavOfYugoslavia .
+
+data:PrinceTomislavOfYugoslavia a :Man,
+        :Person .
+
+data:TheodoraOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman .
+

@@ -1,0 +1,43 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Tomislav a :Man,
+        :Person ;
+    :hasBirthYear "1928"^^xsd:nonNegativeInteger ;
+    :hasDeathYear "2000"^^xsd:nonNegativeInteger ;
+    :hasFather data:King_Alexander_I ;
+    :hasMarriageYear "1957"^^xsd:nonNegativeInteger ;
+    :hasMother data:Queen_Maria ;
+    :hasRelation data:Princess_Margarita_of_Baden ;
+    :hasSex data:Male_Sex ;
+    :isBrotherOf data:King_Peter_II .
+
+data:King_Ferdinand_of_Romania a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Peter_II a :Man,
+        :Person ;
+    :hasFather data:King_Alexander_I ;
+    :hasMother data:Queen_Maria .
+
+data:Male_Sex a :Sex .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Queen_Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Alexander_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Maria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:King_Ferdinand_of_Romania ;
+    :hasMother data:Queen_Marie_of_Romania .
+

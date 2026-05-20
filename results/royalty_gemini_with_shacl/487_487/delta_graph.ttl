@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelm_Karl_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 2007 ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMarriageYear 1952 ;
+    :hasMother data:Ina_Marie_von_Bassewitz ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim .
+
+data:Armgard_Else_Helene_von_Veltheim a :Person,
+        :Woman ;
+    :hasFather data:Friedrich_von_Veltheim ;
+    :hasMother data:Ottonie_von_Alvensleben .
+
+data:Friedrich_von_Veltheim a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ina_Marie_von_Bassewitz a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Ottonie_von_Alvensleben a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+

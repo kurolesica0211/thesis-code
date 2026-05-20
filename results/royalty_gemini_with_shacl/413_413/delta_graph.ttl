@@ -1,0 +1,34 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person ;
+    :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
+        "George Mansfield"^^xsd:string ;
+    :hasAncestor data:Sophia_of_Hanover ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1966 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1945 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Lady_Brigid_Guinness ;
+    :hasSex data:Male .
+
+data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+        :Man,
+        :Person .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
+
+data:Male a :Male,
+        :Sex .
+
+data:Sophia_of_Hanover a :Ancestor,
+        :Person .
+

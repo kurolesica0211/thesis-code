@@ -1,0 +1,225 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/8_8",
+  "text_file": "Q1040807.txt",
+  "text_key": "Q1040807",
+  "article": "https://en.wikipedia.org/wiki/Lady_Sarah_Chatto",
+  "article_key": "Lady Sarah Chatto",
+  "main_entity": {
+    "uri": "http://example.com/data#Lady_Sarah_Chatto",
+    "qid": "Q1040807",
+    "label": "Lady Sarah Chatto"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "qid": "Q1040807",
+      "label": "Lady Sarah Chatto",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "qid": "Q335260",
+      "label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#David_Armstrong-Jones-_2nd_Earl_of_Snowdon",
+      "qid": "Q1091237",
+      "label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret-_Countess_of_Snowdon",
+      "qid": "Q153815",
+      "label": "Princess Margaret, Countess of Snowdon",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "qid": "Q233913",
+      "label": "Mary, Princess Royal and Countess of Harewood",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
+      "qid": "Q117174",
+      "label": "Prince Henry, Duke of Gloucester",
+      "distance": 2,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
+      "qid": "Q10633",
+      "label": "Queen Elizabeth, The Queen Mother",
+      "distance": 2,
+      "gender": "female"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/AntonyArmstrongJones",
+      "extracted_local_name": "AntonyArmstrongJones",
+      "embedding_text": "Antony Armstrong Jones",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9047619047619048,
+      "ground_truth_uri": "http://example.com/data#Antony_Armstrong-Jones-_1st_Earl_of_Snowdon",
+      "ground_truth_qid": "Q335260",
+      "ground_truth_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Tony Armstrong-Jones",
+      "best_candidate_label": "Antony Armstrong-Jones, 1st Earl of Snowdon",
+      "best_candidate_qid": "Q335260",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9047619047619048
+    },
+    {
+      "extracted_uri": "http://example.org/data/SarahChatto",
+      "extracted_local_name": "SarahChatto",
+      "embedding_text": "Sarah Chatto",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8275862068965517,
+      "ground_truth_uri": "http://example.com/data#Lady_Sarah_Chatto",
+      "ground_truth_qid": "Q1040807",
+      "ground_truth_label": "Lady Sarah Chatto",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8275862068965517
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMargaret",
+      "extracted_local_name": "PrincessMargaret",
+      "embedding_text": "Princess Margaret",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "ground_truth_qid": "Q233913",
+      "ground_truth_label": "Mary, Princess Royal and Countess of Harewood",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Princess Mary",
+      "best_candidate_label": "Mary, Princess Royal and Countess of Harewood",
+      "best_candidate_qid": "Q233913",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/DanielChatto",
+      "extracted_local_name": "DanielChatto",
+      "embedding_text": "Daniel Chatto",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Andrew Albert Christian Edward",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.37209302325581395
+    },
+    {
+      "extracted_uri": "http://example.org/data/DavidArmstrongJones",
+      "extracted_local_name": "DavidArmstrongJones",
+      "embedding_text": "David Armstrong Jones",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "David Armstrong-Jones, Viscount Linley",
+      "best_candidate_label": "David Armstrong-Jones, 2nd Earl of Snowdon",
+      "best_candidate_qid": "Q1091237",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.6779661016949152
+    },
+    {
+      "extracted_uri": "http://example.org/data/RosChatto",
+      "extracted_local_name": "RosChatto",
+      "embedding_text": "Ros Chatto",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lady Sarah Chatto",
+      "best_candidate_label": "Lady Sarah Chatto",
+      "best_candidate_qid": "Q1040807",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.5925925925925926
+    },
+    {
+      "extracted_uri": "http://example.org/data/TomChatto",
+      "extracted_local_name": "TomChatto",
+      "embedding_text": "Tom Chatto",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Charles the Third",
+      "best_candidate_label": "Charles III",
+      "best_candidate_qid": "Q43274",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.37037037037037035
+    }
+  ],
+  "summary": {
+    "entities_total": 7,
+    "entities_matched": 3,
+    "entities_unmatched": 4
+  }
+}

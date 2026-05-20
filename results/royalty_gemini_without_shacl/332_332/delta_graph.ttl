@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albrecht_Willem_Lier a :Man,
+        :Person ;
+    :alsoKnownAs "Pim"^^xsd:string ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Prince_Henry ;
+    :hasMother data:Willemina_Martina_Wenneker ;
+    :isBrotherOf data:Queen_Juliana ;
+    :isUncleOf data:Queen_Beatrix .
+
+data:Prince_Henry a :Man,
+        :Person .
+
+data:Queen_Beatrix a :Person,
+        :Woman .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+
+data:Willemina_Martina_Wenneker a :Person,
+        :Woman ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1973 .
+

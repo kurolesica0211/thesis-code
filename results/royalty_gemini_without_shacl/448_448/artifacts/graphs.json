@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archduchess_Valerie_of_Austria a :Person,\n        :Woman .\n\ndata:Beatrix_of_Hohenlohe-Langenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 1997 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Margarita_of_Greece_and_Denmark .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Maximilian_Hereditary_Prince_of_Baden a :Man,\n        :Person .\n\ndata:Princess_Cecilie a :Person,\n        :Woman .\n\ndata:Princess_Christina_of_Hesse a :Person,\n        :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Archduchess_Valerie_of_Austria a :Person,\n        :Woman .\n\ndata:Beatrix_of_Hohenlohe-Langenburg a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasDeathYear 1997 ;\n    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Margarita_of_Greece_and_Denmark .\n\ndata:King_Charles_III a :Man,\n        :Person .\n\ndata:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,\n        :Woman .\n\ndata:Maximilian_Hereditary_Prince_of_Baden a :Man,\n        :Person .\n\ndata:Princess_Cecilie a :Person,\n        :Woman .\n\ndata:Princess_Christina_of_Hesse a :Person,\n        :Woman .\n\ndata:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,\n        :Person .\n\ndata:Margarita_of_Greece_and_Denmark a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .\n\ndata:Prince_Philip_Duke_of_Edinburgh a :Man,\n        :Person .\n\n"
+    }
+]

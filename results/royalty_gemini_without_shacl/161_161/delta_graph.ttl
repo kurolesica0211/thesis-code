@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Infante_Dom_Manuel_Manuel_II a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:King_Louis_Philippe_I_of_France a :Ancestor,
+        :Man ;
+    :isFatherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Prince_Antoine_Duke_of_Montpensier,
+        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Prince_Dom_Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Duchess_Helena_of_Mecklenburg_Schwerin a :Ancestor,
+        :Woman .
+
+data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+        :Woman .
+
+data:King_Lu%C3%ADs_I_of_Portugal a :Ancestor,
+        :Man .
+
+data:Maria_Pia_of_Savoy a :Ancestor,
+        :Woman .
+
+data:Prince_Philippe_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Duchess_Helena_of_Mecklenburg_Schwerin .
+
+data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :alsoKnownAs "Marie Amélie Louise Hélène"^^xsd:string ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Prince_Philippe_Count_of_Paris ;
+    :hasMarriageYear 1886 ;
+    :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Carlos_I_of_Portugal .
+
+data:Carlos_I_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man .
+
+data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
+        :Man .
+

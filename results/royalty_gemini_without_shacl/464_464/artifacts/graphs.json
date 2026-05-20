@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;\n    :hasMother data:Maria_Elisabeth_of_Bavaria .\n\ndata:Pedro_Carlos_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Princess_Isabel a :Person,\n        :Woman ;\n    :isDaughterOf data:Emperor_Pedro_II .\n\ndata:Emperor_Pedro_II a :Man,\n        :Person .\n\ndata:Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:King_Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Luiz_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1938 ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;\n    :hasMother data:Maria_Elisabeth_of_Bavaria .\n\ndata:Pedro_Carlos_Orleans-Braganza a :Man,\n        :Person .\n\ndata:Princess_Isabel a :Person,\n        :Woman ;\n    :isDaughterOf data:Emperor_Pedro_II .\n\ndata:Emperor_Pedro_II a :Man,\n        :Person .\n\ndata:Maria_Elisabeth_of_Bavaria a :Person,\n        :Woman .\n\ndata:Pedro_Henrique_of_Orleans-Braganza a :Man,\n        :Person .\n\n"
+    }
+]

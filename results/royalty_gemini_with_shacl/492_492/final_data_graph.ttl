@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bernhard_Prinz_und_Markgraf_von_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasRelation data:Stephanie_Anne_Kaul .
+
+data:Archduke_Hubert_Salvator_of_Austria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person .
+
+data:Christian_Kaul a :Ancestor,
+        :Man,
+        :Person .
+
+data:Hannelore_Scheel a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Princess_Rosemary_of_Salm-Salm a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Stephanie_Anne_Kaul a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel .
+
+data:Valerie_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
+    :hasMother data:Princess_Rosemary_of_Salm-Salm .
+

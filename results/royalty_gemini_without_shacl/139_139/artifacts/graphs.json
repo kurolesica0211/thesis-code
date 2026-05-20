@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_Pius a :Man,\n        :Person ;\n    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:Maria_Antonietta ;\n    :hasRelation data:Maria_Ludwiga_Theresia_of_Bavaria .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Maria_Antonietta a :Person,\n        :Woman .\n\ndata:Maria_Ludwiga_Theresia_of_Bavaria a :Person,\n        :Woman ;\n    :hasFather data:Ludwig_III_of_Bavaria .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ferdinand_Pius a :Man,\n        :Person ;\n    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1960 ;\n    :hasFather data:Alfonso_Count_of_Caserta ;\n    :hasMarriageYear 1897 ;\n    :hasMother data:Maria_Antonietta ;\n    :hasRelation data:Maria_Ludwiga_Theresia_of_Bavaria .\n\ndata:Alfonso_Count_of_Caserta a :Man,\n        :Person .\n\ndata:Ferdinand_II_of_the_Two_Sicilies a :Man,\n        :Person .\n\ndata:Ludwig_III_of_Bavaria a :Man,\n        :Person .\n\ndata:Maria_Antonietta a :Person,\n        :Woman .\n\ndata:Maria_Ludwiga_Theresia_of_Bavaria a :Person,\n        :Woman ;\n    :hasFather data:Ludwig_III_of_Bavaria .\n\n"
+    }
+]

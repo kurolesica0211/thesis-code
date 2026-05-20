@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .\n\ndata:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasMarriageYear 2023 ;\n    :hasRelation data:Gaby_Maier ;\n    :hasSex data:Male .\n\ndata:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1994 ;\n    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;\n    :hasSex data:Male .\n\ndata:Gaby_Maier a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Princess_Marie_Wilhelmine_of_Wied a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasSex data:Female .\n\ndata:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2018 ;\n    :hasSex data:Male .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .\n\ndata:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasMarriageYear 2023 ;\n    :hasRelation data:Gaby_Maier ;\n    :hasSex data:Male .\n\ndata:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1994 ;\n    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;\n    :hasSex data:Male .\n\ndata:Gaby_Maier a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Princess_Marie_Wilhelmine_of_Wied a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2018 ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasSex data:Male ;\n    :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .\n\ndata:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasMarriageYear 2023 ;\n    :hasRelation data:Gaby_Maier ;\n    :hasSex data:Male .\n\ndata:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1994 ;\n    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;\n    :hasSex data:Male .\n\ndata:Gaby_Maier a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Princess_Marie_Wilhelmine_of_Wied a :Person,\n        :Woman ;\n    :hasBirthYear 1973 ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2018 ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\n"
+    }
+]

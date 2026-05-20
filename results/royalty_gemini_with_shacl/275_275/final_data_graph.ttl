@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1927,
+        1932 ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Cecylia_Lubomirska a :Person,
+        :Woman ;
+    :hasFather data:Prince_Kasimierz_Lubomirski ;
+    :hasMother data:Countess_Maria_Theresia_Granow-Wodicka .
+
+data:Princess_Malgorzata_Izabella_Czartoryska a :Person,
+        :Woman ;
+    :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
+    :hasMother data:Countess_Maria_Ludwika_Krasinska .
+
+data:Countess_Maria_Ludwika_Krasinska a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Countess_Maria_Theresia_Granow-Wodicka a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Adam_Ludwik_Czartoryski a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Kasimierz_Lubomirski a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+

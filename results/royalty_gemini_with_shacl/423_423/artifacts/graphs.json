@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Carlo_of_Bourbon-Two_Sicilies .\n\ndata:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies .\n\ndata:Camilla_Crociani a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "d6804d13-bbed-4c5c-be55-dbbd067331ce",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :isSisterOf data:Prince_Carlo_of_Bourbon-Two_Sicilies .\n\ndata:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2003 ;\n    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies .\n\ndata:Camilla_Crociani a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,\n        :Man,\n        :Person ;\n    :hasFather data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .\n\n"
+    }
+]

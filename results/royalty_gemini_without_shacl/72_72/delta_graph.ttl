@@ -1,0 +1,32 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :isAncestorOf data:Mary_Malcolm .
+
+data:Basil_Bartlett a :Man,
+        :Person .
+
+data:Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person .
+
+data:Jeanne_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1964 .
+
+data:Mary_Malcolm a :Person,
+        :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Ian_Malcolm ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Jeanne_Langtry ;
+    :hasRelation data:Basil_Bartlett ;
+    :knownAs "Helen Mary Malcolm"^^xsd:string .
+

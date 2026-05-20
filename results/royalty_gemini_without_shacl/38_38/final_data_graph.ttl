@@ -1,0 +1,30 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Alexandra_of_Greece a :Person,
+        :Woman ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMarriageYear 1998 ;
+    :hasMother data:Marina_Karella ;
+    :hasRelation data:Nicolas_Mirzayantz ;
+    :hasSister data:Princess_Olga ;
+    :knownAs "Alexandra Mirzayantz"^^xsd:string .
+
+data:Marina_Karella a :Person,
+        :Woman .
+
+data:Nicolas_Mirzayantz a :Man,
+        :Person .
+
+data:Princess_Olga a :Person,
+        :Woman .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person .
+

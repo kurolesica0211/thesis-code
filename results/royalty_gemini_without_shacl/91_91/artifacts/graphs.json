@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessAlexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:PrinceEdward ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMarriageYear 1963 ;\n    :hasMother data:PrincessMarinaOfGreeceAndDenmark ;\n    :hasRelation data:SirAngusOgilvy .\n\ndata:DavidOgilvy12thEarlOfAirlie a :Man,\n        :Person .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:LadyAlexandraCoke a :Person,\n        :Woman .\n\ndata:PrinceEdward a :Man,\n        :Person ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMother data:PrincessMarinaOfGreeceAndDenmark .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SirAngusOgilvy a :Man,\n        :Person ;\n    :hasDeathYear 2004 ;\n    :hasFather data:DavidOgilvy12thEarlOfAirlie ;\n    :hasMother data:LadyAlexandraCoke .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrincessMarinaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrincessAlexandra a :Person,\n        :Woman ;\n    :hasBirthYear 1936 ;\n    :hasBrother data:PrinceEdward ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMarriageYear 1963 ;\n    :hasMother data:PrincessMarinaOfGreeceAndDenmark ;\n    :hasRelation data:SirAngusOgilvy .\n\ndata:DavidOgilvy12thEarlOfAirlie a :Man,\n        :Person .\n\ndata:GeorgeV a :Man,\n        :Person .\n\ndata:GrandDuchessElenaVladimirovnaOfRussia a :Person,\n        :Woman .\n\ndata:LadyAlexandraCoke a :Person,\n        :Woman .\n\ndata:PrinceEdward a :Man,\n        :Person ;\n    :hasFather data:PrinceGeorgeDukeOfKent ;\n    :hasMother data:PrincessMarinaOfGreeceAndDenmark .\n\ndata:PrinceNicholasOfGreeceAndDenmark a :Man,\n        :Person .\n\ndata:QueenMary a :Person,\n        :Woman .\n\ndata:SirAngusOgilvy a :Man,\n        :Person ;\n    :hasDeathYear 2004 ;\n    :hasFather data:DavidOgilvy12thEarlOfAirlie ;\n    :hasMother data:LadyAlexandraCoke .\n\ndata:PrinceGeorgeDukeOfKent a :Man,\n        :Person ;\n    :hasFather data:GeorgeV ;\n    :hasMother data:QueenMary .\n\ndata:PrincessMarinaOfGreeceAndDenmark a :Person,\n        :Woman ;\n    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;\n    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .\n\n"
+    }
+]

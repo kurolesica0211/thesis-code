@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Robert_Jeremy_Hugh_Lascelles a :Man,\n        :Person ;\n    :hasAncestor data:King_George_V ;\n    :hasBirthYear 1955 ;\n    :hasBrother data:James_Lascelles ;\n    :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;\n    :hasMother data:Marion_Stein .\n\ndata:George_Lascelles_7th_Earl_of_Harewood a :Ancestor,\n        :Man .\n\ndata:James_Lascelles a :Man,\n        :Person .\n\ndata:King_George_V a :Ancestor,\n        :Man .\n\ndata:Marion_Stein a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Robert_Jeremy_Hugh_Lascelles a :Man,\n        :Person ;\n    :hasAncestor data:King_George_V ;\n    :hasBirthYear 1955 ;\n    :hasBrother data:James_Lascelles ;\n    :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;\n    :hasMother data:Marion_Stein .\n\ndata:George_Lascelles_7th_Earl_of_Harewood a :Ancestor,\n        :Man .\n\ndata:James_Lascelles a :Man,\n        :Person .\n\ndata:King_George_V a :Ancestor,\n        :Man .\n\ndata:Marion_Stein a :Ancestor,\n        :Woman .\n\n"
+    }
+]

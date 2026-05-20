@@ -1,0 +1,16 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antoine_13th_Prince_of_Ligne a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Princess_Christine_of_Ligne .\n\ndata:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Prince_Antonio .\n\ndata:Princess_Alix_of_Luxembourg a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Christine_of_Ligne .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Antonio .\n\ndata:Rafael_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasBrother data:Prince_Pedro_Luiz ;\n    :hasFather data:Prince_Antonio ;\n    :hasMother data:Princess_Christine_of_Ligne ;\n    :hasRelation data:Prince_Bertrand ;\n    :hasSister data:Princess_Amelia,\n        data:Princess_Maria_Gabriela .\n\ndata:Prince_Bertrand a :Man,\n        :Person .\n\ndata:Prince_Pedro_Luiz a :Man,\n        :Person .\n\ndata:Princess_Amelia a :Person,\n        :Woman .\n\ndata:Princess_Maria_Gabriela a :Person,\n        :Woman .\n\ndata:Prince_Antonio a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Christine_of_Ligne a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Antoine_13th_Prince_of_Ligne a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Princess_Christine_of_Ligne .\n\ndata:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Prince_Antonio .\n\ndata:Princess_Alix_of_Luxembourg a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Princess_Christine_of_Ligne .\n\ndata:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,\n        :Person,\n        :Woman ;\n    :isMotherOf data:Prince_Antonio .\n\ndata:Rafael_of_Orleans-Braganza a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasBrother data:Prince_Pedro_Luiz ;\n    :hasFather data:Prince_Antonio ;\n    :hasMother data:Princess_Christine_of_Ligne ;\n    :hasRelation data:Prince_Bertrand ;\n    :hasSister data:Princess_Amelia,\n        data:Princess_Maria_Gabriela .\n\ndata:Prince_Bertrand a :Man,\n        :Person .\n\ndata:Prince_Pedro_Luiz a :Man,\n        :Person .\n\ndata:Princess_Amelia a :Person,\n        :Woman .\n\ndata:Princess_Maria_Gabriela a :Person,\n        :Woman .\n\ndata:Prince_Antonio a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Christine_of_Ligne a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+    }
+]

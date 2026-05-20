@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IvarMountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:GeorgeMountbatten ;\n    :hasFather data:DavidMountbatten ;\n    :hasMarriageYear data:PenelopeAnneVereThompson,\n        1994 ;\n    :hasMother data:JanetMercedesBryce ;\n    :hasSex data:Male .\n\ndata:DavidMountbatten a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:GeorgeMountbatten a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:JanetMercedesBryce a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:PenelopeAnneVereThompson a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "fd38f361-0840-4424-89c3-9062db0538b8",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IvarMountbatten a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasBrother data:GeorgeMountbatten ;\n    :hasFather data:DavidMountbatten ;\n    :hasMarriageYear data:PenelopeAnneVereThompson,\n        1994 ;\n    :hasMother data:JanetMercedesBryce ;\n    :hasSex data:Male .\n\ndata:DavidMountbatten a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:GeorgeMountbatten a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:JanetMercedesBryce a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:PenelopeAnneVereThompson a :Person,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+    }
+]

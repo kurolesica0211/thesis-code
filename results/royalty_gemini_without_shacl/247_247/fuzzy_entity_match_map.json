@@ -1,0 +1,158 @@
+{
+  "run_directory": "results/royalty_gemini_without_shacl",
+  "task_directory": "results/royalty_gemini_without_shacl/247_247",
+  "text_file": "Q3292297.txt",
+  "text_key": "Q3292297",
+  "article": "https://en.wikipedia.org/wiki/Duchess_Marie-Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg",
+  "article_key": "Duchess Marie-Thérèse of Württemberg",
+  "main_entity": {
+    "uri": "http://example.com/data#Duchess_Marie_Thérèse_of_Württemberg",
+    "qid": "Q3292297",
+    "label": "Duchess Marie Thérèse of Württemberg"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Duchess_Marie_Thérèse_of_Württemberg",
+      "qid": "Q3292297",
+      "label": "Duchess Marie Thérèse of Württemberg",
+      "distance": 0,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Duchess_Rosa-_Duchess_of_Württemberg",
+      "qid": "Q84971",
+      "label": "Duchess Rosa, Duchess of Württemberg",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Duke_Carl-_Duke_of_Württemberg",
+      "qid": "Q62385",
+      "label": "Duke Carl, Duke of Württemberg",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Philipp_Albrecht-_Duke_of_Württemberg",
+      "qid": "Q62965",
+      "label": "Philipp Albrecht, Duke of Württemberg",
+      "distance": 1,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Philipp_Albrecht_Duke_of_W%C3%BCrttemberg",
+      "extracted_local_name": "Philipp_Albrecht_Duke_of_W%C3%BCrttemberg",
+      "embedding_text": "Philipp Albrecht Duke of Württemberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9883720930232558,
+      "ground_truth_uri": "http://example.com/data#Philipp_Albrecht-_Duke_of_Württemberg",
+      "ground_truth_qid": "Q62965",
+      "ground_truth_label": "Philipp Albrecht, Duke of Württemberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Philipp Albrecht- Duke of Württemberg",
+      "best_candidate_label": "Philipp Albrecht, Duke of Württemberg",
+      "best_candidate_qid": "Q62965",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9883720930232558
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carl_Duke_of_W%C3%BCrttemberg",
+      "extracted_local_name": "Carl_Duke_of_W%C3%BCrttemberg",
+      "embedding_text": "Carl Duke of Württemberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9736842105263157,
+      "ground_truth_uri": "http://example.com/data#Duke_Carl-_Duke_of_Württemberg",
+      "ground_truth_qid": "Q62385",
+      "ground_truth_label": "Duke Carl, Duke of Württemberg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Carl, Duke of Württemberg",
+      "best_candidate_label": "Duke Carl, Duke of Württemberg",
+      "best_candidate_qid": "Q62385",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.9736842105263157
+    },
+    {
+      "extracted_uri": "http://example.org/data/Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg",
+      "extracted_local_name": "Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg",
+      "embedding_text": "Marie Thérèse of Württemberg",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8823529411764706,
+      "ground_truth_uri": "http://example.com/data#Duchess_Marie_Thérèse_of_Württemberg",
+      "ground_truth_qid": "Q3292297",
+      "ground_truth_label": "Duchess Marie Thérèse of Württemberg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Duchess Marie Thérèse of Württemberg",
+      "best_candidate_label": "Duchess Marie Thérèse of Württemberg",
+      "best_candidate_qid": "Q3292297",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.8823529411764706
+    },
+    {
+      "extracted_uri": "http://example.org/data/Diane_dOrl%C3%A9ans",
+      "extracted_local_name": "Diane_dOrl%C3%A9ans",
+      "embedding_text": "Diane d Orléans",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duchess Rosa, The Duchess of Württemberg",
+      "best_candidate_label": "Duchess Rosa, Duchess of Württemberg",
+      "best_candidate_qid": "Q84971",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.2909090909090909
+    },
+    {
+      "extracted_uri": "http://example.org/data/Henri",
+      "extracted_local_name": "Henri",
+      "embedding_text": "Henri",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Philipp Albrecht- Duke of Württemberg",
+      "best_candidate_label": "Philipp Albrecht, Duke of Württemberg",
+      "best_candidate_qid": "Q62965",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.14285714285714285
+    },
+    {
+      "extracted_uri": "http://example.org/data/Rosa_of_Austria",
+      "extracted_local_name": "Rosa_of_Austria",
+      "embedding_text": "Rosa of Austria",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duchess Rosa- Duchess of Württemberg",
+      "best_candidate_label": "Duchess Rosa, Duchess of Württemberg",
+      "best_candidate_qid": "Q84971",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.0
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

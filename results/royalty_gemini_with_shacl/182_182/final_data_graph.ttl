@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ana_Luna_Medina a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasBirthYear 2017 ;
+    :hasMother data:Lauren_Estelle_Jones ;
+    :isDaughterOf data:Peter_Karageorgevitch .
+
+data:Sol_Maria_Medina a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Alexander_Jr_Karageorgevitch a :Man,
+        :Person .
+
+data:Alexander_Karageorgevitch a :Ancestor,
+        :Man,
+        :Person ;
+    :isSonOf data:Peter_II_Yugoslavia .
+
+data:Lauren_Estelle_Jones a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Male_Sex_Node a :Male,
+        :Sex .
+
+data:Peter_II_Yugoslavia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Peter_Karageorgevitch a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Prince Peter of Serbia and Yugoslavia"^^xsd:string ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Jr_Karageorgevitch,
+        data:Philip_Karageorgevitch ;
+    :hasFather data:Alexander_Karageorgevitch ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasSex data:Male_Sex_Node .
+
+data:Philip_Karageorgevitch a :Man,
+        :Person .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman .
+

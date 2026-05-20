@@ -1,0 +1,37 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Augusta_Reuss a :Woman ;\n    :isMotherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Man ;\n    :isFatherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Queen_Victoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Duke_Ernest_I a :Man ;\n    :isFatherOf data:Prince_Albert .\n\ndata:Prince_Albert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Woman ;\n    :isMotherOf data:Queen_Victoria .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "b5c7cefa-bdf9-4490-b9df-4e8116d3e1b4",
+        "graph": "@prefix esh: <http://example.org/esh#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Princess_Victoria_of_Saxe-Coburg-Saalfeld> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Princess_Victoria_of_Saxe-Coburg-Saalfeld> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Countess_Augusta_Reuss> ;\n            sh:resultMessage \"Any subject of isMotherOf must be all of: Ancestor, Woman.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isMotherOf ;\n            sh:value <http://example.org/data/Countess_Augusta_Reuss> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Duke_Ernest_I> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Duke_Ernest_I> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Duke_Francis_of_Saxe-Coburg-Saalfeld> ;\n            sh:resultMessage \"Any subject of isFatherOf must be all of: Ancestor, Man.\" ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape esh:DomainConjunctionShape_isFatherOf ;\n            sh:value <http://example.org/data/Duke_Francis_of_Saxe-Coburg-Saalfeld> ] .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "pre_validation",
+        "tool_call_id": "762020f7-d15d-4740-bea8-cb93787c86f0",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Augusta_Reuss a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Man ;\n    :isFatherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Queen_Victoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Duke_Ernest_I a :Ancestor,\n        :Man ;\n    :isFatherOf data:Prince_Albert .\n\ndata:Prince_Albert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Queen_Victoria .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 3,
+        "source": "validate_shacl",
+        "tool_call_id": "762020f7-d15d-4740-bea8-cb93787c86f0",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Countess_Augusta_Reuss a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Man ;\n    :isFatherOf data:Duke_Ernest_I,\n        data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .\n\ndata:Queen_Victoria a :Woman ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1901 ;\n    :hasMarriageYear 1840 ;\n    :hasRelation data:Prince_Albert .\n\ndata:Duke_Ernest_I a :Ancestor,\n        :Man ;\n    :isFatherOf data:Prince_Albert .\n\ndata:Prince_Albert a :Man ;\n    :hasBirthYear 1819 ;\n    :hasDeathYear 1861 .\n\ndata:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,\n        :Woman ;\n    :isMotherOf data:Queen_Victoria .\n\n"
+    }
+]

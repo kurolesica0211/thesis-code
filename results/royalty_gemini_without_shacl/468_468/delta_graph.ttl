@@ -1,0 +1,33 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Louis_Ferdinand_of_Prussia ;
+    :hasDeathYear 1940 ;
+    :hasFather data:Crown_Prince_Wilhelm ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Dorothea_von_Salviati .
+
+data:Dorothea_von_Salviati a :Person,
+        :Woman ;
+    :hasMarriageYear 1933 .
+
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :hasParent data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Crown_Prince_Wilhelm .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Crown_Prince_Wilhelm a :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II .
+

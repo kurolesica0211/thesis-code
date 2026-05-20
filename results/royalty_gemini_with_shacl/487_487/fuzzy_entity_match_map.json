@@ -1,0 +1,172 @@
+{
+  "run_directory": "results/royalty_gemini_with_shacl",
+  "task_directory": "results/royalty_gemini_with_shacl/487_487",
+  "text_file": "Q92141.txt",
+  "text_key": "Q92141",
+  "article": "https://en.wikipedia.org/wiki/Wilhelm_Karl_Prinz_von_Preussen",
+  "article_key": "Wilhelm Karl Prinz von Preussen",
+  "main_entity": {
+    "uri": "http://example.com/data#Prince_Wilhelm-Karl_of_Prussia",
+    "qid": "Q92141",
+    "label": "Prince Wilhelm-Karl of Prussia"
+  },
+  "candidate_entities": [
+    {
+      "uri": "http://example.com/data#Prince_Wilhelm-Karl_of_Prussia",
+      "qid": "Q92141",
+      "label": "Prince Wilhelm-Karl of Prussia",
+      "distance": 0,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Countess_Ina_Marie_von_Bassewitz",
+      "qid": "Q772541",
+      "label": "Countess Ina Marie von Bassewitz",
+      "distance": 1,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Oskar_of_Prussia",
+      "qid": "Q100307",
+      "label": "Oskar of Prussia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Prince_Oskar_of_Prussia",
+      "qid": "Q61242",
+      "label": "Prince Oskar of Prussia",
+      "distance": 1,
+      "gender": "male"
+    },
+    {
+      "uri": "http://example.com/data#Armgard_Else_Helene_von_Veltheim",
+      "qid": "Q75383555",
+      "label": "Armgard Else Helene von Veltheim",
+      "distance": 2,
+      "gender": "female"
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 2,
+      "gender": "male"
+    }
+  ],
+  "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Armgard_Else_Helene_von_Veltheim",
+      "extracted_local_name": "Armgard_Else_Helene_von_Veltheim",
+      "embedding_text": "Armgard Else Helene von Veltheim",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Armgard_Else_Helene_von_Veltheim",
+      "ground_truth_qid": "Q75383555",
+      "ground_truth_label": "Armgard Else Helene von Veltheim",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Armgard Else Helene von Veltheim",
+      "best_candidate_label": "Armgard Else Helene von Veltheim",
+      "best_candidate_qid": "Q75383555",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Oskar_of_Prussia",
+      "extracted_local_name": "Prince_Oskar_of_Prussia",
+      "embedding_text": "Prince Oskar of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Oskar_of_Prussia",
+      "ground_truth_qid": "Q61242",
+      "ground_truth_label": "Prince Oskar of Prussia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "male",
+      "best_candidate_match_text": "Prince Oskar of Prussia",
+      "best_candidate_label": "Prince Oskar of Prussia",
+      "best_candidate_qid": "Q61242",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ina_Marie_von_Bassewitz",
+      "extracted_local_name": "Ina_Marie_von_Bassewitz",
+      "embedding_text": "Ina Marie von Bassewitz",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9047619047619048,
+      "ground_truth_uri": "http://example.com/data#Countess_Ina_Marie_von_Bassewitz",
+      "ground_truth_qid": "Q772541",
+      "ground_truth_label": "Countess Ina Marie von Bassewitz",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": "female",
+      "best_candidate_match_text": "Ina Marie Bassewitz",
+      "best_candidate_label": "Countess Ina Marie von Bassewitz",
+      "best_candidate_qid": "Q772541",
+      "best_candidate_gender": "female",
+      "best_candidate_score": 0.9047619047619048
+    },
+    {
+      "extracted_uri": "http://example.org/data/Friedrich_von_Veltheim",
+      "extracted_local_name": "Friedrich_von_Veltheim",
+      "embedding_text": "Friedrich von Veltheim",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Friedrich Wilhelm Emperor William II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.5172413793103449
+    },
+    {
+      "extracted_uri": "http://example.org/data/Ottonie_von_Alvensleben",
+      "extracted_local_name": "Ottonie_von_Alvensleben",
+      "embedding_text": "Ottonie von Alvensleben",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Wilhelm_Karl_Prinz_von_Preussen",
+      "extracted_local_name": "Wilhelm_Karl_Prinz_von_Preussen",
+      "embedding_text": "Wilhelm Karl Prinz von Preussen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelm-Karl of Prussia",
+      "best_candidate_label": "Prince Wilhelm-Karl of Prussia",
+      "best_candidate_qid": "Q92141",
+      "best_candidate_gender": "male",
+      "best_candidate_score": 0.7037037037037037
+    }
+  ],
+  "summary": {
+    "entities_total": 6,
+    "entities_matched": 3,
+    "entities_unmatched": 3
+  }
+}

@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasMother data:Princess_Isabelle_of_Orleans_mother ;
+    :hasRelation data:Bruno_dHarcourt,
+        data:Pierre_Murat ;
+    :isSisterOf data:Francoise_of_Greece ;
+    :knownAs "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string .
+
+data:Michel_dOrleans a :Man,
+        :Person ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :knownAs "Prince Michel d'Orléans"^^xsd:string .
+
+data:Armande_de_Pierre_de_Bernis a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Bruno_dHarcourt a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1930 ;
+    :hasFather data:Eugene_dHarcourt ;
+    :hasMother data:Armande_de_Pierre_de_Bernis ;
+    :knownAs "Count Bruno d'Harcourt"^^xsd:string .
+
+data:Christopher_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Eugene_dHarcourt a :Ancestor,
+        :Man,
+        :Person .
+
+data:Francoise_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Christopher_of_Greece ;
+    :knownAs "Princess Françoise of Greece"^^xsd:string .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :knownAs "Henri, Count of Paris"^^xsd:string .
+
+data:Lucien_Murat a :Ancestor,
+        :Man,
+        :Person .
+
+data:Pierre_Murat a :Man,
+        :Person ;
+    :hasAncestor data:Lucien_Murat ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 ;
+    :knownAs "Prince Pierre Murat"^^xsd:string .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1940 ;
+    :knownAs "Prince Jean, Duke of Guise"^^xsd:string .
+
+data:Princess_Isabelle_of_Orleans_mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :knownAs "Princess Isabelle of Orléans"^^xsd:string .
+

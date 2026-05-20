@@ -1,0 +1,28 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Beatrix a :Person .
+
+data:Claus a :Man,
+        :Person .
+
+data:Eloise_van_Oranje a :Person ;
+    :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien .
+
+data:Margriet a :Person .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Constantijn a :Ancestor,
+        :Man,
+        :Person .
+
+data:Laurentien a :Ancestor,
+        :Person,
+        :Woman .
+

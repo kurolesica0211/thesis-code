@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:DanielChatto a :Man,\n        :Person ;\n    :hasFather data:TomChatto ;\n    :hasMother data:RosChatto .\n\ndata:SarahChatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:DavidArmstrongJones ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:DavidArmstrongJones a :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:RosChatto a :Ancestor,\n        :Woman ;\n    :hasDeathYear 2012 .\n\ndata:TomChatto a :Ancestor,\n        :Man ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:AntonyArmstrongJones a :Ancestor,\n        :Man .\n\ndata:PrincessMargaret a :Ancestor,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "fe9a15a7-e857-42b2-b02e-5fbbd374859f",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:DanielChatto a :Man,\n        :Person ;\n    :hasFather data:TomChatto ;\n    :hasMother data:RosChatto .\n\ndata:SarahChatto a :Person,\n        :Woman ;\n    :hasBirthYear 1964 ;\n    :hasBrother data:DavidArmstrongJones ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:DavidArmstrongJones a :Man,\n        :Person ;\n    :hasFather data:AntonyArmstrongJones ;\n    :hasMother data:PrincessMargaret .\n\ndata:RosChatto a :Ancestor,\n        :Woman ;\n    :hasDeathYear 2012 .\n\ndata:TomChatto a :Ancestor,\n        :Man ;\n    :hasBirthYear 1920 ;\n    :hasDeathYear 1982 .\n\ndata:AntonyArmstrongJones a :Ancestor,\n        :Man .\n\ndata:PrincessMargaret a :Ancestor,\n        :Woman .\n\n"
+    }
+]

@@ -1,0 +1,40 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceGeorge a :Ancestor,
+        :Man ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:QueenMary ;
+    :hasRelation data:PrincessMarina ;
+    :isBrotherOf data:EdwardVIII,
+        data:GeorgeVI ;
+    :isFatherOf data:AlexandraKent,
+        data:EdwardKent,
+        data:MichaelKent .
+
+data:EdwardVIII a :Man .
+
+data:GeorgeV a :Ancestor,
+        :Man .
+
+data:GeorgeVI a :Man .
+
+data:PrincessMarina a :Ancestor,
+        :Woman ;
+    :isMotherOf data:AlexandraKent,
+        data:EdwardKent,
+        data:MichaelKent .
+
+data:QueenMary a :Ancestor,
+        :Woman .
+
+data:AlexandraKent a :Woman .
+
+data:EdwardKent a :Man .
+
+data:MichaelKent a :Man .
+

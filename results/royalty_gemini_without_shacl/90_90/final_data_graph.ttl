@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra a :Woman ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Edward a :Man ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Michael a :Man ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+data:King_George_I_of_Greece a :Man .
+
+data:King_George_V a :Man .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece .
+
+data:Queen_Mary a :Woman .
+
+data:Queen_Olga_of_Greece a :Woman .
+
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+

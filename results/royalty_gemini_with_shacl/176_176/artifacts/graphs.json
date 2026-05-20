@@ -1,0 +1,23 @@
+[
+    {
+        "graph_type": "data_graph",
+        "iteration": 1,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Christian a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Elisabeth_of_Denmark .\n\ndata:Prince_Ingolf a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Elisabeth_of_Denmark .\n\ndata:Knud_Hereditary_Prince_of_Denmark a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Christian_X .\n\ndata:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Christian_X a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Elisabeth_of_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2018 ;\n    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;\n    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;\n    :isChildOf data:Christian_X .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 2,
+        "source": "validate_shacl",
+        "tool_call_id": "8f1ec538-5994-429d-a34e-1536a9351821",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "final_data_graph",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Christian a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Elisabeth_of_Denmark .\n\ndata:Prince_Ingolf a :Man,\n        :Person ;\n    :isBrotherOf data:Princess_Elisabeth_of_Denmark .\n\ndata:Knud_Hereditary_Prince_of_Denmark a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Christian_X .\n\ndata:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,\n        :Person,\n        :Woman .\n\ndata:Christian_X a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Princess_Elisabeth_of_Denmark a :Person,\n        :Woman ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2018 ;\n    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;\n    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;\n    :isChildOf data:Christian_X .\n\n"
+    }
+]
