@@ -7,3 +7,5 @@ text_denoising/denoised_texts/*.txt
 scripts/validation_reports/*
 .DS_Store
 results/
+experiments/OSKGC/*
+experiments/text2kg/*
