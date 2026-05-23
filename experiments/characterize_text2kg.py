@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from statistics import mean
 
@@ -30,6 +31,14 @@ OBJECT_PROPERTY_EXCLUDED_RANGES = {
 	"literal",
 	"Literal",
 }
+
+
+def _count_sentences(text: str) -> int:
+	normalized = re.sub(r"\s+", " ", text.strip())
+	if not normalized:
+		return 0
+	parts = [part.strip() for part in re.findall(r"[^.!?]+(?:[.!?]+(?=\s|$)|$)", normalized) if part.strip()]
+	return len(parts)
 
 
 def _repo_root() -> Path:
@@ -116,7 +125,7 @@ def characterize_text2kg() -> dict[str, float | int | str]:
 		"num_tbox_classes": class_total,
 		"num_tbox_object_properties": object_property_total,
 		"num_entries": len(entries),
-		"avg_text_size_chars": mean(len(entry.get("sent", "")) for entry in entries),
+		"avg_sentences_per_text": mean(_count_sentences(entry.get("sent", "")) for entry in entries),
 		"avg_triples_per_text": mean(len(entry.get("triples", [])) for entry in entries),
 		"dataset_structure": (
 			"The dataset is split into two benchmark families: DBpedia/WebNLG and Wikidata/TekGen. "
@@ -140,7 +149,7 @@ def main() -> None:
 	print(f"TBox classes across all ontologies: {metrics['num_tbox_classes']}")
 	print(f"TBox object properties across all ontologies: {metrics['num_tbox_object_properties']}")
 	print(f"Total benchmark entries: {metrics['num_entries']}")
-	print(f"Average text size (chars): {metrics['avg_text_size_chars']:.2f}")
+	print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
 	print(f"Average triples per text: {metrics['avg_triples_per_text']:.2f}")
 
 

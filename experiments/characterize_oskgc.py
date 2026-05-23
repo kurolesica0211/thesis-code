@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from statistics import mean
@@ -11,6 +12,7 @@ from rdflib import Graph, OWL, RDF, URIRef
 @dataclass(frozen=True)
 class OskgcEntry:
 	text: str
+	sentence_count: int
 	triple_count: int
 
 
@@ -31,6 +33,14 @@ def _ontology_dir() -> Path:
 	return _dataset_root() / "HeraclesWang OSKGC master benchmark-ontology_rdf"
 
 
+def _count_sentences(text: str) -> int:
+	normalized = re.sub(r"\s+", " ", text.strip())
+	if not normalized:
+		return 0
+	parts = [part.strip() for part in re.findall(r"[^.!?]+(?:[.!?]+(?=\s|$)|$)", normalized) if part.strip()]
+	return len(parts)
+
+
 def _count_classes(graph: Graph) -> int:
 	return len({subj for subj in graph.subjects(RDF.type, OWL.Class) if isinstance(subj, URIRef)})
 
@@ -47,8 +57,9 @@ def _iter_xml_entries(xml_path: Path) -> list[OskgcEntry]:
 		text_node = entry.find("text")
 		triples_node = entry.find("triples")
 		text = text_node.text.strip() if text_node is not None and text_node.text else ""
+		sentence_count = _count_sentences(text)
 		triple_count = len(triples_node.findall("triple")) if triples_node is not None else 0
-		entries.append(OskgcEntry(text=text, triple_count=triple_count))
+		entries.append(OskgcEntry(text=text, sentence_count=sentence_count, triple_count=triple_count))
 	return entries
 
 
@@ -89,7 +100,7 @@ def characterize_oskgc() -> dict[str, float | int | str]:
 		"num_tbox_classes": class_total,
 		"num_tbox_object_properties": object_property_total,
 		"num_entries": len(entries),
-		"avg_text_size_chars": mean(len(entry.text) for entry in entries),
+		"avg_sentences_per_text": mean(entry.sentence_count for entry in entries),
 		"avg_triples_per_text": mean(entry.triple_count for entry in entries),
 		"dataset_structure": (
 			"Each split (dev/train/test) contains many category-specific XML files named like "
@@ -113,7 +124,7 @@ def main() -> None:
 	print(f"TBox classes across all ontologies: {metrics['num_tbox_classes']}")
 	print(f"TBox object properties across all ontologies: {metrics['num_tbox_object_properties']}")
 	print(f"Total benchmark entries: {metrics['num_entries']}")
-	print(f"Average text size (chars): {metrics['avg_text_size_chars']:.2f}")
+	print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
 	print(f"Average triples per text: {metrics['avg_triples_per_text']:.2f}")
 
 

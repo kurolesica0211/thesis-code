@@ -11,3 +11,4 @@ pydantic
 tqdm
 pyyaml
 spacy
+JPype1

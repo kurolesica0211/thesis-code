@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from statistics import mean
 
@@ -15,6 +16,14 @@ except ModuleNotFoundError:
 PERSON_CLASS_LOCAL_NAMES = {"Person", "Man", "Woman", "Ancestor"}
 
 
+def _count_sentences(text: str) -> int:
+    normalized = re.sub(r"\s+", " ", text.strip())
+    if not normalized:
+        return 0
+    parts = [part.strip() for part in re.findall(r"[^.!?]+(?:[.!?]+(?=\s|$)|$)", normalized) if part.strip()]
+    return len(parts)
+
+
 def _repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
 
@@ -22,7 +31,7 @@ def _repo_root() -> Path:
 def _collect_text_lengths(text_dir: Path) -> dict[str, int]:
     lengths: dict[str, int] = {}
     for path in sorted(text_dir.glob("*.txt")):
-        lengths[path.stem] = len(path.read_text(encoding="utf-8"))
+        lengths[path.stem] = _count_sentences(path.read_text(encoding="utf-8"))
     return lengths
 
 
@@ -120,7 +129,7 @@ def characterize_dataset(tbox_path: Path, ground_truth_dir: Path, text_dir: Path
         "num_tbox_classes": _count_tbox_classes(tbox_graph),
         "num_tbox_object_properties": _count_tbox_object_properties(tbox_graph),
         "num_paired_samples": len(common_ids),
-        "avg_text_size_chars": mean(text_lengths[item_id] for item_id in common_ids),
+        "avg_sentences_per_text": mean(text_lengths[item_id] for item_id in common_ids),
         "avg_people_relation_triples_per_text": mean(triples_per_text),
     }
 
@@ -138,7 +147,7 @@ def main() -> None:
     print(f"TBox classes: {metrics['num_tbox_classes']}")
     print(f"TBox object properties: {metrics['num_tbox_object_properties']}")
     print(f"Paired text/KG samples: {metrics['num_paired_samples']}")
-    print(f"Average text size (chars): {metrics['avg_text_size_chars']:.2f}")
+    print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
     print(
         "Average semantically distinct people-to-people triples per text: "
         f"{metrics['avg_people_relation_triples_per_text']:.2f}"
