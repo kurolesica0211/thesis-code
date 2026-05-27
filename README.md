@@ -62,6 +62,7 @@ python main.py --config configs/run_config.yaml
 - Per-task artifacts (conversations, usage metadata, graphs) are stored under
   each task's `artifacts/` folder. A `trace.jsonl` file is also created in the
   run directory for tracing events.
+ - Example run: an example run output is already provided under `results/example_run_with_shacl/`.
 
 ## Configuring the run
 
