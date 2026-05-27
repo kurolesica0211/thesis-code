@@ -361,280 +361,173 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (890a0ee1-1bcf-41f0-90b6-12f889810d2d)
- Call ID: 890a0ee1-1bcf-41f0-90b6-12f889810d2d
+  AssignClass (40eb568e-bfc8-4545-a862-4dfc2f6dfc6b)
+ Call ID: 40eb568e-bfc8-4545-a862-4dfc2f6dfc6b
   Args:
-    type: :Person
     source: Athena_of_Monpezat
-  AssignClass (509448ce-2367-4c38-b0d4-ef863d5cad2d)
- Call ID: 509448ce-2367-4c38-b0d4-ef863d5cad2d
+    type: :Person
+  AssignClass (60c98828-9d61-48f4-a930-50025b7e6145)
+ Call ID: 60c98828-9d61-48f4-a930-50025b7e6145
   Args:
     type: :Woman
     source: Athena_of_Monpezat
-  AssignClass (3d4ca125-f29d-47aa-b4ea-47ebb13cfea2)
- Call ID: 3d4ca125-f29d-47aa-b4ea-47ebb13cfea2
+  AssignClass (02bb9a21-c866-43c9-9b9e-777b53960d0c)
+ Call ID: 02bb9a21-c866-43c9-9b9e-777b53960d0c
   Args:
     type: :Person
     source: Joachim_of_Denmark
-  AssignClass (f73033c6-4a00-4346-901d-1298f05cb5f5)
- Call ID: f73033c6-4a00-4346-901d-1298f05cb5f5
+  AssignClass (37d2b924-74d6-43ad-8161-56d3fdd6bd7d)
+ Call ID: 37d2b924-74d6-43ad-8161-56d3fdd6bd7d
   Args:
     type: :Man
     source: Joachim_of_Denmark
-  AssignClass (ee6b3c57-d341-4370-92a8-6aa0061c55ac)
- Call ID: ee6b3c57-d341-4370-92a8-6aa0061c55ac
+  AssignClass (9d093b32-90a6-42a5-8f82-c582af5f0d20)
+ Call ID: 9d093b32-90a6-42a5-8f82-c582af5f0d20
   Args:
     type: :Person
     source: Marie_of_Denmark
-  AssignClass (2d89211f-9c86-4f2b-b06b-698bece980f9)
- Call ID: 2d89211f-9c86-4f2b-b06b-698bece980f9
+  AssignClass (96bda624-b95c-4983-b3a6-ae3561c58442)
+ Call ID: 96bda624-b95c-4983-b3a6-ae3561c58442
   Args:
     type: :Woman
     source: Marie_of_Denmark
-  AssignClass (be28a827-f0e5-41ee-8bf0-e041ee75c6b4)
- Call ID: be28a827-f0e5-41ee-8bf0-e041ee75c6b4
+  AssignClass (dffd5046-9a74-4d28-8a93-fa87f3ecabdb)
+ Call ID: dffd5046-9a74-4d28-8a93-fa87f3ecabdb
   Args:
     type: :Person
     source: Margrethe_II
-  AssignClass (897867a7-9dc5-49b1-8ac1-dd3fbbf039cf)
- Call ID: 897867a7-9dc5-49b1-8ac1-dd3fbbf039cf
+  AssignClass (49912893-3f4b-466f-aa1c-419bd99fd8ab)
+ Call ID: 49912893-3f4b-466f-aa1c-419bd99fd8ab
   Args:
     type: :Woman
     source: Margrethe_II
-  AssignClass (7d895869-03b9-49b4-a85e-0702d8572e89)
- Call ID: 7d895869-03b9-49b4-a85e-0702d8572e89
+  AssignClass (f2a63535-2710-4698-aef3-79159f2df3e8)
+ Call ID: f2a63535-2710-4698-aef3-79159f2df3e8
   Args:
     type: :Person
     source: Henrik_Prince_Consort
-  AssignClass (10f6d299-e2dd-485d-8b60-b94ed567a7a4)
- Call ID: 10f6d299-e2dd-485d-8b60-b94ed567a7a4
+  AssignClass (ee4cff39-69a3-4f67-926a-a5f20df947d8)
+ Call ID: ee4cff39-69a3-4f67-926a-a5f20df947d8
   Args:
     type: :Man
     source: Henrik_Prince_Consort
-  AssignClass (39997a2a-cf92-4b86-a8c1-6b9ce1ecdbe3)
- Call ID: 39997a2a-cf92-4b86-a8c1-6b9ce1ecdbe3
+  AssignClass (bd7764f8-1b8c-4a3f-8249-ff5b4415f0a9)
+ Call ID: bd7764f8-1b8c-4a3f-8249-ff5b4415f0a9
   Args:
     type: :Person
     source: Frederik_X
-  AssignClass (41557fa4-90a5-4809-932f-d8d1d13f6a51)
- Call ID: 41557fa4-90a5-4809-932f-d8d1d13f6a51
+  AssignClass (6f7148a3-7eb6-45c6-ba07-f9fd8dad4c22)
+ Call ID: 6f7148a3-7eb6-45c6-ba07-f9fd8dad4c22
   Args:
     type: :Man
     source: Frederik_X
-  AssignClass (c2915966-ffaf-4cc9-bb6a-ee2ac8c3086f)
- Call ID: c2915966-ffaf-4cc9-bb6a-ee2ac8c3086f
+  AssignClass (767d1587-b630-470c-a294-9a0518216c7c)
+ Call ID: 767d1587-b630-470c-a294-9a0518216c7c
   Args:
+    source: Nikolai
     type: :Person
-    source: Nikolai_of_Denmark
-  AssignClass (02c8fed7-68d7-4574-866f-25445c55026d)
- Call ID: 02c8fed7-68d7-4574-866f-25445c55026d
+  AssignClass (91eec7fc-10ab-492c-8d28-89d2f77fd863)
+ Call ID: 91eec7fc-10ab-492c-8d28-89d2f77fd863
+  Args:
+    source: Nikolai
+    type: :Man
+  AssignClass (8969b988-2126-4495-8304-b601de75d70d)
+ Call ID: 8969b988-2126-4495-8304-b601de75d70d
+  Args:
+    source: Felix
+    type: :Person
+  AssignClass (6499852a-79bc-4b57-be1a-e4e34b561044)
+ Call ID: 6499852a-79bc-4b57-be1a-e4e34b561044
+  Args:
+    source: Felix
+    type: :Man
+  AssignClass (cad9ea15-e744-47d8-b023-16cce8e5287e)
+ Call ID: cad9ea15-e744-47d8-b023-16cce8e5287e
+  Args:
+    source: Henrik_Denmark
+    type: :Person
+  AssignClass (1793a5c5-1884-4674-a44a-66a5bfe021fa)
+ Call ID: 1793a5c5-1884-4674-a44a-66a5bfe021fa
   Args:
     type: :Man
-    source: Nikolai_of_Denmark
-  AssignClass (cbe05ce0-1248-42d3-a554-0daa801bedc5)
- Call ID: cbe05ce0-1248-42d3-a554-0daa801bedc5
+    source: Henrik_Denmark
+  AddTriple (c87c6d6e-8cde-4503-ae9b-a9d9c67ed04f)
+ Call ID: c87c6d6e-8cde-4503-ae9b-a9d9c67ed04f
   Args:
-    type: :Person
-    source: Felix_of_Denmark
-  AssignClass (4aea6baa-1577-42e7-afe1-96dc4333d2e1)
- Call ID: 4aea6baa-1577-42e7-afe1-96dc4333d2e1
-  Args:
-    type: :Man
-    source: Felix_of_Denmark
-  AssignClass (7a059220-ff01-47cb-8990-f313a7ab6e7c)
- Call ID: 7a059220-ff01-47cb-8990-f313a7ab6e7c
-  Args:
-    type: :Person
-    source: Henrik_of_Monpezat
-  AssignClass (2b8beabe-c6f4-43a2-b5f0-0275cb1db1a4)
- Call ID: 2b8beabe-c6f4-43a2-b5f0-0275cb1db1a4
-  Args:
-    type: :Man
-    source: Henrik_of_Monpezat
-  AddLiteral (7c56c9f0-bd13-487a-aff2-d983b13fc309)
- Call ID: 7c56c9f0-bd13-487a-aff2-d983b13fc309
-  Args:
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Athena_of_Monpezat
-  AddLiteral (79e3ac91-08f7-4832-be30-d1afb721420b)
- Call ID: 79e3ac91-08f7-4832-be30-d1afb721420b
-  Args:
-    source: Joachim_of_Denmark
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (eb6f3012-9193-49b0-9040-5e2fed29f315)
- Call ID: eb6f3012-9193-49b0-9040-5e2fed29f315
-  Args:
-    literal_value: Female
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Marie_of_Denmark
-  AddLiteral (be626e1f-a2a2-41b1-a24f-1f2d1f793fd6)
- Call ID: be626e1f-a2a2-41b1-a24f-1f2d1f793fd6
-  Args:
-    literal_value: Female
-    source: Margrethe_II
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (fd1666ad-2a7a-4016-ad59-1abdee12c703)
- Call ID: fd1666ad-2a7a-4016-ad59-1abdee12c703
-  Args:
-    literal_value: Male
-    source: Henrik_Prince_Consort
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (5581c9c3-b15b-4a53-b117-ea745f6c152a)
- Call ID: 5581c9c3-b15b-4a53-b117-ea745f6c152a
-  Args:
-    source: Frederik_X
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AddLiteral (8ab4ba11-43af-491d-953c-cfae6a3ee52c)
- Call ID: 8ab4ba11-43af-491d-953c-cfae6a3ee52c
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Nikolai_of_Denmark
-    literal_value: Male
-  AddLiteral (e533e23d-4af3-4e40-a4fb-17a64544ac86)
- Call ID: e533e23d-4af3-4e40-a4fb-17a64544ac86
-  Args:
-    source: Felix_of_Denmark
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AddLiteral (93ca001d-f526-42b1-849d-112be6c222ff)
- Call ID: 93ca001d-f526-42b1-849d-112be6c222ff
-  Args:
-    source: Henrik_of_Monpezat
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddTriple (af96f058-23b4-4ed1-8557-fe672c6e7c42)
- Call ID: af96f058-23b4-4ed1-8557-fe672c6e7c42
-  Args:
-    relation: :isChildOf
+    relation: :hasFather
     source: Athena_of_Monpezat
     target: Joachim_of_Denmark
-  AddTriple (97823350-78a3-4bd8-b62c-78af7b934d0f)
- Call ID: 97823350-78a3-4bd8-b62c-78af7b934d0f
+  AddTriple (3d8f1fbb-d5cf-4f17-9175-87da9b677875)
+ Call ID: 3d8f1fbb-d5cf-4f17-9175-87da9b677875
   Args:
-    relation: :isChildOf
+    relation: :hasMother
     source: Athena_of_Monpezat
     target: Marie_of_Denmark
-  AddTriple (a66809f8-3681-4a89-a48f-b565851aaa02)
- Call ID: a66809f8-3681-4a89-a48f-b565851aaa02
+  AddTriple (cb2e16bd-b338-4f4f-af69-861d992ff957)
+ Call ID: cb2e16bd-b338-4f4f-af69-861d992ff957
   Args:
-    source: Henrik_of_Monpezat
-    relation: :isChildOf
+    relation: :hasFather
     target: Joachim_of_Denmark
-  AddTriple (9ec4072f-285f-4186-a83a-52f2aef26f80)
- Call ID: 9ec4072f-285f-4186-a83a-52f2aef26f80
+    source: Henrik_Denmark
+  AddTriple (1139b2ae-89b7-4cac-b4cb-8e8eb7707445)
+ Call ID: 1139b2ae-89b7-4cac-b4cb-8e8eb7707445
   Args:
     target: Marie_of_Denmark
-    relation: :isChildOf
-    source: Henrik_of_Monpezat
-  AddTriple (d7a661e8-d643-4ba6-bfa9-ae73c5f8f2a9)
- Call ID: d7a661e8-d643-4ba6-bfa9-ae73c5f8f2a9
+    source: Henrik_Denmark
+    relation: :hasMother
+  AddTriple (97f4b786-518c-4444-91e6-39db5d45df79)
+ Call ID: 97f4b786-518c-4444-91e6-39db5d45df79
   Args:
+    relation: :hasFather
+    source: Nikolai
     target: Joachim_of_Denmark
-    source: Felix_of_Denmark
-    relation: :isChildOf
-  AddTriple (ef864421-2a57-49eb-b952-83e67be6e984)
- Call ID: ef864421-2a57-49eb-b952-83e67be6e984
+  AddTriple (5bd3b9d0-dcf9-4983-a482-efc489489248)
+ Call ID: 5bd3b9d0-dcf9-4983-a482-efc489489248
   Args:
-    relation: :isChildOf
-    source: Nikolai_of_Denmark
+    relation: :hasFather
     target: Joachim_of_Denmark
-  AddTriple (547e73a1-ca95-4bff-b70b-75cfcd549a04)
- Call ID: 547e73a1-ca95-4bff-b70b-75cfcd549a04
+    source: Felix
+  AddLiteral (0edb8004-ca01-4e61-8817-7a32a2952005)
+ Call ID: 0edb8004-ca01-4e61-8817-7a32a2952005
   Args:
-    source: Henrik_of_Monpezat
-    relation: :isBrotherOf
-    target: Athena_of_Monpezat
-  AddTriple (8314edf6-a15b-4635-a5a7-102895a01210)
- Call ID: 8314edf6-a15b-4635-a5a7-102895a01210
-  Args:
-    source: Felix_of_Denmark
-    relation: :isBrotherOf
-    target: Athena_of_Monpezat
-  AddTriple (03f5a9f3-d41f-4924-b377-c9f44e0921b0)
- Call ID: 03f5a9f3-d41f-4924-b377-c9f44e0921b0
-  Args:
-    target: Athena_of_Monpezat
-    relation: :isBrotherOf
-    source: Nikolai_of_Denmark
-  AddLiteral (47cd75b9-3d5e-411c-a0fd-234dfc910910)
- Call ID: 47cd75b9-3d5e-411c-a0fd-234dfc910910
-  Args:
-    relation: :knownAs
     literal_type: xsd:string
-    source: Athena_of_Monpezat
-    literal_value: Countess Athena of Monpezat
-  AddLiteral (e6376b75-2155-4eb2-b95f-d964da2cedbd)
- Call ID: e6376b75-2155-4eb2-b95f-d964da2cedbd
-  Args:
     literal_value: Athena Marguerite Françoise Marie
+    source: Athena_of_Monpezat
+    relation: :knownAs
+  AddLiteral (f479e333-3a9c-48a9-b6ef-2128f9c6d441)
+ Call ID: f479e333-3a9c-48a9-b6ef-2128f9c6d441
+  Args:
     literal_type: xsd:string
     relation: :alsoKnownAs
     source: Athena_of_Monpezat
-  AddLiteral (86ba8760-354c-4c8f-98b6-1864723b2e21)
- Call ID: 86ba8760-354c-4c8f-98b6-1864723b2e21
+    literal_value: Countess Athena of Monpezat
+  AddLiteral (6b73cd39-84d7-4675-90e6-0e7e872f8caa)
+ Call ID: 6b73cd39-84d7-4675-90e6-0e7e872f8caa
   Args:
-    literal_value: 2012
-    relation: :hasBirthYear
     literal_type: xsd:string
+    literal_value: Her Highness Princess Athena of Denmark, Countess of Monpezat
     source: Athena_of_Monpezat
-  ValidateShacl (3696d36e-a57b-4ec5-9182-c18f66287d54)
- Call ID: 3696d36e-a57b-4ec5-9182-c18f66287d54
+    relation: :formerlyKnownAs
+  AddLiteral (8948c1f1-cd91-4627-982c-96515e14235f)
+ Call ID: 8948c1f1-cd91-4627-982c-96515e14235f
   Args:
-  Finish (bf3f9cc9-9cfa-4e3a-b808-0cae20811b4d)
- Call ID: bf3f9cc9-9cfa-4e3a-b808-0cae20811b4d
+    source: Athena_of_Monpezat
+    literal_value: Her Excellency Countess Athena of Monpezat
+    relation: :knownAs
+    literal_type: xsd:string
+  AddLiteral (53174998-f1da-41ed-af90-b46889cc9484)
+ Call ID: 53174998-f1da-41ed-af90-b46889cc9484
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Athena_of_Monpezat
+    literal_value: 2012
+  ValidateShacl (e7e309e6-3f72-4015-864a-ba3313cae15f)
+ Call ID: e7e309e6-3f72-4015-864a-ba3313cae15f
+  Args:
+  Finish (59f6e749-ec32-4c0a-8ce7-fc205e620db1)
+ Call ID: 59f6e749-ec32-4c0a-8ce7-fc205e620db1
+  Args:
 
 ================================= Tool Message =================================
 
@@ -755,780 +648,194 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felix_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
-
-  data:Frederik_X a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_Prince_Consort a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_of_Monpezat a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Nikolai_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
-
-  data:Marie_of_Denmark a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
   data:Athena_of_Monpezat a :Person,
           :Woman ;
-      :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
-      :hasBirthYear "2012"^^xsd:string ;
-      :hasSex "Female"^^xsd:string ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark ;
-      :knownAs "Countess Athena of Monpezat"^^xsd:string .
+      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
+      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
+      :hasBirthYear 2012 ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark ;
+      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
+          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
+
+  data:Felix a :Man,
+          :Person ;
+      :hasFather data:Joachim_of_Denmark .
+
+  data:Frederik_X a :Man,
+          :Person .
+
+  data:Henrik_Denmark a :Man,
+          :Person ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark .
+
+  data:Henrik_Prince_Consort a :Man,
+          :Person .
+
+  data:Margrethe_II a :Person,
+          :Woman .
+
+  data:Nikolai a :Man,
+          :Person ;
+      :hasFather data:Joachim_of_Denmark .
+
+  data:Marie_of_Denmark a :Person,
+          :Woman .
 
   data:Joachim_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+          :Person .
 
 
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:90
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
+      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
+      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Nikolai_of_Denmark' is missing the required class ':Ancestor'.
+      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Felix_of_Denmark' is missing the required class ':Ancestor'.
+      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
+      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Felix_of_Denmark' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Nikolai_of_Denmark' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Henrik_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Felix_of_Denmark' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Nikolai_of_Denmark' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Marie_of_Denmark'.
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Joachim_of_Denmark' for the property 'isChildOf' of node 'Athena_of_Monpezat' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Joachim_of_Denmark'.
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
 
 
 
@@ -1541,32 +848,74 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (f99509b5-5d5f-43ba-99d6-41bbc2d19ba5)
- Call ID: f99509b5-5d5f-43ba-99d6-41bbc2d19ba5
+  AssignClass (338e428b-e263-44c0-b86e-b96b1d5c4f0c)
+ Call ID: 338e428b-e263-44c0-b86e-b96b1d5c4f0c
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (e1591c49-c2e9-4d3a-956c-56125864afd0)
- Call ID: e1591c49-c2e9-4d3a-956c-56125864afd0
-  Args:
-    type: :Sex
-    source: Female
-  AssignClass (58dd0da3-8dcc-4e68-9fb5-9f8d4181e2c0)
- Call ID: 58dd0da3-8dcc-4e68-9fb5-9f8d4181e2c0
-  Args:
-    source: Joachim_of_Denmark
     type: :Ancestor
-  AssignClass (ecf6e58c-6cab-4c2b-9741-d8c505081dce)
- Call ID: ecf6e58c-6cab-4c2b-9741-d8c505081dce
+    source: Joachim_of_Denmark
+  AssignClass (a15f9fd3-c13a-42e4-b9db-8da9da4d7704)
+ Call ID: a15f9fd3-c13a-42e4-b9db-8da9da4d7704
   Args:
     type: :Ancestor
     source: Marie_of_Denmark
-  ValidateShacl (7719b9ae-a9b7-49c6-a7cf-e1724f1712e9)
- Call ID: 7719b9ae-a9b7-49c6-a7cf-e1724f1712e9
+  AddTriple (6cafb082-2894-41d1-9296-2c733a6c84d6)
+ Call ID: 6cafb082-2894-41d1-9296-2c733a6c84d6
   Args:
-  Finish (e756b84b-f5c1-428b-8b2b-7d8c3814905d)
- Call ID: e756b84b-f5c1-428b-8b2b-7d8c3814905d
+    target: :Male
+    relation: :hasSex
+    source: Joachim_of_Denmark
+  AddTriple (4aae013c-e4ef-4f0e-bf0d-61373911894c)
+ Call ID: 4aae013c-e4ef-4f0e-bf0d-61373911894c
   Args:
+    target: :Female
+    relation: :hasSex
+    source: Marie_of_Denmark
+  AddTriple (33469d59-deb7-4188-bddf-a63070b3eca6)
+ Call ID: 33469d59-deb7-4188-bddf-a63070b3eca6
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: Athena_of_Monpezat
+  AddTriple (cb8b95b6-c2c7-4697-9300-8530205adb54)
+ Call ID: cb8b95b6-c2c7-4697-9300-8530205adb54
+  Args:
+    source: Nikolai
+    relation: :hasSex
+    target: :Male
+  AddTriple (4cde0363-1f82-4d8b-96ce-e440f7276451)
+ Call ID: 4cde0363-1f82-4d8b-96ce-e440f7276451
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Felix
+  AddTriple (a5cc42ac-5c59-406d-a1d1-971a3bb86f7e)
+ Call ID: a5cc42ac-5c59-406d-a1d1-971a3bb86f7e
+  Args:
+    source: Henrik_Denmark
+    relation: :hasSex
+    target: :Male
+  ValidateShacl (221f49c3-5fd0-4ad0-8930-0edd7686ba0c)
+ Call ID: 221f49c3-5fd0-4ad0-8930-0edd7686ba0c
+  Args:
+  Finish (b1471b4b-86c7-4f42-b971-58ed919c5407)
+ Call ID: b1471b4b-86c7-4f42-b971-58ed919c5407
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1587,690 +936,490 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felix_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
+  data:Athena_of_Monpezat a :Person,
+          :Woman ;
+      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
+      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
+      :hasBirthYear 2012 ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark ;
+      :hasSex data:Female ;
+      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
+          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
 
-  data:Female a :Sex .
+  data:Felix a :Man,
+          :Person ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasSex data:Male .
 
   data:Frederik_X a :Man,
+          :Person .
+
+  data:Henrik_Denmark a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark ;
+      :hasSex data:Male .
 
   data:Henrik_Prince_Consort a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_of_Monpezat a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark .
-
-  data:Male a :Sex .
+          :Person .
 
   data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
-  data:Nikolai_of_Denmark a :Man,
+  data:Nikolai a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
+      :hasFather data:Joachim_of_Denmark ;
+      :hasSex data:Male .
 
   data:Marie_of_Denmark a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Athena_of_Monpezat a :Person,
-          :Woman ;
-      :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
-      :hasBirthYear "2012"^^xsd:string ;
-      :hasSex "Female"^^xsd:string ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark ;
-      :knownAs "Countess Athena of Monpezat"^^xsd:string .
+      :hasSex data:Female .
 
   data:Joachim_of_Denmark a :Ancestor,
           :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasSex data:Male .
 
 
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:78
+Total violations:54
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [2]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [3]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [4]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [5]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [6]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [7]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [8]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [9]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [10]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [11]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [12]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [13]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [14]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [15]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [16]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [17]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [18]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [19]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [20]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [21]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [22]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [23]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [24]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [25]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [26]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [27]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [28]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [29]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [30]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [31]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [32]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [33]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [34]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [35]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [36]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [37]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [38]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [39]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [40]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [41]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [42]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [43]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [44]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [45]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [46]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [47]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [48]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [49]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [50]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [51]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [52]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [53]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [54]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
+      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Male", class: ":Sex")
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(node='Female', class=':Sex')
 
 
 
@@ -2283,745 +1432,21 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  AssignClass (6e0c6fc1-dfa0-416b-b521-33ca6db17015)
- Call ID: 6e0c6fc1-dfa0-416b-b521-33ca6db17015
+  AssignClass (c5206c8e-b055-4ce6-bb1d-5785b296c510)
+ Call ID: c5206c8e-b055-4ce6-bb1d-5785b296c510
   Args:
-    type: :Sex
-    source: Female
-  AssignClass (b3919860-5164-4e04-8a3a-d91ef4eb0e98)
- Call ID: b3919860-5164-4e04-8a3a-d91ef4eb0e98
-  Args:
-    type: :Sex
     source: Male
-  ValidateShacl (fdd4369e-7920-4db1-88dc-d5da084b4d97)
- Call ID: fdd4369e-7920-4db1-88dc-d5da084b4d97
-  Args:
-  Finish (765178d5-f61d-42af-83f3-a3ff2446846d)
- Call ID: 765178d5-f61d-42af-83f3-a3ff2446846d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Felix_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
-
-  data:Female a :Sex .
-
-  data:Frederik_X a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_Prince_Consort a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_of_Monpezat a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark .
-
-  data:Male a :Sex .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Nikolai_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
-
-  data:Marie_of_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Athena_of_Monpezat a :Person,
-          :Woman ;
-      :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
-      :hasBirthYear "2012"^^xsd:string ;
-      :hasSex "Female"^^xsd:string ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark ;
-      :knownAs "Countess Athena of Monpezat"^^xsd:string .
-
-  data:Joachim_of_Denmark a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:78
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (118d8a18-6ff4-40d5-a058-c2c4bc08b3f4)
- Call ID: 118d8a18-6ff4-40d5-a058-c2c4bc08b3f4
-  Args:
     type: :Sex
+  AssignClass (0610c1fb-7fa0-459f-af49-439afe9f0311)
+ Call ID: 0610c1fb-7fa0-459f-af49-439afe9f0311
+  Args:
     source: Female
-  AssignClass (dd615101-0b9e-4944-a07b-ab1a430afa00)
- Call ID: dd615101-0b9e-4944-a07b-ab1a430afa00
-  Args:
     type: :Sex
-    source: Male
-  ValidateShacl (a97d7d66-e771-4016-9856-97fc64b09a8d)
- Call ID: a97d7d66-e771-4016-9856-97fc64b09a8d
+  ValidateShacl (5430f2b3-fba4-4bdf-a147-8c012ade01cf)
+ Call ID: 5430f2b3-fba4-4bdf-a147-8c012ade01cf
   Args:
-  Finish (f3185b36-4b17-411d-be29-ba936d27efa0)
- Call ID: f3185b36-4b17-411d-be29-ba936d27efa0
+  Finish (ac5b87bc-7b7e-41f7-adc3-bc3f2b5e34dd)
+ Call ID: ac5b87bc-7b7e-41f7-adc3-bc3f2b5e34dd
   Args:
 
 ================================= Tool Message =================================
@@ -3035,693 +1460,61 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felix_of_Denmark a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
+  data:Athena_of_Monpezat a :Person,
+          :Woman ;
+      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
+      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
+      :hasBirthYear 2012 ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark ;
+      :hasSex data:Female ;
+      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
+          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
 
-  data:Female a :Sex .
+  data:Felix a :Man,
+          :Person ;
+      :hasFather data:Joachim_of_Denmark ;
+      :hasSex data:Male .
 
   data:Frederik_X a :Man,
+          :Person .
+
+  data:Henrik_Denmark a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Joachim_of_Denmark ;
+      :hasMother data:Marie_of_Denmark ;
+      :hasSex data:Male .
 
   data:Henrik_Prince_Consort a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Henrik_of_Monpezat a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark .
-
-  data:Male a :Sex .
+          :Person .
 
   data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
-  data:Nikolai_of_Denmark a :Man,
+  data:Nikolai a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isBrotherOf data:Athena_of_Monpezat ;
-      :isChildOf data:Joachim_of_Denmark .
+      :hasFather data:Joachim_of_Denmark ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
 
   data:Marie_of_Denmark a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Athena_of_Monpezat a :Person,
-          :Woman ;
-      :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
-      :hasBirthYear "2012"^^xsd:string ;
-      :hasSex "Female"^^xsd:string ;
-      :isChildOf data:Joachim_of_Denmark,
-          data:Marie_of_Denmark ;
-      :knownAs "Countess Athena of Monpezat"^^xsd:string .
+      :hasSex data:Female .
 
   data:Joachim_of_Denmark a :Ancestor,
           :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasSex data:Male .
+
+  data:Male a :Sex .
 
 
 
 ================================= Tool Message =================================
 
-VALIDATION RESULTS
-Total violations:78
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Felix_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Frederik_X' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Henrik_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Joachim_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nikolai_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marie_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Athena_of_Monpezat' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Margrethe_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
+SHACL validation has not produced any violations.
 
 ================================= Tool Message =================================
 
@@ -3731,190 +1524,6 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  Finish (754a00cf-cead-48b8-ab29-ababe567940b)
- Call ID: 754a00cf-cead-48b8-ab29-ababe567940b
+  Finish (59771cea-baed-45cb-9904-ae67f60ca5be)
+ Call ID: 59771cea-baed-45cb-9904-ae67f60ca5be
   Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (48567793-effb-41a1-b73f-9f2f79152f8b)
- Call ID: 48567793-effb-41a1-b73f-9f2f79152f8b
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (e5e2ce24-5309-4165-9293-8caa58ae9db5)
- Call ID: e5e2ce24-5309-4165-9293-8caa58ae9db5
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (5d052b76-619a-4c08-9b02-6aaad5d66281)
- Call ID: 5d052b76-619a-4c08-9b02-6aaad5d66281
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (93d8a619-c48f-4055-915a-15ac7068c528)
- Call ID: 93d8a619-c48f-4055-915a-15ac7068c528
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (b084a87d-ff8b-4434-8edc-c297094c9d14)
- Call ID: b084a87d-ff8b-4434-8edc-c297094c9d14
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (37dc2ac7-6f72-4ea7-b485-f8b2e5a660ff)
- Call ID: 37dc2ac7-6f72-4ea7-b485-f8b2e5a660ff
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (7365deca-88ca-406b-a050-c61310805abe)
- Call ID: 7365deca-88ca-406b-a050-c61310805abe
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (0e18b9a8-973a-41eb-9fd8-fdd01b1536ff)
- Call ID: 0e18b9a8-973a-41eb-9fd8-fdd01b1536ff
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (f7009f8c-f768-4d92-8482-1e33ea6c0c31)
- Call ID: f7009f8c-f768-4d92-8482-1e33ea6c0c31
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (4c58e312-e9d5-4647-b602-c5e267ac7857)
- Call ID: 4c58e312-e9d5-4647-b602-c5e267ac7857
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (f7c8df58-2483-4d29-8f4d-273710e3b176)
- Call ID: f7c8df58-2483-4d29-8f4d-273710e3b176
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (c9b58c96-acfc-465a-8154-9c8037abedd6)
- Call ID: c9b58c96-acfc-465a-8154-9c8037abedd6
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (e7b0394d-eb95-4385-85ce-f588bf9ad35d)
- Call ID: e7b0394d-eb95-4385-85ce-f588bf9ad35d
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (69f7d77a-7b41-43ad-be67-42b573c06bab)
- Call ID: 69f7d77a-7b41-43ad-be67-42b573c06bab
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (29f19a54-43ed-4afb-9cb0-d8042fb9418a)
- Call ID: 29f19a54-43ed-4afb-9cb0-d8042fb9418a
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.

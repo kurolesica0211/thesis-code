@@ -47,9 +47,8 @@ def get_loader():
         )
         data_entries.append(entry)
         
-    # FAILURES
-    #38,45,54,56,60,65,90,91,104,205,212,220,244,342,390,393,469,492
-    '''li = [492]
+    # FOR RERUNNING FAILURES
+    '''li = []
     text_filepaths = [text_filepaths[l] for l in li]
     for i, id in enumerate(li):
         entry = DataEntry(

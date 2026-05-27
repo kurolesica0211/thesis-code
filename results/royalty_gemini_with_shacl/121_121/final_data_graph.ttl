@@ -2,57 +2,53 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felix_of_Denmark a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:Athena_of_Monpezat ;
-    :isChildOf data:Joachim_of_Denmark .
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
+    :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :hasSex data:Female ;
+    :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
+        "Her Excellency Countess Athena of Monpezat"^^xsd:string .
 
-data:Female a :Sex .
+data:Felix a :Man,
+        :Person ;
+    :hasFather data:Joachim_of_Denmark ;
+    :hasSex data:Male .
 
 data:Frederik_X a :Man,
+        :Person .
+
+data:Henrik_Denmark a :Man,
         :Person ;
-    :hasSex "Male"^^xsd:string .
+    :hasFather data:Joachim_of_Denmark ;
+    :hasMother data:Marie_of_Denmark ;
+    :hasSex data:Male .
 
 data:Henrik_Prince_Consort a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string .
-
-data:Henrik_of_Monpezat a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:Athena_of_Monpezat ;
-    :isChildOf data:Joachim_of_Denmark,
-        data:Marie_of_Denmark .
-
-data:Male a :Sex .
+        :Person .
 
 data:Margrethe_II a :Person,
-        :Woman ;
-    :hasSex "Female"^^xsd:string .
+        :Woman .
 
-data:Nikolai_of_Denmark a :Man,
+data:Nikolai a :Man,
         :Person ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:Athena_of_Monpezat ;
-    :isChildOf data:Joachim_of_Denmark .
+    :hasFather data:Joachim_of_Denmark ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
 
 data:Marie_of_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex "Female"^^xsd:string .
-
-data:Athena_of_Monpezat a :Person,
-        :Woman ;
-    :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
-    :hasBirthYear "2012"^^xsd:string ;
-    :hasSex "Female"^^xsd:string ;
-    :isChildOf data:Joachim_of_Denmark,
-        data:Marie_of_Denmark ;
-    :knownAs "Countess Athena of Monpezat"^^xsd:string .
+    :hasSex data:Female .
 
 data:Joachim_of_Denmark a :Ancestor,
         :Man,
         :Person ;
-    :hasSex "Male"^^xsd:string .
+    :hasSex data:Male .
+
+data:Male a :Sex .
 

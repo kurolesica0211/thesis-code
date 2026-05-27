@@ -2,33 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Female a :Sex .
-
-data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Person,
+data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
         :Woman ;
     :hasBirthYear 1904 ;
     :hasDeathYear 1985 ;
-    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
     :hasMarriageYear 1929 ;
     :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-    :hasRelation data:Count_Jan_Kanty_Zamoyski ;
-    :hasSex "Female"^^xsd:string .
-
-data:Male a :Sex .
+    :hasRelation data:Jan_Kanty_Zamoyski .
 
 data:Alfonso_XII_of_Spain a :Ancestor,
         :Man,
         :Person .
 
-data:Count_Andrzej_Zamoyski a :Ancestor,
+data:Andrzej_Zamoyski a :Ancestor,
         :Man,
         :Person .
 
-data:Count_Jan_Kanty_Zamoyski a :Man,
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
+
+data:Jan_Kanty_Zamoyski a :Ancestor,
+        :Man,
         :Person ;
-    :hasFather data:Count_Andrzej_Zamoyski ;
-    :hasMother data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies ;
-    :hasSex "Male"^^xsd:string .
+    :hasFather data:Andrzej_Zamoyski ;
+    :hasMother data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+
+data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
 
 data:Maria_Christina_of_Austria a :Ancestor,
         :Person,
@@ -38,15 +42,5 @@ data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
         :Person,
         :Woman ;
     :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Maria_Christina_of_Austria ;
-    :hasSex "Female"^^xsd:string .
-
-data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string .
-
-data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman .
+    :hasMother data:Maria_Christina_of_Austria .
 

@@ -1,7 +1,7 @@
 {
     "entry_id": "121_121",
-    "done_reason": "max_iter_reached",
+    "done_reason": "llm_finished",
     "artifacts_dir": "results/royalty_gemini_with_shacl/121_121/artifacts",
     "results": "results/royalty_gemini_with_shacl/121_121/final_data_graph.ttl",
-    "iterations": 20
+    "iterations": 4
 }

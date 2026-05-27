@@ -1,6 +1,6 @@
 model:
   #name: openrouter:openai/gpt-oss-120b:free
-  name: google_genai:gemini-3.1-flash-lite-preview
+  name: google_genai:gemini-3.1-flash-lite
   #name: google_genai:gemini-2.5-flash-lite
   temperature: 0.7
   max_retries: 4
@@ -18,16 +18,16 @@ runtime:
   prompt_caching_enabled: true
   max_iterations: 20
   min_iterations: 0
-  violation_translation: false
-  shacl_validation: false
+  violation_translation: true
+  shacl_validation: true
   same_data_graph: false
-  enforce_shacl: false
+  enforce_shacl: true
   async: true
 
 output:
   base_dir: results
   custom_tag: royalty
-  run_dir: results/royalty_gemini_without_shacl
+  run_dir: results/royalty_gemini_with_shacl
 
 dataset:
   source: custom_family_bench
