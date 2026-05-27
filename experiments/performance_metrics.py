@@ -33,14 +33,39 @@ from typing import Dict, List, Optional, Tuple
 class TaskMetrics:
 	task_id: str
 	processing_seconds: Optional[float]
-	input_tokens: Optional[int]
-	output_tokens: Optional[int]
+	translation_input_tokens: Optional[int]
+	translation_output_tokens: Optional[int]
+	final_first_input_tokens: Optional[int]
+	final_additional_input_tokens: Optional[int]
+	final_input_tokens: Optional[int]
+	final_output_tokens: Optional[int]
+	iterations: Optional[int]
+
+	@property
+	def translation_total_tokens(self) -> Optional[int]:
+		if self.translation_input_tokens is None or self.translation_output_tokens is None:
+			return None
+		return self.translation_input_tokens + self.translation_output_tokens
+
+	@property
+	def final_total_tokens(self) -> Optional[int]:
+		if self.final_input_tokens is None or self.final_output_tokens is None:
+			return None
+		return self.final_input_tokens + self.final_output_tokens
+
+	@property
+	def final_first_total_tokens(self) -> Optional[int]:
+		if self.final_first_input_tokens is None or self.final_output_tokens is None:
+			return None
+		return self.final_first_input_tokens + self.final_output_tokens
 
 	@property
 	def total_tokens(self) -> Optional[int]:
-		if self.input_tokens is None or self.output_tokens is None:
+		translation_total = self.translation_total_tokens
+		final_total = self.final_total_tokens
+		if translation_total is None or final_total is None:
 			return None
-		return self.input_tokens + self.output_tokens
+		return translation_total + final_total
 
 
 def _task_sort_key(task_id: str) -> Tuple[int, str]:
@@ -106,41 +131,62 @@ def _load_trace_durations(run_path: Path) -> Dict[str, float]:
 	return durations
 
 
-def _load_usage_metadata(task_dir: Path, run_path: Path) -> Tuple[Optional[int], Optional[int]]:
+def _load_usage_metadata(task_dir: Path, run_path: Path) -> Tuple[Optional[int], Optional[int], Optional[int], Optional[int], Optional[int], Optional[int], Optional[int]]:
 	manifest_path = task_dir / "task_manifest.json"
 	if not manifest_path.exists():
-		return None, None
+		return None, None, None, None, None, None, None
 
 	try:
 		manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 	except json.JSONDecodeError:
-		return None, None
+		return None, None, None, None, None, None, None
 
 	artifacts_dir_value = manifest.get("artifacts_dir")
 	if not artifacts_dir_value:
-		return None, None
+		return None, None, None, None, None, None, None
 
 	artifacts_dir = _resolve_relative_path(run_path, str(artifacts_dir_value))
 	usage_path = artifacts_dir / "usage_metadata.json"
 	if not usage_path.exists():
-		return None, None
+		return None, None, None, None, None, None, None
 
 	usage_metadata = json.loads(usage_path.read_text(encoding="utf-8"))
+	iterations = manifest.get("iterations")
 
-	input_tokens = 0
-	output_tokens = 0
+	translation_input_tokens = 0
+	translation_output_tokens = 0
+	final_input_tokens = 0
+	final_output_tokens = 0
+	final_additional_input_tokens = 0
+	final_entries = usage_metadata.get("final", [])
+	first_final_entry = final_entries[0] if final_entries else None
+	first_final_metadata = first_final_entry.get("metadata", []) if first_final_entry else []
+	first_final_input_tokens = int(first_final_metadata[0].get("input_tokens", 0) or 0) if first_final_metadata else 0
 
 	for translation_entry in usage_metadata.get("translation", []):
 		metadata = translation_entry.get("metadata", {})
-		input_tokens += int(metadata.get("input_tokens", 0) or 0)
-		output_tokens += int(metadata.get("output_tokens", 0) or 0)
+		translation_input_tokens += int(metadata.get("input_tokens", 0) or 0)
+		translation_output_tokens += int(metadata.get("output_tokens", 0) or 0)
 
-	for final_entry in usage_metadata.get("final", []):
+	for final_entry in final_entries:
 		for metadata in final_entry.get("metadata", []):
-			input_tokens += int(metadata.get("input_tokens", 0) or 0)
-			output_tokens += int(metadata.get("output_tokens", 0) or 0)
+			input_tokens = int(metadata.get("input_tokens", 0) or 0)
+			final_input_tokens += input_tokens
+			final_output_tokens += int(metadata.get("output_tokens", 0) or 0)
+			# Additional input tokens are measured against the first final prompt.
+			final_additional_input_tokens += max(input_tokens - first_final_input_tokens, 0)
 
-	return input_tokens, output_tokens
+	final_first_input_tokens = first_final_input_tokens
+
+	return (
+		translation_input_tokens,
+		translation_output_tokens,
+		final_first_input_tokens,
+		final_additional_input_tokens,
+		final_input_tokens,
+		final_output_tokens,
+		int(iterations) if iterations is not None else None,
+	)
 
 
 def _collect_task_metrics(run_dir: str) -> List[TaskMetrics]:
@@ -156,13 +202,26 @@ def _collect_task_metrics(run_dir: str) -> List[TaskMetrics]:
 
 	task_metrics: List[TaskMetrics] = []
 	for task_dir in task_dirs:
-		input_tokens, output_tokens = _load_usage_metadata(task_dir, run_path)
+		(
+			translation_input_tokens,
+			translation_output_tokens,
+			final_first_input_tokens,
+			final_additional_input_tokens,
+			final_input_tokens,
+			final_output_tokens,
+			iterations,
+		) = _load_usage_metadata(task_dir, run_path)
 		task_metrics.append(
 			TaskMetrics(
 				task_id=task_dir.name,
 				processing_seconds=durations.get(task_dir.name),
-				input_tokens=input_tokens,
-				output_tokens=output_tokens,
+				translation_input_tokens=translation_input_tokens,
+				translation_output_tokens=translation_output_tokens,
+				final_first_input_tokens=final_first_input_tokens,
+				final_additional_input_tokens=final_additional_input_tokens,
+				final_input_tokens=final_input_tokens,
+				final_output_tokens=final_output_tokens,
+				iterations=iterations,
 			)
 		)
 
@@ -246,8 +305,15 @@ def _print_stat_block(title: str, values: List[float], unit: str) -> None:
 
 def _print_summary(run_dir: str, task_metrics: List[TaskMetrics], per_task: bool) -> None:
 	processing_values = [metric.processing_seconds for metric in task_metrics if metric.processing_seconds is not None]
-	input_values = [metric.input_tokens for metric in task_metrics if metric.input_tokens is not None]
-	output_values = [metric.output_tokens for metric in task_metrics if metric.output_tokens is not None]
+	translation_input_values = [metric.translation_input_tokens for metric in task_metrics if metric.translation_input_tokens is not None]
+	translation_output_values = [metric.translation_output_tokens for metric in task_metrics if metric.translation_output_tokens is not None]
+	translation_total_values = [metric.translation_total_tokens for metric in task_metrics if metric.translation_total_tokens is not None]
+	final_first_input_values = [metric.final_first_input_tokens for metric in task_metrics if metric.final_first_input_tokens is not None]
+	final_additional_input_values = [metric.final_additional_input_tokens for metric in task_metrics if metric.final_additional_input_tokens is not None]
+	final_input_values = [metric.final_input_tokens for metric in task_metrics if metric.final_input_tokens is not None]
+	final_output_values = [metric.final_output_tokens for metric in task_metrics if metric.final_output_tokens is not None]
+	final_total_values = [metric.final_total_tokens for metric in task_metrics if metric.final_total_tokens is not None]
+	iteration_values = [metric.iterations for metric in task_metrics if metric.iterations is not None]
 	total_token_values = [metric.total_tokens for metric in task_metrics if metric.total_tokens is not None]
 
 	print(f"Run directory: {run_dir}")
@@ -260,33 +326,65 @@ def _print_summary(run_dir: str, task_metrics: List[TaskMetrics], per_task: bool
 	print()
 
 	print("Token usage totals")
-	if input_values:
-		print(f"  Input tokens:  {_format_int(int(sum(input_values)))}")
+	if translation_total_values:
+		print(f"  Translation tokens: {_format_int(int(sum(translation_total_values)))}")
+		print(f"    Input tokens:     {_format_int(int(sum(translation_input_values)))}")
+		print(f"    Output tokens:    {_format_int(int(sum(translation_output_values)))}")
 	else:
-		print("  Input tokens:  no data")
+		print("  Translation tokens: no data")
 
-	if output_values:
-		print(f"  Output tokens: {_format_int(int(sum(output_values)))}")
+	if final_total_values:
+		print(f"  Final tokens:       {_format_int(int(sum(final_total_values)))}")
+		print(f"    First input:      {_format_int(int(sum(final_first_input_values)))}")
+		print(f"    Additional input: {_format_int(int(sum(final_additional_input_values)))}")
+		print(f"    Total input:      {_format_int(int(sum(final_input_values)))}")
+		print(f"    Output tokens:    {_format_int(int(sum(final_output_values)))}")
 	else:
-		print("  Output tokens: no data")
+		print("  Final tokens:       no data")
+
+	if iteration_values:
+		print(f"  Median iterations: {_median([float(value) for value in iteration_values]):.2f}")
+	else:
+		print("  Average iterations: no data")
 
 	if total_token_values:
-		print(f"  Total tokens:  {_format_int(int(sum(total_token_values)))}")
+		print(f"  All tokens:         {_format_int(int(sum(total_token_values)))}")
 	else:
-		print("  Total tokens:  no data")
+		print("  All tokens:         no data")
 
 	print()
-	_print_stat_block("Token statistics per task", [float(value) for value in total_token_values], "tokens")
+	_print_stat_block("Translation token statistics per task", [float(value) for value in translation_total_values], "tokens")
+	print()
+	_print_stat_block("Final token statistics per task", [float(value) for value in final_total_values], "tokens")
+	print()
+	_print_stat_block("Final first-input token statistics per task", [float(value) for value in final_first_input_values], "tokens")
+	print()
+	_print_stat_block("Final additional-input token statistics per task", [float(value) for value in final_additional_input_values], "tokens")
+	print()
+	_print_stat_block("Iteration statistics per task", [float(value) for value in iteration_values], "iterations")
 
 	if per_task:
 		print()
 		print("Per-task breakdown")
 		for metric in sorted(task_metrics, key=lambda item: _task_sort_key(item.task_id)):
 			time_text = _format_seconds(metric.processing_seconds) if metric.processing_seconds is not None else "n/a"
-			input_text = _format_int(metric.input_tokens) if metric.input_tokens is not None else "n/a"
-			output_text = _format_int(metric.output_tokens) if metric.output_tokens is not None else "n/a"
+			translation_input_text = _format_int(metric.translation_input_tokens) if metric.translation_input_tokens is not None else "n/a"
+			translation_output_text = _format_int(metric.translation_output_tokens) if metric.translation_output_tokens is not None else "n/a"
+			translation_total_text = _format_int(metric.translation_total_tokens) if metric.translation_total_tokens is not None else "n/a"
+			final_first_input_text = _format_int(metric.final_first_input_tokens) if metric.final_first_input_tokens is not None else "n/a"
+			final_additional_input_text = _format_int(metric.final_additional_input_tokens) if metric.final_additional_input_tokens is not None else "n/a"
+			final_input_text = _format_int(metric.final_input_tokens) if metric.final_input_tokens is not None else "n/a"
+			final_output_text = _format_int(metric.final_output_tokens) if metric.final_output_tokens is not None else "n/a"
+			final_total_text = _format_int(metric.final_total_tokens) if metric.final_total_tokens is not None else "n/a"
+			iteration_text = _format_int(metric.iterations) if metric.iterations is not None else "n/a"
 			total_text = _format_int(metric.total_tokens) if metric.total_tokens is not None else "n/a"
-			print(f"  {metric.task_id}: time={time_text}, input={input_text}, output={output_text}, total={total_text}")
+			print(
+				f"  {metric.task_id}: time={time_text}, "
+				f"translation(input={translation_input_text}, output={translation_output_text}, total={translation_total_text}), "
+				f"final(first_input={final_first_input_text}, additional_input={final_additional_input_text}, input={final_input_text}, output={final_output_text}, total={final_total_text}), "
+				f"iterations={iteration_text}, "
+				f"all={total_text}"
+			)
 
 
 def main() -> None:
