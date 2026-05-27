@@ -28,14 +28,19 @@ from orchestration.prompt_caching import google_cache, check_gemini
 
 
 def _build_loader(config: RunConfig):
+    """Return dataset loader based on `config.dataset.source`.
+
+    Mirrors the synchronous runner's loader selection.
+    """
     if config.dataset.source == "custom_family_bench":
         loader = look_up_family_get_loader()
-    elif config.dataset.source == "bernhard":
+    elif config.dataset.source == "example_run":
         loader = bernhard_loader()
     return loader
 
 
 def _compute_run_dir(config: RunConfig) -> str:
+    """Compute the run directory (same logic as `runner._compute_run_dir`)."""
     if config.output.run_dir:
         return config.output.run_dir
     

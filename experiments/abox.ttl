@@ -1,7 +1,0 @@
-@prefix : <http://example.com/family_TBOX.ttl#> .
-@prefix data: <http://example.org/data/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-data:A a :Man, :Woman .
-data:B a :Person .
-data:A :hasParent data:B .

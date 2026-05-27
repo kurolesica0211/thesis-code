@@ -8,3 +8,4 @@ scripts/validation_reports/*
 .DS_Store
 experiments/OSKGC/*
 experiments/text2kg/*
+experiments/target/*

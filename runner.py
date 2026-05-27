@@ -10,7 +10,7 @@ from contextlib import nullcontext
 from configs.run_config import RunConfig
 from loaders.base_family_loader import get_loader as base_family_get_loader
 from loaders.look_up_family_loader import get_loader as look_up_family_get_loader
-from loaders.bernhard_loader import get_loader as bernhard_get_loader
+from loaders.bernhard_loader import get_loader as bernhard_loader
 from orchestration.tools import ToolClass
 from orchestration.tracing import (
     append_trace,
@@ -24,11 +24,23 @@ from models.data_models import TaskEntry
 from orchestration.prompt_caching import google_cache, check_gemini
 
 def _build_loader(config: RunConfig):
+    """Return an appropriate dataset loader based on `config.dataset.source`.
+
+    The loader yields `TaskEntry` objects consumed by the main loop.
+    """
     if config.dataset.source == "custom_family_bench":
-        loader = bernhard_get_loader()
+        loader = look_up_family_get_loader()
+    elif config.dataset.source == "example_run":
+        loader = bernhard_loader()
     return loader
 
 def _compute_run_dir(config: RunConfig) -> str:
+    """Compute a filesystem directory for this run.
+
+    If `output.run_dir` is provided it is used verbatim; otherwise compose a
+    path under `output.base_dir` using `custom_tag` and a filesystem-safe
+    model name.
+    """
     if config.output.run_dir:
         return config.output.run_dir
     
@@ -37,42 +49,53 @@ def _compute_run_dir(config: RunConfig) -> str:
     return os.path.join(config.output.base_dir, f"{custom_tag}_{safe_model}")
 
 def run(config: RunConfig):
+    """Run the pipeline synchronously over all task entries.
+
+    Main responsibilities:
+    - Prepare run directories and tracing
+    - Instantiate the dataset loader and iterate entries
+    - For each entry: prepare artifacts, build the agent, call the LLMs,
+      collect results and write output files (final graph, delta, convo, metadata)
+    """
     run_dir = _compute_run_dir(config)
     os.makedirs(run_dir, exist_ok=True)
     trace_path = os.path.join(run_dir, "trace.jsonl")
     append_trace(trace_path, "run.start")
-    
+
     loader = _build_loader(config)
-    
+
     append_trace(trace_path, "run.loader_instantiated")
-    
+
     run_manifest = {
         "run_dir": run_dir,
         "config": config.model_dump(),
         "task_manifests": [],
         "trace": trace_path,
     }
-    
+
+    # Choose the system prompt depending on whether SHACL validation is enabled
     main_system_prompt_path = config.prompts.main_system if config.runtime.shacl_validation else config.prompts.main_system_without_shacl
     main_user_prompt_path = config.prompts.main_user
     main_system_prompt = get_prompt(main_system_prompt_path)
     main_system_msg = SystemMessage(main_system_prompt)
-    
+
     for i, task_entry in enumerate(tqdm(loader.load(), total=loader.get_total())):
         task_entry: TaskEntry
+        # Optionally reuse the same data graph across entries
         if config.runtime.same_data_graph and i > 0:
             task_entry.data_graph = last_data_graph
         init_data_graph = deepcopy(task_entry.data_graph)
-        
+
         append_trace(trace_path, "run.entry.start", payload={
             "entry_idx": task_entry.entry_id
         })
-        
+
+        # Prepare per-task directories and baseline manifest
         task_dir = os.path.join(run_dir, task_entry.entry_id)
         os.makedirs(task_dir, exist_ok=True)
         artifacts_dir = os.path.join(task_dir, "artifacts")
         init_artifact_files(artifacts_dir)
-        
+
         task_manifest_path = os.path.join(task_dir, "task_manifest.json")
         results_path = os.path.join(task_dir, "final_data_graph.ttl")
         task_manifest = {
@@ -83,10 +106,12 @@ def run(config: RunConfig):
             "iterations": 0
         }
         run_manifest["task_manifests"].append(task_manifest_path)
-        
+
+        # Build tools and agent for this task
         tool_obj = ToolClass(task_entry.schema_def, task_entry.data_graph, config.runtime.shacl_validation)
         agent = build_agent(tool_obj)
-        
+
+        # Render and wrap the user prompt
         main_user_prompt = format_prompt(
             main_user_prompt_path,
             data_graph=task_entry.data_graph.serialize(format="turtle"),
@@ -94,7 +119,8 @@ def run(config: RunConfig):
             input_text=task_entry.input_text
         )
         main_user_msg = HumanMessage(main_user_prompt)
-        
+
+        # Optionally use Google prompt cache when enabled and supported
         use_cache = config.runtime.prompt_caching_enabled and check_gemini(config.model.name)
         cm = google_cache(
             config.model.name,
@@ -118,7 +144,7 @@ def run(config: RunConfig):
                 temperature=config.model.temperature,
                 max_retries=config.model.max_retries
             )
-            
+
             append_trace(trace_path, "run.entry.agent.invoke", payload={
                 "entry_id": task_entry.entry_id,
             })
@@ -142,7 +168,8 @@ def run(config: RunConfig):
                     artifacts_dir=artifacts_dir
                 )
             )
-        
+
+        # Normalize manifest fields and tracing
         task_manifest["done_reason"] = (
             final_state["task_manifest"]["done_reason"] 
             if final_state["task_manifest"]["done_reason"] != ""
@@ -153,11 +180,11 @@ def run(config: RunConfig):
             "entry_idx": task_entry.entry_id,
             "done_reason": task_manifest["done_reason"]
         })
-        
+
         #––––– Dump the results –––––––––––––––––––––––––––––––
         final_state["data_graph"].serialize(format="turtle", destination=results_path)
         last_data_graph = final_state["data_graph"]
-        
+
         delta_graph_path = os.path.join(task_dir, "delta_graph.ttl")
         delta_graph: Graph = (last_data_graph - init_data_graph)
         delta_graph.namespace_manager = last_data_graph.namespace_manager
@@ -179,7 +206,7 @@ def run(config: RunConfig):
         final_convo = "\n\n".join([msg.pretty_repr() for msg in final_messages])
         with open(f"{artifacts_dir}/convos/final_convo.md", "w", encoding="utf-8") as f:
             f.write(final_convo)
-        
+
         usage_metadata = [msg.usage_metadata for msg in final_state["messages"] if type(msg) is AIMessage]
         append_usage_metadata(
             artifacts_dir,
@@ -189,9 +216,9 @@ def run(config: RunConfig):
                 "metadata": usage_metadata,
             },
         )
-        
+
         with open(task_manifest_path, "w", encoding="utf-8") as f:
             json.dump(task_manifest, f, indent=4)
-        
+
     with open(f"{run_dir}/run_manifest.json", "w", encoding="utf-8") as f:
         json.dump(run_manifest, f, indent=4)

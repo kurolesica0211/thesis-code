@@ -18,14 +18,14 @@ runtime:
   min_iterations: 0
   violation_translation: true
   shacl_validation: true
-  same_data_graph: false                # (deprecated) means that pipeline will create a single huge KG across all texts, rather than many separate ones
+  same_data_graph: false                    # (deprecated) means that pipeline will create a single huge KG across all texts, rather than many separate ones
   enforce_shacl: true
   async: true
 
 output:
   base_dir: results
   custom_tag: royalty
-  run_dir: results/royalty_gemini_with_shacl
+  run_dir: results/example_run_with_shacl
 
 dataset:
-  source: custom_family_bench
+  source: example_run

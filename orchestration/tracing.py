@@ -1,3 +1,11 @@
+"""Thread-safe tracing and artifact helpers.
+
+Provides functions to initialize artifact directories, append usage and
+graph snapshots, and append timestamped trace events to a trace file. File
+writes are guarded with locks to support concurrent execution in the async
+runner.
+"""
+
 from __future__ import annotations
 
 import json

@@ -1,0 +1,240 @@
+# Knowledge Graph Construction Pipeline: Conversation Summary
+
+This document provides a natural language summary of the iterative engineering process recorded in final_convo.md to construct a validated, ontology-compliant Data Graph from the provided biographical source text.
+
+---
+
+## 1. Overview and Objectives
+The objective of the pipeline was to extract a structured family tree and biographical attributes from an input text concerning **Prince Bernhard of the Netherlands (Prince Bernhard of Lippe-Biesterfeld)**. The resulting Directed Acyclic Graph (DAG) needed to comply with a predefined OWL family tree ontology and satisfy SHACL validation constraints based strictly on the provided text.
+
+### Ontological Specifications
+* **Classes**: Includes `:Person`, `:Man`, `:Woman`, `:Ancestor`, `:Sex`, `:Female`, and `:Male`.
+* **Key Restrictions**: 
+  * A `:Person` must have a maximum of two parents (one mother and one father) due to cardinality and functional property constraints.
+  * Structural properties such as `:hasChild`, `:hasFather`, and `:hasMother` dictate strict domain/range matching rules.
+
+---
+
+## 2. Iterative Graph Engineering Process
+
+### Phase 1: Initial Population & Layout
+* **AI Strategy**: The AI parsed the text to identify key historical figures and their relationships, applying initial class typings and basic biographical literals.
+* **Entities Instantiated**:
+  * **Main Figures**: `Prince_Bernhard_of_Lippe-Biesterfeld` (`:Man`), `Queen_Juliana` (`:Woman`).
+  * **Children**: `Beatrix_of_the_Netherlands`, `Irene_of_the_Netherlands`, `Margriet_of_the_Netherlands`, `Christina_of_the_Netherlands` (all typed as `:Woman`).
+  * **Ancestors**: `Prince_Bernhard_of_Lippe` (`:Man`), `Armgard_von_Sierstorpff-Cramm` (`:Woman`), and `Ernest_Count_of_Lippe-Biesterfeld` (`:Man`).
+* **Properties Added**: Data literals for Prince Bernhard's birth year (`1911`), death year (`2004`), and marriage year (`1937`) were recorded alongside parent-child triples.
+* **Outcome**: The AI attempted to finalize the graph immediately without running SHACL validation first.
+
+### Phase 2: First Validation & Error Resolution
+* **AI Strategy**: The AI executed a SHACL validation check to evaluate graph integrity.
+* **Validation Feedback**: The validation engine reported **12 violations**:
+  1. **Missing Ancestor Classes**: Nodes bound to parent properties (`Ernest_Count_of_Lippe-Biesterfeld`, `Prince_Bernhard_of_Lippe`, and `Armgard_von_Sierstorpff-Cramm`) lacked the mandatory class assignment of `:Ancestor`.
+  2. **Cardinality Violation**: `Prince_Bernhard_of_Lippe-Biesterfeld` was assigned two conflicting fathers (`Prince_Bernhard_of_Lippe` and `Ernest_Count_of_Lippe-Biesterfeld`), violating the functional property constraint.
+* **Corrective Actions**: The AI refactored the graph by removing the erroneous `:hasFather` link to the grandfather (Ernest), correctly keeping only the biological father. It assigned the `:Ancestor` and `:Person` classes to the parents. Additionally, the AI proactively introduced explicit `:hasSex` triples for all individuals (though this assignment was a modeling choice rather than a strictly enforced pipeline requirement).
+
+### Phase 3: Secondary Validation & Class Realignment
+* **Validation Feedback**: The second SHACL validation returned **81 violations**. These errors occurred because the target nodes `:Male` and `:Female` used in the newly added `:hasSex` relations were treated as standalone nodes missing the explicit class declaration of `:Sex`.
+* **Corrective Actions**: The AI resolved the validation errors by explicitly assigning the class `:Sex` to both the `data:Male` and `data:Female` nodes.
+
+### Phase 4: Finalization
+* **Validation Feedback**: A final SHACL validation check reported **zero violations**, indicating complete alignment with the required graph constraints.
+* **Outcome**: The AI successfully invoked the `Finish` tool to complete the graph state.
+
+---
+
+## 3. Final State of the Data Graph
+
+The final, validated state of the knowledge graph contains a clean representation of the family relationships explicitly stated in the text:
+
+* **Subject Profiles**:
+  * `data:Prince_Bernhard_of_Lippe-Biesterfeld`: Classified as a `:Man` and a `:Person`. Contains attributes for birth year (`1911`), death year (`2004`), and marriage year (`1937`), and links to his father and mother.
+  * `data:Queen_Juliana`: Classified as a `:Woman` and a `:Person`.
+* **Descendants**: Four daughters (`Beatrix`, `Christina`, `Irene`, and `Margriet`) are linked to both parents via `:hasChild` properties and classified as instances of `:Woman` and `:Person`.
+* **Ancestry**: Biological parents are categorized as both individual `:Person` entities and lineage-defining `:Ancestor` nodes.
+* **Biological Sex Declarations**: The target nodes `data:Male` and `data:Female` are instantiated as valid instances under the `:Sex` class.
+
+---
+
+## 4. Appendix: Input Biographical Text
+```text
+Prince Bernhard of Lippe-Biesterfeld (later Prince Bernhard of the Netherlands; 29 June 1911 – 1 December 2004) was Prince of the Netherlands from 6 September 1948 to 30 April 1980 as the husband of Queen Juliana.
+They had four daughters together, including Queen Beatrix of the Netherlands.
+Bernhard belonged to the German princely House of Lippe-Biesterfeld and was a nephew of the last sovereign prince of Lippe, Leopold IV.
+From birth he held the title Count of Biesterfeld; his uncle raised him to princely rank with the style of Serene Highness in 1916.
+In 1937 he married Princess Juliana of the Netherlands, and was immediately given the title Prince of the Netherlands with the style of Royal Highness.
+Upon his wife's accession to the throne in 1948, he became prince consort.
+Bernhard was an early member of the Nazi Party (NSDAP) as well as the brown shirts or Sturmabteilung (SA), and served as an officer in the Schutzstaffel (SS).
+He switched his political allegiance to the Allies after the invasion of the Netherlands.
+Until his death, Bernhard denied being a NSDAP member or holding a NSDAP membership card.
+He was also an honorary general officer in the Dutch army and was an observer in negotiating the terms of surrender of Nazi forces in the Netherlands.
+Officially for proven bravery, leadership and loyalty during his wartime efforts, he was appointed a Commander of the Military William Order, the Netherlands' oldest and highest honour.
+In 1969, Bernhard was awarded the Grand Cross (Special Class) of the Order of Merit of the Federal Republic of Germany.
+Bernhard helped found the World Wildlife Fund (WWF, later renamed World Wide Fund for Nature), becoming its first president in 1961.
+In 1970, along with Prince Philip, Duke of Edinburgh, and other associates, he established the WWF's financial endowment "The 1001: A Nature Trust".
+Early life
+
+Bernhard was born Bernhard Leopold Friedrich Eberhard Julius Kurt Karl Gottfried Peter, Count of Biesterfeld in Jena, Saxe-Weimar-Eisenach, German Empire on 29 June 1911, the elder son of Prince Bernhard of Lippe and his wife, Baroness Armgard von Sierstorpff-Cramm, member of one of the oldest Lower Saxon noble families, House of Cramm.
+He was a grandson of Ernest, Count of Lippe-Biesterfeld, who was regent of the Principality of Lippe until 1904, and was also a nephew of the principality's last sovereign, Leopold IV, Prince of Lippe.
+Because his parents' marriage did not conform with the marriage laws of the House of Lippe, it was initially deemed morganatic, as Armgard did not belong by birth to any ruling or the former ruling families of Europe, Bernhard was granted only the title of Count of Biesterfeld at birth.
+In 1916, his uncle Leopold IV as reigning Prince raised him and his mother to the rank of Prince and Princess of Lippe-Biesterfeld, thereby retroactively according his parents' marriage dynastic status.
+The suffix Biesterfeld revived the beginning of a new cadet line of the House of Lippe.
+After World War I, Bernhard's family lost their German Principality and the revenue that had accompanied it, but the family was still reasonably well-off.
+Bernhard spent his early years at Reckenwalde palace (Wojnowo, Poland), the family's new estate in East Brandenburg, thirty kilometres east of the River Oder.
+Bernhard suffered from poor health as a boy.
+This prediction might have inspired Bernhard's reckless driving and the risks that he took in the Second World War and thereafter.
+The prince wrecked several cars and planes in his lifetime.
+Bernhard studied law at the University of Lausanne, Switzerland, in fall 1929 until the spring of 1930, then in Berlin, then in Munich the following year in the fall of 1931, and then again in Berlin.
+In Munich Bernhard enrolled himself on 24 October 1930.
+(He later suffered a broken neck and crushed ribs in a 160 km/h (100 mph) car crash after his marriage to princess Juliana in 1938).
+Bernhard was an active member of the Motor-SA and of the Deutsche Studentenschaft, where he inscribed himself on 27 April 1933.
+While at university in Berlin for the year 1933, Bernhard joined the Nazi Party, exactly dated on his membership card as 1 May 1933.
+Bernhard left Berlin in December 1934 when he graduated and went to work for IG Farben.
+The Prince later denied that he had belonged to SA, to the Reiter-SS (SS Cavalry Corps), and to the paramilitary National-sozialistisches Kraftfahrerkorps (NSKK), but these are well-documented memberships.
+According to journalist Philip Dröge, Bernhard was also a member of Nazi youth movement Sturm.
+While he was not a fierce champion of democracy, the Prince was never known to hold any radical political views or express any racist sentiments, although he admitted that he briefly had sympathised with Adolf Hitler's regime.
+van der Zijl clearly demonstrates, that Bernhard again and again fabulates on his memberships and other activities, to enhance his postwar stance that he never willingly would have joined any Nazi-organization.
+In October 2023, Bernhard's original NSDAP membership card was discovered in his old residence in Germany.
+The Prince eventually went to work for the German chemical giant IG Farben in the early-to-mid 1930s, then the world's fourth-largest company.
+After training, Bernhard became a secretary in 1935 to the board of directors at IG Farben's Paris office.
+Marriage and children
+
+Bernhard met then-Princess Juliana at the 1936 Winter Olympics at Garmisch-Partenkirchen.
+Juliana's mother, Queen Wilhelmina, had spent most of the 1930s looking for a suitable husband for Juliana.
+As a Protestant of royal rank (the House of Lippe was a sovereign house in the German Empire), Bernhard was deemed acceptable for the devoutly religious Wilhelmina.
+They were distantly related, seventh cousins, both descending from Lebrecht, Prince of Anhalt-Zeitz-Hoym.
+Wilhelmina left nothing to chance, and had her lawyers draft a very detailed prenuptial agreement that specified exactly what Bernhard could and could not do.
+Earlier, Bernhard had been granted Dutch citizenship and changed the spelling of his names from German to Dutch.
+Prince Bernhard fathered six children, four of them with Queen Juliana.
+The eldest daughter is Beatrix, (born 1938), who later became Queen of the Netherlands.
+His other daughters with Juliana are Irene (born 1939), Margriet (born 1943) and Christina (1947–2019).
+In December 2004, Dutch historian Cees Fasseur claimed that Jonathan Aitken, former British Conservative Cabinet Minister, is also a child of Prince Bernhard, the result of his wartime affair with Penelope Maffey.
+
+
+1930s:
+Relationship with Nazi Party
+
+Prince Bernhard was a member of the "Reiter-SS", a mounted unit of the SS, part of the National Socialist Motor Corps.
+Bernhard denied being a paid or active member of the Nazi party throughout his life, although he did admit to being part of the movement as part of the Sturmabteilung; he falsely claimed it was needed for him to be member of this organization as a student at the university.
+Bernhard claimed to have severed all ties to the ruling Nazi regime in 1937 when he married princess Juliana of the Netherlands.
+Protocol demanded that the prospective Prince-Consort be invited to an audience with his head of state, who was Adolf Hitler.
+Hitler gave an account of the conversation that he had with Bernhard in his Tischgespräche (Table Conversations).
+In those notes, Hitler is recorded to have said that Bernhard approached him, shortly after the start of the Nazi regime, with an offer of support to increase German influence in the Netherlands.
+When asked in an interview in 2004 why he changed sides and started fighting against his homeland Germany, Bernhard claimed that he did not believe that Hitler and his regime had no plans to invade the Netherlands.
+Once Germany attacked his new homeland of the Netherlands in 1940; Bernhard's feelings towards his birth country of Germany changed to antagonism, and he had no problems fighting against Germany for the rest of the war.
+The Dutch government's information bureau Rijksvoorlichtingsdienst (RVD) would later confirm in 2023, years after the death, that Bernhard was member of the NSDAP, and that the Koninklijk Huisarchief (Royal House Archive) does still have Bernhard's original party membership card in his file.
+Second World War
+
+At the outset of the Second World War, during the German invasion of the Netherlands; the prince, carrying a machine gun, organised the palace guards into a combat group and shot at German warplanes.
+The royal family fled the Netherlands and took refuge in England.
+Disagreeing with Queen Wilhelmina's decision to leave the Kingdom, the prince, aged 28, is said at first to have refused to go and to have wanted to oppose the German occupation from within the country.
+His wife Princess Juliana and their children continued on to Canada, where they remained until the end of the war.
+In England, Prince Bernhard asked to work in British Intelligence.
+On the recommendation of Bernhard's friend and admirer King George VI; however, who was also of German aristocratic descent through his mother Mary of Teck, he was given access into the Intelligence organization.
+Prince Bernhard was personally screened by British intelligence officer Ian Fleming at the behest of Winston Churchill.
+Ian Fleming, who personally knew Bernhard from their war efforts and from luncheons in the Lincoln's Inn Hotel in London, based some features of his fictional character James Bond on Bernhard.
+Prince Bernhard then lowered himself 20 feet to the lowest bit of staircase standing, and then said staunchly and with a mixture of Dutch/British flair, as nothing happened: "Most enjoyable evening!"
+Bernhard's favorite drink during his meeting with Ian Fleming was a vodka martini shaken, not stirred.
+Bernhard's favorite car in London was a Bentley 4.5 litre, the same car Bond had in Fleming's first books.
+Bernhard also had a close relationship with the Americans during the war, that continued after the war in his work as chairman of the Bilderberg conference.
+Bernhard also became acquainted with Ambassador Joseph Kennedy due to his role as a liaison between Europe and the US, connection to intelligence, multinationals and European royalty.
+"For Bernhard, the Prince of the Netherlands, the war was a frustrating business.
+Born a German, he had married Queen Wilhelmina's only child, Princess Juliana, and in due time made a conscious and meaningful transition of loyalties to his new homeland.
+On 25 June 1940, three days after France fell to the German war machine, Bernhard spoke on the Overseas Service of the BBC.
+In 1940, Flight Lieutenant Murray Payne gave the prince instruction in flying a Spitfire.
+The prince made 1,000 flight-hours in a Spitfire with the RAF's No. 322 (Dutch) Squadron RAF, wrecking two planes during landings.
+In 1941, Prince Bernhard was given the honorary rank of wing commander in the Royal Air Force.
+As "Wing Commander Gibbs (RAF)", Prince Bernhard flew over occupied Europe, attacking V-1 launch pads in a B-24 Liberator, bombing Pisa, and engaging submarines over the Atlantic in a B-25 Mitchell, and conducting reconnaissance over enemy-held territory in an L-5 Grasshopper.
+Prince Bernhard was awarded the Dutch Airman's Cross for his "ability and perseverance" (Dutch: "bekwaamheid en volharding").
+Queen Wilhelmina erased the style "honorary" (the exact words were "à la suite") in the decree promoting Bernhard to General.
+In this unconstitutional manner, she gave this Royal Prince a status that was never intended by either Parliament or her Ministers.
+The Minister of Defence did not choose to correct the Monarch, and the Prince took an active and important role in the Dutch armed forces.
+By 1944, Prince Bernhard became Commander of the Dutch Armed Forces.
+After the liberation of the Netherlands, he returned with his family and became active in the negotiations for the German surrender.
+He was present during the Armistice negotiations and German surrender at Hotel de Wereld                                                 ("The World Hotel"), Wageningen in The Netherlands on 5 May 1945, where he avoided speaking German.
+The Prince was a genuine war hero in the eyes of most of the Dutch; he kept cordial relations with the Communists who fought against the Nazis.
+In the post-war years, he earned respect for his work in helping to reinvigorate the economy of the Netherlands.
+Postwar roles
+
+After the War, the position of Inspector General was created for the Prince.
+On 4 September 1948, his mother-in-law Queen Wilhelmina abdicated the throne and Juliana became Queen of the Netherlands with Bernhard becoming prince consort.
+There have been claims that KLM helped Nazis to leave Germany for Argentina on KLM flights while Bernhard was on its board.
+After a 1952 trip with Queen Juliana to the United States, Prince Bernhard was heralded by the media as a business ambassador extraordinaire for the Netherlands.
+Bilderberg
+
+In the early 1951 Polish diplomat, Józef Retinger contacted Prince Berhard with the idea to create an international conference between European and US greatest influencers to create a better relationship between Europe and the United States.
+After this Bernhard contacted Walter Bedell Smith, director of the CIA and old war friend to help him get things started in the US.
+Finally in May 1954 Bernhard was organizer and chairman of the first Bilderberg and essential in organising a meeting at the Bilderberg Hotel in the Netherlands for the business elite and intellectuals of the Western World to discuss the economic problems in the face of what they characterised as the growing threat from Communism.
+Prince Bernhard was a very outspoken person who often flouted protocol by remarking upon subjects about which he felt deeply.
+Almost until his last day, he called for more recognition for the Polish veterans of the Second World War, who had figured greatly in the liberation of the Netherlands but it was not until after his death that the Dutch Government publicly recognised the important role of the Polish Army in the liberation, when on 31 May 2006, at the Binnenhof in The Hague, Queen Beatrix conferred the Military William Order, the highest Dutch military decoration, on the Polish 1st
+First president of the World Wildlife Fund
+
+Prince Bernhard helped found the WWF and was the first president of the WWF from its founding year 1961 until 1976.
+Friendships, jetset and international connections
+
+Prince Bernhard was seen as a jet-setting and charismatic ambassador for the Dutch during post-war reconstruction.
+Prince Bernhard reportedly maintained friendships with several high-profile international figures.
+Scandals and rumours
+
+BS militia
+
+The Binnenlandse Strijdkrachten (BS, Domestic Armed Forces) militia, set up and under command of Prince Bernhard towards the end of World War II, gained a notorious reputation for unruly and out-of-control behavior including incidents of pillaging and plundering at the time the country was being liberated from Nazi occupation.
+Prince Bernhard was appointed commander of this militia in early September 1944 by Queen Wilhelmina, who had unified several Dutch resistance groups into the BS.
+However, under Bernhard's leadership, the militia proved difficult to control and was marred by controversy due to its disorderly conduct and failure to reign in misbehavior among its ranks.
+The armistice agreement on May 4, 1945, included the condition that only Allied units would directly carry out the disarming of German troops in the Netherlands.
+However, Prince Bernhard's BS militia on the ground disregarded their orders and arrested two German soldiers nearby Dam square.
+In the mid-1950s, Queen Juliana and Prince Bernhard's marriage faced significant strain because of the ongoing influence of Greet Hofmans, a faith healer and layer-on of hands.
+For nine years she acted as a confidante and adviser to Queen Juliana, often residing at Palace Soestdijk.
+Originally, Hofmans was introduced to Queen Juliana at the initiative of Prince Bernhard in 1948 to treat an eye illness of their youngest daughter, Princess Christina (then still called Marijke).
+This illness arose because Juliana was infected with rubella during pregnancy.
+While the Dutch press did not report widely on the issue, outside the Netherlands, a great deal was written about the Hofmans affair.
+Later, Bernhard admitted that he had personally provided the information for the article.
+Historian Cees Fasseur drew from it for his book, Juliana & Bernhard (2008); in addition, the Queen had granted him access to the private royal archive.
+He noted that Bernhard was reprimanded in 1956 for having leaked confidential information to the international press.
+Fasseur said that Bernhard resorted to bringing in the international press only after repeated, desperate and often dramatic pleading with his wife to distance herself from the Hofmans group.
+"
+
+Lockheed scandal
+
+Scandal rocked the royal family in 1976 when the press reported that Prince Bernhard had accepted a US$1.1 million bribe from U.S. aircraft manufacturer Lockheed Corporation to influence the Dutch government's purchase of fighter aircraft.
+At the time he had served on more than 300 corporate boards and committees worldwide and had been praised in the Netherlands for his efforts to promote the economic well-being of the country.
+Prime Minister of the Netherlands Joop den Uyl ordered an inquiry into the Lockheed affair.
+Prince Bernhard refused to answer reporters' questions, stating: "I am above such things".
+They also brought up records of Prince Bernhard's Reiter SS membership and details of his numerous extramarital affairs.
+Bernhard had an older illegitimate daughter, Alicia, born in the United States (with a German pilot whom he met in Mexico in 1951).
+On 26 August 1976, a full report of Prince Bernhard's activities was released to a shocked Dutch public.
+The Prince's own letter of 1974, to Lockheed Corporation, was publicised; he had demanded "commissions" be paid to him on Dutch government aircraft purchases.
+Out of respect for Queen Juliana, the government did not press charges against Bernhard.
+Prince Bernhard resigned as Inspector-General of the Dutch Armed Forces.
+Prime Minister Joop den Uyl made a statement in Parliament and told the delegates that the Prince would also resign from his various high-profile positions in businesses, charities, and other institutions.
+Prince Bernhard turned over the Presidency of the international World Wildlife Fund to Prince Philip, Duke of Edinburgh.
+In an interview published after his death, on 14 December 2004, Prince Bernhard admitted that he had accepted more than one million dollars (US) in bribes from Lockheed.
+In February 2008, Joop den Uyl's biography claimed that the official report investigating the Lockheed bribe scandal also presented proof that the Prince had accepted money from yet another aerospace firm:
+Project Lock
+
+In 1988, Prince Bernhard and Princess Juliana sold two paintings from their personal collection to raise money for the World Wildlife Fund.
+In 1989, however, Charles de Haes, Director-General of the WWF, transferred £500,000 back to Bernhard, for what De Haes called a private project.
+In 1991, newspapers reported that WWF was acting as a front for an operation involving people of military and intelligence background and under the leadership or coordination of Prince Bernhard, who had hired KAS International or KAS Enterprises, a private contractor owned by Special Air Service founder Sir David Stirling, to use mercenaries – mostly British – to ostensibly fight poachers in nature reserves.
+Prince Bernhard was never accused of any crime in this context, but the Project Lock scandal negatively impacted the Prince's reputation.
+Additional controversies and rumours
+
+Prince Bernhard garnered media attention when, on 30 October 2002, he paid the fines of two Albert Heijn supermarket staff members, who were convicted of assaulting a shoplifter after they detained him.
+High Stakes at the Court of His Royal Highness by historian Harry Veenendaal and journalist Jort Kelder alleges that the Prince in 1950 attempted to oust the young government of the newly founded Republic of Indonesia and place himself to lead the islands as viceroy similar to Lord Mountbatten's role in British India.
+This was particularly contentious as in 1949 the Netherlands had already officially recognised its former colony as an independent nation.
+A 2016 biography by Jolande Withuis about Queen Juliana, titled Juliana, posited further rumours including that Bernhard had once sexually assaulted a minor, that he had refused to divorce the queen twice, and that later on during their final years in life he prohibited Juliana from seeing him.
+Later life and death
+
+In 1994, the Prince had a colon tumour removed and suffered severe complications due to respiratory distress.
+In December, his daughter Queen Beatrix rushed to the hospital straight after landing from a trip to Africa.
+Two days after intensive medical attention the Royal Press Office issued a statement the Prince was reading newspapers again.
+Over the following years Bernhard continued to appear at the military parades on the national liberation day celebrating the defeat of Nazi Germany.
+Only when Juliana died in March 2004 did Bernhard become exceedingly fragile.
+Bernhard died of lung cancer at the age of 93 at University Medical Center Utrecht in Utrecht on 1 December 2004.
+Bernhard's funeral was different from those of Prince Claus and Queen Juliana in that Bernhard's coffin was transported on the undercarriage of a cannon instead of in the traditional carriage used when the coffins of Prince Claus and Queen Juliana were transported to Delft.
+Together with the playing of many military marches and the forming of guards of honour by Second World War veterans this gave the funeral procession a military character as the late Prince, a Second World War veteran, had wished.
+As a final tribute to his former military role in the Royal Netherlands Air Force, three modern F-16 jet fighters and a World War II Spitfire plane performed a low flypast during the funeral in a classic missing man formation.
+In popular culture
+
+In the years after Bernhard died his life story has been the inspiration for literature, theatre, television and comic books.
+In 2010 fact and fiction of the life of Bernhard was portrayed in a Dutch television series.
+In a biographical dissertation by Dutch journalist and historian Annejet van der Zijl published in March 2010, Bernhard was called "a failure" in the history of the Dutch royal family and a "creature of his own myths".

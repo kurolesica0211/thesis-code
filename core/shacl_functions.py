@@ -1,3 +1,10 @@
+"""SHACL validation helpers.
+
+Wraps `pyshacl.validate` and provides utilities to parse and format the
+resulting validation report into human-readable strings used in prompts
+and artifacts.
+"""
+
 from rdflib import Graph, SH, RDF, URIRef
 from pyshacl import validate as py_validate
 import re

@@ -1,3 +1,11 @@
+"""Helpers to safely edit the RDF data graph used by the pipeline.
+
+This module provides safe wrappers around common graph edits (assigning
+classes, adding/removing triples, handling typed literals) that the agent
+invokes via the tool layer. Functions produce `rdflib.Graph` mutations and
+perform basic validation/escaping of local names.
+"""
+
 import re
 from urllib.parse import quote
 from enum import Enum

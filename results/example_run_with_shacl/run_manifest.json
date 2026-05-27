@@ -1,0 +1,42 @@
+{
+    "run_dir": "results/example_run_with_shacl",
+    "config": {
+        "model": {
+            "name": "google_genai:gemini-3.1-flash-lite",
+            "temperature": 0.7,
+            "max_retries": 4
+        },
+        "prompts": {
+            "main_system": "prompts/main_system.md",
+            "main_system_without_shacl": "prompts/main_system_without_shacl.md",
+            "main_user": "prompts/main_user.md",
+            "translation_system": "prompts/translation_system.md",
+            "translation_user": "prompts/translation_user.md",
+            "not_typed": "prompts/not_typed.md"
+        },
+        "runtime": {
+            "delay_seconds": 4.0,
+            "max_iterations": 20,
+            "min_iterations": 0,
+            "prompt_caching_enabled": true,
+            "shacl_validation": true,
+            "violation_translation": true,
+            "same_data_graph": false,
+            "async_mode": true,
+            "enforce_shacl": true
+        },
+        "output": {
+            "base_dir": "results",
+            "custom_tag": "royalty",
+            "run_dir": "results/example_run_with_shacl"
+        },
+        "dataset": {
+            "source": "example_run"
+        }
+    },
+    "task_manifests": [
+        "results/example_run_with_shacl/335_335/task_manifest.json"
+    ],
+    "trace": "results/example_run_with_shacl/trace.jsonl",
+    "mode": "async"
+}

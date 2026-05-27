@@ -1,0 +1,77 @@
+#defaultView:Graph
+SELECT DISTINCT ?item ?itemLabel ?parent ?parentLabel ?genderLabel ?article ?parentGenderLabel
+WHERE {
+  # 1. Define the 'Pool': Get ancestors (0 to 2 steps up)
+  wd:Q43274 (wdt:P22|wdt:P25)?/(wdt:P22|wdt:P25)? ?ancestor .
+  
+  # Then all their descendants (0 to 2 steps down)
+  ?ancestor wdt:P40?/wdt:P40? ?item .
+  
+  # 2. Define the 'Links': For every item in the pool, find their parents
+  ?item (wdt:P22|wdt:P25) ?parent .
+  
+  ?item wdt:P21 ?gender .
+  ?parent wdt:P21 ?parentGender .
+  
+  ?article schema:about ?item .
+  ?article schema:isPartOf <https://en.wikipedia.org/> .
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+#defaultView:Graph
+SELECT DISTINCT ?item ?itemLabel ?parent ?parentLabel ?genderLabel ?article ?parentGenderLabel
+WHERE {
+  # 1. Define the 'Pool': Get ancestors (0 to 2 steps up)
+  wd:Q191045 (wdt:P22|wdt:P25)?/(wdt:P22|wdt:P25)? ?ancestor .
+  
+  # Then all their descendants (0 to 2 steps down)
+  ?ancestor wdt:P40?/wdt:P40? ?item .
+  
+  # 2. Define the 'Links': For every item in the pool, find their parents
+  ?item (wdt:P22|wdt:P25) ?parent .
+  
+  ?item wdt:P21 ?gender .
+  ?parent wdt:P21 ?parentGender .
+  
+  ?article schema:about ?item .
+  ?article schema:isPartOf <https://en.wikipedia.org/> .
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+#defaultView:Graph
+SELECT DISTINCT ?item ?itemLabel ?parent ?parentLabel ?genderLabel ?article ?parentGenderLabel
+WHERE {
+  # 1. Define the 'Pool': Get ancestors (0 to 2 steps up)
+  wd:Q154952 (wdt:P22|wdt:P25)?/(wdt:P22|wdt:P25)? ?ancestor .
+  
+  # Then all their descendants (0 to 2 steps down)
+  ?ancestor wdt:P40?/wdt:P40? ?item .
+  
+  # 2. Define the 'Links': For every item in the pool, find their parents
+  ?item (wdt:P22|wdt:P25) ?parent .
+  
+  ?item wdt:P21 ?gender .
+  ?parent wdt:P21 ?parentGender .
+  
+  ?article schema:about ?item .
+  ?article schema:isPartOf <https://en.wikipedia.org/> .
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
+#defaultView:Graph
+SELECT ?item ?itemLabel ?alias WHERE {
+  # Define your list of Q-ids here
+  VALUES ?item { 
+    # all people from ground_truth.csv
+  }
+  
+  # Fetch the English alias
+  ?item skos:altLabel ?alias .
+  FILTER (LANG(?alias) = "en")
+  
+  # Optional: Fetch the English Label for clarity
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

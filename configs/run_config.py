@@ -8,12 +8,19 @@ from pydantic import BaseModel, Field, model_validator
 
 
 class ModelConfig(BaseModel):
+    """Configuration for the LLM used in the pipeline.
+
+    - `name`: model identifier
+    - `temperature`: sampling temperature
+    - `max_retries`: retry attempts for transient failures
+    """
     name: str = "gemini/gemini-flash-lite-latest"
     temperature: float = 0.0
     max_retries: int = 4
 
 
 class PromptConfig(BaseModel):
+    """Paths to prompt templates used by the agent and translators."""
     main_system: str = "prompts/main_system.md"
     main_system_without_shacl: str = "prompts/main_system_without_shacl.md"
     main_user: str = "prompts/main_user.md"
@@ -43,13 +50,15 @@ class RuntimeConfig(BaseModel):
 
 
 class OutputConfig(BaseModel):
+    """Output directory configuration for run artifacts."""
     base_dir: str = "results"
     custom_tag: str = "habsburgs"
     run_dir: Optional[str] = None
 
 
 class DatasetConfig(BaseModel):
-    source: Literal["custom_family_bench", "bernhard"] = "custom_family_bench"
+    """Which dataset loader to use for the run."""
+    source: Literal["custom_family_bench", "example_run"] = "example_run"
 
 
 class RunConfig(BaseModel):
@@ -61,6 +70,10 @@ class RunConfig(BaseModel):
 
     @staticmethod
     def from_yaml(path: str) -> "RunConfig":
+        """Load a RunConfig from a YAML file and validate it.
+
+        Raises `FileNotFoundError` if the path does not exist.
+        """
         config_path = Path(path)
         if not config_path.exists():
             raise FileNotFoundError(f"Config file not found: {path}")

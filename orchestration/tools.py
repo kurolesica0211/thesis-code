@@ -1,3 +1,12 @@
+"""Tool implementations and helper utilities used by the agent graph.
+
+This module exposes a set of callable tools that operate on the in-memory
+data graph (add/remove triples, assign/unassign classes, SHACL validation,
+literal handling) and a small set of helper checks used by the agent when
+deciding whether to finish work. The `ToolClass` builds pydantic schemas for
+tool arguments and exposes an execution entrypoint consumed by the agent.
+"""
+
 import textwrap
 from pydantic import create_model, Field, BaseModel
 from langgraph.types import Command
@@ -34,7 +43,12 @@ def create_translation_response_model(num_violations: int) -> BaseModel:
 
 
 def violation_translation(state: TaskState, context: TaskContext):
-        append_trace(context["tracing_path"], "run.entry.agent.violation_translation.start", payload={
+    """Call the translation LLM to convert SHACL violations into human
+    readable explanations and instructions.
+
+    Returns a tuple of (formatted_text, report, shacl_tool_call_id).
+    """
+    append_trace(context["tracing_path"], "run.entry.agent.violation_translation.start", payload={
             "entry_id": context["entry_id"],
             "shacl_tool_call_id": state["shacl_tool_call_id"]
         })
@@ -98,7 +112,13 @@ def violation_translation(state: TaskState, context: TaskContext):
         
 
 def check_entities_typed(state: TaskState, context: TaskContext):
-        append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.start", payload={
+    """Check whether all nodes in the data graph have an RDF type.
+
+    If all typed, returns `END` to allow finish; otherwise returns a
+    formatted prompt instructing the agent about untyped nodes and the
+    `finish_tool_call_id` to continue the finish-check flow.
+    """
+    append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.start", payload={
             "entry_id": context["entry_id"]
         })
         
@@ -126,6 +146,12 @@ def check_entities_typed(state: TaskState, context: TaskContext):
             
 
 def check_shacl_used(state: TaskState, context: TaskContext):
+    """Ensure SHACL validation was run before allowing finish.
+
+    Returns `END` when SHACL was used and the graph conforms; otherwise
+    returns a message directing the agent to validate and the
+    `finish_tool_call_id` to resume.
+    """
     if "violation_report" in state:
         if state["violation_report"].conforms == True:
             return END
@@ -142,6 +168,11 @@ def check_shacl_used(state: TaskState, context: TaskContext):
 
 
 def check_min_iterations_reached(state: TaskState, context: TaskContext):
+    """Ensure the agent ran for at least `min_iterations` before finalizing.
+
+    Returns `END` when the minimum is satisfied; otherwise returns a
+    message advising additional checks and the `finish_tool_call_id`.
+    """
     append_trace(context["tracing_path"], "run.event.agent.check_iterations_reached.start", payload={
             "entry_id": context["entry_id"]
         })
@@ -166,6 +197,12 @@ class ToolClass:
     
     
     def __init__(self, schema: Schema, data_graph: Graph, shacl_validation: bool = True):
+        """Create tool schemas and bind them to implementation methods.
+
+        - `schema` is the ontology schema used to build pydantic argument types
+        - `data_graph` is the rdflib Graph instance to mutate
+        - `shacl_validation` toggles inclusion of the `ValidateShacl` tool
+        """
         self.Relation = Literal[tuple([reldef.relation for reldef in schema.relations])]
         self.Type = Literal[tuple(schema.entities)]
         
@@ -286,6 +323,13 @@ class ToolClass:
         
         
     def build_tool_node(self):
+        """Return a callable that executes tool calls found in the last
+        `AIMessage`.
+
+        The returned function is intended to be used as the `tools` node in
+        the agent state graph; it inspects the last AI message for tool calls,
+        executes them, and formats follow-up messages for the LLM.
+        """
         
         def execute_tool_calls(state: TaskState, runtime: Runtime[TaskContext]):
             append_trace(runtime.context["tracing_path"], "run.entry.agent.tools.start", payload={
@@ -413,6 +457,7 @@ class ToolClass:
 
 
     def assign_class(self, runtime: ToolRuntime_, source: str, type: str):
+        """Tool: assign an RDF class to `source` (adds rdf:type triple)."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.assign_class.start",
@@ -445,6 +490,7 @@ class ToolClass:
     
     
     def unassign_class(self, runtime: ToolRuntime_, source: str, type: str):
+        """Tool: remove an RDF class assignment from `source` (remove rdf:type)."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.unassign_class.start",
@@ -477,6 +523,7 @@ class ToolClass:
     
     
     def add_triple(self, runtime: ToolRuntime_, source: str, relation: str, target: str):
+        """Tool: add a triple (source, relation, target) to the data graph."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_triple.start",
@@ -511,6 +558,7 @@ class ToolClass:
     
     
     def remove_triple(self, runtime: ToolRuntime_, source: str, relation: str, target: str):
+        """Tool: remove a triple (source, relation, target) from the data graph."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_triple.start",
@@ -545,6 +593,11 @@ class ToolClass:
         
         
     def validate_shacl(self, runtime: ToolRuntime_):
+        """Tool: run SHACL validation and return a human-readable report.
+
+        If configured, this function also triggers LLM-based translation of
+        violations into explanations/instructions.
+        """
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.validate_shacl.start",
@@ -592,6 +645,11 @@ class ToolClass:
             
         
     def finish(self, runtime: ToolRuntime_):
+        """Tool: signal intention to finish; performs safety checks.
+
+        The tool runs SHACL/typing/iterations checks and either allows finish
+        or returns an instruction prompting further work.
+        """
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.finish.triggered",
@@ -621,6 +679,7 @@ class ToolClass:
         
         
     def add_literal(self, runtime: ToolRuntime_, source: str, relation: str, literal_value: str, literal_type: str):
+        """Tool: add a typed literal value to the graph, validating the value."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.add_literal.start",
@@ -674,6 +733,7 @@ class ToolClass:
     
     
     def remove_literal(self, runtime: ToolRuntime_, source: str, relation: str, literal_value: str, literal_type: str):
+        """Tool: remove a typed literal value from the graph."""
         append_trace(
             runtime.context["tracing_path"],
             "run.entry.agent.tools.remove_literal.start",
