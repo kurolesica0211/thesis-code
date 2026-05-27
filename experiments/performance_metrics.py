@@ -344,6 +344,7 @@ def _print_summary(run_dir: str, task_metrics: List[TaskMetrics], per_task: bool
 
 	if iteration_values:
 		print(f"  Median iterations: {_median([float(value) for value in iteration_values]):.2f}")
+		print(f"  Max iterations: {max([float(value) for value in iteration_values]):.2f}")
 	else:
 		print("  Average iterations: no data")
 
