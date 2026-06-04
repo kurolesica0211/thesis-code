@@ -1,7 +1,10 @@
 from __future__ import annotations
 
-import re
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+import re
 from statistics import mean
 
 from rdflib import OWL, RDF, Graph, URIRef
@@ -12,8 +15,17 @@ except ModuleNotFoundError:
     # Allows running this file directly via: python experiments/characterize_my_dataset.py
     from experiments.metrics.precision_recall import deduplicate_by_synonymy, get_predicate_name
 
+try:
+    from experiments.dataset_characterization.count_unconnected_fragments import (
+        connected_components_rdf,
+    )
+except ModuleNotFoundError:
+    # When running directly from the script's folder
+    from count_unconnected_fragments import connected_components_rdf
+
 
 PERSON_CLASS_LOCAL_NAMES = {"Person", "Man", "Woman", "Ancestor"}
+HAS_SEX_PREDICATE = URIRef("http://example.com/family_TBOX.ttl#hasSex")
 
 
 def _count_sentences(text: str) -> int:
@@ -120,10 +132,17 @@ def characterize_dataset(tbox_path: Path, ground_truth_dir: Path, text_dir: Path
         raise ValueError("Could not find person-related classes (Person/Man/Woman/Ancestor) in the TBox.")
 
     triples_per_text: list[int] = []
+    fragments_per_text: list[int] = []
     for item_id in common_ids:
         graph = Graph()
         graph.parse(ttl_paths[item_id], format="turtle")
         triples_per_text.append(_count_people_relation_triples(graph, person_class_uris))
+        comps = connected_components_rdf(
+            graph,
+            ignore_rdf_types={OWL.Ontology, OWL.AnnotationProperty},
+            ignore_predicates={RDF.type, HAS_SEX_PREDICATE},
+        )
+        fragments_per_text.append(len(comps))
 
     return {
         "num_tbox_classes": _count_tbox_classes(tbox_graph),
@@ -131,6 +150,7 @@ def characterize_dataset(tbox_path: Path, ground_truth_dir: Path, text_dir: Path
         "num_paired_samples": len(common_ids),
         "avg_sentences_per_text": mean(text_lengths[item_id] for item_id in common_ids),
         "avg_people_relation_triples_per_text": mean(triples_per_text),
+        "avg_unconnected_fragments_per_graph": mean(fragments_per_text),
     }
 
 
@@ -152,6 +172,7 @@ def main() -> None:
         "Average semantically distinct people-to-people triples per text: "
         f"{metrics['avg_people_relation_triples_per_text']:.2f}"
     )
+    print(f"Average unconnected fragments per ground-truth graph: {metrics['avg_unconnected_fragments_per_graph']:.2f}")
 
 
 if __name__ == "__main__":

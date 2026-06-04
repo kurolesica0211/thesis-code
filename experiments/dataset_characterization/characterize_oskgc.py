@@ -95,11 +95,14 @@ def characterize_oskgc() -> dict[str, float | int | str]:
 	if ontology_file_count == 0:
 		raise ValueError("No ontology TTL files found in the OSKGC ontology directory.")
 
+	total_triples = sum(entry.triple_count for entry in entries)
+
 	return {
 		"num_ontology_files": ontology_file_count,
 		"num_tbox_classes": class_total,
 		"num_tbox_object_properties": object_property_total,
 		"num_entries": len(entries),
+		"total_triples": total_triples,
 		"avg_sentences_per_text": mean(entry.sentence_count for entry in entries),
 		"avg_triples_per_text": mean(entry.triple_count for entry in entries),
 		"dataset_structure": (
@@ -124,6 +127,7 @@ def main() -> None:
 	print(f"TBox classes across all ontologies: {metrics['num_tbox_classes']}")
 	print(f"TBox object properties across all ontologies: {metrics['num_tbox_object_properties']}")
 	print(f"Total benchmark entries: {metrics['num_entries']}")
+	print(f"Total triples in dataset: {metrics['total_triples']}")
 	print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
 	print(f"Average triples per text: {metrics['avg_triples_per_text']:.2f}")
 

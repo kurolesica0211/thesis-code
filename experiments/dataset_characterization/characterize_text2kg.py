@@ -120,11 +120,14 @@ def characterize_text2kg() -> dict[str, float | int | str]:
 	if ontology_file_count == 0:
 		raise ValueError("No ontology JSON files found in the Text2KGBench ontology directories.")
 
+	total_triples = sum(len(entry.get("triples", [])) for entry in entries)
+
 	return {
 		"num_ontology_files": ontology_file_count,
 		"num_tbox_classes": class_total,
 		"num_tbox_object_properties": object_property_total,
 		"num_entries": len(entries),
+		"total_triples": total_triples,
 		"avg_sentences_per_text": mean(_count_sentences(entry.get("sent", "")) for entry in entries),
 		"avg_triples_per_text": mean(len(entry.get("triples", [])) for entry in entries),
 		"dataset_structure": (
@@ -149,6 +152,7 @@ def main() -> None:
 	print(f"TBox classes across all ontologies: {metrics['num_tbox_classes']}")
 	print(f"TBox object properties across all ontologies: {metrics['num_tbox_object_properties']}")
 	print(f"Total benchmark entries: {metrics['num_entries']}")
+	print(f"Total triples in dataset: {metrics['total_triples']}")
 	print(f"Average sentences per input example: {metrics['avg_sentences_per_text']:.2f}")
 	print(f"Average triples per text: {metrics['avg_triples_per_text']:.2f}")
 
